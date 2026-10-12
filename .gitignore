@@ -1,5 +1,52 @@
-# 수기 사진 폴더 
-data/raw_images/custom_notes_temp/
+# 원본 이미지 및 대용량 학습/평가 데이터셋
+/data/raw_images/
+/data/ai_hub_OCR/
+/data/datasets/
+/datasets/
+/data/ocr_real_eval/
+
+# 외부 PaddleOCR 소스 및 함께 다운로드한 사전 학습 모델
+/src/cv/ocr/PaddleOCR/
+
+# 다운로드/학습/내보내기 모델과 체크포인트
+/data/models/
+pretrain_models/
+inference_models/
+checkpoints/
+*.pdparams
+*.pdopt
+*.pdmodel
+*.pdiparams
+*.pdiparams.info
+*.states
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+pytorch_model*.bin
+adapter_model.bin
+
+# 데이터셋 및 모델 압축 파일 (재다운로드 사본 포함)
+*.zip
+*.zip.[0-9]*
+*.tar
+*.tar.[0-9]*
+*.tar.gz
+*.tar.gz.[0-9]*
+*.tgz
+*.tar.bz2
+*.tar.xz
+*.7z
+*.rar
+
+# 로컬 OCR 실행 결과 및 학습 로그
+/data/ocr_predictions/
+/data/ocr_diagnostics/
+/data/ocr_candidate_benchmark/
+*.log
+*.vdl
+events.out.tfevents.*
 
 # Python 실행 캐시
 __pycache__/
@@ -9,5 +56,4 @@ __pycache__/
 .venv/
 .cache/
 
-data/raw_images/custom_notes_temp/.CV/
 .CV/

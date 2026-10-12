@@ -1,127 +1,81 @@
-# from paddleocr import PaddleOCR
-#
-# ocr = PaddleOCR(use_angle_cls=True, lang='korean')
-# result = ocr.predict('IMG_2728.JPG')
-#
-# print(type(result))
-# print(result)
-
-from paddleocr import PaddleOCR
-from PIL import Image, ImageDraw, ImageFont, ImageOps
+"""Run baseline inference with official PP-OCRv5 models, before fine-tuning."""
+import argparse
+import json
+import os
+from pathlib import Path
 import numpy as np
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 
-IMAGE_PATH = "IMG_2728.JPG"
-OUTPUT_PATH = "ocr_result.jpg"
+ROOT = Path(__file__).resolve().parents[3]
+MODEL_ROOT = Path.home() / '.paddlex/official_models'
+DETECTOR = MODEL_ROOT / 'PP-OCRv5_server_det'
+RECOGNIZER = MODEL_ROOT / 'korean_PP-OCRv5_mobile_rec'
+IMAGE_DIRS = (ROOT, Path(__file__).resolve().parent)
+DEFAULT_IMAGES = [next((directory / name for directory in IMAGE_DIRS
+                        if (directory / name).is_file()), ROOT / name)
+                  for name in ('KakaoTalk_20261011_022928686.jpg',
+                               'IMG_2756.JPG', 'IMG_2728.JPG')]
 
-# --------------------------------------------------
-# 1. PaddleOCR 초기화
-# --------------------------------------------------
-ocr = PaddleOCR(
-    lang="korean",
-    use_textline_orientation=True
-)
 
-# --------------------------------------------------
-# 2. 이미지 불러오기
-#    EXIF Orientation 정보를 실제 픽셀에 적용
-# --------------------------------------------------
-image = Image.open(IMAGE_PATH)
-image = ImageOps.exif_transpose(image).convert("RGB")
+def run_one(ocr, image_path, output_dir, font):
+    image = ImageOps.exif_transpose(Image.open(image_path)).convert('RGB')
+    # PaddleX's input is BGR; use the same EXIF-oriented pixels for drawing.
+    result = ocr.predict(np.array(image)[:, :, ::-1].copy())
+    draw = ImageDraw.Draw(image)
+    rows = []
+    for item in result:
+        for text, score, polygon in zip(item['rec_texts'], item['rec_scores'], item['rec_polys']):
+            points = np.asarray(polygon).astype(int).tolist()
+            draw.line([tuple(p) for p in points] + [tuple(points[0])], fill='lime', width=3)
+            draw.text((points[0][0], max(0, points[0][1]-32)), f'{text} ({score:.2f})', fill='red', font=font)
+            rows.append({'text': text, 'confidence': float(score), 'polygon': points})
+            print(f'{text}\t{score:.4f}')
+    output = output_dir / f'{image_path.stem}_ppocrv5.jpg'
+    output_dir.mkdir(parents=True, exist_ok=True)
+    image.save(output)
+    report = {'image': str(image_path.resolve()),
+              'detector': str(DETECTOR.resolve()),
+              'recognizer': str(RECOGNIZER.resolve()),
+              'fine_tuned': False, 'results': rows}
+    output.with_suffix('.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
+    print(f'Saved: {output}\n')
 
-# --------------------------------------------------
-# 3. OCR 추론
-#    시각화에 사용하는 이미지와 동일한 이미지 사용
-# --------------------------------------------------
-image_np = np.array(image)
-result = ocr.predict(image_np)
 
-# --------------------------------------------------
-# 4. 이미지에 OCR 결과 표시
-# --------------------------------------------------
-draw = ImageDraw.Draw(image)
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('image', nargs='?', type=Path, help='Image path; omitted with --all-samples uses the three project photos.')
+    parser.add_argument('--all-samples', action='store_true', help='Run KakaoTalk_20261011_022928686.jpg, IMG_2756.JPG and IMG_2728.JPG.')
+    parser.add_argument('--device', default='gpu:0')
+    parser.add_argument('--output-dir', type=Path, default=ROOT / 'data/ocr_predictions/ppocrv5_before_finetune')
+    args = parser.parse_args()
+    if args.image and args.all_samples:
+        parser.error('Choose either one image or --all-samples.')
+    images = DEFAULT_IMAGES if args.all_samples or not args.image else [args.image]
+    missing = [path for path in (DETECTOR, RECOGNIZER) if not path.is_dir()]
+    if missing:
+        raise FileNotFoundError(f'Official PP-OCRv5 models are not cached: {missing}')
+    for path in images:
+        if not path.is_file():
+            raise FileNotFoundError(path)
+    os.environ.setdefault('PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK', 'True')
+    from paddleocr import PaddleOCR
+    print('Detector: PP-OCRv5_server_det (official, no fine-tuning)')
+    print('Recognizer: korean_PP-OCRv5_mobile_rec (official, no fine-tuning)')
+    print(f'Device: {args.device}')
+    ocr = PaddleOCR(
+        text_detection_model_name='PP-OCRv5_server_det',
+        text_detection_model_dir=str(DETECTOR.resolve()),
+        text_recognition_model_name='korean_PP-OCRv5_mobile_rec',
+        text_recognition_model_dir=str(RECOGNIZER.resolve()),
+        use_doc_orientation_classify=False, use_doc_unwarping=False,
+        use_textline_orientation=False, device=args.device, enable_mkldnn=False,
+    )
+    font_path = Path('/usr/share/fonts/truetype/nanum/NanumGothic.ttf')
+    font = ImageFont.truetype(str(font_path), 28) if font_path.exists() else ImageFont.load_default()
+    for image in images:
+        print(f'\n=== {image.name} ===')
+        run_one(ocr, image.resolve(), args.output_dir.resolve(), font)
 
-# Windows 기본 한글 폰트
-font_path = "C:/Windows/Fonts/malgun.ttf"
-font = ImageFont.truetype(font_path, 32)
 
-for res in result:
-    rec_texts = res["rec_texts"]
-    rec_scores = res["rec_scores"]
-    rec_boxes = res["rec_boxes"]
-
-    for text, score, box in zip(
-        rec_texts,
-        rec_scores,
-        rec_boxes
-    ):
-        # ------------------------------------------
-        # Bounding Box 좌표
-        # [x_min, y_min, x_max, y_max]
-        # ------------------------------------------
-        x1, y1, x2, y2 = map(int, box)
-
-        # ------------------------------------------
-        # Bounding Box 그리기
-        # ------------------------------------------
-        draw.rectangle(
-            [(x1, y1), (x2, y2)],
-            outline=(255, 0, 0),
-            width=4
-        )
-
-        # ------------------------------------------
-        # OCR 결과 + confidence
-        # ------------------------------------------
-        label = f"{text} ({score:.2f})"
-
-        # 텍스트 크기 계산
-        text_bbox = draw.textbbox(
-            (0, 0),
-            label,
-            font=font
-        )
-
-        text_width = text_bbox[2] - text_bbox[0]
-        text_height = text_bbox[3] - text_bbox[1]
-
-        # bbox 위에 표시
-        label_y = max(
-            0,
-            y1 - text_height - 10
-        )
-
-        # ------------------------------------------
-        # 텍스트 배경
-        # ------------------------------------------
-        draw.rectangle(
-            [
-                (x1, label_y),
-                (
-                    x1 + text_width + 10,
-                    label_y + text_height + 10
-                )
-            ],
-            fill=(255, 0, 0)
-        )
-
-        # ------------------------------------------
-        # OCR 텍스트
-        # ------------------------------------------
-        draw.text(
-            (x1 + 5, label_y + 3),
-            label,
-            font=font,
-            fill=(255, 255, 255)
-        )
-
-# --------------------------------------------------
-# 5. 결과 저장
-# --------------------------------------------------
-image.save(OUTPUT_PATH)
-
-print(f"OCR 시각화 결과 저장 완료: {OUTPUT_PATH}")
-
-# --------------------------------------------------
-# 6. 결과 이미지 화면 출력
-# --------------------------------------------------
-image.show()
+if __name__ == '__main__':
+    main()
