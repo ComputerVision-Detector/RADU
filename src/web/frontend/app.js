@@ -424,7 +424,7 @@
           ? "#199574"
           : e.type === "Text"
           ? "#4b8bc5"
-          : "#de8b48")),
+          : "#de8b48"),
         sw = Math.min(30, Math.max(1, Number(style.stroke_width) || 2)),
         fill = safeColor(style.fill, "#ffffff");
       out += '<g class="diagram-element" data-id="' + esc(e.id) +
