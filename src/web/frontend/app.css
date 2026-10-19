@@ -18,6 +18,8 @@
 .layer-row{display:flex;align-items:center;gap:6px;margin:10px 0;font-size:11px;flex-wrap:wrap}.layer-row>.control{flex:1;min-width:100px}.layer-row label{white-space:nowrap}
 #more-style{margin:10px;width:calc(100% - 20px)}
 .toolbar{height:auto;min-height:47px;flex-wrap:wrap;gap:5px;padding:7px 10px}.tools{flex-wrap:wrap}
+.comparison-mode[aria-pressed="true"]{border-color:#5268e8;background:#eef0ff;color:#4054cb}
+.comparison-mode{height:27px;padding:0 8px;font-size:9px}
 .control,.field>span,.row-label,.button,.tabs button{font-size:12px}.row-sub,.hint,.stage-status,.review-choice{font-size:11px}
 .sidebar{overflow:auto}.sidebar .panel-section{flex-shrink:0}.sidebar .element-section{min-height:140px}
 button:focus-visible{outline:2px solid #5268e8;outline-offset:2px}

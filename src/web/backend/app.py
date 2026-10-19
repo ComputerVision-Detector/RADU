@@ -405,14 +405,19 @@ def _analyze(image: np.ndarray, engine: str, device: str, session_id: str,
         raise RuntimeError("전처리 이미지를 저장하지 못했습니다.")
     processed_path = OUT / f"{session_id}.processed.jpg"
     _atomic_write(processed_path, encoded_processed.tobytes())
-    document = analyze_image(processed, preprocess=False)
+    document = analyze_image(processed, preprocess=False, include_text=engine == "none")
     warnings = list(document.get("warnings", []))
     if engine != "none":
         try:
             with INFERENCE_LOCK:
                 text, details = recognize(processed, engine, device=device)
             lines = details.get("lines", [])
-            document["ocr"] = {"engine": engine, "text": text, "lines": lines}
+            document["ocr"] = {
+                "engine": engine,
+                "text": text,
+                "lines": lines,
+                "metadata": details.get("metadata", {}),
+            }
             for index, line in enumerate(lines):
                 raw = line.get("bbox") or []
                 if raw and isinstance(raw[0], (list, tuple)):

@@ -22,7 +22,8 @@ def _box(x1: int, y1: int, x2: int, y2: int, image: np.ndarray, kind: str,
 
 
 def detect_components(image: np.ndarray, model_path: str | None = None,
-                      confidence: float = 0.25) -> list[dict[str, Any]]:
+                      confidence: float = 0.25,
+                      include_text: bool = True) -> list[dict[str, Any]]:
     """Detect Text, Arrow, and Box candidates; keep overlapping types separate."""
     weight_path = model_path or os.getenv("RADU_DETECTOR_WEIGHTS")
     if weight_path and os.path.isfile(weight_path):
@@ -41,7 +42,7 @@ def detect_components(image: np.ndarray, model_path: str | None = None,
                                 "database", "storage", "subprocess", "preparation",
                                 "hexagon", "connector", "delay", "cylinder")
                 kind = "Text" if "text" in label else "Arrow" if "arrow" in label else "Box" if any(k in label for k in shape_tokens) else None
-                if kind:
+                if kind and (include_text or kind != "Text"):
                     x1, y1, x2, y2 = map(int, item.xyxy[0].tolist())
                     detected = _box(x1, y1, x2, y2, image, kind, item.conf.item(), "yolo")
                     if kind == "Box":
@@ -70,28 +71,29 @@ def detect_components(image: np.ndarray, model_path: str | None = None,
                 found.append(_box(x, y, x + cw, y + ch, image, "Box", 0.35, "opencv-proposal"))
                 cv2.drawContours(shape_masks, [contour], -1, 255, thickness=max(2, int(min(h, w) * .008)))
 
-    # Text proposals are connected ink regions after removing long lines and shape strokes.
-    horizontal = cv2.morphologyEx(binary, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_RECT, (max(15, w // 35), 1)))
-    vertical = cv2.morphologyEx(binary, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_RECT, (1, max(15, h // 35))))
-    strokes = cv2.bitwise_or(horizontal, vertical)
-    clean = cv2.subtract(binary, strokes)
-    clean = cv2.subtract(clean, cv2.dilate(shape_masks, np.ones((3, 3), np.uint8)))
-    clean = cv2.morphologyEx(clean, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_RECT, (7, 3)))
-    n, labels, stats, _ = cv2.connectedComponentsWithStats(clean)
-    text_boxes = []
-    for x, y, cw, ch, area in stats[1:]:
-        if area >= 10 and cw >= 3 and ch >= 5 and cw < w * .95 and ch < h * .15:
-            text_boxes.append([int(x), int(y), int(x + cw), int(y + ch)])
-    # Merge neighboring glyphs into line proposals, while retaining a separate Box proposal if overlapping.
-    text_boxes.sort(key=lambda b: (b[1] // 12, b[0]))
-    merged: list[list[int]] = []
-    for b in text_boxes:
-        match = next((m for m in reversed(merged) if abs(m[1] - b[1]) < max(10, int((m[3] - m[1]) * .7)) and b[0] - m[2] < 20), None)
-        if match:
-            match[:] = [min(match[0], b[0]), min(match[1], b[1]), max(match[2], b[2]), max(match[3], b[3])]
-        else:
-            merged.append(b.copy())
-    found.extend(_box(*b, image, "Text", 0.3, "opencv-proposal") for b in merged)
+    if include_text:
+        # Text proposals are connected ink regions after removing long lines and shape strokes.
+        horizontal = cv2.morphologyEx(binary, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_RECT, (max(15, w // 35), 1)))
+        vertical = cv2.morphologyEx(binary, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_RECT, (1, max(15, h // 35))))
+        strokes = cv2.bitwise_or(horizontal, vertical)
+        clean = cv2.subtract(binary, strokes)
+        clean = cv2.subtract(clean, cv2.dilate(shape_masks, np.ones((3, 3), np.uint8)))
+        clean = cv2.morphologyEx(clean, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_RECT, (7, 3)))
+        n, labels, stats, _ = cv2.connectedComponentsWithStats(clean)
+        text_boxes = []
+        for x, y, cw, ch, area in stats[1:]:
+            if area >= 10 and cw >= 3 and ch >= 5 and cw < w * .95 and ch < h * .15:
+                text_boxes.append([int(x), int(y), int(x + cw), int(y + ch)])
+        # Merge neighboring glyphs into line proposals, while retaining a separate Box proposal if overlapping.
+        text_boxes.sort(key=lambda b: (b[1] // 12, b[0]))
+        merged: list[list[int]] = []
+        for b in text_boxes:
+            match = next((m for m in reversed(merged) if abs(m[1] - b[1]) < max(10, int((m[3] - m[1]) * .7)) and b[0] - m[2] < 20), None)
+            if match:
+                match[:] = [min(match[0], b[0]), min(match[1], b[1]), max(match[2], b[2]), max(match[3], b[3])]
+            else:
+                merged.append(b.copy())
+        found.extend(_box(*b, image, "Text", 0.3, "opencv-proposal") for b in merged)
 
     # Arrow/line proposals come from long Hough segments; the trained detector handles endpoints.
     edges = cv2.Canny(gray, 60, 160)
@@ -99,7 +101,8 @@ def detect_components(image: np.ndarray, model_path: str | None = None,
                             minLineLength=max(8, min(h, w) // 40), maxLineGap=max(8, min(h, w) // 80))
     if lines is not None:
         segments = []
-        for [[x1, y1, x2, y2]] in lines:
+        for line in lines:
+            x1, y1, x2, y2 = np.asarray(line).reshape(-1)
             length = float(np.hypot(x2 - x1, y2 - y1))
             angle = float(np.arctan2(y2 - y1, x2 - x1))
             segments.append(((int(x1), int(y1)), (int(x2), int(y2)), length, angle))
@@ -180,10 +183,12 @@ def _box_iou(a: list[int], b: list[int]) -> float:
 
 
 def analyze_image(image: np.ndarray, model_path: str | None = None,
-                  preprocess: bool = True) -> dict[str, Any]:
+                  preprocess: bool = True,
+                  include_text: bool = True) -> dict[str, Any]:
     """Analyze an image; pass ``preprocess=False`` when it is already normalized."""
     processed = preprocess_image(image) if preprocess else image
     return {"version": "1.0", "image": {"width": int(processed.shape[1]), "height": int(processed.shape[0])},
-            "elements": detect_components(processed, model_path=model_path), "relations": [], "warnings": [
+            "elements": detect_components(processed, model_path=model_path, include_text=include_text),
+            "relations": [], "warnings": [
                 {"code": "proposal_detector", "message": "OpenCV 후보 검출 결과입니다. 학습된 검출 가중치가 있으면 RADU_DETECTOR_WEIGHTS로 지정하세요."}
             ]}

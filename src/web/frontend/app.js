@@ -185,6 +185,7 @@
   function setCanvasSize() {
     const size = dimensions(), card = $("#canvas-card");
     const compare = state.viewMode === "compare";
+    $("#diagram").style.pointerEvents = state.viewMode === "ocr" ? "none" : "";
     card.classList.toggle("compare-mode", compare);
     card.style.width = size.width * (compare ? 2 : 1) + "px";
     card.style.height = size.height + "px";
@@ -302,6 +303,11 @@
           state.previewUrl || "";
     $("#source-image").hidden = !source;
     $("#source-image").src = source;
+    const hasOcr = !!(state.doc && state.doc.ocr);
+    $("#ocr-view").disabled = !hasOcr;
+    $("#radu-view").disabled = !hasOcr;
+    $("#ocr-view").setAttribute("aria-pressed", String(state.viewMode === "ocr"));
+    $("#radu-view").setAttribute("aria-pressed", String(state.viewMode === "radu"));
     $("#view-mode").textContent = state.viewMode === "compare"
       ? "나란히 비교"
       : state.viewMode === "original"
@@ -401,7 +407,7 @@
     let out =
         '<defs><marker id="radu-arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#5268e8"/></marker><marker id="radu-warn-arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#d2873d"/></marker></defs>',
       map = new Map(doc.elements.map((e) => [e.id, e]));
-    (doc.relations || []).forEach((rel) => {
+    (state.viewMode === "ocr" ? [] : doc.relations || []).forEach((rel) => {
       if (rel.type !== "flows_to") return;
       const arrow = map.get(rel.arrow_id);
       if (arrow && arrow.start && arrow.end) return;
@@ -414,7 +420,9 @@
         (review ? 'stroke-dasharray="8 6"' : "") + ' marker-end="url(#' +
         (review ? "radu-warn-arrow" : "radu-arrow") + ')" opacity=".9"/>';
     });
-    doc.elements.filter(e => RaduModel.visible(doc,e)).forEach((e) => {
+    doc.elements.filter(e => RaduModel.visible(doc,e) &&
+      (state.viewMode !== "ocr" ||
+        e.type === "Text" && e.source === doc.ocr?.engine)).forEach((e) => {
       const b = e.bbox,
         x = b[0],
         y = b[1],
@@ -432,7 +440,8 @@
         sw = Math.min(30, Math.max(1, Number(style.stroke_width) || 2)),
         fill = safeColor(style.fill, "#ffffff");
       out += '<g class="diagram-element" data-id="' + esc(e.id) +
-        '" tabindex="0" role="button" aria-label="' +
+        '" tabindex="' + (state.viewMode === "ocr" ? "-1" : "0") +
+        '" role="' + (state.viewMode === "ocr" ? "img" : "button") + '" aria-label="' +
         esc(kindName(e) + " " + (e.text || e.id)) + '" style="cursor:' +
         (state.tool === "select" ? "move" : "pointer") + '" opacity="' + (style.opacity ?? 1) + '"' +
         (e.rotation ? ' transform="rotate(' + Number(e.rotation) + " " +
@@ -577,7 +586,7 @@
         '" height="' + height +
         '" fill="#5268e81a" stroke="#5268e8" stroke-width="2" stroke-dasharray="7 5" pointer-events="none"/>';
     }
-    if (doc.canvas?.ruler) {
+    if (doc.canvas?.ruler && state.viewMode !== "ocr") {
       const step = Math.max(50, Math.ceil(50 / Math.max(.1, state.zoom) / 50) * 50);
       out += '<g class="canvas-rulers" pointer-events="none"><path d="M0 0H'+w+'V20H20V'+h+'H0Z" fill="#f1f3f8" stroke="#b8c0d0" stroke-width="1"/>';
       for (let x = step; x < w; x += step) out += '<path d="M'+x+' 20V11" stroke="#8290a6"/><text x="'+(x+3)+'" y="10" font-size="9" fill="#657187">'+x+'</text>';
@@ -585,6 +594,7 @@
       out += '</g>';
     }
     svg.innerHTML = out;
+    if (state.viewMode === "ocr") return;
     $$(".diagram-element", svg).forEach((g) => {
       g.onpointerdown = elementPointerDown;
       g.onclick = (ev) => {
@@ -601,12 +611,15 @@
   function renderList() {
     const root = $("#element-list"),
       allItems = state.doc && state.doc.elements || [],
+      viewItems = state.viewMode === "ocr"
+        ? allItems.filter((e) => e.type === "Text" && e.source === state.doc.ocr?.engine)
+        : allItems,
       filter = $("#element-filter").value,
       items = filter === "all"
-        ? allItems
-        : allItems.filter((e) => e.type === filter);
+        ? viewItems
+        : viewItems.filter((e) => e.type === filter);
     $("#element-heading").textContent = items.length +
-      (items.length !== allItems.length ? " / " + allItems.length : "") + "개";
+      (items.length !== viewItems.length ? " / " + viewItems.length : "") + "개";
     if (!items.length) {
       root.className = "empty-list";
       root.textContent = state.doc
@@ -639,14 +652,18 @@
         : "") +
       "</span></button>"
     ).join("");
-    $$(".element-row", root).forEach((row) =>
-      row.onclick = () => selectElement(row.dataset.id)
-    );
+    $$(".element-row", root).forEach((row) => {
+      row.disabled = state.viewMode === "ocr";
+      if (state.viewMode !== "ocr") row.onclick = () => selectElement(row.dataset.id);
+    });
   }
   function renderSummary() {
-    const items = state.doc && state.doc.elements || [],
-      rels = state.doc && state.doc.relations || [],
-      warnings = state.doc && state.doc.warnings || [];
+    const allItems = state.doc && state.doc.elements || [],
+      items = state.viewMode === "ocr"
+        ? allItems.filter((e) => e.type === "Text" && e.source === state.doc.ocr?.engine)
+        : allItems,
+      rels = state.viewMode === "ocr" ? [] : state.doc && state.doc.relations || [],
+      warnings = state.viewMode === "ocr" ? [] : state.doc && state.doc.warnings || [];
     $("#count-text").textContent =
       items.filter((e) => e.type === "Text").length;
     $("#count-shape").textContent =
@@ -660,7 +677,8 @@
         r.type === "flows_to" && r.status === "review" &&
         (!r.review_status || r.review_status === "pending")
       ).length;
-    $("#analysis-state").textContent = state.doc ? "검토 중" : "대기 중";
+    $("#analysis-state").textContent = !state.doc ? "대기 중"
+      : state.viewMode === "ocr" ? "OCR 기준 보기" : "검토 중";
   }
   function renderInspector() {
     const root = $("#inspector-content"), doc = state.doc;
@@ -670,6 +688,11 @@
     if (!doc) {
       root.innerHTML =
         '<div class="inspector-empty">이미지를 불러오면 텍스트, 유형, 위치와 관계를 검토할 수 있습니다.</div>';
+      return;
+    }
+    if (state.viewMode === "ocr") {
+      root.innerHTML =
+        '<div class="inspector-empty">OCR 기준 보기에서는 선택한 텍스트 인식 엔진의 결과만 표시합니다. RADU가 검출한 도형·화살표와 관계는 RADU 복원 보기에서 확인할 수 있습니다.</div>';
       return;
     }
     if (state.tab === "warnings") {
@@ -2674,7 +2697,14 @@
     importJson(file);
   };
   $("#view-mode").onclick = () => {
-    state.viewMode = ({ overlay: "original", original: "restored", restored: "compare", compare: "overlay" })[state.viewMode] || "overlay";
+    state.viewMode = ({
+      overlay: "original",
+      original: "restored",
+      restored: "compare",
+      compare: "overlay",
+      ocr: "overlay",
+      radu: "overlay",
+    })[state.viewMode] || "overlay";
     render();
     if (state.fitMode) fitCanvas();
     status(
@@ -2686,6 +2716,24 @@
         ? "전처리 전 원본을 표시합니다."
         : "복원된 다이어그램만 표시합니다.",
     );
+  };
+  $("#ocr-view").onclick = () => {
+    if (!state.doc?.ocr) return;
+    state.viewMode = "ocr";
+    state.selected = null;
+    state.selectedIds = [];
+    render();
+    if (state.fitMode) fitCanvas();
+    status("선택한 OCR 엔진이 인식한 텍스트와 위치만 표시합니다.");
+  };
+  $("#radu-view").onclick = () => {
+    if (!state.doc?.ocr) return;
+    state.viewMode = "radu";
+    state.selected = null;
+    state.selectedIds = [];
+    render();
+    if (state.fitMode) fitCanvas();
+    status("같은 OCR 텍스트에 RADU 도형·화살표 검출과 관계 복원을 함께 표시합니다.");
   };
   window.addEventListener("resize", () => {
     if (state.fitMode) fitCanvas();
