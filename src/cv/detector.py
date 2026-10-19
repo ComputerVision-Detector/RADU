@@ -36,10 +36,17 @@ def detect_components(image: np.ndarray, model_path: str | None = None,
         for result in model.predict(image, conf=confidence, verbose=False):
             for item in result.boxes:
                 label = str(names[int(item.cls.item())]).lower()
-                kind = "Text" if "text" in label else "Arrow" if "arrow" in label else "Box" if any(k in label for k in ("box", "process", "decision", "terminator")) else None
+                shape_tokens = ("box", "process", "decision", "terminator", "start", "end",
+                                "input", "output", "parallelogram", "trapezoid", "document",
+                                "database", "storage", "subprocess", "preparation",
+                                "hexagon", "connector", "delay", "cylinder")
+                kind = "Text" if "text" in label else "Arrow" if "arrow" in label else "Box" if any(k in label for k in shape_tokens) else None
                 if kind:
                     x1, y1, x2, y2 = map(int, item.xyxy[0].tolist())
-                    output.append(_box(x1, y1, x2, y2, image, kind, item.conf.item(), "yolo"))
+                    detected = _box(x1, y1, x2, y2, image, kind, item.conf.item(), "yolo")
+                    if kind == "Box":
+                        detected["shape"] = _shape_from_label(label)
+                    output.append(detected)
         return _assign_ids(output)
 
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) if image.ndim == 3 else image.copy()
@@ -139,6 +146,32 @@ def _assign_ids(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return sorted(items, key=lambda x: x["id"])
 
 
+def _shape_from_label(label: str) -> str:
+    """Map detector class names to editable flowchart symbols."""
+    name = label.lower().replace("-", "_").replace(" ", "_").replace("/", "_")
+    if any(word in name for word in ("terminator", "start_end", "start", "end")):
+        return "terminator"
+    if any(word in name for word in ("decision", "diamond", "conditional")):
+        return "decision"
+    if any(word in name for word in ("input_output", "inputoutput", "parallelogram")) or name in {"io", "i_o"}:
+        return "input_output"
+    if any(word in name for word in ("manual_input", "manualinput", "trapezoid")):
+        return "manual_input"
+    if any(word in name for word in ("document", "paper")):
+        return "document"
+    if any(word in name for word in ("database", "storage", "data_store", "cylinder")):
+        return "database"
+    if any(word in name for word in ("predefined_process", "subprocess", "sub_process")):
+        return "predefined_process"
+    if any(word in name for word in ("preparation", "hexagon")):
+        return "preparation"
+    if "connector" in name or "on_page" in name:
+        return "connector"
+    if "delay" in name:
+        return "delay"
+    return "process"
+
+
 def _box_iou(a: list[int], b: list[int]) -> float:
     x1=max(a[0],b[0]); y1=max(a[1],b[1]); x2=min(a[2],b[2]); y2=min(a[3],b[3])
     intersection=max(0,x2-x1)*max(0,y2-y1)
@@ -146,8 +179,10 @@ def _box_iou(a: list[int], b: list[int]) -> float:
     return intersection/(area_a+area_b-intersection)
 
 
-def analyze_image(image: np.ndarray, model_path: str | None = None) -> dict[str, Any]:
-    processed = preprocess_image(image)
+def analyze_image(image: np.ndarray, model_path: str | None = None,
+                  preprocess: bool = True) -> dict[str, Any]:
+    """Analyze an image; pass ``preprocess=False`` when it is already normalized."""
+    processed = preprocess_image(image) if preprocess else image
     return {"version": "1.0", "image": {"width": int(processed.shape[1]), "height": int(processed.shape[0])},
             "elements": detect_components(processed, model_path=model_path), "relations": [], "warnings": [
                 {"code": "proposal_detector", "message": "OpenCV 후보 검출 결과입니다. 학습된 검출 가중치가 있으면 RADU_DETECTOR_WEIGHTS로 지정하세요."}

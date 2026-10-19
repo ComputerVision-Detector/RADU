@@ -62,18 +62,22 @@ def _result_payload(result: Any) -> dict[str, Any]:
     return value if isinstance(value, dict) else {}
 
 
-def _paddleocrv6(image: np.ndarray) -> tuple[str, dict[str, Any]]:
+def _paddleocrv6(image: np.ndarray, requested_device: str | None = None) -> tuple[str, dict[str, Any]]:
     """Local PP-OCRv6 text recognition pipeline (PaddleOCR 3.x)."""
     _prepare_paddlex_cache()
     from paddleocr import PaddleOCR
     global _PADDLE_V6
+    device = requested_device or os.getenv("RADU_PADDLE_DEVICE", "cpu")
+    if "_PADDLE_V6" in globals() and globals().get("_PADDLE_V6_DEVICE") != device:
+        release_paddleocrv6()
     if "_PADDLE_V6" not in globals():
         _PADDLE_V6 = PaddleOCR(ocr_version="PP-OCRv6",
                                text_detection_model_dir=_model_path("detection/PP-OCRv6_medium_det"),
                                text_recognition_model_dir=_model_path("recognition/PP-OCRv6_medium_rec"),
                                use_doc_orientation_classify=False,
                                use_doc_unwarping=False, use_textline_orientation=False,
-                               device=os.getenv("RADU_PADDLE_DEVICE", "cpu"))
+                               device=device)
+        globals()["_PADDLE_V6_DEVICE"] = device
     results = _PADDLE_V6.predict(image)
     lines = []
     for result in results:
@@ -86,12 +90,13 @@ def _paddleocrv6(image: np.ndarray) -> tuple[str, dict[str, Any]]:
             lines.append({"text": str(text), "confidence": float(scores[i]) if i < len(scores) else None,
                           "bbox": box})
     return "\n".join(x["text"] for x in lines), {"lines": lines, "resource": "local",
-            "model": "PP-OCRv6", "device": os.getenv("RADU_PADDLE_DEVICE", "cpu")}
+            "model": "PP-OCRv6", "device": device}
 
 
 def release_paddleocrv6() -> None:
     """Release PP-OCRv6 GPU allocations before starting the isolated VL worker."""
     model = globals().pop("_PADDLE_V6", None)
+    globals().pop("_PADDLE_V6_DEVICE", None)
     if model is not None:
         close = getattr(model, "close", None)
         if callable(close):
@@ -104,11 +109,11 @@ def release_paddleocrv6() -> None:
         pass
 
 
-def _paddleocrvl16(image: np.ndarray) -> tuple[str, dict[str, Any]]:
+def _paddleocrvl16(image: np.ndarray, device: str | None = None) -> tuple[str, dict[str, Any]]:
     """Run the known working direct spotting path in a killable GPU worker."""
     from PIL import Image
 
-    device = os.getenv("RADU_PADDLE_DEVICE", "cpu")
+    device = device or os.getenv("RADU_PADDLE_DEVICE", "cpu")
     with tempfile.TemporaryDirectory(prefix="radu-vl-") as workdir:
         image_path = Path(workdir) / "input.png"
         result_path = Path(workdir) / "result.json"
@@ -120,17 +125,33 @@ def _paddleocrvl16(image: np.ndarray) -> tuple[str, dict[str, Any]]:
             sys.executable, "-m", "src.evaluation.paddleocr_vl_worker",
             str(image_path), str(result_path), "--device", device,
         ]
-        # Paddle reads allocator flags at import time in the worker. The
-        # naive_best_fit strategy avoids the intermittent BF16 embedding
-        # allocation stall reported with PaddleOCR-VL 1.6.
         worker_env = os.environ.copy()
+        # Paddle reads this during import; setting it in the worker module
+        # also covers direct worker invocation, while this guarantees the
+        # benchmark subprocess inherits the same allocator configuration.
         worker_env.setdefault("FLAGS_allocator_strategy", "naive_best_fit")
+        # Long or visually noisy pages can make spotting decode much longer
+        # than ordinary pages. Preserve the reference 2048-token pass first;
+        # if it exceeds the per-image budget, retry with a bounded decode so
+        # one pathological page does not leave the benchmark without OCR.
         try:
-            completed = subprocess.run(command, timeout=120, check=False, env=worker_env)
+            completed = subprocess.run(command, timeout=60, check=False, env=worker_env)
         except subprocess.TimeoutExpired as error:
-            raise TimeoutError(
-                "PaddleOCR-VL did not finish within 120 seconds; its isolated worker was terminated."
-            ) from error
+            retry_env = os.environ.copy()
+            retry_env.setdefault("FLAGS_allocator_strategy", "naive_best_fit")
+            retry_env["RADU_VL_MAX_NEW_TOKENS"] = "1024"
+            print(
+                "[VL] 60초 내 spotting 미완료; max_new_tokens=1024로 재시도합니다.",
+                flush=True,
+            )
+            try:
+                completed = subprocess.run(
+                    command, timeout=60, check=False, env=retry_env,
+                )
+            except subprocess.TimeoutExpired as retry_error:
+                raise TimeoutError(
+                    "PaddleOCR-VL이 기본 생성과 1024-token 재시도 모두 60초 안에 끝나지 않았습니다."
+                ) from retry_error
         if result_path.is_file():
             result = json.loads(result_path.read_text(encoding="utf-8"))
             if "error" in result:
@@ -172,12 +193,12 @@ def _clova(image: np.ndarray) -> tuple[str, dict[str, Any]]:
     return "\n".join(x["text"] for x in lines), {"lines": lines, "resource": "remote"}
 
 
-def recognize(image: np.ndarray, engine: str) -> tuple[str, dict[str, Any]]:
+def recognize(image: np.ndarray, engine: str, device: str | None = None) -> tuple[str, dict[str, Any]]:
     key = engine.strip().lower().replace("-", "").replace("_", "")
     if key in {"paddleocrv6", "ppocrv6"}:
-        return _paddleocrv6(image)
+        return _paddleocrv6(image, requested_device=device)
     if key in {"paddleocrvl16", "paddleocrvl1.6", "ppocrvl16"}:
-        return _paddleocrvl16(image)
+        return _paddleocrvl16(image, device=device)
     if key == "clova":
         return _clova(image)
     raise ValueError(f"Unsupported OCR engine: {engine}")

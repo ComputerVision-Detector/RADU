@@ -11,9 +11,9 @@ from pathlib import Path
 
 from PIL import Image
 
-# Paddle's GPU auto_growth allocator can stall indefinitely in the BF16
-# embedding kernel used by PaddleOCR-VL 1.6. Set this before importing Paddle.
-# Respect an explicit operator override when diagnosing other allocator issues.
+# Set this before importing Paddle. PaddleOCR-VL can stall during BF16 token
+# embedding with the default auto-growth allocator on otherwise valid inputs.
+# Keep an explicit operator choice intact.
 os.environ.setdefault("FLAGS_allocator_strategy", "naive_best_fit")
 
 
@@ -30,9 +30,6 @@ def _unwrap(value):
 
 def prepare_model(device: str):
     os.environ.setdefault("PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK", "True")
-    # Keep this immediately before the lazy Paddle import as well, in case a
-    # caller imports this worker after changing the process environment.
-    os.environ.setdefault("FLAGS_allocator_strategy", "naive_best_fit")
     import paddle
     from packaging.version import Version
 
@@ -129,12 +126,7 @@ def prepare_model(device: str):
     return model
 
 
-def run(image_path: Path, device: str):
-    print("[VL] Local model loading started", flush=True)
-    init_started = time.perf_counter()
-    model = prepare_model(device)
-    init_seconds = time.perf_counter() - init_started
-    print(f"[VL] Model loaded ({init_seconds:.2f}s); spotting inference started", flush=True)
+def run_one(model, image_path: Path, device: str, init_seconds: float):
     from paddlex.inference.pipelines.paddleocr_vl.uilts import post_process_for_spotting
 
     inference_started = time.perf_counter()
@@ -159,13 +151,26 @@ def run(image_path: Path, device: str):
     metadata = {
         "model": "PaddleOCR-VL-1.6", "device": device,
         "mode": "isolated direct spotting inference",
-        "paddle_allocator_strategy": os.environ.get("FLAGS_allocator_strategy"),
         "max_pixels": 602_112, "max_new_tokens": max_new_tokens,
         "model_initialization_seconds": round(init_seconds, 4),
         "inference_seconds": round(time.perf_counter() - inference_started, 4),
     }
     print(f"[VL] Inference completed ({metadata['inference_seconds']:.2f}s)", flush=True)
     return text, {"spotting_res": spotting}, metadata
+
+
+def run(image_path: Path, device: str):
+    print("[VL] Local model loading started", flush=True)
+    init_started = time.perf_counter()
+    model = prepare_model(device)
+    init_seconds = time.perf_counter() - init_started
+    print(f"[VL] Model loaded ({init_seconds:.2f}s); spotting inference started", flush=True)
+    try:
+        return run_one(model, image_path, device, init_seconds)
+    finally:
+        close = getattr(model, "close", None)
+        if callable(close):
+            close()
 
 
 def main():

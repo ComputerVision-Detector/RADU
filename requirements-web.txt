@@ -1,0 +1,9 @@
+# Lightweight dependencies for the RADU web editor and its core analysis/export API.
+numpy>=1.24
+opencv-python-headless>=4.8
+pillow>=10.0
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9
+requests>=2.31
+cairosvg>=2.7

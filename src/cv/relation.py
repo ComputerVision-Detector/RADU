@@ -79,15 +79,35 @@ def analyze_relations(document: dict[str, Any]) -> dict[str, Any]:
         if degree[box["id"]] == 0:
             warnings.append({"code": "isolated_element", "element_id": box["id"], "message": f"도형 {box['id']}에 연결된 화살표가 없습니다. 원본의 고립 요소인지 확인하세요."})
     # Cycles are flagged for human review; they may be intentional in the source.
-    visiting: set[str] = set(); visited: set[str] = set(); cycle_nodes: set[str] = set()
-    def visit(node: str, stack: list[str]) -> None:
-        if node in visiting:
-            cycle_nodes.update(stack[stack.index(node):]); return
-        if node in visited: return
-        visiting.add(node); stack.append(node)
-        for nxt in graph[node]: visit(nxt, stack)
-        stack.pop(); visiting.remove(node); visited.add(node)
-    for node in graph: visit(node, [])
+    # Use iterative DFS so long user documents cannot exceed Python's recursion
+    # limit. Colors are 1 while a node is on the active path and 2 when done.
+    colors: dict[str, int] = {}
+    cycle_nodes: set[str] = set()
+    for root in list(graph):
+        if colors.get(root) == 2:
+            continue
+        path = [root]
+        path_index = {root: 0}
+        colors[root] = 1
+        stack = [(root, iter(graph.get(root, ())))]
+        while stack:
+            node, neighbors = stack[-1]
+            try:
+                nxt = next(neighbors)
+            except StopIteration:
+                stack.pop()
+                colors[node] = 2
+                path_index.pop(node, None)
+                path.pop()
+                continue
+            color = colors.get(nxt, 0)
+            if color == 1:
+                cycle_nodes.update(path[path_index[nxt]:])
+            elif color == 0:
+                colors[nxt] = 1
+                path_index[nxt] = len(path)
+                path.append(nxt)
+                stack.append((nxt, iter(graph.get(nxt, ()))))
     for node in sorted(cycle_nodes):
         warnings.append({"code": "cycle_review", "element_id": node, "message": f"순환 연결에 포함된 {node}를 원본과 대조하세요."})
     result = dict(document)

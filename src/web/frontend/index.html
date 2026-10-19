@@ -1,50 +1,54 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>RADU · 손그림 순서도 복원</title>
-  <style>
-    :root{font-family:Inter,"Noto Sans KR",system-ui,sans-serif;color:#172033;background:#f4f7fb}*{box-sizing:border-box}body{margin:0}header{background:#10233f;color:white;padding:18px 24px;display:flex;align-items:center;justify-content:space-between}header strong{font-size:20px;letter-spacing:.04em}header span{color:#b8c8df;font-size:13px}.layout{display:grid;grid-template-columns:300px 1fr;gap:18px;padding:18px;max-width:1600px;margin:auto}.panel,.workspace{background:white;border:1px solid #e0e7f0;border-radius:12px;box-shadow:0 3px 12px #22334a0a}.panel{padding:18px;height:max-content}.panel h2{font-size:15px;margin:0 0 12px}.panel p,.hint{font-size:12px;line-height:1.6;color:#63728a}.field{display:grid;gap:7px;margin-bottom:14px}label{font-size:12px;font-weight:650;color:#42516a}input[type=file],select{width:100%;font:inherit;font-size:13px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;padding:12px;border-bottom:1px solid #e8edf4}.btn{border:1px solid #d6dfeb;background:white;color:#26364f;padding:8px 11px;border-radius:8px;cursor:pointer;font-weight:600;font-size:12px}.btn.primary{background:#2563eb;color:white;border-color:#2563eb}.btn:hover{filter:brightness(.96)}.workspace{overflow:hidden}.canvas-wrap{overflow:auto;background:#e9eef5;padding:18px;min-height:560px}.canvas{position:relative;margin:auto;background:#fff;box-shadow:0 2px 10px #18294122;overflow:hidden}.canvas svg{position:absolute;inset:0;width:100%;height:100%;touch-action:none}.node{cursor:move}.node rect{fill:#fff;stroke:#2563eb;stroke-width:2}.node text{font:14px system-ui;fill:#172033;pointer-events:none}.node.selected rect{stroke:#e11d48;stroke-width:3}.node text.editable{pointer-events:all;cursor:text}.edge{stroke:#45556d;stroke-width:2;fill:none;marker-end:url(#arrow)}.edge.review{stroke:#d97706;stroke-dasharray:5 4}.status{padding:10px 14px;font-size:12px;color:#52627a;border-top:1px solid #e8edf4}.warnings{max-height:180px;overflow:auto;padding-left:18px;color:#9a5b00;font-size:12px}.small{font-size:11px;color:#8290a4}.row{display:flex;gap:8px}.row>*{flex:1}@media(max-width:850px){.layout{grid-template-columns:1fr}.panel{order:1}.workspace{order:0}}
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f6f8">
+  <title>RADU · 순서도 복원 작업실</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/static/app.css">
 </head>
 <body>
-<header><strong>RADU</strong><span>Relation Aware Document Understanding</span></header>
-<main class="layout">
-  <aside class="panel">
-    <h2>문서 입력</h2>
-    <div class="field"><label for="image">손그림 순서도 이미지</label><input id="image" type="file" accept="image/*"></div>
-    <div class="field"><label for="ocr">OCR 엔진</label><select id="ocr"><option value="none">OCR 사용 안 함</option><option value="paddleocrv6">PaddleOCR v6 (로컬)</option><option value="paddleocrvl16">PaddleOCR-VL 1.6 (로컬 전체 파이프라인)</option><option value="clova" disabled>CLOVA OCR (보류 · 기본 실행 안 함)</option></select></div>
-    <button class="btn primary" id="analyze">분석 시작</button>
-    <hr style="border:0;border-top:1px solid #e7ecf3;margin:18px 0">
-    <h2>선택 요소</h2><p id="selection">요소를 선택하면 텍스트 수정, 삭제, 연결을 할 수 있습니다.</p>
-    <div class="row"><button class="btn" id="edit">텍스트 수정</button><button class="btn" id="remove">삭제</button></div>
-    <p class="hint">연결 만들기: 도형 하나를 선택한 뒤 ‘연결 시작’, 다음 도형을 선택하세요. 이동은 요소를 드래그합니다.</p>
-    <div class="row"><button class="btn" id="connect">연결 시작</button><button class="btn" id="add">도형 추가</button></div>
-    <hr style="border:0;border-top:1px solid #e7ecf3;margin:18px 0">
-    <h2>확인 필요 항목</h2><ul class="warnings" id="warnings"><li>이미지를 분석하면 검수 항목이 표시됩니다.</li></ul>
-    <div class="field" style="margin-top:14px"><label>결과 내보내기</label><div class="row"><button class="btn export" data-fmt="json">JSON</button><button class="btn export" data-fmt="svg">SVG</button></div><div class="row"><button class="btn export" data-fmt="png">PNG</button><button class="btn export" data-fmt="pdf">PDF</button></div></div>
-    <button class="btn" id="save">편집본 저장</button>
-  </aside>
-  <section class="workspace"><div class="toolbar"><span class="small" id="filename">분석된 문서가 여기에 표시됩니다.</span></div><div class="canvas-wrap"><div class="canvas" id="canvas"><svg id="svg" xmlns="http://www.w3.org/2000/svg"></svg></div></div><div class="status" id="status">이미지를 업로드해 분석을 시작하세요.</div></section>
-</main>
-<script>
-const $=s=>document.querySelector(s);let doc=null,selected=null,connectFrom=null,scale=1,drag=null;
-function msg(text){$('#status').textContent=text}
-$('#analyze').onclick=async()=>{const f=$('#image').files[0];if(!f){msg('먼저 이미지 파일을 선택하세요.');return}msg('이미지 분석 중…');const fd=new FormData();fd.append('file',f);const o=$('#ocr').value;try{const r=await fetch(`/api/analyze?ocr_engine=${encodeURIComponent(o)}`,{method:'POST',body:fd});if(!r.ok)throw new Error(await r.text());doc=await r.json();$('#filename').textContent=f.name;render();msg(`분석 완료 · 요소 ${doc.elements.length}개 · 관계 ${doc.relations.length}개`)}catch(e){msg('분석 실패: '+e.message)}};
-function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function render(){if(!doc)return;const c=$('#canvas'),svg=$('#svg'),w=doc.image?.width||900,h=doc.image?.height||650;c.style.width=w+'px';c.style.height=h+'px';svg.setAttribute('viewBox',`0 0 ${w} ${h}`);let s='<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#45556d"/></marker></defs>';
-for(const r of doc.relations||[]){if(r.type!=='flows_to')continue;const a=doc.elements.find(e=>e.id===r.source),b=doc.elements.find(e=>e.id===r.target);if(!a||!b)continue;const acx=(a.bbox[0]+a.bbox[2])/2,acy=(a.bbox[1]+a.bbox[3])/2,bcx=(b.bbox[0]+b.bbox[2])/2,bcy=(b.bbox[1]+b.bbox[3])/2;s+=`<path class="edge ${r.status==='review'?'review':''}" d="M${acx} ${acy} L${bcx} ${bcy}"/>`}
-for(const e of doc.elements){const [x,y,x2,y2]=e.bbox,ww=Math.max(12,x2-x),hh=Math.max(12,y2-y),active=e.id===selected?'selected':'';if(e.type==='Arrow'){s+=`<g class="node ${active}" data-id="${esc(e.id)}"><rect x="${x}" y="${y}" width="${ww}" height="${hh}" fill="transparent" stroke="#16a34a" stroke-dasharray="4 3"/><text x="${x+3}" y="${y+14}" fill="#15803d">화살표</text></g>`;continue}let label=e.type==='Text'?(e.text||'텍스트'):((e.shape==='decision'?'판단':e.shape==='terminator'?'시작/종료':'도형'));s+=`<g class="node ${active}" data-id="${esc(e.id)}"><rect x="${x}" y="${y}" width="${ww}" height="${hh}" rx="7"/><text x="${x+ww/2}" y="${y+hh/2+5}" text-anchor="middle">${esc(label)}</text></g>`}
-svg.innerHTML=s;svg.querySelectorAll('.node').forEach(n=>{n.onpointerdown=startDrag;n.onclick=event=>{event.stopPropagation();select(n.dataset.id)}});const list=$('#warnings');list.innerHTML=(doc.warnings||[]).map(w=>`<li>${esc(w.message||w.code)}</li>`).join('')||'<li>현재 확인 필요 항목이 없습니다.</li>';updateSelection()}
-function select(id){selected=id;if(connectFrom&&id!==connectFrom){const a=doc.elements.find(e=>e.id===connectFrom),b=doc.elements.find(e=>e.id===id);if(a?.type==='Box'&&b?.type==='Box'){doc.relations.push({id:'manual-'+crypto.randomUUID().slice(0,8),type:'flows_to',source:a.id,target:b.id,direction:'unknown',status:'review'});doc.elements.push({id:'manual-arrow-'+crypto.randomUUID().slice(0,6),type:'Arrow',bbox:[(a.bbox[2]+b.bbox[0])/2,(a.bbox[3]+b.bbox[1])/2,(a.bbox[2]+b.bbox[0])/2+1,(a.bbox[3]+b.bbox[1])/2+1],source:'manual'});connectFrom=null;msg('연결을 추가했습니다. 원본과 연결 방향을 확인하세요.')}else msg('연결은 도형(Box)끼리 만들 수 있습니다.')}render()}
-function updateSelection(){const e=doc?.elements.find(x=>x.id===selected);$('#selection').textContent=e?`${e.id} · ${e.type}${e.text?' · '+e.text:''}`:'요소를 선택하면 텍스트 수정, 삭제, 연결을 할 수 있습니다.'}
-$('#edit').onclick=()=>{const e=doc?.elements.find(x=>x.id===selected);if(!e)return;if(e.type!=='Text'){msg('텍스트 수정은 Text 요소에 사용할 수 있습니다.');return}const v=prompt('텍스트 내용',e.text||'');if(v!==null){e.text=v;render()}};
-$('#remove').onclick=()=>{if(!doc||!selected)return;doc.elements=doc.elements.filter(e=>e.id!==selected);doc.relations=doc.relations.filter(r=>r.source!==selected&&r.target!==selected&&r.arrow_id!==selected);selected=null;render();msg('요소를 삭제했습니다.')};
-$('#connect').onclick=()=>{if(!selected){msg('먼저 시작 도형을 선택하세요.');return}connectFrom=selected;msg('이제 연결할 대상 도형을 선택하세요.')};
-$('#add').onclick=()=>{if(!doc)return;const id='manual-box-'+crypto.randomUUID().slice(0,6),x=doc.image.width/2-65,y=doc.image.height/2-30;doc.elements.push({id,type:'Box',shape:'process',bbox:[x,y,x+130,y+60],confidence:1,source:'manual'});selected=id;render();msg('도형을 추가했습니다. 드래그해 배치하세요.')};
-function startDrag(ev){const id=ev.currentTarget.dataset.id;select(id);const e=doc.elements.find(x=>x.id===id);drag={id,x:ev.clientX,y:ev.clientY,box:[...e.bbox]};ev.currentTarget.setPointerCapture?.(ev.pointerId);ev.preventDefault()}
-window.onpointermove=ev=>{if(!drag)return;const e=doc.elements.find(x=>x.id===drag.id);const rect=$('#svg').getBoundingClientRect();const dx=(ev.clientX-drag.x)*(doc.image.width/rect.width),dy=(ev.clientY-drag.y)*(doc.image.height/rect.height);e.bbox=[drag.box[0]+dx,drag.box[1]+dy,drag.box[2]+dx,drag.box[3]+dy];render()};window.onpointerup=()=>{drag=null};
-async function download(fmt){if(!doc)return msg('먼저 이미지를 분석하세요.');try{const r=await fetch('/api/export/'+fmt,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(doc)});if(!r.ok)throw new Error(await r.text());const blob=await r.blob(),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='radu-flowchart.'+fmt;a.click();URL.revokeObjectURL(a.href);msg(fmt.toUpperCase()+' 파일을 내보냈습니다.')}catch(e){msg('내보내기 실패: '+e.message)}}
-document.querySelectorAll('.export').forEach(b=>b.onclick=()=>download(b.dataset.fmt));$('#save').onclick=async()=>{if(!doc)return;const r=await fetch('/api/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(doc)});const x=await r.json();msg(x.saved?'편집본을 서버에 저장했습니다.':'저장에 실패했습니다.')};
-</script>
-</body></html>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">R</span><div><strong>RADU</strong><small>FLOWCHART RESTORATION</small></div></div>
+      <div class="project"><input id="project-name" value="새 순서도 프로젝트" aria-label="프로젝트 이름"><small id="save-state">저장되지 않은 문서</small></div>
+      <div class="top-actions"><button class="button" id="open-json">JSON 열기</button><input id="json-file" class="sr-only" type="file" accept="application/json,.json"><button class="button" id="open-sessions">문서 열기</button><button class="button" id="save">저장</button><button class="button primary" id="export-menu">내보내기⌄</button></div>
+    </header>
+    <main class="workspace">
+      <aside class="sidebar">
+        <section class="panel-section">
+          <h2 class="section-title">PROJECT <span>새로 시작</span></h2>
+          <div class="button-row start-actions"><button class="button primary" id="new-blank">빈 캔버스</button><button class="button" id="new-from-image">이미지 분석</button></div><button class="button full template-button" id="templates">순서도 템플릿</button>
+          <h2 class="section-title source-title">SOURCE IMAGE <span>문서 입력</span></h2>
+          <label class="upload-box" id="upload-box" for="image-file"><span class="upload-icon">⇧</span><span class="upload-meta"><b id="upload-name">순서도 이미지를 선택하세요</b><small id="upload-hint">PNG, JPG, WEBP · 최대 20 MB</small></span></label>
+          <input id="image-file" class="sr-only" type="file" accept="image/png,image/jpeg,image/webp,image/bmp,image/tiff">
+          <div class="button-row"><button class="button" id="replace-image">이미지 선택</button><button class="button primary" id="analyze">분석 시작</button></div><button class="button full retry-analysis" id="retry-analysis" hidden>분석 다시 시도</button>
+          <label class="field"><span>텍스트 인식 엔진</span><select id="ocr-engine" class="control"><option value="none">OCR 없이 요소 분석</option><option value="paddleocrv6">PaddleOCR v6</option><option value="paddleocrvl16">PaddleOCR-VL 1.6</option><option value="clova">CLOVA OCR (API 설정 필요)</option></select></label>
+          <label class="field"><span>추론 장치</span><select id="device" class="control"><option value="cpu">CPU</option><option value="gpu:0">GPU 0</option><option value="gpu:1">GPU 1</option></select></label>
+          <p class="hint">자동 검출은 후보 결과입니다. 텍스트·도형·화살표와 연결 방향을 원본에서 확인해 주세요.</p>
+        </section>
+        <section class="panel-section">
+          <h2 class="section-title">ANALYSIS SUMMARY <span id="analysis-state">대기 중</span></h2>
+          <div class="stats"><div><b id="count-text">0</b><small>텍스트</small></div><div><b id="count-shape">0</b><small>도형</small></div><div><b id="count-arrow">0</b><small>화살표</small></div><div><b id="count-relation">0</b><small>관계</small></div></div>
+          <div class="warning-summary">⚑ 검토할 항목 <b id="warning-count">0</b></div>
+        </section>
+        <section class="element-section"><h2 class="section-title">ELEMENTS <span id="element-heading">0개</span></h2><select id="element-filter" class="control element-filter" aria-label="요소 종류 필터"><option value="all">모든 요소</option><option value="Text">텍스트</option><option value="Box">도형</option><option value="Arrow">화살표</option></select><div id="element-list" class="empty-list">분석된 요소가 여기에 표시됩니다.</div></section>
+        <div class="sidebar-footer"><button class="button full" id="add-process">＋ 도형 추가</button></div>
+      </aside>
+      <section class="center">
+        <div class="toolbar"><div class="tools" role="toolbar" aria-label="편집 도구">
+          <button class="tool active" data-tool="select" title="선택 및 이동 (V)">↖</button><button class="tool" data-tool="pan" title="캔버스 이동 (Space 드래그)">✋</button><button class="tool" id="grid-snap" title="10픽셀 격자 맞춤">▦</button><i></i><button class="tool" data-tool="text" title="텍스트 추가">T</button><select id="shape-kind" class="tool-select" aria-label="순서도 도형 종류"><option value="process">처리</option><option value="terminator">시작·종료</option><option value="decision">판단</option><option value="input_output">입력·출력</option><option value="document">문서</option><option value="database">저장 데이터</option><option value="predefined_process">서브프로세스</option><option value="manual_input">수동 입력</option><option value="preparation">준비</option><option value="connector">연결자</option><option value="delay">지연</option></select><button class="tool" data-tool="shape" data-shape-tool title="선택한 도형을 그립니다">□</button><button class="tool" data-tool="arrow" title="화살표 연결 그리기">↗</button><button class="tool" data-tool="link" title="두 도형 연결">⛓</button><button class="tool" data-tool="style" title="서식 복사: 원본 요소를 클릭한 다음 대상 요소를 클릭">▧</button><i></i><button class="tool" id="undo" title="실행 취소 (Ctrl+Z)">↶</button><button class="tool" id="redo" title="다시 실행 (Ctrl+Shift+Z)">↷</button><button class="tool" id="arrange" title="다중 요소 정렬">☷</button>
+        </div><div class="view-tools"><button class="button view-mode" id="view-mode" title="원본·오버레이·복원·나란히 비교 보기 전환">오버레이</button><button class="tool" id="zoom-out" title="축소">−</button><span id="zoom-label">맞춤</span><button class="tool" id="zoom-in" title="확대">＋</button><i></i><button class="tool" id="fit" title="화면에 맞춤">⛶</button></div></div>
+        <div class="canvas-scroll" id="canvas-scroll"><div class="canvas-card" id="canvas-card"><img id="source-image" alt="순서도 원본" hidden><svg id="diagram" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="검출 결과 캔버스"></svg><div id="empty-stage" class="empty-stage"><div><span>▧</span><h2>순서도 복원 작업실</h2><p>이미지를 분석하면 텍스트, 도형, 화살표와 관계를 원본 위에서 검수하고 편집할 수 있습니다.</p></div></div></div></div>
+        <footer class="stage-status"><span><i class="status-dot" id="status-dot"></i><span id="status-text" role="status" aria-live="polite">이미지를 업로드해 분석을 시작하세요.</span></span><span id="dimension-label">캔버스 준비 중</span></footer>
+      </section>
+      <aside class="inspector"><nav class="tabs"><button class="active" data-tab="properties">요소 속성</button><button data-tab="relations">관계</button><button data-tab="warnings">검토</button></nav><div class="inspector-content" id="inspector-content"></div><div class="inspector-actions"><button class="button danger" id="delete-selected">삭제</button><button class="button primary" id="apply">변경 적용</button></div></aside>
+    </main>
+  </div>
+  <div id="toast-root" aria-live="polite"></div><div id="modal-root"></div>
+  <script src="/static/editor-model.js" defer></script>
+  <script src="/static/editor-tools.js" defer></script>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

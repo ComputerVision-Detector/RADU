@@ -192,7 +192,7 @@ def run_benchmark(dataset_id: str=DEFAULT_DATASET, split: str|None=None, count: 
                 faulthandler.dump_traceback_later(30,repeat=True)
                 text,details=recognize(item["image_array"],engine)
                 faulthandler.cancel_dump_traceback_later()
-                latency=time.perf_counter()-started
+                latency=float(details.get("metadata",{}).get("inference_seconds",time.perf_counter()-started))
                 annotated=annotate_result(item["image"],engine,text,details,latency,
                                           inference_size=item["inference_size"])
                 error=None
