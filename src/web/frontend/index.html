@@ -21,8 +21,8 @@
           <h2 class="section-title">PROJECT <span>새로 시작</span></h2>
           <div class="button-row start-actions"><button class="button primary" id="new-blank">빈 캔버스</button><button class="button" id="new-from-image">이미지 분석</button></div><button class="button full template-button" id="templates">순서도 템플릿</button>
           <h2 class="section-title source-title">SOURCE IMAGE <span>문서 입력</span></h2>
-          <label class="upload-box" id="upload-box" for="image-file"><span class="upload-icon">⇧</span><span class="upload-meta"><b id="upload-name">순서도 이미지를 선택하세요</b><small id="upload-hint">PNG, JPG, WEBP · 최대 20 MB</small></span></label>
-          <input id="image-file" class="sr-only" type="file" accept="image/png,image/jpeg,image/webp,image/bmp,image/tiff">
+          <label class="upload-box" id="upload-box" for="image-file"><span class="upload-icon">⇧</span><span class="upload-meta"><b id="upload-name">순서도 이미지를 선택하세요</b><small id="upload-hint">SVG 및 래스터 이미지 · 파일 크기는 저장 공간과 메모리에 따라 제한</small></span></label>
+          <input id="image-file" class="sr-only" type="file" accept="image/*,.svg,.heic,.heif,.avif,.tif,.tiff,.bmp,.dib,.gif,.jfif,.jpe,.jp2,.j2k,.tga,.pcx,.psd,.ico,.cur,.ppm,.pgm,.pbm,.pnm,.qoi">
           <div class="button-row"><button class="button" id="replace-image">이미지 선택</button><button class="button primary" id="analyze">이미지 분석</button></div><button class="button full" id="analyze-relations" disabled>관계 분석 실행</button><button class="button full retry-analysis" id="retry-analysis" hidden>분석 다시 시도</button>
           <label class="field"><span>텍스트 인식 엔진</span><select id="ocr-engine" class="control"><option value="none">OCR 없이 요소 분석</option><option value="paddleocrv6">PaddleOCR v6</option><option value="paddleocrvl16">PaddleOCR-VL 1.6</option><option value="clova">CLOVA OCR (API 설정 필요)</option></select></label>
           <label class="field"><span>추론 장치</span><select id="device" class="control"><option value="cpu">CPU</option><option value="gpu:0">GPU 0</option><option value="gpu:1">GPU 1</option></select></label>

@@ -15,19 +15,34 @@ import subprocess
 import sys
 import tempfile
 import threading
+import xml.etree.ElementTree as ElementTree
 import urllib.parse
 from datetime import datetime, timezone
 from email.parser import BytesParser
 from pathlib import Path
 from uuid import uuid4
+from defusedxml.common import DefusedXmlException
 
 import cv2
 import numpy as np
+from defusedxml import ElementTree as SafeElementTree
 from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.responses import HTMLResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from starlette.background import BackgroundTask
 from PIL import Image, ImageOps, UnidentifiedImageError
+
+try:
+    import pillow_avif  # noqa: F401
+except ImportError:
+    pass
+
+try:
+    import pillow_heif
+except ImportError:
+    pass
+else:
+    pillow_heif.register_heif_opener()
 
 from src.cv.detector import analyze_image
 from src.cv.exporter import export_document
@@ -43,12 +58,13 @@ VERSIONS = OUT / "versions"
 VERSIONS.mkdir(parents=True, exist_ok=True)
 EXPORTS = ROOT / "data" / "processed" / "exports"
 EXPORTS.mkdir(parents=True, exist_ok=True)
-MAX_UPLOAD_BYTES = 20 * 1024 * 1024
-MAX_IMAGE_PIXELS = 40_000_000
+MAX_EMBEDDED_IMAGE_PIXELS = 40_000_000
 ANALYSIS_TIMEOUT_SECONDS = 900
 SESSION_ID_RE = re.compile(r"^[a-f0-9]{32}$")
 SUPPORTED_ENGINES = {"none", "paddleocrv6", "paddleocrvl16", "clova"}
 INFERENCE_LOCK = threading.Lock()
+IMAGE_DECODE_LOCK = threading.Lock()
+Image.MAX_IMAGE_PIXELS = None
 
 app = FastAPI(
     title="RADU",
@@ -94,6 +110,59 @@ def _atomic_write(path: Path, payload: bytes) -> None:
             Path(temp_name).unlink(missing_ok=True)
 
 
+def _normalize_upload_image(payload: bytes) -> tuple[bytes, str]:
+    if payload[:16].lstrip().startswith(b"%PDF-"):
+        raise HTTPException(415, "PDF 입력은 아직 지원하지 않습니다. PDF 페이지를 SVG 또는 래스터 이미지로 내보내 주세요.")
+    stripped = payload[:4096].lstrip()
+    if stripped.startswith(b"<"):
+        try:
+            root = SafeElementTree.fromstring(payload)
+        except (DefusedXmlException, ElementTree.ParseError) as exc:
+            raise HTTPException(400, "SVG 파일이 올바른 XML 문서가 아닙니다.") from exc
+        root_name = root.tag.rsplit("}", 1)[-1] if isinstance(root.tag, str) else ""
+        if root_name.lower() != "svg":
+            raise HTTPException(415, "지원 형식은 SVG 또는 래스터 이미지입니다. PDF는 아직 지원하지 않습니다.")
+        try:
+            import cairosvg
+            return cairosvg.svg2png(bytestring=payload), "png"
+        except (ImportError, OSError) as exc:
+            raise HTTPException(
+                503,
+                "SVG 변환을 사용할 수 없습니다. CairoSVG와 시스템 Cairo 라이브러리를 설치해 주세요.",
+            ) from exc
+        except (ValueError, RuntimeError, TypeError) as exc:
+            raise HTTPException(400, f"SVG를 PNG 이미지로 변환하지 못했습니다: {exc}") from exc
+
+    try:
+        with IMAGE_DECODE_LOCK:
+            with Image.open(io.BytesIO(payload)) as uploaded:
+                original_format = uploaded.format
+                if not original_format or original_format in {"PDF", "EPS", "PS", "MPEG"}:
+                    raise HTTPException(
+                        415,
+                        f"지원하지 않는 이미지 형식입니다: {original_format or 'unknown'}. SVG 또는 래스터 이미지를 사용하세요. PDF는 아직 지원하지 않습니다.",
+                    )
+                oriented = ImageOps.exif_transpose(uploaded)
+                if "A" in oriented.getbands():
+                    rgba = oriented.convert("RGBA")
+                    image = Image.new("RGB", rgba.size, "white")
+                    image.paste(rgba, mask=rgba.getchannel("A"))
+                else:
+                    image = oriented.convert("RGB")
+                if original_format in {"JPEG", "PNG", "WEBP", "BMP"}:
+                    extension = {"JPEG": "jpg", "PNG": "png", "WEBP": "webp", "BMP": "bmp"}[original_format]
+                    return payload, extension
+                normalized = io.BytesIO()
+                image.save(normalized, format="PNG", optimize=True)
+                return normalized.getvalue(), "png"
+    except HTTPException:
+        raise
+    except (UnidentifiedImageError, OSError, ValueError, Image.DecompressionBombError) as exc:
+        raise HTTPException(
+            400, "서버에서 읽을 수 없는 이미지입니다. SVG 또는 지원되는 래스터 이미지로 다시 저장해 주세요.",
+        ) from exc
+
+
 def _validate_document(document: object, *, page: bool = False) -> dict:
     if not isinstance(document, dict):
         raise HTTPException(422, "Document body must be a JSON object")
@@ -104,9 +173,8 @@ def _validate_document(document: object, *, page: bool = False) -> dict:
         raise HTTPException(422, "Document needs image, elements, and relations fields")
     width, height = image.get("width"), image.get("height")
     if (not isinstance(width, (int, float)) or not isinstance(height, (int, float))
-            or not math.isfinite(width) or not math.isfinite(height) or width <= 0 or height <= 0
-            or width * height > MAX_IMAGE_PIXELS or width > 40_000 or height > 40_000):
-        raise HTTPException(422, "Document image dimensions must be positive and within the 40 MP limit")
+            or not math.isfinite(width) or not math.isfinite(height) or width <= 0 or height <= 0):
+        raise HTTPException(422, "Document image dimensions must be positive finite numbers")
     ids = set()
     element_by_id = {}
     for element in elements:
@@ -173,7 +241,7 @@ def _validate_document(document: object, *, page: bool = False) -> dict:
             try:
                 raw_image = base64.b64decode(image_data.partition(",")[2], validate=True)
                 with Image.open(io.BytesIO(raw_image)) as embedded:
-                    if embedded.width * embedded.height > MAX_IMAGE_PIXELS:
+                    if embedded.width * embedded.height > MAX_EMBEDDED_IMAGE_PIXELS:
                         raise HTTPException(422, f"Embedded image is too large for {element_id}")
                     expected = image_data[11:image_data.index(";base64,")].upper()
                     if embedded.format != expected:
@@ -391,17 +459,9 @@ async def analyze(request: Request, ocr_engine: str = Query("none"),
         raise HTTPException(400, f"Unsupported OCR engine: {engine}")
     if device != "cpu" and not re.fullmatch(r"gpu(?::\d+)?", device):
         raise HTTPException(400, "Paddle device must be cpu, gpu, or gpu:<index>")
-    # FastAPI's UploadFile parser uses AnyIO's worker pool. Read a capped body
-    # instead so the API stays independent of model runtime thread pools. Raw
-    # image uploads are preferred; multipart is retained for older clients.
+    # Raw image uploads are preferred; multipart is retained for older clients.
     content_type = request.headers.get("content-type", "application/octet-stream")
-    body_limit = MAX_UPLOAD_BYTES + (128 * 1024 if content_type.startswith("multipart/form-data") else 1)
-    content_length = request.headers.get("content-length")
-    if content_length and content_length.isdigit() and int(content_length) > body_limit:
-        raise HTTPException(413, "이미지 파일은 20 MB 이하여야 합니다.")
     payload = await request.body()
-    if len(payload) > body_limit:
-        raise HTTPException(413, "이미지 파일은 20 MB 이하여야 합니다.")
     original_name = urllib.parse.unquote(request.headers.get("x-file-name", ""))
     if content_type.startswith("multipart/form-data"):
         try:
@@ -417,30 +477,9 @@ async def analyze(request: Request, ocr_engine: str = Query("none"),
     original_name = Path(original_name or "upload-image").name
     if not payload:
         raise HTTPException(400, "업로드한 파일이 비어 있습니다.")
-    if len(payload) > MAX_UPLOAD_BYTES:
-        raise HTTPException(413, "이미지 파일은 20 MB 이하여야 합니다.")
-    try:
-        with Image.open(io.BytesIO(payload)) as uploaded:
-            if uploaded.width * uploaded.height > MAX_IMAGE_PIXELS:
-                raise HTTPException(413, "이미지 크기는 4천만 픽셀 이하여야 합니다.")
-            original_format = uploaded.format or "JPEG"
-            oriented = ImageOps.exif_transpose(uploaded)
-            if "A" in oriented.getbands():
-                rgba = oriented.convert("RGBA")
-                oriented_rgb = Image.new("RGB", rgba.size, "white")
-                oriented_rgb.paste(rgba, mask=rgba.getchannel("A"))
-                oriented = oriented_rgb
-            else:
-                oriented = oriented.convert("RGB")
-    except HTTPException:
-        raise
-    except (UnidentifiedImageError, OSError, ValueError) as exc:
-        raise HTTPException(400, "읽을 수 있는 이미지 파일을 업로드해 주세요.") from exc
+    payload, source_ext = _normalize_upload_image(payload)
 
     session_id = uuid4().hex
-    source_ext = {"JPEG": "jpg", "PNG": "png", "WEBP": "webp", "BMP": "bmp", "TIFF": "tiff"}.get(original_format)
-    if not source_ext:
-        raise HTTPException(400, f"지원하지 않는 이미지 형식입니다: {original_format}")
     source_path = OUT / f"{session_id}.source.{source_ext}"
     try:
         _atomic_write(source_path, payload)

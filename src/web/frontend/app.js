@@ -314,7 +314,9 @@
       "순서도 이미지를 선택하세요";
     $("#upload-hint").textContent = state.file
       ? (state.file.size / 1048576).toFixed(2) + " MB · " +
-        state.file.dimensions.width + " × " + state.file.dimensions.height
+        (state.file.dimensions
+          ? state.file.dimensions.width + " × " + state.file.dimensions.height
+          : "미리보기는 분석 후 제공")
       : state.doc && state.doc.image.source_file
       ? "원본·전처리 이미지 비교 가능"
       : state.doc
@@ -1997,38 +1999,35 @@
   }
   async function chooseFile(file) {
     if (!file) return;
-    if (!["image/jpeg", "image/png", "image/webp", "image/bmp", "image/tiff"].includes(file.type)) {
-      toast("JPG, PNG, WEBP, BMP, TIFF 이미지를 선택해 주세요.", true);
+    if (!file.type.startsWith("image/") &&
+        !/\.(?:svg|heic|heif|avif|tif|tiff|bmp|dib|gif|jfif|jpe|jp2|j2k|tga|pcx|psd|ico|cur|ppm|pgm|pbm|pnm|qoi)$/i.test(file.name)) {
+      toast("SVG 또는 지원되는 래스터 이미지 파일을 선택해 주세요. PDF는 아직 지원하지 않습니다.", true);
       return;
     }
-    if (file.size > 20 * 1024 * 1024) {
-      toast("이미지는 20 MB 이하만 업로드할 수 있습니다.", true);
-      return;
-    }
-    const url = URL.createObjectURL(file);
+    let url = URL.createObjectURL(file);
+    let fileDimensions = null;
     try {
-      const img = new Image();
-      img.src = url;
-      await img.decode();
-      if (img.naturalWidth > 40000 || img.naturalHeight > 40000 ||
-          img.naturalWidth * img.naturalHeight > 40000000) {
-        throw new Error("이미지는 각 변 4만 픽셀, 전체 4천만 픽셀 이하여야 합니다.");
+      try {
+        const img = new Image();
+        img.src = url;
+        await img.decode();
+        fileDimensions = { width: img.naturalWidth, height: img.naturalHeight };
+      } catch (error) {
+        URL.revokeObjectURL(url);
+        url = null;
       }
       if (
         state.dirty && state.doc &&
         !confirm("저장하지 않은 변경사항이 있습니다. 새 이미지를 불러올까요?")
       ) {
-        URL.revokeObjectURL(url);
+        if (url) URL.revokeObjectURL(url);
         return;
       }
       if (state.previewUrl) URL.revokeObjectURL(state.previewUrl);
       state.previewUrl = url;
       state.viewMode = "overlay";
       state.file = file;
-      state.file.dimensions = {
-        width: img.naturalWidth,
-        height: img.naturalHeight,
-      };
+      state.file.dimensions = fileDimensions;
       state.doc = null;
       beginDocumentReplacement();
       state.selected = null;
@@ -2038,9 +2037,11 @@
       dirty(true);
       render();
       fitCanvas();
-      status("이미지가 준비됐습니다. 분석 엔진을 선택하세요.");
+      status(fileDimensions
+        ? "이미지가 준비됐습니다. 분석 엔진을 선택하세요."
+        : "브라우저 미리보기는 지원하지 않지만, 서버 디코딩을 위해 업로드할 수 있습니다.");
     } catch (e) {
-      URL.revokeObjectURL(url);
+      if (url) URL.revokeObjectURL(url);
       toast(e.message || "이미지를 열 수 없습니다.", true);
     }
   }
@@ -2156,9 +2157,7 @@
     ) throw new Error("JSON에 image, elements, relations 필드가 필요합니다.");
     if (
       !Number.isFinite(doc.image.width) || !Number.isFinite(doc.image.height) ||
-      doc.image.width <= 0 || doc.image.height <= 0 ||
-      doc.image.width > 40000 || doc.image.height > 40000 ||
-      doc.image.width * doc.image.height > 40000000
+      doc.image.width <= 0 || doc.image.height <= 0
     ) throw new Error("JSON의 캔버스 크기가 올바르지 않습니다.");
     const ids = new Set();
     for (const e of doc.elements) {
