@@ -40,6 +40,13 @@ def prepare_model(device: str):
     ):
         raise RuntimeError(f"Requested Paddle device {device} is unavailable; refusing CPU fallback")
     paddle.set_device(device)
+    gpu_count = paddle.device.cuda.device_count() if paddle.is_compiled_with_cuda() else 0
+    print(
+        f"[VL] runtime paddle={paddle.__version__} "
+        f"cuda_build={paddle.is_compiled_with_cuda()} "
+        f"gpu_count={gpu_count} active_device={paddle.get_device()}",
+        flush=True,
+    )
     if device.startswith("gpu"):
         import subprocess
         gpu_index = device.partition(":")[2] or "0"
@@ -148,6 +155,13 @@ def run_one(model, image_path: Path, device: str, init_seconds: float):
     with Image.open(image_path) as image:
         width, height = image.size
     text, spotting = post_process_for_spotting(result["result"], width, height)
+    texts = spotting.get("rec_texts", []) if isinstance(spotting, dict) else []
+    polygons = spotting.get("rec_polys", []) if isinstance(spotting, dict) else []
+    print(
+        f"[VL] spotting_result image={width}x{height} "
+        f"text_lines={len(texts)} polygons={len(polygons)}",
+        flush=True,
+    )
     metadata = {
         "model": "PaddleOCR-VL-1.6", "device": device,
         "mode": "isolated direct spotting inference",

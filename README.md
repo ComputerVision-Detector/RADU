@@ -31,7 +31,7 @@ uvicorn src.web.backend.app:app --reload
 - **구성요소 검출:** 학습된 Ultralytics 가중치가 있다면 `pip install ultralytics` 후 `RADU_DETECTOR_WEIGHTS=/path/to/weights.pt`를 지정합니다. 클래스 이름은 `text`, `arrow`, `box` 또는 `process`, `decision`, `terminator`를 포함해야 합니다. 가중치가 없으면 OpenCV로 후보 상자를 생성합니다. 이 후보는 학습·평가된 객체 검출기가 아니므로 결과에 검수 경고가 붙습니다.
 - **현재 기본 비교 대상은 두 로컬 모델입니다:** PaddleOCR v6 (PP-OCRv6), PaddleOCR-VL 1.6. CLOVA 어댑터는 코드에 유지하지만 API 비용 때문에 기본 벤치마크와 웹 선택에서 보류합니다. 나중에 비교할 때만 `engines=("clova", "paddleocrv6", "paddleocrvl16")`로 명시해 실행합니다. CLOVA 요청 오류도 샘플 결과에 기록하고 다음 엔진으로 진행합니다.
 - **PaddleOCR v6:** `PaddleOCR(ocr_version="PP-OCRv6")` 로컬 OCR 파이프라인입니다. PaddleOCR/PaddlePaddle 설치와 CPU/GPU 호환성을 맞춰야 합니다.
-- **PaddleOCR-VL 1.6:** 레이아웃 분석과 VLM 인식을 함께 수행하는 전체 `PaddleOCRVL(pipeline_version="v1.6")` 파이프라인으로 비교합니다. VLM만 단독 호출하는 방식과 구분합니다. CPU/GPU, 모델 저장공간과 백엔드 구성이 v6보다 더 큰 영향을 주므로 벤치마크 자원 조건과 함께 결과를 검토해야 합니다.
+- **PaddleOCR-VL 1.6:** 현재 worker는 `PaddleOCR-VL-1.6-0.9B` 모델에 `Spotting:` 질의를 보내 텍스트와 위치를 추출합니다. 웹에서 이 엔진을 선택하면 결과만 오버레이하고 OpenCV 구성요소 검출 및 RADU 관계 복원은 실행하지 않습니다. CPU/GPU, 모델 저장공간과 백엔드 구성이 v6보다 더 큰 영향을 주므로 벤치마크 자원 조건과 함께 결과를 검토해야 합니다.
 - **CLOVA OCR:** CLOVA OCR의 Invoke URL과 Secret을 `CLOVA_OCR_INVOKE_URL`, `CLOVA_OCR_SECRET` 환경 변수로 설정한 뒤 선택합니다. Secret은 코드나 저장소에 기록하지 마세요.
 - **Qwen2.5-VL:** `python -m src.evaluation.run_qwen_vlm IMAGE --model MODEL_ID_OR_LOCAL_PATH --output OUTPUT.json`으로 실행합니다. 모델 다운로드·실행에 적절한 GPU 메모리와 Hugging Face 접근이 필요할 수 있습니다.
 
@@ -74,7 +74,7 @@ report = evaluate(prediction, ground_truth, iou_threshold=0.5)
 
 ## 현재 프로토타입의 범위
 
-OpenCV 전처리는 문서 사각형이 두드러지면 원근을 펴고, 약한 기울기와 조명을 보정합니다. OCR 엔진을 선택하면 그 엔진이 반환한 텍스트·위치만 텍스트 요소로 사용하고, RADU가 별도로 도형·화살표 후보를 검출해 요소 간 포함·흐름 관계를 복원합니다. PaddleOCR-VL 1.6의 현재 `Spotting:` 호출은 텍스트 결과를 제공하며, 순서도 도형·화살표 후보는 RADU 검출 단계가 담당합니다. 학습된 검출 가중치가 없으면 도형/화살표 후보는 OpenCV 휴리스틱이므로 실제 정확도는 라벨링 데이터로 측정해야 합니다. 화살표 시작·끝점도 신뢰할 후보를 찾지 못하면 검수가 필요합니다. RADU의 관계 복원 성능이 다른 OCR 구성보다 나은지는 같은 데이터와 기준으로 비교 평가해야 합니다.
+OpenCV 전처리는 문서 사각형이 두드러지면 원근을 펴고, 약한 기울기와 조명을 보정합니다. PaddleOCR-VL 1.6을 선택하면 현재는 `Spotting:` 경로의 텍스트·위치만 오버레이하며 OpenCV 구성요소 검출과 RADU 관계 복원은 실행하지 않습니다. 비교를 위한 `RADU 복원` 보기는 미실행 상태를 표시합니다. 다른 OCR 엔진이나 OCR 미사용 분석은 기존 검출 경로를 유지합니다. PaddleOCR-VL 분석 시 서버 CMD에 활성 장치, 모델, 입력 크기, 텍스트 줄 수, 유효 박스 수 및 오류 원인을 출력합니다.
 
 웹 작업실은 빈 캔버스에서 순서도를 직접 만들거나, 원본 이미지 위에 분석 결과를 겹쳐 검수하는 두 작업 흐름을 지원합니다. 빈 캔버스에서는 텍스트·처리·판단·시작/종료 도형과 화살표를 배치하고, 두 도형을 연결해 흐름을 구성할 수 있습니다. 이미지 작업은 업로드한 원본을 보존하고 방향 보정·전처리 후 OCR 엔진과 CPU/GPU를 선택해 분석합니다. OCR을 실행하면 `OCR 기준` 보기에서 인식된 텍스트와 위치만, `RADU 복원` 보기에서 같은 OCR 결과에 RADU가 검출한 도형·화살표 및 관계를 더한 결과를 따로 비교할 수 있습니다. 원본·전처리 오버레이·복원·나란히 보기 전환도 유지됩니다. 선택한 요소는 드래그로 이동하고 여덟 핸들로 크기를 조정하며, 도형 이동·크기 변경에 맞춰 연결 화살표의 끝점도 함께 갱신됩니다. Shift/Control 클릭과 빈 영역 드래그로 여러 요소를 선택하고 함께 이동할 수 있습니다. 복사·붙여넣기·복제, 정렬 및 균등 배치, 10픽셀 격자 맞춤도 제공합니다. 텍스트는 더블클릭 또는 속성 패널에서 수정할 수 있고, 종류 필터, 스페이스바 캔버스 이동, 관계의 연결 대상 및 확인·보류 상태 편집, 실행 취소/다시 실행, 화살표 키 미세 이동, 확대/축소와 화면 맞춤도 지원합니다. JSON 파일을 다시 열어 편집할 수 있습니다.
 

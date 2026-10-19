@@ -378,8 +378,12 @@ async def _run_analysis_worker(image_path: Path, result_path: Path, engine: str,
                 if asyncio.get_running_loop().time() >= deadline:
                     process.kill()
                     process.wait()
+                    log_stream.flush()
+                    output = log_path.read_text(encoding="utf-8", errors="replace")[-4000:]
+                    if output:
+                        print(f"[RADU worker:{session_id}] {output.rstrip()}", flush=True)
                     raise TimeoutError(
-                        f"문서 분석이 {ANALYSIS_TIMEOUT_SECONDS}초 안에 끝나지 않아 작업을 종료했습니다."
+                        f"문서 분석이 {ANALYSIS_TIMEOUT_SECONDS}초 안에 끝나지 않아 작업을 종료했습니다. {output}"
                     )
                 await asyncio.sleep(.1)
         except asyncio.CancelledError:
@@ -389,6 +393,8 @@ async def _run_analysis_worker(image_path: Path, result_path: Path, engine: str,
             raise
         return_code = process.returncode
     output = log_path.read_text(encoding="utf-8", errors="replace")[-4000:]
+    if output:
+        print(f"[RADU worker:{session_id}] {output.rstrip()}", flush=True)
     if return_code != 0:
         raise RuntimeError(f"분석 작업 프로세스가 종료 코드 {return_code}로 실패했습니다. {output}")
     try:
@@ -400,12 +406,32 @@ async def _run_analysis_worker(image_path: Path, result_path: Path, engine: str,
 def _analyze(image: np.ndarray, engine: str, device: str, session_id: str,
              source_path: Path, original_name: str) -> dict:
     processed = preprocess_image(image)
+    image_height, image_width = processed.shape[:2]
+    vl_only = engine == "paddleocrvl16"
+    print(
+        f"[RADU] analysis_start session={session_id} engine={engine} "
+        f"requested_device={device} input={image_width}x{image_height}",
+        flush=True,
+    )
     ok, encoded_processed = cv2.imencode(".jpg", processed, [cv2.IMWRITE_JPEG_QUALITY, 95])
     if not ok:
         raise RuntimeError("전처리 이미지를 저장하지 못했습니다.")
     processed_path = OUT / f"{session_id}.processed.jpg"
     _atomic_write(processed_path, encoded_processed.tobytes())
-    document = analyze_image(processed, preprocess=False, include_text=engine == "none")
+    if vl_only:
+        document = {
+            "version": "1.0",
+            "image": {"width": image_width, "height": image_height},
+            "elements": [],
+            "relations": [],
+            "warnings": [{
+                "code": "radu_not_run",
+                "message": "PaddleOCR-VL 비교 모드입니다. RADU 검출·관계 복원은 실행하지 않았습니다.",
+            }],
+            "radu": {"status": "not_run"},
+        }
+    else:
+        document = analyze_image(processed, preprocess=False, include_text=engine == "none")
     warnings = list(document.get("warnings", []))
     if engine != "none":
         try:
@@ -431,7 +457,6 @@ def _analyze(image: np.ndarray, engine: str, device: str, session_id: str,
                 if len(bbox) != 4 or any(not isinstance(value, (int, float)) or not math.isfinite(value)
                                          for value in bbox):
                     continue
-                image_height, image_width = processed.shape[:2]
                 bbox = [max(0, min(image_width, float(bbox[0]))),
                         max(0, min(image_height, float(bbox[1]))),
                         max(0, min(image_width, float(bbox[2]))),
@@ -443,10 +468,35 @@ def _analyze(image: np.ndarray, engine: str, device: str, session_id: str,
                     "text": line.get("text", ""), "original_text": line.get("text", ""), "confidence": line.get("confidence"),
                     "source": engine,
                 })
+            metadata = details.get("metadata", {})
+            valid_boxes = sum(
+                element.get("source") == engine and element.get("type") == "Text"
+                for element in document["elements"]
+            )
+            sample_lines = [
+                {"text": str(element.get("text", ""))[:40],
+                 "bbox": [round(value, 1) for value in element["bbox"]]}
+                for element in document["elements"]
+                if element.get("source") == engine and element.get("type") == "Text"
+            ][:3]
+            print(
+                f"[RADU] ocr_success session={session_id} engine={engine} "
+                f"model={metadata.get('model', engine)} "
+                f"device={metadata.get('device', device)} "
+                f"lines={len(lines)} valid_boxes={valid_boxes} "
+                f"sample_lines={json.dumps(sample_lines, ensure_ascii=True)}",
+                flush=True,
+            )
         except Exception as exc:
+            print(
+                f"[RADU] ocr_failure session={session_id} engine={engine} "
+                f"requested_device={device} error={type(exc).__name__}: {exc}",
+                flush=True,
+            )
             warnings.append({"code": "ocr_unavailable", "message": f"OCR 분석에 실패했습니다: {exc}"})
     document["warnings"] = warnings
-    document = analyze_relations(document)
+    if not vl_only:
+        document = analyze_relations(document)
     document["session_id"] = session_id
     document["created_at"] = datetime.now(timezone.utc).isoformat()
     document["image"]["source_url"] = f"/api/sessions/{session_id}/image"

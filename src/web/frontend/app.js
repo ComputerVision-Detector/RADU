@@ -292,7 +292,9 @@
     renderSummary();
     renderInspector();
     $("#analyze-relations").disabled = state.busy ||
-      !state.doc || !state.doc.elements.length;
+      !state.doc || !state.doc.elements.some((element) =>
+        element.type === "Box" || element.type === "Arrow"
+      );
     $("#empty-stage").hidden = !!(state.doc || state.previewUrl);
     const image = state.doc && state.doc.image || {},
       source = state.viewMode === "original" || state.viewMode === "compare"
@@ -493,7 +495,7 @@
           selected ? "#5268e817" : fill, stroke, sw);
       }
       if (e.type === "Box" || e.type === "Text") {
-        const label = e.text ?? e.shape_label ?? kindName(e),
+        const label = e.text ?? e.shape_label ?? (e.source ? "" : kindName(e)),
           textLayout = layoutText(label, ew, eh, Number(style.font_size) || Math.max(11, Math.min(20, eh * .22))),
           fontSize = textLayout.fontSize, lines = textLayout.lines,
           cx = style.text_align === "left" || e.type === "Text" && !style.text_align
@@ -2102,18 +2104,43 @@
       validateImportedDoc(doc);
       beginDocumentReplacement();
       state.doc = doc;
-      state.viewMode = doc.image.source_url ? "overlay" : "restored";
+      state.viewMode = doc.ocr ? "ocr" : doc.image.source_url ? "overlay" : "restored";
       state.selected = null;
       state.selectedIds = [];
       $("#retry-analysis").hidden = true;
       resetHistory();
       render();
       fitCanvas();
-      status(
-        "분석 완료 · 요소 " + doc.elements.length + "개 · 관계 " +
-          doc.relations.length + "개",
-      );
-      toast("분석이 끝났습니다. 검토 항목을 확인해 주세요.");
+      const ocrWarning = doc.warnings?.find((warning) => warning.code === "ocr_unavailable"),
+        ocrFailed = $("#ocr-engine").value !== "none" && !doc.ocr;
+      if (ocrFailed) {
+        const message = ocrWarning?.message ||
+          "선택한 OCR 엔진이 결과를 반환하지 않았습니다.";
+        const raduSkipped = doc.radu?.status === "not_run";
+        status(
+          (raduSkipped
+            ? "PaddleOCR-VL 실패 · RADU/OpenCV 미실행. "
+            : "OCR 실패 · OpenCV 후보만 표시 중입니다. ") + message,
+          "error",
+        );
+        toast(raduSkipped
+          ? "PaddleOCR-VL 추론에 실패했습니다. 결과가 표시되지 않습니다."
+          : "OCR 추론에 실패했습니다. 현재 문서에는 OpenCV 후보만 있습니다.", true);
+      } else if (doc.radu?.status === "not_run") {
+        const metadata = doc.ocr.metadata || {},
+          lineCount = doc.ocr.lines?.length || 0;
+        status(
+          "PaddleOCR-VL 완료 · " + (metadata.device || "장치 확인 불가") +
+            " · 텍스트 " + lineCount + "줄 · RADU 미실행",
+        );
+        toast("PaddleOCR-VL 텍스트만 오버레이했습니다. RADU 검출·관계 복원은 실행하지 않았습니다.");
+      } else {
+        status(
+          "분석 완료 · 요소 " + doc.elements.length + "개 · 관계 " +
+            doc.relations.length + "개",
+        );
+        toast("분석이 끝났습니다. 검토 항목을 확인해 주세요.");
+      }
     } catch (e) {
       $("#analysis-state").textContent = "실패";
       $("#retry-analysis").hidden = false;
@@ -2733,7 +2760,9 @@
     state.selectedIds = [];
     render();
     if (state.fitMode) fitCanvas();
-    status("같은 OCR 텍스트에 RADU 도형·화살표 검출과 관계 복원을 함께 표시합니다.");
+    status(state.doc.radu?.status === "not_run"
+      ? "RADU 미실행 상태입니다. 현재는 OCR 텍스트 오버레이만 표시합니다."
+      : "같은 OCR 텍스트에 RADU 도형·화살표 검출과 관계 복원을 함께 표시합니다.");
   };
   window.addEventListener("resize", () => {
     if (state.fitMode) fitCanvas();
