@@ -68,6 +68,12 @@ async def health() -> dict:
     return {"status": "ok", "version": app.version}
 
 
+@app.post("/api/analyze-relations")
+async def reanalyze_relations(document: dict) -> dict:
+    valid = _validate_document(document)
+    return analyze_relations(valid)
+
+
 def _session_path(session_id: str) -> Path:
     if not SESSION_ID_RE.fullmatch(session_id):
         raise HTTPException(400, "Invalid session ID")

@@ -290,6 +290,8 @@
     renderList();
     renderSummary();
     renderInspector();
+    $("#analyze-relations").disabled = state.busy ||
+      !state.doc || !state.doc.elements.length;
     $("#empty-stage").hidden = !!(state.doc || state.previewUrl);
     const image = state.doc && state.doc.image || {},
       source = state.viewMode === "original" || state.viewMode === "compare"
@@ -2099,6 +2101,54 @@
       $("#busy-overlay")?.remove();
     }
   }
+  async function analyzeRelations() {
+    if (state.busy) return;
+    if (!state.doc || !state.doc.elements.length) {
+      toast("먼저 요소가 있는 순서도를 만들거나 불러오세요.", true);
+      return;
+    }
+    state.busy = true;
+    $("#analyze-relations").disabled = true;
+    $("#analysis-state").textContent = "관계 분석 중";
+    const overlay = document.createElement("div");
+    overlay.id = "busy-overlay";
+    overlay.className = "busy-overlay";
+    overlay.innerHTML =
+      '<div class="busy-card"><i class="spinner"></i><span>현재 순서도의 도형·텍스트·화살표 관계를 분석하고 있습니다…</span></div>';
+    $("#canvas-scroll").append(overlay);
+    status("현재 순서도의 요소와 화살표를 분석하고 있습니다.", "busy");
+    const generation = state.docGeneration;
+    const revision = state.editRevision;
+    try {
+      const response = await request("/api/analyze-relations", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(clone(state.doc)),
+        }),
+        result = await response.json();
+      validateImportedDoc(result);
+      if (generation !== state.docGeneration || revision !== state.editRevision) {
+        throw new Error("분석 중 문서가 바뀌어 결과를 적용하지 않았습니다. 다시 분석해 주세요.");
+      }
+      state.doc = result;
+      commit();
+      render();
+      status(
+        "관계 분석 완료 · 요소 " + result.elements.length + "개 · 관계 " +
+          result.relations.length + "개",
+      );
+      toast("관계 분석이 끝났습니다. 검토 항목을 확인해 주세요.");
+    } catch (error) {
+      $("#analysis-state").textContent = "실패";
+      status("관계 분석 실패: " + error.message, "error");
+      toast(error.message, true);
+    } finally {
+      state.busy = false;
+      $("#analyze-relations").disabled =
+        !state.doc || !state.doc.elements.length;
+      $("#busy-overlay")?.remove();
+    }
+  }
   function validateImportedDoc(doc, nestedPage = false) {
     if (
       !doc || typeof doc !== "object" || !doc.image ||
@@ -2568,6 +2618,7 @@
     chooseFile(e.dataTransfer.files && e.dataTransfer.files[0]);
   };
   $("#analyze").onclick = analyze;
+  $("#analyze-relations").onclick = analyzeRelations;
   $("#retry-analysis").onclick = analyze;
   $("#save").onclick = saveDocument;
   $("#export-menu").onclick = exportMenu;

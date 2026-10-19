@@ -30,6 +30,7 @@ RADU 웹은 이미지 분석 결과를 SVG 캔버스 위에서 검토·편집하
 - 이미지 선택 및 분석 진입.
 - 업로드 영역 클릭 및 드래그 앤 드롭.
 - 이미지 교체.
+- 이미지 분석 결과 또는 직접 작성한 순서도의 요소·화살표를 대상으로 관계 분석 재실행.
 - OCR 엔진 선택: OCR 미사용, PaddleOCR v6, PaddleOCR-VL 1.6, CLOVA OCR.
 - 추론 장치 선택: CPU, GPU 0, GPU 1.
 - 분석 요약: Text, Box, Arrow, relation 개수 및 검토 항목 개수.
