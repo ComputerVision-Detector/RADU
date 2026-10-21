@@ -1,0 +1,23 @@
+name: Labeling website checks
+on:
+  push:
+    branches: [RADU/labeling]
+    paths: ['labeling/**', '.github/workflows/labeling-app.yml']
+  pull_request:
+    branches: [RADU/labeling]
+    paths: ['labeling/**', '.github/workflows/labeling-app.yml']
+permissions:
+  contents: read
+jobs:
+  app:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: labeling
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm test
+      - run: npm run build

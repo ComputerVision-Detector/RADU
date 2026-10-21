@@ -47,3 +47,11 @@ data/benchmark/qwen_ablation_pilot/results/**/*.log
 !data/benchmark/qwen_ablation_pilot/archive/**
 !data/benchmark/qwen_ablation_pilot/structure_rules_v1/
 !data/benchmark/qwen_ablation_pilot/structure_rules_v1/**
+
+# Labeling app runtime state, build output and local Vercel settings
+labeling/.runtime/
+labeling/dist/
+labeling/.vercel/
+labeling/.env*
+!labeling/.env.example
+labeling/node_modules/
