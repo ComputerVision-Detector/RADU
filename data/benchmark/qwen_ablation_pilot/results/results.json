@@ -1,0 +1,349 @@
+{
+  "version": 1,
+  "started_at": "2026-10-20T02:32:05.250167+00:00",
+  "manifest_sha256": "62f5a50d6b0882cea44e72f0dff36347881d3dbf88c111babe563dcc08cbb7f1",
+  "environment": {
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "packages": {
+      "torch": "2.7.1",
+      "transformers": "5.17.0",
+      "paddlepaddle-gpu": "3.2.1",
+      "paddleocr": "3.7.0",
+      "paddlex": "3.7.2",
+      "rapidfuzz": "3.14.5"
+    },
+    "gpu": "NVIDIA GeForce RTX 4090, 580.178.04, 24564 MiB",
+    "prompt_sha256": "8ffe3105550fde3ba84bcb9a01d3cbdcafbe660aaa27b6b11d44bffaf76b8ef5",
+    "source_sha256": {
+      "src/hybrid/pipeline.py": "d88b69a08e549129e187282e31f8c9de5803b92c2f18941b340448dd6d4218b8",
+      "src/hybrid/document.py": "c389af9ec434400eef400f16f6515247d151f83212ce361a303360d0cdb12851",
+      "src/cv/ocr_engine.py": "eff32bb69498c781b3f6d15fd8f76411da858dbed8ca65799c5f858e63973faa",
+      "src/evaluation/paddleocr_vl_worker.py": "6e567437b46f50c824bbbc68f3dc3b6ef7acfee7f3d5020c26047744cc1867f5",
+      "src/evaluation/ablation_ocr_worker.py": "eb3890f1818249699da1f7fe79a3c39cb689b48c1f78aae0c9c1eaf9e43571d1",
+      "src/evaluation/ablation.py": "0f763e03f89b8ed641f76f12ec128fb2a631474769c72cac200e45c11d72a8e8",
+      "src/evaluation/ocr_metrics.py": "692b074fe46e6f75d474ba668afa1253abca85c4a679f4693d5551fc8109c5a3"
+    },
+    "settings": {
+      "HYBRIDOCR_QWEN_MODEL": "/home/user/Desktop/RADU/HybridOCR/models/vision_language/Qwen2.5-VL-7B-Instruct",
+      "HYBRIDOCR_MAX_TOKENS": "6144",
+      "HYBRIDOCR_MAX_PIXELS": "1605632",
+      "RADU_VL_MAX_NEW_TOKENS": "2048"
+    },
+    "decoding": "Qwen do_sample=False; one image per request; process/model reload for every stage",
+    "memory_note": "nvidia-smi samples whole GPU, including desktop/other processes; sampled peak may miss short spikes. Increment is relative to pre-stage device usage."
+  },
+  "arms": [
+    "paddle_only",
+    "paddle_plus_qwen"
+  ],
+  "samples": [
+    {
+      "id": "hf-0081",
+      "image_sha256": "259862374eee4c11cc4e5fbcb5027c90a8974081fd5e6312b6013e335b61c7c2",
+      "paddle": {
+        "status": "ok",
+        "error": null,
+        "wall_seconds": 12.391694201971404,
+        "gpu_start_used_mib": 1028.0,
+        "gpu_peak_used_mib": 21300.0,
+        "gpu_incremental_peak_mib": 20272.0,
+        "gpu_sampling_interval_seconds": 0.5
+      },
+      "ocr_metadata": {
+        "model": "PaddleOCR-VL-1.6",
+        "device": "gpu:0",
+        "mode": "isolated direct spotting inference",
+        "max_pixels": 602112,
+        "max_new_tokens": 2048,
+        "model_initialization_seconds": 3.3299,
+        "inference_seconds": 6.1438,
+        "adapter_wall_seconds": 11.916071642015595
+      },
+      "baseline_text": "- 315 평균 제품 50자 (LUSE)\n- 모든 점을 해소로 오류를 지낸하고 굳쓰 오류를 밝히는 검신을 찾는 알고리즘\n- 허프 변환과 퇴소평균제곱 뜻는 돌다 아웃라이머이\n민중한 긍민해지 많은 개법\n- 강인한 극장\n- 아웃라이어들 장례는 대청을 기원 쿠짐 백 기법\n- RA NSA C\n- 9다이어와 송국이어가 섞어 있는 송화에서 9각이의들 찾아\n최적 근대화는 기법.\n- 이미 영상에서 선물 클릭하는 문제에서 직용.\n- 헌납하게 독 겁을 선택하고 득 검을 지내는 객신을 계산\n일정한 양이 오차를 허용해 직선에 맞춰져진 점의 개수를 센\n가냐 염제축을 넘지 못하면 가능성이 없다 보고 바길\n척선에 일찍한 점이 암제갑을 넘어면 점을 가지고 최적 직선을 축정\n(e)\n에셔\n얼 빠쭉 흑 백을 새척연 확보률 꽃잎착을 찾아 줄겠다\n- 에지에서 큰선\n- 영인곡선 : 새짝과 같은 곡선\n- 담현곡선(패푸션): 어지기 한 벼슬 돌아서 처음 위치로 연절되는 목선\nKeun Young Co.",
+      "layout_seconds": 0.7241220669820905,
+      "qwen": {
+        "status": "ok",
+        "error": null,
+        "wall_seconds": 23.8283993480145,
+        "gpu_start_used_mib": 1028.0,
+        "gpu_peak_used_mib": 19010.0,
+        "gpu_incremental_peak_mib": 17982.0,
+        "gpu_sampling_interval_seconds": 0.5
+      },
+      "hybrid_text": "- 최소 평균 제곱 오차 (LMSE)\n- 모든 점을 해소로 오류를 제거하고 최소 오류를 범하는 직선을 찾는 알고리즘\n- 허프 변환과 최소평균제곱 또는 돌다 아웃라이어에 민감한 긍민해지 많은 개법\n- 강인한 극장 - 아웃라이어들 걸레새는 파장을 가진 극장 백 기법\n- RANSAC\n- 인라이어와 아웃라이어가 섞여 있는 상황에서 인라이어를 찾아 최적 근사하는 기법.\n- 이미 영상에서 선분을 추정하는 문제에서 적용.\n- 랜덤하게 두 점을 선택하고 두 점을 지나는 직선을 계산\n일정한 양의 오차 t를 허용해 직선에 일치하는 점의 개수를 센\n가수가 임계값을 넘지 못하면 가능성이 없다 보고 버림\n직선에 일치한 점이 임계값을 넘어면 점을 가지고 최적 직선을 추정\n(e)\n에셔\n얼 빠쭉 흑 백을 새척연 확보률 꽃잎착을 찾아 줄겠다\n- 에지에서 곡선\n- 영인곡선 : 새짝과 같은 곡선\n- 담현곡선(패션): 어지기 한 벼슬 돌아서 처음 위치로 연결되는 곡선\n- 에지에서 큰선\n- 영인곡선 : 새짝과 같은 곡선\n- 담현곡선(패푸션): 어지기 한 벼슬 돌아서 처음 위치로 연절되는 목선\nKeun Young Co.",
+      "changes": {
+        "baseline_lines": 21,
+        "changed_lines": 17,
+        "changed_line_rate": 0.8095238095238095,
+        "text_edit_distance": 149,
+        "text_change_ratio": 0.30721649484536084,
+        "unknown_edit_ids": [],
+        "invalid_edits": 0,
+        "duplicate_edit_ids": [],
+        "uncertainty_count": 0
+      },
+      "qwen_metadata": {
+        "model_initialization_seconds": 2.135963668988552,
+        "inference_seconds": 18.442733153002337,
+        "total_seconds": 20.82863131898921,
+        "input_tokens": 7543,
+        "generated_tokens": 865,
+        "peak_allocated_mib": 17315.6826171875,
+        "peak_reserved_mib": 17508.0,
+        "prompt_sha256": "8ffe3105550fde3ba84bcb9a01d3cbdcafbe660aaa27b6b11d44bffaf76b8ef5",
+        "do_sample": false,
+        "max_new_tokens": 6144,
+        "max_pixels": 1605632
+      },
+      "qwen_model": "/home/user/Desktop/RADU/HybridOCR/models/vision_language/Qwen2.5-VL-7B-Instruct",
+      "hybrid_total_seconds": 36.944215616967995
+    },
+    {
+      "id": "hf-0014",
+      "image_sha256": "3e41f312e5b652d3cb5b0d3f56a6f126235f2089f85945a7873cc719621767f6",
+      "paddle": {
+        "status": "ok",
+        "error": null,
+        "wall_seconds": 12.915201249998063,
+        "gpu_start_used_mib": 1028.0,
+        "gpu_peak_used_mib": 21300.0,
+        "gpu_incremental_peak_mib": 20272.0,
+        "gpu_sampling_interval_seconds": 0.5
+      },
+      "ocr_metadata": {
+        "model": "PaddleOCR-VL-1.6",
+        "device": "gpu:0",
+        "mode": "isolated direct spotting inference",
+        "max_pixels": 602112,
+        "max_new_tokens": 2048,
+        "model_initialization_seconds": 3.3847,
+        "inference_seconds": 6.4169,
+        "adapter_wall_seconds": 12.205990815942641
+      },
+      "baseline_text": "NO.\nyear month day ( )\n- 궤물 ( label) 또는 참값 (ground truth)\n- 계획참여서 낮은 정보\n- 황려에 새로는 데이터 집합: 한편 집합\n- 메목에 사용되는 새로운 생물의 검찰 : 테스트 집합.\n- 윈 솟방습 ( one-shot learning)\n- 궤물이 있는 생물을 하나만 섬채 참습하는 원숙 참습\n- 온츠 착습 ( few-shot learning)\n- 몇 책 선물한 사용되어 참습\n- 준차로 참습 ( semi-supervised learning)\n- 궤물이 있는 삶의 생물과 객분이 없는 대충의 생물을 끝이 사용\n- 옷장옆은 / 표현 참습\n- 잡지에서 특정을 자동으로 참습\n- 성형 뒷\n- it's 얘기의 예쁜 꽃밭과 꽃향기의 길이나 빠른 새로운 새로운 책임\n디머니를 솔멍하는 성장 중에서 숫자로 나타낼 수 있는 것\n- 솔수정수, 온도 망\n- 백주형 뒷\n- 화첨 송 등급, 혈액형, 자격 등에는 중국에 속하는가를 나타내는 특정.\n손사형 : 학령, 수능 등. (거제개업촬영수 병자 스케첩으로 접근 가능)\n- 이름형 : 혈액형, 이름, 잇덕 등 (지리 개념 업무, 병충 접촉 - 꼬 손조 표현)\nKeun Young Co.",
+      "layout_seconds": 0.8564064330421388,
+      "qwen": {
+        "status": "ok",
+        "error": null,
+        "wall_seconds": 25.877244680013973,
+        "gpu_start_used_mib": 1028.0,
+        "gpu_peak_used_mib": 19072.0,
+        "gpu_incremental_peak_mib": 18044.0,
+        "gpu_sampling_interval_seconds": 0.5
+      },
+      "hybrid_text": "NO.\nyear month day ( )\n- 레이블 (label) 또는 참값 (ground truth)\n- 가계학습에서 부류 정보\n- 황련에 사용되는 데이터 집합: 훈련 집합\n- 예측에 사용되는 새로운 생물의 검찰 : 테스트 집합.\n- 원 속 학습 (one-shot learning)\n- 레이블이 있는 생물을 하나만 사용해 학습하는 원속 학습\n- 온츠 학습 (few-shot learning)\n- 몇 개의 생물만 사용하여 학습\n- 준차로 학습 (semi-supervised learning)\n- 레이블이 있는 소중의 생물과 레이블이 없는 대량의 생물을 같이 사용\n- 옷장옆은 / 표현 학습\n- 잡지에서 특정을 자동으로 학습\n- 성형 뒷\n- it's 대터 에서 꽃잎과 꽃향기의 길이나 빠른 새로운 새로운 책임\n디머니를 솔멍하는 성장 중에서 숫자로 나타낼 수 있는 것\n- 솔수정수, 온도 망\n- 백주형 뒷\n- 화첨 송 등급, 혈액형, 자격 등에는 중국에 속하는가를 나타내는 특정.\n손사형 : 학령, 수능 등. (거제개업촬영수 병자 스케첩으로 접근 가능)\n- 이름형 : 혈액형, 이름, 잇덕 등 (지리 개념 업무, 병충 접촉 - 꼬 손조 표현)\nKeun Young Co.",
+      "changes": {
+        "baseline_lines": 23,
+        "changed_lines": 13,
+        "changed_line_rate": 0.5652173913043478,
+        "text_edit_distance": 61,
+        "text_change_ratio": 0.10321489001692047,
+        "unknown_edit_ids": [],
+        "invalid_edits": 0,
+        "duplicate_edit_ids": [],
+        "uncertainty_count": 0
+      },
+      "qwen_metadata": {
+        "model_initialization_seconds": 2.211324075004086,
+        "inference_seconds": 20.7640105879982,
+        "total_seconds": 23.23639399104286,
+        "input_tokens": 7986,
+        "generated_tokens": 969,
+        "peak_allocated_mib": 17399.6318359375,
+        "peak_reserved_mib": 17572.0,
+        "prompt_sha256": "8ffe3105550fde3ba84bcb9a01d3cbdcafbe660aaa27b6b11d44bffaf76b8ef5",
+        "do_sample": false,
+        "max_new_tokens": 6144,
+        "max_pixels": 1605632
+      },
+      "qwen_model": "/home/user/Desktop/RADU/HybridOCR/models/vision_language/Qwen2.5-VL-7B-Instruct",
+      "hybrid_total_seconds": 39.648852363054175
+    },
+    {
+      "id": "hf-0003",
+      "image_sha256": "89fe3ce856d0929df591ab55fae7b78e1d7138f26be5cd4332f90938da5b13ff",
+      "paddle": {
+        "status": "ok",
+        "error": null,
+        "wall_seconds": 22.214824186987244,
+        "gpu_start_used_mib": 1011.0,
+        "gpu_peak_used_mib": 21299.0,
+        "gpu_incremental_peak_mib": 20288.0,
+        "gpu_sampling_interval_seconds": 0.5
+      },
+      "ocr_metadata": {
+        "model": "PaddleOCR-VL-1.6",
+        "device": "gpu:0",
+        "mode": "isolated direct spotting inference",
+        "max_pixels": 602112,
+        "max_new_tokens": 2048,
+        "model_initialization_seconds": 3.3478,
+        "inference_seconds": 15.8296,
+        "adapter_wall_seconds": 21.533096997998655
+      },
+      "baseline_text": "GPT - 005-20b ol \"hip\" + lello\" 是 毕e39\nToken ID6 [24912, 2504] → shape = [2] → N=2\n↓\nhello\nhip\nEmbedding.\nEmbedding. Manlyx [20108, 2000]\nToken IDs [2]",
+      "layout_seconds": 0.47872499201912433,
+      "qwen": {
+        "status": "ok",
+        "error": null,
+        "wall_seconds": 12.9407688860083,
+        "gpu_start_used_mib": 1011.0,
+        "gpu_peak_used_mib": 18593.0,
+        "gpu_incremental_peak_mib": 17582.0,
+        "gpu_sampling_interval_seconds": 0.5
+      },
+      "hybrid_text": "GPT - 005-20b 에 \"hip\", \"hello\" 를 넣은 경우\nToken IDs [24912, 2504] → shape = [2] → N=2\n↓\nhello\nhip\nEmbedding.\nEmbedding Matrix [20108, 2880]\nToken IDs [2]",
+      "changes": {
+        "baseline_lines": 8,
+        "changed_lines": 3,
+        "changed_line_rate": 0.375,
+        "text_edit_distance": 19,
+        "text_change_ratio": 0.12582781456953643,
+        "unknown_edit_ids": [],
+        "invalid_edits": 0,
+        "duplicate_edit_ids": [],
+        "uncertainty_count": 0
+      },
+      "qwen_metadata": {
+        "model_initialization_seconds": 2.1395666649914347,
+        "inference_seconds": 7.7251138799474575,
+        "total_seconds": 10.118061443965416,
+        "input_tokens": 4756,
+        "generated_tokens": 352,
+        "peak_allocated_mib": 16784.63427734375,
+        "peak_reserved_mib": 17108.0,
+        "prompt_sha256": "8ffe3105550fde3ba84bcb9a01d3cbdcafbe660aaa27b6b11d44bffaf76b8ef5",
+        "do_sample": false,
+        "max_new_tokens": 6144,
+        "max_pixels": 1605632
+      },
+      "qwen_model": "/home/user/Desktop/RADU/HybridOCR/models/vision_language/Qwen2.5-VL-7B-Instruct",
+      "hybrid_total_seconds": 35.63431806501467
+    },
+    {
+      "id": "hf-0094",
+      "image_sha256": "1e666a9dca0a305e188c3fd720c90d430e4db4c81939c5a75a1d4f276976273b",
+      "paddle": {
+        "status": "ok",
+        "error": null,
+        "wall_seconds": 11.888784019974992,
+        "gpu_start_used_mib": 1011.0,
+        "gpu_peak_used_mib": 21299.0,
+        "gpu_incremental_peak_mib": 20288.0,
+        "gpu_sampling_interval_seconds": 0.5
+      },
+      "ocr_metadata": {
+        "model": "PaddleOCR-VL-1.6",
+        "device": "gpu:0",
+        "mode": "isolated direct spotting inference",
+        "max_pixels": 602112,
+        "max_new_tokens": 2048,
+        "model_initialization_seconds": 3.3288,
+        "inference_seconds": 5.0571,
+        "adapter_wall_seconds": 11.362403931037989
+      },
+      "baseline_text": "Date.\nPage\n③ 거리시에 비교법 (APT. 벌레에 치료)\n- 윤리의 접구가 몰입 살릿\n- 윤리의 문제는 날 (22개로는 새로 왔음)\n- 희망을 물려 (탄탄 6개월)\n12층 밀레다 1층은 10% 배겐\n35층 11 11 25% 배검\n잘운영할 수밖에요.\n- 윤리의 손을 잊게 낼 수도 없다.\n2~ #번잔 개별 접근기능도.\n② 수익환원법 (쌍차. 탄택스텔. 찬성 APT)\n\\(\\frac{4}{5} = \\frac{5}{20}\\) (50)\n(x) $\\frac{100\\%}{105} = 10\\%$ 십일로.\n6.후허물.\n(x) 103 → 10%\n103 ~ 303 → 80 ~ 9%\n503 ~ 1003 → 6~11%\n(0050125 → 5%)\n3003... → 4%\n\\( \\frac{98}{100} = 28\\% \\)\n(가마얼물)\nwww.kumhonglan",
+      "layout_seconds": 0.6142525870236568,
+      "qwen": {
+        "status": "ok",
+        "error": null,
+        "wall_seconds": 11.888119538023602,
+        "gpu_start_used_mib": 1011.0,
+        "gpu_peak_used_mib": 19003.0,
+        "gpu_incremental_peak_mib": 17992.0,
+        "gpu_sampling_interval_seconds": 0.5
+      },
+      "hybrid_text": "Date.\nPage\n③ 거리시에 비교법 (APT. 벌레에 치료)\n- 윤리의 접구가 몰입 살릿\n- 윤리의 문제는 날 (22개로는 새로 왔음)\n- 희망을 물려 (탄탄 6개월)\n- 윤리의 접구가 몰입 살릿\n- 윤리의 문제는 날 (22개로는 새로 왔음)\n- 희망을 물려 (탄탄 6개월)\n- 윤리의 접구가 몰입 살릿\n- 윤리의 문제는 날 (22개로는 새로 왔음)\n- 희망을 물려 (탄탄 6개월)\n12층 밀레다 1층은 10% 배겐\n35층 11 11 25% 배검\n잘운영할 수밖에요.\n- 윤리의 손을 잊게 낼 수도 없다.\n2~ #번잔 개별 접근기능도.\n② 수익환원법 (쌍차. 탄택스텔. 찬성 APT)\n\\(\\frac{4}{5} = \\frac{5}{20}\\) (50)\n(x) $\\frac{100\\%}{105} = 10\\%$ 십일로.\n6.후허물.\n(x) 103 → 10%\n103 ~ 303 → 80 ~ 9%\n503 ~ 1003 → 6~11%\n(0050125 → 5%)\n3003... → 4%\n\\( \\frac{98}{100} = 28\\% \\)\n(가마얼물)\nwww.kumhonglan",
+      "changes": {
+        "baseline_lines": 23,
+        "changed_lines": 3,
+        "changed_line_rate": 0.13043478260869565,
+        "text_edit_distance": 120,
+        "text_change_ratio": 0.28776978417266186,
+        "unknown_edit_ids": [],
+        "invalid_edits": 0,
+        "duplicate_edit_ids": [],
+        "uncertainty_count": 0
+      },
+      "qwen_metadata": {
+        "model_initialization_seconds": 2.2562009649700485,
+        "inference_seconds": 6.707799879950471,
+        "total_seconds": 9.216281208966393,
+        "input_tokens": 7611,
+        "generated_tokens": 275,
+        "peak_allocated_mib": 17331.6455078125,
+        "peak_reserved_mib": 17518.0,
+        "prompt_sha256": "8ffe3105550fde3ba84bcb9a01d3cbdcafbe660aaa27b6b11d44bffaf76b8ef5",
+        "do_sample": false,
+        "max_new_tokens": 6144,
+        "max_pixels": 1605632
+      },
+      "qwen_model": "/home/user/Desktop/RADU/HybridOCR/models/vision_language/Qwen2.5-VL-7B-Instruct",
+      "hybrid_total_seconds": 24.39115614502225
+    },
+    {
+      "id": "hf-0035",
+      "image_sha256": "faac0c09be0ff9d9fc30a32ed821dd00b7ea87e47214f2efdeb36a641681f847",
+      "paddle": {
+        "status": "ok",
+        "error": null,
+        "wall_seconds": 22.18421832099557,
+        "gpu_start_used_mib": 1011.0,
+        "gpu_peak_used_mib": 21299.0,
+        "gpu_incremental_peak_mib": 20288.0,
+        "gpu_sampling_interval_seconds": 0.5
+      },
+      "ocr_metadata": {
+        "model": "PaddleOCR-VL-1.6",
+        "device": "gpu:0",
+        "mode": "isolated direct spotting inference",
+        "max_pixels": 602112,
+        "max_new_tokens": 2048,
+        "model_initialization_seconds": 3.4636,
+        "inference_seconds": 15.7361,
+        "adapter_wall_seconds": 21.586031922954135
+      },
+      "baseline_text": "- 쓰프도 맨스 합수의 특징\n- 줄렉은 0에서 1.0 사이의 실수\n- 줄렉 흥함은 1\n- 쇄도 넓은 쇼철 떨에 줄렉을 ‘확률’로 해석 가능.\n- 쓰프도 맥스 합수를 적용해도 각 원쇄 대소 판례는 변하지 않음.\nL 싸움 수 $\\gamma = \\exp(x)$ 가 단조 증가 합수 어져 예즐",
+      "layout_seconds": 0.37474273703992367,
+      "qwen": {
+        "status": "ok",
+        "error": null,
+        "wall_seconds": 12.419165764003992,
+        "gpu_start_used_mib": 1011.0,
+        "gpu_peak_used_mib": 18441.0,
+        "gpu_incremental_peak_mib": 17430.0,
+        "gpu_sampling_interval_seconds": 0.5
+      },
+      "hybrid_text": "- 쓰프도 맨스 합수의 특징\n- 줄렉은 0에서 1.0 사이의 실수\n- 줄렉 흥함은 1\n- 쇄도 넓은 쇼철 떨에 줄렉을 ‘확률’로 해석 가능.\n- 쓰프도 맥스 합수를 적용해도 각 원쇄 대소 판례는 변하지 않음.\nL 싸움 수 $\\gamma = \\exp(x)$ 가 단조 증가 합수 어져 예즐",
+      "changes": {
+        "baseline_lines": 6,
+        "changed_lines": 0,
+        "changed_line_rate": 0.0,
+        "text_edit_distance": 0,
+        "text_change_ratio": 0.0,
+        "unknown_edit_ids": [],
+        "invalid_edits": 0,
+        "duplicate_edit_ids": [],
+        "uncertainty_count": 0
+      },
+      "qwen_metadata": {
+        "model_initialization_seconds": 2.185885318031069,
+        "inference_seconds": 7.223631733970251,
+        "total_seconds": 9.644253212027252,
+        "input_tokens": 3708,
+        "generated_tokens": 337,
+        "peak_allocated_mib": 16585.513671875,
+        "peak_reserved_mib": 16956.0,
+        "prompt_sha256": "8ffe3105550fde3ba84bcb9a01d3cbdcafbe660aaa27b6b11d44bffaf76b8ef5",
+        "do_sample": false,
+        "max_new_tokens": 6144,
+        "max_pixels": 1605632
+      },
+      "qwen_model": "/home/user/Desktop/RADU/HybridOCR/models/vision_language/Qwen2.5-VL-7B-Instruct",
+      "hybrid_total_seconds": 34.978126822039485
+    }
+  ],
+  "updated_at": "2026-10-20T02:34:57.072348+00:00",
+  "completed_at": "2026-10-20T02:34:57.073283+00:00"
+}

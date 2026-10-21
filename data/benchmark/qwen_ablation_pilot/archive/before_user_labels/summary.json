@@ -1,0 +1,81 @@
+{
+  "requested_samples": 5,
+  "finished_samples": 5,
+  "baseline_success": 5,
+  "paired_success": 5,
+  "baseline_failures": 0,
+  "qwen_failures": 0,
+  "reference_counts": {
+    "verified": 0,
+    "draft": 0,
+    "unlabeled": 5
+  },
+  "normalization": "Unicode NFC; collapse whitespace to one space; strip; preserve case and punctuation",
+  "paddle_seconds_all_success": {
+    "n": 5,
+    "mean": 16.318944395985454,
+    "median": 12.915201249998063,
+    "p95": 22.20870301378891,
+    "min": 11.888784019974992,
+    "max": 22.214824186987244
+  },
+  "paddle_seconds_paired": {
+    "n": 5,
+    "mean": 16.318944395985454,
+    "median": 12.915201249998063,
+    "p95": 22.20870301378891,
+    "min": 11.888784019974992,
+    "max": 22.214824186987244
+  },
+  "qwen_seconds_paired": {
+    "n": 5,
+    "mean": 17.390739643212875,
+    "median": 12.9407688860083,
+    "p95": 25.467475613614077,
+    "min": 11.888119538023602,
+    "max": 25.877244680013973
+  },
+  "hybrid_total_seconds_paired": {
+    "n": 5,
+    "mean": 34.31933380241971,
+    "median": 35.63431806501467,
+    "p95": 39.10792501383694,
+    "min": 24.39115614502225,
+    "max": 39.648852363054175
+  },
+  "paddle_gpu_mib_paired": {
+    "n": 5,
+    "mean": 21299.4,
+    "median": 21299.0,
+    "p95": 21300.0,
+    "min": 21299.0,
+    "max": 21300.0
+  },
+  "qwen_gpu_mib_paired": {
+    "n": 5,
+    "mean": 18823.8,
+    "median": 19003.0,
+    "p95": 19059.6,
+    "min": 18441.0,
+    "max": 19072.0
+  },
+  "changed_lines": 36,
+  "baseline_lines": 81,
+  "reference_paired_baseline": null,
+  "reference_paired_hybrid": null,
+  "reference_baseline_all_success": null,
+  "reference_hybrid_with_baseline_fallback": null,
+  "accuracy_available": false,
+  "limitations": [
+    "No ground truth => CER/WER/accuracy are not computed; change rate is not accuracy.",
+    "Five-image pilot does not establish population-level accuracy or latency.",
+    "Timing includes fresh process/model initialization per request; not steady-state throughput.",
+    "Hybrid reuses identical OCR lines/order; correction cannot recover text with no OCR anchor.",
+    "Both arms share OCR geometry; table/arrow structure accuracy requires separate ground truth.",
+    "GPU sampling includes desktop/other workloads and can miss brief peaks."
+  ],
+  "baseline_failure_rate": 0.0,
+  "qwen_failure_rate_given_ocr_success": 0.0,
+  "hybrid_failure_rate": 0.0,
+  "changed_line_rate": 0.4444444444444444
+}

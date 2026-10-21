@@ -1,0 +1,5 @@
+# Preserve frozen experiment evidence byte-for-byte, including CSV CRLF and SVG paths.
+data/benchmark/qwen_ablation_pilot/results/** -text -whitespace
+data/benchmark/qwen_ablation_pilot/archive/** -text -whitespace
+# Keep collaboratively edited labels portable across operating systems.
+data/benchmark/qwen_ablation_pilot/labels/*.json text eol=lf

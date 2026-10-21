@@ -1,0 +1,296 @@
+{
+  "normalization": "Unicode NFC; collapse whitespace to one space; strip; preserve case and punctuation",
+  "references_sha256": "f80884264853dd4b2c526813e9ba6ac84f6a5bddc6b93a2d99718f878b27aa37",
+  "samples": [
+    {
+      "id": "hf-0081",
+      "reference_verified": true,
+      "paddle": {
+        "cer": 0.4031620553359684,
+        "cer_no_space": 0.48663101604278075,
+        "wer": 0.7218045112781954,
+        "exact_match": false,
+        "characters": {
+          "substitutions": 129,
+          "deletions": 48,
+          "insertions": 27,
+          "errors": 204,
+          "reference_units": 506
+        },
+        "characters_no_space": {
+          "substitutions": 128,
+          "deletions": 37,
+          "insertions": 17,
+          "errors": 182,
+          "reference_units": 374
+        },
+        "words": {
+          "substitutions": 79,
+          "deletions": 9,
+          "insertions": 8,
+          "errors": 96,
+          "reference_units": 133
+        }
+      },
+      "hybrid": {
+        "cer": 0.3300395256916996,
+        "cer_no_space": 0.3850267379679144,
+        "wer": 0.5263157894736842,
+        "exact_match": false,
+        "characters": {
+          "substitutions": 95,
+          "deletions": 11,
+          "insertions": 61,
+          "errors": 167,
+          "reference_units": 506
+        },
+        "characters_no_space": {
+          "substitutions": 95,
+          "deletions": 8,
+          "insertions": 41,
+          "errors": 144,
+          "reference_units": 374
+        },
+        "words": {
+          "substitutions": 53,
+          "deletions": 0,
+          "insertions": 17,
+          "errors": 70,
+          "reference_units": 133
+        }
+      }
+    },
+    {
+      "id": "hf-0014",
+      "reference_verified": true,
+      "paddle": {
+        "cer": 0.497131931166348,
+        "cer_no_space": 0.5583756345177665,
+        "wer": 0.9230769230769231,
+        "exact_match": false,
+        "characters": {
+          "substitutions": 144,
+          "deletions": 24,
+          "insertions": 92,
+          "errors": 260,
+          "reference_units": 523
+        },
+        "characters_no_space": {
+          "substitutions": 140,
+          "deletions": 20,
+          "insertions": 60,
+          "errors": 220,
+          "reference_units": 394
+        },
+        "words": {
+          "substitutions": 84,
+          "deletions": 4,
+          "insertions": 32,
+          "errors": 120,
+          "reference_units": 130
+        }
+      },
+      "hybrid": {
+        "cer": 0.3977055449330784,
+        "cer_no_space": 0.4365482233502538,
+        "wer": 0.7615384615384615,
+        "exact_match": false,
+        "characters": {
+          "substitutions": 103,
+          "deletions": 16,
+          "insertions": 89,
+          "errors": 208,
+          "reference_units": 523
+        },
+        "characters_no_space": {
+          "substitutions": 98,
+          "deletions": 13,
+          "insertions": 61,
+          "errors": 172,
+          "reference_units": 394
+        },
+        "words": {
+          "substitutions": 66,
+          "deletions": 4,
+          "insertions": 29,
+          "errors": 99,
+          "reference_units": 130
+        }
+      }
+    },
+    {
+      "id": "hf-0003",
+      "reference_verified": true,
+      "paddle": {
+        "cer": 0.8374384236453202,
+        "cer_no_space": 0.8320158102766798,
+        "wer": 0.9807692307692307,
+        "exact_match": false,
+        "characters": {
+          "substitutions": 36,
+          "deletions": 466,
+          "insertions": 8,
+          "errors": 510,
+          "reference_units": 609
+        },
+        "characters_no_space": {
+          "substitutions": 29,
+          "deletions": 388,
+          "insertions": 4,
+          "errors": 421,
+          "reference_units": 506
+        },
+        "words": {
+          "substitutions": 28,
+          "deletions": 74,
+          "insertions": 0,
+          "errors": 102,
+          "reference_units": 104
+        }
+      },
+      "hybrid": {
+        "cer": 0.8095238095238095,
+        "cer_no_space": 0.7984189723320159,
+        "wer": 0.9326923076923077,
+        "exact_match": false,
+        "characters": {
+          "substitutions": 24,
+          "deletions": 464,
+          "insertions": 5,
+          "errors": 493,
+          "reference_units": 609
+        },
+        "characters_no_space": {
+          "substitutions": 15,
+          "deletions": 387,
+          "insertions": 2,
+          "errors": 404,
+          "reference_units": 506
+        },
+        "words": {
+          "substitutions": 17,
+          "deletions": 77,
+          "insertions": 3,
+          "errors": 97,
+          "reference_units": 104
+        }
+      }
+    },
+    {
+      "id": "hf-0094",
+      "reference_verified": true,
+      "paddle": {
+        "cer": 0.7989949748743719,
+        "cer_no_space": 0.9238410596026491,
+        "wer": 1.0,
+        "exact_match": false,
+        "characters": {
+          "substitutions": 259,
+          "deletions": 20,
+          "insertions": 39,
+          "errors": 318,
+          "reference_units": 398
+        },
+        "characters_no_space": {
+          "substitutions": 250,
+          "deletions": 3,
+          "insertions": 26,
+          "errors": 279,
+          "reference_units": 302
+        },
+        "words": {
+          "substitutions": 81,
+          "deletions": 10,
+          "insertions": 6,
+          "errors": 97,
+          "reference_units": 97
+        }
+      },
+      "hybrid": {
+        "cer": 0.964824120603015,
+        "cer_no_space": 1.1026490066225165,
+        "wer": 1.2371134020618557,
+        "exact_match": false,
+        "characters": {
+          "substitutions": 229,
+          "deletions": 8,
+          "insertions": 147,
+          "errors": 384,
+          "reference_units": 398
+        },
+        "characters_no_space": {
+          "substitutions": 220,
+          "deletions": 2,
+          "insertions": 111,
+          "errors": 333,
+          "reference_units": 302
+        },
+        "words": {
+          "substitutions": 90,
+          "deletions": 0,
+          "insertions": 30,
+          "errors": 120,
+          "reference_units": 97
+        }
+      }
+    },
+    {
+      "id": "hf-0035",
+      "reference_verified": true,
+      "paddle": {
+        "cer": 0.6147186147186147,
+        "cer_no_space": 0.6857142857142857,
+        "wer": 0.8421052631578947,
+        "exact_match": false,
+        "characters": {
+          "substitutions": 52,
+          "deletions": 81,
+          "insertions": 9,
+          "errors": 142,
+          "reference_units": 231
+        },
+        "characters_no_space": {
+          "substitutions": 50,
+          "deletions": 66,
+          "insertions": 4,
+          "errors": 120,
+          "reference_units": 175
+        },
+        "words": {
+          "substitutions": 28,
+          "deletions": 15,
+          "insertions": 5,
+          "errors": 48,
+          "reference_units": 57
+        }
+      },
+      "hybrid": {
+        "cer": 0.6147186147186147,
+        "cer_no_space": 0.6857142857142857,
+        "wer": 0.8421052631578947,
+        "exact_match": false,
+        "characters": {
+          "substitutions": 52,
+          "deletions": 81,
+          "insertions": 9,
+          "errors": 142,
+          "reference_units": 231
+        },
+        "characters_no_space": {
+          "substitutions": 50,
+          "deletions": 66,
+          "insertions": 4,
+          "errors": 120,
+          "reference_units": 175
+        },
+        "words": {
+          "substitutions": 28,
+          "deletions": 15,
+          "insertions": 5,
+          "errors": 48,
+          "reference_units": 57
+        }
+      }
+    }
+  ]
+}

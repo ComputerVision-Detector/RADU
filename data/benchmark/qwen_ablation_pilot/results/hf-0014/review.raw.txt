@@ -1,0 +1,110 @@
+```json
+{
+  "markdown": "",
+  "vector_edits": [
+    {
+      "id": "ocr-text-0003",
+      "text": "- 레이블 (label) 또는 참값 (ground truth)",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0004",
+      "text": "- 가계학습에서 부류 정보",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0005",
+      "text": "- 황련에 사용되는 데이터 집합: 훈련 집합",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0006",
+      "text": "- 예측에 사용되는 새로운 생물의 검찰 : 테스트 집합.",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0007",
+      "text": "- 원 속 학습 (one-shot learning)",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0008",
+      "text": "- 레이블이 있는 생물을 하나만 사용해 학습하는 원속 학습",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0009",
+      "text": "- 온츠 학습 (few-shot learning)",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0010",
+      "text": "- 몇 개의 생물만 사용하여 학습",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0011",
+      "text": "- 준차로 학습 (semi-supervised learning)",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0012",
+      "text": "- 레이블이 있는 소중의 생물과 레이블이 없는 대량의 생물을 같이 사용",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0013",
+      "text": "- 옷장옆은 / 표현 학습",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0014",
+      "text": "- 잡지에서 특정을 자동으로 학습",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0015",
+      "text": "- 성형 뒷",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0016",
+      "text": "- it's 대터 에서 꽃잎과 꽃향기의 길이나 빠른 새로운 새로운 책임",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0017",
+      "text": "디머니를 솔멍하는 성장 중에서 숫자로 나타낼 수 있는 것",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0018",
+      "text": "- 솔수정수, 온도 망",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0019",
+      "text": "- 백주형 뒷",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0020",
+      "text": "- 화첨 송 등급, 혈액형, 자격 등에는 중국에 속하는가를 나타내는 특정.",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0021",
+      "text": "손사형 : 학령, 수능 등. (거제개업촬영수 병자 스케첩으로 접근 가능)",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0022",
+      "text": "- 이름형 : 혈액형, 이름, 잇덕 등 (지리 개념 업무, 병충 접촉 - 꼬 손조 표현)",
+      "uncertain": false
+    }
+  ],
+  "regions": [],
+  "changes": [],
+  "uncertainties": []
+}
+```

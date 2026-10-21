@@ -1,0 +1,8 @@
+GPT - 005-20b 에 "hip", "hello" 를 넣은 경우
+Token IDs [24912, 2504] → shape = [2] → N=2
+↓
+hello
+hip
+Embedding.
+Embedding Matrix [20108, 2880]
+Token IDs [2]

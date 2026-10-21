@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "manifest_sha256": "62f5a50d6b0882cea44e72f0dff36347881d3dbf88c111babe563dcc08cbb7f1",
+  "instructions": "Transcribe images independently of model predictions. Preserve case, punctuation and reading order. Set status=verified only after human checking. Blank text is not a label.",
+  "samples": [
+    {
+      "id": "hf-0081",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0014",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0003",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0094",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0035",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    }
+  ]
+}

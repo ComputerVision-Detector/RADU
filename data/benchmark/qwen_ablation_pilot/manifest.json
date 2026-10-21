@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "created_at": "2026-10-20T02:31:21.812956+00:00",
+  "dataset": "hakuuung/HybridOCR_CustomNotes",
+  "revision": "7f97f382d9d82aa6b21e9b617b46218f1ec4b0aa",
+  "split": "train",
+  "seed": 42,
+  "population_rows": 122,
+  "selection": "uniform global row sample without replacement, frozen before inference",
+  "samples": [
+    {
+      "id": "hf-0081",
+      "image": "images/hf-0081.png",
+      "sha256": "259862374eee4c11cc4e5fbcb5027c90a8974081fd5e6312b6013e335b61c7c2",
+      "width": 3024,
+      "height": 4032,
+      "shard": "data/train-00001-of-00002.parquet",
+      "row": 20,
+      "global_row": 81
+    },
+    {
+      "id": "hf-0014",
+      "image": "images/hf-0014.png",
+      "sha256": "3e41f312e5b652d3cb5b0d3f56a6f126235f2089f85945a7873cc719621767f6",
+      "width": 3024,
+      "height": 4032,
+      "shard": "data/train-00000-of-00002.parquet",
+      "row": 14,
+      "global_row": 14
+    },
+    {
+      "id": "hf-0003",
+      "image": "images/hf-0003.png",
+      "sha256": "89fe3ce856d0929df591ab55fae7b78e1d7138f26be5cd4332f90938da5b13ff",
+      "width": 3024,
+      "height": 4032,
+      "shard": "data/train-00000-of-00002.parquet",
+      "row": 3,
+      "global_row": 3
+    },
+    {
+      "id": "hf-0094",
+      "image": "images/hf-0094.png",
+      "sha256": "1e666a9dca0a305e188c3fd720c90d430e4db4c81939c5a75a1d4f276976273b",
+      "width": 3024,
+      "height": 4032,
+      "shard": "data/train-00001-of-00002.parquet",
+      "row": 33,
+      "global_row": 94
+    },
+    {
+      "id": "hf-0035",
+      "image": "images/hf-0035.png",
+      "sha256": "faac0c09be0ff9d9fc30a32ed821dd00b7ea87e47214f2efdeb36a641681f847",
+      "width": 3024,
+      "height": 4032,
+      "shard": "data/train-00000-of-00002.parquet",
+      "row": 35,
+      "global_row": 35
+    }
+  ]
+}

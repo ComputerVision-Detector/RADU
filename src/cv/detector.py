@@ -23,7 +23,7 @@ def _box(x1: int, y1: int, x2: int, y2: int, image: np.ndarray, kind: str,
 
 def detect_components(image: np.ndarray, model_path: str | None = None,
                       confidence: float = 0.25,
-                      include_text: bool = True) -> list[dict[str, Any]]:
+                      include_text: bool = True, include_arrows: bool = True) -> list[dict[str, Any]]:
     """Detect Text, Arrow, and Box candidates; keep overlapping types separate."""
     weight_path = model_path or os.getenv("RADU_DETECTOR_WEIGHTS")
     if weight_path and os.path.isfile(weight_path):
@@ -99,7 +99,7 @@ def detect_components(image: np.ndarray, model_path: str | None = None,
     edges = cv2.Canny(gray, 60, 160)
     lines = cv2.HoughLinesP(edges, 1, np.pi / 180, threshold=max(20, min(h, w) // 20),
                             minLineLength=max(8, min(h, w) // 40), maxLineGap=max(8, min(h, w) // 80))
-    if lines is not None:
+    if include_arrows and lines is not None:
         segments = []
         for line in lines:
             x1, y1, x2, y2 = np.asarray(line).reshape(-1)

@@ -1,0 +1,5 @@
+# CPU-only image restoration; JSON editing/checking itself needs only Python.
+# Match the Pillow version used to encode the frozen benchmark PNGs.
+Pillow==12.3.0
+pyarrow>=19
+huggingface_hub>=0.27

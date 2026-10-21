@@ -1,0 +1,7 @@
+{
+  "id": "hf-0003",
+  "text": "GPT-OSS-20b 에 \"hip\", \"hello\"를 넣은 경우\nToken IDs [24912, 2504] shape=[2] N=2\nEmbedding\nEmebedding Matrix [201088, 2880]\nToken IDs [2]\n 24912 Embedding Matrix의 24912번째 행\n 2504 Embedding Matrix의 2504번째 행\n x[2,2880]\nTransformer Block X 24\nAttention Block\nRMSNorm[2,2880]\nQKV Projection\nInput[2,2880]\nqkv_dim 계산\noutput[2,5120]\nQ/K/V 분리\nQ 64 X 64 = 4096 [2,4096]\nK 8 X 64 = 512 [2,512] \n V 8 X 64 = 512 [2,512]\nQ/K/V reshape\nQ[2,4096] [2,8,8,64]\n8 = KV Head\n8 = Q multiplier\n 64 = Head Dimension\n K [2,512] [2,8,64] 8 = KV Head\nV[2,512] [2,8,64] 8 = KV Head\n RoPE(QK)\nQ[2,8,8,64] [2,8,8,64]\nK[2,8,64] [2,8,64]\nSDPA\nK/V Expand",
+  "status": "verified",
+  "annotator": "정하경",
+  "notes": "화살표는 제외하고 작성, 곱하기 같은 기호는 X 를 이용해 작성, 오른쪽 포스트잇은 제외하고 작성"
+}

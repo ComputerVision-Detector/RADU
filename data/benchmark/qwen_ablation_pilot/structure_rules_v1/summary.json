@@ -1,0 +1,41 @@
+{
+  "rule_source_sha256": "8718585ba5b3783e5a6f6e8d65bfb751018396c4ce6b17b2e0831ab2be6ba210",
+  "note": "Candidate counts only, not accuracy. CPU rules; OCR and Qwen not rerun.",
+  "samples": [
+    {
+      "id": "hf-0081",
+      "tables": 0,
+      "cells": 0,
+      "arrows": 0,
+      "seconds": 3.428
+    },
+    {
+      "id": "hf-0014",
+      "tables": 0,
+      "cells": 0,
+      "arrows": 7,
+      "seconds": 6.88
+    },
+    {
+      "id": "hf-0003",
+      "tables": 0,
+      "cells": 0,
+      "arrows": 0,
+      "seconds": 8.096
+    },
+    {
+      "id": "hf-0094",
+      "tables": 0,
+      "cells": 0,
+      "arrows": 0,
+      "seconds": 3.621
+    },
+    {
+      "id": "hf-0035",
+      "tables": 0,
+      "cells": 0,
+      "arrows": 0,
+      "seconds": 3.136
+    }
+  ]
+}

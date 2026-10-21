@@ -62,7 +62,9 @@ def prepare_model(device: str):
             raise RuntimeError(f"PaddleOCR-VL needs at least 10000 MiB free VRAM; found {free_mb} MiB")
 
     from paddlex.utils.cache import CACHE_DIR
-    model_root = Path(CACHE_DIR) / "official_models"
+    model_root = Path(__file__).resolve().parents[2] / "models"
+    model_dirs = {"PaddleOCR-VL-1.6": model_root / "vision_language" / "PaddleOCR-VL-1.6",
+                  "PP-DocLayoutV3": model_root / "detection" / "PP-DocLayoutV3"}
     required_files = {
         "PaddleOCR-VL-1.6": (
             "config.json", "generation_config.json", "model.safetensors",
@@ -71,10 +73,10 @@ def prepare_model(device: str):
         "PP-DocLayoutV3": ("inference.yml", "inference.json", "inference.pdiparams"),
     }
     missing = [
-        str(model_root / model_name / filename)
+        str(model_dirs[model_name] / filename)
         for model_name, filenames in required_files.items()
         for filename in filenames
-        if not (model_root / model_name / filename).is_file()
+        if not (model_dirs[model_name] / filename).is_file()
     ]
     if missing:
         raise RuntimeError("Required cached PaddleOCR-VL files are missing: " + ", ".join(missing))
@@ -125,7 +127,7 @@ def prepare_model(device: str):
         from paddlex import create_model
         model = create_model(
             "PaddleOCR-VL-1.6-0.9B",
-            model_dir=str(model_root / "PaddleOCR-VL-1.6"),
+            model_dir=str(model_dirs["PaddleOCR-VL-1.6"]),
             device=device,
         )
     finally:

@@ -1,0 +1,107 @@
+{
+  "markdown": "",
+  "vector_edits": [
+    {
+      "id": "ocr-text-0001",
+      "text": "- 최소 평균 제곱 오차 (LMSE)",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0002",
+      "text": "- 모든 점을 해소로 오류를 제거하고 최소 오류를 범하는 직선을 찾는 알고리즘",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0003",
+      "text": "- 허프 변환과 최소평균제곱 또는 돌다 아웃라이어에 민감한 긍민해지 많은 개법",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0004",
+      "text": "- 강인한 극장 - 아웃라이어들 걸레새는 파장을 가진 극장 백 기법",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0005",
+      "text": "- RANSAC",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0006",
+      "text": "- 인라이어와 아웃라이어가 섞여 있는 상황에서 인라이어를 찾아 최적 근사하는 기법.",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0007",
+      "text": "- 이미 영상에서 선분을 추정하는 문제에서 적용.",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0008",
+      "text": "- 랜덤하게 두 점을 선택하고 두 점을 지나는 직선을 계산",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0009",
+      "text": "일정한 양의 오차 t를 허용해 직선에 일치하는 점의 개수를 센",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0010",
+      "text": "가수가 임계값을 넘지 못하면 가능성이 없다 보고 버림",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0011",
+      "text": "직선에 일치한 점이 임계값을 넘어면 점을 가지고 최적 직선을 추정",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0012",
+      "text": "(e)",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0013",
+      "text": "에셔",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0014",
+      "text": "얼 빠쭉 흑 백을 새척연 확보률 꽃잎착을 찾아 줄겠다",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0015",
+      "text": "- 에지에서 곡선",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0016",
+      "text": "- 영인곡선 : 새짝과 같은 곡선",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0017",
+      "text": "- 담현곡선(패션): 어지기 한 벼슬 돌아서 처음 위치로 연결되는 곡선",
+      "uncertain": false
+    }
+  ],
+  "regions": [],
+  "changes": [],
+  "uncertainties": [],
+  "model": "/home/user/Desktop/RADU/HybridOCR/models/vision_language/Qwen2.5-VL-7B-Instruct",
+  "metadata": {
+    "model_initialization_seconds": 2.135963668988552,
+    "inference_seconds": 18.442733153002337,
+    "total_seconds": 20.82863131898921,
+    "input_tokens": 7543,
+    "generated_tokens": 865,
+    "peak_allocated_mib": 17315.6826171875,
+    "peak_reserved_mib": 17508.0,
+    "prompt_sha256": "8ffe3105550fde3ba84bcb9a01d3cbdcafbe660aaa27b6b11d44bffaf76b8ef5",
+    "do_sample": false,
+    "max_new_tokens": 6144,
+    "max_pixels": 1605632
+  }
+}

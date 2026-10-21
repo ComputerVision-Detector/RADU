@@ -1,0 +1,16 @@
+{
+  "results_sha256": "59bb8ba35bdcd98417ff8a239f51acb0d01c36413a333895d83c65312ec4b4ed",
+  "per_sample": {
+    "hf-0081/ocr.json": "eb92b7d9bbfc4f5ef5b1284510821f2c45b5fe3286813cfb8d583afa7eace833",
+    "hf-0081/review.json": "5407ee54937911e04a0a19e953df46decc78e3e5af17c8901947cff12f871239",
+    "hf-0003/ocr.json": "388f5d137c7db4f9caa2fac1254871bc60c7618ca241418301658c7bb615e93f",
+    "hf-0003/review.json": "90153ff796c31c7fc78555f544dd6df8e0bc6cc33cfb36cd87a066ee7aadcbf3",
+    "hf-0035/ocr.json": "8f27ebfe6e1fa5b1e3fac9a6da9d59b67c96a9a87e5d0775a682b891d2fc4c46",
+    "hf-0035/review.json": "86905aa6bcd465562d7e43bac24506a1f1caf196788b7a325eefd20227bef8ca",
+    "hf-0014/ocr.json": "264bd1be8a02f16a688f691a2f57ce0e1f9d92a9a8552d27f16413f95d425fa3",
+    "hf-0014/review.json": "c3bae4fadf11c87be73b9f10d824165581b4a1ea7ae78b94815041d60834e407",
+    "hf-0094/ocr.json": "88504d5317a846ddf725d7f1f92957fc6a27f22527fdec12b48250865eaa0dec",
+    "hf-0094/review.json": "33424471aa74ce13ef5a73169715fa41180a68de95cd0dfc89da2be5d20e12bd"
+  },
+  "recorded_before_rescoring": true
+}

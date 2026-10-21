@@ -1,0 +1,8 @@
+GPT - 005-20b ol "hip" + lello" 是 毕e39
+Token ID6 [24912, 2504] → shape = [2] → N=2
+↓
+hello
+hip
+Embedding.
+Embedding. Manlyx [20108, 2000]
+Token IDs [2]

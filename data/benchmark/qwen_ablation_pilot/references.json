@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "manifest_sha256": "62f5a50d6b0882cea44e72f0dff36347881d3dbf88c111babe563dcc08cbb7f1",
+  "source": "user-provided verified transcriptions, 2026-10-21",
+  "ingested_at": "2026-10-20T17:36:34.266364+00:00",
+  "id_mapping": {
+    "hf-001": "hf-0014"
+  },
+  "id_mapping_reason": "The supplied label/one-shot/few-shot note matches manifest sample hf-0014; hf-001 is not a manifest ID.",
+  "scoring_scope": "Use supplied text verbatim. Predictions remain whole-page outputs. No automatic masking of omitted regions or notation conversion.",
+  "samples": [
+    {
+      "id": "hf-0081",
+      "text": "최소 평균 제곱 오차 (LMSE)\n- 모든 점을 대상으로 오류를 계산하고 최소 오류를 범하는 직선을 찾는 알고리즘\n\n· 허프 변환과 최소평균제곱 오차는 둘 다 아웃라이에어\n민감한 강인하지 않은 기법\n\n·강인한 추정\n- 아웃라이어를 걸러내는 과정을 가진 추정 기법\n\n· RANSAC\n-인라이어와 아웃라이어가 섞여 있는 상황에서 인라이어를 찾아\n최적 근사하는 기법.\n- 에지 영상에서 선분을 추정하는 문제에서 적용.\n- 랜덤하게 두 점을 선택하고 두 점을 지나는 직선을 계산\n일정한 양의 오차 t를 허용해 직선에 일치하는 점의 개수를 셈\n개수가 임계값을 넘지 못하면 가능성이 없다 보고 버림\n직선에 일치하는 점이 임계값을 넘으면 점을 가지고 최적 직선을 추정\n측정 오류가 임계값보다 작으면 후보군에 추가 그렇지 않으면 버림\n\n이걸 반복 후 반복을 마치면 후보군에서 최적을 찾아 출력\n\n·에지에서 곡선\n- 열린곡선 : 시작점과 끝점이 다른 곡선\n- 닫힌곡선(폐곡선) : 에지가 한 바퀴 돌아서 처음 위치로 연결되는 곡선",
+      "status": "verified",
+      "annotator": "김혜린",
+      "notes": "줄과 줄 사이에 작성되어 있는 괄호 내의 내용은  text에 작성하지 않았음."
+    },
+    {
+      "id": "hf-0014",
+      "submitted_id": "hf-001",
+      "text": "• 레이블(label) 또는 참값(ground truth)\n- 기계학습에서 부류 정보\n\n• 훈련에 사용되는 데이터 집합: 훈련 집합\n• 예측에 사용되는 새로운 샘플의 집합: 테스트 집합\n\n• 원샷 학습(one-shot learning)\n- 레이블이 있는 샘플을 하나만 사용해 학습하는 원샷 학습\n\n• 퓨샷 학습(few-shot learning)\n- 몇 개의 샘플만 사용하여 학습\n\n• 준지도 학습(semi-supervised learning)\n- 레이블이 있는 소량의 샘플과 레이블이 없는 대량의 샘플을 같이 사용\n\n• 특징 학습 / 표현 학습\n- 딥러닝에서 특징을 자동으로 학습\n\n• 수치형 특징\n- iris 데이터에서 꽃잎과 꽃받침의 길이와 너비를 나타내는 실수처럼\n- 데이터를 설명하는 속성 중에서 숫자로 나타낼 수 있는 것\n- 실수, 정수, 이진 등 다양\n\n• 범주형 특징\n- 학점, 수능 등급, 혈액형, 지역 등 어느 종류에 속하는가를 나타내는 특징.\n- 순서형: 학점, 수능 등. (거리 개념 있음, 점수 부여 시 수치형으로 취급 가능)",
+      "status": "verified",
+      "annotator": "이나현",
+      "notes": ""
+    },
+    {
+      "id": "hf-0003",
+      "text": "GPT-OSS-20b 에 \"hip\", \"hello\"를 넣은 경우\nToken IDs [24912, 2504] shape=[2] N=2\nEmbedding\nEmebedding Matrix [201088, 2880]\nToken IDs [2]\n 24912 Embedding Matrix의 24912번째 행\n 2504 Embedding Matrix의 2504번째 행\n x[2,2880]\nTransformer Block X 24\nAttention Block\nRMSNorm[2,2880]\nQKV Projection\nInput[2,2880]\nqkv_dim 계산\noutput[2,5120]\nQ/K/V 분리\nQ 64 X 64 = 4096 [2,4096]\nK 8 X 64 = 512 [2,512] \n V 8 X 64 = 512 [2,512]\nQ/K/V reshape\nQ[2,4096] [2,8,8,64]\n8 = KV Head\n8 = Q multiplier\n 64 = Head Dimension\n K [2,512] [2,8,64] 8 = KV Head\nV[2,512] [2,8,64] 8 = KV Head\n RoPE(QK)\nQ[2,8,8,64] [2,8,8,64]\nK[2,8,64] [2,8,64]\nSDPA\nK/V Expand",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "화살표는 제외하고 작성, 곱하기 같은 기호는 X 를 이용해 작성, 오른쪽 포스트잇은 제외하고 작성"
+    },
+    {
+      "id": "hf-0094",
+      "text": "거래사례 비교법 (APT, 빌라에 적용)\n물건의 종류가 동일할 것.\n물건이 많아야 함. 1~2개로는 비교 안됨\n최신 물건 (평균 6개월)\n12층일 경우 1층은 10% 내림\n35층 ″ 1″ 25% 내림\n40평 후반-50평대 1층 구입하면 안됨\n작은 평수는 구매가능\n공인중개사무소에서 판매 예정가를 물어봐라\n\"경매 낙찰 받아오면 얼마에 판매해주실 수 있으세요?\"\n물건 1당 5곳 방문 높은 가격 - 최하가격 제외\n2번째 가격을 평균 가격으로\n\n수익 환원법 (상가·오피스텔·소형 APT)\n수익률 = 소득(수익) / 투자금액\n투자수익률\nEX) 1000만 / 1억 = 10% 수익률\nEX) 1억 10%\n1억~3억 8-9%\n5억~10억 6-7%\n10억 이상 5%\n30억 ″ 4%\n월세수익 / 투자수익률 = 건물가격\n기대수익률",
+      "status": "verified",
+      "annotator": "LEEJINWOO",
+      "notes": "분수는 /로 표현하고 윗줄 반복부호(″)는 유지."
+    },
+    {
+      "id": "hf-0035",
+      "text": "소프트 맥스 함수의 특징\n- 출력은 0에서 1.0 사이의 실수\n-출력 총합은 1\n해당 성질 덕분에 출력을 '확률'로 해석 가능.\n소프트 맥스 함수를 적용해도 각 원소의 대소 관계는 변하지 않음\n지수 함수 y=exp(x)가 단조 증가 함수이기 때문\n\n정의역 원소 a, b가 a=<b일 때,\nf(a)=<f(b)가 성립하는 함수\n\n추론 출력층에서는 소프트맥스 함수를 생략함\n하지만 학습 출력층에서는 소프트맥스 함수를 사용.",
+      "status": "verified",
+      "annotator": "김혜린",
+      "notes": "전사 기준이나 특이사항"
+    }
+  ]
+}

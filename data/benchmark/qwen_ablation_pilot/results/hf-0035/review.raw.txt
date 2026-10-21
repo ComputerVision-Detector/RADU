@@ -1,0 +1,40 @@
+```json
+{
+    "markdown": "",
+    "vector_edits": [
+        {
+            "id": "ocr-text-0001",
+            "text": "- 쓰프도 맨스 합수의 특징",
+            "uncertain": false
+        },
+        {
+            "id": "ocr-text-0002",
+            "text": "- 줄렉은 0에서 1.0 사이의 실수",
+            "uncertain": false
+        },
+        {
+            "id": "ocr-text-0003",
+            "text": "- 줄렉 흥함은 1",
+            "uncertain": false
+        },
+        {
+            "id": "ocr-text-0004",
+            "text": "- 쇄도 넓은 쇼철 떨에 줄렉을 ‘확률’로 해석 가능.",
+            "uncertain": false
+        },
+        {
+            "id": "ocr-text-0005",
+            "text": "- 쓰프도 맥스 합수를 적용해도 각 원쇄 대소 판례는 변하지 않음.",
+            "uncertain": false
+        },
+        {
+            "id": "ocr-text-0006",
+            "text": "L 싸움 수 $\\gamma = \\exp(x)$ 가 단조 증가 합수 어져 예즐",
+            "uncertain": false
+        }
+    ],
+    "regions": [],
+    "changes": [],
+    "uncertainties": []
+}
+```
