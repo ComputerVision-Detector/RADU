@@ -17,3 +17,14 @@ test('API rejects cross-origin mutation and returns conflict errors without cred
  assert.equal((await request(handler,'/?action=save','POST',{...who,text:'x',notes:'',status:'verified',revision:0})).code,409);
  assert.equal((await request(handler,'/?action=item&id=__proto__')).code,404);
 });
+test('health reports shared reads without mutating labels',async()=>{
+ const handler=setup();const result=await request(handler,'/?action=health');
+ assert.equal(result.code,200);assert.equal(result.data.status,'ok');assert.equal(result.data.samples,122);
+ assert.equal((await request(handler,'/?action=list')).data.stats.verified,5);
+});
+test('missing GitHub environment returns an actionable error code',async()=>{
+ const {GitHubStore}=await import('../lib/github-store.mjs');
+ const result=await request(handlerFor(new GitHubStore({})),'/?action=list');
+ assert.equal(result.code,503);assert.equal(result.data.code,'GITHUB_TOKEN_MISSING');
+ assert.match(result.data.error,/Production/);
+});

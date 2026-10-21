@@ -81,3 +81,15 @@ test('large GitHub state uses raw download without losing its concurrency SHA',a
  const {state,version}=await new GitHubStore({LABEL_GITHUB_TOKEN:'test-placeholder'},fetcher).read();
  assert.equal(version,'large-sha');assert.equal(Object.keys(state.items).length,122);assert.equal(reads,2);
 });
+test('GitHub configuration errors distinguish missing, invalid, forbidden and rate limited tokens',async()=>{
+ const missing=new GitHubStore({LABEL_GITHUB_TOKEN:'   '});
+ await assert.rejects(()=>missing.read(),error=>error.code==='GITHUB_TOKEN_MISSING');
+ for(const [status,headers,code] of [[401,{},'GITHUB_TOKEN_INVALID'],[403,{},'GITHUB_PERMISSION_DENIED'],[403,{'x-ratelimit-remaining':'0'},'GITHUB_RATE_LIMITED']]){
+  const store=new GitHubStore({LABEL_GITHUB_TOKEN:'test-placeholder'},async()=>new Response('{}',{status,headers}));
+  await assert.rejects(()=>store.read(),error=>error.code===code);
+ }
+});
+test('non-concurrency GitHub validation failures are not hidden as editing conflicts',async()=>{
+ const store=new GitHubStore({LABEL_GITHUB_TOKEN:'test-placeholder'},async(url)=>url.includes('/git/ref/')?new Response('{}',{status:200}):new Response(JSON.stringify({message:'Validation Failed'}),{status:422}));
+ await assert.rejects(()=>store.write(initialState(),'old-sha','test'),error=>error.code==='GITHUB_WRITE_REJECTED');
+});

@@ -30,7 +30,7 @@ function atomicWrite(file,bytes) {
 }
 export class FileStore {
   constructor(file,options={}) {
-    this.file=path.resolve(file);this.lock=this.file+'.lock';
+    this.kind='persistent-file';this.file=path.resolve(file);this.lock=this.file+'.lock';
     this.backups=path.resolve(options.backups || path.join(path.dirname(this.file),'backups'));
     this.limit=options.limit ?? 50;
     if(!Number.isInteger(this.limit) || this.limit<0 || this.limit>500)throw new Error('Backup limit must be between 0 and 500');

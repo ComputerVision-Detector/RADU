@@ -24,6 +24,8 @@ docker compose -f compose.yaml -f compose.domain.yaml up -d --build
 
 ## Vercel 배포
 
+현재 radu-amber.vercel.app에서 토큰 미설정 오류가 나면 [관리자 설정 안내](VERCEL_ADMIN_SETUP.md)를 따르세요. GitHub 데이터 브랜치는 초기화되어 있으며 Vercel Production 환경변수 등록 및 재배포가 필요합니다.
+
 GitHub 코드 브랜치: **RADU/labeling**. 기존 실험 브랜치 `feat/hybridocr`에서 분기했다.
 
 1. Vercel에서 New Project → GitHub `ComputerVision-Detector/RADU`를 가져온다.

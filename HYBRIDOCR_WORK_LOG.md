@@ -361,3 +361,13 @@ Vercel 계정/프로젝트와 서버 환경변수는 이 개발 세션에 연결
 검증: 웹/API/파일 저장 검사 18개 통과. 실제 Docker 빌드·상태 확인 및 컨테이너 안의 Node 22로 두 브라우저 협업·내보내기를 검사했다. 이미지 재빌드/컨테이너 재생성 후 전사 유지와 전체 상태 백업·복원을 확인했다. Caddy 설정도 컨테이너에서 검증했다. 실제 외부 도메인 DNS·TLS 인증서 발급은 수행하지 않았다. 테스트는 hybridocr-labeling-qa 프로젝트의 별도 Docker 볼륨을 사용한다.
 
 배포 압축파일은 artifacts/hybridocr-labeling-selfhost.tar.gz이며 SHA256 파일과 내부 파일별 해시 목록을 제공한다. 최초 상태는 검수 5장 / 미작성 117장을 유지하고 QA 전사는 포함하지 않는다. source revision은 패키지 안에 기록한다.
+
+## Vercel 운영 사이트 저장 오류 진단·연결 준비
+
+사용자가 제공한 https://radu-amber.vercel.app/에서 화면 HTTP 200 / 저장 API HTTP 503 및 LABEL_GITHUB_TOKEN 누락 오류를 실제 확인했다. 다른 작업자가 추가한 framework=null 배포 설정 커밋(21a9c9d)을 먼저 병합했다.
+
+현재 개발 인증의 저장소 읽기·쓰기 권한을 확인하고 RADU/labeling-data 브랜치의 labeling/data/live.json을 초기화했다. 실제 GitHub API로 총 122개, 검수 5개를 다시 읽어 확인했다. 토큰 값은 출력·커밋하지 않았다.
+
+토큰 누락·만료·권한 거부·요청 한도를 구분하는 오류 code, 저장소 상태 점검 GET action=health, 잘못된 GitHub 422 응답을 무조건 편집 충돌로 처리하지 않는 검사를 추가했다. 웹/API 검사 22개가 통과했다.
+
+Vercel 관리자 로그인 연결을 준비했으나 사용자가 다른 관리자가 연결해야 한다고 알려 로그인 대기를 종료했다. Vercel 환경변수 등록·실제 재배포는 완료하지 않았으며 관리자용 VERCEL_ADMIN_SETUP.md를 작성했다. 관리자는 RADU에 한정한 Contents 읽기·쓰기 토큰을 Production 서버 환경변수로 등록하고 최신 코드로 재배포해야 한다. 개발용 기존 인증을 운영 토큰으로 전달하지 않았다.

@@ -1,5 +1,5 @@
 import seed from '../data/seed.json' with { type: 'json' };
-export class AppError extends Error { constructor(status, message) { super(message); this.status = status; } }
+export class AppError extends Error { constructor(status, message, code) { super(message); this.status = status; this.code = code; } }
 export const clone = value => structuredClone(value);
 export function initialState() { return clone(seed); }
 export function labelOnly(item) {
