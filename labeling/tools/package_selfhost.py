@@ -6,7 +6,7 @@ from pathlib import Path
 import subprocess
 import tarfile
 APP=Path(__file__).resolve().parents[1]
-FILES=['START_HERE.md','README.md','Dockerfile','.dockerignore','compose.yaml','compose.domain.yaml','Caddyfile',
+FILES=['START_HERE.md','README.md','VERCEL_ADMIN_SETUP.md','Dockerfile','.dockerignore','compose.yaml','compose.domain.yaml','Caddyfile',
        '.env.selfhost.example','.env.example','package.json','server.mjs','dev.mjs','index.html','app.js','app.css',
        'build.mjs','ignore-build.mjs','vercel.json','api/labeling.mjs','data/seed.json','data/assets.manifest.json',
        'tools/state.mjs']
