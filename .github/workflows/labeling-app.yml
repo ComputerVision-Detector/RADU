@@ -21,3 +21,13 @@ jobs:
           node-version: '22'
       - run: npm test
       - run: npm run build
+      - name: Package standalone server handoff
+        run: python tools/package_selfhost.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hybridocr-labeling-selfhost
+          path: |
+            artifacts/hybridocr-labeling-selfhost.tar.gz
+            artifacts/hybridocr-labeling-selfhost.tar.gz.sha256
+          retention-days: 14
+          compression-level: 0

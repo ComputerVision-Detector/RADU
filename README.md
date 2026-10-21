@@ -1,5 +1,7 @@
 # HybridOCR 작업본
 
+**다른 서버에 바로 배포:** [서버 관리자 전달 안내](labeling/START_HERE.md). Docker·영구 저장·자동 백업·도메인 HTTPS 구성을 포함하며 GitHub 토큰 없이 실행합니다.
+
 **공동 전사 웹 추가:** `RADU/labeling` 브랜치의 [라벨링 웹 배포·사용 안내](labeling/README.md). 이름 입력만으로 작업 맡기·전사·임시 저장·검수 완료·JSON 다운로드를 제공하며 Vercel의 Root Directory는 `labeling`입니다.
 
 공동 라벨링: **브랜치 `feat/hybridocr`** · [시작 안내](docs/ANNOTATION_COLLABORATION.md) · [이미지별 정답 JSON 122개](data/benchmark/qwen_ablation_pilot/labels). 원본 이미지는 `requirements-annotation.txt` 설치 후 `python -m src.evaluation.annotation_images`로 복원합니다. GPU는 필요 없습니다.

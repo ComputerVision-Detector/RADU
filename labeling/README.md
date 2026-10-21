@@ -10,6 +10,18 @@
 - GitHub 서버 저장, 최근 수정 기록, 개별 JSON ZIP·통합 JSON 다운로드.
 - 모바일 대응. OCR/Qwen 모델 및 GPU 불필요.
 
+## 다른 사람의 서버·도메인에 바로 전달하기
+
+**[START_HERE.md](START_HERE.md)를 서버 관리자에게 전달하세요.** 이 폴더만으로 Docker 앱과 HTTPS 프록시를 실행할 수 있습니다. 이 독립 서버 방식은 GitHub 토큰·Vercel 계정·별도 DB가 필요 없으며 라벨은 서버 데이터 볼륨에 저장됩니다.
+
+```bash
+cp .env.selfhost.example .env
+# .env의 LABEL_DOMAIN을 실제 도메인으로 변경
+docker compose -f compose.yaml -f compose.domain.yaml up -d --build
+```
+
+기존 Nginx 서버에 연결하는 방법, 백업·복원과 서버 실행 조건도 START_HERE.md에 있습니다. 아래 Vercel 안내는 대안이며 독립 서버 배포에 적용하는 설정이 아닙니다.
+
 ## Vercel 배포
 
 GitHub 코드 브랜치: **RADU/labeling**. 기존 실험 브랜치 `feat/hybridocr`에서 분기했다.
@@ -36,7 +48,7 @@ Vercel 계정·프로젝트와 환경변수가 연결되기 전에는 실제 공
 
 ## 저장 위치와 충돌 처리
 
-실서비스의 원본 상태는 데이터 브랜치 **RADU/labeling-data**의 `labeling/data/live.json`이다. 첫 작업 맡기·저장 시 GitHub API로 브랜치와 파일을 생성한다. 코드 브랜치·main·기존 5장 평가 파일은 수정하지 않는다. 배포가 재시작되어도 GitHub의 상태를 다시 읽는다. Vercel 임시 파일 시스템이나 브라우저 localStorage를 공동 저장소로 사용하지 않는다.
+Vercel 방식의 원본 상태는 데이터 브랜치 **RADU/labeling-data**의 `labeling/data/live.json`이다. 첫 작업 맡기·저장 시 GitHub API로 브랜치와 파일을 생성한다. 코드 브랜치·main·기존 5장 평가 파일은 수정하지 않는다. 배포가 재시작되어도 GitHub의 상태를 다시 읽는다. Vercel 임시 파일 시스템이나 브라우저 localStorage를 공동 저장소로 사용하지 않는다.
 
 `live.json`은 모든 이미지의 전사·revision·현재 작업자·최근 이력을 포함한다. GitHub 파일 SHA를 조건으로 갱신하며, 서로 다른 이미지에 대한 동시 수정은 최신 상태에 재적용한다. 동일 이미지의 오래된 revision 저장은 409 오류로 막는다. 최근 이력은 이미지당 20개이고 GitHub 커밋에도 상태가 남는다.
 
@@ -65,7 +77,7 @@ cd labeling
 npm run dev
 ```
 
-http://127.0.0.1:8014/ 에서 확인한다. 로컬 모드는 `.runtime/state.json`을 서버 공유 파일로 사용하므로 서로 다른 브라우저의 저장이 같은 로컬 서버에 반영된다. 이 로컬 파일과 `.env`, `.vercel`, 빌드 산출물은 Git에서 제외한다. 로컬 데이터는 Vercel에 자동 업로드하지 않는다.
+http://127.0.0.1:8014/ 에서 확인한다. 로컬/독립 서버 모드는 `.runtime/state.json`(Docker는 `/data/state.json`)을 서버 공유 파일로 사용하므로 서로 다른 브라우저의 저장이 같은 로컬 서버에 반영된다. 파일 저장은 원자적 교체·버전 검사·저장 잠금을 사용하며 최근 50회 상태를 backups/에 보관한다. 이 로컬 파일과 `.env`, `.vercel`, 빌드 산출물은 Git에서 제외한다. 로컬 데이터는 Vercel에 자동 업로드하지 않는다.
 
 ```bash
 npm test

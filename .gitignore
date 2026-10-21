@@ -55,3 +55,6 @@ labeling/.vercel/
 labeling/.env*
 !labeling/.env.example
 labeling/node_modules/
+!labeling/.env.selfhost.example
+# Self-host handoff archives are generated outside Git.
+artifacts/
