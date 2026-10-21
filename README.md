@@ -1,3 +1,21 @@
+# HybridOCR 작업본
+
+**다른 서버에 바로 배포:** [서버 관리자 전달 안내](labeling/START_HERE.md). Docker·영구 저장·자동 백업·도메인 HTTPS 구성을 포함하며 GitHub 토큰 없이 실행합니다.
+
+**공동 전사 웹 추가:** `RADU/labeling` 브랜치의 [라벨링 웹 배포·사용 안내](labeling/README.md). 이름 입력만으로 작업 맡기·전사·임시 저장·검수 완료·JSON 다운로드를 제공하며 Vercel의 Root Directory는 `labeling`입니다.
+
+공동 라벨링: **브랜치 `feat/hybridocr`** · [시작 안내](docs/ANNOTATION_COLLABORATION.md) · [이미지별 정답 JSON 122개](data/benchmark/qwen_ablation_pilot/labels). 원본 이미지는 `requirements-annotation.txt` 설치 후 `python -m src.evaluation.annotation_images`로 복원합니다. GPU는 필요 없습니다.
+
+2026-10-21 추가: [표·화살표 규칙 구현 및 이미지별 정답 JSON](docs/STRUCTURE_RULES_IMPLEMENTED.md). 개별 전사 파일은 `data/benchmark/qwen_ablation_pilot/labels/`에 있습니다.
+
+지금까지의 구현·실험·성능 비교·라벨링·후속 계획은 [HybridOCR 전체 작업 기록](HYBRIDOCR_WORK_LOG.md)에 통합했습니다.
+
+2026-10-21: [사용자 정답 5장 반영 CER·WER 비교 결과](docs/QWEN_ABLATION_LABELLED_RESULTS.md)를 추가했습니다. 모델 재실행 없이 기존 예측을 재채점했습니다.
+
+현재 우선 작업은 **PaddleOCR-VL 단독과 Qwen 검수 추가 조건의 비교 평가**입니다. 웹 검수 개발은 후순위로 둡니다. 고정 표본 실행·지표 정의·전사 정답 양식·재채점 방법은 [Qwen 유무 비교 평가](docs/QWEN_ABLATION.md)에 정리했습니다.
+
+이미지 → PaddleOCR-VL 1.6 → Qwen2.5-VL 검수 → 웹 수정 → PDF 다운로드 앱은 [HYBRIDOCR.md](HYBRIDOCR.md)를 참고하세요. 실행 진입점은 `src.hybrid.app:app`, 포트는 `8010`입니다. 아래는 복사한 RADU의 기존 설명입니다.
+
 # RADU
 
 손그림 순서도 이미지에서 텍스트·도형·화살표를 구조화하고 관계를 복원한 뒤, 웹에서 검수·편집해 JSON/SVG/PNG/PDF로 내보내는 캡스톤 시제품입니다.

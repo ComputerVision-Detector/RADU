@@ -1,0 +1,825 @@
+{
+  "version": 1,
+  "instructions": "추가 117장 전사용. text에 원본 전사, 사람이 검수한 뒤 status=verified. 기존 references.json과 별도이며 현재 5장 평가에 자동 포함되지 않음.",
+  "samples": [
+    {
+      "id": "hf-0000",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0001",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0002",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0004",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0005",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0006",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0007",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0008",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0009",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0010",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0011",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0012",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0013",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0015",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0016",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0017",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0018",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0019",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0020",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0021",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0022",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0023",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0024",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0025",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0026",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0027",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0028",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0029",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0030",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0031",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0032",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0033",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0034",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0036",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0037",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0038",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0039",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0040",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0041",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0042",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0043",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0044",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0045",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0046",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0047",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0048",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0049",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0050",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0051",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0052",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0053",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0054",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0055",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0056",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0057",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0058",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0059",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0060",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0061",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0062",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0063",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0064",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0065",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0066",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0067",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0068",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0069",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0070",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0071",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0072",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0073",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0074",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0075",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0076",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0077",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0078",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0079",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0080",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0082",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0083",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0084",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0085",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0086",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0087",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0088",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0089",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0090",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0091",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0092",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0093",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0095",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0096",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0097",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0098",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0099",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0100",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0101",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0102",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0103",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0104",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0105",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0106",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0107",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0108",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0109",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0110",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0111",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0112",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0113",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0114",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0115",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0116",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0117",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0118",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0119",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0120",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    },
+    {
+      "id": "hf-0121",
+      "text": null,
+      "status": "unlabeled",
+      "annotator": "",
+      "notes": ""
+    }
+  ]
+}

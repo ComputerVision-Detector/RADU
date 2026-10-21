@@ -1,0 +1,52 @@
+{
+  "successful_pairs": 5,
+  "mean_latency_ratio": 2.103036383337543,
+  "mean_added_seconds": 18.00038940643426,
+  "changed_lines": 36,
+  "paddle_gpu_peak_max_mib": 21300.0,
+  "hybrid_gpu_peak_max_mib": 21300.0,
+  "mean_ocr_inference_seconds": 9.8367,
+  "mean_qwen_generation_seconds": 12.172657846973744,
+  "accuracy_conclusion": "Measured against user-provided transcripts; omitted-region and notation conventions are not masked.",
+  "reference_metrics": {
+    "paddle": {
+      "samples": 5,
+      "exact_match_rate": 0.0,
+      "cer_micro": 0.6325540361711512,
+      "cer_macro": 0.6302891999481246,
+      "cer_errors": 1434,
+      "cer_reference_units": 2267,
+      "cer_no_space_micro": 0.6978869217589948,
+      "cer_no_space_macro": 0.6973155612308324,
+      "cer_no_space_errors": 1222,
+      "cer_no_space_reference_units": 1751,
+      "wer_micro": 0.8886756238003839,
+      "wer_macro": 0.8935511856564489,
+      "wer_errors": 463,
+      "wer_reference_units": 521
+    },
+    "hybrid": {
+      "samples": 5,
+      "exact_match_rate": 0.0,
+      "cer_micro": 0.6149095721217468,
+      "cer_macro": 0.6233623230940435,
+      "cer_errors": 1394,
+      "cer_reference_units": 2267,
+      "cer_no_space_micro": 0.6699029126213593,
+      "cer_no_space_macro": 0.6816714451973972,
+      "cer_no_space_errors": 1173,
+      "cer_no_space_reference_units": 1751,
+      "wer_micro": 0.8330134357005758,
+      "wer_macro": 0.8599530447848407,
+      "wer_errors": 434,
+      "wer_reference_units": 521
+    },
+    "cer_sample_outcomes": {
+      "improved": 3,
+      "worsened": 1,
+      "unchanged": 1
+    },
+    "cer_reduction_pp": 1.7644464049404451,
+    "wer_reduction_pp": 5.566218809980805
+  }
+}

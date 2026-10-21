@@ -1,0 +1,23 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    environment:
+      HOST: 0.0.0.0
+      PORT: 8080
+      LABEL_LOCAL_STORE: /data/state.json
+      LABEL_BACKUP_DIR: /data/backups
+      LABEL_BACKUP_LIMIT: 50
+    ports:
+      - "127.0.0.1:${LABEL_HTTP_PORT:-8080}:8080"
+    volumes:
+      - labeling_data:/data
+    read_only: true
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8080/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 4
+      start_period: 10s
+volumes:
+  labeling_data:

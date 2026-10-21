@@ -1,0 +1,7 @@
+/* Keep the existing SVG editing controls while focusing this workspace on one OCR page. */
+#open-json,#json-file,#open-sessions,#new-blank,#new-from-image,#templates,#upload-box,#image-file,#replace-image,#analyze,#retry-analysis,#ocr-view,#radu-view,#export-menu{display:none!important}
+.sidebar .panel-section:first-child>.button-row,.sidebar .panel-section:first-child>.field,.sidebar .source-title,.sidebar .panel-section:first-child>.section-title:first-child{display:none!important}
+[data-menu="canvas"],[data-menu="pages"],[data-menu="versions"],[data-menu="list"],[data-menu="layout"]{display:none!important}
+.brand strong{font-size:18px}.brand small{font-size:9px}.brand-mark{font-size:0}.brand-mark:after{content:'H';font-size:24px}
+.top-actions a{text-decoration:none}.top-actions{flex-wrap:wrap}.sidebar .hint{line-height:1.7}
+@media(max-width:1000px){.topbar{flex-wrap:wrap;height:auto;min-height:70px}.top-actions{gap:5px}.brand{min-width:155px}.project{min-width:140px}.top-actions .button{padding:7px}.app{height:100dvh}.workspace{min-height:0}}

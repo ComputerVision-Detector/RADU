@@ -1,0 +1,37 @@
+{
+  "markdown": "",
+  "vector_edits": [
+    {
+      "id": "ocr-text-0004",
+      "text": "- 윤리의 접구가 몰입 살릿\n- 윤리의 문제는 날 (22개로는 새로 왔음)\n- 희망을 물려 (탄탄 6개월)",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0005",
+      "text": "- 윤리의 접구가 몰입 살릿\n- 윤리의 문제는 날 (22개로는 새로 왔음)\n- 희망을 물려 (탄탄 6개월)",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0006",
+      "text": "- 윤리의 접구가 몰입 살릿\n- 윤리의 문제는 날 (22개로는 새로 왔음)\n- 희망을 물려 (탄탄 6개월)",
+      "uncertain": false
+    }
+  ],
+  "regions": [],
+  "changes": [],
+  "uncertainties": [],
+  "model": "/home/user/Desktop/RADU/HybridOCR/models/vision_language/Qwen2.5-VL-7B-Instruct",
+  "metadata": {
+    "model_initialization_seconds": 2.2562009649700485,
+    "inference_seconds": 6.707799879950471,
+    "total_seconds": 9.216281208966393,
+    "input_tokens": 7611,
+    "generated_tokens": 275,
+    "peak_allocated_mib": 17331.6455078125,
+    "peak_reserved_mib": 17518.0,
+    "prompt_sha256": "8ffe3105550fde3ba84bcb9a01d3cbdcafbe660aaa27b6b11d44bffaf76b8ef5",
+    "do_sample": false,
+    "max_new_tokens": 6144,
+    "max_pixels": 1605632
+  }
+}

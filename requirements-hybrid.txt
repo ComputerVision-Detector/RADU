@@ -1,0 +1,11 @@
+-r requirements-web.txt
+transformers>=4.49
+torch>=2.2
+accelerate>=0.26
+qwen-vl-utils>=0.0.8
+datasets>=3.0
+reportlab>=4.0
+# PaddleOCR GPU runtime: install a CUDA-compatible paddlepaddle-gpu build separately.
+paddleocr>=3.7
+rapidfuzz>=3.0
+matplotlib>=3.7

@@ -1,0 +1,62 @@
+{
+  "markdown": "",
+  "vector_edits": [
+    {
+      "id": "ocr-text-0001",
+      "text": "GPT - 005-20b 에 \"hip\", \"hello\" 를 넣은 경우",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0002",
+      "text": "Token IDs [24912, 2504] → shape = [2] → N=2",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0003",
+      "text": "↓",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0004",
+      "text": "hello",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0005",
+      "text": "hip",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0006",
+      "text": "Embedding.",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0007",
+      "text": "Embedding Matrix [20108, 2880]",
+      "uncertain": false
+    },
+    {
+      "id": "ocr-text-0008",
+      "text": "Token IDs [2]",
+      "uncertain": false
+    }
+  ],
+  "regions": [],
+  "changes": [],
+  "uncertainties": [],
+  "model": "/home/user/Desktop/RADU/HybridOCR/models/vision_language/Qwen2.5-VL-7B-Instruct",
+  "metadata": {
+    "model_initialization_seconds": 2.1395666649914347,
+    "inference_seconds": 7.7251138799474575,
+    "total_seconds": 10.118061443965416,
+    "input_tokens": 4756,
+    "generated_tokens": 352,
+    "peak_allocated_mib": 16784.63427734375,
+    "peak_reserved_mib": 17108.0,
+    "prompt_sha256": "8ffe3105550fde3ba84bcb9a01d3cbdcafbe660aaa27b6b11d44bffaf76b8ef5",
+    "do_sample": false,
+    "max_new_tokens": 6144,
+    "max_pixels": 1605632
+  }
+}

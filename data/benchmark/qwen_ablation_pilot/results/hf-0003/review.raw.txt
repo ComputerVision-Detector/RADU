@@ -1,0 +1,50 @@
+```json
+{
+    "markdown": "",
+    "vector_edits": [
+        {
+            "id": "ocr-text-0001",
+            "text": "GPT - 005-20b 에 \"hip\", \"hello\" 를 넣은 경우",
+            "uncertain": false
+        },
+        {
+            "id": "ocr-text-0002",
+            "text": "Token IDs [24912, 2504] → shape = [2] → N=2",
+            "uncertain": false
+        },
+        {
+            "id": "ocr-text-0003",
+            "text": "↓",
+            "uncertain": false
+        },
+        {
+            "id": "ocr-text-0004",
+            "text": "hello",
+            "uncertain": false
+        },
+        {
+            "id": "ocr-text-0005",
+            "text": "hip",
+            "uncertain": false
+        },
+        {
+            "id": "ocr-text-0006",
+            "text": "Embedding.",
+            "uncertain": false
+        },
+        {
+            "id": "ocr-text-0007",
+            "text": "Embedding Matrix [20108, 2880]",
+            "uncertain": false
+        },
+        {
+            "id": "ocr-text-0008",
+            "text": "Token IDs [2]",
+            "uncertain": false
+        }
+    ],
+    "regions": [],
+    "changes": [],
+    "uncertainties": []
+}
+```

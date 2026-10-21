@@ -1,0 +1,165 @@
+{
+  "requested_samples": 5,
+  "finished_samples": 5,
+  "baseline_success": 5,
+  "paired_success": 5,
+  "baseline_failures": 0,
+  "qwen_failures": 0,
+  "reference_counts": {
+    "verified": 5,
+    "unlabeled": 0
+  },
+  "normalization": "Unicode NFC; collapse whitespace to one space; strip; preserve case and punctuation",
+  "paddle_seconds_all_success": {
+    "n": 5,
+    "mean": 16.318944395985454,
+    "median": 12.915201249998063,
+    "p95": 22.20870301378891,
+    "min": 11.888784019974992,
+    "max": 22.214824186987244
+  },
+  "paddle_seconds_paired": {
+    "n": 5,
+    "mean": 16.318944395985454,
+    "median": 12.915201249998063,
+    "p95": 22.20870301378891,
+    "min": 11.888784019974992,
+    "max": 22.214824186987244
+  },
+  "qwen_seconds_paired": {
+    "n": 5,
+    "mean": 17.390739643212875,
+    "median": 12.9407688860083,
+    "p95": 25.467475613614077,
+    "min": 11.888119538023602,
+    "max": 25.877244680013973
+  },
+  "hybrid_total_seconds_paired": {
+    "n": 5,
+    "mean": 34.31933380241971,
+    "median": 35.63431806501467,
+    "p95": 39.10792501383694,
+    "min": 24.39115614502225,
+    "max": 39.648852363054175
+  },
+  "paddle_gpu_mib_paired": {
+    "n": 5,
+    "mean": 21299.4,
+    "median": 21299.0,
+    "p95": 21300.0,
+    "min": 21299.0,
+    "max": 21300.0
+  },
+  "qwen_gpu_mib_paired": {
+    "n": 5,
+    "mean": 18823.8,
+    "median": 19003.0,
+    "p95": 19059.6,
+    "min": 18441.0,
+    "max": 19072.0
+  },
+  "changed_lines": 36,
+  "baseline_lines": 81,
+  "reference_paired_baseline": {
+    "samples": 5,
+    "exact_match_rate": 0.0,
+    "cer_micro": 0.6325540361711512,
+    "cer_macro": 0.6302891999481246,
+    "cer_errors": 1434,
+    "cer_reference_units": 2267,
+    "cer_no_space_micro": 0.6978869217589948,
+    "cer_no_space_macro": 0.6973155612308324,
+    "cer_no_space_errors": 1222,
+    "cer_no_space_reference_units": 1751,
+    "wer_micro": 0.8886756238003839,
+    "wer_macro": 0.8935511856564489,
+    "wer_errors": 463,
+    "wer_reference_units": 521
+  },
+  "reference_paired_hybrid": {
+    "samples": 5,
+    "exact_match_rate": 0.0,
+    "cer_micro": 0.6149095721217468,
+    "cer_macro": 0.6233623230940435,
+    "cer_errors": 1394,
+    "cer_reference_units": 2267,
+    "cer_no_space_micro": 0.6699029126213593,
+    "cer_no_space_macro": 0.6816714451973972,
+    "cer_no_space_errors": 1173,
+    "cer_no_space_reference_units": 1751,
+    "wer_micro": 0.8330134357005758,
+    "wer_macro": 0.8599530447848407,
+    "wer_errors": 434,
+    "wer_reference_units": 521
+  },
+  "reference_baseline_all_success": {
+    "samples": 5,
+    "exact_match_rate": 0.0,
+    "cer_micro": 0.6325540361711512,
+    "cer_macro": 0.6302891999481246,
+    "cer_errors": 1434,
+    "cer_reference_units": 2267,
+    "cer_no_space_micro": 0.6978869217589948,
+    "cer_no_space_macro": 0.6973155612308324,
+    "cer_no_space_errors": 1222,
+    "cer_no_space_reference_units": 1751,
+    "wer_micro": 0.8886756238003839,
+    "wer_macro": 0.8935511856564489,
+    "wer_errors": 463,
+    "wer_reference_units": 521
+  },
+  "reference_hybrid_with_baseline_fallback": {
+    "samples": 5,
+    "exact_match_rate": 0.0,
+    "cer_micro": 0.6149095721217468,
+    "cer_macro": 0.6233623230940435,
+    "cer_errors": 1394,
+    "cer_reference_units": 2267,
+    "cer_no_space_micro": 0.6699029126213593,
+    "cer_no_space_macro": 0.6816714451973972,
+    "cer_no_space_errors": 1173,
+    "cer_no_space_reference_units": 1751,
+    "wer_micro": 0.8330134357005758,
+    "wer_macro": 0.8599530447848407,
+    "wer_errors": 434,
+    "wer_reference_units": 521
+  },
+  "accuracy_available": true,
+  "limitations": [
+    "Provided user transcriptions are compared verbatim with unmasked full-page predictions; omitted regions and notation conventions can affect errors.",
+    "Five-image pilot does not establish population-level accuracy or latency.",
+    "Timing includes fresh process/model initialization per request; not steady-state throughput.",
+    "Hybrid reuses identical OCR lines/order; correction cannot recover text with no OCR anchor.",
+    "Both arms share OCR geometry; table/arrow structure accuracy requires separate ground truth.",
+    "GPU sampling includes desktop/other workloads and can miss brief peaks."
+  ],
+  "reference_provenance": {
+    "file": "references.json",
+    "sha256": "f80884264853dd4b2c526813e9ba6ac84f6a5bddc6b93a2d99718f878b27aa37",
+    "source": "user-provided verified transcriptions, 2026-10-21",
+    "id_mapping": {
+      "hf-001": "hf-0014"
+    },
+    "scoring_scope": "Use supplied text verbatim. Predictions remain whole-page outputs. No automatic masking of omitted regions or notation conversion.",
+    "notes": {
+      "hf-0081": "줄과 줄 사이에 작성되어 있는 괄호 내의 내용은  text에 작성하지 않았음.",
+      "hf-0014": "",
+      "hf-0003": "화살표는 제외하고 작성, 곱하기 같은 기호는 X 를 이용해 작성, 오른쪽 포스트잇은 제외하고 작성",
+      "hf-0094": "분수는 /로 표현하고 윗줄 반복부호(″)는 유지.",
+      "hf-0035": "전사 기준이나 특이사항"
+    }
+  },
+  "scoring_source_sha256": {
+    "ablation.py": "3b8e4c272faca9a57c43b35c5f3c2247a6dcd0d9bfe6f77146faf54ad9639957",
+    "ocr_metrics.py": "692b074fe46e6f75d474ba668afa1253abca85c4a679f4693d5551fc8109c5a3"
+  },
+  "cer_sample_outcomes": {
+    "improved": 3,
+    "worsened": 1,
+    "unchanged": 1
+  },
+  "baseline_failure_rate": 0.0,
+  "qwen_failure_rate_given_ocr_success": 0.0,
+  "hybrid_failure_rate": 0.0,
+  "changed_line_rate": 0.4444444444444444
+}

@@ -1,0 +1,23 @@
+{
+  "rule_version": "1.0",
+  "config": {
+    "max_side": 1600,
+    "line_fraction": 0.025,
+    "gap_fraction": 0.004,
+    "boundary_support": 0.65,
+    "min_arrow_fraction": 0.035,
+    "connection_fraction": 0.065,
+    "ambiguity_fraction": 0.012
+  },
+  "image": {
+    "width": 3024,
+    "height": 4032
+  },
+  "tables": [],
+  "arrows": [],
+  "unassigned_text_ids": [],
+  "limitations": [
+    "Ruled axis-aligned tables and straight arrows only; all detections require visual review.",
+    "Curved/bent arrows, borderless tables and automatic perspective correction are not implemented."
+  ]
+}

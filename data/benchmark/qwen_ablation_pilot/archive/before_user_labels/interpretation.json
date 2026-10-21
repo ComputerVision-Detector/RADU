@@ -1,0 +1,11 @@
+{
+  "successful_pairs": 5,
+  "mean_latency_ratio": 2.103036383337543,
+  "mean_added_seconds": 18.00038940643426,
+  "changed_lines": 36,
+  "paddle_gpu_peak_max_mib": 21300.0,
+  "hybrid_gpu_peak_max_mib": 21300.0,
+  "mean_ocr_inference_seconds": 9.8367,
+  "mean_qwen_generation_seconds": 12.172657846973744,
+  "accuracy_conclusion": "not measurable without independently verified references"
+}

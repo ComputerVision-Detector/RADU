@@ -1,0 +1,10 @@
+.git
+.env
+.env.*
+.vercel
+.runtime
+dist
+node_modules
+tests
+qa
+*.tar.gz

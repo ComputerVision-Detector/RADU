@@ -3,6 +3,9 @@
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) =>
     Array.from(root.querySelectorAll(selector));
+  const hybrid = window.HYBRID_REVIEW || null;
+  const draftKey = hybrid ? "hybrid.vector-draft." + hybrid.jobId : "radu.local-draft.v1";
+  let tableSize = { rows: 3, cols: 3 };
   const state = {
     doc: null,
     docGeneration: 0,
@@ -86,7 +89,7 @@
     clearTimeout(scheduleLocalDraft.timer);
     scheduleLocalDraft.timer = setTimeout(() => {
       try {
-        localStorage.setItem("radu.local-draft.v1", JSON.stringify({
+        localStorage.setItem(draftKey, JSON.stringify({
           updated_at: new Date().toISOString(),
           document: state.doc,
         }));
@@ -152,6 +155,11 @@
   const undo = () => restore(state.historyIndex - 1),
     redo = () => restore(state.historyIndex + 1);
   async function request(url, options) {
+    if (hybrid) {
+      const sessionPath = "/api/sessions/" + hybrid.jobId;
+      if (url === sessionPath) url = "/api/jobs/" + hybrid.jobId + "/vector";
+      else if (url.startsWith("/api/export/")) url = url.replace("/api/export/", "/api/jobs/" + hybrid.jobId + "/vector/export/");
+    }
     let response;
     try {
       response = await fetch(url, options || {});
@@ -487,7 +495,7 @@
       } else if (e.type === "Text") {
         out += '<rect class="element-shape" x="' + x + '" y="' + y +
           '" width="' + ew + '" height="' + eh + '" rx="3" fill="' +
-          (selected ? "#5268e817" : "#54a1d10c") + '" stroke="' + stroke +
+          (selected ? "#eef2ff" : hybrid && state.viewMode === "overlay" ? "#fffffff2" : "#54a1d10c") + '" stroke="' + stroke +
           '" stroke-width="' + sw + '" ' +
           (selected ? "" : 'stroke-dasharray="5 4"') + "/>";
       } else {
@@ -600,6 +608,7 @@
     $$(".diagram-element", svg).forEach((g) => {
       g.onpointerdown = elementPointerDown;
       g.onclick = (ev) => {
+        if (hybrid && $(".inline-editor")) return;
         if (state.tool !== "link") selectElement(g.dataset.id);
       };
       g.onkeydown = (ev) => {
@@ -1171,6 +1180,10 @@
     if (!continuingMultiSelection) state.selectedIds = event.altKey ? [id] : RaduModel.expandGroup(state.doc,[id]);
     const handle = event.target.closest("[data-handle]");
     const item = state.doc.elements.find((e) => e.id === id);
+    const lastTap = state.lastPointerTap;
+    if (hybrid && !handle && lastTap?.id === id && performance.now() - lastTap.time < 650 && Math.hypot(event.clientX-lastTap.x, event.clientY-lastTap.y) < 6) {
+      state.lastPointerTap = null; state.drag = null; editElementText(id); return;
+    }
     state.drag = {
       id,
       mode: handle
@@ -1213,7 +1226,35 @@
     renderList();
     renderInspector();
   }
+  function createTable(start, end) {
+    RaduModel.normalize(state.doc);
+    const layer = state.doc.layers.find(l => l.id === state.doc.active_layer);
+    if (layer?.locked || layer?.visible === false) { toast("작성 레이어를 확인하세요.", true); return; }
+    const x = Math.min(start.x, end.x), y = Math.min(start.y, end.y),
+      width = Math.abs(end.x - start.x), height = Math.abs(end.y - start.y);
+    if (width < tableSize.cols * 12 || height < tableSize.rows * 12) { toast("표 영역을 더 크게 드래그하세요.", true); render(); return; }
+    const tableId = RaduModel.uid("table"), cells = [];
+    for (let row = 0; row < tableSize.rows; row++) for (let col = 0; col < tableSize.cols; col++) {
+      cells.push({id: RaduModel.uid("cell"), type: "Box", shape: "process", semantic_type: "table-cell", table_id: tableId,
+        bbox: [x+col*width/tableSize.cols, y+row*height/tableSize.rows, x+(col+1)*width/tableSize.cols, y+(row+1)*height/tableSize.rows],
+        text: "", source: "manual", layer_id: state.doc.active_layer,
+        style: {fill: "#ffffff", stroke: "#334057", stroke_width: 2, font_family: "NanumGothic", font_size: Math.min(96, Math.max(12, height/tableSize.rows*.35))}});
+    }
+    state.doc.elements.push(...cells); state.selected = cells[0].id; state.selectedIds = [cells[0].id];
+    selectTool("select"); commit(); render(); status("표를 추가했습니다. 셀을 더블클릭하여 내용을 입력하세요.");
+  }
+  function tableDialog() {
+    if (!state.doc) return;
+    $("#modal-root").innerHTML = '<div class="modal-backdrop"><div class="modal" role="dialog" aria-label="표 추가"><div class="modal-head"><h2>표 추가</h2><button class="modal-close" aria-label="닫기">×</button></div><label class="field">행<input class="control" id="table-rows" type="number" min="1" max="20" value="3"></label><label class="field">열<input class="control" id="table-cols" type="number" min="1" max="20" value="3"></label><p class="hint">행과 열을 정한 뒤 캔버스에서 표 영역을 드래그하세요. 각 셀을 따로 선택·수정할 수 있습니다.</p><button class="button primary" id="draw-table">영역 그리기</button></div></div>';
+    $(".modal-close").onclick = closeModal;
+    $("#draw-table").onclick = () => {
+      const rows = Number($("#table-rows").value), cols = Number($("#table-cols").value);
+      if (![rows, cols].every(v => Number.isInteger(v) && v >= 1 && v <= 20) || rows*cols > 100) return toast("행·열은 1~20, 전체 셀은 100개 이하로 지정하세요.", true);
+      tableSize = {rows, cols}; closeModal(); selectTool("table"); status("캔버스에서 표 영역을 드래그하세요.");
+    };
+  }
   function createElement(tool, start, end) {
+    if (hybrid && tool === "table") return createTable(start, end);
     RaduModel.normalize(state.doc);
     const activeLayer = state.doc.layers.find(l=>l.id===state.doc.active_layer);
     if(activeLayer?.locked || activeLayer?.visible === false){toast("작성 레이어의 잠금과 표시 상태를 확인하세요.",true);render();return;}
@@ -1576,6 +1617,7 @@
     }
     if (state.drag) {
       const d = state.drag;
+      if (hybrid) state.lastPointerTap = d.changed ? null : {id:d.id, time:performance.now(), x:event.clientX, y:event.clientY};
       state.drag = null;
       state.guides = [];
       const e = state.doc.elements.find((item) => item.id === d.id);
@@ -1684,7 +1726,7 @@
   // from the SVG group to the SVG root. Track the element from pointerdown so
   // double-click editing works reliably even when the browser retargets click.
   $("#diagram").addEventListener("click", (event) => {
-    if (state.tool !== "select") return;
+    if (hybrid || state.tool !== "select") return;
     const group = event.target.closest &&
       event.target.closest(".diagram-element");
     const id = group && group.dataset.id || state.pointerElementId;
@@ -2372,8 +2414,8 @@
       generation = state.docGeneration;
     state.autoSaving = true;
     try {
-      const response = await request("/api/save", {
-          method: "POST",
+      const response = await request(hybrid ? "/api/jobs/" + hybrid.jobId + "/vector?reviewed=" + !options.automatic : "/api/save", {
+          method: hybrid ? "PUT" : "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(snapshot),
         }),
@@ -2389,7 +2431,7 @@
       if (state.docGeneration === generation && state.editRevision === revision) {
         state.savedDoc = clone(snapshot);
         dirty(false);
-        try { localStorage.removeItem("radu.local-draft.v1"); } catch (storageError) {
+        try { localStorage.removeItem(draftKey); } catch (storageError) {
           console.warn("Saved document but could not clear browser recovery draft", storageError);
         }
       } else if (state.docGeneration === generation) {
@@ -2442,7 +2484,7 @@
         url = URL.createObjectURL(blob),
         a = document.createElement("a");
       a.href = url;
-      a.download = "radu-flowchart." + format;
+      a.download = (hybrid ? "HybridOCR." : "radu-flowchart.") + format;
       document.body.append(a);
       a.click();
       a.remove();
@@ -2901,8 +2943,8 @@
     }
   });
   try {
-    const draft = JSON.parse(localStorage.getItem("radu.local-draft.v1") || "null");
-    if (draft?.document && confirm("이 브라우저에 저장된 자동 복구 문서가 있습니다. 복구할까요?")) {
+    const draft = JSON.parse(localStorage.getItem(draftKey) || "null");
+    if (!hybrid && draft?.document && confirm("이 브라우저에 저장된 자동 복구 문서가 있습니다. 복구할까요?")) {
       beginDocumentReplacement();
       state.doc = validateImportedDoc(draft.document);
       state.file = null;
@@ -2916,13 +2958,17 @@
       toast("자동 복구 문서를 열었습니다.");
     }
   } catch (error) {
-    try { localStorage.removeItem("radu.local-draft.v1"); } catch (_) {}
+    try { localStorage.removeItem(draftKey); } catch (_) {}
     console.warn("RADU local draft was invalid and has been removed", error);
   }
   editorTools=RaduTools.install({state,commit,render,toast,status,selectTool,selectElement,createElement,copySelection,pasteSelection,duplicateSelection,deleteSelected,undo,redo,arrangeSelection,syncArrowRelation,fitCanvas,request,saveDocument,validateImportedDoc,beginDocumentReplacement,resetHistory,shapeIcon,pointAt});
+  if (hybrid) {
+    $("#hybrid-table").onclick = tableDialog;
+    $("#hybrid-pdf").onclick = () => exportDocument("pdf");
+  }
   render();
   historyButtons();
-  const sharedId=new URLSearchParams(location.search).get('session');
+  const sharedId=hybrid?.jobId || new URLSearchParams(location.search).get('session');
   if(sharedId && /^[a-f0-9]{32}$/.test(sharedId)) loadSession(sharedId);
   setInterval(async()=>{
     if(!state.doc?.session_id || state.dirty || state.busy || document.querySelector('.inline-editor'))return;
