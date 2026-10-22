@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T19:34:00.154Z",
+  "updated_at": "2026-10-22T19:36:23.476Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2105,23 +2105,27 @@
     },
     "hf-0084": {
       "id": "hf-0084",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "·네트워크 흐름\n- 여러 지점을 가지는 물이나 전기 흐름을 그래프로 표현하고 병목 지점을\n  찾아 특징을 계산하는 문제.\n- 사람이 붓칠한 것을 기반으로 물체와 배경을 나누어\n  각각 히스토그램을 만듦.\n 나머지 영역들은 (나머지 화소) 두 히스토그램과 유사성을 따져\n  물체 영역과 배경 영역을 갱신함\n 영역이 거의 변하지 않으면 수렴한 것으로 간주하고 멈춤.\n\n·불변성 (invariant)\n- 변환을 해도 특징의 값이 변하지 않는다면 불변성이 있다.\n\n·등변성 (equivariant)\n- 불변성과 반대 개념. 특징이 어떤 변환에 대해 따라 변환하면 등변이다.\n\n·텍스처\n- 일정한 패턴의 반복.\n\n·LBP (Local Binary Pattern)\n- 중심 화소와 주위 화소의 명암값을 비교해서 텍스처를 구함.\n- 주위 8개 화소와 값을 비교하여 회색 화소보다 큰 화소는 1, 작은 화소는 0으로 표시.\n  영역에 모든 화소로 조사 후 256개 값에 대한 발생 빈도로\n  센 히스토그램을 구함.\n  이렇게 구한 LBP는 256차원의 특징 벡터가 됨.",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T19:59:00.154Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T19:36:23.476Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0084.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T19:36:23.476Z"
     },
     "hf-0085": {
       "id": "hf-0085",
