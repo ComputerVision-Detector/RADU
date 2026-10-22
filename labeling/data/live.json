@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:09:37.641Z",
+  "updated_at": "2026-10-22T18:11:02.842Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1165,23 +1165,27 @@
     },
     "hf-0045": {
       "id": "hf-0045",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "· 하이퍼파라미터 최적화 단계\n1. 하이퍼파라미터 값의 범위를 설정\n2. 설정된 범위에서 하파 값을 무작위로 추출\n3. 위 단계에서 샘플링한 하파 값을 사용하여 학습\n→ 검증 데이터로 정확도 평가\n4. 2단계와 3단계를 특정 횟수(ex.100회) 반복하며,\n→ 정확도의 결과를 보고 하파 범위를 좁힘.\n\n· 완전연결 (전결합)\n- 인접한 계층의 모든 뉴런과 결합되어 있는 것\n수학적 연산 설명이름 구조를 설명하는 이름\n· Affine 계층 (완전연결 계층).\n- 완전히 연결된 계층.\n- 완전연결 계층이 Affine 연산을 수행했기에.\n완전연결 계층 = Affine 계층 이 됨.\n하지만 완전연결 계층에서 다른 연산을 하게 되면\n완전연결 계층(o), Affine 계층(x)\n\nMNIST ReLU계층 softmax 계층\n2 → Affine → ReLU → Affine → ReLU → ... → Affine → softmax →\n\n완전연결 (Affine 계층)",
+      "status": "verified",
+      "annotator": "이나현",
+      "notes": "주석 검토 필요.",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T18:34:37.641Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:11:02.842Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0045.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:11:02.842Z"
     },
     "hf-0046": {
       "id": "hf-0046",
