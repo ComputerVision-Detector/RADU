@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "7f97f382d9d82aa6b21e9b617b46218f1ec4b0aa",
-  "updated_at": "2026-10-22T08:05:06.376Z",
+  "updated_at": "2026-10-22T08:06:14.395Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -26,23 +26,27 @@
     },
     "hf-0001": {
       "id": "hf-0001",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "Final RMSNorm\t[N, 2880]\nUnembedding\t\t[N, 2880]\tLinear 2880 201098 [N,201088]\nLogits\t\t\t\t[N, 201088]\nTransformer 출력\nToken Generator\tlogits[-1]로 마지막 토큰 선택\nTemperature\t[201088]\nsampling\t\tscalar Token ID\nNextToken\n\nTransformer 자체는 Embedding block들 final Norm Unembedding 구조이고\nToken Generator는 그 Transformer의 결과인 Logits를 받아 다음 토큰을 결정하는 역할",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "화살표 제외",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "d01a3bdf-24ec-4879-ae62-5405e56314cc",
-        "until": "2026-10-22T08:30:06.376Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T08:06:14.395Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0001.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T08:06:14.395Z"
     },
     "hf-0002": {
       "id": "hf-0002",
