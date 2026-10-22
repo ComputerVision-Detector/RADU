@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:12:37.637Z",
+  "updated_at": "2026-10-22T18:12:57.711Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1213,23 +1213,27 @@
     },
     "hf-0047": {
       "id": "hf-0047",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "·CNN (합성곱 신경망)\n- 필터의 매개변수가 가중치에 해당.\n- 필터를 적용한 결과에 편향을 더해줌으로 출력 데이터가 나옴.\n\nPad: 덧대다, 채워넣다\n·패딩 (Padding)\n- 합성곱 연산을 수행하기 전에 입력 데이터 주변부를 특정 값으로 채우는 것.\n\n·스트라이드\n- 필터를 적용하는 위치의 간격. 스트라이드를 키우면 출력은 작아짐.\n\n(합성곱 연산) \t편향\n입력 데이터 \t필터\n↓\n1칸 이동 : 스트라이드가 1이다.",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "그림은 제외",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T18:37:24.069Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:12:57.711Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0047.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:12:57.711Z"
     },
     "hf-0048": {
       "id": "hf-0048",
