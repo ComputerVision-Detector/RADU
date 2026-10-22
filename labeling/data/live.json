@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T21:03:24.147Z",
+  "updated_at": "2026-10-22T21:03:56.284Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2297,23 +2297,27 @@
     },
     "hf-0092": {
       "id": "hf-0092",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "14기\n법원경배정보 : 정보가 제한되어 있음\n네이버 → 부동산 → 경매\nGG옥션 → 회원가입\n굿옥션 ① 3대 인터넷 정보사이트\n부동산 해인\n\n말소기준보다 → 최초전입이 잇으면 우선순위자가 있다는 뜻 소유주는 관계없음\n보존동기일 → 이날짜에 등기가 됐다는 뜻\n건물이 지어진 시기가 아니라는 뜻\n\n평수가 넓은 아파트일수록 층수가 올라갈수록 유리 저층을 갈수록 매매어려움\n\n낙찰금액계산 매가를 예상후 원하는 이익금을 환산후 경매 낙찰금액 기재",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "오른쪽 위 메모는 제외",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T21:28:24.147Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T21:03:56.284Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0092.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T21:03:56.284Z"
     },
     "hf-0093": {
       "id": "hf-0093",
