@@ -2,27 +2,31 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "7f97f382d9d82aa6b21e9b617b46218f1ec4b0aa",
-  "updated_at": "2026-10-22T08:49:56.932Z",
+  "updated_at": "2026-10-22T08:50:15.568Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "GPT-OSS-20B model.py 기준\nToken IDs\t[N] N = 입력 토큰 개수\n↓\nEmbedding - Embedding Matrix[201088, 2880]\n↓\nTransformer Block X 24\nAttention Block\nRMSNorm\t[N,2880]\nQKV Projection [N, 2880] → [N,5120]\nQ/K/V 분리 [N, 4096], [N,512], [N,512]\nQ/K/V Reshape [N,8,8,64],[N,8,64],[N,8,64]\nRoPE [N,8,8,64],[N,8,64]\nSDPA\nK/V Expand\t[N,8,8,64],[N,8,8,64]\nSink Reshape / Expand [64],[8,8,1,1],[8,8,N,1]\ncausal Mask [N,N]\nsliding window [N,N]\nQK6^T [8,8,N,N]\nscaling [8,8,N,N]\nMask 적용 [8,8,N,N]\nsink 추가 [8,8,N,N]\nsoftmax [8,8,N,N+1]\nsink weight 제거[8,8,N,N]\nAttention * V [8,8,N,N],[N,8,8,64]\noutput Projection [N,2880] [N,8,8,64]\nResidual [N,2880] reshape [N,8,8,64] → [N,4096]\nMLP Block (MOE)\nRMSNorm [N,2880]\nRouter [N,32] Linear 2880 → 32\nTop-4 [N,32 → N, 4]\nExpert MLP\nMLP#1 [32,5760,2880]→[N,4,5760,2880]→[N,4,5760]\nSwiGLU [N,4,2880]\nMLP#2 [32,2880,2880],[N,4,2880,2880]→[N,4,2880]\nExpert Weighted Sum [N,4,2880],[N,4]→[N,2880]\nResidual [N,2880]",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "포스트잇 메모 제외, 트리형식 제외, 간단한 화살표는 작성",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "d01a3bdf-24ec-4879-ae62-5405e56314cc",
-        "until": "2026-10-22T09:13:08.955Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T08:50:15.568Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0000.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T08:50:15.568Z"
     },
     "hf-0001": {
       "id": "hf-0001",
