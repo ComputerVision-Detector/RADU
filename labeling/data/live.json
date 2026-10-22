@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T16:59:51.648Z",
+  "updated_at": "2026-10-22T17:01:40.939Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -747,23 +747,27 @@
     },
     "hf-0028": {
       "id": "hf-0028",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "·신경망 학습은 손실 함수의 최저점을 찾아가는 과정.\n최저점을 찾는 문제는 전형적인 최적화 문제.\n신경망은 SGD 알고리즘 등으로 이 문제를 품.\n\n·옵티마이저 (optimizer)\n- SGD와 같은 최적화 알고리즘을 옵티마이저라고 부름.\n\n·모멘텀\n\n고전적 SGD : \\(w = w - \\rho \\frac{\\partial J}{\\partial w}\\)\n\n→ 모멘텀 적용 SGD :\n\\(v = \\alpha v - \\rho \\frac{\\partial J}{\\partial w}\\)\n\\(w = w + v\\)\n\n\\(\\alpha\\)  학습률\n\n- 고전적 SGD는 현재 미니배치로 계산한 그래디언트 \\(\\frac{\\partial J}{\\partial w}\\)만 사용.\n- 모멘텀 적용 SGD는 이전 미니배치에서 얻었던 방향 정보 \\(v\\)를 같이 고려해 잡음을 줄이는 효과를 얻음.\n- \\(\\alpha\\)는 0~1 사이의 실수.\n\\(\\alpha = 0\\)이면 고전적 SGD.\n1에 가까울수록 이전 gradient 정보에 큰 가중치를 줌.\n주로 0.5, 0.9 등 사용.\n- gradient에는 오류가 작아지는 방향을 지시하지만 얼마나 이동해야 \n최저점에 도달하는지에 대한 정보는 없음.\n따라서 옵티마이저 (여기선 SGD)는 작은 학습률을 사용해 \n조금씩 이동하는 보수적인 정책 사용.\n너무 작게 하면 수렴하는데 시간이 많이 걸리고\n너무 크게 하면 최저점을 지나치는 현상이 나타남.",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "수식은 LaTex",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T17:24:51.648Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T17:01:40.939Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0028.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T17:01:40.939Z"
     },
     "hf-0029": {
       "id": "hf-0029",
