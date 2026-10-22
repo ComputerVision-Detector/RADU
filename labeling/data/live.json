@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T16:58:35.257Z",
+  "updated_at": "2026-10-22T16:59:43.343Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -723,23 +723,27 @@
     },
     "hf-0027": {
       "id": "hf-0027",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "·교차 엔트로피\n- 두 확률 분포가 다른 정도를 측정.\nex) 공정한 주사위 2개가 있을 때\n둘은 확률 분포가 같으므로 교차 엔트로피가 작음.\n공정한 주사위와 찌그러진 주사위로 교차 엔트로피를 계산하면 큰 값이 됨.\n\n\\(e = -\\sum_{j=1,c} y_j \\log o_j\\)\n부류의 개수\n숫자 인식의 경우 10.\n\n- 평균제곱 오차가 안고 있는 불공정성 문제를 해결함.\n→ 딥러닝에서 주로 사용.\n\n·L1 Norm → 절댓값의 합. → 맨해튼 거리\n\n·L2 Norm → 제곱합의 제곱근 → 유클리드 거리\n\n·RMS Norm (Root Mean Square Normalization)\n- 제곱 평균 제곱근을 이용한 정규화\n\n\\(RMS(x) = \\sqrt{\\frac{1}{d}\\sum_{j=1}^{d}x_j^2+\\epsilon}\\)",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "수식은 LaTex",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T17:23:35.257Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T16:59:43.343Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0027.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T16:59:43.343Z"
     },
     "hf-0028": {
       "id": "hf-0028",
