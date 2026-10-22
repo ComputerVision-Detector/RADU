@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:55:58.928Z",
+  "updated_at": "2026-10-22T18:56:23.084Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1647,23 +1647,27 @@
     },
     "hf-0065": {
       "id": "hf-0065",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "· 피드포워드 (feed forward : 앞먹임)\n- 흐름이 한방향인 신경망\n- 입력 신호가 다음층(중간층)으로 전달 전달 전달 …\n- 단점: 시계열 데이터를 잘 다루지 못함\n\n· 언어 모델 (Language Model)\n→ 여기에 한 종류이며 대규모로 확장된 언어 모델이 LLM\n(Large Language Model)\n- 단어 나열에 확률 부여.\n\n· 확률의 곱셈정리\n- P(A,B) = P(A|B)P(B)\n- A와 B가 모두 일어날 확률 P(A,B)는 B가 일어날 확률 P(B)과 B가 일어난 후\nA가 일어날 확률 P(A|B)를 곱한 값과 같다.\nP(A,B) = P(B|A)P(A) 로도 표시 가능.\n\n· 조건부 언어 모델 (Conditional Language Model)\nP(w_t|w_1, …, w_{t-1})을 나타내는 모델.\n이것을 언어 모델이라 하는 경우도 있음.\n\n· 마르코프 연쇄 (마르코프 모델)\n- 미래의 상태가 현재 상태에만 의존해 결정되는 것\n이상의 확률이 그 직전 N개의 사건에만 의존할 때, 이를 N층 마르코프 연쇄라고 함.\n\n· 신경 확률론적 언어 모델 (Neural Probabilistic Language Model)\n- 맥락의 단어 벡터를 은닉층에서 연결하는 방식.",
+      "status": "verified",
+      "annotator": "이나현",
+      "notes": "주석 위치 확인 필요.",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T19:20:58.928Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:56:23.084Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0065.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:56:23.084Z"
     },
     "hf-0066": {
       "id": "hf-0066",
