@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T14:21:57.075Z",
+  "updated_at": "2026-10-22T14:22:39.232Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2145,18 +2145,20 @@
     },
     "hf-0125": {
       "id": "hf-0125",
-      "text": "ch.3\n\n· 인터페이스 ⇒ 동영상, 음향 신호를 전달하기 위한 케이블, 단자.\n\t\t\t\t\t\t\t\t\t\t\tHDMI 특징이기도 함.\n\t→ C-type, USB··· 기계랑 연결할 수 있으면 다 인터페이스임.",
-      "status": "draft",
+      "text": "ch.3\n\n· 인터페이스 ⇒ 동영상, 음향 신호를 전달하기 위한 케이블, 단자.\nHDMI 특징이기도 함.\n→ C-type, USB··· 기계랑 연결할 수 있으면 다 인터페이스임.\n\n· HDMI : 전송 용량 48Gbps (2.0에 비해 2배 ↑)\n→ 표준 인터페이스\n\n· USB : 버전이 바뀌어도 사용 가능. 전자기기에서 사용하는 것은 범용적인 인터페이스.\n\n· HCI (Human Computer Interection)\n\n· UI, UX의 개념.\n⇒ User Interface : UI / UI가 확장된 게 UX\n\n· UI/UX 실패 사례\n→ 인터넷 뱅킹, 신문\n→ 전자책 등\n\n· 언택트 시대의 UI/UX Disgn\n→ 사용자가 빠르고, 쉽게!! 불필요한 것은 과감히 제거. [사용자의 편의성이 최우선!]\n\n· 인터렉션과 HCI (잘 구분하기)\n- 인터랙션 : 사람들 사이의 상호작용과 인공 매체와 사람  사이의 상호작용을 의미.\n\n- HCI 중요도 증가 요인 - 보편성 : 일반인도 흥미를 갖고 쉽게 사용할 수 있도록. ㅡ\n- 경량화 : 디지털 기기와 서비스를 유용하게 사용하도록 설계.",
+      "status": "verified",
       "annotator": "김혜린",
       "notes": "",
-      "revision": 2,
+      "revision": 3,
       "seed_verified": false,
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-22T14:46:51.996Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-10-22T14:22:39.232Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 3
+        },
         {
           "at": "2026-10-22T14:03:59.154Z",
           "author": "김혜린",
@@ -2175,7 +2177,7 @@
         "source_width": 2690,
         "source_height": 3444
       },
-      "updated_at": "2026-10-22T14:03:59.154Z"
+      "updated_at": "2026-10-22T14:22:39.232Z"
     },
     "hf-0126": {
       "id": "hf-0126",
