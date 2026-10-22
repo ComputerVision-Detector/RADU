@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:02:40.705Z",
+  "updated_at": "2026-10-22T18:03:07.116Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1045,23 +1045,27 @@
     },
     "hf-0040": {
       "id": "hf-0040",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "·안장점\n- 어느 방향에서 보면 극댓값, 다른 방향에서 보면 극솟값이 되는 점.\n(말 안장)\n·최솟값을 찾으면 ⇒ 경사 하강법.\n·최댓값을 찾으면 ⇒ 경사 상승법.\n\n·학습률\n- \\(\\eta\\) (에타 eta)로 나타냄.\n- 한 번의 학습으로 얼마만큼 학습할지, 즉 매개변수 값을 \n얼마나 갱신하느냐 정하는 것.\n\n·하이퍼 파라미터 (초매개변수)\n- 사람이 직접 설정해야 하는 매개변수.\n- ex. 학습률\n\n·신경망 학습에서의 기울기 - 가중치 매개변수에 대한 손실 함수의 기울기.\n\n·확률적 경사 하강법 (SGD)\n- 확률적으로 무작위로 골라낸 데이터에 대해 수행하는 \n경사 하강법\t\t→ 미니배치\n\n·과적합\n- 훈련 데이터에 포함된 이미지만 제대로 구분하고, 그렇지 않은 \n이미지는 식별할 수 없다는 뜻",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T18:25:24.172Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:03:07.116Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0040.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:03:07.116Z"
     },
     "hf-0041": {
       "id": "hf-0041",
