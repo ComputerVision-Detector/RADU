@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:59:38.101Z",
+  "updated_at": "2026-10-22T18:59:42.497Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1695,23 +1695,27 @@
     },
     "hf-0067": {
       "id": "hf-0067",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "· BPTT (Backpropagation Through Time)\n- 시간 방향으로 펼친 신경망의 오차역전파법\n- 시계열 데이터가 길어짐에 따라 계산량과 메모리 사용량도 증가함.\n(BPTT를 이용해 기울기를 구하기 위해서는 매 시각 RNN 계층의 중간 데이터를\n메모리에 유지해야 하기 때문).\n\n· Truncated BPTT\n- 적당한 길이로 잘라낸 오차역전파법.\n- 시간축 방향으로 너무 길어진 신경망을 적당한 지점에서\n잘라내어 작은 신경망 여러개로 만드는 것\n- 순전파의 흐름은 끊지 않고 역전파의 흐름만 끊음.\n- 미니배치 학습을 수행할 때는 단어를 무작위로 선택했지만\nTruncated BPTT를 수행할 때는 데이터를 순서대로 입력해야 함.",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T19:24:38.101Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:59:42.497Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0067.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:59:42.497Z"
     },
     "hf-0068": {
       "id": "hf-0068",
