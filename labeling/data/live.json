@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T16:57:06.451Z",
+  "updated_at": "2026-10-22T16:58:28.470Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -699,23 +699,27 @@
     },
     "hf-0026": {
       "id": "hf-0026",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "순전파\n↓\n예측값 계산\n- 평균제곱 오차 (MSE)\n- 오차제곱합 (SSE)\n- 교차 엔트로피 (Cross Entropy)\n↓\n역전파\n↓\n손실을 각 가중치로 미분\n↓\nGradient 계산\n↓\n옵티마이저\n- 확률적 경사하강법 (SGD)\n- Adam\n- RMSprop\n↓\n가중치 업데이트.",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T17:22:06.451Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T16:58:28.470Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0026.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T16:58:28.470Z"
     },
     "hf-0027": {
       "id": "hf-0027",
