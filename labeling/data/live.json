@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T14:16:54.720Z",
+  "updated_at": "2026-10-22T14:17:14.564Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -244,18 +244,20 @@
     },
     "hf-0008": {
       "id": "hf-0008",
-      "text": "GPT-OSS-20b hugging face modeling_gpt_oss\nGPTOSSForCausalLM\nGPTOSSModel\n\nToken IDs\n↓\nEmbedding\n↓\nPosition/RdPE계산\nGPTOSSRostaryEmbedding\ninv-freq\nposition_ids\nfreq계산\ncos\nsin\n↓\nAttention Mask생성\nGPTOSSModel,forward()\ncreate_causal_mask()\ncreate_sliding_window_causal_mask()\n↓\nTransformer Block x 24\nGPTOSSEDcoderlater\nInputRUSNorm\nSelf-Attention\nQ profection\nK profection\nV  profection\nQ/K/V Reshape\nRoPE\nKV Cache Update\nAttention Interface\n",
+      "text": "GPT-OSS-20b hugging face modeling_gpt_oss\nGPTOSSForCausalLM\nGPTOSSModel\n\nToken IDs\n↓\nEmbedding\n↓\nPosition/RdPE계산\nGptOssRostaryEmbedding\ninv_freq\nposition_ids\nfreq 계산\ncos\nsin\n↓\nAttention Mask생성\nGptOssModel,forward()\ncreate_causal_mask()\ncreate_sliding_window_causal_mask()\n↓\nTransformer Block x 24\nGptOssDecoderlayer\nInput RMSNorm\nSelf-Attention\nQ Projection\nK Projection\nV  Projection\nQ/K/V Reshape\nRoPE\nKV Cache Update\nAttention Interface",
       "status": "verified",
       "annotator": "이나현",
       "notes": "",
-      "revision": 2,
+      "revision": 3,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T14:40:57.088Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-10-22T14:17:14.564Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 3
+        },
         {
           "at": "2026-10-22T14:09:19.966Z",
           "author": "이나현",
@@ -274,7 +276,7 @@
         "source_width": 3024,
         "source_height": 4032
       },
-      "updated_at": "2026-10-22T14:09:19.966Z"
+      "updated_at": "2026-10-22T14:17:14.564Z"
     },
     "hf-0009": {
       "id": "hf-0009",
