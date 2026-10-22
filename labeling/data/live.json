@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T17:46:01.163Z",
+  "updated_at": "2026-10-22T17:48:21.733Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -873,23 +873,27 @@
     },
     "hf-0033": {
       "id": "hf-0033",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "·시그모이드 함수\n- 식\n\\(h(x) = \\frac{1}{1+\\exp(-x)}\\)\n\\(\\exp(-x) = e^{-x}\\) : 자연상수\n\n·계단함수와 시그모이드 함수는 비선형 함수.\n·선형함수 : 입력의 상수배로 변하는 함수. (직선 1개로 그릴 수 있음)\n·비선형함수 : 직선 1개로 그릴 수 없는 함수.\n·선형함수를 신경망에 이용하지 않는 이유.\n- 층을 아무리 깊게 해도 '은닉층이 없는 네트워크' 로도\n똑같은 기능을 할 수 있음.\n\n·A열의 개수와 B행의 개수가 같아야 계산 가능.\n\n\\(A = \\begin{bmatrix}1 & 2 & 3 \\\\ 4 & 5 & 6\\end{bmatrix}\\)\n\n\\(B = \\begin{bmatrix}1 & 2 \\\\ 3 & 4 \\\\ 5 & 6\\end{bmatrix}\\)\n\n\\(A \\times B = C = \\begin{bmatrix}22 & 28 \\\\ 49 & 64\\end{bmatrix}\\)\n\nA 열 개수 : 3개\nB 행 개수 : 3개\n\n- 이렇게 계산하면 결과 C 행렬은\nA 행렬의 행 수와 B 행렬의 열 수가 됨.\n\n·분류\n- 데이터가 어느 클래스에 속하냐\n\n·회귀\n- 입력 데이터에서 연속적인 수치를 예측하는 문제.",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "수식은 LaTex",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T18:10:39.304Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T17:48:21.733Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0033.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T17:48:21.733Z"
     },
     "hf-0034": {
       "id": "hf-0034",
