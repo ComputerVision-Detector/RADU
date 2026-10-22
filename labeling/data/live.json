@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:22:05.950Z",
+  "updated_at": "2026-10-22T18:23:33.851Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1387,23 +1387,27 @@
     },
     "hf-0054": {
       "id": "hf-0054",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "· 순전파를 통해 출력을 하고 분류를 한 후 확률을 뽑은 다음 모든 계층이 끝나면 역전파를\n이용해 손실을 줄일 수 있는 기울기를 구하게 됨.\n\n· 손실함수.\n- 학습 단계의 특정 시점에서 신경망의 성능을 나타내는 척도로 손실을 사용.\n- 신경망의 손실은 손실 함수를 사용해 구함. (ex. 교차 엔트로피 오차..)\n\n· 교차엔트로피 오차\n- 신경망이 출력하는 각 클래스의 확률과 정답 레이블을 이용해 구할 수 있음.\n\n· 기울기\n- 벡터의 각 원소에 대한 미분을 정리한 것.\n\n· 연쇄 법칙\n- 합성함수에 대한 미분의 법칙\n- 함수가 아무리 복잡하더라도, 아무리 많은 함수를 연결해도, 그 미분은 개별 함수의\n미분들을 이용해 구할 수 있기 때문.\n→ 각 함수의 국소적인 미분을 계산할 수 있으면\n그 값들을 곱해서 전체의 미분을 구할 수 있음.",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T18:47:05.950Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:23:33.851Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0054.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:23:33.851Z"
     },
     "hf-0055": {
       "id": "hf-0055",
