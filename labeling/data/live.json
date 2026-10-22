@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T16:38:46.068Z",
+  "updated_at": "2026-10-22T16:40:59.428Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -555,23 +555,27 @@
     },
     "hf-0020": {
       "id": "hf-0020",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "- i 번째 에지는 특징 $x_i$와 가중치 $w_i$를 곱해 출력 노드로 전달\n출력노드는 $x_i*w_i + 편향$에 대해 결과를 활성 함수에 \n적용한 결과를 출력으로 내보냄\n\n· 이진 분류기\n- 특징 공간을 두 공간으로 분류\n\n· 신경망을 합습하는 일은 전형적인 최적화 문제\n→ 신경망 학습 알고리즘은 전형적인 최적화 알고리즘\n\n· 에폭(epoch)\n- 훈련 집합 전체를 한번처리하는 일\n\n· 분류 문제\n- 물체 검출(object detection) : 바운딩 박스로 물체 영역 레이블링\n-물체 분할(object segementation) : 화소별로 어떤 물체에 속하는지 레이블링\n화소별로 레이블이 지정한 물체에 해당하는지 여부를 따지는 손실함수\n\n· 기계학습의 경사하강법과 항공공학의 경사하강법의 다른점\n1. 데이터가 개입\n\t- 기계학습에는 x,y 가 있음\n2. 기계학습의 경사하강법은 매개변수가 방대\n3. 학습된 모델은 일반화 능력이 뛰어나야 함",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "수식은 LaTex로 작성",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T17:03:46.068Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T16:40:59.428Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0020.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T16:40:59.428Z"
     },
     "hf-0021": {
       "id": "hf-0021",
