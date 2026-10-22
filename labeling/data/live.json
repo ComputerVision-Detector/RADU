@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:39:37.634Z",
+  "updated_at": "2026-10-22T18:39:46.544Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1581,11 +1581,7 @@
       "notes": "",
       "revision": 0,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T19:04:37.634Z"
-      },
+      "claim": null,
       "history": [],
       "image": {
         "file": "assets/hf-0062.webp",
