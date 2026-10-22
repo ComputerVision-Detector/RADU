@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T19:36:39.470Z",
+  "updated_at": "2026-10-22T19:38:43.060Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2129,23 +2129,27 @@
     },
     "hf-0085": {
       "id": "hf-0085",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "·LTP (Local Ternary Pattern)\n- 임계값 T = 10이라면 중앙 화솟값 122를 기준으로 122-10보다 작은 화소에는 -1,\n  122+10보다 큰 화소에는 1, 그렇지 않은 화소에는 0을 부여해\n  3진 코드를 얻는다.\n 3진 코드를 이진 코드 2개로 변환 → 각각 십진수로 변환.\n 각각에 대해 히스토그램을 구하면\n  칸이 256개의 히스토그램 2개를 얻음.\n 결국 512차원 LTP 특징 벡터를 얻음.\n\n·대응점 문제\n- 이진한 영상에 나타난 같은 물체의 같은 곳을 쌍으로 묶어주는 일.\n\n·지역 특징의 조건\n- 반복성\n- 불변성\n- 분별력 : 물체의 다른 곳에서 추출된 특징과 두드러지게 달라야 한다.\n- 지역성 : 작은 영역을 중심으로 특징 벡터를 추출하므로 물체에 가림이 발생해도 매칭이 안정적.\n- 적당한 양 : 물체를 추적하려면 몇 개의 대응점만 있으면 된다.\n- 계산 효율 : 계산 시간이 매우 중요한 응용이 많음.\n- 조건들은 상충 관계에 있음",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T20:01:39.470Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T19:38:43.060Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0085.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T19:38:43.060Z"
     },
     "hf-0086": {
       "id": "hf-0086",
