@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T17:59:45.794Z",
+  "updated_at": "2026-10-22T18:00:01.276Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1009,23 +1009,27 @@
     },
     "hf-0039": {
       "id": "hf-0039",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "· 정확도는 매개변수의 미소한 변화에는 거의 반응하지 않음.\n반응이 있더라도 그 값이 불연속적으로 변함.\n- 이는 계단 함수를 활성화 함수로 사용하지 않는 이유.\n  - 매개변수의 작은 변화가 주는 파장을 계단 함수가 \n말살하여 손실 함수의 값에는 아무런 변화가 없음.\n\n·수치 미분\n- 아주 작은 값으로 미분하는 것.\n\n·편미분\n- 변수가 여럿인 함수에 대한 미분.\n\n·수치 미분 - 근사치로 계산하는 방법.\n\n·기울기\n- 모든 변수의 편미분을 벡터로 정리한 것.\n- 벡터 각 원소에 대한 미분을 정리한 것.\n·기울기가 가리키는 쪽은 각 장소에서 함수의 출력 \n값을 가장 크게 줄이는 방향.\n\n·최적의 값\n- 손실 함수가 최솟값이 될 때 매개변수 값.\n\n·경사법\n- 기울기를 이용해 함수의 최솟값을 찾으려는 기법.",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T18:22:29.197Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:00:01.276Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0039.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:00:01.276Z"
     },
     "hf-0040": {
       "id": "hf-0040",
