@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T17:51:37.606Z",
+  "updated_at": "2026-10-22T17:52:48.234Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -933,23 +933,27 @@
     },
     "hf-0036": {
       "id": "hf-0036",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "· 출력 층의 뉴런 수 정하기\n- 분류에서는 분류하고 싶은 클래스 수로 설정\n\n· MNIST 데이터 셋\n- 손글씨 숫자 이미지 집합.\n\n· 원-핫 인코딩 (one-hot encoding)\n- [0,0,1,0,0,0,...]처럼 정답을 뜻하는 원소만 1(핫)\n나머지는 모두 0인 배열\n\n· 정규화\n- 데이터를 특정 범위로 변환하는 처리.\n\n· 전처리\n- 신경망의 입력 데이터에 특정 변환을 가하는 작업.\n\n· 데이터 백색화\n- 전체 데이터를 균일하게 분포시키는 것\n\n· 배치(batch)\n- 하나로 묶은 입력 데이터\n- 이미지가 지폐처럼 다발로 묶여 있다.",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T18:16:37.606Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T17:52:48.234Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0036.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T17:52:48.234Z"
     },
     "hf-0037": {
       "id": "hf-0037",
