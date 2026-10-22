@@ -1,7 +1,21 @@
 import seed from '../data/seed.json' with { type: 'json' };
-export class AppError extends Error { constructor(status, message) { super(message); this.status = status; } }
+export class AppError extends Error { constructor(status, message, code) { super(message); this.status = status; this.code = code; } }
 export const clone = value => structuredClone(value);
 export function initialState() { return clone(seed); }
+// Merge catalog additions without resetting collaborative annotations or active claims.
+export function reconcileState(stored, catalog=seed) {
+  if(stored?.schema!==1 || !stored.items) throw new AppError(503,'공유 라벨 데이터 형식을 확인해야 합니다.');
+  const result=clone(stored);
+  for(const id of Object.keys(result.items)) {
+    if(!Object.hasOwn(catalog.items,id)) throw new AppError(503,'저장된 이미지 목록이 배포 버전보다 최신입니다. 최신 앱으로 재배포해 주세요.');
+  }
+  for(const [id,item] of Object.entries(catalog.items)) {
+    if(!Object.hasOwn(result.items,id)) result.items[id]=clone(item);
+    else result.items[id].image=clone(item.image);
+  }
+  result.revision=catalog.revision;
+  return result;
+}
 export function labelOnly(item) {
   const result = Object.fromEntries(['id','text','status','annotator','notes'].map(key => [key, item[key]]));
   if (item.submitted_id) result.submitted_id = item.submitted_id;

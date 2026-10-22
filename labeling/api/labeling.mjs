@@ -9,6 +9,7 @@ export function handlerFor(store) {
       const url=new URL(req.url,'http://local');const action=url.searchParams.get('action') || 'list';
       if(req.method==='GET') {
         const {state}=await store.read();const client=url.searchParams.get('client_id') || '';
+        if(action==='health')return res.status(200).json({status:'ok',storage:store.kind || 'shared',samples:Object.keys(state.items).length});
         if(action==='list')return res.status(200).json(listState(state,client));
         if(action==='item')return res.status(200).json(getItem(state,url.searchParams.get('id'),client));
         if(action==='export') {
@@ -35,7 +36,7 @@ export function handlerFor(store) {
       const result=await applyMutation(store,action,body);return res.status(200).json(result);
     } catch(error) {
       const status=error instanceof AppError ? error.status : error instanceof SyntaxError ? 400 : 500;
-      return res.status(status).json({error:status===500?'저장 처리 중 오류가 발생했습니다. 입력 내용은 유지됩니다.':error.message});
+      return res.status(status).json({error:status===500?'저장 처리 중 오류가 발생했습니다. 입력 내용은 유지됩니다.':error.message,...(error.code ? {code:error.code} : {})});
     }
   };
 }

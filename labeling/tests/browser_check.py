@@ -24,7 +24,7 @@ with sync_playwright() as p:
     page.locator('#zoom-in').click();page.locator('#rotate').click();page.locator('#fit').click()
     expect(page.locator('#verify')).to_be_enabled();page.locator('#verify').click()
     expect(page.locator('#image-status')).to_have_text('검수 완료')
-    expect(page.locator('#remaining-note')).to_have_text('116장 남음')
+    expect(page.locator('#remaining-note')).to_have_text(f"{len(json.loads((ROOT/'labeling/data/seed.json').read_text())['items'])-6}장 남음")
     page.locator('#export').click()
     with page.expect_download() as info:page.locator('#download-zip').click()
     payload=Path(info.value.path()).read_bytes()
