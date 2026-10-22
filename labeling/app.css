@@ -4,3 +4,21 @@
 @media(max-width:800px){.workspace{grid-template-columns:minmax(0,1fr)}.sidebar{min-width:0}.image-list{width:100%;min-width:0}}
 
 #transcription{tab-size:4;}
+
+/* Constrain desktop grid children so image dimensions cannot push actions out. */
+html{overflow-y:auto;}
+.workspace{grid-template-rows:minmax(0,1fr);}
+.image-panel,.editor-panel{min-height:0;overflow:hidden;}
+.editor-footer,.sidebar-bottom,.panel-heading,.viewer-toolbar,.viewer-footer,.claim-message{flex-shrink:0;}
+.editor-fields> :not(#transcription){flex-shrink:0;}
+.editor-footer{position:relative;z-index:2;}
+.viewer{touch-action:pan-x pan-y;}
+.image-stage{position:relative;padding:0;}
+.image-stage img{position:absolute;left:50%;top:50%;}
+.viewer-toolbar{flex-wrap:wrap;height:auto;min-height:48px;gap:4px;padding-top:5px;padding-bottom:5px;}
+@media(max-width:800px){
+  .workspace{grid-template-rows:none;grid-auto-rows:auto;overflow:visible;}
+  .image-panel,.editor-panel{overflow:visible;}
+  .editor-fields{flex:none;overflow:visible;}
+  .editor-footer{position:sticky;bottom:0;padding-bottom:max(12px,env(safe-area-inset-bottom));box-shadow:0 -3px 12px #192a3810;}
+}

@@ -64,7 +64,7 @@ function showItem(item,restore=false){
   updateClaimMessage();
   $('history').replaceChildren();
   for(const h of (item.history || []).slice(0,3)){const line=document.createElement('div');line.textContent=`${new Date(h.at).toLocaleString('ko-KR')} · ${h.author} · ${statuses[h.status]}`;$('history').append(line);}
-  if(changed){store.rotation=0;store.fit=true;$('source-image').hidden=false;$('source-image').src=item.image.file;$('open-image').href=item.image.file;$('empty-view').classList.add('hidden');}
+  if(changed){store.rotation=0;store.fit=true;$('source-image').hidden=false;$('source-image').src=item.image.file;$('empty-view').classList.add('hidden');}
   updateControls();renderList();
   if(restore && owns()){
     let draft;try{draft=JSON.parse(localStorage.getItem(draftKey()) || 'null');}catch{}
@@ -105,11 +105,23 @@ function resizeImage(){
   const img=$('source-image');if(!img.naturalWidth)return;const rotated=store.rotation%180!==0;
   const w=rotated?img.naturalHeight:img.naturalWidth,h=rotated?img.naturalWidth:img.naturalHeight;
   if(store.fit)store.zoom=Math.min(1,Math.max(.05,Math.min(($('viewer').clientWidth-52)/w,($('viewer').clientHeight-52)/h)));
-  img.style.width=img.naturalWidth*store.zoom+'px';img.style.height=img.naturalHeight*store.zoom+'px';img.style.transform=`rotate(${store.rotation}deg)`;
+  img.style.width=img.naturalWidth*store.zoom+'px';img.style.height=img.naturalHeight*store.zoom+'px';img.style.transform=`translate(-50%,-50%) rotate(${store.rotation}deg)`;
   $('image-stage').style.width=w*store.zoom+52+'px';$('image-stage').style.height=h*store.zoom+52+'px';$('zoom-value').textContent=Math.round(store.zoom*100)+'%';
 }
 $('source-image').onload=()=>{resizeImage();$('viewer').scrollTo(0,0);};$('source-image').onerror=()=>toast('이미지를 불러오지 못했습니다. 배포 파일을 확인해 주세요.');
-$('zoom-in').onclick=()=>{store.fit=false;store.zoom=Math.min(3,store.zoom*1.3);resizeImage();};$('zoom-out').onclick=()=>{store.fit=false;store.zoom=Math.max(.05,store.zoom/1.3);resizeImage();};$('fit').onclick=()=>{store.fit=true;resizeImage();$('viewer').scrollTo(0,0);};$('rotate').onclick=()=>{store.rotation=(store.rotation+90)%360;store.fit=true;resizeImage();};
+function zoomImage(value){
+  const viewer=$('viewer'),img=$('source-image');if(!img.naturalWidth)return;
+  const old=store.zoom;
+  const centerX=(viewer.scrollLeft+viewer.clientWidth/2)/Math.max(viewer.scrollWidth,1);
+  const centerY=(viewer.scrollTop+viewer.clientHeight/2)/Math.max(viewer.scrollHeight,1);
+  store.fit=false;store.zoom=Math.max(.05,Math.min(3,value));resizeImage();
+  if(old!==store.zoom)viewer.scrollTo(centerX*viewer.scrollWidth-viewer.clientWidth/2,centerY*viewer.scrollHeight-viewer.clientHeight/2);
+}
+$('zoom-in').onclick=()=>zoomImage(store.zoom*1.3);
+$('zoom-out').onclick=()=>zoomImage(store.zoom/1.3);
+$('open-image').onclick=()=>zoomImage(1);
+$('fit').onclick=()=>{store.fit=true;resizeImage();$('viewer').scrollTo(0,0);};
+$('rotate').onclick=()=>{store.rotation=(store.rotation+90)%360;store.fit=true;resizeImage();};
 let pan=null;
 $('viewer').onpointerdown=e=>{if(e.button!==0 || !store.item)return;pan={x:e.clientX,y:e.clientY,left:$('viewer').scrollLeft,top:$('viewer').scrollTop};$('viewer').setPointerCapture(e.pointerId);$('viewer').classList.add('dragging');};
 $('viewer').onpointermove=e=>{if(pan){$('viewer').scrollLeft=pan.left-(e.clientX-pan.x);$('viewer').scrollTop=pan.top-(e.clientY-pan.y);}};
