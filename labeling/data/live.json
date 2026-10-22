@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:16:02.502Z",
+  "updated_at": "2026-10-22T18:17:51.222Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1305,23 +1305,27 @@
     },
     "hf-0051": {
       "id": "hf-0051",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "·AlexNet, Clarifai, VGG, GoogleNet, ResNet\n논문 파헤치기\n\n·VGG\n- 합성곱 계층과 풀링 계층으로 구성되는 기본적인 CNN.\n\n·인셉션 구조\n- 크기가 다른 필터와 풀링을 여러 개 적용하여 그 결과를 결합하는 것.\n- CNN 내부의 한 계층에서 여러 크기의 특징 추출을 동시에 수행하는 구조.\n- 앙상블은 여러 개의 독립적인 모델을 결합하는 것과는 조금 다름.\n  ↳ 앙상블 : 여러 명의 전문가 의견 결합 후 최종 결정 내리기.\n  인셉션 : 한 전문가가 하나의 분석 결과를 위해 여러 도구를 동시에 사용하는 것.\n\n·스킵 연결\n- 입력 데이터를 합성곱 계층을 건너뛰어 출력에 바로 더하는 구조.\n- 역전파 때 스킵 연결이 신호 감쇠를 막아주기 때문에 층이 깊어져도 효율적으로 학습.\n  ↳ 층을 깊게 할수록 원래 작아지는 소실 문제를 줄여줌.\n\n·FCN\n- 단순 변형 순전파 처리로 모든 픽셀의 클래스를 분류해주는 기법\n\n·NIC\n- 심층 CNN과 자연어를 다루는 순환 신경망(RNN)으로 구성.\n- 딥러닝으로 사진 캡션을 생성할 때 사용.\n\n·멀티모달 처리\n- 사진이나 자연어와 같은 여러 종류의 정보를 조합하고 처리하는 일.",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T18:41:02.502Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:17:51.222Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0051.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:17:51.222Z"
     },
     "hf-0052": {
       "id": "hf-0052",
