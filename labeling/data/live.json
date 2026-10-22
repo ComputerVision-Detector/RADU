@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:19:19.771Z",
+  "updated_at": "2026-10-22T18:20:02.286Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1357,23 +1357,27 @@
     },
     "hf-0053": {
       "id": "hf-0053",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "·벡터\n- 크기와 방향을 가진 양.\n- 숫자가 일렬로 늘어선 집합으로 표현 가능. (Python에서 1차원 배열)\n\n·행렬\n- 숫자가 2차원 형태 (사각형 형상)로 늘어선 것.\n- 행 : 가로줄 (row)\n 열 : 세로줄 (col)\n- 숫자들을 세로로 나열 : 열벡터\n- 숫자들을 가로로 나열 : 행벡터\n\n·텐서\n- 벡터와 행렬을 확장하여 숫자 집합을 N차원으로 표현한 것.\n\n·완전연결 계층에 의한 변환은 '선형' 변환.\n'비선형' 효과를 부여하는 것이 활성화 함수.\n- 비선형 활성화 함수를 이용함으로써 신경망의 표현력을 높일 수 있음.",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T18:43:46.076Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:20:02.286Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0053.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:20:02.286Z"
     },
     "hf-0054": {
       "id": "hf-0054",
