@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:36:37.944Z",
+  "updated_at": "2026-10-22T18:39:21.827Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1551,23 +1551,27 @@
     },
     "hf-0061": {
       "id": "hf-0061",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "· word2vec 사용되는 신경망에는 가중치 2개\n- W_in : 입력측 완전연결계층 가중치\n각 행이 각 단어의 분산 표현에 해당\n\n- W_out : 출력 측 완전연결 계층의 가중치\n단어의 의미가 인코딩된 벡터가 저장되고 있음\n분산 표현이 열 방향(수직 방향)으로 저장됨.\n\n· 음의 로그 가능도\n- 손실 함수에서 나온 확률에 log를 취한 다음 마이너스를 붙이는 것\n- 이유 : 확률을 학습하기 좋은 손실값으로 바꾸기 위해서.\n\n· skip-gram 모델\n- CBOW에서 다루는 맥락과 타깃을 역전시킨 모델\n- 중앙의 단어(타깃)로부터 주변의 여러 단어(맥락)을 추측\n- CBOW는 입력층이 여러개 출력층이 하나지만\nskip-gram은 입력층이 한개 출력층이 여러개\n- 손실함수는 맥락별 손실을 구한 다음 모두 더함.\n- CBOW보다 단어 분산 표현의 정밀도가 더 좋은 경우가 많음.\n- 학습 속도는 CBOW보다 느림 (맥락의 수만큼 구해야 해서)",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T19:01:37.944Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:39:21.827Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0061.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:39:21.827Z"
     },
     "hf-0062": {
       "id": "hf-0062",
