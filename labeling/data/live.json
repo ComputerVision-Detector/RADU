@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:18:24.173Z",
+  "updated_at": "2026-10-22T18:18:41.886Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1333,23 +1333,27 @@
     },
     "hf-0052": {
       "id": "hf-0052",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "· softmax - with - Loss 계층\n- 소프트맥스와 교차엔트로피 오차를 조합한 계층\n\n· 자연어 처리\n- 우리가 평소 말하는 언어를 컴퓨터가 이해하도록 만드는 기술",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T18:43:24.173Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:18:41.886Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0052.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:18:41.886Z"
     },
     "hf-0053": {
       "id": "hf-0053",
