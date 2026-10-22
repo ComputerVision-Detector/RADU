@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T14:57:52.084Z",
+  "updated_at": "2026-10-22T14:57:54.149Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2657,23 +2657,27 @@
     },
     "hf-0152": {
       "id": "hf-0152",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "• 회귀모델 평가\n-R-Square: 모델의 설명력. 변수가 많으면 값이 증가하는 경향이 있어, Adj R² 채택.\n-Adj R-Square: 조정된 R-Square 값.\n\n• 로지스틱 회귀 모델 특징\n1) 종속변수가 질적척도\n2) 예측이 아니라 카테고리를 분류하는 모델\n3) 이항으로 이루어져, 합/불합 등을 예측.\n\n-Odds와 로짓 변환.\n→ Odds: 사건이 발생할 가능성이 발생하지 않을 가능성보다 얼마나 큰가.\n수식) 발생함 / 발생하지 않 ex) : 발생확률이 60%, 않을 확률이 40% ⇒ Odds비 = 1.5\n\n<의사결정 나무>\n• 구성 요소\n1) 뿌리 노드 : 분류가 시작되는 전체 데이터 노드\n2) 부모 노드 : 분리되기 전의 노드\n3) 자식 노드 : 분리된 후의 노드\n4) 중간 노드 : 나무 구조 중간에 있는 노드\n5) 끝 노드 : 더 이상 분리되지 않는 끝노드.\n6) 깊이 : 뿌리부터 끝 노드까지의 노드의 층수\n• 정보 획득량 : 분류를 통해 지니계수 or 엔트로피가 증가 / 감소한 양.\n- 지니 계수 : 불순도 구하기.\n→ 공식: 1 − (분류자 / 전체)² − (미분류자 / 전체)²\n- 엔트로피: 이진로그를 취함으로써 정규화를 적용함.\n",
+      "status": "verified",
+      "annotator": "이진우",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-22T15:21:44.279Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T14:57:54.149Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0152.webp",
         "source_width": 2405,
         "source_height": 3300
-      }
+      },
+      "updated_at": "2026-10-22T14:57:54.149Z"
     },
     "hf-0153": {
       "id": "hf-0153",
