@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:21:24.127Z",
+  "updated_at": "2026-10-22T18:21:55.183Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1431,23 +1431,27 @@
     },
     "hf-0056": {
       "id": "hf-0056",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "·WordNet\n- 자연어 처리에서 가장 유명한 시소러스.\n\n·Corpus (말뭉치)\n- 자연 처리 연구나 애플리케이션을 위해 수집된 대량의 텍스트 데이터.\n\n·대량의 텍스트 데이터부터 '단어의 의미'를 자동으로 추출하는 기법 2개.\n- 통계 기반 기법.\n- 추론 기반 기법.\n\n·말뭉치 전처리\n- 텍스트 데이터를 단어로 분할하고 분할된 단어들을 단어 ID 목록으로 변환하는 일.\n\n·해당 책에서 사용하는 용어\n- corpus : 단어 ID 목록.\n- word_to_id : 용어에서 단어 ID로의 딕셔너리.\n- id_to_word : 단어 ID에서 단어로의 딕셔너리.\n\n·단어의 분산 표현\n- '단어의 의미'를 정확하게 파악할 수 있는 벡터 표현.\n- 단어를 고정 길이의 밀집 벡터 (dense vector)로 \n\n·밀집 벡터\n- 대부분의 원소가 0이 아닌 실수인 벡터.",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "포스트잇 메모 제외",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T18:46:24.127Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:21:55.183Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0056.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:21:55.183Z"
     },
     "hf-0057": {
       "id": "hf-0057",
