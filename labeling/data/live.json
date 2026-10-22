@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T16:56:46.063Z",
+  "updated_at": "2026-10-22T16:57:02.444Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -675,23 +675,27 @@
     },
     "hf-0025": {
       "id": "hf-0025",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "·회귀 문제 (regression)\n- 레이블이 연속인 경우.\nex) 비트코인 가격 예측 등.\n- sklearn에서 SVR (회귀 문제를 푸는 SVM).\n\n·평균제곱 오차 (MSE)\n- 신경망은 여러 개의 샘플로 구성된 미니배치 단위로 손실 함수를 정의.\n  하는데 이때 미니배치 단위에 적용하고 평균을 취한 값이 평균제곱오차.\n\n\\(e = \\|y-o\\|^2\\)\ny : 레이블 (정답)\no : 신경망 출력 (신경망이 예측한 값).\n\n- MSE는 통계학에서 아주 오래 전부터 사용된 대표적인 손실함수.\n\n·학습은 오류를 줄이는 방향으로 가중치를 조정하는 작업.\n\n·엔트로피 (entropy)\n- 확률 분포의 무작위성, 즉 불확실성을 측정하는 함수.\nex) 찌그러진 주사위가 있어 1의 면적이 가장 넓다면 예측 가능성이 높아짐.\n→ 불확실성이 낮아짐.\n즉, 공정한 주사위의 엔트로피가 가장 높고\n많이 찌그러질수록 엔트로피가 낮아진다.\n엔트로피 식.\n\n\\(H(x) = -\\sum_{j=1}^{k} P(e_j)\\log P(e_j)\\)",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "수식은 LaTex",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T17:21:46.063Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T16:57:02.444Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0025.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T16:57:02.444Z"
     },
     "hf-0026": {
       "id": "hf-0026",
