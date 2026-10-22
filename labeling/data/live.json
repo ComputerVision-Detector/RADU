@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T15:09:20.686Z",
+  "updated_at": "2026-10-22T15:09:37.063Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1057,23 +1057,27 @@
     },
     "hf-0055": {
       "id": "hf-0055",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "• 신경망의 간단한 학습 순서\n- 미니배치\n- 기울기 계산 반복\n- 매개변수 갱신\n\n• 경사하강법\n- 매개변수를 그 기울기와 반대 방향으로 갱신하여 손실을 줄이는 것.\n-확률적 경사하강법(SGD): \\n - ‘확률적’은 무작위로 선택된 데이터(미니배치)에 대한 기울기를 이용한다는 뜻.\n\n• 에폭(epoch)\n- 학습 단위로써, 1에폭은 학습 데이터를 모두 ‘살펴본’ 시점.\n\n• 결정 경계\n- 학습이 끝난 신경망이 입력값을 어떤 [불확실: 구획]으로 분류하는지 보여주는 경계\n\n•  NLP ( 자연어 처리)\n- 자연어를 처리하는 분야\n\n•시소러스(the saurus) (유의어 사전)\n- 유의어 사전으로 뜻이 단어(동의어)나 뜻이 비슷한 단어가 한 그룹으로 분류되어 있다.\n- 시소러스 문제점\\n\n- 시대 변화에 대응하기 어려움.\n사람을 사용하기에 비용이 크다.\n단어의 미묘한 차이를 표현할 수 없다.",
+      "status": "verified",
+      "annotator": "이진우",
+      "notes": "3문단을 포괄적으로 묶어 반복이라는 문구로 정리한건 행 맞춰서 진행함",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-22T15:33:44.269Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T15:09:37.063Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0055.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T15:09:37.063Z"
     },
     "hf-0056": {
       "id": "hf-0056",
