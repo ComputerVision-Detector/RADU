@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "7f97f382d9d82aa6b21e9b617b46218f1ec4b0aa",
-  "updated_at": "2026-10-22T08:28:56.911Z",
+  "updated_at": "2026-10-22T08:31:28.901Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -82,23 +82,31 @@
     },
     "hf-0004": {
       "id": "hf-0004",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "\tk [2,8,64] -> [2,8,8,64\n\tv [2,8,64 -> [2,8,8,64]\n\tk와 v의 똑같은 q_mul (Q multiplier)을 추가 => 8이\n\t늘어남. 현재 Qmultiplier는 9이기에\nSink Reshape / Expand\n\tS [64]\n\treshape [8,8,1,1]\n\texpand [8,8,2,1]\nCausal Mask 생성 [2,2]\nsliding window mask 추가 [2,2]",
+      "status": "draft",
+      "annotator": "김혜린",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
       "claim": {
         "name": "김혜린",
         "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-22T08:53:56.911Z"
+        "until": "2026-10-22T08:56:28.901Z"
       },
-      "history": [],
+      "history": [
+        {
+          "at": "2026-10-22T08:31:28.901Z",
+          "author": "김혜린",
+          "status": "draft",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0004.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T08:31:28.901Z"
     },
     "hf-0005": {
       "id": "hf-0005",
