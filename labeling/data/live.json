@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:17:55.799Z",
+  "updated_at": "2026-10-22T18:17:59.874Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1285,23 +1285,27 @@
     },
     "hf-0050": {
       "id": "hf-0050",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "· 학습된 모델에 가중치 파일을 pk1 사용 이유\n- 가중치 전용 파일이 아니라 Python 객체를 그대로 저장하는 Pickle 형식의 파일이기 때문\n\n· Pickle\n- Python 안에 있는 직렬화 라이브러리\n메모리에 있는 Python 객체를 파일로 저장한다는 의미\n\n· 데이터 확장\n- 입력 이미지(훈련 이미지)를 알고리즘을 동원해 '인위적'으로 확장하는 것.\n(소프트웨어 품질관리에서 했던 과제)\n\n· 신경망 층이 깊을 수록 이점 부분\n① 매개변수가 줄어듬(매개변수를 줄여 수용영역을 소화할 수 있다.)\n특징 맵 하나가 입력 데이터에서 영향을 받는 공간 범위.\n\n② 학습의 효율성\n- 층을 깊게 함으로써 데이터의 양을 줄여 학습을 고속으로 수행할 수 있음.\n\n③ 정보를 계층적으로 전달할 수 있음\n- 층을 깊게 함으로써 각 층이 학습해야 할 문제를 '풀기 쉬운 단순한 문제'\n로 분해할 수 있어 효율적 학습이 가능.",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T18:40:37.999Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:17:59.874Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0050.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:17:59.874Z"
     },
     "hf-0051": {
       "id": "hf-0051",
