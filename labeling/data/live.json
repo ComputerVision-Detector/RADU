@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:04:45.153Z",
+  "updated_at": "2026-10-22T18:05:33.906Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1093,23 +1093,27 @@
     },
     "hf-0042": {
       "id": "hf-0042",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "· 계산그래프\n- 계산과정을 표현한 그래프, 국소적 계산 전파\n· 노드(node)\n\n· 에지(엣지 edge)\n- 노드 사이의 직선.\n\n· 순전파\n- 계산 그래프의 출발점부터 종착점까지의 전파.\n\n· 합성함수\n- 여러함수로 구성된 함수.\n\n· 연쇄법칙\n- 합성 함수의 미분은 합성 함수를 구성하는\n각 함수의 미분의 곱으로 나타낼 수 있음\n\n· 어파인 변환\n- 신경망의 순전파 때 수행하는 행렬의 곱임\n\n· 확률적 경사 하강법 (SGD)\n- 매개변수 기울기를 구해 기울어진 방향으로 매개변수 값을 갱신하는 일 (미분)\n→ 그러면서 점점 최적의 값에 다가감.\n- 단점: 비등방성 함수에서는 탐색 경로가 비효율적이다.",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T18:28:37.956Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:05:33.906Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0042.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:05:33.906Z"
     },
     "hf-0043": {
       "id": "hf-0043",
