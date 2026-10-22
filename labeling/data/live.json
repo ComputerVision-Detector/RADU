@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T14:07:54.672Z",
+  "updated_at": "2026-10-22T14:08:35.624Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -244,23 +244,27 @@
     },
     "hf-0008": {
       "id": "hf-0008",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "GPT-OSS-20b hugging face modeling_gpt_oss\nGPTOOSForCausalLM\nGPTOOSModel\n\nToken IDs\n↓\nEmbedding\n↓\nPosition/RdPE계산\nGPTOSSRostaryEmbedding\ninv-freq\nposition_ids\nfreq계산\ncos\nsin\n↓\nAttention Mask생성\nGPTOSSModel,forward()\ncreate_causal_mask()\ncreate_sliding_window_causal_mask()\n↓\nTransformer Block x 24\nGPTOSSEDcoderlater\nInputRUSNorm\nSelf-Attention\nQ profection\nK profection\nV  profection\nQ/K/V Reshape\nRoPE\nKV Cache Update\nAttention Interface\n",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T14:31:57.089Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T14:08:35.624Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0008.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T14:08:35.624Z"
     },
     "hf-0009": {
       "id": "hf-0009",
