@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:48:37.631Z",
+  "updated_at": "2026-10-22T18:48:42.676Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1623,23 +1623,27 @@
     },
     "hf-0064": {
       "id": "hf-0064",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "· 네거티브 샘플링 (부정적 샘플링).\n- 다중 분류(다중 클래스 분류)를 이진 분류로 근사하는 것.\n출력측 가중치행렬(Embedding Matrix)에서 정답 단어와 몇 개의 네거티브\n단어에 해당하는 행(단어 벡터)만 Lookup한 뒤, 각 벡터와 은닉층의\n출력 벡터 h의 내적을 계산한다.\n이 값이 최종점수.\n- 긍정적인 예를 타깃으로 한 경우의 손실을 구함.\n그와 동시에 부정적 예를 몇 개 샘플링(선별)하여,\n그 부정적 예에 대해서도 마찬가지로 손실을 구함.\n그리고 각각의 데이터(긍정적 예와 샘플링된 부정적 예)의 손실을\n더한 값을 최종 손실로 함.\n- 부정적인 예 샘플링\n말뭉치에서 각 단어의 출현 횟수를 구해 확률 분포로 나타냄\n확률분포대로 단어 샘플링\n\n· 유니그램\n- 하나의 연속된 단어\n\n· 바이그램 →트라이그램\n- 2개의 연속된 단어 - 3개의 연속된 단어\n\n· bag-of-words\n- 문장의 각 단어를 분산표현으로 변환하고 그 합을 구하는 것.\n즉, 단어의 순서를 고려하지 않는 모델\n- 가방 안의 단어란 뜻으로 가방 속의 단어별 순서는 무시됨.",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T19:13:37.631Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:48:42.676Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0064.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:48:42.676Z"
     },
     "hf-0065": {
       "id": "hf-0065",
