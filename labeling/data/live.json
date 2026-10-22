@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T19:21:24.130Z",
+  "updated_at": "2026-10-22T19:22:01.460Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1989,23 +1989,27 @@
     },
     "hf-0079": {
       "id": "hf-0079",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "·캐니 알고리즘\n- Canny는 여러 단계를 결합한 에지 검출 알고리즘이고\n  NMS는 그중 그래디언트의 방향을 이용해 에지를 한 픽셀\n  수준으로 얇게 만드는 단계.\n- 가우시안 필터 → Sobel 미분 → 그래디언트 계산 → NMS → 이중 임계값 → 히스테리시스 → 최종 Canny 에지\n가우시안 필터 → 노이즈 제거\nSobel → x, y 방향 밝기 변화 계산\nGradient → 에지 강도와 방향 계산\nNMS → 두꺼운 에지를 얇게 만듦\n이중 임계값 → 강한 에지 / 약한 에지 분류\n히스테리시스 → 강한 에지와 연결된 약한 에지만 살림.\n·캐니 알고리즘은 거짓 긍정을 줄이기 위해 2개의 이중 임계값 \\(T_{low}\\)와 \\(T_{high}\\)를 이용한\n  에지 추적을 추가로 적용.\n에지 추적은 에지 강도가 \\(T_{high}\\) 이상인 에지 화소에서 시작.\n(실제 에지일 가능성이 높은 곳에서 추적을 시작하겠다!)\n시작 화소가 정해지면 이후 추적은 \\(T_{low}\\) 임계값을 넘는 에지를 대상으로 진행.\n즉 추적 이력이 있는 이웃을 가진 화소는 에지 강도가 낮더라도 실제 에지로\n인정한다는 전략\n(\\(T_{high}\\)를 \\(T_{low}\\)의 2~3배로 설정하는 것을 권고함.)\n\n·에지 맵에서 경계선\n- 서로 다른 영역이나 물체가 만나는 곳을 선으로 나타낸 것.",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T19:46:24.130Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T19:22:01.460Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0079.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T19:22:01.460Z"
     },
     "hf-0080": {
       "id": "hf-0080",
