@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T14:29:30.048Z",
+  "updated_at": "2026-10-22T14:30:35.344Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -286,23 +286,27 @@
     },
     "hf-0009": {
       "id": "hf-0009",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "Attention Output Projection\nAttention Residual\nPost-Attention RMSNorm\nGptOssMLP (MOE)\nRouter\nGptOssExperts\nMLPoutput\nHook이\n걸려있는 위치 →\nMLP Residual\n┗residual+MLP_output\nHook→24번 반복\n계속할거나물음→ ·↓\nFianl RMSNorm\n┗GptOssModel.norm\n↓\nGptOssforCauslaLM\n┗LM Head\n┗lm_head\n↓\nlogits\n↓\nGnerationMixin\n↓\nHook추가→·다음 token생성.",
+      "status": "verified",
+      "annotator": "이나현",
+      "notes": "줄바꿈에 ┗ 추가.",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T14:52:57.206Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T14:30:35.344Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0009.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T14:30:35.344Z"
     },
     "hf-0010": {
       "id": "hf-0010",
