@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:27:24.195Z",
+  "updated_at": "2026-10-22T18:27:34.255Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1479,23 +1479,27 @@
     },
     "hf-0058": {
       "id": "hf-0058",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "· 점별 상호정보량 (PMI)\n- PMI 값이 높을 수록 관련성이 높다는 얘기\n- 두 단어의 동시발생 횟수가 0이면 log₂ 0 = -∞ 가 됨.\n해당 문제를 피하기 위해 구현시에는\n양의 상호정보량(PPMI)를 사용.\n양의 상호정보량 : 음수는 전부 0으로 만듦.\n\n· 차원 감소\n- 벡터의 차원을 줄이는 방법.\n- 가장 적합한 축을 찾아야 함\n- 희소벡터에서 중요한 축을 찾아내어 더 적은 차원으로 다시 표현하는 것.\n원소 대부분이 0인 행렬 또는 벡터\n→ 이로인해 0이아닌 값으로 구성된 밀집 벡터로 변환 됨.\n\n· 특잇값 분해 (SVD)\n- 차원 감소 방법 중 하나\n- 하나의 큰 행렬을 세 개의 작은 행렬로 분해하는 방법.\n- 특잇값: '해당 축'의 중요도\n- 시간복잡도 O(N³) 너무 오래 걸리기에 Truncated SUD처럼 응용한 것을 이용\n\n· PTB 데이터셋 (펜 트리뱅크)\n- 말뭉치 데이터셋.",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T18:49:37.634Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:27:34.255Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0058.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:27:34.255Z"
     },
     "hf-0059": {
       "id": "hf-0059",
