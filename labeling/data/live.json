@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T17:42:24.058Z",
+  "updated_at": "2026-10-22T17:43:22.499Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -819,23 +819,27 @@
     },
     "hf-0031": {
       "id": "hf-0031",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "· 비선형 영역\n- 곡선의 영역(XOR)\n· 직선의 영역(선형 영역)\n- AND, OR, NAND\n\n· 다층퍼셉트론을 이용해 XOR을 구현 가능\n\nx_1\nx_2",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T18:07:24.058Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T17:43:22.499Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0031.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T17:43:22.499Z"
     },
     "hf-0032": {
       "id": "hf-0032",
