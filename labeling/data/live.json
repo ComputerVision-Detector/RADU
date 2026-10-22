@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T16:05:45.698Z",
+  "updated_at": "2026-10-22T16:08:35.278Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -531,23 +531,27 @@
     },
     "hf-0019": {
       "id": "hf-0019",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "- C를 크게하면 잘못 분류한 샘플의 수는 적은데 여백이 작아짐\nC를 작게하면 여백은 큰데 잘못 분류한 샘플이 많아짐\n→ C를 크게 : 정확률(훈련 집합에 대한)은 높지만 일반화는 떨어짐\nC를 작게 : 훈련집합에 정확률은 낮아짐, 일반화 능력은 커짐\n\n• 폰 노이만 컴퓨터 구조\n- 현재 우리가 사용하고 있는 컴퓨터의 구조\n- 메모리는 프로그램(명령어 집합)과 데이터를 저장\nCPU는 메모리에서 명령어를 하나씩 꺼내 수행 후 결과를 메모리에 저장\n\nCPU(중앙처리장치)\n↕ 버스\n메모리\n\n• 퍼셉트론\n- 입력층과 출력층으로 구성\n- 입력층에는 d+1 개의 노드가 있으며\nd는 특징 벡터의 차원 (iris의 d는 ↑/화소를 특징으로 하는 경우 화소개수 ex. 필기 데이터셋 digits의 경우 d = 64)\n(8X8)\n- 에지(edge): 입력층의 i번째 노드와 출력층의 노드를 잇는\n가중치 W_i 를 갖는 것\n\n편향임\n↑\n- 바이어스 노드(bias node) : 0번째 노드의 입력 x_0 이며 항상 1을 가짐.\n-뉴런의 입력값이 0일 때도 출력이 기준점을 조절할 수 있기 위해서 필요",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "포스트잇 메모, 퍼셉트론 시각화는 제외",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T16:30:45.698Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T16:08:35.278Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0019.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T16:08:35.278Z"
     },
     "hf-0020": {
       "id": "hf-0020",
