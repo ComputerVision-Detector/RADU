@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T15:21:47.870Z",
+  "updated_at": "2026-10-22T15:23:01.380Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -384,23 +384,27 @@
     },
     "hf-0013": {
       "id": "hf-0013",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "파이썬으로 만드는 인공지능.\n· 에이전트 (agent)\n- 주어진 환겨에서 주어진 목표를 향해 행동하는 것.\n\n· AI(인공지능 : Artificial Intelligence)\n- 지능적으로 행동하는 계산 에이전트를 만들고 분석하는 학문 분야\n'컴퓨터와 관련된'.'컴퓨터를 이용하여 만드는'\n- 약한 인공지능 : 한 가지 일에 특화된 인공지능\n- 강한 인공지능 (AGI) : 인간 지능에 필적하는 인공지능.\n인공일반지능(범용인공지능)\n\n· 강화학습\n- 상태가 변하는 상황에서 자신에게 유리한 행동을 찾아가도록 학습하는 기법.\n\n· 규칙 기반 방법론\n- 인간이 사용하는 규칙을 수집하고 프로그래밍해 인공지능을 만드는 방식\nex) 의료 진단용 전문가 시스템 마이신\n\n· 기계 학습 방법론\n- 이전에 발생한 경험을 활용한다.\n데이터\nex) 숫자 인식기를 만들 때 전표라 우편물 등에서 다양한 많은 샘플을 수집해 데이터로 활용\n\n· 특징(Feature)\n- 기계학습에서 각 특징\n- 샘플 하나의 여러개의 특징이 있으면 특징 벡터",
+      "status": "verified",
+      "annotator": "이나현",
+      "notes": "메모는 작성하지 않음.",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T15:45:22.967Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T15:23:01.380Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0013.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T15:23:01.380Z"
     },
     "hf-0014": {
       "id": "hf-0014",
