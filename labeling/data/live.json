@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T13:58:45.996Z",
+  "updated_at": "2026-10-22T13:59:05.543Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -178,18 +178,20 @@
     },
     "hf-0006": {
       "id": "hf-0006",
-      "text": "Expert output [2,4,2880] \\n Expert weights [2,4] \\n ein sum[2, 2880] \\n Residual \\n x [2, 2880] \\n T [2, 2880] \\n [2,2880] \\n Final RmsNorm [2, 2880] \\n unembedding \\n Input [2, 2880] \\n Linear 2880 -> 201088 \\n Logits [2, 201088] \\n Token Generator \\n 마지막 토큰 logits 선택 \\n logits [-1] [2, 201088] -> [201088] \\n 두 번째 토큰 \"hip\" 에 대한 다음 토큰 예측에 사용 \\n Temperature = 0 \\n Argmax [201088] \\n 스칼라 토큰 ID \\n Temperature != 0 \\n",
-      "status": "draft",
-      "annotator": "이진우",
+      "text": "Expert output [2,4,2880]\nExpert weights [2,4]\nein sum→[2, 2880]\nResidual\nx [2, 2880]\nT [2, 2880]\n↓\n[2,2880]\nFinal RmsNorm [2, 2880]\n↓\nunembedding\nInput [2, 2880]\nLinear 2880 → 201088\nLogits [2, 201088]\nToken Generator\n↓\n마지막 토큰 logits 선택\nlogits [-1] [2, 201088] → [201088]\n두 번째 토큰 \"hip\" 에 대한 다음 토큰 예측에 사용\nTemperature = 0\nArgmax [201088]\n스칼라 토큰 ID\nTemperature != 0\nsoftmax[201088]\nmaltinomial sampling→스칼라 토큰 ID\ntokens.append(predicred.token)\nstop Token검사",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "포괄하는 글에 대한 표시 불가, =이 아니다 -> !=로 대체",
-      "revision": 1,
+      "revision": 2,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T14:22:57.107Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-10-22T13:59:05.543Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 2
+        },
         {
           "at": "2026-10-22T09:27:54.830Z",
           "author": "이진우",
@@ -202,7 +204,7 @@
         "source_width": 3024,
         "source_height": 4032
       },
-      "updated_at": "2026-10-22T09:27:54.830Z"
+      "updated_at": "2026-10-22T13:59:05.543Z"
     },
     "hf-0007": {
       "id": "hf-0007",
