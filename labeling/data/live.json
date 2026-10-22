@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T19:27:24.213Z",
+  "updated_at": "2026-10-22T19:28:22.378Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2053,23 +2053,27 @@
     },
     "hf-0082": {
       "id": "hf-0082",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "·영역 분할\n- 물체가 점유한 영역을 구하는 작업.\n- 에지가 완벽하면 영역은 불필요. 영역이 완벽하면 에지가 불필요.\n\n·의미 분할\n- 의미 있는 단위로 분할하는 방식.\n- 주로 딥러닝에서 이용.\n\n·클러스터링\n- 데이터를 서로 비슷한 것끼리 묶는 것.\n- 정답을 미리 알려주지 않고, 데이터들끼리의 유사성을 보고 알아서 그룹을 만드는 것.\n\n·워터셰드\n- 비가 오면 오목한 곳에 웅덩이가 생기는 현상을 모방한 연산.\n- 에지 강도 맵을 지형으로 간주하고 낮은 곳부터 물을 채워 (물을 채우는 연산)\n  웅덩이로 영역을 찾음.\n\n·슈퍼화소 (super-pixel)\n- 영상을 화소보다 크지만 물체보다 작은 영역으로 분할해 놓은 영역.\n\n·SLIC\n- K-평균 군집화 알고리즘과 비슷하게 작동하지만 처리 과정이 단순하고 성능이 좋음.\n- 입력 영상에서 K개 화소를 군집의 중심으로 지정.\n  등 간격으로 배치로 방향한 후 패치 중심을 군집 중심으로 간주.\n- 화소를 색상을 나타내는 3개, 위치를 나타내는 2개 값을 결합해 (R, G, B, x, y)\n  의 5차원 벡터로 표현.",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T19:52:24.213Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T19:28:22.378Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0082.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T19:28:22.378Z"
     },
     "hf-0083": {
       "id": "hf-0083",
