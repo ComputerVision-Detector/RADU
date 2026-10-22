@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T15:41:45.843Z",
+  "updated_at": "2026-10-22T15:42:29.980Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -473,23 +473,27 @@
     },
     "hf-0017": {
       "id": "hf-0017",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "- 교차 검증은 성능 측정 결과에 대한 신뢰도를 높인 목적으로 수행\n- k를 크게 하면 매번 더 큰 훈련집합 사용. 더 많은 수의 성능 평균 → 신뢰도 상승\n단, 실행 시간이 더 걸림 (보통 5~10)\n\n• 인식 알고리즘\n- 특징 공간 변화와 특징 공간 분할로 분류 문제를 품\n- 입력 데이터를 분석해서 해당 데이터가 어떤 부류에 속하는지 판단하는 알고리즘\n- 인식알고리즘\n- K-NN, SVM, 결정트리...etc\n\n• 선형 분리 불가능\n- 선형 모델, 즉 직선으로 100% 정확률을 달성할 수 없는 상황\n\n• 특징 공간(Feature Space)\n- 데이터의 특징들을 각각 좌표축으로 만들어서, 데이터를 점으로 표현해 놓은 공간\n\n• 결정 경계\n- 특징 공간에서 서로 다른 클래스를 나누는 경계선\n└ 2차원 : 결정 직선\n3차원 : 결정 평면\nn차원 : 초평면 ($w^tx+b=0$)\n\n• 특징 학습 / 표현 학습\n-딥러닝에서 좋은 특징을 찾는 일\n- 딥러닝이 높은 성능을 보장하는 이유 中 하나\n→ 좋은 특징 공간을 찾아 내는 능력 때문",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "수식은 LaTex 사용",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T16:06:45.843Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T15:42:29.980Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0017.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T15:42:29.980Z"
     },
     "hf-0018": {
       "id": "hf-0018",
