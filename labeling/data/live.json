@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T15:26:46.112Z",
+  "updated_at": "2026-10-22T15:27:10.336Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -334,23 +334,27 @@
     },
     "hf-0011": {
       "id": "hf-0011",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "몫의 법칙. \\\\((fg)' = f'g + fg'\\\\)\n\\\\(f(x) = \\frac{(x^2+1)e^x}{\\sin x}\\\\)\n\\\\(f(x) = \\frac{(2x)e^x + (x^2+1)e^x}{(\\sin x)^2}\\\\)\n\\\\(f(x) = \\frac{e^x(2x+2+x^2+1)}{(\\sin x)^2}\\\\)\n\\\\(f(x) = \\frac{e^x(x^2+2x+3)}{(\\sin x)^2}\\\\)\n\\\\(f(x) = \\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\\\)\n\\\\(f(x) = \\frac{(x+h)^2+1-x^2-1}{h}\\\\)\n\\\\(= \\frac{x^2+2xh+h^2+1-x^2-1}{h}\\\\)\n\\\\(= \\frac{2xh+h^2+2}{h}\\\\)\n\\\\(= 2x+h+2\\\\)\n\\\\(= \\boxed{2x+2}\\\\)\n모든 몫의 미분 경우는 분자를 먼저 곱의 법칙으로 계산하고 분모를 몫의 공식으로 계산 + 보정\n몫의 법칙\n\\\\(f(x) = \\frac{(x^2+1)e^x}{\\sin x}\\\\)\n\\\\((fg)' = f'g + fg'\\\\)\n\\\\(f(x) = \\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\\\)\n\\\\(y = x^2+1\\\\)\n\\\\(= \\frac{(x+h)^2+1-(x^2+1)}{h}\\\\)\n\\\\(= \\frac{\\cancel{x^2}+2xh+h^2+\\cancel{1}-\\cancel{x^2}-\\cancel{1}}{h}\\\\)\n\\\\(= \\frac{2xh+h^2}{h} = 2x+h\\\\)\n\\\\(= \\boxed{2x}\\\\)\n\\\\(f(x) = \\frac{(2x)e^x+(x^2+1)e^x}{\\sin x}\\\\)\n\\\\(= \\frac{e^x(2x+x^2+1)}{\\sin x}\\\\)\n\\\\(f'(x) = \\frac{e^x(x^2+2x+1)}{\\sin x}\\\\)\n\\\\(= \\frac{(x^2)\\,e^x\\sin x+(2x+1)e^x\\cos x}{(\\sin x)^2}\\\\)",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T15:51:46.112Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T15:27:10.336Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0011.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T15:27:10.336Z"
     },
     "hf-0012": {
       "id": "hf-0012",
