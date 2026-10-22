@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T19:33:24.174Z",
+  "updated_at": "2026-10-22T19:33:56.343Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1843,23 +1843,27 @@
     },
     "hf-0073": {
       "id": "hf-0073",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "·연산 도중 발생하는 값을 입력 영상 f 자체에 기록하는 제자리 연산으로 구현할 수 없음\n  ↳ 다음 화소의 값을 계산할 때 이웃 화소 값이 바뀌어 \n있으면 안되기 때문\n\n·컨볼루션 (convolution)\n- 입력 영상 f의 각 화소에 필터를 적용해 곱의 합을 구하는 연산.\n\n·Padding (패딩) 종류\n- 0 padding : 필요한 만큼 가장자리를 확장 후 0으로 채우기.\n- Copy padding : 가장자리 화소 값으로 채우기.\n\n·컨볼루션\n- 컨볼루션 자체는 특정한 목적이 없는 일반 연산.\n  ↳ 필터가 정해지면 목적이 결정됨.\n  (ex. 수직 에지 검출 등)\n- 스무딩 필터, 샤프닝 필터, 엠보싱 필터 등이 있음.\n- 잡음 잡기\n(어떤 값이 주위에 비해 아주 높을 때 자신은 커지고 주위는 작아져\n  잡음을 누그러뜨림)\n- 스무딩 필터는 물체의 경계를 흐릿하게 만드는 블러링이라는 부작용이 있음.\n·샤프닝 필터 : 에지를 선명하게 해서 물체의 식별을 돕는 작용을 함\n부작용으로 잡음 확대가 있음.\n·엠보싱 필터 : 이미지에 돋을새김 느낌을 주는 필터.\n  ↳ 평평한 표면에 무언가가 볼록하게 \n튀어나와 있는 것처럼 표현하는 것.",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T19:58:24.174Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T19:33:56.343Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0073.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T19:33:56.343Z"
     },
     "hf-0074": {
       "id": "hf-0074",
