@@ -4,7 +4,7 @@ import { mkdtempSync,readdirSync,readFileSync,writeFileSync,rmSync } from 'node:
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { FileStore } from '../lib/file-store.mjs';
-import { mutate } from '../lib/state.mjs';
+import { initialState,mutate } from '../lib/state.mjs';
 const actor={id:'hf-0000',author:'파일 저장 검증',client_id:'filetest-0000-0000-0000-000000000000'};
 test('file store persists across restarts, detects stale writes and keeps bounded backups',async()=>{
  const root=mkdtempSync(path.join(tmpdir(),'label-file-'));
@@ -45,8 +45,18 @@ test('explicit validated restore recovers corrupted state and preserves the old 
  try {
   const file=path.join(root,'state.json'),store=new FileStore(file);const backup=(await store.read()).state;
   writeFileSync(file,'damaged bytes');await store.replace(backup);
-  assert.equal(Object.keys((await store.read()).state.items).length,122);
+  assert.equal(Object.keys((await store.read()).state.items).length,Object.keys(initialState().items).length);
   const name=readdirSync(path.join(root,'backups')).find(n=>n.includes('-before-restore-'));
   assert.equal(readFileSync(path.join(root,'backups',name),'utf8'),'damaged bytes');
  } finally {rmSync(root,{recursive:true,force:true});}
+});
+test('older disk catalog gains new images without resetting annotations',async()=>{
+ const root=mkdtempSync(path.join(tmpdir(),'label-migrate-'));
+ try {
+  const file=path.join(root,'state.json');const old=initialState();const newest=Object.keys(old.items).at(-1);delete old.items[newest];
+  old.items['hf-0000'].text='기존 전사';old.items['hf-0000'].status='draft';old.items['hf-0000'].revision=4;
+  writeFileSync(file,JSON.stringify(old));const store=new FileStore(file);
+  const {state,version}=await store.read();assert.ok(state.items[newest]);assert.equal(state.items['hf-0000'].revision,4);
+  assert.equal(await store.write(state,version),true);assert.equal((await store.read()).state.items['hf-0000'].text,'기존 전사');
+ }finally{rmSync(root,{recursive:true,force:true});}
 });

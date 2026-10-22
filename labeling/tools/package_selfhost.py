@@ -2,19 +2,21 @@
 import argparse
 import hashlib
 import io
+import json
 from pathlib import Path
 import subprocess
 import tarfile
 APP=Path(__file__).resolve().parents[1]
 FILES=['START_HERE.md','README.md','VERCEL_ADMIN_SETUP.md','Dockerfile','.dockerignore','compose.yaml','compose.domain.yaml','Caddyfile',
        '.env.selfhost.example','.env.example','package.json','server.mjs','dev.mjs','index.html','app.js','app.css',
-       'build.mjs','ignore-build.mjs','vercel.json','api/labeling.mjs','data/seed.json','data/assets.manifest.json',
+       'build.mjs','ignore-build.mjs','vercel.json','api/labeling.mjs','data/seed.json','data/assets.manifest.json','data/dataset.catalog.json',
        'tools/state.mjs']
 
 def package(output):
     output=Path(output);output.parent.mkdir(parents=True,exist_ok=True)
     paths=[APP/name for name in FILES]+sorted((APP/'lib').glob('*.mjs'))+sorted((APP/'assets').glob('hf-*.webp'))
-    assert len(list((APP/'assets').glob('hf-*.webp')))==122,'All 122 reading images are required'
+    seed=json.loads((APP/'data/seed.json').read_text())
+    assert all((APP/item['image']['file']).is_file() for item in seed['items'].values()),'Catalog reading images are required'
     revision=subprocess.run(['git','rev-parse','HEAD'],cwd=APP,text=True,capture_output=True)
     provenance='Source revision: '+(revision.stdout.strip() if revision.returncode==0 else 'standalone package')+'\n'
     hashes=[]

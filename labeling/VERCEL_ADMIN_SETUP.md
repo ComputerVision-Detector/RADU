@@ -59,7 +59,7 @@ https://radu-amber.vercel.app/api/labeling?action=health
 정상이면 HTTP 200으로 다음 형태를 반환한다.
 
 ```json
-{"status":"ok","storage":"github","samples":122}
+{"status":"ok","storage":"github","samples":163}
 ```
 
 이 검사는 저장소 읽기를 확인한다. 쓰기까지 확인하려면 웹에서 미작성 이미지 하나를 맡은 뒤 작업 반납을 실행한다. 전사 내용을 시험 입력해 실제 정답으로 저장할 필요는 없다. 권한 오류가 없다면 공동 작업 저장도 연결된 것이다.

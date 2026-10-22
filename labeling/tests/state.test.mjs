@@ -1,14 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { initialState,mutate,applyMutation,listState,getItem,labelOnly } from '../lib/state.mjs';
+import { initialState,reconcileState,mutate,applyMutation,listState,getItem,labelOnly } from '../lib/state.mjs';
 import { zipFiles } from '../lib/zip.mjs';
 import { GitHubStore } from '../lib/github-store.mjs';
 const alice={author:'이나현',client_id:'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa',id:'hf-0000'};
 const bob={author:'김혜린',client_id:'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb',id:'hf-0000'};
 const now=Date.now();
 
-test('all 122 images load with five protected references and 117 pending',()=>{
- const state=initialState();const result=listState(state);assert.equal(result.stats.total,122);assert.equal(result.stats.verified,5);assert.equal(result.stats.remaining,117);
+test('catalog images load with five protected references',()=>{
+ const state=initialState();const result=listState(state);assert.equal(result.stats.total,Object.keys(initialState().items).length);assert.equal(result.stats.verified,5);assert.equal(result.stats.remaining,Object.keys(initialState().items).length-5);
  assert.throws(()=>mutate(state,'claim',{...alice,id:'hf-0003'},now),/보호/);
  assert.throws(()=>getItem(state,'__proto__'),/찾지/);
 });
@@ -79,7 +79,7 @@ test('large GitHub state uses raw download without losing its concurrency SHA',a
   reads++;return new Response(JSON.stringify(reads===1?{encoding:'none',sha:'large-sha'}:initialState()),{status:200});
  };
  const {state,version}=await new GitHubStore({LABEL_GITHUB_TOKEN:'test-placeholder'},fetcher).read();
- assert.equal(version,'large-sha');assert.equal(Object.keys(state.items).length,122);assert.equal(reads,2);
+ assert.equal(version,'large-sha');assert.equal(Object.keys(state.items).length,Object.keys(initialState().items).length);assert.equal(reads,2);
 });
 test('GitHub configuration errors distinguish missing, invalid, forbidden and rate limited tokens',async()=>{
  const missing=new GitHubStore({LABEL_GITHUB_TOKEN:'   '});
@@ -92,4 +92,23 @@ test('GitHub configuration errors distinguish missing, invalid, forbidden and ra
 test('non-concurrency GitHub validation failures are not hidden as editing conflicts',async()=>{
  const store=new GitHubStore({LABEL_GITHUB_TOKEN:'test-placeholder'},async(url)=>url.includes('/git/ref/')?new Response('{}',{status:200}):new Response(JSON.stringify({message:'Validation Failed'}),{status:422}));
  await assert.rejects(()=>store.write(initialState(),'old-sha','test'),error=>error.code==='GITHUB_WRITE_REJECTED');
+});
+
+test('catalog additions preserve saved annotations, revisions, history and claims',()=>{
+ const old=initialState();mutate(old,'claim',alice,now);
+ mutate(old,'save',{...alice,text:'보존할 전사',notes:'메모',status:'draft',revision:0},now);
+ const original=structuredClone(old.items['hf-0000']);
+ const catalog=initialState();catalog.items['hf-9999']={...structuredClone(catalog.items['hf-0001']),id:'hf-9999'};
+ const merged=reconcileState(old,catalog);
+ assert.deepEqual(merged.items['hf-0000'],original);
+ assert.deepEqual(merged.items['hf-9999'],catalog.items['hf-9999']);
+ assert.equal(old.items['hf-9999'],undefined);
+ delete catalog.items['hf-0000'];assert.throws(()=>reconcileState(old,catalog),/재배포/);
+});
+test('GitHub old catalog reads append new images and retain the file concurrency SHA',async()=>{
+ const old=initialState();const newest=Object.keys(old.items).at(-1);delete old.items[newest];
+ old.items['hf-0000'].text='기존 공동 전사';old.items['hf-0000'].status='draft';old.items['hf-0000'].revision=7;
+ const store=new GitHubStore({LABEL_GITHUB_TOKEN:'test'},async()=>new Response(JSON.stringify({sha:'old-sha',encoding:'base64',content:Buffer.from(JSON.stringify(old)).toString('base64')})));
+ const {state,version}=await store.read();assert.equal(version,'old-sha');assert.ok(state.items[newest]);
+ assert.equal(state.items['hf-0000'].text,'기존 공동 전사');assert.equal(state.items['hf-0000'].revision,7);
 });

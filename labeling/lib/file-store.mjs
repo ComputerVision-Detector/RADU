@@ -2,7 +2,7 @@
 import { mkdirSync,readFileSync,existsSync,writeFileSync,openSync,closeSync,fsyncSync,renameSync,unlinkSync,readdirSync,statSync } from 'node:fs';
 import path from 'node:path';
 import { createHash,randomUUID } from 'node:crypto';
-import { initialState,AppError } from './state.mjs';
+import { initialState,AppError,reconcileState } from './state.mjs';
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 export function validateState(state) {
@@ -39,7 +39,7 @@ export class FileStore {
   async read() {
     if(!existsSync(this.file))return {state:initialState(),version:null};
     const raw=readFileSync(this.file);
-    try{return {state:validateState(JSON.parse(raw)),version:hash(raw)};}
+    try{return {state:validateState(reconcileState(JSON.parse(raw))),version:hash(raw)};}
     catch{throw new AppError(503,'서버 저장 파일을 읽지 못했습니다. 관리자에게 알려 주세요. 백업으로 복구할 수 있습니다.');}
   }
   async acquire() {

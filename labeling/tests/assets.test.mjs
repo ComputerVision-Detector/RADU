@@ -5,7 +5,7 @@ import { createHash } from 'node:crypto';
 import seed from '../data/seed.json' with {type:'json'};
 import manifest from '../data/assets.manifest.json' with {type:'json'};
 test('every labeled image has a matching published reading asset',()=>{
- assert.equal(manifest.images.length,122);
+ assert.equal(manifest.images.length,Object.keys(seed.items).length);
  for(const entry of manifest.images){
   assert.equal(seed.items[entry.id].image.file,`assets/${entry.file}`);
   const bytes=readFileSync(new URL(`../assets/${entry.file}`,import.meta.url));

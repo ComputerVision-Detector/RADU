@@ -1219,6 +1219,416 @@
       "sha256": "af191410c0969923729a01f9284479676b852e6853aa08b4338afd61064ae6b9",
       "bytes": 1403512,
       "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0122",
+      "file": "hf-0122.webp",
+      "width": 3200,
+      "height": 2156,
+      "source_sha256": "ee438ee01f076a4a4077c7f52325bef28071675ffd1c794831f23588e9f65891",
+      "sha256": "10bda2c43f08438a14ef8886738f1aa66f10503fe8f24007ef01c1925d4f66a7",
+      "bytes": 291516,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0123",
+      "file": "hf-0123.webp",
+      "width": 2540,
+      "height": 3200,
+      "source_sha256": "f9778287a96e282cf8733a32147036704872ecb0233605ecc5f90d37fd808bd3",
+      "sha256": "51691e3d449fe14122a4c94c649e72fb52f1340f5438ae136615912c0ae35f23",
+      "bytes": 543232,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0124",
+      "file": "hf-0124.webp",
+      "width": 2481,
+      "height": 3200,
+      "source_sha256": "f59b1ba62b15c22d1806d731fc8a7bcf9f733c528dfbbc0b1806da6ede954a91",
+      "sha256": "3fca9b4ab6ac1f35af0e256accc9dd968084e56ba85fe188d02a58170a44767e",
+      "bytes": 583940,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0125",
+      "file": "hf-0125.webp",
+      "width": 2499,
+      "height": 3200,
+      "source_sha256": "e2438b260f22ff226948d4bba5bb37cb6e18eba6a6146aa7a0f62da9987a74d8",
+      "sha256": "0a634fe282dc0de3608d4b7dedf1d6e691fad62365f4645935610922a19d4645",
+      "bytes": 503854,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0126",
+      "file": "hf-0126.webp",
+      "width": 2528,
+      "height": 3200,
+      "source_sha256": "6ff00c674ba8700adb7ad151075cfa3994219dfb88118013846c82a2624bb0be",
+      "sha256": "f72dd117d750df5a0e56dfeace9e0bdaacd77a7a75b706894b3f201a121f9182",
+      "bytes": 578192,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0127",
+      "file": "hf-0127.webp",
+      "width": 3120,
+      "height": 2673,
+      "source_sha256": "4d9794be3faed1cd9a3a33f5694ca393357ca5938c4e865d3bb32dcf59a74a66",
+      "sha256": "a29122fbf710cd76a68af7d3f0dd03b665160ac585e87907780bcb709233f905",
+      "bytes": 598858,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0128",
+      "file": "hf-0128.webp",
+      "width": 2646,
+      "height": 3108,
+      "source_sha256": "3c5ea64cb3de14ca20ffc164b5fb304add9f35d4cc074876c3132e9e3630aa1d",
+      "sha256": "afa5365bc7c9f0297a34ce832af6d75a312def5da76982aadc2f84ed5146f584",
+      "bytes": 588876,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0129",
+      "file": "hf-0129.webp",
+      "width": 2422,
+      "height": 3047,
+      "source_sha256": "6149a437ceb94d501413ab3da78018408f325cd8cbad3757822069a33d574ba7",
+      "sha256": "05f3fbbd48f64a44dc37b6ac00c644587ffca4b1e5c9f4a7dd2837ab2d44e085",
+      "bytes": 476236,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0130",
+      "file": "hf-0130.webp",
+      "width": 3200,
+      "height": 2366,
+      "source_sha256": "880c67cf3491939136ce4dd1d6118e91eb8cdc1fd47a751903a60c9b84411b06",
+      "sha256": "c4b8933b7c86fbc3eb30fccdd2cb975d3b0830788db318bf124cd0f9a6488d9c",
+      "bytes": 461330,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0131",
+      "file": "hf-0131.webp",
+      "width": 3200,
+      "height": 2289,
+      "source_sha256": "ab907492c111a0d1e16c71ea795d4c43144655d8afd03b2f93292c9279c5adc6",
+      "sha256": "485ee88a30f57165b9dfdc490bc1f627da832b8a97de88f1472b090944017cd6",
+      "bytes": 465922,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0132",
+      "file": "hf-0132.webp",
+      "width": 2216,
+      "height": 3200,
+      "source_sha256": "d7da93b7fa8d57e1d61c0005b46206aa76cb0e954e78130723fe07ba1157ddd2",
+      "sha256": "b795eff03ec0a9829b169b4737ef7813eba65c901f5c2bc3a55536a3cfd50db1",
+      "bytes": 348222,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0133",
+      "file": "hf-0133.webp",
+      "width": 2300,
+      "height": 3200,
+      "source_sha256": "fbf8395ce2fd88e57a48fe350fc8c0473f6d85729009e93d11549efd4a7e52c5",
+      "sha256": "a3b0eb17f9c9f77a9aedc2e5feca49cdb3701d76e438c95f53e2bfbf70bb6f3f",
+      "bytes": 350746,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0134",
+      "file": "hf-0134.webp",
+      "width": 3200,
+      "height": 2299,
+      "source_sha256": "4a7d516cc55b6175db590963c4168bf227f00a197644aca19ea504f0083dc937",
+      "sha256": "59f55b7f1aa5eb0f5c36a7ce8e8e055b72ae5e5147f9b07437ebb07d5b0f331a",
+      "bytes": 345516,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0135",
+      "file": "hf-0135.webp",
+      "width": 3200,
+      "height": 2265,
+      "source_sha256": "05d65a715a8049199fdbb851dbc23db813b2a38a267793ce8d40c6a63227232f",
+      "sha256": "5bd284d823fd7e2b78e8282551c59158d25eabd5d267b46ec629001403cca776",
+      "bytes": 431840,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0136",
+      "file": "hf-0136.webp",
+      "width": 2709,
+      "height": 3154,
+      "source_sha256": "e6c0b1734875f7427c1282be2f72945acfe4108c9565580b335520c4e4f4484d",
+      "sha256": "64e868ea93e0ca8817a7ea433e9add2b0a90fd68874715d2d8e3c59198eefaab",
+      "bytes": 557842,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0137",
+      "file": "hf-0137.webp",
+      "width": 2387,
+      "height": 3200,
+      "source_sha256": "5c5486a708c2cd1e06025cddfbdae7dbde4a837cda823f1f87c1a0e8e12f9dc3",
+      "sha256": "ac42cfee67bbcc0b990d85963f8b8f429c1f6de193f6258b48a8dfa89e65a466",
+      "bytes": 647428,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0138",
+      "file": "hf-0138.webp",
+      "width": 2469,
+      "height": 3068,
+      "source_sha256": "8a44256a4374985b08d175f46314f514d817fdf279d403f85bf3718969e9016c",
+      "sha256": "c131bb7208415a09a733b3163719bc2b392df697861aca109d4f9a3b376fb44b",
+      "bytes": 627802,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0139",
+      "file": "hf-0139.webp",
+      "width": 2384,
+      "height": 3200,
+      "source_sha256": "97dfd4cd7c4d368edb323542595e5739ca70a86c206184a72448d7e734ae5f23",
+      "sha256": "c8cd0b96580753b83a00480d002d460c98fdeaea080d8135b211de3a0a0aa1ed",
+      "bytes": 567672,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0140",
+      "file": "hf-0140.webp",
+      "width": 2430,
+      "height": 3200,
+      "source_sha256": "5e0f91d4b2f18fb7f70afdcb409fec401f214764d10b870517269d7ab745dea1",
+      "sha256": "93b9e11d35c222c4b83cd9c75abab20ef3f2786ef3818a697be6765258c1ce4f",
+      "bytes": 414522,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0141",
+      "file": "hf-0141.webp",
+      "width": 2416,
+      "height": 3200,
+      "source_sha256": "07afa848e962e92b5b3a6de59142f56ac6146e28971d65878095703ffbb989d6",
+      "sha256": "b53f2e6313caae002e2db1403d085047d97b1e770ec50433309786e9bd3267ba",
+      "bytes": 375888,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0142",
+      "file": "hf-0142.webp",
+      "width": 2566,
+      "height": 3180,
+      "source_sha256": "aead697faa28ced77c810f2c92e26534d0d42fc41b10541e815206a3c7d1e2fc",
+      "sha256": "0d298ed5816a55a0b4e3b85e06b0e4130af1ef6cd2dca0fdd44faeb4a32d77c6",
+      "bytes": 347698,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0143",
+      "file": "hf-0143.webp",
+      "width": 2535,
+      "height": 2157,
+      "source_sha256": "46d040e1a071a493d58365bfca163f6f162616b8bdd697a595328889224dc94b",
+      "sha256": "0a2a82afa77081e48d30172f8caa22c5dfd729795d0c8ad7d67c83d0dee23f5e",
+      "bytes": 233904,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0144",
+      "file": "hf-0144.webp",
+      "width": 2507,
+      "height": 3200,
+      "source_sha256": "d3e284a3245f5bd35bbd7bcabbdf87b33b881d6f86e0d2b79d039466173d2e47",
+      "sha256": "cf9bd02816080c9f27f36cc1c27ae494bcfb2a2a6aa2a760de45e9778c96fc9f",
+      "bytes": 376042,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0145",
+      "file": "hf-0145.webp",
+      "width": 2442,
+      "height": 3200,
+      "source_sha256": "5e7a311128506d67cd5ecd21aca6020fbe350a2f856031ded46cd8a09e70c9b3",
+      "sha256": "3d778139cadbf9f50f28685bec31672ae81e97afbc21cd4de94efdc617ca6f60",
+      "bytes": 366974,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0146",
+      "file": "hf-0146.webp",
+      "width": 2584,
+      "height": 3139,
+      "source_sha256": "4eb461ab8bb26b7a57e6c7173f47953b10ce3831405ed0858c9e0d7541a86889",
+      "sha256": "39000ed64c69681ede92ce859c545ada4299c0b415678ebbe93b01588e87d963",
+      "bytes": 403720,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0147",
+      "file": "hf-0147.webp",
+      "width": 2620,
+      "height": 3200,
+      "source_sha256": "24c4be11019e2adca32ca9c5319a3cfd9911726c8d892317048b5d3ad7203d69",
+      "sha256": "dc5a0c99d74f20be5922dad5ac27ef2f34cb4c1d8a9213de2abecc2864b48ede",
+      "bytes": 399662,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0148",
+      "file": "hf-0148.webp",
+      "width": 2543,
+      "height": 2701,
+      "source_sha256": "16124d25adbf45c1e711ead9271ec9639801de7b7ebbdd667567b41deb194bd6",
+      "sha256": "99b1ad2690be426db45818c915a2520d1fc9cc3a0521e0098abed2b41e55066b",
+      "bytes": 416840,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0149",
+      "file": "hf-0149.webp",
+      "width": 2601,
+      "height": 2754,
+      "source_sha256": "967d77f54bd82d6cbc36df3c63aa3b97b2b1a8456f5b4700bea6d5408f839906",
+      "sha256": "e906368e1e3dba6b0a57136aafdf6db36b2026fc6e3ebe399b401fab8f9db4aa",
+      "bytes": 375610,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0150",
+      "file": "hf-0150.webp",
+      "width": 2733,
+      "height": 2997,
+      "source_sha256": "9f5240fa6732a51c0ec750869aadbf7104e1e556d4e52b7e76579d2869d134c4",
+      "sha256": "d7473029cd04af2bee7802133fd104d3816e4b0a59a089d97ba7f5ca655a1bff",
+      "bytes": 461852,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0151",
+      "file": "hf-0151.webp",
+      "width": 2438,
+      "height": 3200,
+      "source_sha256": "3275f946a606285826ff62be88740aa6769cab88dabed102e4eb937f43453a6b",
+      "sha256": "6c7c21b46ff969c290d7daa33f6903ac516973a9c622fcf40edd8939af212a65",
+      "bytes": 403940,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0152",
+      "file": "hf-0152.webp",
+      "width": 2332,
+      "height": 3200,
+      "source_sha256": "f5598115b66947a5ddc8bf27c0c8e45f0cb0993ed5df5cb3936ec63674c60064",
+      "sha256": "a5f848cad08a7d6174dad5685c29bd0262a2bb31fd1467a4d5d6b95cf0e9ad68",
+      "bytes": 420980,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0153",
+      "file": "hf-0153.webp",
+      "width": 2484,
+      "height": 3200,
+      "source_sha256": "60ac514a933828c004936dce94b330b680b9e56fd5cc604074c6849de7d82c9d",
+      "sha256": "76cdfbb1319088f6cba400478dc79b5ac812db9e7b7d43c6e23137e29d33740b",
+      "bytes": 458474,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0154",
+      "file": "hf-0154.webp",
+      "width": 2328,
+      "height": 3200,
+      "source_sha256": "63d14353cefb40d84691518e4a9f8cdc5fef03a78ea74d2055363330a8afc9af",
+      "sha256": "3f602bae155c40588552f42f38bb7ff0bf5997fe811d4c95f39ecaf664f58767",
+      "bytes": 507224,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0155",
+      "file": "hf-0155.webp",
+      "width": 2522,
+      "height": 2849,
+      "source_sha256": "2c0ba1ddad3c7040ec165c0ff79d8fd77dff860fa44d36a10d552e9ddfabf466",
+      "sha256": "165e060e9ab995756f21691124329fd5e3301486cb4be82f38a76560683c7512",
+      "bytes": 435188,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0156",
+      "file": "hf-0156.webp",
+      "width": 2431,
+      "height": 3200,
+      "source_sha256": "670ce256df9825f03be7c10ea7ec25625d50b9dfbfecf8e8a9121062a3371b8d",
+      "sha256": "5eafe24a243a22b090907b2d38161cfaf7281357654d82fa02cc14a9ddcf6baa",
+      "bytes": 461002,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0157",
+      "file": "hf-0157.webp",
+      "width": 2301,
+      "height": 3200,
+      "source_sha256": "349ea80334c0190975146b242634d0646f504fd163c16e257d3ee93a3a7d9a61",
+      "sha256": "cf56a77508e02275661839245f967002b831cf2237aa485e6e825e29771e0a34",
+      "bytes": 471600,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0158",
+      "file": "hf-0158.webp",
+      "width": 2332,
+      "height": 3200,
+      "source_sha256": "8a636ec5dd2a3e716a6544fc5c2caa0d6243964b117ba146cd0fb75c8319bec8",
+      "sha256": "53bd51e0e965e80e6580c232a3d2a7fcecf7f38b32891da04bc987f8b76a0edc",
+      "bytes": 430030,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0159",
+      "file": "hf-0159.webp",
+      "width": 2415,
+      "height": 3200,
+      "source_sha256": "75da405756b177e195740dd8b6317117fe0e213a07b4d3ec66e901257cf62845",
+      "sha256": "6881745cf1502a18cc5d6613ffd3b5bc6f2b82fc3307676af20a35f4c2b4fd86",
+      "bytes": 484004,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0160",
+      "file": "hf-0160.webp",
+      "width": 2638,
+      "height": 2916,
+      "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+      "sha256": "52c8d9626a9cde3ef757d92e96b5d71c5ac1394f82c985053db716234fe7ea02",
+      "bytes": 418762,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0161",
+      "file": "hf-0161.webp",
+      "width": 2465,
+      "height": 3200,
+      "source_sha256": "437acd04a82739a1c6da39252bde9c3afbd483f81cb38ea86da65b3bfa3a78c0",
+      "sha256": "69c5fc7648178f408e6fbce4c40d404fea095b3622f8fea695a43bf4d03bcbcd",
+      "bytes": 413934,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
+    },
+    {
+      "id": "hf-0162",
+      "file": "hf-0162.webp",
+      "width": 2936,
+      "height": 3200,
+      "source_sha256": "174e96516afe2ef43465988479f43ff990b0e5b2260c90e172309cf4b1c8fa6f",
+      "sha256": "aed3586f734d5debea5b184c96859099770ead1116d18c3550a81d6ea26c00dc",
+      "bytes": 514188,
+      "encoding": "WebP quality 85, max side 3200; web reading copy, not benchmark input"
     }
   ]
 }

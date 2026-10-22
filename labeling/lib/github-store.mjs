@@ -1,4 +1,4 @@
-import { AppError,initialState } from './state.mjs';
+import { AppError,initialState,reconcileState } from './state.mjs';
 const STATE_PATH='labeling/data/live.json';
 export class GitHubStore {
   constructor(env=process.env, request=fetch) {
@@ -44,7 +44,7 @@ export class GitHubStore {
     if(file.encoding==='base64')state=JSON.parse(Buffer.from(file.content,'base64').toString('utf8'));
     else { r=await this.request(path,{headers:{Accept:'application/vnd.github.raw+json'}});if(!r.ok)throw this.failure(r);state=await r.json(); }
     if(state.schema!==1 || !state.items)throw new AppError(503,'공유 라벨 데이터 형식을 확인해야 합니다.');
-    return {state,version:file.sha};
+    return {state:reconcileState(state),version:file.sha};
   }
   async write(state,version,author) {
     await this.ensureBranch();

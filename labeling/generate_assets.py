@@ -18,7 +18,8 @@ def make(sample):
 
 if __name__=='__main__':
     OUT.mkdir(exist_ok=True)
-    samples=json.loads((BASE/'additional_images.manifest.json').read_text())['samples']
+    catalog=ROOT/'labeling/data/dataset.catalog.json'
+    samples=json.loads((catalog if catalog.exists() else BASE/'additional_images.manifest.json').read_text())['samples']
     with ThreadPoolExecutor(max_workers=4) as pool:
         result=[]
         for item in pool.map(make,samples):
