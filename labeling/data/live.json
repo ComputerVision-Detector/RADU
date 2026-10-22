@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T19:09:51.012Z",
+  "updated_at": "2026-10-22T19:12:02.754Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1893,23 +1893,27 @@
     },
     "hf-0075": {
       "id": "hf-0075",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "·어파인 변환\n- 변환 행렬은 아래 여러 개를 곱해도 직선은 직선으로, 평행인 선은 \n평행을 유지.\n이런 성질은 동차 행렬의 행이 (0 0 1)이기 때문에 유지됨.\n이런 성질을 가진 변환을 강직 않은 변환과 구분하고 어파인 변환(affine)이라 함.\n- 영상의 좌표를 변환.\n- 기하 연산의 Affine → 이미지의 공간 좌표를 변환.\nCNN의 Affine → 이미지에서 추출된 특징값(Feature)을 변환.\n추출한 특징들을 어떻게 조합해서 다음 출력으로 만들 것인가.\n- 투영(Projection)은 멀리 있는 물체가 작게 보이기 때문에 평행을 유지하지 못하는 변환으로 어파인 변환이 아님.\n\n·에일리어싱\n- 영상 처리에서 시각적으로 불미스러운 현상\n\n·안티 에일리어싱\n- 에일리어싱을 누그러뜨리는 방법.\n\n·에일리어싱을 방지하기 위해 변환 영상의 원래 영상의 해당 화소를 찾는 \n후방 변환을 사용.\n  ↳ 변환 행렬 A의 역행렬인 \\(A^{-1}\\)을 사용하면 됨.",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "수식은 LaTex",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T19:34:51.012Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T19:12:02.754Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0075.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T19:12:02.754Z"
     },
     "hf-0076": {
       "id": "hf-0076",
