@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T13:52:35.973Z",
+  "updated_at": "2026-10-22T13:53:25.049Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -136,23 +136,27 @@
     },
     "hf-0005": {
       "id": "hf-0005",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "output Projection\ninput [2,4096]\nLinear 4096 → 2880\n→ [2,2880]\nResidual\nx [2,2880]\nattn out [2,2880]\n\n[2,2880]\nMLP Block (MoE)\nRMSNorm [2,2880]\nRouter\nLinear 2880→32\ng [2,32]\nTop-k Expert Selection\nTop-4 [2,32]→[2,4]\nExpert weight softmax [2,4]\nExpert MLP\nMLP#1\n전체 Expert weight [32,5760,2880]\nTop-4 선택 [2,4,5760,2880]\neinsum → [2,4,5760]\nSwiGLU\n[2,4,5760]\n마지막 차원 5760→2880+2880\n결과 [2,4,2880]\nMLP#2\nweight [32,2880,2880]\nTop-4 선택 → [2,4,2880,2880]\neinsum → [2,4,2880]\nDistributed All-Reduce [2,4,2880]\nMLP#2 Bias [2,4,2880]\nExpert weight sum",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T14:16:55.348Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T13:53:25.049Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0005.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T13:53:25.049Z"
     },
     "hf-0006": {
       "id": "hf-0006",
