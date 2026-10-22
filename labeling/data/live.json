@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:07:00.032Z",
+  "updated_at": "2026-10-22T18:09:21.643Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1185,23 +1185,27 @@
     },
     "hf-0046": {
       "id": "hf-0046",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "·CNN으로 이미지 신경망.\nMNIST\n2 → Conv → ReLU → Pooling → Conv → ReLU → Pooling → Conv → ReLU → Affine → ReLU\n→ Affine → Softmax →\n합성곱계층\t\t풀링계층\n\n·특징 맵 (= 입력측 데이터)\n- 합성곱 계층의 입력측 데이터.\n- 입력 데이터 : 입력 특징 맵.\n- 출력 데이터 : 출력 특징 맵.\n\n·합성곱 연산\n- 이미지 처리에서 말하는 필터 연산.\n\n·필터 (= 커널)\n- 이미지에서 특정한 특징을 찾아내는 작은 가중치 행렬.\n\n·필터의 윈도우\n- 필터가 현재 입력 데이터에서 보고 있는 영역.\n\n·합성곱 연산\n- 필터의 윈도우를 일정 간격으로 이동하면서 입력 데이터에 적용.\n\n·단일 곱셈 누산\n- 입력 데이터와 필터에서 대응하는 원소끼리 곱한 후 그 총합을 구한 것.\n\n·행렬의 플리핑\n- 원소들을 좌우, 상하로 각 한 번씩 뒤집는 것.",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "오른쪽 위에 있는 필터의 윈도우 부분은 작성하지 않음",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T18:32:00.032Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:09:21.643Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0046.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:09:21.643Z"
     },
     "hf-0047": {
       "id": "hf-0047",
