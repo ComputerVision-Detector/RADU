@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T14:31:54.692Z",
+  "updated_at": "2026-10-22T14:32:59.635Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -310,23 +310,27 @@
     },
     "hf-0010": {
       "id": "hf-0010",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "-볼계층 24 中. 23번, +Random.layer.1개\n-처음에는 24개 모두 출력.",
+      "status": "verified",
+      "annotator": "이나현",
+      "notes": "플로우차트는 전사 내용에 추가하지 않음.",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T14:55:57.083Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T14:32:59.635Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0010.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T14:32:59.635Z"
     },
     "hf-0011": {
       "id": "hf-0011",
