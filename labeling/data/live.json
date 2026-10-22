@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T19:07:42.280Z",
+  "updated_at": "2026-10-22T19:08:02.033Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1866,15 +1866,17 @@
       "text": "·기하 연산\n- 영상의 크기를 조절하거나 회전하려면 몇몇 위치에 있는 화소의 값을 가져올 수 있어야 함.\n즉 이미지의 픽셀(화소)을 다른 위치로 이동시키거나 좌표 관계를 변환하는 연산.\n- 동차 좌표, 동차 행렬\n동차 좌표 : 2차원 점의 위치 (x, y)에 1을 추가해 3차원 벡터 p로 표현.\n- 기하 변환은 이동, 회전, 크기 3가지.\n동차 좌표에서는 이동 연산을 3×3 동차 행렬로 표현.\n\n기하변환 | 동차 행렬 | 설명\n\n이동\t\\(T(t_x,t_y)=\\begin{bmatrix}1&0&t_x\\\\0&1&t_y\\\\0&0&1\\end{bmatrix}\\)\tx방향으로 \\(t_x\\)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ty방향으로 \\(t_y\\)만큼 이동.\t\t\t\t\t\t\n\n회전\t\n\\(R(\\theta)=\\begin{bmatrix}\\cos\\theta&\\sin\\theta&0\\\\-\\sin\\theta&\\cos\\theta&0\\\\0&0&1\\end{bmatrix}\\)\n원점을 중심으로 반시계 방향으로 \\(\\theta\\)만큼 회전.\n\n크기\n\\(S(s_x,s_y)=\\begin{bmatrix}s_x&0&0\\\\0&s_y&0\\\\0&0&1\\end{bmatrix}\\)\nx방향으로 \\(s_x\\)\ny방향으로 \\(s_y\\)만큼 크기 조절.\n(1보다 크면 확대, 1보다 작으면 축소)\n\n- 동차 행렬 : 동차 좌표에 기하 변환을 적용하기 위한 변환 도구.\n- 동차 좌표 사용 시 수학 표기가 깔끔하고 계산 효율에 장점이 있음.\n↳ 변환해야 하는 점이 많고 여러 단계의 변환을 적용해야 하는 경우 변환 행렬들을\n- 모두 곱해 하나의 변환 행렬을 만들어두고 점마다 한 번의 행렬 곱셈으로\n계산하는 이점.",
       "status": "verified",
       "annotator": "정하경",
-      "notes": "",
-      "revision": 1,
+      "notes": "기하변환 | 동차행렬 | 설명은 표 부분",
+      "revision": 2,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T19:32:42.280Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-10-22T19:08:02.033Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 2
+        },
         {
           "at": "2026-10-22T19:07:38.123Z",
           "author": "정하경",
@@ -1887,7 +1889,7 @@
         "source_width": 3024,
         "source_height": 4032
       },
-      "updated_at": "2026-10-22T19:07:38.123Z"
+      "updated_at": "2026-10-22T19:08:02.033Z"
     },
     "hf-0075": {
       "id": "hf-0075",
