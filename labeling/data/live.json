@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:42:37.645Z",
+  "updated_at": "2026-10-22T18:43:08.471Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1575,23 +1575,27 @@
     },
     "hf-0062": {
       "id": "hf-0062",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "· 통계 기반 과 추론 기반 차이점\n- 추론과 통계는 서로 관련이 있긴 함.\n- 단어 추가시 분산 표현을 갱신해야 하는경우\n통계 : 계산을 처음부터 다시\n추론 : 매개변수를 다시 학습.(지금까지 학습한 가중치를 초깃값으로 다시 하기에 효율적)\n- 성격이나 정밀도(단어 분산표현)\n통계: 단어의 유사성 인코딩\n추론: 단어의 유사성 + 단어 사이의 패턴까지 인코딩.\n\n· Embedding 계층 (임베딩 계층).\n- Embedding 계층에 단어 임베딩(분산 표현)을 저장.\n단어의 밀집벡터 표현\n- 신경망을 사용한 추론 기반 기법으로 얻은 단어는 distributed representation 이라함.\n- Embedding 계층의 순전파는 가중치 W의 특정 행을 추출할 뿐\n가중치 특정 행 뉴런만을 (아무것도 손대지 않고) 다음층으로 흘려보냄.\n앞 층으로 전해진 기울기를 가중치 기울기 dW의 특정행(idx번째 행)에 설정.\n- 즉 임베딩 계층은 특정 단어(임베딩)을 꺼내는 것 뿐.\n(Word2vec은 정말로 꺼내고 끝, 하지만 GPT 처럼 LLM모델에선 꺼내는것은\n같지만 후에 수십 개의 Transformer 블록을 거치며 문맥 정보를 계속 반영하게 됨.)\n임베딩 자체가 최종 결과물\n\n- Embedding Matrix (임베딩 행렬) : 행렬 자체가 가중치로 학습되는 가중치\n- Embedding Layer (임베딩 계층): 토큰 ID가 3이라면 임베딩 행렬의 3번째 행\n을 그대로 꺼내는 Lookup 계층\n\n- Embedding (임베딩) : 최종적으로 꺼낸 하나의 벡터\n= Distributed Representation\n= Dense Vector\nex. apple → [0.23, -1.01, 0.54, ..., 0.89]\napple의 임베딩 혹은 apple의 분산 표현. 또는 apple의 밀집 벡터",
+      "status": "verified",
+      "annotator": "이나현",
+      "notes": "주석 위치 확인 필요.",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T19:07:37.645Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:43:08.471Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0062.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:43:08.471Z"
     },
     "hf-0063": {
       "id": "hf-0063",
