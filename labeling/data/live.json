@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T14:40:22.859Z",
+  "updated_at": "2026-10-22T14:40:44.147Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1766,15 +1766,17 @@
       "text": "통장프로그램(고치기2)\n# include <stido.h>\n#inculde <windows.h>\nvoid Jul();\nvoid ulz(); <- 필요없음\nvoid main(){\nint money = 0, in_mn = 0, out_mn = 0;\nint ch_mn = 0;\nint num 2 = 0;\nJul();\nprintf(\"현재 통장에 있는 돈 : %d\", money);\nprintf(\"입금하려면 1번, 출금하려면 2번을 입력해주세요.\\n\");\nprintf(\":\");\nscanf(\"%d, ch_mn);\nJul();\nif(ch_mn == 1){\nprintf(\"입금을 선택하셨습니다.\\n\");\nprintf(\"입금할 돈을 입력해주세요.\\n:\");\nscanf(\"%d\", &in_mn); money = money + in_mn;\nprintf(\"%d원을 입금했고, 통장에는 %d원이 남았습니다\\n\", in_mn, money);\nJul(); exit(0);\n} else if (ch_mn == 2) {\nprintf(\"출금을 선택하셨습니다.\\n\");\nprintf(\"출금할 돈을 입력해주세요.\\n:\");\nscanf(\"%d\", out_mn);\nmoney = money - out_mn;\nprintf(\"%d원을 출금하였고, 통장에는 %d원이 남았습니다\\n\", out_mn, money);\nJul();\nexit(0);\n}\nvoid Jul(){\nprintf(\"================ \\n);\n}",
       "status": "verified",
       "annotator": "이진우",
-      "notes": "",
-      "revision": 2,
+      "notes": "코드 메모 내의 줄바꿈 표시인 \\n 정리 불가",
+      "revision": 3,
       "seed_verified": false,
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-22T15:05:22.859Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-10-22T14:40:44.147Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 3
+        },
         {
           "at": "2026-10-22T14:25:31.872Z",
           "author": "이진우",
@@ -1793,7 +1795,7 @@
         "source_width": 3024,
         "source_height": 4032
       },
-      "updated_at": "2026-10-22T14:25:31.872Z"
+      "updated_at": "2026-10-22T14:40:44.147Z"
     },
     "hf-0101": {
       "id": "hf-0101",
