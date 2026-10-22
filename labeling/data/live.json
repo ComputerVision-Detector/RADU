@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T14:57:57.096Z",
+  "updated_at": "2026-10-22T14:59:27.684Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2785,23 +2785,27 @@
     },
     "hf-0159": {
       "id": "hf-0159",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "· pose는 신원 정보로 작용을 하는가?\n- 일반적으로 pose는 Non-Identity Information임.\n하지만, pose / gait / body proportion 등이 반복적으로 나타나면 Identity cue가 될 수 있음.\nex) [키, 팔 길이, 다리 비율, 자세 습관]은 사람마다 다른데, 이러한 특징들이\n너무 보존되면 privacy 측면에서 되려 문제가 될 수 있음.\n∴ 우리 연구에서 실험을 통해 확인해야 하는 것\n[pose preseruation → Utility 임. 하지만 Identity Leakage는?],,\n\n· pose map에 포함되는 정보\n- skeleton pose 는 RGB appearance가 포함되지 않음.\n∴ 얼굴, 옷색상, 피부색, 텍스쳐는 포함되지 않음\n\n· 여러 사람이 있는 경우.\n- C port 에서는 특정 person mask를 기준으로 진행해야 하므로,\n아래 두 방식을 사용해야 함. (中 1개 체택 필요)\n1) BBox\t2) full Image pose\n↓\t↓\ntarget person crop\tBBox와 겹치는 skeleton 선택.\n↓\npose estimation\n⇒ BBox와 Pose를 연결하는 방법.\n: 전달 받은 BBox 를 기준으로 pose estimatior 가 여러 skeleton을 찾고,\nBBox 내부 keypoint 비율이 가장 높은 skeleton을 매핑함.\n∴[Person ID → BBox → Pose ] → ID001 Pose\n\n☆ Control Net : pretrained Diffsion 모델의 생성 능력을 유지하며 추가 조건을 residual feature\n형태로 U-Net에 주입해 생성결과의 공간적 구조를 제어하는 네트워크\n\n이를 본 연구에서는, 사람의 외형은 diffusion으로 변형하면서 원본 pose와\n행동 구조를 유지하기 위해 사용.",
+      "status": "verified",
+      "annotator": "김혜린",
+      "notes": "지운 듯한 표시는 기입하지 않았음.",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-22T15:22:52.084Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T14:59:27.684Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0159.webp",
         "source_width": 2484,
         "source_height": 3291
-      }
+      },
+      "updated_at": "2026-10-22T14:59:27.684Z"
     },
     "hf-0160": {
       "id": "hf-0160",
