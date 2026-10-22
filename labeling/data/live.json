@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T19:39:24.220Z",
+  "updated_at": "2026-10-22T19:41:21.056Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2153,23 +2153,27 @@
     },
     "hf-0086": {
       "id": "hf-0086",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "·스케일 공간 이론\n- 하나의 이미지를 여러 크기(스케일)에서 바라보면서 작은 세부 정보부터 \n큰 구조까지 분석하는 방법.\n\n·SIFT (Scale-Invariant Feature Transform)\n- 크기가 달라져도 같은 특징을 찾아내려고 하는 알고리즘.\n·다중 스케일 영상을 구상하는 방법\n1. 피라미드 방법\n- 물체의 크기가 멀어짐에 따라 물체의 크기가 작아지는 현상을 모방.\n- 연속적인 스케일로 줄일 수 있는 한계가 있음.\n2. 가우시안 스무딩 방법\n- 거리가 멀어지면 세부 내용이 점점 흐려지는 현상 모방.\n- 표준편차 σ를 연속된 값으로 조절 가능.\n- 연속 공간에서 유도한 수식과 알고리즘을 디지털 공간으로 변환해\n사용할 수 있다는 장점.\n\n·SIFT\n- 1단계. 다중 스케일 영상 구축\n  - 가우시안 스무딩과 피라미드 방법을 결합하여 다중 스케일 영상 구성.\n- 2단계. 다중 스케일 영상에 미분 적용\n  - 정규 라플라시안을 사용하지만 DoG를 사용하여 계산 시간을 획기적으로 줄임.\n- 3단계. 극점 검출\n  - 3차원 공간의 특징 가능성 맵 C에 비최대 억제를 적용하여 극점을 찾고 \n특징점을 취함.\n  - 에지를 여러 스케일로 만들어 놓고, 어떤 픽셀이 주변 픽셀보다 \n특별히 튀는 지점을 찾는 것.",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "포스트잇 메모 제외",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T20:04:24.220Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T19:41:21.056Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0086.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T19:41:21.056Z"
     },
     "hf-0087": {
       "id": "hf-0087",
