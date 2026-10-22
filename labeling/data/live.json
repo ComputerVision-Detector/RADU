@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T19:00:38.103Z",
+  "updated_at": "2026-10-22T19:01:59.156Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1743,23 +1743,27 @@
     },
     "hf-0069": {
       "id": "hf-0069",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "·명암 영상\n- 2차원 구조의 배열로 표현\n- 채널 하나\n\n·컬러 영상\n- 3개 채널로 구성\n- 3차원 구조의 배열로 표현\n\n·웹 캠 등 컬러 동영상\n- 4차원 구조의 배열로 표현\n\n·다분광 / 초분광 / MR / CT 영상\n- 3차원 구조의 배열로 표현\n- 단지 세번째 축의 크기가 3에서 3보다 큰 값으로 확장될 뿐\n\n·물체 거리까지 측정한 영상\n- 거리를 깊이(depth) 또는 레인지(range)라고 부름.\n- 거리를 표현한 영상은 '깊이 영상' 또는 '레인지 영상'이라 부름.\n- 종류 : RGB-D, 라이다 등.\n  ↳ RGB컬러 센서와 깊이 센서가 통합된 것.\n- 점 구름 영상으로 표현.\n  ↳ 점까지 거리 d를 \\((x_i, y_i, d_i)\\) 형식으로 저장.\n\n·HSV 컬러 모델\n- H : 색상, S : 채도, V : 명암",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "수식은 LaTex",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T19:25:24.209Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T19:01:59.156Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0069.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T19:01:59.156Z"
     },
     "hf-0070": {
       "id": "hf-0070",
