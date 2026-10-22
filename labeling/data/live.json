@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T14:48:57.588Z",
+  "updated_at": "2026-10-22T14:49:12.688Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2723,23 +2723,27 @@
     },
     "hf-0157": {
       "id": "hf-0157",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "Control Net\n• Control Net이 필요한 이유 : Inpainting 시, 형태가 변하는 문제가 발생할 수 있기 때문. \\n ∴ pose를 강제 조건으로 넣을 필요가 있음.\n\n• Control Net 핵심 개념 : SD를 처음부터 학습시키는 게 아니라, 기존 pretrained \\n diffusion model\n- 대표 조건: Canny Edge, Depth, Segmentation, Normal Map, Human Pose …\n中 금번 연구에서는 [Human Pose Control Net]을 사용할 예정.\n⇒ 기존 U-Net에 Pose 정보를 보조 입력으로 넣게 되는 것임.\n\n• Pose Image란?\n프레임에서 검출된 사람이 있다면, [Original Image → Pose Estimator → Keypoints] 순으로 \\n Keypoints가 도출됨.\n해당 Keypoint들을 skeleton으로 렌더링. -> 이렇게 생성된 Image가 Control Net에 들어가는 Pose Control Image가 되는 것.\n\n• Pose Estimator와 Control Net의 차이\nPose Estimator: Image에서 사람의 관절을 찾음. => Pose 추출\nControl Net: Pose 구조를 조건으로 사용해서 Diffusion 생성 프로세스 자세를 제어함. => Pose를 생성 조건으로 사용.\n\n• Control Net이 U-Net과 어떻게 연결되는가?\n: Control Net이 Pose를 처리하여, feature를 만듦. → 이를 U-Net의 여러 Block에 residual 형태로 주입.\n\n• Zero Convolution이 왜 나오는가?\nZero Convolution: 처음 weight가 전부 0으로 초기화된 convolution layer임.\n⇒ 이를 사용하는 이유: 처음부터 Control Net의 강한 feature를 U-Net에 넣어버리면, 기존의 pretrained SD의 성능을 망칠 수도 있기 때문.\n∴ 처음에는 [Control Net Output = 0]으로 두고, 학습이 진행되면서 점점 pose condition이 의미있는 Residual feature를 학습하게 됨에 따라서.\n\"기존 model의 능력을 유지하며, 새로운 조건을 추가\"할 수 있게 됨.",
+      "status": "verified",
+      "annotator": "이진우",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-22T15:12:44.274Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T14:49:12.688Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0157.webp",
         "source_width": 2435,
         "source_height": 3387
-      }
+      },
+      "updated_at": "2026-10-22T14:49:12.688Z"
     },
     "hf-0158": {
       "id": "hf-0158",
