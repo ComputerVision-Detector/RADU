@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T16:04:14.847Z",
+  "updated_at": "2026-10-22T16:04:40.790Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -504,15 +504,17 @@
       "text": "• 결정 경계를 정하는 문제에서 고려할 사항\n1. 대부분의 데이터가 선형 분류가 불가능\n→ 비선형 분류기가 필요\n→ SVM, 신경망 등\n2. 과적합/과잉적합을 피해야 함\n→ ex. 아웃라이어에 의한 과적합\n→ 아웃라이어를 맞추기 위해 과도하게 복잡한 결정 경계를 만든 경우\n\n• SVM에서 두 부류 까지의 거리 = 여백(margin)\n\n• SVM 학습 알고리즘\n- 여백을 최대화하는 결정경계를 찾는 것\n- 선형 분류 한계를 벗어나기 위해 커널 트릭을 사용\n→ 커널 함수를 사용해 선형 공간을 비선형 공간으로 확장\n\n- SVM에서 사용하는 커널 함수\n- polynomial\n-radial basis\n-sigmoid\n- 여백에 크기와 잘못 분류한 샘플의 수는 트레이드 오프 관계\n-SVM에는 여백의 크기와 잘못 분류한 샘플의 수 사이에서\n둘을 조정하는 하이퍼 매개변수가 있음\n- C를 ↑ 여백 ↓, C ↓ 여백 ↑ 잘못분류한샘플 ↑",
       "status": "verified",
       "annotator": "정하경",
-      "notes": "",
-      "revision": 1,
+      "notes": "트리형식은 - 로 표현, 그래프 부분은 생략",
+      "revision": 2,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T16:29:14.847Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-10-22T16:04:40.790Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 2
+        },
         {
           "at": "2026-10-22T16:04:08.012Z",
           "author": "정하경",
@@ -525,7 +527,7 @@
         "source_width": 3024,
         "source_height": 4032
       },
-      "updated_at": "2026-10-22T16:04:08.012Z"
+      "updated_at": "2026-10-22T16:04:40.790Z"
     },
     "hf-0019": {
       "id": "hf-0019",
