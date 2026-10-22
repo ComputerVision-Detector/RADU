@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:45:24.148Z",
+  "updated_at": "2026-10-22T18:45:27.679Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1599,23 +1599,27 @@
     },
     "hf-0063": {
       "id": "hf-0063",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "· 중간 질문 & 답\n- 정확도를 손실함수로 쓰지 않는 이유 → 미분이 안 되기 때문\n- 왜 교차엔트로피를 사용하는가? → 기울기가 잘 전달되기 때문\n- 왜 Embedding에서 +=를 하는가? → 같은 단어의 gradient를 모두 합쳐야 하기 때문\n- 왜 Matmul 계층이 필요한가 → 가중치에 대한 gradient를 계산하기 쉬워서\n- Softmax와 Cross Entropy 같이 사용 이유 → 역전파 수식이 간단해져서\n- 순전파는 '추론' 역전파는 '학습'",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T19:08:13.428Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:45:27.679Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0063.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:45:27.679Z"
     },
     "hf-0064": {
       "id": "hf-0064",
