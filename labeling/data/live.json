@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T19:18:24.256Z",
+  "updated_at": "2026-10-22T19:19:54.745Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1965,23 +1965,27 @@
     },
     "hf-0078": {
       "id": "hf-0078",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "- 에지 강도 : 에지의 가능성을 나타내는 강도.\n- 에지 방향 : 에지의 진행 방향을 나타내는 것.\n- 그래디언트 (gradient)\n  ↳ 기울기 벡터.\n  ↳ x 방향 변화량 + y 방향 변화량을 가진 벡터.\n\\((f'_x, f'_y) = (4, 3)\\)이면\n밝기가 세로 방향으로 4만큼, 가로 방향으로 3만큼 변하고 있다.\n즉, 이 벡터를 보면 어느 방향으로 가장 빠르게 증가하는지 알 수 있음.\n\n·영상 처리에서 gradient\n- 이 화소 주변에서 밝기가 어느 방향으로 가장 급격하게 변하는가.\n\n·딥러닝에서 gradient\n- 가중치를 어느 방향으로 바꾸면 손실이 가장 빠르게 감소하는가.\n\n·비최대 억제 (NMS)\n- 에지 화소에 적용하여 에지 방향에 놓인 두 이웃 화소의 에지 강도가 \n자신보다 작으면 에지로 살아남고 그렇지 않으면 에지 아닌 화소로 바뀜.\n즉, 두이웃 화소와 비교해 자신이 최대가 아니면 억제됨.",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "수식은 LaTex",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T19:43:24.256Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T19:19:54.745Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0078.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T19:19:54.745Z"
     },
     "hf-0079": {
       "id": "hf-0079",
