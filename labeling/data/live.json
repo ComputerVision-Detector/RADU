@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T17:57:37.948Z",
+  "updated_at": "2026-10-22T17:59:45.794Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -961,23 +961,27 @@
     },
     "hf-0037": {
       "id": "hf-0037",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "신경망 학습.\n· 학습\n- 훈련 데이터로부터 가중치 매개변수의 최적값을 자동으로 획득\n\n· 손실 함수 : 신경망 성능의 나쁨을 나타내는 지표 = 비용 함수\n- 신경망이 학습할 수 있도록 해주는 지표.\n- 손실 함수의 결과값을 가장 작게 만드는 가중치 매개변수를\n찾는 것이 목표\n\n· 딥러닝 = 종단간 머신러닝\n→ 처음부터 끝까지.\n\n· 훈련 데이터와 시험 데이터로 나눔.\n- 훈련 데이터만 사용하여 학습 → 최적의 매개변수를 찾음\n→ 그 후 시험데이터를 사용하여 훈련한 모델의 성능을 평가\n※ 범용 능력을 제대로 평가하기 위해.\n\n· 오차제곱합 (손실함수 中)\n정답 레이블\nE = 1/2 Σ_k (y_k - t_k)^2\n데이터 차원수\n신경망의 출력(추정한 값)",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T18:22:37.948Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T17:59:45.794Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0037.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T17:59:45.794Z"
     },
     "hf-0038": {
       "id": "hf-0038",
