@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "7f97f382d9d82aa6b21e9b617b46218f1ec4b0aa",
-  "updated_at": "2026-10-22T09:00:49.018Z",
+  "updated_at": "2026-10-22T09:02:41.352Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -86,18 +86,24 @@
     },
     "hf-0004": {
       "id": "hf-0004",
-      "text": "\tk [2,8,64] -> [2,8,8,64\n\tv [2,8,64 -> [2,8,8,64]\n\tk와 v의 똑같은 q_mul (Q multiplier)을 추가 => 8이\n\t늘어남. 현재 Qmultiplier는 9이기에\nSink Reshape / Expand\n\tS [64]\n\treshape [8,8,1,1]\n\texpand [8,8,2,1]\nCausal Mask 생성 [2,2]\nsliding window mask 추가 [2,2]\nQK^T\n\tQ = [2,8,8,64]\n\tK = [2,8,8,64]\n\teinsum -> [8,8,2,2]\n\t\t\t(8x8개의\n\t\t\t 2x2 score matrix)\nScaling [8,8,2,2]\nMask 적용 [8,8,2,2]\nSink 추가\n\tQK [8,8,2,2]\n\tS [8,8,2,1]\n\t\tcat(dim -1)\n\t[8,8,2,3]\n\t\t3 = 원래 2개 token + sink 1개\nsoftmax [8,8,2,3]\nsink weight 제거 [8,8,2,2]\nAttention x V\n\tw = [8,8,2,2]\n\tv = [2,8,8,64]\n\teinsum -> [2,8,8,64]\nReeshape [2,8,8,64] -> [2,4096]",
+      "text": "\tk [2,8,64] -> [2,8,8,64\n\tv [2,8,64 -> [2,8,8,64]\n\tk와 v의 똑같은 q_mul (Q multiplier)을 추가 => 8이\n\t늘어남. 현재 Qmultiplier는 9이기에\nSink Reshape / Expand\n\tS [64]\n\treshape [8,8,1,1]\n\texpand [8,8,2,1]\nCausal Mask 생성 [2,2]\nsliding window mask 추가 [2,2]\nQK^T\n\tQ = [2,8,8,64]\n\tK = [2,8,8,64]\n\teinsum -> [8,8,2,2]\n\t\t\t(8x8개의\n\t\t\t 2x2 score matrix)\nScaling [8,8,2,2]\nMask 적용 [8,8,2,2]\nSink 추가\n\tQK [8,8,2,2]\n\tS [8,8,2,1]\n\t\tcat(dim -1)\n\t[8,8,2,3]\n\t\t3 = 원래 2개 token + sink 1개\nsoftmax [8,8,2,3]\nsink weight 제거 [8,8,2,2]\nAttention x V\n\tw = [8,8,2,2]\n\tv = [2,8,8,64]\n\teinsum -> [2,8,8,64]\nReeshape [2,8,8,64] -> [2,4096]\n\n",
       "status": "draft",
       "annotator": "김혜린",
-      "notes": "곱하기 기호는 알바펫 소문자 'x' 사용.\n화살표는 ",
-      "revision": 2,
+      "notes": "곱하기 기호는 알바펫 소문자 'x' 사용.\n화살표는 대시(-) 및 이퀄 기호(=)와 꺽쇠 기호(>)를 조합하여 사용.",
+      "revision": 3,
       "seed_verified": false,
       "claim": {
         "name": "김혜린",
         "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-22T09:25:49.018Z"
+        "until": "2026-10-22T09:27:41.352Z"
       },
       "history": [
+        {
+          "at": "2026-10-22T09:02:41.352Z",
+          "author": "김혜린",
+          "status": "draft",
+          "revision": 3
+        },
         {
           "at": "2026-10-22T09:00:49.018Z",
           "author": "김혜린",
@@ -116,7 +122,7 @@
         "source_width": 3024,
         "source_height": 4032
       },
-      "updated_at": "2026-10-22T09:00:49.018Z"
+      "updated_at": "2026-10-22T09:02:41.352Z"
     },
     "hf-0005": {
       "id": "hf-0005",
