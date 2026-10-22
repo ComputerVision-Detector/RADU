@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T19:03:37.637Z",
+  "updated_at": "2026-10-22T19:03:57.451Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1771,23 +1771,27 @@
     },
     "hf-0070": {
       "id": "hf-0070",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "·이진 영상 (binary image)\n- 화소가 0(흑) 또는 1(백)인 영상.\n- 화소당 1비트면 저장\n\n·이진화\n- 임계값 τ보다 큰 화소는 1, 그렇지 않은 화소는 0으로 바꾸는 것.\n- 히스토그램의 계곡 근처를 임계값으로 결정해 쏠림 현상을 누그러뜨림\n  ↳ 0, 1, ... L-1의 명암 단계 각각에 대해\n    화소 발생 빈도를 나타내는 1차원 배열.\n\n·오츄 알고리즘 (오츠 알고리즘 | Otsu)\n- 이미지의 픽셀 밝기 분포를 보고, 배경과 객체를 가장 잘 나누는 \n임계값을 자동으로 찾아주는 알고리즘.\n\n·컴퓨터 비전은 주어진 문제를 최적화 문제로 푸는 경우가 많음.\n\n·해 공간 (Solution Space)\n- 발생할 수 있는 모든 해의 집합.\n\n·낱낱 탐색 알고리즘 (exhaustive search algorithm) = (완전 탐색)\n- 모든 해를 다 검사하는 방법.\n\n·연결 요소\n- 이진 영상에서 1의 값을 가진 연결된 화소의 집합.\n- 4-연결성 : 상하좌우 4개 이웃만 연결된 것으로 간주.\n- 8-연결성 : 대각선에 위치한 화소도 연결된 것으로 간주.",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "그림은 제외",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T19:28:24.134Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T19:03:57.451Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0070.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T19:03:57.451Z"
     },
     "hf-0071": {
       "id": "hf-0071",
