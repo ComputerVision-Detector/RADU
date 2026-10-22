@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:06:38.000Z",
+  "updated_at": "2026-10-22T18:06:54.282Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1141,23 +1141,27 @@
     },
     "hf-0044": {
       "id": "hf-0044",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "·배치 정규화\n- 각 층의 활성화를 적당히 퍼뜨리도록 강제.\n- 학습 진행 빠름, 초기값에 크게 의존하지 않음, 과대적합 억제.\n- 데이터 분포를 정규화하는 '배치 정규화 계층'을 신경망에 삽입.\n- 미니배치를 단위로 정규화.\n\n·과대적합\n- 신경망이 훈련 데이터에만 지나치게 적응하는 것.\n- 과대적합이 일어나는 경우\n1. 매개변수가 많고 표현력이 높은 모델.\n2. 훈련 데이터가 적음.\n\n·드롭아웃\n- 뉴런을 임의로 삭제하면서 학습하는 방법.\n\n·하이퍼 파라미터 (ex. 각 층의 뉴런 수, 배치 크기, 매개변수 갱신 시의 학습률과 가중치 감소 등)\n\n·검증 데이터\n- 하이퍼 파라미터 조정용 데이터\n- 사용 이유 : 시험 데이터를 사용하여 하이퍼 파라미터를 조정하면 하이퍼 파라미터 값이 \n시험 데이터에 과적합되기 때문\n- 훈련 데이터 : 매개변수 학습\n- 검증 데이터 : 하이퍼 파라미터 성능 평가\n- 시험 데이터 : 신경망의 범용 성능 평가",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T18:31:24.110Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:06:54.282Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0044.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:06:54.282Z"
     },
     "hf-0045": {
       "id": "hf-0045",
