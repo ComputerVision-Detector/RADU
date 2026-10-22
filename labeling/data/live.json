@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T14:49:12.688Z",
+  "updated_at": "2026-10-22T14:51:31.065Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -350,23 +350,27 @@
     },
     "hf-0012": {
       "id": "hf-0012",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "도서관 이름: Library Application\nTreeset을 사용한 이유\nTreeset<string>을 이용하여 책의 고유번호를 정렬할 수가 있습니다.\nTreeset은 요소가 들어오면 이진트리 형식으로 정렬되기 때문에\n정렬이 간편합니다\nFile Not found Exeption<파일명>파일없거나 경로 x. EileReader\nNoSuchElernent Exew scanner 라인 오류\nNumber format Exeption Interer 토큰이 숫자 문자열x\nIllegalState Exeption Scanner 닫혀있음\n\n3. Event Source Object(eso):JTectField,JButton(둘 다 wetpanel,Eastpanel)\nEvent object(EO): ActionEvent actionperformed()\nEvent Listerener Object: ManinListener\n3. GUI\nMainListener클래스\nMainListener을 JtextField와 JButton에 삽입.\n3.별도, 겸용, 배부\n\n3. ESO : EastPanel(JRadioButton)\nEO : ItemEvent itemStatechanged( )\nELO : 겸용(EastPanel)\n3. GUI\nListener Object만들기\nESO에 ELO등록.\n3. 별도, 겸용, 내부",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T15:13:57.588Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T14:51:31.065Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0012.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T14:51:31.065Z"
     },
     "hf-0013": {
       "id": "hf-0013",
