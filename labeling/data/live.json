@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T16:41:46.033Z",
+  "updated_at": "2026-10-22T16:43:40.152Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -579,23 +579,27 @@
     },
     "hf-0021": {
       "id": "hf-0021",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "· 배치 모드\n- 모든 샘플에 대해 전방 계산을 수행해 틀린 샘플을 모은 후\n틀린 샘플 결합에 대해 매개변수를 한 번에 계산\n\n· 패턴 모드\n- 한 세대(epoch)에 매개변수 갱신이 샘플 개수만큼 일어남\n- 샘플 하나에 대해 전방 계산 수행 → 오류에 따라 바로 매개변수 갱신\n\n· 미니배치 모드\n- 딥러닝에서 사용하는 방식으로 훈련 데이터를 일정한 크기의 부분집합으로 나누고\n부분집합 별로 처리,\n(배치 방식과 패턴방식의 중간을 사용하는 셈)\n-부분결합으로 분할 할 때 랜덤 샘플링을 적용\n\n· 은닉층\n- 임식 공간에 해당하는 입력층과 출력층 사이에 숨어있는 층\n- 은닉 공간 : 은닉층이 형성하느 공간\n\n· 오류 역전파 학습 알고리즘\n- 오류를 역방향으로 전파\n\n· 하이퍼 매개변수(하이퍼 파라미터)\n- 모델의 구조와 학습 과정을 제어하는 역할\nex) 학습률, 배치 크기, 에폭 수 등",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T17:06:46.033Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T16:43:40.152Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0021.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T16:43:40.152Z"
     },
     "hf-0022": {
       "id": "hf-0022",
