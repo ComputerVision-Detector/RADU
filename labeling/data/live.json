@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T16:50:46.035Z",
+  "updated_at": "2026-10-22T16:51:11.584Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -627,23 +627,27 @@
     },
     "hf-0023": {
       "id": "hf-0023",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "· F1 score \n- 정밀도와 재현율의 조화 평균\n\n$F1 = \\frac{2*정밀도*재현율}{정밀도+재현율}$\n\n· ROC 곡선\n- 이진 분류모델의 성능을 모든 임계값(Threshold)에서 시각화하여 평가하는 그래프\n\n· AUC (Area Under the Curve)\n- ROC 곡선 아래의 면적을 의미 0.5~1.0 사이에 값을 가짐\n\n· 교차검증 k-fold 에서 표준편차는 흔들림을 의미\n-좋은 모델은 표준편차가 작아짐\n\n· k-fold에서 k크기를 무작정 늘리는 것은 좋지 않음\n- 일반적으로 5정도를 봄\n\n·미분 이론의 연쇄 법칙\n- 함수가 함수 안에 들어 있는 합성 함수의 미분법\n\n·그래디언트 소멸\n-왼쪽으로 갈 수록 그래디언트가 기하급수적으로 작아지는 현상\n→ 순전파\n입력 →층1 →층2→층3→...→출력\n←\n역전파",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "수식은 LaTex",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T17:15:46.035Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T16:51:11.584Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0023.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T16:51:11.584Z"
     },
     "hf-0024": {
       "id": "hf-0024",
