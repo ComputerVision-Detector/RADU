@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T18:03:37.956Z",
+  "updated_at": "2026-10-22T18:04:40.152Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1113,23 +1113,27 @@
     },
     "hf-0043": {
       "id": "hf-0043",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "·학습률 감소\n- 처음에는 크게 학습 → 점차 조금씩 작게 학습.\n\n·AdaGrad\n- 각각 매개변수에 맞춤형 값을 만들어 줌.\n\n·Adam\n- AdaGrad + 모멘텀 융합.\n\n·가중치 감소\n- 과대적합을 억제, 범용 성능을 높이는 것.\n- 가중치 매개변수의 값이 작아지도록 학습.\n\n·기울기 소실\n- 데이터가 0과 1에 치우쳐 분포하게 되면 역전파의 기울기 값이 점점 작아지다 사라짐.\n\n·Xavier 초기값 - 활성화 함수가 선형이라는 전제 (sigmoid, tanh 등).\n- 앞 층에 노드가 많을수록 대상 노드의 초기값으로 설정하는 가중치가 좁게 퍼짐.\n\n·He 초기값 - ReLU 사용시\n- 앞 계층의 노드가 n개일 때, 표준편차가 \\(\\sqrt{\\frac{2}{n}}\\)인 정규분포 사용.",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "수식은 LaTex",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T18:28:24.125Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T18:04:40.152Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0043.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T18:04:40.152Z"
     },
     "hf-0044": {
       "id": "hf-0044",
