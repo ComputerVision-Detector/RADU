@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T17:45:24.413Z",
+  "updated_at": "2026-10-22T17:45:35.659Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -846,15 +846,17 @@
       "text": "·입력층, 은닉층, 출력층\n\n입력층 은닉층 출력층\n\n·편향\n- 뉴런이 얼마나 쉽게 활성화 되느냐를 제어.\n\n·가중치\n- 각 신호의 영향력을 제어.\n\n·활성화 함수\n- 입력 신호의 총합을 출력 신호로 변환하는 함수.\n\n·해당 책에선 뉴런 = 노드\n\n·단층 퍼셉트론 = 계단 함수\n- 계속 0이다가 어떠한 순간(임계값을 넘은 순간) \n1로 변환.\n임계값 \n\n·활성화 함수는 임계값을 경계로 출력이 바뀜.",
       "status": "verified",
       "annotator": "정하경",
-      "notes": "",
-      "revision": 1,
+      "notes": "퍼셉트론 그림은 제외",
+      "revision": 2,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T18:10:24.413Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-10-22T17:45:35.659Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 2
+        },
         {
           "at": "2026-10-22T17:45:21.627Z",
           "author": "정하경",
@@ -867,7 +869,7 @@
         "source_width": 3024,
         "source_height": 4032
       },
-      "updated_at": "2026-10-22T17:45:21.627Z"
+      "updated_at": "2026-10-22T17:45:35.659Z"
     },
     "hf-0033": {
       "id": "hf-0033",
