@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T15:03:57.128Z",
+  "updated_at": "2026-10-22T15:05:01.131Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2645,23 +2645,27 @@
     },
     "hf-0151": {
       "id": "hf-0151",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "<회귀모델>\n\n· 변수 영향력 해석 - Parameter Estimate : 각 변수의 계수 의미.\nIntercept : 모델의 절편을 의미\nStandard Error : 표준오차\nT value : 선형관계가 얼마나 강한가? (높을 수록 Good)\nP value : 유의확률 (T값과 자유도에 따라 결정됨)\nTlerance, VIF : 다중공선성 판단 지표.\n\n· 변수 선택법 - 전진 선택법 : 유의미한 독립변수 순으로 변수를 하나씩 추가하는 방법.\n후진 제거법 : 모든 독립변수가 포함된 상태에서 유의미하지 않은 순으로 제거.\n단계적 선택법 : 처음에는 전진 선택법과 같이 하나씩 추가하다가, 변수가\n3개 이상이 되었을 때부터 추가과 제거를 번갈아 가며 진행.\n\n· Ridge : 예측에 영상을 거의 마치지 않은 변수에 0에 가까운 가중치를 줌.\n→ L2-norm. 계수값이 너무 커지는 것을 방지해줌.\n유클리드 거리\n\n· Lasso : 중요한 변수를 제외한 변수들에 가중치를 0으로 주어서 영향력을 제거함.\n→ L1-norm\n맨해튼거리\nRidge Lasso Elastic Net\n\n최대한 0이 되지 않게. 0이 되도록.",
+      "status": "verified",
+      "annotator": "이나현",
+      "notes": "\"결합한 것이 Elastic Net임. 혼합 비율을 조정하는 방식.\"부분의 메모는 작성하지 않음.",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T15:28:57.128Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T15:05:01.131Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0151.webp",
         "source_width": 2491,
         "source_height": 3269
-      }
+      },
+      "updated_at": "2026-10-22T15:05:01.131Z"
     },
     "hf-0152": {
       "id": "hf-0152",
