@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T14:42:57.133Z",
+  "updated_at": "2026-10-22T14:43:16.719Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2251,23 +2251,27 @@
     },
     "hf-0128": {
       "id": "hf-0128",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "제임스 템플린, 앤드류 리\n부속질의 - SELECT orderid AS 주문번호 , saleprice AS 판매가격 x\nFROM Orders\n- WHERE salsprice > (SELECT AVG(saleprice) FROM Orders);\n\nREPLACE - SELECT booid AS 도서번호,\nREPLACE(bookname, '축구', '농구') AS 변경된 도서명 ,\npublisher AS 출판사, priceAS가격\nFROM Book\n- WHERE bookname LIKE '%축구%' ;\n\nADDDATE - SELECT orderid AS 주문번호 , orderdate AS 주문일,\nADDDATE(orderdate, INTERVAL 10 DAY) AS 매출확정일\nFROM Orders ;\n\n개념 - 논리 - 물리\n\nACID 원자성 : all or nothing - 회복관리자\n일관성 : 일관된 상태 유지 - 무결성 제약조건\n고립성 : 수행 중 끼어들기 방지 - 동시성 제어\n지속성 : 완료된 건 영구 저장 - 회복\nREDO (재실행) : START+COMMIT\nUNDO (취소) : START O / COMMIT X\n\n고립 수준 READ UNCOMMITTED\nREAD COMMITTED\nREPEATABLE READ\nSERIALIZABLE\n\nSQL Firebase 테이블\t행\t열\t기본 키\t셀렉트\n컬렉션\t문서\t필드\t문서ID\tonSnapshot",
+      "status": "verified",
+      "annotator": "김혜린",
+      "notes": "표는 반영하지 않았음.",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-22T15:07:52.015Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T14:43:16.719Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0128.webp",
         "source_width": 2646,
         "source_height": 3108
-      }
+      },
+      "updated_at": "2026-10-22T14:43:16.719Z"
     },
     "hf-0129": {
       "id": "hf-0129",
