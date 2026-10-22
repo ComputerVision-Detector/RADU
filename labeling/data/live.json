@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T17:36:08.640Z",
+  "updated_at": "2026-10-22T17:36:18.966Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -771,23 +771,27 @@
     },
     "hf-0029": {
       "id": "hf-0029",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "·Adagrad :\n- 이전 그래디언트를 누적한 정보를 이용하여 학습률을 적응적으로 조정하는 기법.\n\n·RMS prop :\n- 이전 gradient를 누적할 때 오래된 값의 영향을 줄이는 정책을 사용하여 Adagrad를 개선한 기법.\n\n·Adam\n- RMS prop에 모멘텀을 적용하여 RMS prop를 개선한 기법.\n\n·옵티마이저 (optimizer)\n- SGD\n- Momentum SGD\n- Adagrad\n- RMS prop\n- Adam\n\n·RMSprop의 hyper parameter 'rho'는 오래된 gradient의 영향을 줄이는 역할. 값이 작을수록 영향력이 줄어든다.\n\n·딥러닝에서 하이퍼 매개변수 최적화를 제대로 하면 시간이 많이 걸리는 이유.\n1. 데이터셋 크기 (너무큼)\n2. 하이퍼 매개변수 개수 (아주 많음)",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T18:01:08.640Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T17:36:18.966Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0029.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T17:36:18.966Z"
     },
     "hf-0030": {
       "id": "hf-0030",
