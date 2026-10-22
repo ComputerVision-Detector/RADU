@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T09:35:27.818Z",
+  "updated_at": "2026-10-22T09:38:00.751Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -54,23 +54,27 @@
     },
     "hf-0002": {
       "id": "hf-0002",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "• 임베딩\n- 토큰 ID를 숫자 벡터로 바꾸는 것.\n• 임베딩 행렬\n- 모든 토큰 ID에 대응하는 벡터를 한꺼번에 저장해 놓은 행렬.\nGPT-OSS-20B 설정이\nvocab_size=201088\nhidden_size=2880\n이므로 임베딩 행렬은 [201088,2880]\n구조는 토큰 0 -> [2880차원 벡터]\n토큰 1 -> ..\n토큰 2 -> ..\n...\n토큰 201087 -> [2880차원 벡터]\n즉, 행(row) -> 토큰 하나\n열(col) -> 그 토큰의 2880개 feature\n\n• vocab_size=201088\n토큰의 종류가 201088개, 토큰 ID는 0~201087.\n\n• max_position=131072\n-> 한 번에 처리할 수 있는 위치 수, 최대 입력 sequence 길이가 131,072토큰.\n\n• 즉, 토큰 사전이 따로 있고 거기에 토큰이 201088개가 적재되어 있음.\ntokenizer.json\n-> 여기에 \"hello\"는 24912임. 즉, hello 하면 여기에 24912번의 ID가 붙게 됨.\n하지만 등록되지 않은 단어이면 더욱 쪼개서 ex) \"he\"+\"llo\"와 같이\n여러 토큰에 각각의 ID가 부여될 수 있음.\n\n임베딩에서는 토큰 하나에 대해 2880차원 벡터가 생성.",
+      "status": "verified",
+      "annotator": "이나현",
+      "notes": "메모는 제외하고 진행. 글머리 기호 \"•\" 사용.",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-22T10:00:27.818Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T09:38:00.751Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0002.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T09:38:00.751Z"
     },
     "hf-0003": {
       "id": "hf-0003",
