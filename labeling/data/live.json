@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T21:04:19.109Z",
+  "updated_at": "2026-10-22T21:05:30.765Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2377,23 +2377,31 @@
     },
     "hf-0096": {
       "id": "hf-0096",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "- 편의시설 / 병원, 시청, 대형마트, 고속터미널, 학교, 근접지역 투자\n-지방일수록 교통이 중요\n서울과의 접근성이 좋은 곳 선택 ex) KTX, 고속터미널\n-세대수가 적어도 주변의 커뮤니티 좋은 곳 / 주변 세대수 적어도 여러 APT 모인곳이면 OK\n\n",
+      "status": "draft",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
       "claim": {
         "name": "정하경",
         "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T21:29:19.109Z"
+        "until": "2026-10-22T21:30:30.765Z"
       },
-      "history": [],
+      "history": [
+        {
+          "at": "2026-10-22T21:05:30.765Z",
+          "author": "정하경",
+          "status": "draft",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0096.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T21:05:30.765Z"
     },
     "hf-0097": {
       "id": "hf-0097",
