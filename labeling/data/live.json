@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T15:59:45.693Z",
+  "updated_at": "2026-10-22T16:00:13.916Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -429,23 +429,27 @@
     },
     "hf-0015": {
       "id": "hf-0015",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "• 모델 선택\n- 데이터에 가장 알맞은 모델을 찾아내는 작업\n\n• 일반화 능력 측정\n- 새로운 데이터로 성능을 측정하는 일\n┌ 테스트 집합 사용\n└ 교차 검증\n\n• 혼동 행렬\n- 부류별로 옳은 분류와 틀린 부류의 개수를 기록한 행렬\n\n• 참/거짓 예측에 대한 (긍정 → 부정 : 긍정을 부정으로 예측한 경우)\n긍정 → 긍정 참긍정(TP) 진양성\n긍정 → 부정 거짓 부정(FN) 위음성\n부정 → 긍정 거짓 긍정(FP) 양성\n부정 → 부정 참 부정(TN) 진음성\n\n예측값\n\n• 정확률(accuracy)\n- 가장 널리 쓰이는 성능 측정 기준\n$저정확률 = \\frac{맞힌 샘플 수}{전체 샘플 수} = \\frac{대각선 샘플 수}{전체 샘플 수} = \\frac{TP or TN}{전체 샘플 수}$",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "수식은 LaTex로 작성",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T16:24:45.693Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T16:00:13.916Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0015.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T16:00:13.916Z"
     },
     "hf-0016": {
       "id": "hf-0016",
