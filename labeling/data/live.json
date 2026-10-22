@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T19:12:24.193Z",
+  "updated_at": "2026-10-22T19:14:32.022Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1917,23 +1917,27 @@
     },
     "hf-0076": {
       "id": "hf-0076",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "·보간법\n- 선형 보간\n- 최근접 이웃 보간\n- 양선형 보간\n- 양3차 보간\n\n·최근접 이웃 방법\n- 기하 연산 후 나온 실수 좌표를 정수로 변환하는 과정에서 반올림을 사용해\n  가장 가까운 화소에 배정하는 기법.\n\n·선형 보간법\n- 실수 좌표 주변의 값을 하나만 가져오는게 아니라, 주변 값들을 거리에 따라\n  비율을 다르게 주어 계산하는 방법.\n\n·양선형 보간법\n- 주변 4개 픽셀을 사용하여 x, y 방향으로 선형 보간.\n- 선형 보간을 한 방향으로 한 번 적용하고, 그 결과에 다른 방향으로\n  다시 한 번 적용하는 방법.\n\n·양3차 보간법\n- 16개의 이웃과 3차 함수를 사용해 보간하는 방법.\n\n·에지 (edge)\n- 물체 경계에 있는 점.\n\n·에지 검출과 영역 분할을 각각 한 쪽이 완벽하게 해결되면 다른 쪽도\n  해결되는 쌍대 문제.\n\n·외곽형\n- 영역 분할을 할 때 미리 주어진 물체 모델을 활용해 영역이 어떤\n  물체에 해당하는지 동시에 알아내는 것.",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T19:37:24.193Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T19:14:32.022Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0076.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T19:14:32.022Z"
     },
     "hf-0077": {
       "id": "hf-0077",
