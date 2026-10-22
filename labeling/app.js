@@ -114,7 +114,18 @@ let pan=null;
 $('viewer').onpointerdown=e=>{if(e.button!==0 || !store.item)return;pan={x:e.clientX,y:e.clientY,left:$('viewer').scrollLeft,top:$('viewer').scrollTop};$('viewer').setPointerCapture(e.pointerId);$('viewer').classList.add('dragging');};
 $('viewer').onpointermove=e=>{if(pan){$('viewer').scrollLeft=pan.left-(e.clientX-pan.x);$('viewer').scrollTop=pan.top-(e.clientY-pan.y);}};
 $('viewer').onpointerup=$('viewer').onpointercancel=()=>{pan=null;$('viewer').classList.remove('dragging');};window.addEventListener('resize',()=>{if(store.fit)resizeImage();});
-$('insert-tab').onclick=()=>{const t=$('transcription');t.setRangeText('\t',t.selectionStart,t.selectionEnd,'end');markDirty();t.focus();};
+function insertTranscriptionTab(){
+  const t=$('transcription');
+  if(t.disabled || t.readOnly || store.busy)return;
+  if(t.value.length-(t.selectionEnd-t.selectionStart)+1>t.maxLength)return;
+  t.setRangeText('\t',t.selectionStart,t.selectionEnd,'end');markDirty();t.focus();
+}
+$('insert-tab').onclick=insertTranscriptionTab;
+$('transcription').addEventListener('keydown',e=>{
+  if(e.key==='Tab' && !e.shiftKey && !e.ctrlKey && !e.altKey && !e.metaKey && !e.isComposing){
+    e.preventDefault();insertTranscriptionTab();
+  }
+});
 $('transcription').oninput=$('notes').oninput=markDirty;$('claim').onclick=()=>claim();$('next').onclick=()=>claim(true);$('save').onclick=()=>save('draft');$('verify').onclick=()=>save('verified');
 $('release').onclick=async()=>{if(store.busy || !confirmLeave())return;store.busy=true;updateControls();try{await releaseCurrent();showItem(await api('item',null,{id:store.item.id}));toast('작업을 반납했습니다.');}catch(error){toast(error.message);}finally{store.busy=false;updateControls();refresh();}};
 $('search').oninput=renderList;document.querySelectorAll('[data-filter]').forEach(button=>button.onclick=()=>{store.filter=button.dataset.filter;document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b===button));renderList();});
