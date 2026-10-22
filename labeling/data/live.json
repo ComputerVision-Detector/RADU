@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-22T19:04:22.375Z",
+  "updated_at": "2026-10-22T19:04:41.748Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1819,23 +1819,27 @@
     },
     "hf-0072": {
       "id": "hf-0072",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "·점 연산\n- 각 픽셀의 값을 주변 픽셀과 독립적으로 변환하는 연산.\n- 감마 보정, 히스토그램 평활화가 이에 해당.\n\n·영역 연산\n- 이웃 화소를 같이 고려해 새로운 값을 결정.\n- 주로 컨볼루션을 통해 이루어짐.\n- CNN의 컨볼루션은 영상 처리에서 사용하던 영역 연산의 컨볼루션 연산을 \n신경망 학습 구조에 가져온 것.",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-22T19:29:01.530Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-22T19:04:41.748Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0072.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-22T19:04:41.748Z"
     },
     "hf-0073": {
       "id": "hf-0073",
