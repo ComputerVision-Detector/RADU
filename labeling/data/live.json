@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T07:49:36.985Z",
+  "updated_at": "2026-10-23T07:49:52.278Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3479,23 +3479,27 @@
     },
     "hf-0142": {
       "id": "hf-0142",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "2장. 관계 데이터 모델\n릴레이션의 개념 ----------\n·릴레이션: 행과 열로 구성된 테이블\n→ 릴레이션 스키마 속성: 릴레이션 스키마의 열\n도메인: 속성이 가질 수 있는 값의 집합\n차수: 속성의 개수\n\n·릴레이션 구조 관련 용어\n1) 릴레이션 = 테이블 = 파일\n2) 스키마 = 내포 = 헤더\n3) 인스턴스 = 외연 = 데이터\n4) 튜플 = 행 = 레코드\n5) 속성 = 열 = 필드\n\n릴레이션의 특징 ------------\n1) 속성은 단일 값을 가짐.\n2) 속성은 서로 다른 이름을 가짐\n3) 한 속성의 값은모두 같은 도메인을 가짐.\n4) 속성의 순서는 상관 없음\n5) 릴레이션 내에 중복된 튜플은 허용되지 않음.\n6) 튜플의 순서는 상관 없음.\n\n키(key)---------------\n·키(key): 무결성을 지키기 위해 사용. (Value 값을 찾는 역할)\n슈퍼키(super key): 튜플이 유일하게 식별할 수 있는 하나 혹은 집합.\nex) 주민번호 등 \n후보키(condidate key): 튜플이 유일하게 식별할 수 있는 속성의 최소 집합. (기본 키가 될 수 있는 키)\nex) 주문 번호, 고객 번호 등\n기본 키(primary key): 후보 키중에서 대표로 삼는 키.→ 고유 값의 키여야 함, Null 불가, 변동 없어야 함. ···\n대리키(surrogate key): 기본 키가 보안을 필요로 하거나 복잡할 때, 가상의 속성을 만들어 키로 사용.",
+      "status": "verified",
+      "annotator": "차인택",
+      "notes": "줄, 점은 표기 안 함.",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "차인택",
-        "client": "8751a47c-f227-4420-b20c-b1237e0b6a00",
-        "until": "2026-10-23T08:13:12.708Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T07:49:52.278Z",
+          "author": "차인택",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0142.webp",
         "source_width": 2566,
         "source_height": 3180
-      }
+      },
+      "updated_at": "2026-10-23T07:49:52.278Z"
     },
     "hf-0143": {
       "id": "hf-0143",
