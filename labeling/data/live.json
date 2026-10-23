@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T07:02:02.229Z",
+  "updated_at": "2026-10-23T07:02:06.583Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1261,7 +1261,11 @@
       "notes": "수식은 LaTeX. 위치 검토 필요.",
       "revision": 2,
       "seed_verified": false,
-      "claim": null,
+      "claim": {
+        "name": "이나현",
+        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
+        "until": "2026-10-23T07:27:06.583Z"
+      },
       "history": [
         {
           "at": "2026-10-23T07:02:02.229Z",
