@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T05:45:39.496Z",
+  "updated_at": "2026-10-23T05:45:46.180Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2743,23 +2743,27 @@
     },
     "hf-0111": {
       "id": "hf-0111",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "float: left;\npadding: 5px 0;\ntransition: all 0.4s;\ncarsor: pointer;\nposition: relative;\n{\n.menu > li : hover{\nbackground - color: #333335;\ncolor: #fff;\n}\n.submenu{\nwidth: 100%:\nmargin-top: 5px;\ndisplay: none;\nposition: absolute;\nz-index: 1;\nbackground-color: #333335;\n}\n.submenu > li {\nwidth: 100%;\npadding: 5px 0;\ntranstion: all 0.45;\nfloat: left;\n}\n.submenu > li: hover{\nbackground-color: #fffff0;\ncolor: #000;\n}",
+      "status": "verified",
+      "annotator": "김혜린",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-23T06:10:28.907Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T05:45:46.180Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0111.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-23T05:45:46.180Z"
     },
     "hf-0112": {
       "id": "hf-0112",
