@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T07:24:28.885Z",
+  "updated_at": "2026-10-23T07:24:52.885Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3231,23 +3231,27 @@
     },
     "hf-0129": {
       "id": "hf-0129",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "ε_cond : prompt가 반영된 ε 값.\nε_uncond : prompt가 반영되지 않은 ε 값.\n\n위의 두 개 값의 차를 이용하는 것이 CFG의 원리.\n\n* CFG: Classifier -Free Guidance,, ⇒ Guidance를 위한 분륙(Classifier)를 사용하지 않는다는 뜻.\n⇒ ∴ prompt가 있는 경우와 없는 경우를 같은 U-Net 하나로 학습해 Guidance를 구현함\n\n· Reuerse Difusion 진행을 위한 Architecture.\nX_t\nNullPrompt\tText Prompt\t· self-attention\nU-Net\tU-Net\t→ Quary, Key, Value : Image\nε uncond\tε cond\n· cross.attention\nε_guidance = ε_uncond + w(ε_uncond - ε_cond)\t→ Quary : Image\nReverse Diffusion 진행.\tKey, Value : Text.\n\n\nU-Neet 내부의 Transformer. (self →Cross→MLP 순서)\n· prompt가 있음에도 불구하고 cross attention부터 수행하지 않는 이유?\n⇒ feture Map 내의 Token들은 서로의 위치를 모르기 때문에 서로의 위치를\n알기 위해 self attention을 우선적으로 수행.\n∴ 이미지 내부의 문맥을 먼저 만들기 위한 작업인 것.\n\n· cross attention: self attention을 통해 만들어진 문맥 위에 prompt를 입히는 작업.\n\n* Quary = 이미지 , key, value = 텍스트인 이유는?\n⇒ Image를 prompt에 맞게 변경하ㅏ고자 하는 것이기 때문에,\nImage가 prompt에서 자신과 관련있는 정보를 찾고자 하기 때문.\n\n이후에 MLP(Feed Ford Network)를 통해, prompt가 반영된 feature를 비선형적으로 가공.",
+      "status": "verified",
+      "annotator": "김혜린",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-23T07:49:28.885Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T07:24:52.885Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0129.webp",
         "source_width": 2422,
         "source_height": 3047
-      }
+      },
+      "updated_at": "2026-10-23T07:24:52.885Z"
     },
     "hf-0130": {
       "id": "hf-0130",
