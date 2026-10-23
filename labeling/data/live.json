@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T05:54:28.943Z",
+  "updated_at": "2026-10-23T05:55:10.135Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2839,23 +2839,27 @@
     },
     "hf-0115": {
       "id": "hf-0115",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "2021.04.13 웹디자인기능사실기 메뉴슬라이드 (아래로)\nCSS\n~\nnav{\nwidth: 180px;\ntext-align: center;\nmargin-top: 10px;\n}\n.menu>li{\nfloat: left;\nwidth: 180px;\n}\n.menu>li>a{\nheight: 40px;\nwidth: 180px;\nline-height: 40px;\nfont-size: 16px;\nfont-weight: bold;\nbackground-color: #222328;\ncolor: #ffffff;\nfloat: left;\n}\n.menu>li>a:hover{\nbackground-color: #930930;\ncolor: #ffff00;\n}\n.submenu{\nfloat: left;\nwidth: 100%;\ndisplay: none;\n}\n.submenu>li>a{",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-23T06:18:02.339Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T05:55:10.135Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0115.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-23T05:55:10.135Z"
     },
     "hf-0116": {
       "id": "hf-0116",
