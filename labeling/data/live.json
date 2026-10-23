@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T05:33:17.255Z",
+  "updated_at": "2026-10-23T05:33:22.666Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2875,23 +2875,27 @@
     },
     "hf-0121": {
       "id": "hf-0121",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "Jacascript, Ract.js, Soket IO, Node.js\n· vite 다운 (이 전에 Node.js 다 되어 있는 상태).\n- 구글에 vite doc 검색 → Getting started라고 쓰여 있는 사이트 접속\n→ 터미널에 해당 사이트에 있는 문장 붙여넣기\nnpm create vite @ latest\n→ 프로젝트 이름 기입 → React 선택 → Javascript 선택\n→ 해당 폴더에 프로젝트 폴더가 생김. → vs code로 해당 폴더를 열음\n→ 터미널에 실행 → npm install → npm run dev (사이트 런).\n→ socket.io doc 구글에 검색 → socket.io 들어감\n→ server API → (위 메뉴) → intallation → npm install socket.io\n복사 → vs code 터미널에 붙여넣기",
+      "status": "verified",
+      "annotator": "김혜린",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-23T05:55:28.845Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T05:33:22.666Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0121.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-23T05:33:22.666Z"
     },
     "hf-0122": {
       "id": "hf-0122",
