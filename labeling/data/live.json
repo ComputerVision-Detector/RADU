@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T07:27:28.897Z",
+  "updated_at": "2026-10-23T07:28:36.698Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2601,23 +2601,27 @@
     },
     "hf-0102": {
       "id": "hf-0102",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "『편집창』\n배경은 메인화면 배경보다는 어둡게 한다.\n\n이 버튼을 누르면\n배경 이미지를 바꿀 수 있는 창이 뜬다.\n\n3D 형식으로 심플하고 간결하고 감성터지게 그린다.\n\n학생교사는 잠시 사라진다.\n\n자신이원하는크기 \n,모양으로 늘려서 공간생성가능(넓을 수록 비용이 더 든다.)\n\n\"ok\"버튼과 \"cancle\" 버튼만 생기고 업그레이드, 미니게임 버튼은 사라짐\n\n정해진 크기에 방을 더할 수도 있다.\n",
+      "status": "verified",
+      "annotator": "정하경",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "a5efe7bc-967d-4887-9871-d4b6eac69a56",
-        "until": "2026-10-23T07:51:23.401Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T07:28:36.698Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0102.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-23T07:28:36.698Z"
     },
     "hf-0103": {
       "id": "hf-0103",
