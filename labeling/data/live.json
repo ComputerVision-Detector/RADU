@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T05:51:29.445Z",
+  "updated_at": "2026-10-23T05:52:53.755Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2791,23 +2791,27 @@
     },
     "hf-0113": {
       "id": "hf-0113",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "2021.04.13 웹디자인실기 (메뉴슬라이드 (아래로))\nHTML\n~\n<nav>\n<ul class=\"menu\">\n<li><a href=\"#\">메뉴1</a>\n<ul class=\"submenu\">\n<li><a href=\"#\">서브메뉴1</a></li>\n<li><a href=\"#\">서브메뉴2</a></li>\n<li><a href=\"#\">서브메뉴3</a></li>\n<li><a href=\"#\">서브메뉴4</a></li>\n</ul>\n</li>\n<li><a href=\"#\">메뉴2</a>\n<ul class=\"submenu\">\n<li><a href=\"#\">서브메뉴1</a></li>\n<li><a href=\"#\">서브메뉴2</a></li>\n<li><a href=\"#\">서브메뉴3</a></li>\n<li><a href=\"#\">서브메뉴4</a></li>\n</ul>\n</li>\n<li><a href=\"#\">메뉴3</a>\n<ul class=\"submenu\">\n<li><a href=\"#\">서브메뉴1</a></li>\n<li><a href=\"#\">서브메뉴2</a></li>\n<li><a href=\"#\">서브메뉴3</a></li>\n<li><a href=\"#\">서브메뉴4</a></li>\n</ul>\n</li>\n<li><a href=\"#\">메뉴4</a>\n<ul class=\"submenu\">\n<li><a href=\"#\">서브메뉴1</a></li>",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-23T06:16:02.031Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T05:52:53.755Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0113.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-23T05:52:53.755Z"
     },
     "hf-0114": {
       "id": "hf-0114",
