@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T01:37:11.136Z",
+  "updated_at": "2026-10-23T01:37:53.996Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2413,23 +2413,27 @@
     },
     "hf-0097": {
       "id": "hf-0097",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "모아타운 투자 point!\n1.  공시가격 1억 미만 지역 찾기\n2. 매매가와 전세가 차이(갭투자)가 저렴한 지역 (서울 외곽지역부터 찾기)\n3. 보도자료구역과 네이버 부동산 매매 물건 위치 비교&대조.\n\n빌라인 경우\n∨\n지하철 역하고 먼경우 방3칸. 주차장이 필수!!!\n\n서울빌라는 수익 내기에 좋음\n단기매도빌라는 10년이내 준신축급빌라 여야함. (주차장. 방 3개. 깨끗해야 함.)\n아파트 대체 상품.",
+      "status": "verified",
+      "annotator": "김혜린",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-23T02:02:11.136Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T01:37:53.996Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0097.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-23T01:37:53.996Z"
     },
     "hf-0098": {
       "id": "hf-0098",
