@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T06:24:28.903Z",
+  "updated_at": "2026-10-23T06:26:01.009Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3109,23 +3109,27 @@
     },
     "hf-0126": {
       "id": "hf-0126",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "CUI, GUI, NUI 표\nCUI GUI NUI\n인터페이스 표현\t텍스트 기반\t그래픽기반\t오브젝트 기반\n〃 형태\t정의된 용어\t은유적인 아이콘\t직접적인 동작\n사용 방법\t명령어 기억\tUI를 인식 UI를 직감적으로 인식\n작업 수행 방식\t직접적 탐험적\t맥락에 따라 직감적.\n사용 난이도\t어려움 비교적 쉬움\t쉬움\n인터페이스 연결성 없음\t간접적\t직접적.\n\n\n모바일 UI의 진화\n· 버튼이 담당하던 기능은 이제 소프트웨어와 UI가 대신.\n\n\nch.5\n디지털만 해당하지 X.\n· 모바일 미디어의 정의와 분류\n- 모바일 미디어의 예: 휴대폰, 게임기 등\n+ 라디오 수신기, 신문, 녹음기 등의 아날로그 미디어도 모바일 미디어에 해당.\n\n· 모바일 미디어의 특성 - 시스템과 사용자 사이의 소통양식을 제공.\n- 본래 목적(통화)보다 다른 것들이 더 ↑\n- 도구로 사용하거나 표현의 용도로 사용됨. (카톡 읽음 표시)\n- 일반적인 시간성과 공간성 가설의 재형성\n- 모바일 미디어를 기반으로 하는 부작용 발생\n\n· 무선 인터넷 서비스\n- LTE와 5G → 전국망 부족 한계가 있었음.\n6G → 스타링크.\n\n· AP 발전(공유기) ⇒ 와이파이",
+      "status": "verified",
+      "annotator": "김혜린",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-23T06:49:28.903Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T06:26:01.009Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0126.webp",
         "source_width": 2688,
         "source_height": 3403
-      }
+      },
+      "updated_at": "2026-10-23T06:26:01.009Z"
     },
     "hf-0127": {
       "id": "hf-0127",
