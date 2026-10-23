@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T05:59:02.723Z",
+  "updated_at": "2026-10-23T05:59:57.588Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2911,23 +2911,27 @@
     },
     "hf-0118": {
       "id": "hf-0118",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "culture 문화 culture 문화 culture 문화\nfinger 손가락 finger 손가락 finger 손가락\npolite 예의바른 polite 예의바른 polite 예의바른\nspoil 망치다 spoil 망치다 spoil 망치다\ngreet 인사하다 greet 인사하다 greet 인사하다\nuncomfortable 불편한 uncomfortable 불편한 uncomfortable 불편한\ncheek 뺨 cheek 뺨 cheek 뺨\ncontinue 계속하다 continue 계속하다 continue 계속하다\nphysical 신체적인 physical 신체적인 physical 신체적인\ndistance 거리 distance 거리 distance 거리.\ndepend on -에 달려있다 depend on -에 달려있다 depend on -에 달려있다.\nkeep -ing 계속 -하다 keep -ing 계속 -하다 keep -ing 계속 -하다\nstep into 발을 들여놓다 step into 발을 들여놓다 step into 발을 들여놓다\nfor instance 예를 들어 for instance 예를 들어 for instance 예를 들어\nembarrassed 당황한 embarrassed 당황한 embarrassed 당황한\neye contact 눈 맞춤 eye contact 눈 맞춤 eye contact 눈 맞춤\ncompletely 완전히 completely 완전히 completely 완전히\nrespond 반응을 보이다 respond 반응을 보이다 respond 반응을 보이다\ninformal 격식에 얽매이지 않는 informal 격식에 얽매이지 않는 informal 격식에 얽매이지 않는\ninsult 모욕 insult 모욕 insult 모욕\nnonverbal 비언어적인 nonverbal 비언어적인 nonverbal 비언어적인\nconfusion 혼란 confusion 혼란 confusion 혼란\noffensive 모욕적인 offensive 모욕적인 offensive 모욕적인\ninvisible 보이지 않는 invisible 보이지 않는 invisible 보이지 않는\nopposite 반대 opposite 반대 opposite 반대, 반대의\ndisrespectful 무례한 disrespectful 무례한 disrespectful 무례한\nmisunderstanding 오해 misunderstanding 오해 misunderstanding 오해\ntend to -하는 경향이 있다 tend to -하는 경향이 있다. tend to -하는 경향이 있다.\nhugging 포옹하기 hugging 포옹하기 hugging 포옹하기\nkeep -in mind -을 명심하다. keep -in mind -을 명심하다. keep -in mind -을 명심하다",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-23T06:24:02.723Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T05:59:57.588Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0118.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-23T05:59:57.588Z"
     },
     "hf-0119": {
       "id": "hf-0119",
