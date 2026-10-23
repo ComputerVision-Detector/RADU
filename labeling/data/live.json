@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T08:21:28.952Z",
+  "updated_at": "2026-10-23T08:22:47.216Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3915,23 +3915,27 @@
     },
     "hf-0162": {
       "id": "hf-0162",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "LibraryApplication\t→ myFrame\nbook ←\tLibraryApplication\t→ myLable_Title\t→titlePanel\nmyComboBox1\tmyComboBox2\tmyComboBox3\t⇒ northPanel\n이용자 등록\t이용자 목록\t책 대출\t→ menuPanel\nmyLabel_EorrowerName\tmyTextField_BorrowerName\tmyTextArea\n이용자 이름\nmyLabel_PhoneNumber myTextField_PhoneNumber\n전화번호\nmyLabel_BookTitle\tmyTextField_BookTitle\n책 제목\t⇒ centerPanel\nmyLable_BookAuthor\tmyTextField_BookAuthor\n책 저자\nmyLabel_BookID\tmyTextField_BookID\t→ scroll\n책 등록번호\n실행\t초기화\t→ buttonPanel\nmyButton_Rum\tmyButton_clear\tsouthPanel\ninputPanel\toutputPanel\n_BorrowerName, PhoneNumber, BookTitle, BookAuthor, BookID\n1. ESO : MyComboBox1,2,3 / myTextField (4종) / myButton_Run, Clear\n2. EO : ActionEvent\n3. ELO : MyListener\n--------------------\n1. GUI : 상단의 스케치와 같이 구성.\n2. ListenerClass : Mylistener (& ELO와 동일)\n3. 등록 작업 : ESO ← ELO\n---------------------\n* 겸용 방식,,",
+      "status": "verified",
+      "annotator": "김혜린",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-23T08:46:28.952Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T08:22:47.216Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0162.webp",
         "source_width": 3024,
         "source_height": 3296
-      }
+      },
+      "updated_at": "2026-10-23T08:22:47.216Z"
     }
   }
 }
