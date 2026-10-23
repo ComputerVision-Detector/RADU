@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T07:56:36.699Z",
+  "updated_at": "2026-10-23T07:57:12.702Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3764,7 +3764,7 @@
       "claim": {
         "name": "차인택",
         "client": "8751a47c-f227-4420-b20c-b1237e0b6a00",
-        "until": "2026-10-23T08:19:13.004Z"
+        "until": "2026-10-23T08:22:12.702Z"
       },
       "history": [],
       "image": {
