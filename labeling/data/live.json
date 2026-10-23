@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T06:30:09.745Z",
+  "updated_at": "2026-10-23T06:30:28.902Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3186,7 +3186,7 @@
       "claim": {
         "name": "김혜린",
         "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-23T06:54:43.795Z"
+        "until": "2026-10-23T06:55:28.902Z"
       },
       "history": [],
       "image": {
