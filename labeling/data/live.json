@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T05:38:02.681Z",
+  "updated_at": "2026-10-23T05:38:27.202Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2623,23 +2623,27 @@
     },
     "hf-0106": {
       "id": "hf-0106",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "웹디자인기능사실기 (좌우슬라이딩)\n2021.03.23\nCSS\n@charset.\"utf-8\";\n*{\nmargin: 0 auto;\npadding: 0;\nfont-family: \"맑은 고딕\";\nlist-style: none;\n}\na{\ntext-decoration: none;\ncolor: inherit;\n}\n.wrap{\nwidth: 1000px;\nmargin-top: 20px;\n}\n#imageslide{\nheight: 400px;\nwidth: 1000px;\nposition: relative;\noverflow: hidden;\n}\n.imgs{\nwidth: 3000px;\nposition: relative;\n}\n.slide img{\nwidth: 1000px;\nposition: relative;\nfloat: left;\n}",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-23T06:03:02.681Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T05:38:27.202Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0106.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-23T05:38:27.202Z"
     },
     "hf-0107": {
       "id": "hf-0107",
