@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T03:07:11.263Z",
+  "updated_at": "2026-10-23T03:10:09.200Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3437,23 +3437,27 @@
     },
     "hf-0154": {
       "id": "hf-0154",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "추천 model\n[SD 1.5 Inpainting Model]\n· Diffusion Inpainting\n[기존 Image + aMask + Prompt] ⇒ input.\nOutput : Mask 영역에 대한 Diffusion 결과.\n\n· Pose control\t(Utlity 정보)\n사람의 자세가 바뀌면 안 되기 때문에 가능한 자세를 유지할 필요가 있음.\n· pose estimator : head, shoulder, heep, knee, ankle\n⇒ Original - pose estimator - Control net pose - Diffusion\nkeypoin - pose skeleton - control image - control net - V-Net conditioning\n\n· Pseudo - ID\n☆ pseudo ID의 consistency ☆ (여려 Frame에 존재하는 같은 사람의\npseudo ID의 일관성이 중요!!)\n∴ seed가 중요함.\n변경되어야 하는 것 : pose, viewpoint, camera, lighting, location, clothing.\n유지되어야 〃 : pseudo appearance, . Body charateristics,\nreference, pesudo ID\n→ 위와 같이 (정답 X) identity와 pose를 분리하여 제어하는 것이 핵심.\n\n· A to C 구조\nA\tPerson ID\noriginal image\t Pseudo ID lookup\nperson mask\tID001\tPID001\nBounding Box\treferance\nAnnotaion\t⇒\tseed\nperson ID\t\ncamera ID\torigenal + mask + pose\nDataset Manifast\tDiffusion\nC",
+      "status": "verified",
+      "annotator": "김혜린",
+      "notes": "우측 주석은 작성하지 않음.",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-23T03:32:11.263Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T03:10:09.200Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0154.webp",
         "source_width": 2474,
         "source_height": 3400
-      }
+      },
+      "updated_at": "2026-10-23T03:10:09.200Z"
     },
     "hf-0155": {
       "id": "hf-0155",
