@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T08:15:12.668Z",
+  "updated_at": "2026-10-23T08:15:20.792Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3615,23 +3615,27 @@
     },
     "hf-0149": {
       "id": "hf-0149",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "C4W2L\n2강 ----- Classic Network\n·LeNet - 5 : 60K parameters (흑백이 기준. ∴ channel이 한 개임)\nn_H, n_W ↓ n_C ↑의 형태를 띔(전에 작성했던 example과 비슷.)\n→[CONV POOL CONV POOL ··· f_c · f_c output]의 과정을 가짐.\n\n·AlexNet : 60m parameters (RGB 값을 모두 연산)\nn_H, n_W ↓ n_C ↑의 형태를 띔 (LeNet과 유사.)\n☆LeNet과 다른 점 1) much bigger\n\t2)use ReLU\n\n·VGG - 16 : ~ 138m parameters\nCONV = 3x3 filter, S = 1, same | Max pool = 2x2, S = 2\nfilter size 고정, 동일 합성곱 진행의 뜻.\n224x224x3 → → 224x224x64 → 112x112x64 → → 112x112x128\n[CONV 64]x2 POOL [CONV 128]x2\n··· → 14x14x512 → 14x14x512 → 7x7x512 → FC\nPOOL [CONV 512]x3 POOL 4096\n→ FC → softmax\n4096 1000\n*VGG - 16의 16은 '16개의 가중치를 가진 층이 있다.'는 뜻.\n→ 장점: 균일함. (n개의 CONV 뒤에 POOL의 구조, filter의 갯수가 균일하게 증가 등의 규칙 \n→ 단점: 훈련 시킬 변수가 많아서 Network의 크기가 커짐.\n*POOL 층에서는 높이와 너비가 매번 절반으로 줄고\nCONV 층에서는 채널의 수가 두 배 가량 매번 늘어남.",
+      "status": "verified",
+      "annotator": "차인택",
+      "notes": "(수치의 증가와 감소가 매우\n체계적인 Network임.)\n주석은 적지 않음.",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "차인택",
-        "client": "8751a47c-f227-4420-b20c-b1237e0b6a00",
-        "until": "2026-10-23T08:40:12.668Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T08:15:20.792Z",
+          "author": "차인택",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0149.webp",
         "source_width": 2601,
         "source_height": 2754
-      }
+      },
+      "updated_at": "2026-10-23T08:15:20.792Z"
     },
     "hf-0150": {
       "id": "hf-0150",
