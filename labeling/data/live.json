@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T06:58:14.874Z",
+  "updated_at": "2026-10-23T07:00:05.070Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1081,18 +1081,20 @@
     },
     "hf-0041": {
       "id": "hf-0041",
-      "text": "· 에포크\n- 학습에서 훈련 데이터를 모두 소진했을 때의 횟수에 해당\nex, 훈련데이터 10,000개를 100개의 미니배치로 학습할 경우,\n확률적 경사 하강법을 100회 반복하면\n모든 훈련 데이터를 소진하게 됨\n이경우 100회가 1에포크\n\n· 오차역전파법 (역전파)\n- 가중치 매개변수의 기울기를 효율적으로 계산하는 방법.\n- 순전파를 역으로\n- 덧셈 z = x + y\n∂z/∂x = 1\n∂z/∂y = 1\n\n- 곱셈 z = xy\n∂z/∂x = y\n∂z/∂y = x",
+      "text": "· 에포크\n- 학습에서 훈련 데이터를 모두 소진했을 때의 횟수에 해당\nex, 훈련데이터 10,000개를 100개의 미니배치로 학습할 경우,\n확률적 경사 하강법을 100회 반복하면\n모든 훈련 데이터를 소진하게 됨\n이경우 100회가 1에포크\n\n· 오차역전파법 (역전파)\n- 가중치 매개변수의 기울기를 효율적으로 계산하는 방법.\n- 순전파를 역으로\n- 덧셈 \\(z = x + y\\)\n\\(\\frac{\\partial z}{\\partial x} = 1\\)\n\\(\\frac{\\partial z}{\\partial y} = 1\\)\n\n- 곱셈 \\(z = xy\\)\n\\(\\frac{\\partial z}{\\partial x} = y\\)\n\\(\\frac{\\partial z}{\\partial y} = x\\)",
       "status": "verified",
       "annotator": "이나현",
-      "notes": "수식 검토 필요.",
-      "revision": 1,
+      "notes": "수식은 LaTeX.",
+      "revision": 2,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-23T07:23:14.874Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-10-23T07:00:05.070Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 2
+        },
         {
           "at": "2026-10-22T18:02:34.477Z",
           "author": "이나현",
@@ -1105,7 +1107,7 @@
         "source_width": 3024,
         "source_height": 4032
       },
-      "updated_at": "2026-10-22T18:02:34.477Z"
+      "updated_at": "2026-10-23T07:00:05.070Z"
     },
     "hf-0042": {
       "id": "hf-0042",
