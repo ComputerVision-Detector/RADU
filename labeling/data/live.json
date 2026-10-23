@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T01:49:11.171Z",
+  "updated_at": "2026-10-23T01:51:05.932Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2461,23 +2461,27 @@
     },
     "hf-0099": {
       "id": "hf-0099",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "통장 프로그램\n#include<stdioh>\nint main(void){\nint money=0, in_mn=0, out_mn=0;\nint ch_num=0;\n\n\nprintf(\"현재통장에 있는 돈: %d\\n\", money);\nJul(); → 사용자정의함수 안만듬\nprintf(\"입금할려면 1, 출금하려면 2, \\n:\");\nscanf(\"%d,\"&ch_num);\nif(ch_num ==1){\nprintf(\"입금을 선택하셨습니다. \\n 입금할돈을 입력해주세요 : \");\nscanf(\"%d\", & in_mn);\nmoney = money + in_mn;\nprintf(\"%d 원을 입금하셨고 통장에는 %d원이 있습니다. \\n\", in_mn, money);\nbreak;\n}else if(ch_num == 2){\nprintf(\"출금을 선택하셨습니다. \\n 출금할돈을 입력해주세요. :\");\nscanf(\"%d\",&out_mn);\nmoney = money - out_mn;\nif(money(0){\nprintf(\"잔액이 부족하여 출금할 수 없습니다. \\n\"); exit(0);\n}\nprintf(\"%원을 출금하셨고 통장에는 %d원이 있습니다.\\n\", out_mn, money);\nbreake ;\n}\n\nreturn 0;\n}",
+      "status": "verified",
+      "annotator": "김혜린",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-23T02:14:11.171Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T01:51:05.932Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0099.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-23T01:51:05.932Z"
     },
     "hf-0100": {
       "id": "hf-0100",
