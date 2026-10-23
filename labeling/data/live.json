@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T08:03:28.942Z",
+  "updated_at": "2026-10-23T08:04:39.483Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3699,23 +3699,27 @@
     },
     "hf-0153": {
       "id": "hf-0153",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "<회귀나무>\n· 잔차의 제곱합\n\n<데이터 구간화> : 이산형 변수를 범주형 변수로 변환.\n→ 데이터 분석의 성능을 향상 시키기 위해, 해석의 편리성을 위해 사용됨.\n\n\n[강화학습방법론, 섀플리 벨류, 요인적 제곱 행렬, 카이제곱, R^2, 동일표.] + k-means.\n비지도.\n카이제곱: 교차법.\n섀플리 벨류 : 각 요소의 기여도. (모든 집합에 대해)\n가변수 처리 : 범주형변수를 0, 1로 변환.\n→ 3개 이상인 경우에는 (카테고리-1개) 만큼 생성 : 다중공선성 방지를 위해\n가중치 벨런싱 : 중요한 클래스를 틀리면 더 큰 손실가중치를 부여.\n: 중요한 클래스를 잘못 분류하면, 더 큰 손실 가중치를 부여.\n코사인 유사도 : 벡터사이의 값을 사용하는 것.\nDBSCAN: 밀도 기반 클러스터링 기법 ⇒ k 지정 x\nㅗ\n회귀분석의 기본조건\t잔차의 정규성\t(정규 분포 따르\n잔차의 등분산성\n독립성.\n선형성.\nT-value :높을 수록 Good. ⇒ X와 Y의 선형관계\nP-value : 유의확률.\n\n식별계수: 각 모델의 평균 R^2를 비교.\n\n소프트마진: 과적합 방지. 하드 마진 이상치를 허용하지 X ⇒ 과적합!!",
+      "status": "verified",
+      "annotator": "김혜린",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-23T08:28:28.942Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T08:04:39.483Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0153.webp",
         "source_width": 2543,
         "source_height": 3276
-      }
+      },
+      "updated_at": "2026-10-23T08:04:39.483Z"
     },
     "hf-0154": {
       "id": "hf-0154",
