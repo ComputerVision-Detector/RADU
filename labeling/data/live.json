@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T08:24:12.680Z",
+  "updated_at": "2026-10-23T08:26:11.577Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3543,23 +3543,27 @@
     },
     "hf-0144": {
       "id": "hf-0144",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "C4W1L\n02강 ~ 03강\n·Vertical edge detection : 합성곱 연산을 통해 수직·수평으로 급격히 변화하는\n&\nHorizontal 경계선을 도출하는 것. (이미지의 경계 찾기)\nvertical example → : 세로 선을 검출\nhorizontal example → : 가로 선을 검출\n\n*이전에는 filter를 지정했었음.\n그러나, 딥러닝 기술이 발전함에 따라 filter에 들어갈 값을 스스로 학습하고\n역전달 형식으로 학습된 9개의 숫자가 filter로 사용되는 형식으로 바뀜.(filter가 폭 3x3인 것은 x)\n\n04강\n·padding : 합성곱을 거치면 이미지가 축소된다는 단점과, 가장자리의 값에 대한 연산이 비교적\n적게 된다는 문제를 해결하고자 도입된 방법.\n→합성곱 연산을 할 이미지 가장자리에 픽셀을 추가함. (이때 padding 되는 픽셀 갯수가 p = n)\nex) 6x6 이미지를 3x3 filter에 합성곱 시킬 때, padding이 없으면 n - f + 1 의 수식을 통해\n6 - 3 + 1 = 4. 따라서 4x4 사이즈로 축소됨.\n그러나 p = 1 을 적용하면, n + 2p - f + 1이 되고, 6 + 2 - 3 + 1 = 6 이므로 이미지의\nsize가 축소되지 않았음을 확인할 수 있음.\n\n·Valid and Same Convolutions\nValid : 유효 합성곱. → 패딩 (padding)이 없는 것을 의미.\nex) n·n * f·f = n - f + 1 * n - f + 1\nSame : 동일 합성곱 → input soze와 output size가 동일한 것을 의미.\nex) p = 1 을 적용했을 때, n + 2p - f + 1 * n + 2p - f + 1 = n * n\n\n* 짝수의 filter를 거의 사용하지 않음.\n그 이유는 중심점이 없기 때문에 합성곱 연산시, 홀수개의 filter 보다\n좋은 연산을 기대할 수 없음. → 따라서, 성능이 좋게 나오기 어려움",
+      "status": "verified",
+      "annotator": "차인택",
+      "notes": "컨볼루전 필터 및 주석은 넣지 않았음.",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "차인택",
-        "client": "8751a47c-f227-4420-b20c-b1237e0b6a00",
-        "until": "2026-10-23T08:49:12.680Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T08:26:11.577Z",
+          "author": "차인택",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0144.webp",
         "source_width": 2585,
         "source_height": 3299
-      }
+      },
+      "updated_at": "2026-10-23T08:26:11.577Z"
     },
     "hf-0145": {
       "id": "hf-0145",
