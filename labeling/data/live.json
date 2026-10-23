@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T07:48:28.937Z",
+  "updated_at": "2026-10-23T07:49:36.985Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3499,23 +3499,27 @@
     },
     "hf-0143": {
       "id": "hf-0143",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "대체 키 (alternate key) : 기본 키로 선정되지 않은 후보키.\n외래 키 (foreign key) : 다른 릴레이션의 key를 참조.\n\n무결성 제약 조건 ------------\n· 데이터 무결성 : DB에서 저장된 데이터의 일관성과 정확성을 지키는 것.\n\n조인 (join) ----------\n· 조인 연산 종류\n1) 세타 조인 : 두 릴레이션의 속성값을 비교 → 맞는 튜플 반환.\n2) 자연 조인 : 속성 이름이 같은 튜플만 대상으로 하되, 중복 속성 제거 후 반환.\n5) 외부 조인 : 조인에 실패한 튜플을 모두 보여주되, 값이 없는 대응 속성에는 Null.\n6) 세미 조인 : 자연조인을 한 후, 한 쪽의 릴레이션의 결과만 반환.",
+      "status": "verified",
+      "annotator": "김혜린",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-23T08:13:28.937Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T07:49:36.985Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0143.webp",
         "source_width": 2535,
         "source_height": 2157
-      }
+      },
+      "updated_at": "2026-10-23T07:49:36.985Z"
     },
     "hf-0144": {
       "id": "hf-0144",
