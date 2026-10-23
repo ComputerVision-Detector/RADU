@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T08:02:25.613Z",
+  "updated_at": "2026-10-23T08:02:30.850Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3763,23 +3763,27 @@
     },
     "hf-0156": {
       "id": "hf-0156",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "\" SD 1.5 Inpainting Model.\"\n·Inpainting 이란?\n: 이미지 전체를 새로 생성하는 것이 아니라, 마스크로 지정한 특정 영역만 생성/ 수정하는 것.\n-Original Image와 Mask가 추가로 입력으로 작용하고,\n이에 따라 U-Net이 현재 이미지를 어떻게 유지해야 하는지를 알 수 있게 됨.\n- SD 1.5 Inpainting Model의 U-Net channel은 9개.\n1) Noisy Latent : 4 channel\n2) Mask : 1 channel\n3) Masked Image Latent : 4 channel.\n→ 1)은 현재 생성 중인 이미지,\n2)는 어디를 수정해야 하는지 알려 주는 역할,\n3)은 워본 이미지에서 남겨야 하는 context를 알려 줌.\nBut, 출력은 기존과 동일한 4 channel임. ( Mask와 Masked Image Latent는 조건일 뿐이기 때문)\n\n-Mask Dailation 이 필요할 수도 있음. (Mask가 너무 타이트하면 인물의 일부 정보를 놓칠 수도 있기 때문)\n그러나, 너무 많이 팽창 시키면 배경까지 수정되며 utility가 손상될 수 있음.\n∴ Privacy와 Background Preservation은 trad-off 관계임.\n(이는 실험 변수의 후보로 작용할 가능성이 ↑)\n\n-Strengt\n: 원본 이미지에서 얼마나 벗어날지를 결정하는 요소.\nstrengt ↓→ 좋은 품질이지만, Privacy 위험이 증가.\nstrengt ↑→ 자연스러움이 적어짐, privacy는 증가할 가능이 있음.\n∴ Strengt 또한, Privacy와 Utility 사이의 trade-off를\n만드는 prameter로 작용할 가능성이 있음.\n\n☆같은 ID의 사람이 여러 frame에 등장하는 경우, 같은 모습으로 Inpainting 해야하기\n때문에 [Pose ControlNet + Referance Conditioning]이 필요함!!",
+      "status": "verified",
+      "annotator": "차인택",
+      "notes": "(Total : 9 channel\n이를 통해, U-Net은\n어디에 무엇을 생성해야 하는지와\n그 주변 장면의 모습에 대해서 알게 됨.)\n주석 달지 않음",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "차인택",
-        "client": "8751a47c-f227-4420-b20c-b1237e0b6a00",
-        "until": "2026-10-23T08:25:13.117Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T08:02:30.850Z",
+          "author": "차인택",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0156.webp",
         "source_width": 2491,
         "source_height": 3279
-      }
+      },
+      "updated_at": "2026-10-23T08:02:30.850Z"
     },
     "hf-0157": {
       "id": "hf-0157",
