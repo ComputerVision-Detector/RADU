@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T08:36:30.513Z",
+  "updated_at": "2026-10-23T08:37:36.706Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3615,23 +3615,27 @@
     },
     "hf-0148": {
       "id": "hf-0148",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "11강 ---- Why convdution ?\n· FC 대신 CONV를 사용할 때의 이점 : 1) 변수 공유, 2) 희소 연결\nexample)\nf=5\nfilter 6\n32x32x3\t28x28x6\n3,092\t4,704\t* 이렇게 FC를 이용하면\n⇒ 3,072x4,704 ≈ 14M\t가중치 행렬 실행의 갯수가\n기하급수적으로 증가.\n만일, 1000x1000 사이즈라면\n사실상 불가한 수준.\n1) Parameter sharing\n: 1개의 변수를 여러번 이용해 특성을 검출해 내는 것.\nexample)\t이렇게 연산을 하면, 3x3 필터 (변수 9개)를 Input인 6x6에\n*\t중복으로 적용해서 결론을 도출해 낼 수 있음.\n\n2) Sparsity of connections\n: 각 변수들끼리 전부 연산되는 것이 아니라, 해당 연산에 쓰인 부분만 사용됨.\nexample\t이런 식으로, 결과의 첫 번째 값에 쓰인 연산된 변수는\n*\t=\t36개의 Input중 단 9개만 사용됨.\n이에 따라, 연산량이 많이 줄어들었음을 알 수 있음.\n\n* 합성곱 신경망은 이동불변성(translation inovation)을 포착하는 데도 유리함.\n: 몇 픽셀은 이동한 이미지도 유사한 속성을 가진다는 것. → 따라서 동일한 결과를 가짐\n\n· 결론:\nConvolutions를 사용하는 이유는 비용함수 J를 줄이기 위해서이다!!",
+      "status": "verified",
+      "annotator": "김혜린",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-23T09:01:30.513Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T08:37:36.706Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0148.webp",
         "source_width": 2543,
         "source_height": 2701
-      }
+      },
+      "updated_at": "2026-10-23T08:37:36.706Z"
     },
     "hf-0149": {
       "id": "hf-0149",
