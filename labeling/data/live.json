@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T06:09:09.848Z",
+  "updated_at": "2026-10-23T06:09:11.674Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2965,23 +2965,27 @@
     },
     "hf-0120": {
       "id": "hf-0120",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "- npm을 쳤는데 에러가 난다면 powershell을 관리자 권한으로 실행\n→ Set-ExecutionPolicy RemoteSigned\n→ Y\n→ vs code 재식작.\n· 서버 자동으로 껏다 켜지는 라이브러리\n- npm install -g nodemon\n컴퓨터 모든 폴더에서도 실행가능하게 해주세요.\n- nodemon server.js\n→ 에러가 뜨면 → 관리자권한으로 powershell 실행.\n→ executionpolicy → set - executionpolicy unrestric ted\n→ Y\n- 저장만 해도 자동으로 서버를 껏다 켜줌.\n\n· Boost strap\n- 쌩코딩없이 복붙으로 UI개발 가능한 HTML/CSS\n라이브러리.\n\n· 상단 메뉴 바: Navbar\n· 초기 설정\n- Node.js 설치 -> vs code 터미널 실행 → npm init 입력\n→ 엔터 침 (entry point가 뜰 때까지) → 자신이 원하는 서버 js 이름\n기입. (ex) server.js → 엔터 연속 → npm install express.\n→ 폴더가 생김 -> server.js (entry point에서 친 이름) 생성.\n\n· 서버끄는 법: ctrl + C [터미널에서)\n· 다시 켜기 : node server.js\n· npm이란? → 노드 패키지 매니저의 약자.",
+      "status": "verified",
+      "annotator": "김혜린",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-23T06:31:28.963Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T06:09:11.674Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0120.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-23T06:09:11.674Z"
     },
     "hf-0121": {
       "id": "hf-0121",
