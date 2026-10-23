@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T06:27:09.744Z",
+  "updated_at": "2026-10-23T06:28:34.774Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3685,23 +3685,27 @@
     },
     "hf-0158": {
       "id": "hf-0158",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "·이번 연구의 중요한 구조\nOriginal image\t-각 입력이 담당하는 역할.\n\t1)Original Image: 기존 장면 정보.\nPerson Mask\tPose Estimator\t2)Mask : 어디를 바꿀지\nMasked Image\tPose Map\t3)Masked Image : 주변 context\n\t4)Prompt : 무엇을 생성할지\nVAE Encoder\tControl Net\t5)Pose : 어떤 자세로 생성할지\nMasked Latent\t6)Seed : stochastic generation의 초기 상태.\n\t7)referance : ~처럼 보게 함.\nNoisy Latent\t+\tMask\t+\tMasked latent\nInpainting U-Net\ncontrol Net Residual\nNoise Prediction\n\n·Control Strength (control Net에서 매우 중요한 parameter 임)\nPose Influence\n낮은 값: 모델이 자유롭게 생성.\t높은 값: Pose 구조를 강하게 따름.\n장점: 자연스럽고 생성 자유도가 높음.\t장점: 자세 유지, 행동 정보 보존\n단점: 원본 자세가 바뀔 수 있음.\t단점: 생성 자유도가 감소하며,\n\t잘못된 pose estimation도 강제로\n∴Control Strength는 실험 변수로 적용.\t반영될 수 있음\n-측정 1)privacy : D → O\n2)consistency: D → D\n3)Utility: Yolo\t를 비교.\n4)Quality: LPIPS / Failure Rate ",
+      "status": "verified",
+      "annotator": "차인택",
+      "notes": "(이것이 곧, 본 연구의 노벨티와 연결됨.)\n주석은 쓰지 않았음 ",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "차인택",
-        "client": "8751a47c-f227-4420-b20c-b1237e0b6a00",
-        "until": "2026-10-23T06:52:09.744Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T06:28:34.774Z",
+          "author": "차인택",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0158.webp",
         "source_width": 2391,
         "source_height": 3281
-      }
+      },
+      "updated_at": "2026-10-23T06:28:34.774Z"
     },
     "hf-0159": {
       "id": "hf-0159",
