@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T06:03:28.921Z",
+  "updated_at": "2026-10-23T06:04:40.502Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2935,23 +2935,27 @@
     },
     "hf-0119": {
       "id": "hf-0119",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
+      "text": "서버 만들기. (코딩애플).\n· Server: 쉽게 생각해서 서빙해주는 사람.\n- 서버 : 요청을 받으면 요청한 내용을 보내주는 프로그램.\n요청의 4가지방식\n- 읽기 (Get) - 읽게 해주세요.\n- 쓰기 (Post) - 생성해주세요. ex) 댓글, 블로그 포스트.\n- 수정 (PUT)\n- 삭제 (DELETE) - 단어 뜻 그대로.\n\n· JavaScript란?\n- HTML 조작을 위해 만들어진 언어. → 각 브라우저의 해석엔진\n- 자바스크립트는 브라우저가 해석 - 크롬 V8 엔진 (좋음)\n- HTML : 웹 페이지에 글 넣고 그림 넣고. 익프 Chakra 엔진\n파폭 SpiderMonkey 엔진\n\n· Node.js란?\nChrome에서 만든 V8 엔진을 떼어내 자체로 출시한 것\n즉, 크롬밖의 자바스크립트 해석 엔진\n자바스크립트 실행창, 실행 환경\n- Node.js로 서버를 만드는 이유.\n- 쉽다.\n- Non-blocking I/O ⇒ 쉽게 처리가능한 것부터 처리 그 후 어려운 것 처리\n- event-driven\n\n- 문법. (PowerShell이나 명령프롬프트 (터미널) 이용).\n- node -v : 현재 버전 확인\n- node : 노드 작성 시작 (실행).\n- var name = \"정\"; : name을 입력했을 때 \"정\" 출력.\n- console.log('안녕') : '안녕' 출력.\n\n- VS Code를 에디터로 이용.\n- express라는 라이브러리를 써서 서버를 만듦.\n코드를 쉽게 짜기위해 빌려쓰는 코드 모음집.\n- npm : 라이브러리 설치를 도와주는 도구",
+      "status": "verified",
+      "annotator": "이나현",
       "notes": "",
-      "revision": 0,
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-23T06:27:02.769Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T06:04:40.502Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0119.webp",
         "source_width": 3024,
         "source_height": 4032
-      }
+      },
+      "updated_at": "2026-10-23T06:04:40.502Z"
     },
     "hf-0120": {
       "id": "hf-0120",
