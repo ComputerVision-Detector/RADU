@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T06:17:05.491Z",
+  "updated_at": "2026-10-23T06:17:41.337Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3617,23 +3617,27 @@
     },
     "hf-0155": {
       "id": "hf-0155",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "· A to C 검증 point\n-Mask가 사람을 충분히 덮는가?\n- \" 주변 배경을 너무 침범하지 않는가?\n-Mask ↔ frame ↔ Person ID Mapping이 정확한가?\n\n·C to B\n-C에서 B로 전달하는 것: Original & Diffusion Image.\n-이로써 얻고자 하는 것 ①가명화한 사람을 보고 원본 사람이 어떤 사람인지 찾을 수 있는가?\n②가명처리된 PID001을 다른 카메라에서도 PID001로 알아볼 수 있는가?\n①: D → O Rank -1↓, D → O mAP ↓\noriginal identity 제거 성공.\n②: D → D Rank -1↑, D → D mAP ↑ \nPesudo ID consistency 좋음.\n\n·C to D\n-전달해야 할 정보 : Diffusion-quality, generation failure, runtime, consistency, summary\n\n·Quality 평가\n· SSIM : 이미지의 구조적 유사성 matrix.(이미지 구조 보존 정도)\n·LPIPS : Deep Network feature를 이용해 두 이미지 사이의 perceptual similarity를 측정.\n·Generate failure Rate.\n·Inference time\n·GPU mamory",
+      "status": "verified",
+      "annotator": "차인택",
+      "notes": "(이 두 개를 모두 만족하는 것이 본 연구의 이상적인 상태임.\n☆배경 보존으로 인해 SSIM의 수치가 매우 높게 나올 수 있으므로, '전체 frame, Mask내부, Mask외부'에 대한 것을 종합적으로 평가해야 함!!)\n주석 처리 안 함",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "차인택",
-        "client": "8751a47c-f227-4420-b20c-b1237e0b6a00",
-        "until": "2026-10-23T06:40:09.804Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T06:17:41.337Z",
+          "author": "차인택",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0155.webp",
         "source_width": 2522,
         "source_height": 2849
-      }
+      },
+      "updated_at": "2026-10-23T06:17:41.337Z"
     },
     "hf-0156": {
       "id": "hf-0156",
