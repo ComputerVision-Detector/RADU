@@ -2,7 +2,7 @@
   "schema": 1,
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-23T08:22:47.216Z",
+  "updated_at": "2026-10-23T08:22:55.338Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3087,23 +3087,27 @@
     },
     "hf-0122": {
       "id": "hf-0122",
-      "text": null,
-      "status": "unlabeled",
-      "annotator": "",
-      "notes": "",
-      "revision": 0,
+      "text": "\\(f(x)=2x^3-3x^2-12x+5\\)\n\\(f'(x)=6x^2-6x-12\\)\n\\(6(x^2-x-2)=0\\)\n\\(6(x-2)(x+1)=0\\)\n\\(f'(-1)=6+6-12=-12\\)\n\\(f'(2)=24-24-12\\)\n\\(f(2)=16-12-24+5\\)\n\\(=-15\\)\n\\(f(-1)=-2-3+12+5\\)\n\\(=12\\)\n\\((-\\infty,-1),(-1,2),(2,\\infty)\\)\n\nx\t...\t-1\t...\t2\t...\nf'(x)\t\t\t\t\t\t\n\n\\(f(x)=x^2,\\quad [1,3]\\)\n\\(\\frac{f(3)-f(1)}{3-1}=\\frac{9-1}{2}=4\\)\n\nTC\t요일\t나이\t회원\t기대출력\t실제결과\t판정\t비고\nTC#1\t수요일\t-\t-\t1000\t1000\tP\tCP:1\nTC#2\t월요일\t60세\t-\t1500\t1500\tP\tCP:2\nTC#3\t월요일\t20세\t회원 O\t1800\t1800\tP\tCP:3\nTC#4\t월요일\t20세\t회원 X\t2000\t2000\tP\tCP:4",
+      "status": "verified",
+      "annotator": "정하경",
+      "notes": "왼쪽위 수식과 오른쪽 표만 작성\n순서도는 제외",
+      "revision": 1,
       "seed_verified": false,
-      "claim": {
-        "name": "정하경",
-        "client": "a5efe7bc-967d-4887-9871-d4b6eac69a56",
-        "until": "2026-10-23T08:45:36.602Z"
-      },
-      "history": [],
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-23T08:22:55.338Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1
+        }
+      ],
       "image": {
         "file": "assets/hf-0122.webp",
         "source_width": 3757,
         "source_height": 2531
-      }
+      },
+      "updated_at": "2026-10-23T08:22:55.338Z"
     },
     "hf-0123": {
       "id": "hf-0123",
