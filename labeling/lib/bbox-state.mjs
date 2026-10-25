@@ -41,7 +41,13 @@ export function reconcileBBoxState(stored,catalog=seed) {
   }
   for(const [id,source] of Object.entries(catalog.items)) {
     if(!Object.hasOwn(result.items,id))result.items[id]=emptyItem(source);
-    else result.items[id].image=sourceImage(source);
+    else {
+      const previous=result.items[id].image,expected=sourceImage(source);
+      if(previous?.source_sha256!==expected.source_sha256 || previous?.source_width!==expected.source_width || previous?.source_height!==expected.source_height) {
+        throw new AppError(503,`원본 이미지가 변경되었습니다. 기존 V2 bbox를 자동으로 이전할 수 없습니다: ${id}`);
+      }
+      result.items[id].image=expected;
+    }
   }
   result.dataset_version='v2';
   result.dataset=catalog.dataset;
@@ -70,6 +76,7 @@ export function validateBBoxState(state,catalog=seed) {
   }
   for(const [id,source] of Object.entries(catalog.items)) {
     const item=state.items[id],annotation=item?.bbox_annotation,expectedImage=sourceImage(source);
+    if(item?.image?.source_width!==expectedImage.source_width || item?.image?.source_height!==expectedImage.source_height)throw new Error(`V2 원본 이미지 크기 오류: ${id}`);
     if(!item || item.id!==id || item.image?.file!==expectedImage.file || item.image?.asset_sha256!==expectedImage.asset_sha256 || item.image?.source_sha256!==expectedImage.source_sha256 || !annotation || !statuses.has(annotation.status) || !Number.isInteger(annotation.revision) || annotation.revision<0 || typeof annotation.annotator!=='string' || typeof annotation.notes!=='string' || annotation.notes.length>8000 || typeof annotation.no_text!=='boolean' || typeof annotation.proposal_version!=='string' || annotation.proposal_version.length>200 || !Array.isArray(annotation.boxes) || annotation.boxes.length>1000 || !Array.isArray(item.history)) {
       throw new Error(`V2 bbox 라벨 형식 오류: ${id}`);
     }

@@ -8,6 +8,7 @@ function bboxLabelOnly(item) {
   return {
     schema_version:1,dataset_version:'v2',image_id:item.id,image_file:item.image.file,
     image_size:{width:item.image.source_width,height:item.image.source_height},
+    source_sha256:item.image.source_sha256,asset_sha256:item.image.asset_sha256,
     status:annotation.status,revision:annotation.revision,annotator:annotation.annotator,
     notes:annotation.notes,no_text:annotation.no_text,proposal_version:annotation.proposal_version,
     boxes:annotation.boxes

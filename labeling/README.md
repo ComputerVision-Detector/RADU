@@ -26,7 +26,7 @@ docker compose -f compose.yaml -f compose.domain.yaml up -d --build
 
 ## Vercel 배포
 
-2026-10-25 확인 기준 `https://radu-amber.vercel.app/api/labeling?action=health`가 HTTP 200, `storage: github`, `samples: 163`을 반환해 GitHub 저장소 연결이 동작합니다. 배포 후 이 주소에서 토큰 또는 권한 오류가 보이면 [관리자 설정 안내](VERCEL_ADMIN_SETUP.md)를 따르세요.
+2026-10-25 확인 기준 운영 도메인은 GitHub 저장소를 읽지만 아직 이전 API를 반환합니다. V2 완료 기준은 `https://radu-amber.vercel.app/api/labeling?action=health&version=v2` 응답의 `dataset_version: "v2"`입니다. HTTP 200과 samples:163만으로 V2 배포 성공을 판정하지 않습니다. [관리자 설정 안내](VERCEL_ADMIN_SETUP.md)의 Production 설정과 도메인 연결을 확인하세요.
 
 GitHub 코드 브랜치: **RADU/labeling**. 기존 실험 브랜치 `feat/hybridocr`에서 분기했다.
 
@@ -116,6 +116,8 @@ npm run build
 ```
 
 브라우저 검증은 저장소 루트에서 `.venv/bin/python labeling/tests/browser_check.py`로 실행한다. 검증은 별도 테스트 서버·`LABEL_LOCAL_STORE` 파일 및 `LABEL_TEST_URL`을 지정해 실제 작업 데이터와 분리한다. QA 작성자 전사는 실제 정답이 아니다.
+
+V2 브라우저 검증은 `python labeling/tests/browser_bbox_check.py`로 실행한다. Node.js 22+가 PATH에 있고 Python Playwright와 `/usr/bin/google-chrome`이 필요하다. 이 검증기는 임시 서버·저장 파일을 직접 생성하고 종료하며 운영 API에는 접근하지 않는다. 박스 그리기·이동·크기 조절, 작업 잠금, 불확실 초안·재시작, 검수·ZIP, V1 보존과 모바일 레이아웃을 확인한다. V2 내보내기에는 원본 `source_sha256`과 웹 에셋 `asset_sha256`도 포함한다. 원본 해시나 크기가 바뀐 저장 데이터는 기존 bbox 좌표를 자동으로 이전하지 않고 읽기를 중단한다.
 
 ## 라벨링 순서
 

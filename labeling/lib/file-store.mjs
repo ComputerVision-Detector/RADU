@@ -6,7 +6,7 @@ import { initialState as initialV1State,AppError,reconcileState as reconcileV1St
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 export function validateState(state) {
-  const seed=initialState();
+  const seed=initialV1State();
   if(state?.schema!==1 || !state.items || Object.keys(state.items).length!==Object.keys(seed.items).length) throw new Error('라벨 백업 형식을 확인하세요.');
   for(const [id,original] of Object.entries(seed.items)) {
     const item=state.items[id];

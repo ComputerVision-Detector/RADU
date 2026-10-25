@@ -4,7 +4,7 @@
 
 ## 현재 진단과 완료한 작업
 
-2026-10-25 직접 확인 기준 `https://radu-amber.vercel.app/api/labeling?action=health`는 HTTP 200으로 `{"status":"ok","storage":"github","samples":163}`을 반환한다. 현재 Production API가 GitHub 저장소를 읽을 수 있다. 이전의 토큰 미설정 진단은 이 확인으로 갱신되었다. 새 운영 토큰을 중복 발급할 필요는 없으며, 배포 후 health가 실패할 때 아래 설정 절차를 사용한다.
+2026-10-25 직접 확인 기준 `https://radu-amber.vercel.app/api/labeling?action=health&version=v2`는 HTTP 200으로 `{"status":"ok","storage":"github","samples":163}`을 반환한다. GitHub 읽기는 되지만 **`dataset_version: "v2"`가 없으므로 V2 배포 완료가 아니다.** 기존 API는 version 쿼리를 무시한다. 기존 토큰을 중복 발급할 필요는 없으며, 새 배포 후 토큰 오류가 발생할 때만 아래 교체 절차를 사용한다.
 
 데이터 브랜치 **RADU/labeling-data**의 기존 `labeling/data/live.json`은 V1이다. 현재 V1 상태는 163건 중 146건 검수 완료, 1건 작성 중, 16건 미작성이다. 새 줄 bbox 라벨은 별도 `labeling/data/live-v2.json`에 V2로 저장한다. V1 파일과 평가 파일은 초기화하지 않는다.
 
@@ -44,8 +44,10 @@ Vercel에서 **radu-amber.vercel.app이 연결된 프로젝트 → Settings → 
 ## 3. 최신 코드로 재배포
 
 - 소스 브랜치: RADU/labeling.
+- Settings → Git → Production Branch: RADU/labeling.
 - Root Directory: labeling.
 - Framework: Other (vercel.json의 framework=null 유지).
+- Node.js: 22.x, Build Command: npm run build, Output Directory: dist.
 - 환경변수를 저장한 뒤 Deployments에서 최신 코드의 Production 배포를 **Redeploy**한다.
 
 환경변수 추가만으로 이미 실행 중인 배포가 갱신되지는 않는다. 새 배포가 Ready가 되고 `radu-amber.vercel.app`에 연결되었는지 확인한다.
@@ -54,15 +56,17 @@ Vercel에서 **radu-amber.vercel.app이 연결된 프로젝트 → Settings → 
 
 최신 코드 배포 후 다음 URL을 연다.
 
-https://radu-amber.vercel.app/api/labeling?action=health
+https://radu-amber.vercel.app/api/labeling?action=health&version=v2
 
 정상이면 HTTP 200으로 다음 형태를 반환한다.
 
 ```json
-{"status":"ok","storage":"github","samples":163}
+{"status":"ok","dataset_version":"v2","storage":"github","samples":163}
 ```
 
-이 검사는 저장소 읽기를 확인한다. 쓰기까지 확인하려면 웹에서 미작성 이미지 하나를 맡은 뒤 작업 반납을 실행한다. 전사 내용을 시험 입력해 실제 정답으로 저장할 필요는 없다. 권한 오류가 없다면 공동 작업 저장도 연결된 것이다.
+`action=list&version=v2` 응답은 V2 bbox 상태를 반환해야 한다. 최초 시작 시 163개 모두 미작성이며, 이미 라벨링이 시작되었다면 저장된 상태를 그대로 유지한다. 화면에는 V1/V2 선택기가 있어야 한다. V1은 기존 146 verified / 1 draft / 16 unlabeled를 유지해야 하며 V2 초기화를 위해 V1 파일을 복사하거나 덮어쓰지 않는다.
+
+이 검사는 저장소 읽기를 확인한다. 쓰기까지 확인하려면 **V2 화면에서** 이미지 하나를 맡은 뒤 작업 반납을 실행한다. 이는 V2 상태 파일이 없으면 최초 생성한다. 실제 정답에 시험 문구나 bbox를 저장하지 않는다. V1 `live.json`의 Git blob SHA가 전후 같아야 한다.
 
 ## 오류 구분
 
