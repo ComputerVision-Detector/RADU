@@ -1,6 +1,6 @@
 # 서버 관리자에게 전달할 배포 안내
 
-**이 폴더만 전달하면 됩니다.** 163장의 이미지·초기 정답·웹 화면·공동 저장 서버가 모두 포함되어 있습니다. Docker Compose가 설치된 서버에서 실행하며 GPU·Python·GitHub 토큰·별도 DB는 필요 없습니다. 사용자는 이름만 입력합니다.
+**이 폴더만 전달하면 됩니다.** 163장의 이미지·초기 정답·웹 화면·공동 저장 서버가 모두 포함되어 있습니다. 기존 이미지 전체 전사는 V1로 보존하고, 새 줄 bbox 전사는 빈 상태의 V2에 별도로 저장합니다. Docker Compose가 설치된 서버에서 실행하며 GPU·Python·GitHub 토큰·별도 DB는 필요 없습니다. 사용자는 이름만 입력합니다.
 
 ## A. 새 도메인 또는 서브도메인으로 배포
 
@@ -65,12 +65,13 @@ docker compose up -d --build app
 
 ## 정답 저장 위치와 백업
 
-서버 저장은 `labeling_data` Docker 볼륨의 `/data/state.json`입니다. 컨테이너를 재시작·재생성해도 유지됩니다. 저장 직전 상태는 `/data/backups/`에 최근 50회까지 자동 보관합니다. 이는 50일 보관이 아니라 **최근 50회 변경**입니다. `docker compose down -v`는 데이터 볼륨까지 삭제하므로 사용하지 않습니다.
+서버 저장은 `labeling_data` Docker 볼륨 안의 V1 `/data/state.json`과 V2 `/data/state-v2.json`입니다. 두 버전은 별도 파일과 백업 디렉터리를 사용하며 컨테이너를 재시작·재생성해도 유지됩니다. 저장 직전 상태는 각각 `/data/backups/`와 `/data/backups-v2/`에 최근 50회까지 자동 보관합니다. 이는 50일 보관이 아니라 **버전별 최근 50회 변경**입니다. `docker compose down -v`는 데이터 볼륨까지 삭제하므로 사용하지 않습니다.
 
 웹의 **정답 파일 다운로드**에서 개별 JSON ZIP 또는 통합 JSON을 내려받을 수 있습니다. 전체 상태 백업(이력·revision 포함)은 다음 명령으로 서버 밖에도 보관합니다.
 
 ```bash
 docker compose exec -T app node tools/state.mjs backup > labeling-backup.json
+docker compose exec -T -e LABEL_STATE_VERSION=v2 app node tools/state.mjs backup > labeling-v2-backup.json
 ```
 
 백업을 새 서버에 복원할 때도 같은 초기 이미지·정답 패키지를 사용합니다. 복원 전 앱을 멈추고 실행합니다.
@@ -81,11 +82,12 @@ docker compose run --rm -T --no-deps app node tools/state.mjs restore --replace 
 docker compose up -d app
 ```
 
-이 명령은 전사·검수 상태·이력을 복구하고 이전 브라우저의 작업 임대는 해제합니다. 교체 전 파일은 추가 백업으로 남깁니다. 일반 JSON/ZIP 내보내기와 이 전체 상태 백업은 용도가 다릅니다.
+V2를 복원할 때는 같은 절차에 `-e LABEL_STATE_VERSION=v2`를 추가하고 V2 백업 파일을 입력합니다. 각 복원은 선택한 버전 파일만 변경합니다. 복원은 전사·검수 상태·이력을 복구하고 이전 브라우저의 작업 임대는 해제합니다. 교체 전 파일은 해당 버전의 추가 백업으로 남깁니다. 일반 JSON/ZIP 내보내기와 이 전체 상태 백업은 용도가 다릅니다.
 
 ## 운영 방식
 
-- 기본 상태: 기존 검수 완료 5장 보호, 추가 158장 미작성.
+- V1: 현재 데이터 브랜치의 163건 페이지 전사(146건 검수 완료, 1건 작성 중, 16건 미작성)를 유지합니다.
+- V2: 163장 전체가 bbox 미작성 상태에서 시작합니다. V1의 텍스트는 V2 정답으로 복사되지 않습니다.
 - 이름 입력 → 작업 맡기 → 원문 전사·메모 → 임시 저장 → 원본 대조 후 검수 완료.
 - 작성자 이름은 로그인 인증이 아닙니다. 공유 주소에 접근한 사람은 추가 라벨을 작성할 수 있습니다.
 - 이 구성은 한 서버의 영구 디스크와 **앱 인스턴스 1개**를 기준으로 합니다.

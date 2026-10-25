@@ -5,14 +5,19 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { handlerFor } from './api/labeling.mjs';
 import { FileStore } from './lib/file-store.mjs';
+import { createBBoxState,reconcileBBoxState,validateBBoxState } from './lib/bbox-state.mjs';
 const root=fileURLToPath(new URL('.',import.meta.url));
 const store=new FileStore(process.env.LABEL_LOCAL_STORE || path.join(root,'.runtime/state.json'),{
   backups:process.env.LABEL_BACKUP_DIR,limit:Number(process.env.LABEL_BACKUP_LIMIT ?? 50)
 });
+const bboxStore=new FileStore(process.env.LABEL_LOCAL_STORE_V2 || path.join(root,'.runtime/state-v2.json'),{
+  backups:process.env.LABEL_BACKUP_DIR_V2 || path.join(root,'.runtime/backups-v2'),limit:Number(process.env.LABEL_BACKUP_LIMIT ?? 50),
+  initialState:createBBoxState,reconcileState:reconcileBBoxState,validateState:validateBBoxState
+});
 // Fail at startup on corrupt state; never replace existing work with seed data.
-await store.read();
-const api=handlerFor(store);
-const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.webp':'image/webp'};
+await Promise.all([store.read(),bboxStore.read()]);
+const api=handlerFor(store,bboxStore);
+const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.webp':'image/webp','.json':'application/json; charset=utf-8'};
 const server=http.createServer(async(req,res)=>{
   res.status=code=>{res.statusCode=code;return res;};res.json=data=>{res.setHeader('Content-Type','application/json; charset=utf-8');res.end(JSON.stringify(data));};res.send=data=>res.end(data);
   res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Referrer-Policy','same-origin');
@@ -24,8 +29,10 @@ const server=http.createServer(async(req,res)=>{
       req.body=Buffer.concat(parts).toString('utf8');return await api(req,res);
     }
     const filename=url.pathname==='/'?'index.html':url.pathname.slice(1);
-    if(!['GET','HEAD'].includes(req.method) || (!['index.html','app.js','app.css'].includes(filename) && !/^assets\/hf-\d{4}\.webp$/.test(filename))){res.statusCode=404;res.end('Not found');return;}
-    const target=path.join(root,filename);
+    if(!['GET','HEAD'].includes(req.method) || (!['index.html','app.js','app.css','data/text-box-proposals.json'].includes(filename) && !/^assets\/hf-\d{4}\.webp$/.test(filename))){res.statusCode=404;res.end('Not found');return;}
+    const target=filename==='data/text-box-proposals.json'
+      ?path.resolve(root,process.env.LABEL_PROPOSALS_FILE || filename)
+      :path.join(root,filename);
     if(!existsSync(target) || !statSync(target).isFile()){res.statusCode=404;res.end('Not found');return;}
     res.setHeader('Content-Type',types[path.extname(target)] || 'application/octet-stream');
     res.setHeader('Cache-Control',filename.endsWith('.webp')?'public, max-age=86400':'no-cache');
