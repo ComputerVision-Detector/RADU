@@ -1,0 +1,3436 @@
+{
+  "schema": 1,
+  "dataset_version": "v2",
+  "dataset": "hakuuung/HybridOCR_CustomNotes",
+  "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
+  "updated_at": "2026-10-25T05:48:23.980Z",
+  "items": {
+    "hf-0000": {
+      "id": "hf-0000",
+      "image": {
+        "file": "assets/hf-0000.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "6631e4fee75df767b460f6b9f5fef5aefce4b3e4964a226919c7890230779d74",
+        "source_sha256": "9714c2728d5e783ccc27bf47f9d21733cf40e7ee4f368e28bcdd97fd77497087"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0001": {
+      "id": "hf-0001",
+      "image": {
+        "file": "assets/hf-0001.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "c68321f2b5e3171d4f821e5f49d10ebb12c52e1793bb8496b005f27c59af61d9",
+        "source_sha256": "9d4afc1a01e1164e573691c62b83453cc0fb85be0b77906bcbbacfa172109e41"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": {
+        "name": "김혜린",
+        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
+        "until": "2026-10-25T06:13:23.980Z"
+      },
+      "history": []
+    },
+    "hf-0002": {
+      "id": "hf-0002",
+      "image": {
+        "file": "assets/hf-0002.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "22fd0d62d1a56af4f7bc009db8edae3c15d3e94355db43ccd671bc70227c25de",
+        "source_sha256": "318fad17d8b86b229ccf96b99d9e591d62ed8fb3c60b8a3e96b4793b2d1648ae"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0003": {
+      "id": "hf-0003",
+      "image": {
+        "file": "assets/hf-0003.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "a4b7f6044d94fcf2c129b6ee5916c63655fe829b790c3a67bf28e6aa26129b18",
+        "source_sha256": "89fe3ce856d0929df591ab55fae7b78e1d7138f26be5cd4332f90938da5b13ff"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0004": {
+      "id": "hf-0004",
+      "image": {
+        "file": "assets/hf-0004.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "14e4ad0a27ca9b7b846d5d8aecc76d0a5166680b15f848e415146ec6c3e5b61f",
+        "source_sha256": "a40222c4d8cf301d01f1212984cf8b751abdc447494aa5445558d2f5f96cfc71"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0005": {
+      "id": "hf-0005",
+      "image": {
+        "file": "assets/hf-0005.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "6e8c566913bc14c807658ef1f678e69cafeb489eff2d6ac22fed8867504d4361",
+        "source_sha256": "b396336cc15ed38f58fe027615f805233db34c3c0a6a2dcbfd9f86011dcb769d"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0006": {
+      "id": "hf-0006",
+      "image": {
+        "file": "assets/hf-0006.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "28093cc525f5bd79d5d58376428334f34bfd35c76ea0584ab848606aeefaa6d0",
+        "source_sha256": "9dd43dbe26c018b4886209801ccdecb6332d38c502c41e94183ec5dd6e16cdfa"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0007": {
+      "id": "hf-0007",
+      "image": {
+        "file": "assets/hf-0007.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "650304a9b14007c2fa4039c4f5b84b752182e2474725b2d3b59ef0b341dd5979",
+        "source_sha256": "4b7bdd025293370e6fa368c4d9e437e22fc3ec0fe724017ef828bce5f2a9c582"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0008": {
+      "id": "hf-0008",
+      "image": {
+        "file": "assets/hf-0008.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "359e9dbb8d1ee64eff0bbc90f7eb51225e31a72952c25f8515c558ee08cae0f2",
+        "source_sha256": "25c29d1a4abe88f96e35f5cb7884bad7a33e5333226cb5ecbb24f9a9626da4ff"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0009": {
+      "id": "hf-0009",
+      "image": {
+        "file": "assets/hf-0009.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "434c3aa33f2f1c6e71067e229180655b087d19ec6ed9ae92cdb4e934591b7734",
+        "source_sha256": "8d22dabdbb9d6173deacb4a48864fec1aec30d38d25ba65a69ccd3c7efdcb1b7"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0010": {
+      "id": "hf-0010",
+      "image": {
+        "file": "assets/hf-0010.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "8c77b5eba3dc8fc14ca4e2a9a76408d740038f0fdf8397bb69467b07655d5d7b",
+        "source_sha256": "9709a2dedbaa6f7df4f0f8067e7ff75628e3c5fb00bb7b251ae793ecabf68d85"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0011": {
+      "id": "hf-0011",
+      "image": {
+        "file": "assets/hf-0011.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "d9dedcc815cf77e09946a4762f04b7c82ca1f26128823858d3c8b04170ea88df",
+        "source_sha256": "b4bef7bf4ac3c53d1a43ed4ecafc28d11246793e1f91199421f5aa9fff58260b"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0012": {
+      "id": "hf-0012",
+      "image": {
+        "file": "assets/hf-0012.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "78e0aa2064c63812463db5204202468c6744ddb63d23bcea6bee493bf3c9e54a",
+        "source_sha256": "7cf37df3995aa1a55c1a1c8bb98d5728491aa5c03e34f6cc5daf4a1b241de1e5"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0013": {
+      "id": "hf-0013",
+      "image": {
+        "file": "assets/hf-0013.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "869898b473283ead64f72e0c284a3efe0e3db314b64a7e0d9898cf3d343a8f05",
+        "source_sha256": "c5683596ea56f43fef49ced8e1e89557412cea012c05130ce4a105b7b3d2857e"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0014": {
+      "id": "hf-0014",
+      "image": {
+        "file": "assets/hf-0014.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "ad3b9d105a7ab73ae4876306224b8b684cf77a0a024e06524a907c3bb7eca919",
+        "source_sha256": "3e41f312e5b652d3cb5b0d3f56a6f126235f2089f85945a7873cc719621767f6"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0015": {
+      "id": "hf-0015",
+      "image": {
+        "file": "assets/hf-0015.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "ee0d92ef2a4790a7fd22de8ec4e198ef1677bea6353aa75e2420f09ccc791e07",
+        "source_sha256": "72dcf1476841c57f2da509ba47cf67c25231c43df45b71aa559f9a89f1bb7cb7"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0016": {
+      "id": "hf-0016",
+      "image": {
+        "file": "assets/hf-0016.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "f36e94061babd0a87532194ccd87972b4f6b771970cd97d997ecdd70be77bd50",
+        "source_sha256": "736f8e4675f81654214234bc38925946099f4bedc66f87ed519d0241ded33c11"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0017": {
+      "id": "hf-0017",
+      "image": {
+        "file": "assets/hf-0017.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "203bcb729dc24c04ad667ddd46c248c82693f9d857c39efa57cbb6c45ce1e0b8",
+        "source_sha256": "622f10a2ee8503312837725e2ec624e1c572657850a7399ea867b9dcff3e352c"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0018": {
+      "id": "hf-0018",
+      "image": {
+        "file": "assets/hf-0018.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "40e84662f7cae7854793c6af2e1fed5cff50d7b8c3acb5bddd196a48ec7e35ca",
+        "source_sha256": "416aa328ebfdcac41f6be7722bd0a16f472af6e289c617544a59144c3fda3920"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0019": {
+      "id": "hf-0019",
+      "image": {
+        "file": "assets/hf-0019.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "520ac810ebd823d95a24adf8f16bbbf05438ff9e9d0597a3b251f7b442e73f65",
+        "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0020": {
+      "id": "hf-0020",
+      "image": {
+        "file": "assets/hf-0020.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "1ac9333fb9878b23245fc53a6bb7a8ce858d1e8535f946685a6636b5c4c5bcfc",
+        "source_sha256": "7d15f8df2a0e7299a1815cc627ca0089a754af7465a320c1d506f7be46c99ddb"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0021": {
+      "id": "hf-0021",
+      "image": {
+        "file": "assets/hf-0021.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "607e2aa551a4d74c45e5d84455dbe4db0db98e586a6bbfacc77cbdb234299e42",
+        "source_sha256": "8cd6c2d558b64375f029924405c154bb4bbd239d0013af36311be1fbd8973b23"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0022": {
+      "id": "hf-0022",
+      "image": {
+        "file": "assets/hf-0022.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "0cb00acd8835cf2da6b2cc471e048a79e79cf61145ba56e4598536b47796d678",
+        "source_sha256": "cd4c09564783c368bf5036116409b39bb33a138584b763f944d83a153e507094"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0023": {
+      "id": "hf-0023",
+      "image": {
+        "file": "assets/hf-0023.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "8b0481df50993febf47ee4d93a18b217b2da14ad528a4aa79446f85f64bec617",
+        "source_sha256": "914878d2155612aefecdf534eeb374069ef1b365aa0a21f4bc27ce3136f77c89"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0024": {
+      "id": "hf-0024",
+      "image": {
+        "file": "assets/hf-0024.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "31a09fc23a156899b3ef1fbbb7a755bec52220a7b2adac4b0978fde9f10bd854",
+        "source_sha256": "f3d58707873a0008fad702439229f0a39e2e778109f9e55809755b9f50edc8d7"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0025": {
+      "id": "hf-0025",
+      "image": {
+        "file": "assets/hf-0025.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "e8d3c5ad05b2460c7a84bf6b714dca74a27eeec46db61998768e8585f6c87b14",
+        "source_sha256": "bd06991d9fa050e061d72023dc6f8cf0100ef8538247ee267387aba2342b2d12"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0026": {
+      "id": "hf-0026",
+      "image": {
+        "file": "assets/hf-0026.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "48b2830c346f20590649b435403305bff86bd2fdcb4357f743e374113eafbd5c",
+        "source_sha256": "f019d6e14d409066ed187b4d265dcc03e9e7f19cf7233747c0fb19e24960268e"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0027": {
+      "id": "hf-0027",
+      "image": {
+        "file": "assets/hf-0027.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "85df3033e1722710bd32f374bd2fc836fbda0459e420794ccf9a3ad3ed000f4b",
+        "source_sha256": "67e8fdebf13603cae725f8e16c0f02f92aa203c71c87874e33ce97638314fbf4"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0028": {
+      "id": "hf-0028",
+      "image": {
+        "file": "assets/hf-0028.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "a9adda6ea72e66f884ece236966708dc9998a507ea15c5523850e6878a698d75",
+        "source_sha256": "c6bde093941f83a63284f31f1399b1a581842d8e615f24e76d23084a89168854"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0029": {
+      "id": "hf-0029",
+      "image": {
+        "file": "assets/hf-0029.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "2549d3779e4488ee8f4384aa8ad787874981a65b5fdfc70a067fbf1af56003da",
+        "source_sha256": "09a28f6fb5b92797cfbdb67dcab4b7333074808033d233b1e1a6a977ed9ac299"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0030": {
+      "id": "hf-0030",
+      "image": {
+        "file": "assets/hf-0030.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "e56fe5033cd8c891b4723777c1c92102add5b08c0be79d7df27fb2b91a882a18",
+        "source_sha256": "07b59213403c78a3cd03a261f0f48bb3896faf01fb5c4e4f4e116527a37080e6"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0031": {
+      "id": "hf-0031",
+      "image": {
+        "file": "assets/hf-0031.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "c8ad986523716d266d46017442e865e66d4769d22a9bf1abc03b1cd4a4f45b82",
+        "source_sha256": "7dbcc16478c6dd73152930a9e98e3c40ff7ded9049dc5e01edc358e4ed61e511"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0032": {
+      "id": "hf-0032",
+      "image": {
+        "file": "assets/hf-0032.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "94597b3a8c640b33a880ee9b6c94f9f35c7ca8f520befbf7bfd0348ff7dc5c09",
+        "source_sha256": "97a196399291ec0319a5ca8e0ca39b74dbce75feffdb69b04b5b29f77d5fd946"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0033": {
+      "id": "hf-0033",
+      "image": {
+        "file": "assets/hf-0033.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "e822c2231b85019cf5a2554092351dd24875dfd1cb63c53458453bd92f7cf424",
+        "source_sha256": "7ad3e108a4e018a0ff7fca999ab6958b9deba54352e5882f8e7fe1010767616e"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0034": {
+      "id": "hf-0034",
+      "image": {
+        "file": "assets/hf-0034.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "4599b6e285c2d9f1735418429d543442d2d2a12a5c23be278075db11210561f5",
+        "source_sha256": "c870412cec4b083b867bc711ef3dceabb2293c54e178ba6f964899e226394161"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0035": {
+      "id": "hf-0035",
+      "image": {
+        "file": "assets/hf-0035.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "369cfea740858e94c7b2f233b263e28c97cbe771e770aa6d1ac67de5999dad9e",
+        "source_sha256": "faac0c09be0ff9d9fc30a32ed821dd00b7ea87e47214f2efdeb36a641681f847"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0036": {
+      "id": "hf-0036",
+      "image": {
+        "file": "assets/hf-0036.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "c2c5c1137c65131a771714e1837d0287c25341c176688e55eb82b5910e97cc13",
+        "source_sha256": "99f69036508965fbcef1aced2f415b65cddd1aede5f2f74339c7e0ee74d06ddf"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0037": {
+      "id": "hf-0037",
+      "image": {
+        "file": "assets/hf-0037.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "ee01d7ab3a1cc3d8e4e0f1b98dfb67d05b339e28c7449012e8c13dba655c1861",
+        "source_sha256": "7571288db047b5306890b04cc69ada4120da02a1ec93b77cf6458ef6d1f8e92e"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0038": {
+      "id": "hf-0038",
+      "image": {
+        "file": "assets/hf-0038.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "11401f7eea39ccd8219db190a0ef49548607fc1375e7c424cafd69715fb04c4d",
+        "source_sha256": "c3cd09a1084ec4bc05d8a50e082fb20237fc8cbb3f3da19e27b48434b86ea3cb"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0039": {
+      "id": "hf-0039",
+      "image": {
+        "file": "assets/hf-0039.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "fd13e045730d84894845e5b738f61e107124834f532ec596946959b741d37a30",
+        "source_sha256": "192a7b11fb00b0e33fed24dfdc3dffd65c257443ba51744466a09d649dbbb21b"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0040": {
+      "id": "hf-0040",
+      "image": {
+        "file": "assets/hf-0040.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "c0a9ee85e104b4bec2c8173dfe8b8db0d0f4cd8c5be7eae4773a02987a7bf1e9",
+        "source_sha256": "e6c76909607ec7e31209506d6aec2f0f322b901bc2c44a7817a0827d183fa28b"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0041": {
+      "id": "hf-0041",
+      "image": {
+        "file": "assets/hf-0041.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "370bc77ca7d97e2764d3a66cfc71a45fa290a14125b69bba66a74d8150a7d85d",
+        "source_sha256": "196c6cfc2457a6db667d4ce8b6fa7228f60eb16d1cf2f74043676183aa80b3b9"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0042": {
+      "id": "hf-0042",
+      "image": {
+        "file": "assets/hf-0042.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "66ec94ed345d6f855873682a0af74c319ce0248ebe9a3d6dec5e9b54b366504d",
+        "source_sha256": "496b01ffc8e9c292c29ae82b08fd160ebe1ace1a0eb0355386f6609e9ba3b5d9"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0043": {
+      "id": "hf-0043",
+      "image": {
+        "file": "assets/hf-0043.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "82bccde8cae3933fc5c122898656463a28c94cd5342920e0454e5e17359b91cc",
+        "source_sha256": "767a888cd2b44a8bd3433a27f6de9bebd6ef9e5ee6c508db1e1b2eae1d13457a"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0044": {
+      "id": "hf-0044",
+      "image": {
+        "file": "assets/hf-0044.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "247baba1517823319a1e79a9337baddb331a787bf7113306b1f964a084df7eec",
+        "source_sha256": "cfecb5b359cfdabb759821dbde2e294810ac3d5a3cffc8265faf554379958200"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0045": {
+      "id": "hf-0045",
+      "image": {
+        "file": "assets/hf-0045.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "796cc24e7537b57b44dc0c54aba9dec47200497be0e12b37ad4a50c854ca51af",
+        "source_sha256": "56d9d5038b5cec60927a9de79dd824980dab3e2d99c866991f9b9ba11ffcbb89"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0046": {
+      "id": "hf-0046",
+      "image": {
+        "file": "assets/hf-0046.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "cd14fd0a95021c1f56d43bfe9713d0bdb989cf8469774d095593bfc33f9c17c4",
+        "source_sha256": "f3f788573c33030df8afc99ae1911a41e6b9fb7314d462c1f6adb625e6fe6c19"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0047": {
+      "id": "hf-0047",
+      "image": {
+        "file": "assets/hf-0047.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "afa9b6c366c1b48ef877f13946b1aebd286706d5d718371037b1a089cc40121d",
+        "source_sha256": "54ec0e71b2b23a96140d1e76fd10910cb47b8f49a08c7c092339b08fcca85ea7"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0048": {
+      "id": "hf-0048",
+      "image": {
+        "file": "assets/hf-0048.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "3881b1f1d6f33acd3f14159431d828a6dbf378273166ff524e9f2ca914320a6e",
+        "source_sha256": "5a6f37a11824cc3fa122dd5197af418658a83eeba2d7c9a8ec7e8e9dc7e75d54"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0049": {
+      "id": "hf-0049",
+      "image": {
+        "file": "assets/hf-0049.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "31dc44d2978b53d8e4e2f72a5bcb32b029496d426ec5e747b40b9cbe1ecec466",
+        "source_sha256": "b10f2c2afa7775401f9d85495f6e02dff72c6dea9abb90aaeaa253fc02f1858c"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0050": {
+      "id": "hf-0050",
+      "image": {
+        "file": "assets/hf-0050.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "79546156983630e947180b66ff3686195c46e14603285d3b334c0ae99c0dbdde",
+        "source_sha256": "c1eae73ed22110f076da09249e0fc0f50d829e0ec443ef206f6791763be565d0"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0051": {
+      "id": "hf-0051",
+      "image": {
+        "file": "assets/hf-0051.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "0442a51f096baf0128871b65cf6007e57afe5047a66c0e9f1de648a84ebcf41d",
+        "source_sha256": "4709726fc05abc4ee6248c2181ad4f7d2f6a3d9c4095cec8f3c070abaddfe075"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0052": {
+      "id": "hf-0052",
+      "image": {
+        "file": "assets/hf-0052.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "93c4db94270db9455d59f31cf32ea1941a1c8529f5e851d1bfcfbcf7e5b3821c",
+        "source_sha256": "6216b341bc9bf3148c6e7503e8b0f0d226c5ce6d80212d7a7b9a559cb080fb12"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0053": {
+      "id": "hf-0053",
+      "image": {
+        "file": "assets/hf-0053.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "bafde542e579567434333814d20db958b4b66fc4cf903ca6881ddb161c310b51",
+        "source_sha256": "9a30a58c6884e5d55c048e857b05f41db3e7cc9422a85ff048baebff6524c6e9"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0054": {
+      "id": "hf-0054",
+      "image": {
+        "file": "assets/hf-0054.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "328693d05c4cf21cdab05e02963956fb14ec1e55113bb7048a6c3d33a46c6411",
+        "source_sha256": "6c917850326e4ed66354075b4279e0d6188da231e5493a07ee0b89247d246ff2"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0055": {
+      "id": "hf-0055",
+      "image": {
+        "file": "assets/hf-0055.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "aaa82281551570bd13dc500a61f69c03b8cb56a1fc3fb2a1d26018224ff1aaf9",
+        "source_sha256": "fc937d27b53f3c5304841d245561b9ae28891c0613894d556d4b7659b5e8143d"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0056": {
+      "id": "hf-0056",
+      "image": {
+        "file": "assets/hf-0056.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "ac546666927211fcf629cd9e89456a8a55ee07c93ddb6d32b61dc63a8cfe2286",
+        "source_sha256": "4691c150a1e5238daea713d469220c99675f47bf221518ce776ca65284911db9"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0057": {
+      "id": "hf-0057",
+      "image": {
+        "file": "assets/hf-0057.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "fd62f4449e98b1056220e31a68e75ebc69445944fdeef7b1d75f88f4d174e3c7",
+        "source_sha256": "8dc5bf0cbe57dc86d33aae5ba990321959b696c5fe74389ad110a543beff7249"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0058": {
+      "id": "hf-0058",
+      "image": {
+        "file": "assets/hf-0058.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "08f82f53ee81e8f38a8c55cc5952d1160e31041fdbde13fdf2cd036788b50bd0",
+        "source_sha256": "dae4a6e2af1e4318101e84b7fa996ce86bd7fbf19d04a1649b8402512a083d97"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0059": {
+      "id": "hf-0059",
+      "image": {
+        "file": "assets/hf-0059.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "f622c47334a387aa4341fd7881f7a2cb846fdd9d47d10584bb109802f628498a",
+        "source_sha256": "1b93d197bd9da45002638f36c8b21e21b39572b8c159734510b9e34251b56a7f"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0060": {
+      "id": "hf-0060",
+      "image": {
+        "file": "assets/hf-0060.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "0543f0a72253e8cbf091573ae18b3ba73b5295f6a22c7193b8a840870f424b91",
+        "source_sha256": "05fecd786e111b45a7c9ebe367217c35aca096d6c0e29033b7e8dee02104a3aa"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0061": {
+      "id": "hf-0061",
+      "image": {
+        "file": "assets/hf-0061.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "2c0337333fc964844e2c8c0d8b364bd99cbe418b24f2331544cf937657ce9b1d",
+        "source_sha256": "3df33b8b2d5f5c9b245ad6842e3f3a19adc131d1dcfe987464016566872da011"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0062": {
+      "id": "hf-0062",
+      "image": {
+        "file": "assets/hf-0062.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "24d0b4224f7a2bfa15f172fd537d653420dae4bd0a2a28d0eb22ec3a3a2057b6",
+        "source_sha256": "06b488602735d92fc275e10a7b6dec3d08aab99c4a69092cd68f1be812f8545c"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0063": {
+      "id": "hf-0063",
+      "image": {
+        "file": "assets/hf-0063.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "44fa8c25ad202a66f039990bbce74433ad7b667eaf9d2f0c6d1edbefa40430ba",
+        "source_sha256": "566a945d2fef3460197a4da496558163a21a7da2c1e134f2a96bb09921866dc9"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0064": {
+      "id": "hf-0064",
+      "image": {
+        "file": "assets/hf-0064.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "ecb86a139f97dba851d14b96185cdc3787da8921360efae298664a0ffe8beead",
+        "source_sha256": "3514e1793442aa1ab5030366375fc1a3ff819bf5ed9fefee320e718aec2c6a12"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0065": {
+      "id": "hf-0065",
+      "image": {
+        "file": "assets/hf-0065.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "fe5315252910c1b961fa2f3a04009942e99daf393435f9e615726be4fb7081b1",
+        "source_sha256": "d753470b6a22d328ce63d04adffab491cdf52d16ee24f84a27db9e4e7b9b34dc"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0066": {
+      "id": "hf-0066",
+      "image": {
+        "file": "assets/hf-0066.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "96eda1edf6b83e9ec819eb334aed50a454c7ac3b9bb0e38bb1447ccef4af82b1",
+        "source_sha256": "b42e3c04dc85ca3908de737285649bbbdd08d6f22838277617feb1d75bf601cc"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0067": {
+      "id": "hf-0067",
+      "image": {
+        "file": "assets/hf-0067.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "ef2c9073ca9b40d911d5005aa4e037e6a2560c99f0c71696a344fc46efdddc3b",
+        "source_sha256": "1ee3f727458d72c37ad912ad676156df77b74417dfb3c4bcdb50019151dcc4a3"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0068": {
+      "id": "hf-0068",
+      "image": {
+        "file": "assets/hf-0068.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "c60df20d8e0b06986583b5c723a8c4f0546a17666bb510dc765a22f160e8f44e",
+        "source_sha256": "e03b0bf0e015add4a81c7f110381434debf2c24d6225910c76a1f531b38bf98c"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0069": {
+      "id": "hf-0069",
+      "image": {
+        "file": "assets/hf-0069.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "798ec7f1227c5f7736ad6c6a883ba50ed5f7921cd7f4dde8c976aa1b6ab08960",
+        "source_sha256": "d649d733e8ba98e4dd969f7f52830aea0ce2a1b5fc1177c54993b10ead04b9d0"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0070": {
+      "id": "hf-0070",
+      "image": {
+        "file": "assets/hf-0070.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "e12a907ceb287eb778bc040324676f8778bebb6f51d16d3410af5ec36b768081",
+        "source_sha256": "2942b0b9e35013d1a5e3972a62a0fc4e9be043b38c597dad4a6fca06eaf61bb6"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0071": {
+      "id": "hf-0071",
+      "image": {
+        "file": "assets/hf-0071.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "2aad8cee57cd135ededfb81f38c55eb27a14cce70eafffc46cb77665924142aa",
+        "source_sha256": "940741c3bd1bf502ffa22874539c7e7f43dfaea2ff75ceac986113cbb2a59205"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0072": {
+      "id": "hf-0072",
+      "image": {
+        "file": "assets/hf-0072.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "1e98c508d13a0ed26b1bbb83232b4e792a5c5c28f9990a2820a6e3eba404330c",
+        "source_sha256": "d4919a4a9e52d09e679982680289d836be3e48ca4d4b0a60e0b8d19667718372"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0073": {
+      "id": "hf-0073",
+      "image": {
+        "file": "assets/hf-0073.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "9f789cbca6eca7000901c80c4113493b2a5ffd1844fadd43b5473d5a2cd0ea8e",
+        "source_sha256": "e66e120a43325ae34628c4948bf19757eb8bcb8aab48dbba3f68fe0a62f2afc3"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0074": {
+      "id": "hf-0074",
+      "image": {
+        "file": "assets/hf-0074.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "9cff04c397a13c988cf80d475e483bef8eb10e5b88ac69976b1aa32ab272d956",
+        "source_sha256": "62892940ee1b37063ac4aa0ff4fe2d64960aac58e77c198c9bc3a6dcc1af8f18"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0075": {
+      "id": "hf-0075",
+      "image": {
+        "file": "assets/hf-0075.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "f0d0e32cb1f12b298cd3ac83382ace9f8b18b4b4919989e3f04b2f3b9c8d8e0b",
+        "source_sha256": "2ac4992b776043037a1659710d5218d6ff7f89ecd757df0eca1379f35ec2f97c"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0076": {
+      "id": "hf-0076",
+      "image": {
+        "file": "assets/hf-0076.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "9ed505a1e199524dc378a1497c64d66945419e16880c141f6efe8124fd4b9514",
+        "source_sha256": "c79c813b181df8f19497f36666047eb2ed51f6bf4bd24192df67a229b054efc7"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0077": {
+      "id": "hf-0077",
+      "image": {
+        "file": "assets/hf-0077.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "c6343a83010c78fddbe97818bfa33723e93986775122aa0bdb7d26f376e6dd7e",
+        "source_sha256": "34c530923deb9fc70859e0b72295743add30b055cee6f98c1195eaa28376361b"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0078": {
+      "id": "hf-0078",
+      "image": {
+        "file": "assets/hf-0078.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "a25ebb9ab988acc58330d2653e4acd17712110fd0e5ef41289d9a0edf66bf697",
+        "source_sha256": "3357c6172d8f210fc2b36217bf788afdeaf7b144bb3e7a5322a36edc4c8908b2"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0079": {
+      "id": "hf-0079",
+      "image": {
+        "file": "assets/hf-0079.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "130f7bf55b60d92b05a6853f7b78fc7e4d060b8ca5b9d7035c1e60ecb842e90f",
+        "source_sha256": "59cf2343ed01f8a5b6a78acd6124540ac7a68ceb081a2a01ceb34cb3ac713e48"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0080": {
+      "id": "hf-0080",
+      "image": {
+        "file": "assets/hf-0080.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "4a938c27badb909da8b73eaa98de5dc2faf2d8a0d2baf9759f5f1aa9178c401d",
+        "source_sha256": "80dbb4ac1cc8e9fc31846356e233ed57e16a8ccb311f7c4882cb5bdd5939b53a"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0081": {
+      "id": "hf-0081",
+      "image": {
+        "file": "assets/hf-0081.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "e20787f35b2d4732b89becc248f2f1848197df8f9204df1327b7d16561e1cbfc",
+        "source_sha256": "259862374eee4c11cc4e5fbcb5027c90a8974081fd5e6312b6013e335b61c7c2"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0082": {
+      "id": "hf-0082",
+      "image": {
+        "file": "assets/hf-0082.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "fc8ef5dc543c9b058168a4813fb32740fb6e09e968e0948984188fbdf6245cfa",
+        "source_sha256": "eae7716dcd4e9a9d1cb093f6e50d2719e41d58658dc809300a5c12dde78fab04"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0083": {
+      "id": "hf-0083",
+      "image": {
+        "file": "assets/hf-0083.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "93020069ec841ad2e9b9bfb99a9093b1d9e2cdf04c950bdeea88df957701b8fa",
+        "source_sha256": "4a1f65c59eac3eb55b8ac9615550c14e33afed3f2147f2b9b3a7bdeffbcdd786"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0084": {
+      "id": "hf-0084",
+      "image": {
+        "file": "assets/hf-0084.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "7eda8709007255cf07f13e75a9737cb728086304591b6da84fdc35a310ece3d0",
+        "source_sha256": "6fa4406fdf4140fc90045963f75e48da9cb8ad34ef63e229156fddebec148991"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0085": {
+      "id": "hf-0085",
+      "image": {
+        "file": "assets/hf-0085.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "27ddc5a556a45933d4d9b4645591afa319dc89685270f1d1128d454aa9c04105",
+        "source_sha256": "4411060edbdf9051795f633c2325e5be48374abe3427e652dce01dc1010fb9e2"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0086": {
+      "id": "hf-0086",
+      "image": {
+        "file": "assets/hf-0086.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "363baf3e50138b0a1eb1ccd42198b789ec6342fe8bb1f675da199a8000c8a7d2",
+        "source_sha256": "309ed8416a052f231fbc938c82357011fd06852882aca767219f220f52e873f7"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0087": {
+      "id": "hf-0087",
+      "image": {
+        "file": "assets/hf-0087.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "8b51e154a2e24308f72fc8096e4b6aae6fe10863dc78bd70c75d6f5744b914af",
+        "source_sha256": "fb46a7aebad926ebd90106e5192c172a1c07e82f8759b4490396cf44b0b791da"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0088": {
+      "id": "hf-0088",
+      "image": {
+        "file": "assets/hf-0088.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "d5155d50872bfbd09723e6c030b643257da8e22a8d552ddf8bbda41f696a4fbc",
+        "source_sha256": "cb68718f6e202c59ce5998cb1b678a3d11cbac92665258c734b9a18580ee1588"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0089": {
+      "id": "hf-0089",
+      "image": {
+        "file": "assets/hf-0089.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "a5be86046d103fbe2a499f7e10caef115fb39f1f0aa12b4cc61698398d7d86f3",
+        "source_sha256": "39eac9a61c87debf5d74529a71d7aefdadb4960bdf295a32623c1ac006c38a87"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0090": {
+      "id": "hf-0090",
+      "image": {
+        "file": "assets/hf-0090.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "db0e246ee4b09a0d1ad1658f8a125d6fa8f1d1522146c60ae68ac6ec99971ed1",
+        "source_sha256": "e909386945fb0cc8008cf1ec788cbf4215900738ba4f59fb277c5e1147c36c74"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0091": {
+      "id": "hf-0091",
+      "image": {
+        "file": "assets/hf-0091.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "d32e53e5dfe00aa2ca8097b153d2351a5f7353eb9855aa96080782bbdd11248c",
+        "source_sha256": "ee3c340cf245927f0ce01e9ff64c04a4f4d6086236494ec9e5a8c2d883f0d293"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0092": {
+      "id": "hf-0092",
+      "image": {
+        "file": "assets/hf-0092.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "ca34a77f6b55d3c79f217ef2f69326931efcefc38cccf4ed510f234d6845a862",
+        "source_sha256": "2b9ac2ac528c25cab193f6a5fa0af7a49f40596c370e9992f4c3f49e88974c6c"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0093": {
+      "id": "hf-0093",
+      "image": {
+        "file": "assets/hf-0093.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "5e24dc02b990320c1136df73842068edd887619cfd5130731c15f9a980eb3172",
+        "source_sha256": "f049a60e5cac7cf98beed5bfe805bf9a3fa33df03ac493f98cf8254d907f0f3c"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0094": {
+      "id": "hf-0094",
+      "image": {
+        "file": "assets/hf-0094.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "6475b5e89bbf53021babdc9c8a9b0e292aa3245102821d64814ba5973d8464d8",
+        "source_sha256": "1e666a9dca0a305e188c3fd720c90d430e4db4c81939c5a75a1d4f276976273b"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0095": {
+      "id": "hf-0095",
+      "image": {
+        "file": "assets/hf-0095.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "af44f98ac1588ff1dee70f1daec533a3f5183c1c51d781f931944e44724e5c52",
+        "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0096": {
+      "id": "hf-0096",
+      "image": {
+        "file": "assets/hf-0096.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "b878aebbd04e0eca180014c7e549d1d3e888a6db977a8e06e76d09fcfa176b01",
+        "source_sha256": "71615e31bd88169285adff3aa7b5eb640986600e27f8ef1167934f0d5849f4de"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0097": {
+      "id": "hf-0097",
+      "image": {
+        "file": "assets/hf-0097.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "1ad28082228d5d450621368cc569cddebf5a25b3bc729fa2a035b0a8b5899b89",
+        "source_sha256": "bf67609874512babededb9b8bdea6a1b7f3535c451307d2f9bb125efd19b32ea"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0098": {
+      "id": "hf-0098",
+      "image": {
+        "file": "assets/hf-0098.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "6efdc16eea7cee34a0faaf824caa8dee5b22b9c27f33c73b40b596c6b468f8a5",
+        "source_sha256": "b5fef76ebfc2736b22514ad78d974b00de1d31f7a80e7fa203fda2b1cf4c9bd0"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0099": {
+      "id": "hf-0099",
+      "image": {
+        "file": "assets/hf-0099.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "e7f1fb0befa09dbb4691e1fd8b3e3160f75e4959a295d90f5d270e404c386264",
+        "source_sha256": "08ac9f6f7c4c3535e58d4b1adcca6df6bd5d828bcb354db5f3d46d4dcdd6af49"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0100": {
+      "id": "hf-0100",
+      "image": {
+        "file": "assets/hf-0100.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "ac11887a9d698924501b7fd5555c76c5dd33ccb93dd9a252b3411156a9a53bda",
+        "source_sha256": "dcda1cdbced5ba3765af5ba066b7e10b574e8b34be2aa462ca3f836e6c209842"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0101": {
+      "id": "hf-0101",
+      "image": {
+        "file": "assets/hf-0101.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "c7e9b7dd010edde51e3b2b89266796dff1cf589903fe77d948251a83ee91dfba",
+        "source_sha256": "6bb8a40ea7bb3d4b3dee46684399fe438fbb0f5226c60693974ea4196b55c9c5"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0102": {
+      "id": "hf-0102",
+      "image": {
+        "file": "assets/hf-0102.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "16e2abe459baf974e9e1b58b8412c3068533226273fea8fdcddb5a3683830e31",
+        "source_sha256": "8c120ff66b63fffe69156a2ae4f31ea5ac21a3d392401b97fb61a3f3087ef041"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0103": {
+      "id": "hf-0103",
+      "image": {
+        "file": "assets/hf-0103.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "c400fd38851def99ff3a42c6a7bd1d5e5fa5b25f85f4d278e0c7296407fdffae",
+        "source_sha256": "a7a600f3b7bb6a3312a83435856380adf6f396308eddfd6624b32f5275cd7526"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0104": {
+      "id": "hf-0104",
+      "image": {
+        "file": "assets/hf-0104.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "6de3c5307b627ab8b1537812dd3833ab94e53eca01e8648014f2b34cddd9a445",
+        "source_sha256": "523341f9cf4e5cc42f40d69f9e88ae905a4a9f227afe9d8afd59fc1fdf32b74c"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0105": {
+      "id": "hf-0105",
+      "image": {
+        "file": "assets/hf-0105.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "684768eea23324aa4819cded3a7e47ae354b2c5156b982a1c82fa38701892ed4",
+        "source_sha256": "ba51ebfeef3dd00608eacae9b67df23594cc328b72e874a2bd0664029be28194"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0106": {
+      "id": "hf-0106",
+      "image": {
+        "file": "assets/hf-0106.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "2d51303b8c52223d90346c6bddd0dd711e2349a4323492296cad5dfc4e816066",
+        "source_sha256": "ca1220c4afb6f50cfd44301a8a5d99faa87eff21ddf62bec247b0d9a6047f60e"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0107": {
+      "id": "hf-0107",
+      "image": {
+        "file": "assets/hf-0107.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "b63e1154cdf4ca8f28fd8871e60de11c9aed012ebd53c650110e8a42bd7f90b5",
+        "source_sha256": "457d0b271738477aa3f56bf72129cc693f3e1657eb32332f7e10a50e32f003ea"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0108": {
+      "id": "hf-0108",
+      "image": {
+        "file": "assets/hf-0108.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "434fa9302059fa3055d85e1fd8109e8d5413907e7b3b4b2ed273e6422ff1c64d",
+        "source_sha256": "0b4e2ee564fc35fbb08e6da2cabc800ebf582f34e414b98c9b22e3a00923b7ff"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0109": {
+      "id": "hf-0109",
+      "image": {
+        "file": "assets/hf-0109.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "36f6f43a3ec397a20ee7c244b7a4c52562b9460455bae8b81c4eb4f5e5a56fef",
+        "source_sha256": "b8ee35672b9e21c476b5bb60c6058c51e7e93738388fded27ce7c4c0c2d48252"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0110": {
+      "id": "hf-0110",
+      "image": {
+        "file": "assets/hf-0110.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "29b7c98733ff433f28479b04474f8c82377a838a78338c53c3bef31476d6d61e",
+        "source_sha256": "304bc3d4077b6543da2918de786aa5654afd03ec0046a378237f8ad6f091d5d8"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0111": {
+      "id": "hf-0111",
+      "image": {
+        "file": "assets/hf-0111.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "2a50ff72e28aae66ec798b796081915da05963192e81fe9968b99a09c95cd891",
+        "source_sha256": "cb6eb15da95a065f22810329a0b8e7c3212fbfa136c07825259c28a80f3736de"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0112": {
+      "id": "hf-0112",
+      "image": {
+        "file": "assets/hf-0112.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "218543f50f3c4348c917c40a09af0419213ebd4a8182310dcabca2143c22cd26",
+        "source_sha256": "450bba379b787893122c923fc1ac2ae4eed2499c3ca17bd986fa2c75d58eee86"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0113": {
+      "id": "hf-0113",
+      "image": {
+        "file": "assets/hf-0113.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "a39d263c7455698bd857e7a34a509583e2fc82c2dd4579cb76a98d99c7624f36",
+        "source_sha256": "560dca2789b856edb6c2e259db3ac51ba0466fbd19954709bcfe41b4121985e6"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0114": {
+      "id": "hf-0114",
+      "image": {
+        "file": "assets/hf-0114.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "cff2c473f9d51d045564cbdebf6865787f29dd85c305cfade0b45caccd10ecf1",
+        "source_sha256": "85391a69bb16107cb472cfe668801132e6b92881329e34a1584866d95d7410a2"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0115": {
+      "id": "hf-0115",
+      "image": {
+        "file": "assets/hf-0115.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "6fa82a63d17b161480151b339665fc7a932ea8146054fba13dba65002c3e7eb9",
+        "source_sha256": "6e31ddef314173a0d9d28fdc33d4bbaa122dc3b0c211382b3f43fc6e1875cb29"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0116": {
+      "id": "hf-0116",
+      "image": {
+        "file": "assets/hf-0116.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "52c042ea71274fb77488dee7e60a69fd0a664c51ee8cf8a0a93523e030fdb358",
+        "source_sha256": "e43ccd7d7bb630cd23379c4566bcf93a32fd9879442d19a60890e2b538277f01"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0117": {
+      "id": "hf-0117",
+      "image": {
+        "file": "assets/hf-0117.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "e2339ea04792507d0e9713d42052e073698fc9eb319f37453401e17e96b1f47a",
+        "source_sha256": "be519efb725a7687763e9ed3d9663193885463c9b91ab4a6142af27d17f5e1b1"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0118": {
+      "id": "hf-0118",
+      "image": {
+        "file": "assets/hf-0118.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "021a769c6dde313d613ba4c6a2599caf10e25816949ecc1c3dc7055650a3e434",
+        "source_sha256": "930ac5302c230045b00a7e03607cfa95646bb3e0e5c10ee47dc762ccd96b8596"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0119": {
+      "id": "hf-0119",
+      "image": {
+        "file": "assets/hf-0119.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "d280e64e725e76f61dc0663bcd373ea9b4baf26cf4cf372de4017337aa08ce96",
+        "source_sha256": "2b8cfe9a8347384836756dd21faf1882ce1ed370d3420cb33682aee0bfa6c248"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0120": {
+      "id": "hf-0120",
+      "image": {
+        "file": "assets/hf-0120.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "8916dcc3d8eaf6ce73e8999b9dbd6be2585f86569aaca3fc5acb0a8de60ea4f8",
+        "source_sha256": "7d0de070002a84b7a1154cbcaf39b88065d881e50e4bce14f713069a0366889a"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0121": {
+      "id": "hf-0121",
+      "image": {
+        "file": "assets/hf-0121.webp",
+        "source_width": 3024,
+        "source_height": 4032,
+        "asset_sha256": "af191410c0969923729a01f9284479676b852e6853aa08b4338afd61064ae6b9",
+        "source_sha256": "34b04d441e4e8bea7728dc5c22ce4bac879a97a5fe3abb769dbd915b73f25e33"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0122": {
+      "id": "hf-0122",
+      "image": {
+        "file": "assets/hf-0122.webp",
+        "source_width": 3757,
+        "source_height": 2531,
+        "asset_sha256": "10bda2c43f08438a14ef8886738f1aa66f10503fe8f24007ef01c1925d4f66a7",
+        "source_sha256": "ee438ee01f076a4a4077c7f52325bef28071675ffd1c794831f23588e9f65891"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0123": {
+      "id": "hf-0123",
+      "image": {
+        "file": "assets/hf-0123.webp",
+        "source_width": 2676,
+        "source_height": 3372,
+        "asset_sha256": "51691e3d449fe14122a4c94c649e72fb52f1340f5438ae136615912c0ae35f23",
+        "source_sha256": "f9778287a96e282cf8733a32147036704872ecb0233605ecc5f90d37fd808bd3"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0124": {
+      "id": "hf-0124",
+      "image": {
+        "file": "assets/hf-0124.webp",
+        "source_width": 2674,
+        "source_height": 3449,
+        "asset_sha256": "3fca9b4ab6ac1f35af0e256accc9dd968084e56ba85fe188d02a58170a44767e",
+        "source_sha256": "f59b1ba62b15c22d1806d731fc8a7bcf9f733c528dfbbc0b1806da6ede954a91"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0125": {
+      "id": "hf-0125",
+      "image": {
+        "file": "assets/hf-0125.webp",
+        "source_width": 2690,
+        "source_height": 3444,
+        "asset_sha256": "0a634fe282dc0de3608d4b7dedf1d6e691fad62365f4645935610922a19d4645",
+        "source_sha256": "e2438b260f22ff226948d4bba5bb37cb6e18eba6a6146aa7a0f62da9987a74d8"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0126": {
+      "id": "hf-0126",
+      "image": {
+        "file": "assets/hf-0126.webp",
+        "source_width": 2688,
+        "source_height": 3403,
+        "asset_sha256": "f72dd117d750df5a0e56dfeace9e0bdaacd77a7a75b706894b3f201a121f9182",
+        "source_sha256": "6ff00c674ba8700adb7ad151075cfa3994219dfb88118013846c82a2624bb0be"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0127": {
+      "id": "hf-0127",
+      "image": {
+        "file": "assets/hf-0127.webp",
+        "source_width": 3120,
+        "source_height": 2673,
+        "asset_sha256": "a29122fbf710cd76a68af7d3f0dd03b665160ac585e87907780bcb709233f905",
+        "source_sha256": "4d9794be3faed1cd9a3a33f5694ca393357ca5938c4e865d3bb32dcf59a74a66"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0128": {
+      "id": "hf-0128",
+      "image": {
+        "file": "assets/hf-0128.webp",
+        "source_width": 2646,
+        "source_height": 3108,
+        "asset_sha256": "afa5365bc7c9f0297a34ce832af6d75a312def5da76982aadc2f84ed5146f584",
+        "source_sha256": "3c5ea64cb3de14ca20ffc164b5fb304add9f35d4cc074876c3132e9e3630aa1d"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0129": {
+      "id": "hf-0129",
+      "image": {
+        "file": "assets/hf-0129.webp",
+        "source_width": 2422,
+        "source_height": 3047,
+        "asset_sha256": "05f3fbbd48f64a44dc37b6ac00c644587ffca4b1e5c9f4a7dd2837ab2d44e085",
+        "source_sha256": "6149a437ceb94d501413ab3da78018408f325cd8cbad3757822069a33d574ba7"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0130": {
+      "id": "hf-0130",
+      "image": {
+        "file": "assets/hf-0130.webp",
+        "source_width": 3570,
+        "source_height": 2640,
+        "asset_sha256": "c4b8933b7c86fbc3eb30fccdd2cb975d3b0830788db318bf124cd0f9a6488d9c",
+        "source_sha256": "880c67cf3491939136ce4dd1d6118e91eb8cdc1fd47a751903a60c9b84411b06"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0131": {
+      "id": "hf-0131",
+      "image": {
+        "file": "assets/hf-0131.webp",
+        "source_width": 3690,
+        "source_height": 2640,
+        "asset_sha256": "485ee88a30f57165b9dfdc490bc1f627da832b8a97de88f1472b090944017cd6",
+        "source_sha256": "ab907492c111a0d1e16c71ea795d4c43144655d8afd03b2f93292c9279c5adc6"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0132": {
+      "id": "hf-0132",
+      "image": {
+        "file": "assets/hf-0132.webp",
+        "source_width": 2524,
+        "source_height": 3645,
+        "asset_sha256": "b795eff03ec0a9829b169b4737ef7813eba65c901f5c2bc3a55536a3cfd50db1",
+        "source_sha256": "d7da93b7fa8d57e1d61c0005b46206aa76cb0e954e78130723fe07ba1157ddd2"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0133": {
+      "id": "hf-0133",
+      "image": {
+        "file": "assets/hf-0133.webp",
+        "source_width": 2462,
+        "source_height": 3425,
+        "asset_sha256": "a3b0eb17f9c9f77a9aedc2e5feca49cdb3701d76e438c95f53e2bfbf70bb6f3f",
+        "source_sha256": "fbf8395ce2fd88e57a48fe350fc8c0473f6d85729009e93d11549efd4a7e52c5"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0134": {
+      "id": "hf-0134",
+      "image": {
+        "file": "assets/hf-0134.webp",
+        "source_width": 3627,
+        "source_height": 2606,
+        "asset_sha256": "59f55b7f1aa5eb0f5c36a7ce8e8e055b72ae5e5147f9b07437ebb07d5b0f331a",
+        "source_sha256": "4a7d516cc55b6175db590963c4168bf227f00a197644aca19ea504f0083dc937"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0135": {
+      "id": "hf-0135",
+      "image": {
+        "file": "assets/hf-0135.webp",
+        "source_width": 3556,
+        "source_height": 2517,
+        "asset_sha256": "5bd284d823fd7e2b78e8282551c59158d25eabd5d267b46ec629001403cca776",
+        "source_sha256": "05d65a715a8049199fdbb851dbc23db813b2a38a267793ce8d40c6a63227232f"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0136": {
+      "id": "hf-0136",
+      "image": {
+        "file": "assets/hf-0136.webp",
+        "source_width": 2709,
+        "source_height": 3154,
+        "asset_sha256": "64e868ea93e0ca8817a7ea433e9add2b0a90fd68874715d2d8e3c59198eefaab",
+        "source_sha256": "e6c0b1734875f7427c1282be2f72945acfe4108c9565580b335520c4e4f4484d"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0137": {
+      "id": "hf-0137",
+      "image": {
+        "file": "assets/hf-0137.webp",
+        "source_width": 2573,
+        "source_height": 3449,
+        "asset_sha256": "ac42cfee67bbcc0b990d85963f8b8f429c1f6de193f6258b48a8dfa89e65a466",
+        "source_sha256": "5c5486a708c2cd1e06025cddfbdae7dbde4a837cda823f1f87c1a0e8e12f9dc3"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0138": {
+      "id": "hf-0138",
+      "image": {
+        "file": "assets/hf-0138.webp",
+        "source_width": 2469,
+        "source_height": 3068,
+        "asset_sha256": "c131bb7208415a09a733b3163719bc2b392df697861aca109d4f9a3b376fb44b",
+        "source_sha256": "8a44256a4374985b08d175f46314f514d817fdf279d403f85bf3718969e9016c"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0139": {
+      "id": "hf-0139",
+      "image": {
+        "file": "assets/hf-0139.webp",
+        "source_width": 2532,
+        "source_height": 3398,
+        "asset_sha256": "c8cd0b96580753b83a00480d002d460c98fdeaea080d8135b211de3a0a0aa1ed",
+        "source_sha256": "97dfd4cd7c4d368edb323542595e5739ca70a86c206184a72448d7e734ae5f23"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0140": {
+      "id": "hf-0140",
+      "image": {
+        "file": "assets/hf-0140.webp",
+        "source_width": 2593,
+        "source_height": 3414,
+        "asset_sha256": "93b9e11d35c222c4b83cd9c75abab20ef3f2786ef3818a697be6765258c1ce4f",
+        "source_sha256": "5e0f91d4b2f18fb7f70afdcb409fec401f214764d10b870517269d7ab745dea1"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0141": {
+      "id": "hf-0141",
+      "image": {
+        "file": "assets/hf-0141.webp",
+        "source_width": 2499,
+        "source_height": 3310,
+        "asset_sha256": "b53f2e6313caae002e2db1403d085047d97b1e770ec50433309786e9bd3267ba",
+        "source_sha256": "07afa848e962e92b5b3a6de59142f56ac6146e28971d65878095703ffbb989d6"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0142": {
+      "id": "hf-0142",
+      "image": {
+        "file": "assets/hf-0142.webp",
+        "source_width": 2566,
+        "source_height": 3180,
+        "asset_sha256": "0d298ed5816a55a0b4e3b85e06b0e4130af1ef6cd2dca0fdd44faeb4a32d77c6",
+        "source_sha256": "aead697faa28ced77c810f2c92e26534d0d42fc41b10541e815206a3c7d1e2fc"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0143": {
+      "id": "hf-0143",
+      "image": {
+        "file": "assets/hf-0143.webp",
+        "source_width": 2535,
+        "source_height": 2157,
+        "asset_sha256": "0a2a82afa77081e48d30172f8caa22c5dfd729795d0c8ad7d67c83d0dee23f5e",
+        "source_sha256": "46d040e1a071a493d58365bfca163f6f162616b8bdd697a595328889224dc94b"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0144": {
+      "id": "hf-0144",
+      "image": {
+        "file": "assets/hf-0144.webp",
+        "source_width": 2585,
+        "source_height": 3299,
+        "asset_sha256": "cf9bd02816080c9f27f36cc1c27ae494bcfb2a2a6aa2a760de45e9778c96fc9f",
+        "source_sha256": "d3e284a3245f5bd35bbd7bcabbdf87b33b881d6f86e0d2b79d039466173d2e47"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0145": {
+      "id": "hf-0145",
+      "image": {
+        "file": "assets/hf-0145.webp",
+        "source_width": 2539,
+        "source_height": 3327,
+        "asset_sha256": "3d778139cadbf9f50f28685bec31672ae81e97afbc21cd4de94efdc617ca6f60",
+        "source_sha256": "5e7a311128506d67cd5ecd21aca6020fbe350a2f856031ded46cd8a09e70c9b3"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0146": {
+      "id": "hf-0146",
+      "image": {
+        "file": "assets/hf-0146.webp",
+        "source_width": 2584,
+        "source_height": 3139,
+        "asset_sha256": "39000ed64c69681ede92ce859c545ada4299c0b415678ebbe93b01588e87d963",
+        "source_sha256": "4eb461ab8bb26b7a57e6c7173f47953b10ce3831405ed0858c9e0d7541a86889"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0147": {
+      "id": "hf-0147",
+      "image": {
+        "file": "assets/hf-0147.webp",
+        "source_width": 2636,
+        "source_height": 3219,
+        "asset_sha256": "dc5a0c99d74f20be5922dad5ac27ef2f34cb4c1d8a9213de2abecc2864b48ede",
+        "source_sha256": "24c4be11019e2adca32ca9c5319a3cfd9911726c8d892317048b5d3ad7203d69"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0148": {
+      "id": "hf-0148",
+      "image": {
+        "file": "assets/hf-0148.webp",
+        "source_width": 2543,
+        "source_height": 2701,
+        "asset_sha256": "99b1ad2690be426db45818c915a2520d1fc9cc3a0521e0098abed2b41e55066b",
+        "source_sha256": "16124d25adbf45c1e711ead9271ec9639801de7b7ebbdd667567b41deb194bd6"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0149": {
+      "id": "hf-0149",
+      "image": {
+        "file": "assets/hf-0149.webp",
+        "source_width": 2601,
+        "source_height": 2754,
+        "asset_sha256": "e906368e1e3dba6b0a57136aafdf6db36b2026fc6e3ebe399b401fab8f9db4aa",
+        "source_sha256": "967d77f54bd82d6cbc36df3c63aa3b97b2b1a8456f5b4700bea6d5408f839906"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0150": {
+      "id": "hf-0150",
+      "image": {
+        "file": "assets/hf-0150.webp",
+        "source_width": 2733,
+        "source_height": 2997,
+        "asset_sha256": "d7473029cd04af2bee7802133fd104d3816e4b0a59a089d97ba7f5ca655a1bff",
+        "source_sha256": "9f5240fa6732a51c0ec750869aadbf7104e1e556d4e52b7e76579d2869d134c4"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0151": {
+      "id": "hf-0151",
+      "image": {
+        "file": "assets/hf-0151.webp",
+        "source_width": 2491,
+        "source_height": 3269,
+        "asset_sha256": "6c7c21b46ff969c290d7daa33f6903ac516973a9c622fcf40edd8939af212a65",
+        "source_sha256": "3275f946a606285826ff62be88740aa6769cab88dabed102e4eb937f43453a6b"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0152": {
+      "id": "hf-0152",
+      "image": {
+        "file": "assets/hf-0152.webp",
+        "source_width": 2405,
+        "source_height": 3300,
+        "asset_sha256": "a5f848cad08a7d6174dad5685c29bd0262a2bb31fd1467a4d5d6b95cf0e9ad68",
+        "source_sha256": "f5598115b66947a5ddc8bf27c0c8e45f0cb0993ed5df5cb3936ec63674c60064"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0153": {
+      "id": "hf-0153",
+      "image": {
+        "file": "assets/hf-0153.webp",
+        "source_width": 2543,
+        "source_height": 3276,
+        "asset_sha256": "76cdfbb1319088f6cba400478dc79b5ac812db9e7b7d43c6e23137e29d33740b",
+        "source_sha256": "60ac514a933828c004936dce94b330b680b9e56fd5cc604074c6849de7d82c9d"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0154": {
+      "id": "hf-0154",
+      "image": {
+        "file": "assets/hf-0154.webp",
+        "source_width": 2474,
+        "source_height": 3400,
+        "asset_sha256": "3f602bae155c40588552f42f38bb7ff0bf5997fe811d4c95f39ecaf664f58767",
+        "source_sha256": "63d14353cefb40d84691518e4a9f8cdc5fef03a78ea74d2055363330a8afc9af"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0155": {
+      "id": "hf-0155",
+      "image": {
+        "file": "assets/hf-0155.webp",
+        "source_width": 2522,
+        "source_height": 2849,
+        "asset_sha256": "165e060e9ab995756f21691124329fd5e3301486cb4be82f38a76560683c7512",
+        "source_sha256": "2c0ba1ddad3c7040ec165c0ff79d8fd77dff860fa44d36a10d552e9ddfabf466"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0156": {
+      "id": "hf-0156",
+      "image": {
+        "file": "assets/hf-0156.webp",
+        "source_width": 2491,
+        "source_height": 3279,
+        "asset_sha256": "5eafe24a243a22b090907b2d38161cfaf7281357654d82fa02cc14a9ddcf6baa",
+        "source_sha256": "670ce256df9825f03be7c10ea7ec25625d50b9dfbfecf8e8a9121062a3371b8d"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0157": {
+      "id": "hf-0157",
+      "image": {
+        "file": "assets/hf-0157.webp",
+        "source_width": 2435,
+        "source_height": 3387,
+        "asset_sha256": "cf56a77508e02275661839245f967002b831cf2237aa485e6e825e29771e0a34",
+        "source_sha256": "349ea80334c0190975146b242634d0646f504fd163c16e257d3ee93a3a7d9a61"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0158": {
+      "id": "hf-0158",
+      "image": {
+        "file": "assets/hf-0158.webp",
+        "source_width": 2391,
+        "source_height": 3281,
+        "asset_sha256": "53bd51e0e965e80e6580c232a3d2a7fcecf7f38b32891da04bc987f8b76a0edc",
+        "source_sha256": "8a636ec5dd2a3e716a6544fc5c2caa0d6243964b117ba146cd0fb75c8319bec8"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0159": {
+      "id": "hf-0159",
+      "image": {
+        "file": "assets/hf-0159.webp",
+        "source_width": 2484,
+        "source_height": 3291,
+        "asset_sha256": "6881745cf1502a18cc5d6613ffd3b5bc6f2b82fc3307676af20a35f4c2b4fd86",
+        "source_sha256": "75da405756b177e195740dd8b6317117fe0e213a07b4d3ec66e901257cf62845"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0160": {
+      "id": "hf-0160",
+      "image": {
+        "file": "assets/hf-0160.webp",
+        "source_width": 2638,
+        "source_height": 2916,
+        "asset_sha256": "52c8d9626a9cde3ef757d92e96b5d71c5ac1394f82c985053db716234fe7ea02",
+        "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0161": {
+      "id": "hf-0161",
+      "image": {
+        "file": "assets/hf-0161.webp",
+        "source_width": 2665,
+        "source_height": 3459,
+        "asset_sha256": "69c5fc7648178f408e6fbce4c40d404fea095b3622f8fea695a43bf4d03bcbcd",
+        "source_sha256": "437acd04a82739a1c6da39252bde9c3afbd483f81cb38ea86da65b3bfa3a78c0"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    },
+    "hf-0162": {
+      "id": "hf-0162",
+      "image": {
+        "file": "assets/hf-0162.webp",
+        "source_width": 3024,
+        "source_height": 3296,
+        "asset_sha256": "aed3586f734d5debea5b184c96859099770ead1116d18c3550a81d6ea26c00dc",
+        "source_sha256": "174e96516afe2ef43465988479f43ff990b0e5b2260c90e172309cf4b1c8fa6f"
+      },
+      "bbox_annotation": {
+        "status": "unlabeled",
+        "revision": 0,
+        "annotator": "",
+        "notes": "",
+        "no_text": false,
+        "proposal_version": "",
+        "boxes": []
+      },
+      "claim": null,
+      "history": []
+    }
+  }
+}
