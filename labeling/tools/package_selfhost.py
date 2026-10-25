@@ -15,6 +15,8 @@ FILES=['START_HERE.md','README.md','VERCEL_ADMIN_SETUP.md','Dockerfile','.docker
 def package(output):
     output=Path(output);output.parent.mkdir(parents=True,exist_ok=True)
     paths=[APP/name for name in FILES]+sorted((APP/'lib').glob('*.mjs'))+sorted((APP/'assets').glob('hf-*.webp'))
+    proposal=APP/'data/text-box-proposals.json'
+    if proposal.is_file():paths.append(proposal)
     seed=json.loads((APP/'data/seed.json').read_text())
     assert all((APP/item['image']['file']).is_file() for item in seed['items'].values()),'Catalog reading images are required'
     revision=subprocess.run(['git','rev-parse','HEAD'],cwd=APP,text=True,capture_output=True)

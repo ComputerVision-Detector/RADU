@@ -12,6 +12,8 @@
 - V2는 OCR 후보를 참고해 박스를 편집하고 줄마다 정답 문구를 저장·내보내기.
 - 모바일 대응. OCR/Qwen 모델 및 GPU 불필요.
 
+선택한 줄의 원본 확대, 수정 전 OCR과 수정 문구 비교, 줄별 대조 완료 표시를 지원한다. 자동 추출 파일은 정답 저장소가 아니며 사람이 저장·검수한 결과만 V2 정답에 반영된다.
+
 ## 다른 사람의 서버·도메인에 바로 전달하기
 
 **[START_HERE.md](START_HERE.md)를 서버 관리자에게 전달하세요.** 이 폴더만으로 Docker 앱과 HTTPS 프록시를 실행할 수 있습니다. 이 독립 서버 방식은 GitHub 토큰·Vercel 계정·별도 DB가 필요 없으며 라벨은 서버 데이터 볼륨에 저장됩니다.
@@ -26,13 +28,13 @@ docker compose -f compose.yaml -f compose.domain.yaml up -d --build
 
 ## Vercel 배포
 
-2026-10-25 확인 기준 운영 도메인은 GitHub 저장소를 읽지만 아직 이전 API를 반환합니다. V2 완료 기준은 `https://radu-amber.vercel.app/api/labeling?action=health&version=v2` 응답의 `dataset_version: "v2"`입니다. HTTP 200과 samples:163만으로 V2 배포 성공을 판정하지 않습니다. [관리자 설정 안내](VERCEL_ADMIN_SETUP.md)의 Production 설정과 도메인 연결을 확인하세요.
+2026-10-25 main 병합 후 운영 도메인에서 V2 화면과 API 반영을 확인했습니다. V2 완료 기준은 `https://radu-amber.vercel.app/api/labeling?action=health&version=v2` 응답의 `dataset_version: "v2"`입니다. HTTP 200과 samples:163만으로 V2 배포 성공을 판정하지 않습니다. [관리자 설정 안내](VERCEL_ADMIN_SETUP.md)의 Production 설정과 도메인 연결을 확인하세요.
 
-GitHub 코드 브랜치: **RADU/labeling**. 기존 실험 브랜치 `feat/hybridocr`에서 분기했다.
+운영 배포 브랜치: **main**. V2 구현은 **RADU/labeling**에서 병합했습니다. 기존 실험 브랜치 `feat/hybridocr`에서 분기했다.
 
 1. Vercel에서 New Project → GitHub `ComputerVision-Detector/RADU`를 가져온다.
 2. Framework Preset은 **Other**, Root Directory는 **labeling**으로 설정한다.
-3. 배포할 소스 브랜치를 **RADU/labeling**으로 선택한다. 기본 main을 가져온 경우 Settings → Git에서 Production Branch를 변경하고 해당 브랜치를 배포한다.
+3. Settings → Git의 Production Branch를 **main**으로 유지하고 최신 main 커밋을 배포한다.
 4. Node.js **22.x**, Build Command **npm run build**, Output Directory **dist**를 사용한다. `vercel.json`과 `package.json`에 설정되어 있다. 외부 npm 런타임 의존성은 없다.
 5. 아래 서버 환경변수를 설정한다. Preview를 사용할 경우 해당 환경에도 설정하고 저장 후 재배포한다.
 6. Deploy 후 `.vercel.app` 주소로 접속해 작성자 이름을 입력한다. 커스텀 도메인은 Vercel Settings → Domains에서 연결한다.
@@ -53,13 +55,15 @@ Vercel 계정·프로젝트와 환경변수가 연결되기 전에는 실제 공
 
 ## OCR 줄 bbox 후보 생성
 
-OCR 후보는 웹에서 실시간 생성하지 않는다. 저장소 루트에서 Python 환경의 PaddleOCR 의존성(`requirements.txt`)을 설치하고, `models/README.md`에 안내된 로컬 가중치를 준비한 뒤 실행한다. 기본 엔진은 `paddleocrv6`이며, `paddleocrvl16`도 선택할 수 있다. 필요한 모델 가중치는 `.gitignore` 대상이라 저장소 코드 브랜치에 포함되지 않는다.
+2026-10-25 1차 추출은 PaddleOCR-VL-1.6으로 163장을 처리한 **4,037개 후보 bbox**다. 후보가 0개인 `hf-0044`, `hf-0087`, `hf-0104`, `hf-0121`도 처리 완료된 이미지이며 사람이 누락 여부를 확인해야 한다. 자동 후보 개수는 정답 줄 수나 검출 성능 수치가 아니다. 최종 후보 파일은 `data/text-box-proposals.json`에 포함하고, 모델 가중치와 중간 체크포인트는 배포하지 않는다.
+
+OCR 후보는 웹에서 실시간 생성하지 않는다. 저장소 루트에서 Python 환경의 PaddleOCR 의존성(`requirements.txt`)을 설치하고, `models/README.md`에 안내된 로컬 가중치를 준비한 뒤 실행한다. 이 검수용 1차 후보는 **PaddleOCR-VL-1.6**의 text spotting으로 생성한다. `paddleocrv6`는 별도의 PP-OCRv6 엔진이므로 1.6과 혼동하지 않는다. 필요한 모델 가중치는 `.gitignore` 대상이라 저장소 코드 브랜치에 포함되지 않는다.
 
 ```bash
-python -m src.evaluation.text_box_candidates --image-dir labeling/assets --engine paddleocrv6 --output labeling/data/text-box-proposals.json
+python -m src.evaluation.text_box_candidates --image-dir labeling/assets --engine paddleocrvl16 --device gpu:0 --output labeling/data/text-box-proposals.json
 ```
 
-이 명령은 웹용 WebP에서 OCR 후보를 만들고 bbox를 원본 픽셀 좌표로 환산한다. 입력 이미지 해시가 정식 웹 에셋과 다르면 OCR 전에 중단한다. 출력에는 원본·웹 자산 해시와 크기, 엔진·모델 정보, 줄별 prediction·confidence·bbox가 들어가며, 앱도 파일 경로와 세 해시를 확인한 뒤 후보를 허용한다. OCR prediction은 정답이 아니므로 V2 `text`에는 자동 입력되지 않는다. 기존 출력 파일이 있으면 생성이 중단된다. 새 후보 세트를 만들 때에는 다른 파일명으로 출력한다.
+이 명령은 웹용 WebP에서 OCR 후보를 만들고 bbox를 원본 픽셀 좌표로 환산한다. 입력 이미지 해시가 정식 웹 에셋과 다르면 OCR 전에 중단한다. 출력에는 원본·웹 자산 해시와 크기, 엔진·모델 정보, 줄별 prediction·confidence·bbox가 들어가며, 앱도 파일 경로와 세 해시를 확인한 뒤 후보를 허용한다. 새 미작성 이미지를 맡으면 OCR 문구가 **검수 전 초안**의 `text`에 채워지고 수정 전 `prediction`은 보존된다. 기존 저장 라벨과 복원한 브라우저 초안은 자동 교체하지 않는다. 각 줄의 박스와 문구를 확인해 `reviewed: true`를 표시해야 검수 완료할 수 있다. 문구나 좌표를 바꾸면 대조 표시가 해제된다. 후보가 없는 영역은 직접 그려 추가하고, 0개 검출을 텍스트 없음 정답으로 취급하지 않는다. 중간 결과는 `.checkpoint.json`에 기록하며 중단 후 같은 명령에 `--resume`을 붙여 이어 간다. 최종 출력 파일이 있으면 생성이 중단된다. 새 후보 세트를 만들 때에는 다른 파일명으로 출력한다.
 
 ```bash
 python -m src.evaluation.text_box_candidates --image-dir labeling/assets --engine paddleocrv6 --output labeling/data/text-box-proposals-paddleocrv6-run2.json
@@ -73,10 +77,10 @@ Vercel 방식은 데이터 브랜치 **RADU/labeling-data**의 기존 `labeling/
 
 기존 페이지 전체 전사 163건은 **V1**로 분류한다. 현재 `live.json`의 146건 검수 완료·1건 작성 중·16건 미작성 상태와 전사·이력은 그대로 보존한다. 줄 bbox 라벨링은 같은 데이터 브랜치의 별도 파일 `labeling/data/live-v2.json`에 **V2**로 저장하며, 163개 이미지가 모두 빈 bbox 상태로 시작한다. V2 저장은 V1 `live.json`을 읽거나 수정하지 않는다. 화면에서 V1/V2를 전환하고 내보내기 파일에도 데이터 버전을 기록한다.
 
-V2 통합 JSON은 `{schema_version: 1, dataset_version: "v2", samples: [...]}` 구조다. 각 sample에는 `image_id`, 원본 파일·크기, 검수 상태와 다음 bbox 목록이 들어간다. `bbox`는 원본 픽셀 기준 `[x1, y1, x2, y2]`이고, `text`는 사람이 입력한 정답, `prediction`은 OCR 후보 문구다. 후보를 가져올 때 정답 칸은 비워 두며, `order`는 읽기 순서, `uncertain`은 판독 불확실 표시다. bbox가 없는 검수 완료 페이지는 사람이 `no_text: true`로 표시한다.
+V2 통합 JSON은 `{schema_version: 1, dataset_version: "v2", samples: [...]}` 구조다. 각 sample에는 `image_id`, 원본 파일·크기, 검수 상태와 다음 bbox 목록이 들어간다. `bbox`는 원본 픽셀 기준 `[x1, y1, x2, y2]`이고, `text`는 사람이 입력한 정답, `prediction`은 OCR 후보 문구다. 후보를 가져오면 `text`는 수정 가능한 OCR 초안이며 `reviewed: false`로 시작한다. 사람이 원본을 대조한 뒤 `reviewed: true`로 표시한다. `order`는 읽기 순서, `uncertain`은 판독 불확실 표시다. bbox가 없는 검수 완료 페이지는 사람이 `no_text: true`로 표시한다.
 
 ```json
-{"id":"hf-0000-line-0001","bbox":[120,248,890,316],"text":"정답 전사","prediction":"OCR 후보","order":1,"uncertain":false}
+{"id":"hf-0000-line-0001","bbox":[120,248,890,316],"text":"정답 전사","prediction":"OCR 후보","order":1,"uncertain":false,"reviewed":true}
 ```
 
 `live.json`은 V1 이미지 전체 전사·revision·현재 작업자·최근 이력을 포함한다. `live-v2.json`은 V2 bbox 전사만 저장한다. 두 파일은 GitHub 파일 SHA를 조건으로 각각 갱신하며, 서로 다른 이미지에 대한 동시 수정은 최신 상태에 재적용한다. 동일 이미지의 오래된 revision 저장은 409 오류로 막는다. 최근 이력은 이미지당 20개이고 GitHub 커밋에도 상태가 남는다.
@@ -121,8 +125,8 @@ V2 브라우저 검증은 `python labeling/tests/browser_bbox_check.py`로 실�
 
 ## 라벨링 순서
 
-1. 이름 입력 → 다음 이미지 맡기.
-2. 원본 이미지와 대조해 전사, 특이사항은 메모에 작성.
+1. V2 선택 → 이름 입력 → 다음 이미지 맡기. 새 미작성 이미지는 OCR 박스와 문구로 초안을 시작한다.
+2. 줄을 선택해 잘라낸 원본·수정 전 OCR·수정할 문구를 비교한다. bbox 이동·크기 조절·추가·삭제와 문구 수정을 진행하고 각 줄의 원본 대조 완료를 표시한다.
 3. 작성 도중에는 임시 저장. 아직 저장 전인 입력은 브라우저에도 백업된다.
 4. 원본 대조를 마친 경우에만 검수 완료.
 5. 다른 이미지로 이동하거나 작업 반납. 창을 닫으면 임대는 만료 후 다른 사람이 맡을 수 있다.

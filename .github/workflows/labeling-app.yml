@@ -1,10 +1,10 @@
 name: Labeling website checks
 on:
   push:
-    branches: [RADU/labeling]
+    branches: [main, RADU/labeling]
     paths: ['labeling/**', '.github/workflows/labeling-app.yml']
   pull_request:
-    branches: [RADU/labeling]
+    branches: [main, RADU/labeling]
     paths: ['labeling/**', '.github/workflows/labeling-app.yml']
 permissions:
   contents: read

@@ -30,6 +30,7 @@ test('V2 starts with 163 empty annotations and never imports V1 text',()=>{
 
 test('V2 rejects invalid, duplicate, uncertain and incomplete verified boxes',()=>{
   for(const changes of [
+    {boxes:[{...box,reviewed:false}]},{boxes:[{...box,reviewed:'yes'}]},
     {boxes:[]},{boxes:[{...box,bbox:[-1,10,100,50]}]},
     {boxes:[{...box,bbox:[10,10,10,50]}]},
     {boxes:[{...box,text:''}]},{boxes:[{...box,uncertain:true}],notes:'판독 보류'},

@@ -6,6 +6,8 @@ from datetime import datetime, timezone
 import hashlib
 import json
 import math
+import os
+import time
 from pathlib import Path
 from typing import Any
 
@@ -79,15 +81,78 @@ def _load_catalog() -> tuple[dict[str, Any], dict[str, Any]]:
     return seed["items"], asset_by_id
 
 
-def generate(image_dir: Path, engine: str, output: Path, device: str | None = None) -> dict[str, Any]:
+def _vl_batches(paths: list[Path], device: str, batch_size: int):
+    """Load VL once; keep original spotting polygons and raw output for audit."""
+    from src.evaluation.paddleocr_vl_worker import prepare_model, _unwrap
+    from paddlex.inference.pipelines.paddleocr_vl.uilts import post_process_for_spotting
+    from PIL import Image
+
+    model = prepare_model(device)
+    import paddle, paddlex
+    weights_sha256 = _sha256(ROOT / "models/vision_language/PaddleOCR-VL-1.6/model.safetensors")
+    try:
+        for offset in range(0, len(paths), batch_size):
+            batch = paths[offset:offset + batch_size]
+            started = time.perf_counter()
+            results = list(model.predict(
+                [{"image": str(path), "query": "Spotting:"} for path in batch],
+                batch_size=batch_size, min_pixels=112_896, max_pixels=602_112,
+                max_new_tokens=2048, use_cache=True, skip_special_tokens=False,
+            ))
+            if len(results) != len(batch):
+                raise RuntimeError("VL returned a different number of images than requested")
+            for path, result in zip(batch, results):
+                raw = _unwrap(result)["result"]
+                with Image.open(path) as image:
+                    width, height = image.size
+                _text, spotting = post_process_for_spotting(raw, width, height)
+                texts, polygons = spotting.get("rec_texts", []), spotting.get("rec_polys", [])
+                yield {
+                    "model": "PaddleOCR-VL-1.6", "device": device,
+                    "lines": [{"text": text, "bbox": polygons[i] if i < len(polygons) else []}
+                              for i, text in enumerate(texts)],
+                    "metadata": {"mode": "direct spotting", "batch_size": batch_size,
+                                 "max_pixels": 602_112, "max_new_tokens": 2048,
+                                 "weights_sha256": weights_sha256, "paddle": paddle.__version__, "paddlex": paddlex.__version__},
+                    "batch_seconds": round(time.perf_counter() - started, 3),
+                }
+    finally:
+        close = getattr(model, "close", None)
+        if callable(close):
+            close()
+
+
+def generate(image_dir: Path, engine: str, output: Path, device: str | None = None,
+             vl_batch_size: int = 1, resume: bool = False) -> dict[str, Any]:
     if output.exists():
         raise FileExistsError(f"Proposal output already exists; choose a new --output path: {output}")
     items, assets = _load_catalog()
     images: dict[str, Any] = {}
     model_metadata: dict[str, Any] | None = None
     proposal_version = engine
-
+    checkpoint = output.with_suffix('.checkpoint.json')
+    if resume and checkpoint.exists():
+        saved = json.loads(checkpoint.read_text(encoding='utf-8'))
+        if saved.get('engine') != engine:
+            raise ValueError('Checkpoint engine differs from requested engine')
+        if not isinstance(saved.get('images'), dict) or set(saved['images']) - set(items):
+            raise ValueError('Checkpoint contains unknown image IDs')
+        images = saved['images']
+        model_metadata = saved.get('model')
+        proposal_version = saved['proposal_version']
+    # Verify every input before GPU work, including resumed entries.
     for image_id, item in items.items():
+        path = image_dir / Path(item['image']['file']).name
+        if not path.is_file() or _sha256(path) != assets[image_id]['sha256']:
+            raise ValueError(f'Input image fingerprint does not match the labeling asset: {path}')
+        if image_id in images and (images[image_id]['input_sha256'] != assets[image_id]['sha256']
+                                  or images[image_id]['source_sha256'] != assets[image_id]['source_sha256']):
+            raise ValueError(f'Checkpoint image fingerprint differs: {image_id}')
+    pending = {key: value for key, value in items.items() if key not in images}
+    batched = iter(_vl_batches([image_dir / Path(item['image']['file']).name for item in pending.values()],
+                              device or 'gpu:0', vl_batch_size)) if engine == 'paddleocrvl16' and pending else None
+
+    for image_id, item in pending.items():
         image_file = item["image"]["file"]
         asset = assets[image_id]
         input_path = image_dir / Path(image_file).name
@@ -103,7 +168,10 @@ def generate(image_dir: Path, engine: str, output: Path, device: str | None = No
         source_width = int(item["image"]["source_width"])
         source_height = int(item["image"]["source_height"])
 
-        _text, details = recognize(image, engine, device=device)
+        if batched is not None:
+            details = next(batched)
+        else:
+            _text, details = recognize(image, engine, device=device)
         details = details if isinstance(details, dict) else {}
         model_name = str(details.get("model") or engine)
         current_metadata = {
@@ -146,10 +214,17 @@ def generate(image_dir: Path, engine: str, output: Path, device: str | None = No
             "proposal_version": proposal_version,
             "lines": proposals,
         }
+        if not proposals:
+            record["warnings"] = ["No text detected: manually inspect for missed text; this is not a no_text label."]
         if skipped:
             record["skipped_lines"] = skipped
         images[image_id] = record
-        print(f"{image_id}: {len(proposals)} line proposals", flush=True)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        temporary = checkpoint.with_suffix('.tmp')
+        temporary.write_text(json.dumps({'engine': engine, 'images': images, 'model': model_metadata,
+                                        'proposal_version': proposal_version}, ensure_ascii=False), encoding='utf-8')
+        os.replace(temporary, checkpoint)
+        print(f"[{len(images)}/{len(items)}] {image_id}: {len(proposals)} line proposals", flush=True)
 
     manifest = {
         "schema_version": 1,
@@ -174,15 +249,17 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--image-dir", type=Path, default=DEFAULT_IMAGE_DIR,
                         help="directory containing the catalog's web labeling images")
-    parser.add_argument("--engine", choices=SUPPORTED_ENGINES, default="paddleocrv6")
+    parser.add_argument("--engine", choices=SUPPORTED_ENGINES, default="paddleocrvl16")
     parser.add_argument("--device", help="Paddle device passed to the OCR adapter, such as cpu or gpu:0")
+    parser.add_argument('--vl-batch-size', type=int, choices=(1,), default=1)
+    parser.add_argument('--resume', action='store_true', help='resume a matching incomplete checkpoint')
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT,
                         help="new proposal manifest path; existing files are never overwritten")
     args = parser.parse_args()
     try:
-        manifest = generate(args.image_dir, args.engine, args.output, args.device)
+        manifest = generate(args.image_dir, args.engine, args.output, args.device, args.vl_batch_size, args.resume)
     except (FileExistsError, FileNotFoundError, ValueError, RuntimeError) as error:
-        parser.error(str(error))
+        parser.error(f'{type(error).__name__}: {error}')
     print(f"Wrote {len(manifest['images'])} image proposals to {args.output}")
     return 0
 

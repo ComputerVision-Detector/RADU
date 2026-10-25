@@ -19,7 +19,7 @@ function updateControls(){
   const own=owns() && !(store.version==='v1' && store.item?.seed_verified);
   const currentStatus=store.version==='v2'?store.item?.bbox_annotation?.status:store.item?.status;
   $('transcription').disabled=$('notes').disabled=store.version!=='v1' || !own || store.busy;
-  $('bbox-text').disabled=$('bbox-notes').disabled=$('bbox-order').disabled=$('bbox-uncertain').disabled=$('no-text').disabled=store.version!=='v2' || !own || store.busy;
+  $('bbox-reviewed').disabled=$('bbox-text').disabled=$('bbox-notes').disabled=$('bbox-order').disabled=$('bbox-uncertain').disabled=$('no-text').disabled=store.version!=='v2' || !own || store.busy;
   $('claim').classList.toggle('hidden',own);$('claim').disabled=!store.item || store.busy || store.item?.seed_verified || Boolean(store.item?.claim && !store.item.claim.mine);
   $('claim').textContent=currentStatus==='verified'?(store.version==='v2'?'bbox 수정하기':'이 전사 수정하기'):'이 이미지 맡기';
   for(const id of ['save','verify','release']){$(id).classList.toggle('hidden',!own);$(id).disabled=store.busy;}
@@ -83,7 +83,7 @@ function setModeUI(){
   $('editor-eyebrow').textContent=v2?'줄별 정답 입력':'직접 읽고 작성';
   $('editor-title').textContent=v2?'V2 bbox 전사':'정답 전사';
   $('viewer-hint').textContent=v2?'bbox를 선택해 편집하거나 ‘박스 그리기’를 눌러 추가하세요.':'확대 후 드래그로 이미지를 이동하며 전체 전사를 확인하세요.';
-  $('viewer-mode').textContent=v2?'초록 점선은 OCR 후보 · 주황 실선은 정답 bbox':'이미지 전체 정답 전사 · V1 상태';
+  $('viewer-mode').textContent=v2?'초록 점선은 OCR 원본 · 주황 실선은 편집 bbox':'이미지 전체 정답 전사 · V1 상태';
   $('editor-footer-note').textContent=v2?'작성 중에는 임시 저장 · 모든 줄을 확인한 뒤 검수 완료':'작성 중에는 임시 저장 · 원본 대조 후 검수 완료';
   if(!v2)store.drawMode=false;
   $('draw-box').classList.toggle('active',store.drawMode);$('draw-box').textContent=store.drawMode?'박스 그리기 중 · 드래그하세요':'＋ 박스 그리기';
@@ -124,6 +124,10 @@ function showItem(item,restore=false){
       $('bbox-notes').value=store.bboxDraft.notes;$('no-text').checked=store.bboxDraft.no_text;markBBoxDirty();
     }
   }
+  autoStartProposals();
+}
+function autoStartProposals(){
+  if(store.version==='v2' && owns() && !store.dirty && store.item?.bbox_annotation.status==='unlabeled' && store.item.bbox_annotation.revision===0 && !store.bboxDraft?.boxes.length && !store.bboxDraft?.no_text && candidateLines().length)importProposals();
 }
 function confirmLeave(){return !store.dirty || confirm('아직 서버에 저장하지 않은 내용이 있습니다. 입력은 이 브라우저에 보관됩니다. 이동할까요?');}
 async function releaseCurrent(){
@@ -157,8 +161,8 @@ async function save(status){
 async function saveBBox(status){
   if(store.busy || !owns() || !store.bboxDraft)return;
   const draft=store.bboxDraft;
-  if(status==='verified' && (draft.no_text?draft.boxes.length!==0:draft.boxes.length===0 || draft.boxes.some(box=>!box.text.trim() || box.uncertain))){
-    toast('모든 bbox에 정답을 입력하고 불확실 표시를 해제하거나, 텍스트 없음으로 표시한 뒤 검수 완료해 주세요.');return;
+  if(status==='verified' && (draft.no_text?draft.boxes.length!==0:draft.boxes.length===0 || draft.boxes.some(box=>!box.text.trim() || box.uncertain || box.reviewed===false))){
+    toast('모든 줄의 박스와 문구를 원본과 대조하고 대조 완료를 표시하세요. 누락된 줄도 확인해 주세요.');return;
   }
   const payload={id:store.item.id,revision:store.item.bbox_annotation.revision,status,boxes:draft.boxes,notes:draft.notes,no_text:draft.no_text,proposal_version:draft.proposal_version};
   const key=draftKey(),reference=store.item.v1_reference;store.busy=true;updateControls();$('save-state').textContent='V2 저장 중…';
@@ -203,10 +207,10 @@ function candidateLines(){return candidateRecord()?.lines || [];}
 function renderBoxList(){
   const list=$('box-list');if(!list)return;list.replaceChildren();
   const boxes=store.bboxDraft?.boxes || [];const candidates=candidateLines();
-  $('bbox-count').textContent=`${boxes.length}개 줄`;
+  $('bbox-count').textContent=`${boxes.length}개 줄 · ${boxes.filter(box=>box.reviewed!==false && box.text.trim()).length}개 대조 완료`;
   if(!boxes.length){
     const empty=document.createElement('div');empty.className='bbox-empty';
-    empty.textContent=store.bboxDraft?.no_text?'텍스트 없음으로 표시했습니다.':candidates.length?`${candidates.length}개 OCR 후보가 있습니다. 가져온 뒤 줄별 정답을 입력하세요.`:'박스를 그리거나 OCR 후보를 가져오세요.';
+    empty.textContent=store.bboxDraft?.no_text?'텍스트 없음으로 표시했습니다.':candidateRecord() && !candidates.length?'OCR에서 검출된 줄이 없습니다. 누락된 줄을 직접 그려 주세요.':candidates.length?`${candidates.length}개 OCR 후보가 있습니다. 가져온 뒤 줄별 정답을 입력하세요.`:'박스를 그리거나 OCR 후보를 가져오세요.';
     list.append(empty);
   }
   for(const box of [...boxes].sort((a,b)=>a.order-b.order)){
@@ -214,7 +218,7 @@ function renderBoxList(){
     const number=document.createElement('span');number.className='box-number';number.textContent=box.order;
     const body=document.createElement('span');body.className='box-row-content';
     const text=document.createElement('strong');text.textContent=box.text.trim() || box.prediction || '정답 입력 필요';
-    const meta=document.createElement('small');meta.textContent=box.uncertain?'판독 불확실':box.text.trim()?'정답 입력됨':box.prediction?'OCR 후보만 있음':'수동 bbox';
+    const meta=document.createElement('small');meta.textContent=box.uncertain?'판독 불확실':box.text.trim()?box.reviewed===false?'원본 대조 필요':'대조 완료':box.prediction?'OCR 후보만 있음':'수동 bbox';
     body.append(text,meta);row.append(number,body);row.onclick=()=>selectBox(box.id);list.append(row);
   }
 }
@@ -223,9 +227,19 @@ function selectBox(id){
   if(box){
     $('selected-box-title').textContent=`${box.order}번 줄 · ${box.id}`;
     $('prediction-text').textContent=box.prediction || 'OCR 예측이 없습니다.';
-    $('bbox-text').value=box.text;$('bbox-order').value=box.order;$('bbox-uncertain').checked=box.uncertain;
+    $('bbox-text').value=box.text;$('bbox-order').value=box.order;$('bbox-uncertain').checked=box.uncertain;$('bbox-reviewed').checked=box.reviewed!==false;
   }
-  renderBoxList();renderBBoxOverlay();updateControls();
+  renderBoxList();renderBBoxOverlay();renderLineCrop();updateControls();
+  if(box){const fields=panel.closest('.editor-fields');fields.scrollTop+=panel.getBoundingClientRect().top-fields.getBoundingClientRect().top-8;}
+}
+function renderLineCrop(){
+  const box=selectedBox(),img=$('source-image'),canvas=$('line-crop');
+  if(!box || !img.complete || !img.naturalWidth || !store.item){canvas.width=canvas.height=1;return;}
+  const sx=img.naturalWidth/store.item.image.source_width,sy=img.naturalHeight/store.item.image.source_height;
+  const [x1,y1,x2,y2]=box.bbox,width=(x2-x1)*sx,height=(y2-y1)*sy,scale=Math.min(1,1000/width);
+  canvas.width=Math.max(1,Math.round(width*scale));canvas.height=Math.max(1,Math.round(height*scale));
+  canvas.getContext('2d').drawImage(img,x1*sx,y1*sy,width,height,0,0,canvas.width,canvas.height);
+  $('bbox-comparison').textContent=box.prediction?(box.text===box.prediction?'OCR 원문과 동일 · 원본 이미지로 확인하세요':'OCR 원문을 수정한 상태'):'수동으로 추가한 박스';
 }
 function renderBBoxOverlay(){
   const overlay=$('bbox-overlay');if(!overlay)return;overlay.replaceChildren();
@@ -235,8 +249,9 @@ function renderBBoxOverlay(){
   const width=item.image.source_width,height=item.image.source_height;
   overlay.setAttribute('viewBox',`0 0 ${width} ${height}`);overlay.setAttribute('preserveAspectRatio','none');
   const record=candidateRecord();
+  $('ocr-reference-text').textContent=record?(record.lines.map(line=>`${line.order}. ${line.prediction || '(인식 문구 없음)'}`).join('\n') || '검출된 줄이 없습니다. 텍스트 없음으로 자동 판정하지 않으므로 누락된 줄을 직접 추가해 주세요.'):'이 이미지의 OCR 후보가 없습니다.';
   if(store.proposalManifest && store.proposalManifest.images?.[item.id] && !record)$('proposal-status').textContent='후보 이미지 크기·파일 fingerprint 불일치 · 수동 bbox를 사용하세요';
-  else if(record)$('proposal-status').textContent=`${record.lines.length}개 OCR 후보 · ${record.proposal_version || store.proposalManifest.proposal_version}`;
+  else if(record)$('proposal-status').textContent=`${record.lines.length}개 OCR 후보 · ${store.proposalManifest.model?.name || store.proposalManifest.engine || 'OCR'}`;
   else if(store.proposalManifest)$('proposal-status').textContent='이 이미지의 OCR 후보 없음 · 수동 bbox 가능';
   for(const line of candidateLines()){
     if(!Array.isArray(line.bbox) || line.bbox.length!==4)continue;
@@ -258,7 +273,7 @@ function renderBBoxOverlay(){
     overlay.append(group);
   }
 }
-$('source-image').onload=()=>{resizeImage();$('viewer').scrollTo(0,0);};$('source-image').onerror=()=>toast('이미지를 불러오지 못했습니다. 배포 파일을 확인해 주세요.');
+$('source-image').onload=()=>{resizeImage();renderLineCrop();$('viewer').scrollTo(0,0);};$('source-image').onerror=()=>toast('이미지를 불러오지 못했습니다. 배포 파일을 확인해 주세요.');
 function zoomImage(value){
   const viewer=$('viewer'),img=$('source-image');if(!img.naturalWidth)return;
   const old=store.zoom;
@@ -336,11 +351,11 @@ $('bbox-overlay').onpointerup=event=>{
     $('bbox-overlay').querySelector('.draw-preview')?.remove();
     if(x2-x1>=6 && y2-y1>=6){
       store.bboxDraft.no_text=false;$('no-text').checked=false;
-      const box={id:`line-${crypto.randomUUID()}`,bbox:[x1,y1,x2,y2],text:'',prediction:'',order:store.bboxDraft.boxes.length+1,uncertain:false};
+      const box={id:`line-${crypto.randomUUID()}`,bbox:[x1,y1,x2,y2],text:'',prediction:'',order:store.bboxDraft.boxes.length+1,uncertain:false,reviewed:false};
       store.bboxDraft.boxes.push(box);store.selectedBoxId=box.id;selectBox(box.id);markBBoxDirty();
     }
   }else{
-    applyBoxPointer(event);if(drag.moved)markBBoxDirty();else renderBBoxOverlay();
+    applyBoxPointer(event);if(drag.moved){const box=selectedBox();if(box)box.reviewed=false;$('bbox-reviewed').checked=false;markBBoxDirty();renderLineCrop();}else renderBBoxOverlay();
   }
   store.boxDrag=null;
 };
@@ -368,7 +383,7 @@ async function loadProposals(){
     if(manifest.schema_version!==1 || !manifest.images || typeof manifest.images!=='object')throw new Error('후보 파일 형식 오류');
     store.proposalManifest=manifest;$('proposal-status').textContent=`${manifest.engine || 'OCR'} · ${manifest.proposal_version || '후보 준비됨'}`;
   }catch(error){store.proposalManifest=null;$('proposal-status').textContent=error.message.includes('없음')?'OCR 후보 파일 없음 · 수동 bbox 가능':'OCR 후보를 사용할 수 없음 · 수동 bbox 가능';}
-  renderBoxList();renderBBoxOverlay();updateControls();
+  renderBoxList();renderBBoxOverlay();updateControls();autoStartProposals();
 }
 function setDrawMode(enabled){
   store.drawMode=Boolean(enabled);$('draw-box').classList.toggle('active',store.drawMode);
@@ -387,12 +402,12 @@ function importProposals(){
     if(!Array.isArray(bbox) || bbox.length!==4 || !bbox.every(Number.isInteger) || bbox[0]<0 || bbox[1]<0 || bbox[2]>width || bbox[3]>height || bbox[0]>=bbox[2] || bbox[1]>=bbox[3])continue;
     const baseId=typeof line.id==='string' && /^[a-zA-Z0-9_-]{1,80}$/.test(line.id)?line.id:`proposal-${index+1}`;
     let id=baseId,suffix=1;while(ids.has(id))id=`${baseId}-${suffix++}`;ids.add(id);
-    boxes.push({id,bbox:[...bbox],text:'',prediction:String(line.prediction || ''),order:boxes.length+1,uncertain:false});
+    boxes.push({id,bbox:[...bbox],text:String(line.prediction || ''),prediction:String(line.prediction || ''),order:boxes.length+1,uncertain:false,reviewed:false});
   }
   if(!boxes.length){toast('유효한 bbox 후보가 없습니다. 이미지를 확인해 주세요.');return;}
   store.bboxDraft.boxes=boxes;store.bboxDraft.no_text=false;store.bboxDraft.proposal_version=record.proposal_version || store.proposalManifest.proposal_version || '';
   $('no-text').checked=false;setDrawMode(false);store.selectedBoxId=boxes[0].id;selectBox(store.selectedBoxId);markBBoxDirty();
-  toast(`${boxes.length}개 후보를 가져왔습니다. OCR 문구는 정답에 복사되지 않았습니다.`);
+  toast(`${boxes.length}개 후보를 가져왔습니다. OCR 문구를 수정할 수 있습니다. 각 줄의 박스와 문구를 대조한 뒤 완료를 표시하세요.`);
 }
 function reorderSelected(value){
   const box=selectedBox();if(!box)return;
@@ -403,7 +418,7 @@ function reorderSelected(value){
 }
 function updateSelectedBox(change){
   const box=selectedBox();if(!box || !owns())return;
-  Object.assign(box,change);markBBoxDirty();
+  Object.assign(box,change);markBBoxDirty();renderLineCrop();
 }
 $('insert-tab').onclick=insertTranscriptionTab;
 $('transcription').addEventListener('keydown',e=>{
@@ -414,11 +429,13 @@ $('transcription').addEventListener('keydown',e=>{
 $('transcription').oninput=$('notes').oninput=markDirty;$('claim').onclick=()=>claim();$('next').onclick=()=>claim(true);$('save').onclick=()=>save('draft');$('verify').onclick=()=>save('verified');
 $('release').onclick=async()=>{if(store.busy || !confirmLeave())return;store.busy=true;updateControls();try{await releaseCurrent();let item=await api('item',null,{id:store.item.id});item=await addV1Reference(item);showItem(item);toast('작업을 반납했습니다.');}catch(error){toast(error.message);}finally{store.busy=false;updateControls();refresh();}};
 $('draw-box').onclick=()=>setDrawMode(!store.drawMode);$('import-proposals').onclick=importProposals;
-$('bbox-text').oninput=()=>updateSelectedBox({text:$('bbox-text').value});
+$('bbox-text').oninput=()=>{updateSelectedBox({text:$('bbox-text').value,reviewed:false});$('bbox-reviewed').checked=false;};
+for(const [id,direction] of [['previous-box',-1],['next-box',1]])$(id).onclick=()=>{const boxes=[...(store.bboxDraft?.boxes || [])].sort((a,b)=>a.order-b.order),index=boxes.findIndex(box=>box.id===store.selectedBoxId);const next=boxes[index+direction];if(next)selectBox(next.id);};
+$('bbox-reviewed').onchange=()=>updateSelectedBox({reviewed:$('bbox-reviewed').checked});
 $('bbox-notes').oninput=()=>{if(!owns() || !store.bboxDraft)return;store.bboxDraft.notes=$('bbox-notes').value;markBBoxDirty();};
 $('bbox-order').onchange=()=>reorderSelected($('bbox-order').value);
 $('bbox-uncertain').onchange=()=>updateSelectedBox({uncertain:$('bbox-uncertain').checked});
-$('copy-prediction').onclick=()=>{const box=selectedBox();if(box && owns()){$('bbox-text').value=box.prediction;updateSelectedBox({text:box.prediction});}};
+$('copy-prediction').onclick=()=>{const box=selectedBox();if(box && owns()){$('bbox-text').value=box.prediction;updateSelectedBox({text:box.prediction,reviewed:false});$('bbox-reviewed').checked=false;}};
 $('delete-box').onclick=()=>{const box=selectedBox();if(!box || !owns() || !confirm('선택한 bbox를 삭제할까요?'))return;store.bboxDraft.boxes=store.bboxDraft.boxes.filter(item=>item.id!==box.id);store.bboxDraft.boxes.sort((a,b)=>a.order-b.order).forEach((item,index)=>item.order=index+1);store.selectedBoxId=null;$('selected-box').hidden=true;markBBoxDirty();};
 $('no-text').onchange=()=>{
   if(!owns() || !store.bboxDraft)return;

@@ -4,7 +4,7 @@
 
 ## 현재 진단과 완료한 작업
 
-2026-10-25 직접 확인 기준 `https://radu-amber.vercel.app/api/labeling?action=health&version=v2`는 HTTP 200으로 `{"status":"ok","storage":"github","samples":163}`을 반환한다. GitHub 읽기는 되지만 **`dataset_version: "v2"`가 없으므로 V2 배포 완료가 아니다.** 기존 API는 version 쿼리를 무시한다. 기존 토큰을 중복 발급할 필요는 없으며, 새 배포 후 토큰 오류가 발생할 때만 아래 교체 절차를 사용한다.
+2026-10-25 main 병합 커밋 `dbc63d2` 배포 후 운영 도메인의 V2 화면과 `dataset_version: "v2"` 응답을 확인했다. Production Branch는 **main**이다. GitHub 읽기용 기존 토큰이 동작하므로 새 토큰을 중복 발급할 필요는 없으며, 새 배포 후 토큰 오류가 발생할 때만 아래 교체 절차를 사용한다.
 
 데이터 브랜치 **RADU/labeling-data**의 기존 `labeling/data/live.json`은 V1이다. 현재 V1 상태는 163건 중 146건 검수 완료, 1건 작성 중, 16건 미작성이다. 새 줄 bbox 라벨은 별도 `labeling/data/live-v2.json`에 V2로 저장한다. V1 파일과 평가 파일은 초기화하지 않는다.
 
@@ -43,8 +43,8 @@ Vercel에서 **radu-amber.vercel.app이 연결된 프로젝트 → Settings → 
 
 ## 3. 최신 코드로 재배포
 
-- 소스 브랜치: RADU/labeling.
-- Settings → Git → Production Branch: RADU/labeling.
+- 운영 배포 브랜치: main (V2 구현은 RADU/labeling에서 병합).
+- Settings → Git → Production Branch: main.
 - Root Directory: labeling.
 - Framework: Other (vercel.json의 framework=null 유지).
 - Node.js: 22.x, Build Command: npm run build, Output Directory: dist.

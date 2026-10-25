@@ -38,6 +38,7 @@ with tempfile.TemporaryDirectory(prefix='radu-bbox-browser-') as temporary:
     url = f'http://127.0.0.1:{port}'
     env = {**os.environ, 'PORT': str(port), 'HOST': '127.0.0.1',
            'LABEL_LOCAL_STORE': str(v1), 'LABEL_LOCAL_STORE_V2': str(scratch / 'v2.json'),
+           'LABEL_PROPOSALS_FILE': str(scratch / 'no-proposals.json'),
            'LABEL_BACKUP_DIR': str(scratch / 'backup-v1'),
            'LABEL_BACKUP_DIR_V2': str(scratch / 'backup-v2')}
     server = subprocess.Popen([shutil.which('node'), 'server.mjs'], cwd=ROOT, env=env,
@@ -102,6 +103,7 @@ with tempfile.TemporaryDirectory(prefix='radu-bbox-browser-') as temporary:
             expect(page.locator('#bbox-text')).to_have_value('한국어 English 123 + 기호')
             expect(page.locator('#bbox-uncertain')).to_be_checked()
             page.locator('#bbox-uncertain').uncheck()
+            page.locator('#bbox-reviewed').check()
             page.locator('#verify').click()
             expect(page.locator('#image-status')).to_have_text('검수 완료')
 
@@ -135,10 +137,27 @@ with tempfile.TemporaryDirectory(prefix='radu-bbox-browser-') as temporary:
             page.locator('[data-id="hf-0002"]').click()
             expect(page.locator('#import-proposals')).to_be_enabled()
             page.locator('#import-proposals').click()
-            expect(page.locator('#bbox-text')).to_have_value('')
+            expect(page.locator('#bbox-text')).to_have_value('OCR fixture')
+            expect(page.locator('#bbox-reviewed')).not_to_be_checked()
             expect(page.locator('#prediction-text')).to_have_text('OCR fixture')
+            expect(page.locator('#ocr-reference-text')).to_contain_text('OCR fixture')
+            page.locator('#verify').click()
+            expect(page.locator('#toast')).to_contain_text('원본과 대조')
+            expect(page.locator('#image-status')).not_to_have_text('검수 완료')
+            page.locator('#bbox-text').fill('사람이 수정한 문구')
+            expect(page.locator('#prediction-text')).to_have_text('OCR fixture')
+            expect(page.locator('#bbox-comparison')).to_have_text('OCR 원문을 수정한 상태')
+            assert page.locator('#line-crop').evaluate('(canvas) => canvas.width > 0 && canvas.height > 0')
             page.locator('#copy-prediction').click()
             expect(page.locator('#bbox-text')).to_have_value('OCR fixture')
+            page.locator('#bbox-text').fill('저장된 사람의 수정')
+            page.locator('#save').click()
+            expect(page.locator('#save-state')).to_have_text('서버 저장됨')
+            page.reload()
+            page.locator('[data-id="hf-0002"]').click()
+            page.locator('.box-row').click()
+            expect(page.locator('#bbox-text')).to_have_value('저장된 사람의 수정')
+            expect(page.locator('#prediction-text')).to_have_text('OCR fixture')
             page.locator('#delete-box').click()
             expect(page.locator('.bbox-box')).to_have_count(0)
             page.locator('#save').click()

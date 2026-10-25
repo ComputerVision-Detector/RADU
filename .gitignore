@@ -58,3 +58,7 @@ labeling/node_modules/
 !labeling/.env.selfhost.example
 # Self-host handoff archives are generated outside Git.
 artifacts/
+
+# Incomplete OCR proposal generation stays local; publish the final sidecar only.
+labeling/data/*.checkpoint.json
+labeling/data/*.checkpoint.tmp

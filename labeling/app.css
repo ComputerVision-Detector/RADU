@@ -24,3 +24,7 @@ html{overflow-y:auto;}
   .editor-fields{flex:none;overflow:visible;}
   .editor-footer{position:sticky;bottom:0;padding-bottom:max(12px,env(safe-area-inset-bottom));box-shadow:0 -3px 12px #192a3810;}
 }
+
+.review-choice{display:flex;align-items:center;gap:8px;margin:12px 0;color:var(--green);font-size:11px;line-height:1.7}.review-choice input{accent-color:var(--green)}
+
+.line-crop{display:block;width:100%;height:auto;max-height:220px;object-fit:contain;object-position:left;background:#edf0ea;border:1px solid var(--line);border-radius:6px;margin:10px 0}

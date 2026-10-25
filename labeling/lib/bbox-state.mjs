@@ -62,12 +62,13 @@ function validBox(box,image,ids,orders) {
   if(x1<0 || y1<0 || x2>image.source_width || y2>image.source_height || x1>=x2 || y1>=y2)return false;
   if(typeof box.text!=='string' || box.text.length>50000 || typeof box.prediction!=='string' || box.prediction.length>50000)return false;
   if(!Number.isInteger(box.order) || box.order<1 || orders.has(box.order) || typeof box.uncertain!=='boolean')return false;
+  if(box.reviewed!==undefined && typeof box.reviewed!=='boolean')return false;
   ids.add(box.id);orders.add(box.order);return true;
 }
 
 function annotationComplete(annotation) {
   if(annotation.no_text)return annotation.boxes.length===0;
-  return annotation.boxes.length>0 && annotation.boxes.every(box=>box.text.trim() && !box.uncertain);
+  return annotation.boxes.length>0 && annotation.boxes.every(box=>box.text.trim() && !box.uncertain && box.reviewed!==false);
 }
 
 export function validateBBoxState(state,catalog=seed) {
@@ -144,7 +145,7 @@ export function mutateBBox(state,action,body,now=Date.now()) {
       if(next.boxes.some(box=>!validBox(box,item.image,ids,orders)))throw new AppError(400,'bbox 좌표·문구·순서 값을 확인하세요.');
       if(next.no_text && next.boxes.length)throw new AppError(400,'텍스트 없음으로 표시한 이미지에는 bbox를 둘 수 없습니다.');
       if(next.boxes.some(box=>box.uncertain) && !next.notes.trim())throw new AppError(400,'불확실한 줄에 대한 메모를 입력하세요.');
-      if(next.status==='verified' && !annotationComplete(next))throw new AppError(400,'모든 bbox의 정답을 입력하거나, bbox가 없는 이미지는 텍스트 없음으로 표시하세요. 불확실한 줄은 검수 완료할 수 없습니다.');
+      if(next.status==='verified' && !annotationComplete(next))throw new AppError(400,'모든 줄의 정답을 입력하고 원본 대조 완료를 표시하세요. 불확실한 줄은 검수 완료할 수 없습니다. 텍스트가 없는 이미지는 텍스트 없음으로 표시하세요.');
       next.revision+=1;item.bbox_annotation=next;
       const at=new Date(now).toISOString();
       item.history=[{at,author:actor.name,status:next.status,revision:next.revision,box_count:next.boxes.length},...(item.history || [])].slice(0,20);
