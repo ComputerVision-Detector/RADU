@@ -6,7 +6,7 @@
   "functions": {
     "api/labeling.mjs": {
       "maxDuration": 30,
-      "includeFiles": "data/seed.json",
+      "includeFiles": "data/{seed.json,assets.manifest.json}",
       "excludeFiles": "{assets/**,dist/**,tests/**}"
     }
   },

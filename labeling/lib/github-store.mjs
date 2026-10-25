@@ -1,9 +1,14 @@
-import { AppError,initialState,reconcileState } from './state.mjs';
+import { AppError,initialState as initialV1State,reconcileState as reconcileV1State } from './state.mjs';
 const STATE_PATH='labeling/data/live.json';
 export class GitHubStore {
-  constructor(env=process.env, request=fetch) {
+  constructor(env=process.env, request=fetch, options={}) {
     this.token=env.LABEL_GITHUB_TOKEN?.trim();this.kind='github';this.repo=env.LABEL_GITHUB_REPOSITORY || 'ComputerVision-Detector/RADU';
     this.branch=env.LABEL_DATA_BRANCH || 'RADU/labeling-data';this.source=env.LABEL_SOURCE_BRANCH || 'RADU/labeling';this.fetch=request;
+    this.statePath=options.statePath || STATE_PATH;this.initialState=options.initialState || initialV1State;
+    this.reconcileState=options.reconcileState || reconcileV1State;this.validate=options.validateState || (state=>{
+      if(state?.schema!==1 || !state.items || typeof state.items!=='object')throw new AppError(503,'공유 라벨 데이터 형식을 확인해야 합니다.');
+      return state;
+    });
     if(!/^[\w.-]+\/[\w.-]+$/.test(this.repo)) throw new AppError(503,'GitHub 저장소 설정을 확인하세요.');
     if(this.branch===this.source || ['main','master'].includes(this.branch)) throw new AppError(503,'라벨 저장 브랜치는 코드·main 브랜치와 구분해 주세요.');
   }
@@ -32,25 +37,26 @@ export class GitHubStore {
     if(!r.ok)throw this.failure(r);
   }
   async read() {
-    const path=`/contents/${STATE_PATH}?ref=${encodeURIComponent(this.branch)}`;
+    const path=`/contents/${this.statePath}?ref=${encodeURIComponent(this.branch)}`;
     let r=await this.request(path);
     if(r.status===404){
       const source=await this.request(`/git/ref/heads/${this.source}`);
       if(!source.ok)throw this.failure(source);
-      return {state:initialState(),version:null};
+      return {state:this.initialState(),version:null};
     }
     if(!r.ok)throw this.failure(r);
     const file=await r.json();let state;
     if(file.encoding==='base64')state=JSON.parse(Buffer.from(file.content,'base64').toString('utf8'));
     else { r=await this.request(path,{headers:{Accept:'application/vnd.github.raw+json'}});if(!r.ok)throw this.failure(r);state=await r.json(); }
-    if(state.schema!==1 || !state.items)throw new AppError(503,'공유 라벨 데이터 형식을 확인해야 합니다.');
-    return {state:reconcileState(state),version:file.sha};
+    try{return {state:this.validate(this.reconcileState(state)),version:file.sha};}
+    catch(error){if(error instanceof AppError)throw error;throw new AppError(503,'공유 라벨 데이터 형식을 확인해야 합니다.');}
   }
   async write(state,version,author) {
+    this.validate(state);
     await this.ensureBranch();
     const body={branch:this.branch,message:`labels: save ${String(author).replace(/[\r\n]/g,' ').slice(0,40)} [skip ci]`,content:Buffer.from(JSON.stringify(state,null,2)+'\n').toString('base64')};
     if(version)body.sha=version;
-    const r=await this.request(`/contents/${STATE_PATH}`,{method:'PUT',body:JSON.stringify(body)});
+    const r=await this.request(`/contents/${this.statePath}`,{method:'PUT',body:JSON.stringify(body)});
     if(r.status===409)return false;
     if(r.status===422){
       const error=await r.clone().json().catch(()=>({}));

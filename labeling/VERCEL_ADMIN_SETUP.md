@@ -4,11 +4,11 @@
 
 ## 현재 진단과 완료한 작업
 
-화면은 HTTP 200이지만 `/api/labeling?action=list`가 HTTP 503과 토큰 미설정 오류를 반환한다. 이는 Vercel 서버 함수에 GitHub 토큰이 없다는 의미다. Docker 독립 서버와 달리 Vercel 방식에는 영구 저장소 연결용 토큰이 필요하다.
+2026-10-25 직접 확인 기준 `https://radu-amber.vercel.app/api/labeling?action=health`는 HTTP 200으로 `{"status":"ok","storage":"github","samples":163}`을 반환한다. 현재 Production API가 GitHub 저장소를 읽을 수 있다. 이전의 토큰 미설정 진단은 이 확인으로 갱신되었다. 새 운영 토큰을 중복 발급할 필요는 없으며, 배포 후 health가 실패할 때 아래 설정 절차를 사용한다.
 
-GitHub 저장소 읽기·쓰기 권한을 확인했고 **RADU/labeling-data** 브랜치의 `labeling/data/live.json`을 초기화했다. 초기 정답 5장 / 미작성 117장, 총 122개를 실제 API로 다시 읽어 확인했다. 기존 평가 파일은 바꾸지 않았다.
+데이터 브랜치 **RADU/labeling-data**의 기존 `labeling/data/live.json`은 V1이다. 현재 V1 상태는 163건 중 146건 검수 완료, 1건 작성 중, 16건 미작성이다. 새 줄 bbox 라벨은 별도 `labeling/data/live-v2.json`에 V2로 저장한다. V1 파일과 평가 파일은 초기화하지 않는다.
 
-코드는 토큰 누락·만료·접근 거부·요청 한도를 구분하도록 보완했다. 아래 토큰 등록과 재배포는 **해당 Vercel 프로젝트 관리자**가 수행해야 한다. 이 개발 세션에는 해당 Vercel 계정 인증이 연결되지 않았다. 운영 전용 새 토큰 발급·등록을 이미 완료한 상태는 아니다.
+코드는 토큰 누락·만료·접근 거부·요청 한도를 구분한다. 아래 토큰 등록·교체는 health가 토큰 오류를 반환할 때 **해당 Vercel 프로젝트 관리자**가 수행한다. 이 개발 세션에는 Vercel 계정 인증이 연결되어 있지 않아 환경변수나 배포 설정은 직접 수정할 수 없다.
 
 ## 1. GitHub 운영 전용 토큰 생성
 

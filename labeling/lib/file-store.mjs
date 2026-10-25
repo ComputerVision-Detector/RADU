@@ -2,7 +2,7 @@
 import { mkdirSync,readFileSync,existsSync,writeFileSync,openSync,closeSync,fsyncSync,renameSync,unlinkSync,readdirSync,statSync } from 'node:fs';
 import path from 'node:path';
 import { createHash,randomUUID } from 'node:crypto';
-import { initialState,AppError,reconcileState } from './state.mjs';
+import { initialState as initialV1State,AppError,reconcileState as reconcileV1State } from './state.mjs';
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 export function validateState(state) {
@@ -33,13 +33,16 @@ export class FileStore {
     this.kind='persistent-file';this.file=path.resolve(file);this.lock=this.file+'.lock';
     this.backups=path.resolve(options.backups || path.join(path.dirname(this.file),'backups'));
     this.limit=options.limit ?? 50;
+    this.initialState=options.initialState || initialV1State;
+    this.reconcileState=options.reconcileState || reconcileV1State;
+    this.validate=options.validateState || validateState;
     if(!Number.isInteger(this.limit) || this.limit<0 || this.limit>500)throw new Error('Backup limit must be between 0 and 500');
     mkdirSync(path.dirname(this.file),{recursive:true});if(this.limit)mkdirSync(this.backups,{recursive:true});
   }
   async read() {
-    if(!existsSync(this.file))return {state:initialState(),version:null};
+    if(!existsSync(this.file))return {state:this.initialState(),version:null};
     const raw=readFileSync(this.file);
-    try{return {state:validateState(reconcileState(JSON.parse(raw))),version:hash(raw)};}
+    try{return {state:this.validate(this.reconcileState(JSON.parse(raw))),version:hash(raw)};}
     catch{throw new AppError(503,'서버 저장 파일을 읽지 못했습니다. 관리자에게 알려 주세요. 백업으로 복구할 수 있습니다.');}
   }
   async acquire() {
@@ -54,7 +57,7 @@ export class FileStore {
     throw new AppError(503,'다른 저장을 처리 중입니다. 잠시 뒤 다시 저장하세요.');
   }
   async replace(state) {
-    validateState(state);await this.acquire();
+    this.validate(state);await this.acquire();
     try {
       if(existsSync(this.file)) {
         mkdirSync(this.backups,{recursive:true});
@@ -65,7 +68,7 @@ export class FileStore {
     } finally {unlinkSync(this.lock);}
   }
   async write(state,version) {
-    validateState(state);await this.acquire();
+    this.validate(state);await this.acquire();
     try {
       const current=await this.read();if(current.version!==version)return false;
       if(current.version && this.limit) {

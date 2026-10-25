@@ -8,6 +8,8 @@
 - 전사·메모, 셀 구분 탭 입력, 임시 저장, 검수 완료, Ctrl/Cmd+S.
 - 브라우저에 미저장 입력 백업 및 복구, 버전 충돌 시 덮어쓰기 차단.
 - GitHub 서버 저장, 최근 수정 기록, 개별 JSON ZIP·통합 JSON 다운로드.
+- V1 페이지 전체 전사와 V2 줄 단위 bbox 정답을 버전 선택기로 분리 관리.
+- V2는 OCR 후보를 참고해 박스를 편집하고 줄마다 정답 문구를 저장·내보내기.
 - 모바일 대응. OCR/Qwen 모델 및 GPU 불필요.
 
 ## 다른 사람의 서버·도메인에 바로 전달하기
@@ -24,7 +26,7 @@ docker compose -f compose.yaml -f compose.domain.yaml up -d --build
 
 ## Vercel 배포
 
-현재 radu-amber.vercel.app에서 토큰 미설정 오류가 나면 [관리자 설정 안내](VERCEL_ADMIN_SETUP.md)를 따르세요. GitHub 데이터 브랜치는 초기화되어 있으며 Vercel Production 환경변수 등록 및 재배포가 필요합니다.
+2026-10-25 확인 기준 `https://radu-amber.vercel.app/api/labeling?action=health`가 HTTP 200, `storage: github`, `samples: 163`을 반환해 GitHub 저장소 연결이 동작합니다. 배포 후 이 주소에서 토큰 또는 권한 오류가 보이면 [관리자 설정 안내](VERCEL_ADMIN_SETUP.md)를 따르세요.
 
 GitHub 코드 브랜치: **RADU/labeling**. 기존 실험 브랜치 `feat/hybridocr`에서 분기했다.
 
@@ -41,6 +43,7 @@ GitHub 코드 브랜치: **RADU/labeling**. 기존 실험 브랜치 `feat/hybrid
 | `LABEL_GITHUB_REPOSITORY` | `ComputerVision-Detector/RADU` (기본값) |
 | `LABEL_SOURCE_BRANCH` | `RADU/labeling` (기본값) |
 | `LABEL_DATA_BRANCH` | `RADU/labeling-data` (기본값) |
+| `LABEL_PROPOSALS_FILE` | 선택 사항. `data/text-box-proposals.json` 또는 검토한 버전 파일 경로 |
 
 토큰은 가능한 한 해당 저장소만 선택한 fine-grained token을 사용하고 **Contents: Read and write** 권한을 부여한다. 조직 정책에서 승인이 필요하면 승인된 토큰을 사용한다. 팀원이 각자 토큰을 입력하는 방식이 아니며 배포 관리자가 서버 환경변수에 한 번 설정한다. 토큰이 없으면 공유 저장 미연결 상태를 표시하고 저장된 것처럼 처리하지 않는다.
 
@@ -48,11 +51,35 @@ Vercel 계정·프로젝트와 환경변수가 연결되기 전에는 실제 공
 
 공식 설정 참고: [Vercel Git 배포](https://vercel.com/docs/git), [프로젝트 루트 설정](https://vercel.com/docs/monorepos), [Node.js 함수](https://vercel.com/docs/functions/runtimes/node-js).
 
+## OCR 줄 bbox 후보 생성
+
+OCR 후보는 웹에서 실시간 생성하지 않는다. 저장소 루트에서 Python 환경의 PaddleOCR 의존성(`requirements.txt`)을 설치하고, `models/README.md`에 안내된 로컬 가중치를 준비한 뒤 실행한다. 기본 엔진은 `paddleocrv6`이며, `paddleocrvl16`도 선택할 수 있다. 필요한 모델 가중치는 `.gitignore` 대상이라 저장소 코드 브랜치에 포함되지 않는다.
+
+```bash
+python -m src.evaluation.text_box_candidates --image-dir labeling/assets --engine paddleocrv6 --output labeling/data/text-box-proposals.json
+```
+
+이 명령은 웹용 WebP에서 OCR 후보를 만들고 bbox를 원본 픽셀 좌표로 환산한다. 입력 이미지 해시가 정식 웹 에셋과 다르면 OCR 전에 중단한다. 출력에는 원본·웹 자산 해시와 크기, 엔진·모델 정보, 줄별 prediction·confidence·bbox가 들어가며, 앱도 파일 경로와 세 해시를 확인한 뒤 후보를 허용한다. OCR prediction은 정답이 아니므로 V2 `text`에는 자동 입력되지 않는다. 기존 출력 파일이 있으면 생성이 중단된다. 새 후보 세트를 만들 때에는 다른 파일명으로 출력한다.
+
+```bash
+python -m src.evaluation.text_box_candidates --image-dir labeling/assets --engine paddleocrv6 --output labeling/data/text-box-proposals-paddleocrv6-run2.json
+```
+
+버전 파일을 앱에서 사용하려면 앱 실행/빌드 환경의 `LABEL_PROPOSALS_FILE`에 `data/text-box-proposals-paddleocrv6-run2.json`처럼 `labeling/` 기준 경로를 설정한다. 기본은 `data/text-box-proposals.json`이며, sidecar가 없으면 V2에서 박스를 직접 그릴 수 있다.
+
 ## 저장 위치와 충돌 처리
 
-Vercel 방식의 원본 상태는 데이터 브랜치 **RADU/labeling-data**의 `labeling/data/live.json`이다. 첫 작업 맡기·저장 시 GitHub API로 브랜치와 파일을 생성한다. 코드 브랜치·main·기존 5장 평가 파일은 수정하지 않는다. 배포가 재시작되어도 GitHub의 상태를 다시 읽는다. Vercel 임시 파일 시스템이나 브라우저 localStorage를 공동 저장소로 사용하지 않는다.
+Vercel 방식은 데이터 브랜치 **RADU/labeling-data**의 기존 `labeling/data/live.json`을 V1로 읽고 유지한다. 새 `labeling/data/live-v2.json`은 V2에서 처음 저장할 때 생성한다. 두 버전 모두 GitHub API로 별도 파일을 갱신하며, 코드 브랜치·main·기존 평가 파일은 수정하지 않는다. 배포가 재시작되어도 GitHub의 상태를 다시 읽는다. Vercel 임시 파일 시스템이나 브라우저 localStorage를 공동 저장소로 사용하지 않는다.
 
-`live.json`은 모든 이미지의 전사·revision·현재 작업자·최근 이력을 포함한다. GitHub 파일 SHA를 조건으로 갱신하며, 서로 다른 이미지에 대한 동시 수정은 최신 상태에 재적용한다. 동일 이미지의 오래된 revision 저장은 409 오류로 막는다. 최근 이력은 이미지당 20개이고 GitHub 커밋에도 상태가 남는다.
+기존 페이지 전체 전사 163건은 **V1**로 분류한다. 현재 `live.json`의 146건 검수 완료·1건 작성 중·16건 미작성 상태와 전사·이력은 그대로 보존한다. 줄 bbox 라벨링은 같은 데이터 브랜치의 별도 파일 `labeling/data/live-v2.json`에 **V2**로 저장하며, 163개 이미지가 모두 빈 bbox 상태로 시작한다. V2 저장은 V1 `live.json`을 읽거나 수정하지 않는다. 화면에서 V1/V2를 전환하고 내보내기 파일에도 데이터 버전을 기록한다.
+
+V2 통합 JSON은 `{schema_version: 1, dataset_version: "v2", samples: [...]}` 구조다. 각 sample에는 `image_id`, 원본 파일·크기, 검수 상태와 다음 bbox 목록이 들어간다. `bbox`는 원본 픽셀 기준 `[x1, y1, x2, y2]`이고, `text`는 사람이 입력한 정답, `prediction`은 OCR 후보 문구다. 후보를 가져올 때 정답 칸은 비워 두며, `order`는 읽기 순서, `uncertain`은 판독 불확실 표시다. bbox가 없는 검수 완료 페이지는 사람이 `no_text: true`로 표시한다.
+
+```json
+{"id":"hf-0000-line-0001","bbox":[120,248,890,316],"text":"정답 전사","prediction":"OCR 후보","order":1,"uncertain":false}
+```
+
+`live.json`은 V1 이미지 전체 전사·revision·현재 작업자·최근 이력을 포함한다. `live-v2.json`은 V2 bbox 전사만 저장한다. 두 파일은 GitHub 파일 SHA를 조건으로 각각 갱신하며, 서로 다른 이미지에 대한 동시 수정은 최신 상태에 재적용한다. 동일 이미지의 오래된 revision 저장은 409 오류로 막는다. 최근 이력은 이미지당 20개이고 GitHub 커밋에도 상태가 남는다.
 
 기존 `data/benchmark/qwen_ablation_pilot/labels/*.json`은 시작 시점의 라벨이다. 웹 입력은 그 파일들을 매번 직접 갱신하지 않는다. 웹의 **정답 파일 다운로드**에서 최신 개별 JSON ZIP을 내려받아 labels/에 반영하고 PR로 검토한다. 다운로드 결과에는 필요한 id/text/status/annotator/notes와 원래 submitted_id만 포함되며 작업 임대·내부 revision은 제외한다.
 
@@ -79,7 +106,9 @@ cd labeling
 npm run dev
 ```
 
-http://127.0.0.1:8014/ 에서 확인한다. 로컬/독립 서버 모드는 `.runtime/state.json`(Docker는 `/data/state.json`)을 서버 공유 파일로 사용하므로 서로 다른 브라우저의 저장이 같은 로컬 서버에 반영된다. 파일 저장은 원자적 교체·버전 검사·저장 잠금을 사용하며 최근 50회 상태를 backups/에 보관한다. 이 로컬 파일과 `.env`, `.vercel`, 빌드 산출물은 Git에서 제외한다. 로컬 데이터는 Vercel에 자동 업로드하지 않는다.
+http://127.0.0.1:8014/ 에서 확인한다. 로컬/독립 서버 모드는 V1 `.runtime/state.json`(Docker `/data/state.json`)과 V2 `.runtime/state-v2.json`(Docker `/data/state-v2.json`)을 별도로 사용하므로 서로 다른 브라우저의 저장이 같은 로컬 서버에 반영된다. 각 버전은 자체 백업 디렉터리와 복원 경로를 사용한다. 이 로컬 파일과 `.env`, `.vercel`, 빌드 산출물은 Git에서 제외한다. 로컬 데이터는 Vercel에 자동 업로드하지 않는다.
+
+독립 서버의 전체 상태 백업·복원은 `tools/state.mjs`를 사용한다. 기본은 V1이며 V2에는 `LABEL_STATE_VERSION=v2`를 지정한다. Docker 배포 명령은 [START_HERE.md](START_HERE.md)를 참고한다.
 
 ```bash
 npm test
