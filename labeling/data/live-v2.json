@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T08:20:03.795Z",
+  "updated_at": "2026-10-27T08:21:40.030Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2439,8 +2439,8 @@
         "source_sha256": "25c29d1a4abe88f96e35f5cb7884bad7a33e5333226cb5ecbb24f9a9626da4ff"
       },
       "bbox_annotation": {
-        "status": "draft",
-        "revision": 1,
+        "status": "verified",
+        "revision": 2,
         "annotator": "김혜린",
         "notes": "",
         "no_text": false,
@@ -2580,20 +2580,303 @@
               1978,
               1363
             ],
-            "text": "- Position is",
+            "text": "- Position_ids",
             "prediction": "- Position is",
             "order": 10,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
+          },
+          {
+            "id": "line-fce3cae9-c0fb-428c-9698-b41d0b46ba0b",
+            "bbox": [
+              1665,
+              1403,
+              2035,
+              1478
+            ],
+            "text": "├ freq 계산",
+            "prediction": "",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-8211a948-b567-49af-8f31-10aa2b37dfe8",
+            "bbox": [
+              1660,
+              1515,
+              1905,
+              1597
+            ],
+            "text": "├ cos",
+            "prediction": "",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-746e7045-f373-48c2-997e-c0c97045c245",
+            "bbox": [
+              1633,
+              1620,
+              1876,
+              1711
+            ],
+            "text": "└ sin",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ebef08ff-c18f-45bb-b980-205a8d69119b",
+            "bbox": [
+              1345,
+              1748,
+              1454,
+              1827
+            ],
+            "text": "↓",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-76abfd52-f9fc-4072-9fc4-f628ec48b285",
+            "bbox": [
+              1227,
+              1847,
+              1784,
+              1944
+            ],
+            "text": "Attention mask 생성",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-15f4e0c4-7288-4ca0-af8f-65e51e10ebb7",
+            "bbox": [
+              1419,
+              1956,
+              2126,
+              2036
+            ],
+            "text": "└ GptOssMoedl, forword ()",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a977de18-6fbb-4080-b3bd-99ed6cf33b1f",
+            "bbox": [
+              1608,
+              2086,
+              2241,
+              2158
+            ],
+            "text": "├ create_causal_mask()",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9039bdd8-e05d-4e85-baee-8e4453798b9e",
+            "bbox": [
+              1610,
+              2184,
+              2571,
+              2269
+            ],
+            "text": "└ create_sliding_window_causal_mask()",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-02d77f7f-63da-4ffd-bda1-4c70748eab3c",
+            "bbox": [
+              1397,
+              2301,
+              1472,
+              2388
+            ],
+            "text": "↓",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5422df0d-c119-4612-83ab-87597f69322a",
+            "bbox": [
+              1288,
+              2406,
+              1956,
+              2495
+            ],
+            "text": "Transformer Block X24",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d061f11c-f0f2-48dc-b984-df42e43fc77c",
+            "bbox": [
+              1405,
+              2525,
+              1963,
+              2616
+            ],
+            "text": "GptOssDecoder layer",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-7be92727-7df8-4c38-8a00-4c1bf6d91a6f",
+            "bbox": [
+              1541,
+              2639,
+              2049,
+              2727
+            ],
+            "text": "├ Input RMSNorm",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e668c01d-d7f1-42ad-88e2-83061214535c",
+            "bbox": [
+              1519,
+              2757,
+              2034,
+              2840
+            ],
+            "text": "├ self - Attention",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-cd65dd4b-101e-4909-b2a1-5bdb11e89177",
+            "bbox": [
+              1739,
+              2879,
+              2119,
+              2970
+            ],
+            "text": "├ Q projection",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-98c5207b-d452-4b7c-8753-103a0382652a",
+            "bbox": [
+              1717,
+              2981,
+              2144,
+              3087
+            ],
+            "text": "├ K projection",
+            "prediction": "",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-60664bb8-e89a-45bd-8379-e135ef8f4d40",
+            "bbox": [
+              1732,
+              3117,
+              2129,
+              3192
+            ],
+            "text": "├ V projection",
+            "prediction": "",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e40d9398-df52-4237-9158-9e524e5af215",
+            "bbox": [
+              1727,
+              3241,
+              2179,
+              3325
+            ],
+            "text": "├ Q/K/V Reshape",
+            "prediction": "",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-4ef06ee1-ee25-4927-b6c9-89145d196095",
+            "bbox": [
+              1710,
+              3345,
+              2017,
+              3452
+            ],
+            "text": "├ RoPE",
+            "prediction": "",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f2efa121-e408-4097-b326-3c2cf2a6255b",
+            "bbox": [
+              1713,
+              3466,
+              2350,
+              3578
+            ],
+            "text": "├ KV cache update",
+            "prediction": "",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-499d6aed-0afa-4517-a453-d8b0fa4afb7e",
+            "bbox": [
+              1734,
+              3595,
+              2357,
+              3690
+            ],
+            "text": "└ Attention Inter face",
+            "prediction": "",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
           }
         ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-27T08:45:03.795Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-10-27T08:21:40.030Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 2,
+          "box_count": 30
+        },
         {
           "at": "2026-10-27T08:12:08.313Z",
           "author": "김혜린",
