@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T12:34:47.238Z",
+  "updated_at": "2026-10-27T12:36:33.480Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -4248,20 +4248,319 @@
         "source_sha256": "72dcf1476841c57f2da509ba47cf67c25231c43df45b71aa559f9a89f1bb7cb7"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0015-line-0003",
+            "bbox": [
+              362,
+              415,
+              657,
+              533
+            ],
+            "text": "◦ 모델 선택",
+            "prediction": "- 모델 선택",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0004",
+            "bbox": [
+              381,
+              491,
+              1494,
+              634
+            ],
+            "text": "- 데이터에 가장 알맞은 모델을 찾아내는 작업",
+            "prediction": "- 데이터 에 참 쌀봅은 모델을 충족하는 작업",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0005",
+            "bbox": [
+              362,
+              753,
+              787,
+              863
+            ],
+            "text": "◦일반화 능력 측정",
+            "prediction": "- 일반화 능력 측정",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0006",
+            "bbox": [
+              402,
+              834,
+              1286,
+              976
+            ],
+            "text": "- 새로운 데이터로 성능을 측정하는 일",
+            "prediction": "- 세그먼 데이터로 심양을 확장하는 일",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0007",
+            "bbox": [
+              483,
+              975,
+              926,
+              1101
+            ],
+            "text": "테스트 집합 사용",
+            "prediction": "E165 컵창 사용",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0008",
+            "bbox": [
+              483,
+              1100,
+              784,
+              1194
+            ],
+            "text": "교차 검증",
+            "prediction": "교육 김중",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0009",
+            "bbox": [
+              350,
+              1338,
+              620,
+              1460
+            ],
+            "text": "◦혼동행렬",
+            "prediction": "- 흡공 행복",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0010",
+            "bbox": [
+              374,
+              1403,
+              1848,
+              1573
+            ],
+            "text": "- 부류별로 옳은 분류와 틀린 부류의 개수를 기록한 행렬",
+            "prediction": "- 복유별로 옮은 부유와 들린 뉴욕 계속를 객관 행복.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0011",
+            "bbox": [
+              344,
+              1641,
+              2048,
+              1819
+            ],
+            "text": "◦참/거짓 예측에 대한 (긍정 -> 부정 : 긍정을 부정으로 예측한 경우)",
+            "prediction": "- 총/짜 예측에 책 (긍정 객정 : 궁정을 병Q으로 대축환 경위)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0012",
+            "bbox": [
+              450,
+              1814,
+              756,
+              1936
+            ],
+            "text": "긍정 → 긍정",
+            "prediction": "긍정 → 긍정",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0013",
+            "bbox": [
+              840,
+              1798,
+              1352,
+              1920
+            ],
+            "text": "참긍정(TP) 진양성",
+            "prediction": "종령(TP) 정책",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0014",
+            "bbox": [
+              444,
+              1939,
+              735,
+              2061
+            ],
+            "text": "긍정 → 부정",
+            "prediction": "긍정 → 병정",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0015",
+            "bbox": [
+              840,
+              1907,
+              1440,
+              2053
+            ],
+            "text": "거짓 부정(FN) 위음성",
+            "prediction": "책 병(FN) 위원장",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0016",
+            "bbox": [
+              456,
+              2064,
+              756,
+              2190
+            ],
+            "text": "부정 -> 긍정",
+            "prediction": "병정 → 긍정",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0017",
+            "bbox": [
+              840,
+              2032,
+              1455,
+              2178
+            ],
+            "text": "거짓 긍정 (FP) 양성",
+            "prediction": "책길 정(FP) 황행",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0018",
+            "bbox": [
+              456,
+              2189,
+              756,
+              2315
+            ],
+            "text": "부정 -> 부정",
+            "prediction": "책정 → 병정",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0019",
+            "bbox": [
+              858,
+              2157,
+              1485,
+              2299
+            ],
+            "text": "참 부정 (TN) 진음성",
+            "prediction": "종 병정 (TN) 진행",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0021",
+            "bbox": [
+              613,
+              2415,
+              796,
+              2520
+            ],
+            "text": "예측값",
+            "prediction": "예측층",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0022",
+            "bbox": [
+              344,
+              2709,
+              1047,
+              2831
+            ],
+            "text": "- 정확률 ( accuracy)",
+            "prediction": "- 장화물 ( accuracy)",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0023",
+            "bbox": [
+              374,
+              2838,
+              1219,
+              2956
+            ],
+            "text": "- 가장 널리 쓰이는 성능 측정 기준",
+            "prediction": "- 참 널리 쓰이는 삶을 즉장기준",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0015-line-0024",
+            "bbox": [
+              432,
+              2971,
+              2529,
+              3250
+            ],
+            "text": "정확률 = 맟힌 샘플 수/전체 샘플 수 = 대각선 샘플 수/전체 샘플 수 = TP or TN/전체 샘플 수",
+            "prediction": "정확률 = \\( \\frac{대한 샘플 수}{진취 샘플 수} = \\frac{TP or TN}{정치 샘플 수} \\)",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "62a6956b-d161-429d-8443-40c7b17e1f74",
-        "until": "2026-10-27T12:59:06.918Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-27T12:36:33.480Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 21
+        }
+      ]
     },
     "hf-0016": {
       "id": "hf-0016",
