@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T08:12:08.313Z",
+  "updated_at": "2026-10-27T08:13:11.708Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3219,20 +3219,393 @@
         "source_sha256": "c5683596ea56f43fef49ced8e1e89557412cea012c05130ce4a105b7b3d2857e"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "draft",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "line-f2b35759-fbcc-4f33-b2c9-04c98f83d328",
+            "bbox": [
+              263,
+              289,
+              956,
+              410
+            ],
+            "text": "파이썬으로 만드는 인공지능.",
+            "prediction": "",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-8533e22f-03ce-40af-9256-090900453284",
+            "bbox": [
+              357,
+              507,
+              1674,
+              670
+            ],
+            "text": "─ 주어진 환경에서 주어진 목표를 향해 행동하는 것.",
+            "prediction": "",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0003",
+            "bbox": [
+              302,
+              753,
+              1331,
+              871
+            ],
+            "text": "- AI (인공지능: Artificial intelligence)",
+            "prediction": "- AI (인권): Artificial intelligence)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0004",
+            "bbox": [
+              359,
+              858,
+              1963,
+              988
+            ],
+            "text": "- 지능적으로 행동하는 계산 에어컨트를 만들고 분석하는 학문 분야",
+            "prediction": "- 참적으로 행동하는 계산 에어컨트롤 만들고 분석하는 법문 높다",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0005",
+            "bbox": [
+              907,
+              975,
+              2087,
+              1093
+            ],
+            "text": "└'컴퓨터와 관련된 ','컴퓨터를이용하여 만드는'",
+            "prediction": "L'외국화와 관련된 '검표터를 이용하여 만드'",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0006",
+            "bbox": [
+              350,
+              1112,
+              1446,
+              1230
+            ],
+            "text": "- 악한 인공지능: 한 가지 일에 특화된 인공지능",
+            "prediction": "- 악한 인증땀: 참 찾아 잘 휩싸린 압축땀",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0007",
+            "bbox": [
+              344,
+              1225,
+              1694,
+              1351
+            ],
+            "text": "- 강한 인공지능 (AGI): 인간 지능에 필적하는 인공지능",
+            "prediction": "- 갑한 인증땀 (AGI): 안간 책에 필적하는 인증땀",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0008",
+            "bbox": [
+              743,
+              1366,
+              1416,
+              1464
+            ],
+            "text": "└인공일반지능(범용인공지능).",
+            "prediction": "L헝일반지붕(법률인공착)",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0009",
+            "bbox": [
+              314,
+              1616,
+              593,
+              1718
+            ],
+            "text": "· 강화학습",
+            "prediction": "- 강화량량",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0010",
+            "bbox": [
+              353,
+              1749,
+              720,
+              1839
+            ],
+            "text": "- 상태가 변하는",
+            "prediction": "- 상태가 밝다",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0011",
+            "bbox": [
+              752,
+              1693,
+              2190,
+              1835
+            ],
+            "text": "상황에서 자신에게 유리한 행동을 찾아가도록 학습하는 기법",
+            "prediction": "송황에서 채혜에 밝힌 행운을 찾아가도록 작성하는 기법",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0012",
+            "bbox": [
+              323,
+              1995,
+              811,
+              2093
+            ],
+            "text": "· 규칙 기반 방법론",
+            "prediction": "- 책 기반 암벽론",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0013",
+            "bbox": [
+              374,
+              2068,
+              2114,
+              2214
+            ],
+            "text": "- 인간이 사용하는 규칙을 수집하고 프로그래밍해 인공지능을 만드는 방식",
+            "prediction": "-인간이 수호하는 컷을 수집하고 프로젝트를 인용하는 악도",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0013-line-0014",
+            "bbox": [
+              405,
+              2217,
+              1304,
+              2335
+            ],
+            "text": "ex) 의료 진단용 전문가 시스템 마이신",
+            "prediction": "ex) 의료 컨퍼런스 전문가 시스템 아날",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0015",
+            "bbox": [
+              332,
+              2479,
+              775,
+              2581
+            ],
+            "text": "· 기계 학습 방법론",
+            "prediction": "-계절 밤씨츠",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0016",
+            "bbox": [
+              1439,
+              2378,
+              2465,
+              2549
+            ],
+            "text": "기계 학습의 목적은 새로운 데이터가 들어왔을 때",
+            "prediction": "계 밝다 목련 새로 메야가 들어왔을 예",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0017",
+            "bbox": [
+              381,
+              2592,
+              1225,
+              2714
+            ],
+            "text": "─ 이전에 발생한 경험을 활용한다.",
+            "prediction": "- 인간이 빛빛한 샘을 활용한다.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0018",
+            "bbox": [
+              1451,
+              2507,
+              1851,
+              2637
+            ],
+            "text": "정확히 분류하는 것",
+            "prediction": "잘못이 놓쳐하는 길",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0013-line-0019",
+            "bbox": [
+              1478,
+              2568,
+              2117,
+              2750
+            ],
+            "text": "증, 일반화 낮격을 극대화",
+            "prediction": "증, 일반화 낮격을 극대화",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0013-line-0020",
+            "bbox": [
+              843,
+              2713,
+              1062,
+              2823
+            ],
+            "text": "T데이",
+            "prediction": "T데이",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0013-line-0021",
+            "bbox": [
+              387,
+              2814,
+              2634,
+              2972
+            ],
+            "text": "ex) 숫자 인증을 만들며 전라북도우편물 등에서 다양한 많은 삶들을 수집해 데이터도 활용",
+            "prediction": "ex) 숫자 인증을 만들며 전라북도우편물 등에서 다양한 많은 삶들을 수집해 데이터도 활용",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0013-line-0022",
+            "bbox": [
+              332,
+              3120,
+              781,
+              3234
+            ],
+            "text": "- 특징 (Feature)",
+            "prediction": "- 특징 (Feature)",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0013-line-0023",
+            "bbox": [
+              381,
+              3249,
+              986,
+              3351
+            ],
+            "text": "- 계획율에서 각 특징",
+            "prediction": "- 계획율에서 각 특징",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0013-line-0024",
+            "bbox": [
+              381,
+              3354,
+              1630,
+              3480
+            ],
+            "text": "- 셀뜰 하나의 여러개의 특징이 있으면 특징 벡터",
+            "prediction": "- 셀뜰 하나의 여러개의 특징이 있으면 특징 벡터",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0013-line-0025",
+            "bbox": [
+              2431,
+              3556,
+              2822,
+              3653
+            ],
+            "text": "Keun Young Co.",
+            "prediction": "Keun Young Co.",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-9a14ca7d-daca-40a3-adce-865bf535fed3",
+            "bbox": [
+              302,
+              427,
+              811,
+              523
+            ],
+            "text": "· 에이전트(agent)",
+            "prediction": "",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
       "claim": {
         "name": "이나현",
         "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-27T08:37:06.121Z"
+        "until": "2026-10-27T08:38:11.708Z"
       },
-      "history": []
+      "history": [
+        {
+          "at": "2026-10-27T08:13:11.708Z",
+          "author": "이나현",
+          "status": "draft",
+          "revision": 1,
+          "box_count": 26
+        }
+      ]
     },
     "hf-0014": {
       "id": "hf-0014",
