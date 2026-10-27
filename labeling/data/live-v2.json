@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T08:03:06.019Z",
+  "updated_at": "2026-10-27T08:04:26.811Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2928,20 +2928,95 @@
         "source_sha256": "9709a2dedbaa6f7df4f0f8067e7ff75628e3c5fb00bb7b251ae793ecabf68d85"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0010-line-0001",
+            "bbox": [
+              257,
+              225,
+              1011,
+              315
+            ],
+            "text": "─ 볼계층 24中. 23번,",
+            "prediction": "- 基线 24 中. 23 班,",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0010-line-0002",
+            "bbox": [
+              1675,
+              217,
+              2196,
+              307
+            ],
+            "text": "+ Random. layer. 1개.",
+            "prediction": "+ Random. layer. 104.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0010-line-0003",
+            "bbox": [
+              275,
+              326,
+              896,
+              416
+            ],
+            "text": "─ 처음에는 24개 모두 출력.",
+            "prediction": "- 裂帛毛 24A 均重引.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0010-line-0004",
+            "bbox": [
+              1687,
+              306,
+              1809,
+              388
+            ],
+            "text": "→",
+            "prediction": "\\( \\zeta_1 \\)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0010-line-0005",
+            "bbox": [
+              949,
+              556,
+              1029,
+              629
+            ],
+            "text": "↓",
+            "prediction": "山",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-27T08:28:06.019Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-27T08:04:26.811Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 5
+        }
+      ]
     },
     "hf-0011": {
       "id": "hf-0011",
