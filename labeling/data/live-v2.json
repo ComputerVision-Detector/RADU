@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T05:18:28.357Z",
+  "updated_at": "2026-10-27T05:18:39.496Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1395,20 +1395,463 @@
         "source_sha256": "a40222c4d8cf301d01f1212984cf8b751abdc447494aa5445558d2f5f96cfc71"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "draft",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0004-line-0001",
+            "bbox": [
+              1197,
+              173,
+              2005,
+              319
+            ],
+            "text": "k[7,8,64] \\rightarrow [2,8,44]",
+            "prediction": "k[7,8,64] \\rightarrow [2,8,44]",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0002",
+            "bbox": [
+              1297,
+              290,
+              1969,
+              424
+            ],
+            "text": "U[2,8,64] \\rightarrow [2,8,64]",
+            "prediction": "U[2,8,64] \\rightarrow [2,8,64]",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0003",
+            "bbox": [
+              1291,
+              370,
+              2329,
+              533
+            ],
+            "text": "kdi vdi 等效 9_mul (Q multi 解得等效)",
+            "prediction": "kdi vdi 等效 9_mul (Q multi 解得等效)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0004",
+            "bbox": [
+              1333,
+              499,
+              1996,
+              629
+            ],
+            "text": "与对数、特征 a multi 解得 a maxi.",
+            "prediction": "与对数、特征 a multi 解得 a maxi.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0005",
+            "bbox": [
+              970,
+              645,
+              1555,
+              767
+            ],
+            "text": "Sink Resistive / Extend",
+            "prediction": "Sink Resistive / Extend",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0006",
+            "bbox": [
+              1127,
+              766,
+              1425,
+              867
+            ],
+            "text": "- S [64]",
+            "prediction": "- S [64]",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0007",
+            "bbox": [
+              1137,
+              854,
+              1636,
+              968
+            ],
+            "text": "- reduce [A,B,C,D]",
+            "prediction": "- reduce [A,B,C,D]",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0008",
+            "bbox": [
+              1239,
+              959,
+              1643,
+              1065
+            ],
+            "text": "expand [A,B,C,D]",
+            "prediction": "expand [A,B,C,D]",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0009",
+            "bbox": [
+              970,
+              1060,
+              1627,
+              1194
+            ],
+            "text": "- Causal Mode 48% [2, 2]",
+            "prediction": "- Causal Mode 48% [2, 2]",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0010",
+            "bbox": [
+              970,
+              1149,
+              1827,
+              1291
+            ],
+            "text": "- Silling Window mode 44 [2,2]",
+            "prediction": "- Silling Window mode 44 [2,2]",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0011",
+            "bbox": [
+              970,
+              1290,
+              1204,
+              1396
+            ],
+            "text": "akT",
+            "prediction": "akT",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0012",
+            "bbox": [
+              1130,
+              1382,
+              1537,
+              1492
+            ],
+            "text": "\\[ Q = [2,8,8,44] \\]",
+            "prediction": "\\[ Q = [2,8,8,44] \\]",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0013",
+            "bbox": [
+              1127,
+              1491,
+              1555,
+              1601
+            ],
+            "text": "- k = [2,8,8,64]",
+            "prediction": "- k = [2,8,8,64]",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0014",
+            "bbox": [
+              1130,
+              1596,
+              1727,
+              1706
+            ],
+            "text": "emission \\(\\rightarrow\\) [A,B,2,2]",
+            "prediction": "emission \\(\\rightarrow\\) [A,B,2,2]",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0015",
+            "bbox": [
+              1478,
+              1713,
+              1667,
+              1791
+            ],
+            "text": "\\( (\\Delta p, q, r, s) \\)",
+            "prediction": "\\( (\\Delta p, q, r, s) \\)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0016",
+            "bbox": [
+              1490,
+              1806,
+              1866,
+              1892
+            ],
+            "text": "2x2 Score matrix.",
+            "prediction": "2x2 Score matrix.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0017",
+            "bbox": [
+              970,
+              1935,
+              1564,
+              2033
+            ],
+            "text": "- Scaling [2,8,2,2]",
+            "prediction": "- Scaling [2,8,2,2]",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0018",
+            "bbox": [
+              970,
+              2048,
+              1558,
+              2146
+            ],
+            "text": "- Mask 288 [2,8,2,2]",
+            "prediction": "- Mask 288 [2,8,2,2]",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0019",
+            "bbox": [
+              970,
+              2169,
+              1271,
+              2266
+            ],
+            "text": "Sink 244",
+            "prediction": "Sink 244",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0020",
+            "bbox": [
+              1127,
+              2265,
+              1585,
+              2371
+            ],
+            "text": "- AK [8,8,2,2]",
+            "prediction": "- AK [8,8,2,2]",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0021",
+            "bbox": [
+              1173,
+              2378,
+              1588,
+              2484
+            ],
+            "text": "S [8,8,2,1]",
+            "prediction": "S [8,8,2,1]",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0022",
+            "bbox": [
+              1318,
+              2487,
+              1673,
+              2581
+            ],
+            "text": "↓Cat (1/m-1)",
+            "prediction": "↓Cat (1/m-1)",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0023",
+            "bbox": [
+              1230,
+              2612,
+              1516,
+              2706
+            ],
+            "text": "\\[ [2,8,2,3] \\]",
+            "prediction": "\\[ [2,8,2,3] \\]",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0024",
+            "bbox": [
+              1303,
+              2721,
+              1984,
+              2819
+            ],
+            "text": "3 = 244, 244 takes 4 sink 174",
+            "prediction": "3 = 244, 244 takes 4 sink 174",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0025",
+            "bbox": [
+              970,
+              2854,
+              1585,
+              2944
+            ],
+            "text": "- Softmax [8,8,2,3]",
+            "prediction": "- Softmax [8,8,2,3]",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0026",
+            "bbox": [
+              970,
+              2963,
+              1785,
+              3069
+            ],
+            "text": "- Sink weight 244 [8,8,2,2]",
+            "prediction": "- Sink weight 244 [8,8,2,2]",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0027",
+            "bbox": [
+              979,
+              3096,
+              1419,
+              3178
+            ],
+            "text": "- Attention x V",
+            "prediction": "- Attention x V",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0028",
+            "bbox": [
+              1239,
+              3197,
+              1661,
+              3295
+            ],
+            "text": "- W = [8,8,2,2]",
+            "prediction": "- W = [8,8,2,2]",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0029",
+            "bbox": [
+              1239,
+              3314,
+              1709,
+              3412
+            ],
+            "text": "- V = [2,8,8,64]",
+            "prediction": "- V = [2,8,8,64]",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0030",
+            "bbox": [
+              1239,
+              3435,
+              1945,
+              3537
+            ],
+            "text": "- Einsun \\(\\rightarrow\\) [2,8,8,64]",
+            "prediction": "- Einsun \\(\\rightarrow\\) [2,8,8,64]",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0004-line-0031",
+            "bbox": [
+              970,
+              3560,
+              1978,
+              3670
+            ],
+            "text": "- Reside [28,8,64] \\(\\rightarrow\\) [2,40%]",
+            "prediction": "- Reside [28,8,64] \\(\\rightarrow\\) [2,40%]",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": false
+          }
+        ]
       },
       "claim": {
         "name": "이나현",
         "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-27T05:43:28.357Z"
+        "until": "2026-10-27T05:43:39.496Z"
       },
-      "history": []
+      "history": [
+        {
+          "at": "2026-10-27T05:18:39.496Z",
+          "author": "이나현",
+          "status": "draft",
+          "revision": 1,
+          "box_count": 31
+        }
+      ]
     },
     "hf-0005": {
       "id": "hf-0005",
