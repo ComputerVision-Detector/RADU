@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T05:03:27.829Z",
+  "updated_at": "2026-10-27T05:04:29.235Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -292,8 +292,8 @@
         "source_sha256": "318fad17d8b86b229ccf96b99d9e591d62ed8fb3c60b8a3e96b4793b2d1648ae"
       },
       "bbox_annotation": {
-        "status": "draft",
-        "revision": 1,
+        "status": "verified",
+        "revision": 2,
         "annotator": "이나현",
         "notes": "",
         "no_text": false,
@@ -367,7 +367,7 @@
             "prediction": "GPT-053-20b 삭혀",
             "order": 5,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0002-line-0006",
@@ -619,7 +619,7 @@
             "prediction": "embr dailings [0] [2079]",
             "order": 23,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0002-line-0024",
@@ -629,11 +629,11 @@
               2350,
               1908
             ],
-            "text": "embe ddiing-s [1] [2763]",
+            "text": "embeddiings[1][2763]",
             "prediction": "embe ddiing-s [1] [2763]",
             "order": 24,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0002-line-0025",
@@ -643,11 +643,11 @@
               708,
               1992
             ],
-            "text": "- Vocals: 2012000",
+            "text": "· Vocab_size= 201088",
             "prediction": "- Vocals: 2012000",
             "order": 25,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0002-line-0026",
@@ -657,11 +657,11 @@
               2048,
               2000
             ],
-            "text": "파 갈이 가능",
+            "text": "과 같이 가능",
             "prediction": "파 갈이 가능",
             "order": 26,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0002-line-0027",
@@ -671,11 +671,11 @@
               1455,
               2109
             ],
-            "text": "토론의 종류가 20100000, 토론 12는 0 ~ 20100000.",
+            "text": "토론의 종류가 201088개, 토론 ID는 0 ~ 201087.",
             "prediction": "토론의 종류가 20100000, 토론 12는 0 ~ 20100000.",
             "order": 27,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0002-line-0028",
@@ -685,11 +685,11 @@
               796,
               2343
             ],
-            "text": "omax - Position = |3|1072.",
+            "text": "· max_Position = 131072.",
             "prediction": "omax - Position = |3|1072.",
             "order": 28,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0002-line-0029",
@@ -699,11 +699,11 @@
               1984,
               2468
             ],
-            "text": "기한 빛에 짜릿한 수 있는 핵수, 큼큼. 업적 90900000 길이가 131,072 턴모.",
+            "text": "→ 한 번에 처리할 수 있는 위치 수, 최대. 입력 sequence길이가 131,072토큰.",
             "prediction": "기한 빛에 짜릿한 수 있는 핵수, 큼큼. 업적 90900000 길이가 131,072 턴모.",
             "order": 29,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0002-line-0030",
@@ -713,11 +713,11 @@
               1715,
               2706
             ],
-            "text": "- 증 토론 A헤어 대로 봐고 체제 토큰이 20100000 쪽제 외어 잊을",
+            "text": "· 즉, 토론 사전이 따로 있고 거기에 토큰이 201088개가 적재 되어 있음.",
             "prediction": "- 증 토론 A헤어 대로 봐고 체제 토큰이 20100000 쪽제 외어 잊을",
             "order": 30,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0002-line-0031",
@@ -727,11 +727,11 @@
               796,
               2815
             ],
-            "text": "tokeh; zef Jsen.",
+            "text": "token: zer.json.",
             "prediction": "tokeh; zef Jsen.",
             "order": 31,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0002-line-0032",
@@ -741,11 +741,11 @@
               2335,
               2928
             ],
-            "text": "(3) 커넥션 \"hello\"는 24912 임. 즉 눈에 날면 떠지에 24912 빛의 12차 뽑게 됨.",
+            "text": "→여기에 \"hello\"는 24912임. 즉 hello하면 여기에 24912번의 ID가 붙게 됨.",
             "prediction": "(3) 커넥션 \"hello\"는 24912 임. 즉 눈에 날면 떠지에 24912 빛의 12차 뽑게 됨.",
             "order": 32,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0002-line-0033",
@@ -755,11 +755,11 @@
               2190,
               3049
             ],
-            "text": "하지만 표준 헤 참고 헤어쉬면 더욱 잘해요 ex) he\" + \"110\"와 같이",
+            "text": "하지만 등록되지 않은 단어이면 더욱 쪼개서 ex) \"he\" + \"llo\"와 같이",
             "prediction": "하지만 표준 헤 참고 헤어쉬면 더욱 잘해요 ex) he\" + \"110\"와 같이",
             "order": 33,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0002-line-0034",
@@ -769,11 +769,11 @@
               1174,
               3170
             ],
-            "text": "여러 과거 봉서될 수 있음.",
+            "text": "여러 DI가 부여될 수 있음.",
             "prediction": "여러 과거 봉서될 수 있음.",
             "order": 34,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0002-line-0035",
@@ -783,11 +783,11 @@
               887,
               3234
             ],
-            "text": "혼렁착제",
+            "text": "토큰의 각각의",
             "prediction": "혼렁착제",
             "order": 35,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0002-line-0036",
@@ -797,20 +797,23 @@
               1389,
               3404
             ],
-            "text": "- 컴텀메시싼 토론 하나에 대해 2000차원 벡터들 생성.",
+            "text": "· 임베딩에서는 토큰 하나에 대하 2880차원 벡터들 생성.",
             "prediction": "- 컴텀메시싼 토론 하나에 대해 2000차원 벡터들 생성.",
             "order": 36,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           }
         ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-27T05:28:27.829Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-10-27T05:04:29.235Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 2,
+          "box_count": 36
+        },
         {
           "at": "2026-10-27T04:56:33.160Z",
           "author": "이나현",
