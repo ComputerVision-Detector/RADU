@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T08:12:06.121Z",
+  "updated_at": "2026-10-27T08:12:08.313Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2439,20 +2439,169 @@
         "source_sha256": "25c29d1a4abe88f96e35f5cb7884bad7a33e5333226cb5ecbb24f9a9626da4ff"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "draft",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0008-line-0001",
+            "bbox": [
+              1022,
+              145,
+              2323,
+              238
+            ],
+            "text": "GPT-oss - Zob hugging face modeling gpt_oss",
+            "prediction": "GPT-oss - Zok hugging face modeling GPT-oss",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0008-line-0002",
+            "bbox": [
+              1218,
+              270,
+              1757,
+              339
+            ],
+            "text": "Gptoss For Causal LM",
+            "prediction": "Gpt-oss for Causal LM",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0008-line-0003",
+            "bbox": [
+              1348,
+              350,
+              1730,
+              436
+            ],
+            "text": "GPtoss Model",
+            "prediction": "GPT-oss Model",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0008-line-0004",
+            "bbox": [
+              1288,
+              552,
+              1567,
+              625
+            ],
+            "text": "Taken IDs",
+            "prediction": "Taken IDs",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0008-line-0005",
+            "bbox": [
+              1276,
+              762,
+              1516,
+              835
+            ],
+            "text": "Embedding",
+            "prediction": "Embedding",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0008-line-0006",
+            "bbox": [
+              1388,
+              883,
+              1437,
+              944
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0008-line-0007",
+            "bbox": [
+              1239,
+              963,
+              1694,
+              1041
+            ],
+            "text": "position / RoPE 계산",
+            "prediction": "Asition / RPE 测试",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0008-line-0008",
+            "bbox": [
+              1400,
+              1072,
+              2060,
+              1154
+            ],
+            "text": "└ GPtoss Rostary Embedding",
+            "prediction": "L GPT-oss Rearly Embedding",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0008-line-0009",
+            "bbox": [
+              1681,
+              1189,
+              1930,
+              1258
+            ],
+            "text": "_inv_freq",
+            "prediction": "- in- free",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0008-line-0010",
+            "bbox": [
+              1681,
+              1294,
+              1978,
+              1363
+            ],
+            "text": "- Position is",
+            "prediction": "- Position is",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": false
+          }
+        ]
       },
       "claim": {
         "name": "김혜린",
         "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-27T08:36:03.782Z"
+        "until": "2026-10-27T08:37:08.313Z"
       },
-      "history": []
+      "history": [
+        {
+          "at": "2026-10-27T08:12:08.313Z",
+          "author": "김혜린",
+          "status": "draft",
+          "revision": 1,
+          "box_count": 10
+        }
+      ]
     },
     "hf-0009": {
       "id": "hf-0009",
