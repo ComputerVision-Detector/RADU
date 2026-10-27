@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T05:18:52.118Z",
+  "updated_at": "2026-10-27T05:19:08.008Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1859,20 +1859,43 @@
         "source_sha256": "b396336cc15ed38f58fe027615f805233db34c3c0a6a2dcbfd9f86011dcb769d"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "draft",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0005-line-0001",
+            "bbox": [
+              1197,
+              201,
+              1773,
+              295
+            ],
+            "text": "output Projection",
+            "prediction": "output Projection",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": false
+          }
+        ]
       },
       "claim": {
         "name": "이나현",
         "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-27T05:43:52.118Z"
+        "until": "2026-10-27T05:44:08.008Z"
       },
-      "history": []
+      "history": [
+        {
+          "at": "2026-10-27T05:19:08.008Z",
+          "author": "이나현",
+          "status": "draft",
+          "revision": 1,
+          "box_count": 1
+        }
+      ]
     },
     "hf-0006": {
       "id": "hf-0006",
