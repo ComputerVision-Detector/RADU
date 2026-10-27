@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T13:51:02.958Z",
+  "updated_at": "2026-10-27T13:53:21.428Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -7645,20 +7645,701 @@
         "source_sha256": "174e96516afe2ef43465988479f43ff990b0e5b2260c90e172309cf4b1c8fa6f"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "draft",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0162-line-0001",
+            "bbox": [
+              2633,
+              131,
+              2870,
+              231
+            ],
+            "text": "myFrame",
+            "prediction": "myFrame",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0002",
+            "bbox": [
+              423,
+              210,
+              844,
+              330
+            ],
+            "text": "Library Application",
+            "prediction": "Library Application",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0003",
+            "bbox": [
+              2159,
+              210,
+              2462,
+              330
+            ],
+            "text": "_ □×",
+            "prediction": "- □×",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0004",
+            "bbox": [
+              72,
+              375,
+              272,
+              479
+            ],
+            "text": "book ←",
+            "prediction": "book o",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0005",
+            "bbox": [
+              483,
+              375,
+              1385,
+              498
+            ],
+            "text": "LibraryApplication → myLabel_Title",
+            "prediction": "Library Application - myLabel_Title",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0006",
+            "bbox": [
+              2539,
+              355,
+              2907,
+              445
+            ],
+            "text": "→ title Panel",
+            "prediction": "title Panel",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0007",
+            "bbox": [
+              516,
+              507,
+              784,
+              575
+            ],
+            "text": "myComboBox1",
+            "prediction": "myComboBox1",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0008",
+            "bbox": [
+              1271,
+              507,
+              1531,
+              575
+            ],
+            "text": "myComboBox2",
+            "prediction": "myComboBox2",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0009",
+            "bbox": [
+              2021,
+              504,
+              2269,
+              564
+            ],
+            "text": "myComboBox3",
+            "prediction": "myComboBox3",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0010",
+            "bbox": [
+              2525,
+              464,
+              2795,
+              548
+            ],
+            "text": "⇒ northPanel",
+            "prediction": "northPanel",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0011",
+            "bbox": [
+              338,
+              580,
+              563,
+              663
+            ],
+            "text": "이용자 등록",
+            "prediction": "叫号号号",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0012",
+            "bbox": [
+              1076,
+              580,
+              1295,
+              663
+            ],
+            "text": "이용자 목록",
+            "prediction": "叫号号号",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0013",
+            "bbox": [
+              1877,
+              580,
+              2051,
+              656
+            ],
+            "text": "책 대출",
+            "prediction": "叫号叫号",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0014",
+            "bbox": [
+              2633,
+              560,
+              2897,
+              640
+            ],
+            "text": "→ menuPanel",
+            "prediction": "menuPanel",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0015",
+            "bbox": [
+              344,
+              717,
+              760,
+              805
+            ],
+            "text": "myLabel_BorrowerName",
+            "prediction": "myLabel_BorrowName",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0016",
+            "bbox": [
+              843,
+              675,
+              1283,
+              742
+            ],
+            "text": "myTextField_BorrowerName",
+            "prediction": "myTextField_BorrowName",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0017",
+            "bbox": [
+              1578,
+              662,
+              1818,
+              739
+            ],
+            "text": "myTextArea",
+            "prediction": "myTextArea",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0018",
+            "bbox": [
+              302,
+              797,
+              560,
+              881
+            ],
+            "text": "이용자 이름",
+            "prediction": "叫号叫号",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0019",
+            "bbox": [
+              832,
+              897,
+              1305,
+              948
+            ],
+            "text": "myTextField_PhoneNumber",
+            "prediction": "myTextField_PhoneNumber",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0020",
+            "bbox": [
+              346,
+              935,
+              753,
+              995
+            ],
+            "text": "myLabel_PhoneNumber",
+            "prediction": "myLabel_PhoneNumber",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0021",
+            "bbox": [
+              302,
+              1001,
+              472,
+              1085
+            ],
+            "text": "전화번호",
+            "prediction": "已列生",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0022",
+            "bbox": [
+              377,
+              1114,
+              732,
+              1191
+            ],
+            "text": "myLabel_Book Title",
+            "prediction": "myLabel_Book Title",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0023",
+            "bbox": [
+              816,
+              1081,
+              1240,
+              1144
+            ],
+            "text": "myTextField_BookTitle",
+            "prediction": "myTextField_BookTitle",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0024",
+            "bbox": [
+              2579,
+              1150,
+              2819,
+              1244
+            ],
+            "text": "CenterPanel",
+            "prediction": "CenterPanel",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0025",
+            "bbox": [
+              335,
+              1321,
+              699,
+              1399
+            ],
+            "text": "myLabel_BookAuthor",
+            "prediction": "myLabel_BookAuthor",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0026",
+            "bbox": [
+              842,
+              1292,
+              1289,
+              1358
+            ],
+            "text": "myTextField_BookAuthor",
+            "prediction": "myTextField_BookAuthor",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0027",
+            "bbox": [
+              357,
+              1509,
+              678,
+              1585
+            ],
+            "text": "myLabel_BookID",
+            "prediction": "myLabel_BookID",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0028",
+            "bbox": [
+              829,
+              1483,
+              1249,
+              1557
+            ],
+            "text": "myTextField_BookID",
+            "prediction": "myTextField_BookID",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0029",
+            "bbox": [
+              2635,
+              1476,
+              2764,
+              1554
+            ],
+            "text": "scroll",
+            "prediction": "scroll",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0162-line-0030",
+            "bbox": [
+              302,
+              1588,
+              542,
+              1672
+            ],
+            "text": "책 등록번호",
+            "prediction": "导号生",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0031",
+            "bbox": [
+              2633,
+              1746,
+              2882,
+              1826
+            ],
+            "text": "buttonPanel",
+            "prediction": "buttonPanel",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0032",
+            "bbox": [
+              2708,
+              1835,
+              2940,
+              1915
+            ],
+            "text": "southPanel",
+            "prediction": "southPanel",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0033",
+            "bbox": [
+              1109,
+              1938,
+              1337,
+              2004
+            ],
+            "text": "myButton_Run",
+            "prediction": "myButton_Run",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0034",
+            "bbox": [
+              1478,
+              1905,
+              1779,
+              1977
+            ],
+            "text": "myButton_Clear",
+            "prediction": "loyButton_Clear",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0035",
+            "bbox": [
+              613,
+              2033,
+              820,
+              2123
+            ],
+            "text": "inputPanel",
+            "prediction": "inputPanel",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0036",
+            "bbox": [
+              1811,
+              1974,
+              2054,
+              2064
+            ],
+            "text": "output Panel",
+            "prediction": "output Panel",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0037",
+            "bbox": [
+              1499,
+              2134,
+              2810,
+              2271
+            ],
+            "text": "_BorrowerName, PhoneNumber, Book Title, Book Author, Book ID",
+            "prediction": "- BorrowerName, PhoneNumber, Book Title, Book Author, Book ID",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0038",
+            "bbox": [
+              341,
+              2277,
+              2117,
+              2400
+            ],
+            "text": "1. ESO: myComboBox1,2,3 / myTextField (4종) / myButton_Run, Clear",
+            "prediction": "1. ESO: myComboBox1,2,3 / myTextField (43) / myButton_Run, Clear",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0039",
+            "bbox": [
+              347,
+              2422,
+              856,
+              2512
+            ],
+            "text": "2. EO: ActionEvent",
+            "prediction": "2. EO: ActionEvent",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0040",
+            "bbox": [
+              347,
+              2541,
+              844,
+              2627
+            ],
+            "text": "3. ELO: MyListener",
+            "prediction": "3. ELO: MyListener",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0041",
+            "bbox": [
+              356,
+              2676,
+              1243,
+              2779
+            ],
+            "text": "1. GUI: 상단의 스케치와 같이 구성.",
+            "prediction": "1. GUI: 삼도의 스케치라 같이 구성.",
+            "order": 41,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0042",
+            "bbox": [
+              350,
+              2785,
+              1503,
+              2921
+            ],
+            "text": "2. Listener Class: MyListener (*ELO와 동일)",
+            "prediction": "2. Listener Class: MyListener (*ELO와 동점)",
+            "order": 42,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0043",
+            "bbox": [
+              362,
+              2940,
+              1056,
+              3066
+            ],
+            "text": "3. 등록 작업: ESO ← ELO",
+            "prediction": "3. 응룩 작업: ESO ← ELO",
+            "order": 43,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0162-line-0044",
+            "bbox": [
+              374,
+              3141,
+              714,
+              3240
+            ],
+            "text": "* 겸용 방식,,",
+            "prediction": "* 협동 분석.",
+            "order": 44,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f7a7731e-9dd7-4d61-9f1a-05971e122d64",
+            "bbox": [
+              303,
+              1197,
+              480,
+              1268
+            ],
+            "text": "책 제목",
+            "prediction": "",
+            "order": 45,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-bfcc956b-6e73-494f-ba64-71b0fd3d5de4",
+            "bbox": [
+              281,
+              1396,
+              480,
+              1475
+            ],
+            "text": "책 저자",
+            "prediction": "",
+            "order": 46,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-8b2e950b-9f42-4822-a0db-3894006c1cb1",
+            "bbox": [
+              1162,
+              1766,
+              1269,
+              1842
+            ],
+            "text": "실행",
+            "prediction": "",
+            "order": 47,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-8d60176b-5143-4e05-941e-4dc6d75c9c8d",
+            "bbox": [
+              1454,
+              1757,
+              1606,
+              1822
+            ],
+            "text": "초기화",
+            "prediction": "",
+            "order": 48,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
       "claim": {
         "name": "김혜린",
         "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-27T14:16:02.958Z"
+        "until": "2026-10-27T14:18:21.428Z"
       },
-      "history": []
+      "history": [
+        {
+          "at": "2026-10-27T13:53:21.428Z",
+          "author": "김혜린",
+          "status": "draft",
+          "revision": 1,
+          "box_count": 48
+        }
+      ]
     }
   }
 }
