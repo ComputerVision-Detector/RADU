@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T12:28:06.960Z",
+  "updated_at": "2026-10-27T12:28:18.405Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3896,20 +3896,347 @@
         "source_sha256": "3e41f312e5b652d3cb5b0d3f56a6f126235f2089f85945a7873cc719621767f6"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0014-line-0001",
+            "bbox": [
+              1877,
+              28,
+              2030,
+              109
+            ],
+            "text": "NO.",
+            "prediction": "NO.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0002",
+            "bbox": [
+              1877,
+              48,
+              2656,
+              198
+            ],
+            "text": "year month day ( )",
+            "prediction": "year month day ( )",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0003",
+            "bbox": [
+              254,
+              402,
+              1476,
+              568
+            ],
+            "text": "- 레이블 (label) 또는 참값 (ground truth)",
+            "prediction": "- 궤물 ( label) 또는 참값 (ground truth)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0004",
+            "bbox": [
+              290,
+              552,
+              950,
+              678
+            ],
+            "text": "- 기계학습에서 부류 정보",
+            "prediction": "- 계획참여서 낮은 정보",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0005",
+            "bbox": [
+              254,
+              762,
+              1331,
+              912
+            ],
+            "text": "◦훈련에 사용되는 데이터 집합: 훈련 집합",
+            "prediction": "- 황려에 새로는 데이터 집합: 한편 집합",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0006",
+            "bbox": [
+              281,
+              874,
+              1664,
+              1021
+            ],
+            "text": "◦예측에 사용되는 새로운 샘플의 집합 : 테스트 집합.",
+            "prediction": "- 메목에 사용되는 새로운 생물의 검찰 : 데이트 검찰.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0007",
+            "bbox": [
+              254,
+              1141,
+              1183,
+              1267
+            ],
+            "text": "◦윈 샷 학습 (one-shot learning)",
+            "prediction": "- 윈 솟방습 ( one-shot learning)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0008",
+            "bbox": [
+              290,
+              1233,
+              1745,
+              1388
+            ],
+            "text": "- 레이블이 있는 샘플을 하나만 사용해 학습하는 원샷 학습",
+            "prediction": "- 궤물이 있는 생물을 하나만 섬채 참습하는 원숙 참습",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0009",
+            "bbox": [
+              260,
+              1499,
+              1162,
+              1625
+            ],
+            "text": "◦퓨샷 학습 ( few-shot learning)",
+            "prediction": "- 온츠 착습 ( few-shot learning)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0010",
+            "bbox": [
+              281,
+              1620,
+              1092,
+              1742
+            ],
+            "text": "- 몇 개의 샘플만 사용하여 학습",
+            "prediction": "- 몇 책 선물한 사용되어 참습",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0011",
+            "bbox": [
+              250,
+              1858,
+              1401,
+              1976
+            ],
+            "text": "- 준지도 학습 ( semi-supervised learning)",
+            "prediction": "- 준차로 참습 ( semi-supervised learning)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0012",
+            "bbox": [
+              266,
+              1967,
+              1963,
+              2101
+            ],
+            "text": "- 레이블이 있는 소량의 샘플과 레이블이 없는 대량의 샘플을 같이 사용",
+            "prediction": "- 궤물이 있는 삶의 생물과 객분이 없는 대충의 생물을 끝이 사용",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0013",
+            "bbox": [
+              244,
+              2233,
+              829,
+              2347
+            ],
+            "text": "◦특징 학습 / 표현 학습",
+            "prediction": "- 움츠잠잠 / 표현 참습",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0014",
+            "bbox": [
+              290,
+              2350,
+              1198,
+              2468
+            ],
+            "text": "- 딥러닝에서 특징을 자동으로 학습",
+            "prediction": "- 잡지에서 특징을 자동으로 참습",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0015",
+            "bbox": [
+              229,
+              2616,
+              493,
+              2718
+            ],
+            "text": "◦수치형 특징",
+            "prediction": "- 성형 뒷",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0016",
+            "bbox": [
+              254,
+              2737,
+              1845,
+              2839
+            ],
+            "text": "- iris 데이터에서 예쁜 꽃잎과 꽃받침의 길이와 너비를 나타내는 실 수처럼",
+            "prediction": "- it's 얘기의 예쁜 꽃밭과 꽃향기의 길이나 빠른 새로운 새로운 책임",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0017",
+            "bbox": [
+              332,
+              2858,
+              1903,
+              2968
+            ],
+            "text": "데이터를 설멍하는 속성 중에서 숫자로 나타낼 수 있는 것",
+            "prediction": "더미터를 솔멍하는 성장 중에서 숫자 나타낼 수 있는 것",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0018",
+            "bbox": [
+              272,
+              2991,
+              859,
+              3093
+            ],
+            "text": "- 실수, 정수, 이진 등 다양",
+            "prediction": "- 솔수정수, 옛 등 다양",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0019",
+            "bbox": [
+              205,
+              3245,
+              524,
+              3351
+            ],
+            "text": "◦범주형 특징",
+            "prediction": "- 백주형 득점",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0020",
+            "bbox": [
+              266,
+              3370,
+              1978,
+              3504
+            ],
+            "text": "- 학점, 수능 등급, 혈액형, 지역 등 어느 종류에 속하는가를 나타내는 특징.",
+            "prediction": "- 화첨 송 등급, 혈액형, 자격 등에는 중국에 속하는가를 나타내는 특징.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0021",
+            "bbox": [
+              272,
+              3499,
+              2087,
+              3637
+            ],
+            "text": "순서형 : 학점, 수능 등. (거리개념있음, 점수 부여 시 수치형으로 취급 가능)",
+            "prediction": "손사형 ; 학령, 수능 등. (거제개업촬영수 병자 스케첩으로 접근 가능)",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0022",
+            "bbox": [
+              263,
+              3628,
+              2196,
+              3787
+            ],
+            "text": "- 이름형 : 혈액형, 이름, 지역 등 (지리 개념 없음, 보통 원핫 -코드로 표현)",
+            "prediction": "- 이름형 : 현백형, 이름, 잇덕 등 (지리 개념 업무, 병충 접착 - 꼬 손조 표현)",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0014-line-0023",
+            "bbox": [
+              2349,
+              3652,
+              2764,
+              3750
+            ],
+            "text": "Keun Young Co.",
+            "prediction": "Keun Young Co.",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "62a6956b-d161-429d-8443-40c7b17e1f74",
-        "until": "2026-10-27T12:53:06.960Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-27T12:28:18.405Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 23
+        }
+      ]
     },
     "hf-0015": {
       "id": "hf-0015",
