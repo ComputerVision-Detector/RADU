@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T14:42:30.061Z",
+  "updated_at": "2026-10-27T14:44:03.746Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -4945,20 +4945,375 @@
         "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0019-line-0003",
+            "bbox": [
+              362,
+              415,
+              1978,
+              585
+            ],
+            "text": "- C를 크게 하면 잘못 분류한 샘플의 수는 적은데 여백이 작아짐",
+            "prediction": "- (을 깨끗한 잘못 춥졌한 샘플의 수는 적은데 옛책이 추억잘.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0004",
+            "bbox": [
+              435,
+              532,
+              1978,
+              694
+            ],
+            "text": "C를 작게 하면 여백은 큰데 잘못 분류한 샘플이 많아짐.",
+            "prediction": "(C을 깔게 하면 여백이 큰데 잘못 충돌한 샘플이 얇아짐.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0005",
+            "bbox": [
+              435,
+              641,
+              2232,
+              815
+            ],
+            "text": "C를 크게 : 장학률(훈련 집합에 대한)은 높지만 인반화는 떨엊;ㅁ",
+            "prediction": "(S) (을 크게 : 장학률(충전 춥잖에 대한)로 줄지면 인반화는 먹어덜",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0006",
+            "bbox": [
+              529,
+              766,
+              2060,
+              924
+            ],
+            "text": "C를 작게 : 훈련 접합에 정확률은 낮아짐. 일반화 능력은 커짐.",
+            "prediction": "(C를 작게 : 흔한 접합에 접착돌은 낮얼접, 일반화 능력은 귀엽.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0007",
+            "bbox": [
+              326,
+              1044,
+              986,
+              1170
+            ],
+            "text": "· 폰 노이만 컴퓨터 구조",
+            "prediction": "- 폰 오이싼 정부터 구조",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0008",
+            "bbox": [
+              374,
+              1157,
+              1373,
+              1279
+            ],
+            "text": "- 현재 우리가 사용하고 있는 컴퓨터의 구조",
+            "prediction": "- 한해 왜가 샘하고 있는 집유터의 구조",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0009",
+            "bbox": [
+              393,
+              1257,
+              1618,
+              1392
+            ],
+            "text": "- 메모리는 프로그램(명령어 집합)과 데이터를 저장",
+            "prediction": "-에모리는 포괄(명칭이 접합)과 데이터를 채용",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0010",
+            "bbox": [
+              405,
+              1358,
+              2284,
+              1508
+            ],
+            "text": "CPU는 에모리에서 명령어를 하나씩 꺼내 수행 후 결과를 메모리에 저장",
+            "prediction": "(PU는 에모리에서 염쳤어요 하셔씨 꺼내 수행 후 결과를 메모해서 자송",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0011",
+            "bbox": [
+              728,
+              1641,
+              1286,
+              1754
+            ],
+            "text": "CPY (중앙처리장치)",
+            "prediction": "(PU (중화협조회))",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0012",
+            "bbox": [
+              795,
+              1766,
+              950,
+              1875
+            ],
+            "text": "↕ 버스",
+            "prediction": "(J) (H)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0013",
+            "bbox": [
+              743,
+              1907,
+              938,
+              2008
+            ],
+            "text": "메모리",
+            "prediction": "메모리",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0014",
+            "bbox": [
+              314,
+              2161,
+              614,
+              2271
+            ],
+            "text": "· 퍼셉트론",
+            "prediction": "- 퍼십드론",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0015",
+            "bbox": [
+              353,
+              2294,
+              1113,
+              2400
+            ],
+            "text": "- 업력층과 출력층으로 구성",
+            "prediction": "- 업력증과 충격증으로 구성",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0016",
+            "bbox": [
+              1602,
+              2318,
+              2368,
+              2420
+            ],
+            "text": "특정 벡터: X=(x_1, x_2, x_3…x_d)",
+            "prediction": "튀 벽터: X=(x, x₂, x₃…∞)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0017",
+            "bbox": [
+              353,
+              2415,
+              1382,
+              2533
+            ],
+            "text": "- 입력층에는 d+1 개의 노드가 있으며.",
+            "prediction": "- 업력증에는 40개 논가 있으며.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0018",
+            "bbox": [
+              441,
+              2515,
+              2399,
+              2670
+            ],
+            "text": "d는 특징 백터의 차원 (iris의 d는 ↑/화소를 특징으로 하는 경우 화소개수)",
+            "prediction": "d는 틈칭 백태차원 (virs의 d는 4/화산을 틈칭으로 하는 정익 화산씩)",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0019",
+            "bbox": [
+              2292,
+              2701,
+              2526,
+              2807
+            ],
+            "text": "(8x8)",
+            "prediction": "(2x+1)",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0020",
+            "bbox": [
+              393,
+              2810,
+              1948,
+              2932
+            ],
+            "text": "- 에지(edge): 입력층의 i번째 노드와 출력층의 노드를 잇는",
+            "prediction": "- 여지(edge): 업적홍의 1번째 노드와 졸업류의 노드를 잇는",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0021",
+            "bbox": [
+              816,
+              2951,
+              1395,
+              3049
+            ],
+            "text": "가중치 w_i를 갖는 것",
+            "prediction": "(2)(2)(2)(2)(2)(2)(2)",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0022",
+            "bbox": [
+              858,
+              3072,
+              1310,
+              3186
+            ],
+            "text": "↙ 에지(edge)",
+            "prediction": "O-b) e o (e)",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0023",
+            "bbox": [
+              858,
+              3213,
+              1373,
+              3323
+            ],
+            "text": "w_i 출력층노드",
+            "prediction": "O-W 윤리총노드",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0024",
+            "bbox": [
+              411,
+              3322,
+              636,
+              3448
+            ],
+            "text": "편향임.",
+            "prediction": "펜창일.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0025",
+            "bbox": [
+              840,
+              3310,
+              1062,
+              3420
+            ],
+            "text": "입력층 노드",
+            "prediction": "백종노드",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0026",
+            "bbox": [
+              356,
+              3463,
+              2453,
+              3609
+            ],
+            "text": "바이어스 노드(bias node) : 0번째 노드의 입력 x_0 이며 항상 1을 가짐",
+            "prediction": "- 바이얀 노드 (bias node): O백채 노드의 입력 to 이며 황상 I을 가진",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0019-line-0027",
+            "bbox": [
+              356,
+              3600,
+              2444,
+              3746
+            ],
+            "text": "뉴런의 입력값이 0일 때도 출력이 기준점을 조절할 수 있기 위해서 필요.",
+            "prediction": "눈썩의 입장이 0일 예도 줄념이 기준점을 포질함 수 있기 위해서. 팔요.",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-27T15:07:30.061Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-27T14:44:03.746Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 25
+        }
+      ]
     },
     "hf-0020": {
       "id": "hf-0020",
