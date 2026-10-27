@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T04:45:27.833Z",
+  "updated_at": "2026-10-27T04:48:04.387Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -66,20 +66,221 @@
         "source_sha256": "9d4afc1a01e1164e573691c62b83453cc0fb85be0b77906bcbbacfa172109e41"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0001-line-0001",
+            "bbox": [
+              1298,
+              113,
+              1360,
+              181
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0001-line-0002",
+            "bbox": [
+              1197,
+              209,
+              2045,
+              283
+            ],
+            "text": "Final RMSNorm [ N,2800]",
+            "prediction": "Final RMSNorm [ N,2800]",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0001-line-0003",
+            "bbox": [
+              1300,
+              318,
+              1349,
+              380
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0001-line-0004",
+            "bbox": [
+              2479,
+              366,
+              2619,
+              420
+            ],
+            "text": "Logits",
+            "prediction": "Logits",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0001-line-0005",
+            "bbox": [
+              1203,
+              415,
+              2695,
+              496
+            ],
+            "text": "Unembedding [N,2880] → Linear 2880 → 201098 → [N,210088]",
+            "prediction": "Unembedding [N,2800] → Linear 2000 → 2010 → [N,2100] →",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0001-line-0006",
+            "bbox": [
+              1304,
+              532,
+              1395,
+              616
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0001-line-0007",
+            "bbox": [
+              1218,
+              628,
+              1945,
+              714
+            ],
+            "text": "Logits [N, 201088]",
+            "prediction": "Logits [N, 2010]",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0001-line-0008",
+            "bbox": [
+              1288,
+              741,
+              1945,
+              827
+            ],
+            "text": "↓ ← Transformer출력.",
+            "prediction": "↓ ← ThrsFarther 零引",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0001-line-0009",
+            "bbox": [
+              1167,
+              850,
+              2205,
+              940
+            ],
+            "text": "Token Generator logits[-1]로 마지막 토큰 선택.",
+            "prediction": "Token Generator 熔封 [J] 王晓梦 王纪明",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0001-line-0010",
+            "bbox": [
+              1493,
+              963,
+              2120,
+              1049
+            ],
+            "text": "Temperature [201088]",
+            "prediction": "Tempature [2010]",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0001-line-0011",
+            "bbox": [
+              1512,
+              1080,
+              2229,
+              1162
+            ],
+            "text": "Sampling Scalar Token ID.",
+            "prediction": "Sampling Scator Token ID",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0001-line-0012",
+            "bbox": [
+              1521,
+              1209,
+              1767,
+              1275
+            ],
+            "text": "NexToken",
+            "prediction": "NextToken",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0001-line-0013",
+            "bbox": [
+              163,
+              1564,
+              2021,
+              1662
+            ],
+            "text": "· ThrsFarther 자체는 Embedding → block들 → Final Norm → Unembedding. 구조이고.",
+            "prediction": "- ThrsFarther 标记 Embedding → Block → Film Item → Unembedding. 75.02.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0001-line-0014",
+            "bbox": [
+              217,
+              1689,
+              2273,
+              1781
+            ],
+            "text": "Token Generator는 그 Transformer의 결과인Logits를 받아 다음 토큰을 결정하는 역할.",
+            "prediction": "Token Generator E 2 Transforming 24 2020 Logits 14 2020 2020 2020 2020",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-27T05:10:27.833Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-27T04:48:04.387Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 14
+        }
+      ]
     },
     "hf-0002": {
       "id": "hf-0002",
