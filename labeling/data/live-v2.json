@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T06:06:27.833Z",
+  "updated_at": "2026-10-27T06:07:27.516Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1395,8 +1395,8 @@
         "source_sha256": "a40222c4d8cf301d01f1212984cf8b751abdc447494aa5445558d2f5f96cfc71"
       },
       "bbox_annotation": {
-        "status": "draft",
-        "revision": 4,
+        "status": "verified",
+        "revision": 5,
         "annotator": "이나현",
         "notes": "",
         "no_text": false,
@@ -1582,7 +1582,7 @@
             "prediction": "- k = [2,8,8,64]",
             "order": 13,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0014",
@@ -1592,11 +1592,11 @@
               1727,
               1706
             ],
-            "text": "emission \\(\\rightarrow\\) [A,B,2,2]",
+            "text": "eimsum → [8,8,2,2]",
             "prediction": "emission \\(\\rightarrow\\) [A,B,2,2]",
             "order": 14,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0015",
@@ -1606,11 +1606,11 @@
               1667,
               1791
             ],
-            "text": "\\( (\\Delta p, q, r, s) \\)",
+            "text": "(8x8개의)",
             "prediction": "\\( (\\Delta p, q, r, s) \\)",
             "order": 15,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0016",
@@ -1624,7 +1624,7 @@
             "prediction": "2x2 Score matrix.",
             "order": 16,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0017",
@@ -1634,11 +1634,11 @@
               1564,
               2033
             ],
-            "text": "- Scaling [2,8,2,2]",
+            "text": "Scaling [8,8,2,2]",
             "prediction": "- Scaling [2,8,2,2]",
             "order": 17,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0018",
@@ -1648,11 +1648,11 @@
               1558,
               2146
             ],
-            "text": "- Mask 288 [2,8,2,2]",
+            "text": "Mask 적용 [8,8,2,2]",
             "prediction": "- Mask 288 [2,8,2,2]",
             "order": 18,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0019",
@@ -1662,11 +1662,11 @@
               1271,
               2266
             ],
-            "text": "Sink 244",
+            "text": "Sink 추가",
             "prediction": "Sink 244",
             "order": 19,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0020",
@@ -1676,11 +1676,11 @@
               1585,
               2371
             ],
-            "text": "- AK [8,8,2,2]",
+            "text": "QK [8,8,2,2]",
             "prediction": "- AK [8,8,2,2]",
             "order": 20,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0021",
@@ -1694,7 +1694,7 @@
             "prediction": "S [8,8,2,1]",
             "order": 21,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0022",
@@ -1704,11 +1704,11 @@
               1673,
               2581
             ],
-            "text": "↓Cat (1/m-1)",
+            "text": "↓Cat (dim-1)",
             "prediction": "↓Cat (1/m-1)",
             "order": 22,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0023",
@@ -1718,11 +1718,11 @@
               1516,
               2706
             ],
-            "text": "\\[ [2,8,2,3] \\]",
+            "text": "[8,8,2,3]",
             "prediction": "\\[ [2,8,2,3] \\]",
             "order": 23,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0024",
@@ -1732,11 +1732,11 @@
               1984,
               2819
             ],
-            "text": "3 = 244, 244 takes 4 sink 174",
+            "text": "3 = 원개 2개 token + sink 1개",
             "prediction": "3 = 244, 244 takes 4 sink 174",
             "order": 24,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0025",
@@ -1746,11 +1746,11 @@
               1585,
               2944
             ],
-            "text": "- Softmax [8,8,2,3]",
+            "text": "Softmax [8,8,2,3]",
             "prediction": "- Softmax [8,8,2,3]",
             "order": 25,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0026",
@@ -1760,11 +1760,11 @@
               1785,
               3069
             ],
-            "text": "- Sink weight 244 [8,8,2,2]",
+            "text": "Sink weight 제거 [8,8,2,2]",
             "prediction": "- Sink weight 244 [8,8,2,2]",
             "order": 26,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0027",
@@ -1774,11 +1774,11 @@
               1419,
               3178
             ],
-            "text": "- Attention x V",
+            "text": "Attention x V",
             "prediction": "- Attention x V",
             "order": 27,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0028",
@@ -1788,11 +1788,11 @@
               1661,
               3295
             ],
-            "text": "- W = [8,8,2,2]",
+            "text": "W = [8,8,2,2]",
             "prediction": "- W = [8,8,2,2]",
             "order": 28,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0029",
@@ -1802,11 +1802,11 @@
               1709,
               3412
             ],
-            "text": "- V = [2,8,8,64]",
+            "text": "V = [2,8,8,64]",
             "prediction": "- V = [2,8,8,64]",
             "order": 29,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0030",
@@ -1816,11 +1816,11 @@
               1945,
               3537
             ],
-            "text": "- Einsun \\(\\rightarrow\\) [2,8,8,64]",
+            "text": "einsun → [2,8,8,64]",
             "prediction": "- Einsun \\(\\rightarrow\\) [2,8,8,64]",
             "order": 30,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0031",
@@ -1830,20 +1830,23 @@
               1978,
               3670
             ],
-            "text": "- Reside [28,8,64] \\(\\rightarrow\\) [2,40%]",
+            "text": "Reshape [2,8,8,64] → [2,4096]",
             "prediction": "- Reside [28,8,64] \\(\\rightarrow\\) [2,40%]",
             "order": 31,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           }
         ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-27T06:31:27.833Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-10-27T06:07:27.516Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 5,
+          "box_count": 31
+        },
         {
           "at": "2026-10-27T05:54:09.571Z",
           "author": "이나현",
