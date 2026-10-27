@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T14:24:30.024Z",
+  "updated_at": "2026-10-27T14:27:28.877Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -4600,20 +4600,319 @@
         "source_sha256": "622f10a2ee8503312837725e2ec624e1c572657850a7399ea867b9dcff3e352c"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0017-line-0003",
+            "bbox": [
+              302,
+              383,
+              1978,
+              561
+            ],
+            "text": "- 교차 검증은 성능 측정 결과에 대한 신뢰도를 높일 목적으로 수행",
+            "prediction": "- 곳과 검증은 상소 혈검자에 해변 건의드를 눈덜 뜻적으로 수행.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0004",
+            "bbox": [
+              311,
+              475,
+              2565,
+              678
+            ],
+            "text": "- K를 크게 하면 매번 더 큰 훈련집할 사용. 더 많은 수의 성능 평균 → 신뢰도 상승.",
+            "prediction": "- K를 크게 버텐 빼낸 더 큰 홈건검발 사용. 더 많은 쇼의 성능 평균 → 신뢰도 상승.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0005",
+            "bbox": [
+              381,
+              641,
+              1443,
+              787
+            ],
+            "text": "└ 단, 실행 시간이 더 걸림. (보통 5~10)",
+            "prediction": "L. 손채 사이 더 길감. (보통 5~10)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0006",
+            "bbox": [
+              281,
+              931,
+              626,
+              1049
+            ],
+            "text": "· 인식 알고리즘",
+            "prediction": "- 인식 알파즌",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0007",
+            "bbox": [
+              314,
+              987,
+              1788,
+              1170
+            ],
+            "text": "- 특징 공간 변환과 특징 공간 분할로 분류 문제를 품.",
+            "prediction": "- 특정 공간 변환과 특정 공간 변환도 보유 문제를 품.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0008",
+            "bbox": [
+              326,
+              1076,
+              2383,
+              1291
+            ],
+            "text": "- 입력 데이터를 분석해서 해당 데이터가 어떤 부류에 속하는지 판단하는 알고리즘.",
+            "prediction": "- 압력 데이터를 분석해서 해상 데이터가 이번 부품이 속하는지 판단하는 알파즌.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0009",
+            "bbox": [
+              338,
+              1294,
+              711,
+              1404
+            ],
+            "text": "- 인식 알고리즘",
+            "prediction": "- 인식알파즌",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0010",
+            "bbox": [
+              405,
+              1370,
+              1265,
+              1504
+            ],
+            "text": "└ k-NN, SVM, 결정트리....etc.",
+            "prediction": "Lk-NN, SVM, 갑장트리....etc.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0011",
+            "bbox": [
+              272,
+              1657,
+              711,
+              1779
+            ],
+            "text": "· 선형 분리 불가능",
+            "prediction": "- 선형 붐리 볼럼",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0012",
+            "bbox": [
+              332,
+              1705,
+              2138,
+              1900
+            ],
+            "text": "- 선형 모델. 즉 직선으로 100% 정확률을 달성할 수 있는 상황.",
+            "prediction": "- 신청 떨릴. 즉 객선으로 100% 광복률을 완성할 수 있는 상황.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0013",
+            "bbox": [
+              290,
+              2011,
+              1059,
+              2154
+            ],
+            "text": "· 특징 공간 (Feature Space)",
+            "prediction": "- 퇴청 공간 (Feature Force)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0014",
+            "bbox": [
+              335,
+              2072,
+              2571,
+              2283
+            ],
+            "text": "- 데이터의 특징들을 각각 좌표축으로 만들어서, 데이터를 점으로 표현해 놓은 공간.",
+            "prediction": "- 이이터의 혈병등을 찾 좌표혼으로 만들어서, 데이터를 접으도 표현해 놓은 공간.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0015",
+            "bbox": [
+              302,
+              2431,
+              584,
+              2549
+            ],
+            "text": "· 결정 경계",
+            "prediction": "- 절장 경계",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0016",
+            "bbox": [
+              335,
+              2507,
+              1615,
+              2674
+            ],
+            "text": "- 특정 공간에서 서로 다른 클래스를 나누는 경계선.",
+            "prediction": "- 특정 궤산에서 새로 다른 클래스를 44는 경제선.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0017",
+            "bbox": [
+              417,
+              2665,
+              1017,
+              2803
+            ],
+            "text": "└ 2차원 : 결정 직선",
+            "prediction": "L2차원: 결정 확인",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0018",
+            "bbox": [
+              486,
+              2786,
+              1038,
+              2924
+            ],
+            "text": "3차원 : 결정 평면",
+            "prediction": "좌원: 결정 평면",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0019",
+            "bbox": [
+              465,
+              2894,
+              1582,
+              3069
+            ],
+            "text": "n차원 : 초평면 (W^T + b = 0)",
+            "prediction": "15월: 조평연 (W^T + b = 0)",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0020",
+            "bbox": [
+              311,
+              3181,
+              989,
+              3335
+            ],
+            "text": "· 특징 학습 / 표현 학습",
+            "prediction": "- 혈청 핵숨 / 표현 혈손",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0021",
+            "bbox": [
+              362,
+              3306,
+              1255,
+              3472
+            ],
+            "text": "- 딥러닝에서 좋은 특징을 찾는 일",
+            "prediction": "- 삽제빙에서 좋은 특징을 찾는 일",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0022",
+            "bbox": [
+              393,
+              3423,
+              1633,
+              3601
+            ],
+            "text": "- 딥러닝이 높은 성능을 보장하는 이유 中 하나",
+            "prediction": "- 압력이 높은 성능을 보장하는 이유가 하나",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0017-line-0023",
+            "bbox": [
+              572,
+              3552,
+              1667,
+              3772
+            ],
+            "text": "좋은 특징 공간을 찾아 내는 능력 때문",
+            "prediction": "느 좋은 혈청 공간을 찾아 내는 능력 때문",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-27T14:49:30.024Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-27T14:27:28.877Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 21
+        }
+      ]
     },
     "hf-0018": {
       "id": "hf-0018",
