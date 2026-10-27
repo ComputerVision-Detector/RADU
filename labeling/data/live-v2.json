@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T08:36:06.082Z",
+  "updated_at": "2026-10-27T08:38:02.755Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3503,7 +3503,7 @@
       },
       "bbox_annotation": {
         "status": "draft",
-        "revision": 1,
+        "revision": 2,
         "annotator": "이나현",
         "notes": "",
         "no_text": false,
@@ -3769,11 +3769,11 @@
               2117,
               2750
             ],
-            "text": "증, 일반화 낮격을 극대화",
+            "text": "즉, 일반화 능력을 극대화",
             "prediction": "증, 일반화 낮격을 극대화",
             "order": 19,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0013-line-0020",
@@ -3783,11 +3783,11 @@
               1062,
               2823
             ],
-            "text": "T데이",
+            "text": "└ 데이터",
             "prediction": "T데이",
             "order": 20,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0013-line-0021",
@@ -3797,11 +3797,11 @@
               2634,
               2972
             ],
-            "text": "ex) 숫자 인증을 만들며 전라북도우편물 등에서 다양한 많은 삶들을 수집해 데이터도 활용",
+            "text": "ex) 숫자 인식기를 만들 때 전표나 우편물 등에서 다양한 많은 삶들을 수집해 데이터로 활용",
             "prediction": "ex) 숫자 인증을 만들며 전라북도우편물 등에서 다양한 많은 삶들을 수집해 데이터도 활용",
             "order": 21,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0013-line-0022",
@@ -3811,11 +3811,11 @@
               781,
               3234
             ],
-            "text": "- 특징 (Feature)",
+            "text": "· 특징 (Feature)",
             "prediction": "- 특징 (Feature)",
             "order": 22,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0013-line-0023",
@@ -3825,11 +3825,11 @@
               986,
               3351
             ],
-            "text": "- 계획율에서 각 특징",
+            "text": "- 기계학습에서 각 특징",
             "prediction": "- 계획율에서 각 특징",
             "order": 23,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0013-line-0024",
@@ -3839,25 +3839,11 @@
               1630,
               3480
             ],
-            "text": "- 셀뜰 하나의 여러개의 특징이 있으면 특징 벡터",
+            "text": "- 샘플 하나의 여러개의 특징이 있으면 특징 벡터",
             "prediction": "- 셀뜰 하나의 여러개의 특징이 있으면 특징 벡터",
             "order": 24,
             "uncertain": false,
-            "reviewed": false
-          },
-          {
-            "id": "hf-0013-line-0025",
-            "bbox": [
-              2431,
-              3556,
-              2822,
-              3653
-            ],
-            "text": "Keun Young Co.",
-            "prediction": "Keun Young Co.",
-            "order": 25,
-            "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-9a14ca7d-daca-40a3-adce-865bf535fed3",
@@ -3869,7 +3855,7 @@
             ],
             "text": "· 에이전트(agent)",
             "prediction": "",
-            "order": 26,
+            "order": 25,
             "uncertain": false,
             "reviewed": true
           }
@@ -3878,9 +3864,16 @@
       "claim": {
         "name": "이나현",
         "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-27T09:01:06.082Z"
+        "until": "2026-10-27T09:03:02.755Z"
       },
       "history": [
+        {
+          "at": "2026-10-27T08:38:02.755Z",
+          "author": "이나현",
+          "status": "draft",
+          "revision": 2,
+          "box_count": 25
+        },
         {
           "at": "2026-10-27T08:13:11.708Z",
           "author": "이나현",
