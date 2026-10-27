@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T05:15:27.822Z",
+  "updated_at": "2026-10-27T05:18:17.592Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -833,20 +833,557 @@
         "source_sha256": "89fe3ce856d0929df591ab55fae7b78e1d7138f26be5cd4332f90938da5b13ff"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0003-line-0001",
+            "bbox": [
+              919,
+              12,
+              1984,
+              105
+            ],
+            "text": "GPT-OSS-20b에 “hip”, “hello” 들 넣은 경우",
+            "prediction": "GPT - 005-20b oil “hip”, “hello” 是 毕生梦9",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0002",
+            "bbox": [
+              1058,
+              120,
+              2432,
+              210
+            ],
+            "text": "Token IDs [24912, 2504] → shape = [2] → N = 2",
+            "prediction": "Token ID6 [24912, 2504] → shape = [2] → N = 2",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0003",
+            "bbox": [
+              1143,
+              233,
+              1761,
+              316
+            ],
+            "text": "↓ hello hip",
+            "prediction": "Hello! 🌙 🌞",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0004",
+            "bbox": [
+              1037,
+              338,
+              1289,
+              412
+            ],
+            "text": "Embedding.",
+            "prediction": "Embedding.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0005",
+            "bbox": [
+              1058,
+              439,
+              2039,
+              525
+            ],
+            "text": "Embedding Matrix [201088, 2880]",
+            "prediction": "Embedding Manlyx [2018, 2880]",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0006",
+            "bbox": [
+              1058,
+              536,
+              1652,
+              617
+            ],
+            "text": "Token IDs [2]",
+            "prediction": "Token IDs [2]",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0007",
+            "bbox": [
+              1239,
+              629,
+              2285,
+              718
+            ],
+            "text": "24912 → Embedding matrix의 24912 번째 행",
+            "prediction": "2012 → Embedding manxing 24912 2504 24912 2504 →",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0008",
+            "bbox": [
+              1239,
+              729,
+              2265,
+              807
+            ],
+            "text": "2504 → Embedding matrix의 2504번째 행.",
+            "prediction": "2504 → Embedding manxing 25040 25040 25040",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0009",
+            "bbox": [
+              1342,
+              846,
+              1395,
+              912
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0010",
+            "bbox": [
+              1303,
+              951,
+              1573,
+              1025
+            ],
+            "text": "x[2,2880]",
+            "prediction": "x[2,2880]",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0011",
+            "bbox": [
+              1097,
+              1072,
+              1153,
+              1146
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0012",
+            "bbox": [
+              976,
+              1169,
+              1633,
+              1250
+            ],
+            "text": "Transformer Block x 24.",
+            "prediction": "Transformer Block x 24.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0013",
+            "bbox": [
+              1173,
+              1290,
+              1525,
+              1359
+            ],
+            "text": "Attention Block",
+            "prediction": "Attention block",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0014",
+            "bbox": [
+              1239,
+              1399,
+              1803,
+              1480
+            ],
+            "text": "RMSNorm [2,2880]",
+            "prediction": "RMSNorm [2,2880]",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0015",
+            "bbox": [
+              1239,
+              1507,
+              1652,
+              1581
+            ],
+            "text": "QKV Projection",
+            "prediction": "QKV Protection",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0016",
+            "bbox": [
+              2007,
+              1484,
+              3016,
+              1597
+            ],
+            "text": "head. dim x (num. attention_heads + 2 x num_key_",
+            "prediction": "head. din x (num. attention_heads + 2 x num_key)",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0017",
+            "bbox": [
+              2286,
+              1584,
+              2580,
+              1650
+            ],
+            "text": "value_heads)",
+            "prediction": "value-heads)",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0018",
+            "bbox": [
+              1478,
+              1608,
+              1936,
+              1686
+            ],
+            "text": "Input [2, 2880]",
+            "prediction": "Input [2, 2880]",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0019",
+            "bbox": [
+              2026,
+              1649,
+              2734,
+              1722
+            ],
+            "text": "= 64 x (64 + 2 x 8) = 64 x 80",
+            "prediction": "= 64 x (64 + 2 x 4) = 64 x 40",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0020",
+            "bbox": [
+              1478,
+              1721,
+              1966,
+              1795
+            ],
+            "text": "- qkv_dim 계산 →",
+            "prediction": "- qkv-dim x14t →",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0021",
+            "bbox": [
+              2032,
+              1749,
+              2229,
+              1815
+            ],
+            "text": "= 5120",
+            "prediction": "= 2120",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0003-line-0022",
+            "bbox": [
+              1478,
+              1834,
+              1887,
+              1912
+            ],
+            "text": "output [2,5120]",
+            "prediction": "output [2,5120]",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b07a87bf-8653-4e02-a866-8b89368edfdb",
+            "bbox": [
+              1301,
+              1942,
+              1635,
+              2047
+            ],
+            "text": "Q/K/V분리",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-45aec261-f1f4-44e6-9646-a3a5526318ee",
+            "bbox": [
+              1459,
+              2067,
+              2315,
+              2159
+            ],
+            "text": "Q 64x64=4096 →[2,4096]",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-80e148f7-77ea-41ec-87c5-a77113064acd",
+            "bbox": [
+              1488,
+              2169,
+              2244,
+              2279
+            ],
+            "text": "K 8x64=512 → [2,512]",
+            "prediction": "",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ca206f30-911d-42e4-9f4a-8eb693a071cf",
+            "bbox": [
+              1507,
+              2303,
+              2239,
+              2383
+            ],
+            "text": "V 8x64=512 → [2,512]",
+            "prediction": "",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-270f0f86-3bf0-4d99-b65b-06a3ba117a2d",
+            "bbox": [
+              1268,
+              2398,
+              1688,
+              2527
+            ],
+            "text": "Q/K/V reshape",
+            "prediction": "",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b209a0f1-a799-4aff-9a57-42f75411bc29",
+            "bbox": [
+              1476,
+              2542,
+              2253,
+              2625
+            ],
+            "text": "Q [2,4096] → [2,8,8,64]",
+            "prediction": "",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-860d54d8-ebc2-455c-8181-5cb555d1dde7",
+            "bbox": [
+              1688,
+              2645,
+              2000,
+              2740
+            ],
+            "text": "8=KV Head",
+            "prediction": "",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a0db5e4c-ade8-44aa-a828-bd15109c2de3",
+            "bbox": [
+              1676,
+              2788,
+              2095,
+              2888
+            ],
+            "text": "8= Q multiplier",
+            "prediction": "",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-fa3b3f72-63e3-436c-8879-abb61fa568b1",
+            "bbox": [
+              1691,
+              2903,
+              2210,
+              2998
+            ],
+            "text": "64 = Head Dimension",
+            "prediction": "",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c0637978-a0af-4101-ade7-3f123c5aebd6",
+            "bbox": [
+              1469,
+              3025,
+              2687,
+              3149
+            ],
+            "text": "K [2,512] → [2,8,64] 8=KV Head",
+            "prediction": "",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-3771bdd6-3571-4d81-8194-5f85335ae261",
+            "bbox": [
+              1468,
+              3152,
+              2739,
+              3256
+            ],
+            "text": "V [2,512] → [2,8,64] 8=KV Head",
+            "prediction": "",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c739cfe8-5f41-4188-ac0d-ea5049770c59",
+            "bbox": [
+              1262,
+              3274,
+              1661,
+              3407
+            ],
+            "text": "RoPE(Q,K)",
+            "prediction": "",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b5ddf378-6553-46ce-9ccd-06e42e7b4744",
+            "bbox": [
+              1498,
+              3418,
+              2344,
+              3522
+            ],
+            "text": "Q [2,8,8,64] → [2,8,8,64]",
+            "prediction": "",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-32f5f136-db44-4021-9067-fcb567d9b050",
+            "bbox": [
+              1483,
+              3546,
+              2324,
+              3663
+            ],
+            "text": "K [2,8,64] → [2,8,64]",
+            "prediction": "",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6e858451-1ce2-45f9-bd21-0eaae729535f",
+            "bbox": [
+              1229,
+              3690,
+              1447,
+              3800
+            ],
+            "text": "SDPA",
+            "prediction": "",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-8fe0a057-8ffb-4870-bed6-234286663d0b",
+            "bbox": [
+              1401,
+              3819,
+              1830,
+              3939
+            ],
+            "text": "K/V Expand",
+            "prediction": "",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-27T05:40:27.822Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-27T05:18:17.592Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 38
+        }
+      ]
     },
     "hf-0004": {
       "id": "hf-0004",
