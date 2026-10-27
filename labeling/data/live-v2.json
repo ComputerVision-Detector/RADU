@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T05:27:27.793Z",
+  "updated_at": "2026-10-27T05:27:38.686Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1396,7 +1396,7 @@
       },
       "bbox_annotation": {
         "status": "draft",
-        "revision": 1,
+        "revision": 2,
         "annotator": "이나현",
         "notes": "",
         "no_text": false,
@@ -1410,11 +1410,11 @@
               2005,
               319
             ],
-            "text": "k[7,8,64] \\rightarrow [2,8,44]",
+            "text": "k[2,8,64] → [2,8,8,64]",
             "prediction": "k[7,8,64] \\rightarrow [2,8,44]",
             "order": 1,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0002",
@@ -1424,11 +1424,11 @@
               1969,
               424
             ],
-            "text": "U[2,8,64] \\rightarrow [2,8,64]",
+            "text": "V[2,8,64] → [2,8,8,64]",
             "prediction": "U[2,8,64] \\rightarrow [2,8,64]",
             "order": 2,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0003",
@@ -1438,11 +1438,11 @@
               2329,
               533
             ],
-            "text": "kdi vdi 等效 9_mul (Q multi 解得等效)",
+            "text": "K와 V와 똑같은 q_mul(Q multiplier)을 추가 → 8이",
             "prediction": "kdi vdi 等效 9_mul (Q multi 解得等效)",
             "order": 3,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0004",
@@ -1841,9 +1841,16 @@
       "claim": {
         "name": "이나현",
         "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-27T05:52:27.793Z"
+        "until": "2026-10-27T05:52:38.686Z"
       },
       "history": [
+        {
+          "at": "2026-10-27T05:27:38.686Z",
+          "author": "이나현",
+          "status": "draft",
+          "revision": 2,
+          "box_count": 31
+        },
         {
           "at": "2026-10-27T05:18:39.496Z",
           "author": "이나현",
