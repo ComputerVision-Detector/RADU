@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T07:54:05.974Z",
+  "updated_at": "2026-10-27T07:55:59.418Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -2021,20 +2021,459 @@
         "source_sha256": "8d22dabdbb9d6173deacb4a48864fec1aec30d38d25ba65a69ccd3c7efdcb1b7"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0009-line-0001",
+            "bbox": [
+              1400,
+              145,
+              2054,
+              246
+            ],
+            "text": "Attention output projection",
+            "prediction": "Attention output projection",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0002",
+            "bbox": [
+              1400,
+              266,
+              1818,
+              355
+            ],
+            "text": "Attention Residual",
+            "prediction": "Attention Residual",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0003",
+            "bbox": [
+              1424,
+              362,
+              2005,
+              468
+            ],
+            "text": "Post-Attention RMS Norm",
+            "prediction": "Post-Attention RMS Norm",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0004",
+            "bbox": [
+              1424,
+              471,
+              2087,
+              581
+            ],
+            "text": "GPtoss MLP (MoE)",
+            "prediction": "GPtoos MLP (MoE)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0005",
+            "bbox": [
+              1512,
+              600,
+              1739,
+              702
+            ],
+            "text": "├ Router",
+            "prediction": "L-Router-",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0006",
+            "bbox": [
+              1560,
+              709,
+              1924,
+              791
+            ],
+            "text": "GPtoosExperts",
+            "prediction": "GPtoosExpats",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0007",
+            "bbox": [
+              622,
+              818,
+              775,
+              912
+            ],
+            "text": "(하경)",
+            "prediction": "(47)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0008",
+            "bbox": [
+              1448,
+              810,
+              1773,
+              900
+            ],
+            "text": "MLP output",
+            "prediction": "MLP output",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0009",
+            "bbox": [
+              638,
+              911,
+              805,
+              988
+            ],
+            "text": "Hook 이",
+            "prediction": "Aok of",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0010",
+            "bbox": [
+              1251,
+              931,
+              1304,
+              984
+            ],
+            "text": "→",
+            "prediction": "→",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0011",
+            "bbox": [
+              1424,
+              1024,
+              1751,
+              1109
+            ],
+            "text": "MLP Residual",
+            "prediction": "MLP Residual",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0012",
+            "bbox": [
+              592,
+              1173,
+              729,
+              1250
+            ],
+            "text": "(진규)",
+            "prediction": "(25)",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0013",
+            "bbox": [
+              1478,
+              1124,
+              2084,
+              1206
+            ],
+            "text": "└ residual + MLP_output",
+            "prediction": "L residual + mL_P_output",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0014",
+            "bbox": [
+              604,
+              1249,
+              760,
+              1331
+            ],
+            "text": "Hook",
+            "prediction": "Hook",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0015",
+            "bbox": [
+              1182,
+              1217,
+              1500,
+              1335
+            ],
+            "text": "→ 24번 반복",
+            "prediction": "→ 2401 世号",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0016",
+            "bbox": [
+              435,
+              1370,
+              723,
+              1468
+            ],
+            "text": "계속 할 거냐 물음.",
+            "prediction": "雅梦礼堂",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0017",
+            "bbox": [
+              937,
+              1358,
+              1138,
+              1448
+            ],
+            "text": "→ · ↓",
+            "prediction": "$\\rightarrow \\cdot \\downarrow$",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0018",
+            "bbox": [
+              474,
+              1463,
+              708,
+              1549
+            ],
+            "text": "구간. 추가",
+            "prediction": "艳、写",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0019",
+            "bbox": [
+              1010,
+              1467,
+              1476,
+              1549
+            ],
+            "text": "Final RMS Norm",
+            "prediction": "Final RMS Norm",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0020",
+            "bbox": [
+              1282,
+              1580,
+              1800,
+              1662
+            ],
+            "text": "└ GPt oss Model. norm",
+            "prediction": "L GPT-03 Model norm.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0021",
+            "bbox": [
+              1109,
+              1697,
+              1162,
+              1771
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0022",
+            "bbox": [
+              1061,
+              1806,
+              1606,
+              1892
+            ],
+            "text": "GPtoss for causal LM",
+            "prediction": "GPtoos for Cousal LM",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0023",
+            "bbox": [
+              1288,
+              1919,
+              1588,
+              2000
+            ],
+            "text": "└ LM Head",
+            "prediction": "Lm Head",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0024",
+            "bbox": [
+              1454,
+              2028,
+              1715,
+              2113
+            ],
+            "text": "└ lm_head",
+            "prediction": "Lm-head",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0025",
+            "bbox": [
+              1590,
+              2128,
+              1652,
+              2198
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0026",
+            "bbox": [
+              1530,
+              2257,
+              1694,
+              2339
+            ],
+            "text": "logits",
+            "prediction": "logits",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0027",
+            "bbox": [
+              1147,
+              2376,
+              1211,
+              2462
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0028",
+            "bbox": [
+              1047,
+              2487,
+              1453,
+              2577
+            ],
+            "text": "Gneration mixin",
+            "prediction": "Generation mixin",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0029",
+            "bbox": [
+              1109,
+              2604,
+              1174,
+              2686
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0030",
+            "bbox": [
+              586,
+              2685,
+              720,
+              2783
+            ],
+            "text": "Hook",
+            "prediction": "Aok",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0009-line-0031",
+            "bbox": [
+              895,
+              2721,
+              1434,
+              2831
+            ],
+            "text": "→ 다음 token 생성.",
+            "prediction": "$\\rightarrow$ +TB token 48.",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-27T08:18:03.749Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-27T07:55:59.418Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 31
+        }
+      ]
     },
     "hf-0010": {
       "id": "hf-0010",
