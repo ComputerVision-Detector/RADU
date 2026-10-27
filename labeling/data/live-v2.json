@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T05:36:27.815Z",
+  "updated_at": "2026-10-27T05:39:09.299Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -1396,7 +1396,7 @@
       },
       "bbox_annotation": {
         "status": "draft",
-        "revision": 2,
+        "revision": 3,
         "annotator": "이나현",
         "notes": "",
         "no_text": false,
@@ -1452,11 +1452,11 @@
               1996,
               629
             ],
-            "text": "与对数、特征 a multi 解得 a maxi.",
+            "text": "늘어남. 현재 Q multiplier는 8이기에",
             "prediction": "与对数、特征 a multi 解得 a maxi.",
             "order": 4,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0005",
@@ -1466,11 +1466,11 @@
               1555,
               767
             ],
-            "text": "Sink Resistive / Extend",
+            "text": "Sink Reshape / Expand",
             "prediction": "Sink Resistive / Extend",
             "order": 5,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0006",
@@ -1494,11 +1494,11 @@
               1636,
               968
             ],
-            "text": "- reduce [A,B,C,D]",
+            "text": "- reshape [8,8,1,1]",
             "prediction": "- reduce [A,B,C,D]",
             "order": 7,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0008",
@@ -1508,11 +1508,11 @@
               1643,
               1065
             ],
-            "text": "expand [A,B,C,D]",
+            "text": "expand [8,8,2,1]",
             "prediction": "expand [A,B,C,D]",
             "order": 8,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0009",
@@ -1522,11 +1522,11 @@
               1627,
               1194
             ],
-            "text": "- Causal Mode 48% [2, 2]",
+            "text": "- Causal Mask 생성 [2, 2]",
             "prediction": "- Causal Mode 48% [2, 2]",
             "order": 9,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0004-line-0010",
@@ -1536,7 +1536,7 @@
               1827,
               1291
             ],
-            "text": "- Silling Window mode 44 [2,2]",
+            "text": "- Sliding Window mask 추가 [2,2]",
             "prediction": "- Silling Window mode 44 [2,2]",
             "order": 10,
             "uncertain": false,
@@ -1841,9 +1841,16 @@
       "claim": {
         "name": "이나현",
         "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-10-27T06:01:27.815Z"
+        "until": "2026-10-27T06:04:09.299Z"
       },
       "history": [
+        {
+          "at": "2026-10-27T05:39:09.299Z",
+          "author": "이나현",
+          "status": "draft",
+          "revision": 3,
+          "box_count": 31
+        },
         {
           "at": "2026-10-27T05:27:38.686Z",
           "author": "이나현",
