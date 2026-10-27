@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-27T13:53:35.413Z",
+  "updated_at": "2026-10-27T13:53:44.272Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -7632,7 +7632,11 @@
         "proposal_version": "",
         "boxes": []
       },
-      "claim": null,
+      "claim": {
+        "name": "김혜린",
+        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
+        "until": "2026-10-27T14:18:44.272Z"
+      },
       "history": []
     },
     "hf-0162": {
