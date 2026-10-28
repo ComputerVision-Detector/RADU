@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-28T13:54:15.286Z",
+  "updated_at": "2026-10-28T13:54:39.850Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3481,20 +3481,389 @@
         "source_sha256": "b4bef7bf4ac3c53d1a43ed4ecafc28d11246793e1f91199421f5aa9fff58260b"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
-        "notes": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
+        "notes": "5번과 6번은 합쳐져야 함\n8번과 9번은 합쳐져야 함\n10번 11번 합쳐져야 함\n",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0011-line-0001",
+            "bbox": [
+              680,
+              64,
+              1485,
+              198
+            ],
+            "text": "몫의 공식 $(fg)'=f'g+fg'$",
+            "prediction": "\\(\\frac{5}{x+1}x^2\\) (x₀)° = f'(x) + f''(x)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0002",
+            "bbox": [
+              302,
+              229,
+              820,
+              375
+            ],
+            "text": "$f(x)=\\frac{(x^{2}+1)e^{x}}{sinx}$",
+            "prediction": "\\[ f(x) = \\frac{x + 1}{x + 1} \\]",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0003",
+            "bbox": [
+              1466,
+              229,
+              2172,
+              375
+            ],
+            "text": "\\[ f(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h} \\]",
+            "prediction": "\\[ f(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h} \\]",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0004",
+            "bbox": [
+              302,
+              459,
+              1192,
+              589
+            ],
+            "text": "$f(x)=(2x+2)e^{x}+(x^{2}+1)e^{x}$",
+            "prediction": "\\[ f(x) = \\frac{x^2 + 1}{x^2 + 1} e^x \\]",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0006",
+            "bbox": [
+              1899,
+              532,
+              1966,
+              613
+            ],
+            "text": "\\( h \\)",
+            "prediction": "\\( h \\)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0005",
+            "bbox": [
+              1469,
+              403,
+              2205,
+              607
+            ],
+            "text": "$f(x)=\\frac{(x+h)^2+1-x^2+1}{h}$",
+            "prediction": "\\[ f(x) = \\frac{(x+h)^2 + 1 - x^2 + 1}{x^2 + 1} \\]",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0007",
+            "bbox": [
+              266,
+              774,
+              1220,
+              993
+            ],
+            "text": "$f(x)=\\frac{e^x(2x+2+x^2+1)}{(sinx)^2}$",
+            "prediction": "\\[ f(x) = \\frac{e^x (2x + 2 + x^2 + 1)}{(2x + x)^2} \\]",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0008",
+            "bbox": [
+              1623,
+              609,
+              2372,
+              771
+            ],
+            "text": "$=$\\frac{x^2+2xh+h^2+1-x^2+1}{h}",
+            "prediction": "\\[ = \\frac{x^2 + 2x + h^2 + 1 - x^2 + 1}{x^2 + 1} \\]",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0009",
+            "bbox": [
+              2020,
+              713,
+              2084,
+              787
+            ],
+            "text": "\\( h \\)",
+            "prediction": "\\( h \\)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0010",
+            "bbox": [
+              1657,
+              838,
+              2227,
+              1033
+            ],
+            "text": "$=\\frac{2xh+h^2+2}{h}$",
+            "prediction": "\\[ = 2x + h + h^2 + 2 \\]",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0011",
+            "bbox": [
+              1983,
+              948,
+              2190,
+              1070
+            ],
+            "text": "\\( h \\neq 0 \\)",
+            "prediction": "\\( h \\neq 0 \\)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0012",
+            "bbox": [
+              244,
+              1032,
+              1171,
+              1268
+            ],
+            "text": "$f(x)=\\frac{e^x(x^2+2x+3)}{(sinx)^2}$",
+            "prediction": "\\[ f(x) = \\frac{e^x (x^2 + 2x + 3)}{(x^2 + x)^2} \\]",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0013",
+            "bbox": [
+              1753,
+              1064,
+              2232,
+              1190
+            ],
+            "text": "\\[ = (2x + h + 2) \\]",
+            "prediction": "\\[ = (2x + h + 2) \\]",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0014",
+            "bbox": [
+              1814,
+              1201,
+              2120,
+              1311
+            ],
+            "text": "\\[ = \\sqrt{2x + 2} \\]",
+            "prediction": "\\[ = \\sqrt{2x + 2} \\]",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0015",
+            "bbox": [
+              2089,
+              1302,
+              2281,
+              1400
+            ],
+            "text": "+분자",
+            "prediction": "\\[ + \\frac{1}{2}x + 1 \\]",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0016",
+            "bbox": [
+              284,
+              1616,
+              1035,
+              1861
+            ],
+            "text": "$f(x)=\\frac{(x^2+1)e^x}{sinx}$",
+            "prediction": "\\[ f(x) = \\frac{(x^2 + 1)e^x}{\\sin x} \\quad f'(x) = \\]",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0017",
+            "bbox": [
+              1660,
+              1592,
+              2338,
+              1799
+            ],
+            "text": "$\\frac{e^x(x^2+2x+1)}{sinx}$",
+            "prediction": "\\[ = \\frac{(x^2 + 2x + 1)}{(x^2 + x)^2} \\]",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0018",
+            "bbox": [
+              1651,
+              1790,
+              2564,
+              2065
+            ],
+            "text": "$=\\frac{(x^2)e^xsinx+(2x+1)e^xcosx}{(sinx)^2}$",
+            "prediction": "\\[ = \\frac{(x^2 + 2x + 1)e^x}{\\sin x} \\]",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0019",
+            "bbox": [
+              1859,
+              1960,
+              2507,
+              2041
+            ],
+            "text": "$(sinx)^2$",
+            "prediction": "\\[ = \\frac{(x^2 + 2x + 1)e^x}{\\sqrt{2\\sin x^2}} \\]",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0021",
+            "bbox": [
+              1696,
+              2111,
+              2675,
+              2392
+            ],
+            "text": "$=\\frac{(x^2e^x)sin^x+(2x+1)e^xcosx}{(sinx)^2}$",
+            "prediction": "\\[ = \\frac{(x^2 + 2x + 1)e^x}{\\sqrt{2\\sin x^2}} \\]",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0023",
+            "bbox": [
+              350,
+              2511,
+              1239,
+              2763
+            ],
+            "text": "$=\\frac{x^2+2xh+h^2+1-x^2+1}{h}$",
+            "prediction": "\\[ = \\frac{x^2 + 2x + h^2 + x^2 + h}{h} \\]",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0024",
+            "bbox": [
+              350,
+              2790,
+              1162,
+              3020
+            ],
+            "text": "$=\\frac{2xh+h^2}{h}=2x+h$",
+            "prediction": "\\[ = \\frac{2x + h}{k} = 2x + h \\]",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0025",
+            "bbox": [
+              341,
+              3096,
+              608,
+              3246
+            ],
+            "text": "$2x$",
+            "prediction": "\\[ = \\sqrt{2x} \\]",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0026",
+            "bbox": [
+              317,
+              3257,
+              1452,
+              3554
+            ],
+            "text": "$f(x)=\\frac{(2x)e^x+(x^2+1)e^x}{sinx}$",
+            "prediction": "\\[ f(x) = (2x)e^x + (x^2 + 1)e^x \\]",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0027",
+            "bbox": [
+              547,
+              3540,
+              1331,
+              3829
+            ],
+            "text": "$=\\frac{e^x(2x+x^2+1)}{sinx}$",
+            "prediction": "\\[ = e^x (2x + x^2 + 1) \\]",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0011-line-0028",
+            "bbox": [
+              913,
+              3721,
+              1150,
+              3831
+            ],
+            "text": "$sinx$",
+            "prediction": "\\[ = \\sqrt{2x} \\]",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-10-28T14:19:15.286Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-28T13:54:39.850Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 26
+        }
+      ]
     },
     "hf-0012": {
       "id": "hf-0012",
