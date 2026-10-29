@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T15:46:17.112Z",
+  "updated_at": "2026-10-29T15:47:40.752Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -12681,20 +12681,305 @@
         "source_sha256": "4a1f65c59eac3eb55b8ac9615550c14e33afed3f2147f2b9b3a7bdeffbcdd786"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0083-line-0003",
+            "bbox": [
+              281,
+              330,
+              2553,
+              500
+            ],
+            "text": "- 화소를 가장 가까운 군집 중심에 할당하는 단계와 군집 중심을 갱신하는 단계 반복",
+            "prediction": "- 화소를 가장 가까운 규립 정성에 향한하는 단계와 규립 중심을 갱신하는 단계 반복",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0004",
+            "bbox": [
+              264,
+              499,
+              788,
+              589
+            ],
+            "text": "느 화소 할당 단계:",
+            "prediction": "느 화소 할당 단계:",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0005",
+            "bbox": [
+              411,
+              576,
+              2008,
+              710
+            ],
+            "text": "화소 각각에 대해 주위 4개 군집 중심과 자산까지 거리를",
+            "prediction": "화소 각종에 대해 즉위 채 규립 중심과 자성까지 거리를",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0006",
+            "bbox": [
+              411,
+              701,
+              1552,
+              831
+            ],
+            "text": "계산해 가장 유사한 군립 중심에 할당",
+            "prediction": "계산해 가장 유사한 규립 중심에 할당",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0007",
+            "bbox": [
+              314,
+              822,
+              1921,
+              964
+            ],
+            "text": "→ 화소 할당이 끝나면 각 군립 중심은 자신에게 할당된",
+            "prediction": "→ 화소 혈당이 끝나면 각 규립 중심은 자신에게 할당된",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0008",
+            "bbox": [
+              411,
+              963,
+              1277,
+              1077
+            ],
+            "text": "화소를 평균해 군립 중심 갱신",
+            "prediction": "화소를 평균해 규립 첨단 경험",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0009",
+            "bbox": [
+              314,
+              1076,
+              2265,
+              1206
+            ],
+            "text": "→ 모든 군집 중심의 이동량의 평균을 구하고 평균이 임계치 보다 작으면",
+            "prediction": "→ 모든 규립 중심의 이동층의 평균을 구하고 평균이 영계치 보다 작으면",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0010",
+            "bbox": [
+              393,
+              1221,
+              1298,
+              1323
+            ],
+            "text": "수렴했다고 판단. 알고리즘 종료.",
+            "prediction": "성형되고 판단. 알고려증 종료.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0011",
+            "bbox": [
+              193,
+              1475,
+              723,
+              1573
+            ],
+            "text": "· 정규화 절단 알고리즘",
+            "prediction": "- 검화 절차 알려줌",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0012",
+            "bbox": [
+              211,
+              1596,
+              2223,
+              1714
+            ],
+            "text": "- 화소를 노드로 취하고, f(v)로 색상과 위치를 결합한 5차원 벡터를",
+            "prediction": "- 봐소를 노드로 취하고, f(v)로 싸늘라 위치를 결합한 53권 벡터를",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0013",
+            "bbox": [
+              272,
+              1721,
+              1461,
+              1831
+            ],
+            "text": "사용하고, 유사도를 에지 가중치로 사용.",
+            "prediction": "사용하고, 유사도를 이씨 가중치로 사용.",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0014",
+            "bbox": [
+              214,
+              1866,
+              1815,
+              1976
+            ],
+            "text": "- cut은 영역 분할의 좋은 정도를 측정해막는 목적 함수.",
+            "prediction": "- Cut the 영역 붕분력 종론 협도를 측정해막는 목적 접수.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0015",
+            "bbox": [
+              154,
+              2112,
+              1059,
+              2226
+            ],
+            "text": "- 능동 외곽선 (별명: 스네이크)",
+            "prediction": "- 융동 의격선 (병명: 섹이크)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0016",
+            "bbox": [
+              172,
+              2249,
+              2256,
+              2383
+            ],
+            "text": "- 사용자가 물체 내부에 초기 곡선을 지정하면 곡선을 점점 확장하면서",
+            "prediction": "- 수용자 문제 내용에 로기 무섭을 지칭하면 묶셨을 점점 확충하면서",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0017",
+            "bbox": [
+              229,
+              2390,
+              1029,
+              2492
+            ],
+            "text": "물체 외곽선으로 접근하는 방법.",
+            "prediction": "문제 회복선으로 접근하는 방법.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0018",
+            "bbox": [
+              181,
+              2528,
+              1900,
+              2641
+            ],
+            "text": "- 곡선이 꿈틀대면서 에너지가 최소인 상태를 찾아가기 때문에",
+            "prediction": "- 2성이 끊을대면서 이념자 회소만 상배를 출제하기 예윤에",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0019",
+            "bbox": [
+              226,
+              2649,
+              877,
+              2762
+            ],
+            "text": "스네이크라는 별명이 생김",
+            "prediction": "쇄비이크라는 벌렁이 생긴",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0020",
+            "bbox": [
+              93,
+              3189,
+              472,
+              3287
+            ],
+            "text": "· 스프라인 곡선",
+            "prediction": "- 쓰라진 목원",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0021",
+            "bbox": [
+              148,
+              3318,
+              2278,
+              3516
+            ],
+            "text": "- 매끄러운 곡선으로 구성된 기계 부품이나 인간 장기의 모양을 모델링 하는데",
+            "prediction": "- 애프션은 목산모 접근 체계 볶풍이나 안간 총기억 모양을 보더짐 하는데",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0083-line-0022",
+            "bbox": [
+              199,
+              3463,
+              790,
+              3589
+            ],
+            "text": "쓸 수 있는 곡선",
+            "prediction": "쓸 수 있는 특선",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-29T16:11:17.112Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T15:47:40.752Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 20
+        }
+      ]
     },
     "hf-0084": {
       "id": "hf-0084",
