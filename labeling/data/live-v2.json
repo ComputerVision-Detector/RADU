@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T13:32:28.362Z",
+  "updated_at": "2026-10-29T13:34:08.103Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -8387,20 +8387,291 @@
         "source_sha256": "192a7b11fb00b0e33fed24dfdc3dffd65c257443ba51744466a09d649dbbb21b"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0039-line-0001",
+            "bbox": [
+              244,
+              201,
+              2559,
+              424
+            ],
+            "text": "- 정확도는 매개변수의 미소한 변화에는 거의 반응하지 않음.",
+            "prediction": "- 접촉도는 커게 백수의 '새소환' 방화에는 거의 만용하지 않음.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0002",
+            "bbox": [
+              275,
+              338,
+              2036,
+              545
+            ],
+            "text": "반응이 있더라도 그 값이 불연속적으로 변함",
+            "prediction": "변융이 있다가도 그 좀이 붙인속 직으로 번호농",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0003",
+            "bbox": [
+              281,
+              463,
+              2383,
+              670
+            ],
+            "text": "- 이는 '계단 함수'를 활성화 함수로 사용하지 않는 이유",
+            "prediction": "- 이는 '계단 향수'를 활성화 향수로 사용하겠다 왔는 이유",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0004",
+            "bbox": [
+              302,
+              592,
+              2368,
+              795
+            ],
+            "text": "L 애개번수의 작은 변화가 주는 파장을 계단 함수가",
+            "prediction": "L 애개번쇄 작은 변화가 주는 화장을 계단 향수가",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0005",
+            "bbox": [
+              441,
+              713,
+              2523,
+              920
+            ],
+            "text": "말살하여 손실함수의 값에는 아무런 변화가 없음",
+            "prediction": "벌손하여 손실 향수의 값에는 아무런 변화가 없음.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0006",
+            "bbox": [
+              257,
+              1044,
+              575,
+              1178
+            ],
+            "text": "◦ 수치 미분",
+            "prediction": "- 셋 얼",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0007",
+            "bbox": [
+              269,
+              1153,
+              1455,
+              1315
+            ],
+            "text": "- 아주 작은 값으로 미분하는 것.",
+            "prediction": "- 악곡 작은 졸으로 밭 하는 것.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0008",
+            "bbox": [
+              244,
+              1447,
+              472,
+              1581
+            ],
+            "text": "◦편미분",
+            "prediction": "-편밀",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0009",
+            "bbox": [
+              269,
+              1556,
+              1694,
+              1702
+            ],
+            "text": "- 변수가 여럿인 함수에 대한 미분",
+            "prediction": "- 빈수가 어걸인 향수에 대한 이분",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0010",
+            "bbox": [
+              214,
+              1826,
+              1546,
+              1976
+            ],
+            "text": "◦ 수치 미분 - 근사치로 계산하는 방법",
+            "prediction": "- 숙취 일본 - 근사치로 계산하는 방법",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0011",
+            "bbox": [
+              202,
+              2108,
+              451,
+              2246
+            ],
+            "text": "◦기울기",
+            "prediction": "- 기울기",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0012",
+            "bbox": [
+              250,
+              2257,
+              1872,
+              2379
+            ],
+            "text": "- 모든 변수의 편미분을 벡터로 정리한 것",
+            "prediction": "- 모든 변수의 편미분을 벡터로 창의한 것",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0013",
+            "bbox": [
+              260,
+              2390,
+              1491,
+              2504
+            ],
+            "text": "- 벡터의 각 원소에 대한 미분을 정리한 것",
+            "prediction": "- 벽대가 휴원에 대한 메모를 정한 것.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0014",
+            "bbox": [
+              214,
+              2515,
+              2129,
+              2670
+            ],
+            "text": "◦기울기가 가리키는 쪽은 각 장소에서 함수의 출력",
+            "prediction": "- 철개가 가해는 쪽은 각 장소에서 향수의 줄덕",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0015",
+            "bbox": [
+              244,
+              2669,
+              1525,
+              2807
+            ],
+            "text": "값을 가장 크게 줄이는 방향",
+            "prediction": "갑을 거잖 크게 중에는 방향.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0016",
+            "bbox": [
+              193,
+              2927,
+              572,
+              3077
+            ],
+            "text": "◦최적의 값",
+            "prediction": "0척의 값",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0017",
+            "bbox": [
+              269,
+              3076,
+              2084,
+              3246
+            ],
+            "text": "- 손실 함수가 최솟값이 될 때 매개변수 값",
+            "prediction": "- 손실 향수가 권숫잔이 될 때 애개변수 잡다.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0018",
+            "bbox": [
+              181,
+              3338,
+              424,
+              3476
+            ],
+            "text": "◦경사법",
+            "prediction": "- 접싱법",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0039-line-0019",
+            "bbox": [
+              244,
+              3487,
+              2175,
+              3678
+            ],
+            "text": "- 기울기를 이용해 함수의 최솟값을 찾으려는 기법",
+            "prediction": "- 기울기를 이용해 향수의 죄송잎을 찾으려는 기법.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T13:57:28.362Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T13:34:08.103Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 19
+        }
+      ]
     },
     "hf-0040": {
       "id": "hf-0040",
