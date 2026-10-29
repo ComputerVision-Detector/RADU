@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T12:29:28.358Z",
+  "updated_at": "2026-10-29T12:32:27.059Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -6187,20 +6187,305 @@
         "source_sha256": "09a28f6fb5b92797cfbdb67dcab4b7333074808033d233b1e1a6a977ed9ac299"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0029-line-0002",
+            "bbox": [
+              272,
+              330,
+              602,
+              444
+            ],
+            "text": "- Adagrad :",
+            "prediction": "- Adagrad :",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0003",
+            "bbox": [
+              341,
+              411,
+              1984,
+              557
+            ],
+            "text": "- 이전 그래디언트를 누적한 정보를 이용하여 학습률을",
+            "prediction": "- 이전 그래이어인트를 낙적한 정보를 이용하여 학습훈률을",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0004",
+            "bbox": [
+              456,
+              564,
+              1107,
+              686
+            ],
+            "text": "적응적으로 설정하는 기법.",
+            "prediction": "적용적으로 온화하는 법.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0005",
+            "bbox": [
+              299,
+              810,
+              678,
+              932
+            ],
+            "text": "◦ RMS prop :",
+            "prediction": "- RMS prop :",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0006",
+            "bbox": [
+              381,
+              919,
+              2492,
+              1057
+            ],
+            "text": "- 이전 gradient를 누적할 때 오래된 것의 영향을 줄이는 정책을",
+            "prediction": "- 이전 강아شی를 수적할 때 오래된 길의 영향을 줄이는 점택을",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0007",
+            "bbox": [
+              471,
+              1072,
+              1546,
+              1194
+            ],
+            "text": "사용하여 Adagrad를 개선한 기법.",
+            "prediction": "A몸하여 Abgrad를 개선한 법.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0008",
+            "bbox": [
+              269,
+              1318,
+              539,
+              1444
+            ],
+            "text": "◦Adam",
+            "prediction": "- Adam",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0009",
+            "bbox": [
+              353,
+              1455,
+              2114,
+              1585
+            ],
+            "text": "- RMS prop에 모멘텀을 적용하여 RMS prop를 개선한 기법.",
+            "prediction": "- RMS prop all 모벤딩을 적용하여 RMS prop를 개선한 기법.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0010",
+            "bbox": [
+              278,
+              1737,
+              1029,
+              1867
+            ],
+            "text": "- 옵티마이저 (optimizer)",
+            "prediction": "- 옵티아이저 (optimizel)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0011",
+            "bbox": [
+              326,
+              1866,
+              593,
+              1996
+            ],
+            "text": "- SGD",
+            "prediction": "- SGD",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0012",
+            "bbox": [
+              326,
+              1999,
+              880,
+              2129
+            ],
+            "text": "- Momentum SGD",
+            "prediction": "- Moneh tun SGD",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0013",
+            "bbox": [
+              326,
+              2140,
+              708,
+              2262
+            ],
+            "text": "- Adagrad",
+            "prediction": "- Abgrad",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0014",
+            "bbox": [
+              323,
+              2278,
+              723,
+              2404
+            ],
+            "text": "- RMS prop",
+            "prediction": "- RMS prop",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0015",
+            "bbox": [
+              323,
+              2403,
+              645,
+              2533
+            ],
+            "text": "- Adam",
+            "prediction": "- A dam",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0016",
+            "bbox": [
+              254,
+              2693,
+              636,
+              2807
+            ],
+            "text": "◦ RMS prop의",
+            "prediction": "- RMS prop 의",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0017",
+            "bbox": [
+              713,
+              2693,
+              2450,
+              2811
+            ],
+            "text": "hyper parameter 'rho'는 오래된 gradient의 영향을",
+            "prediction": "hyper parameter 'rho'는 커멧된 gradient의 영향을",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0018",
+            "bbox": [
+              302,
+              2818,
+              1815,
+              2952
+            ],
+            "text": "줄이는 역할, 값이 작을수록 영향력이 줄어든다.",
+            "prediction": "줄이는 역할, 줄이 작을 수록 영향력이 줄어든다.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0019",
+            "bbox": [
+              238,
+              3072,
+              2323,
+              3214
+            ],
+            "text": "◦딥러닝에서 하이퍼 매개변수 최적화를 제대로 하면 시간이 많이 걸리는 이유.",
+            "prediction": "- 온청애A 하이리 빼백서 퇴적화를 제해로 뛰면 사간이 많이 길하는 이유.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0020",
+            "bbox": [
+              290,
+              3209,
+              1159,
+              3355
+            ],
+            "text": "1. 데이터셋 크기 (너무큼)",
+            "prediction": "1. 데이터셋 폐 (백금)",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0029-line-0021",
+            "bbox": [
+              290,
+              3350,
+              1337,
+              3500
+            ],
+            "text": "2. 하이퍼 매개변수 개수 (아주많음)",
+            "prediction": "2. 뉴이외 빼써뉴 참 (아극 혹음)",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T12:54:28.358Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T12:32:27.059Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 20
+        }
+      ]
     },
     "hf-0030": {
       "id": "hf-0030",
