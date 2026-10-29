@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T13:08:28.323Z",
+  "updated_at": "2026-10-29T13:09:05.887Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -6124,20 +6124,347 @@
         "source_sha256": "f019d6e14d409066ed187b4d265dcc03e9e7f19cf7233747c0fb19e24960268e"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "line-f07b1818-4076-45b0-832d-7232778b423a",
+            "bbox": [
+              929,
+              400,
+              1190,
+              506
+            ],
+            "text": "순전파",
+            "prediction": "",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0003",
+            "bbox": [
+              997,
+              532,
+              1089,
+              609
+            ],
+            "text": "↓",
+            "prediction": "$\\downarrow$",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0004",
+            "bbox": [
+              958,
+              633,
+              1295,
+              746
+            ],
+            "text": "예측값 계산",
+            "prediction": "에득대 제산",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0005",
+            "bbox": [
+              1197,
+              737,
+              1797,
+              859
+            ],
+            "text": "평균제곱오차(MSE)",
+            "prediction": "평균제품 보차 (MSE)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0006",
+            "bbox": [
+              1206,
+              858,
+              1706,
+              984
+            ],
+            "text": "오차제곱합(SSE)",
+            "prediction": "오차제품철 (SSE)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0007",
+            "bbox": [
+              1239,
+              987,
+              2108,
+              1117
+            ],
+            "text": "교차 엔트로피 (Cross Entropy)",
+            "prediction": "교차 연도례 (Cross Ethnology)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0008",
+            "bbox": [
+              1016,
+              1153,
+              1089,
+              1238
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0009",
+            "bbox": [
+              1006,
+              1270,
+              1198,
+              1359
+            ],
+            "text": "역전파",
+            "prediction": "역전파",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0010",
+            "bbox": [
+              1037,
+              1403,
+              1110,
+              1480
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0011",
+            "bbox": [
+              958,
+              1524,
+              1503,
+              1642
+            ],
+            "text": "손실을 각 가중치로 미분",
+            "prediction": "손실을 추 충족해 이날",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0012",
+            "bbox": [
+              1052,
+              1669,
+              1122,
+              1746
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0013",
+            "bbox": [
+              946,
+              1774,
+              1319,
+              1883
+            ],
+            "text": "Gradient 계산",
+            "prediction": "Gradiot 제산",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0016",
+            "bbox": [
+              1025,
+              1935,
+              1098,
+              2008
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0017",
+            "bbox": [
+              976,
+              2044,
+              1274,
+              2146
+            ],
+            "text": "옵티마이저",
+            "prediction": "- 듣다바이져",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0020",
+            "bbox": [
+              1131,
+              2181,
+              1979,
+              2307
+            ],
+            "text": "- 확률적 경사하강법 (SGD)",
+            "prediction": "- 확충력 경사하십니다 (SGD)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0021",
+            "bbox": [
+              1270,
+              2318,
+              1446,
+              2408
+            ],
+            "text": "Adam",
+            "prediction": "Adam",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0022",
+            "bbox": [
+              1248,
+              2439,
+              1522,
+              2553
+            ],
+            "text": "RMS prop",
+            "prediction": "RMS prop",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0023",
+            "bbox": [
+              1016,
+              2592,
+              1098,
+              2678
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0024",
+            "bbox": [
+              976,
+              2717,
+              1485,
+              2831
+            ],
+            "text": "가중치 업데이트.",
+            "prediction": "가중지 업데이트.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0015",
+            "bbox": [
+              156,
+              1931,
+              662,
+              2041
+            ],
+            "text": "optimizer(옵티마이저)",
+            "prediction": "优化到（몸담아이져）",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0014",
+            "bbox": [
+              145,
+              2013,
+              944,
+              2105
+            ],
+            "text": "- 계산된 gradient를 이용해서 가중치와",
+            "prediction": "-제산된 화상하늘 이용범채 -충족하",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0018",
+            "bbox": [
+              159,
+              2118,
+              813,
+              2204
+            ],
+            "text": "편향을 어떻게 업데이트 할지",
+            "prediction": "편찬을 해줄게 엄데이드찰지",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0026-line-0019",
+            "bbox": [
+              169,
+              2205,
+              596,
+              2291
+            ],
+            "text": "결정하는 알고리즘",
+            "prediction": "왜냐하는 솔끄증",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T13:33:28.323Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T13:09:05.887Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 23
+        }
+      ]
     },
     "hf-0027": {
       "id": "hf-0027",
