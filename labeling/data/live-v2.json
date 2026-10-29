@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T13:44:28.351Z",
+  "updated_at": "2026-10-29T13:47:01.592Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -8993,20 +8993,221 @@
         "source_sha256": "196c6cfc2457a6db667d4ce8b6fa7228f60eb16d1cf2f74043676183aa80b3b9"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0041-line-0004",
+            "bbox": [
+              151,
+              423,
+              427,
+              541
+            ],
+            "text": "◦에포크",
+            "prediction": "0 에로그",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0041-line-0003",
+            "bbox": [
+              151,
+              443,
+              2411,
+              654
+            ],
+            "text": "- 학습에서 훈련데이터를 모두 소진했을 때의 횟수에 해당",
+            "prediction": "- 홈 홈슈에서 훈련 데이터를 모두 소장돼줄 때의 횟수에 해당",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0041-line-0005",
+            "bbox": [
+              250,
+              600,
+              2027,
+              779
+            ],
+            "text": "ex. 훈련데이터 10,000개를 100개의 미니배치로 학습할 경우,",
+            "prediction": "ex. 훈련데이터 10,000개를 100개의 메배키로 확습할 경우,",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0041-line-0006",
+            "bbox": [
+              362,
+              725,
+              1606,
+              900
+            ],
+            "text": "확률적 경사하강법을 100회 반복하면",
+            "prediction": "홍율적 경사 방법을 100회 반복하면",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0041-line-0007",
+            "bbox": [
+              393,
+              854,
+              1449,
+              1017
+            ],
+            "text": "모든 훈련 데이터를 소진한게 됨",
+            "prediction": "모든 혼련 데이터를 소진하게 획",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0041-line-0008",
+            "bbox": [
+              381,
+              991,
+              1231,
+              1146
+            ],
+            "text": "이경우 100화가 1에포크",
+            "prediction": "이경우 100화가 1이돈모",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0041-line-0009",
+            "bbox": [
+              120,
+              1241,
+              950,
+              1383
+            ],
+            "text": "◦오차역전파법 (역전파)",
+            "prediction": "오늘의 라벨 ( 여전파)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0041-line-0010",
+            "bbox": [
+              139,
+              1354,
+              2175,
+              1521
+            ],
+            "text": "- 가중치 매개변수의 기울기를 효율적으로 계산하는 방법",
+            "prediction": "- 누릅리 배개보수의 기울기를 효율적으로 제선하는 방법",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0041-line-0011",
+            "bbox": [
+              151,
+              1524,
+              796,
+              1637
+            ],
+            "text": "- 순전파를 역으로",
+            "prediction": "- 순전파를 억울도",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0041-line-0012",
+            "bbox": [
+              151,
+              1661,
+              1468,
+              1876
+            ],
+            "text": "- 덧셈 z = x + y αz/ αx = 1",
+            "prediction": "- 덧셈 z = 랜닝 \\( \\frac{\\partial z}{\\partial x} = 1 \\)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0041-line-0013",
+            "bbox": [
+              970,
+              1891,
+              1373,
+              2117
+            ],
+            "text": "αz/αy = 1",
+            "prediction": "\\(\\frac{\\partial z}{\\partial y} = 1\\)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0041-line-0014",
+            "bbox": [
+              151,
+              2173,
+              756,
+              2287
+            ],
+            "text": "- 곱셈 z = xy",
+            "prediction": "- 팁셈 z = 72",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0041-line-0015",
+            "bbox": [
+              910,
+              2318,
+              1364,
+              2557
+            ],
+            "text": "αz/αx = y",
+            "prediction": "\\(\\frac{\\partial z}{\\partial x} = \\frac{1}{2}\\)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0041-line-0016",
+            "bbox": [
+              873,
+              2669,
+              1319,
+              2972
+            ],
+            "text": "αz/αy = x",
+            "prediction": "\\(\\frac{\\partial z}{\\partial y} = x\\)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T14:09:28.351Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T13:47:01.592Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 14
+        }
+      ]
     },
     "hf-0042": {
       "id": "hf-0042",
