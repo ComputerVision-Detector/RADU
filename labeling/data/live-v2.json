@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T13:26:26.793Z",
+  "updated_at": "2026-10-29T13:29:28.347Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -8102,7 +8102,7 @@
       "claim": {
         "name": "이진우",
         "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T13:51:26.793Z"
+        "until": "2026-10-29T13:54:28.347Z"
       },
       "history": []
     },
