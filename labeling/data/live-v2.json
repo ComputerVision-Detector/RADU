@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T14:20:28.358Z",
+  "updated_at": "2026-10-29T14:21:57.444Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -10361,20 +10361,319 @@
         "source_sha256": "f3f788573c33030df8afc99ae1911a41e6b9fb7314d462c1f6adb625e6fe6c19"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0046-line-0001",
+            "bbox": [
+              172,
+              212,
+              1137,
+              352
+            ],
+            "text": "- CNN으로 이루어진 신경망",
+            "prediction": "- CNN 23",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0003",
+            "bbox": [
+              178,
+              391,
+              336,
+              472
+            ],
+            "text": "MNIST",
+            "prediction": "MUSIC",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0004",
+            "bbox": [
+              193,
+              391,
+              2959,
+              651
+            ],
+            "text": "2 → Conv → ReLU → Pooling → conv → ReLU → Pooling → Conv → ReLU → Affine → ReLU\n-> Affine -> softmax ->",
+            "prediction": "2) → Conu → RelU → Pooling → (env) → RelU → Pooling → Conu → RelU → Active → ReLU",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0006",
+            "bbox": [
+              435,
+              612,
+              1153,
+              771
+            ],
+            "text": "합성곱계층 풀링계층",
+            "prediction": "- 협상끝계층 폴립계층.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0007",
+            "bbox": [
+              193,
+              971,
+              998,
+              1105
+            ],
+            "text": "◦특징 맵 ( =입출력 데이터)",
+            "prediction": "- 특정 벨 (= 압축력 데이터)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0008",
+            "bbox": [
+              193,
+              1092,
+              1162,
+              1234
+            ],
+            "text": "- 합성곱 계층의 입출력 데이터.",
+            "prediction": "- 향상꿈 계층의 압축력 데이터.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0009",
+            "bbox": [
+              250,
+              1233,
+              1207,
+              1363
+            ],
+            "text": "- 입력 데이터 : 입력 특정 맵",
+            "prediction": "- 압력 데이터 : 입력 특정 앱",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0010",
+            "bbox": [
+              260,
+              1374,
+              1168,
+              1500
+            ],
+            "text": "- 출력 데이터 : 출력 특징 맵",
+            "prediction": "- 훈련 데이터 : 훈련 특징 앱.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0011",
+            "bbox": [
+              202,
+              1636,
+              578,
+              1762
+            ],
+            "text": "◦합성곱 연산",
+            "prediction": "- 협상끝 연산",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0012",
+            "bbox": [
+              241,
+              1761,
+              1283,
+              1887
+            ],
+            "text": "- 이미지 처리에서 말하는 필터 연산",
+            "prediction": "- 이액 켄에서 얄하는 필터 연산",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0015",
+            "bbox": [
+              193,
+              2048,
+              696,
+              2178
+            ],
+            "text": "◦필터 (=커널).",
+            "prediction": "- 폴터 (= 케닐),",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0016",
+            "bbox": [
+              217,
+              2169,
+              1588,
+              2307
+            ],
+            "text": "- 이미지에서 특정한 특징을 찾아내는 작은 가중치 행렬",
+            "prediction": "- 애매의 특징벤 탐험 촉해낸 적은 충격 방킬",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0017",
+            "bbox": [
+              181,
+              2479,
+              587,
+              2605
+            ],
+            "text": "◦합성곱 연산",
+            "prediction": "- 협상끝 연산",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0018",
+            "bbox": [
+              193,
+              2592,
+              1957,
+              2754
+            ],
+            "text": "- 필터의 윈도우를 일정 간격으로 이동해가며 입력 데이터에 적용",
+            "prediction": "- 필터의 원도9를 알림 전적으로 이뤄내기에 입력 데이터에 적용",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0013",
+            "bbox": [
+              1920,
+              1741,
+              2326,
+              1859
+            ],
+            "text": "◦필터의 윈도우",
+            "prediction": "- 필터의 원도욱",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0014",
+            "bbox": [
+              1936,
+              1850,
+              2880,
+              1992
+            ],
+            "text": "- 필터가 현재 입력 데이터에서",
+            "prediction": "- 필터가 척재 압력 데이터에서",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ff11cd93-5608-4ece-bfef-c856fa08dac1",
+            "bbox": [
+              2032,
+              2021,
+              2588,
+              2150
+            ],
+            "text": "보고 있는 영역.",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0019",
+            "bbox": [
+              172,
+              2915,
+              605,
+              3045
+            ],
+            "text": "◦단일 곱셈 누산",
+            "prediction": "- 연일 곱됨 누산",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0020",
+            "bbox": [
+              193,
+              3036,
+              2622,
+              3206
+            ],
+            "text": "- 입력데이터와 필터에서 대응하는 원소끼리 곱한 후 그 총합을 구한것",
+            "prediction": "- 압력데이터와 열터에서 대응하는 원칙소개리 꼽힌 효 2 총합을 구한것",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0021",
+            "bbox": [
+              172,
+              3354,
+              605,
+              3488
+            ],
+            "text": "◦행렬의 플리핑",
+            "prediction": "- 행경의 플리엘",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0046-line-0022",
+            "bbox": [
+              181,
+              3511,
+              1658,
+              3645
+            ],
+            "text": "- 원소들을 좌우,상하로 각 한번씩 뒤집는 것",
+            "prediction": "- 원소들을 좌육 송하도 각 한 번씩 두절는 것.",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T14:45:28.358Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T14:21:57.444Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 21
+        }
+      ]
     },
     "hf-0047": {
       "id": "hf-0047",
