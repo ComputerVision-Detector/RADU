@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T12:53:28.309Z",
+  "updated_at": "2026-10-29T12:56:04.849Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -7241,20 +7241,431 @@
         "source_sha256": "1b93d197bd9da45002638f36c8b21e21b39572b8c159734510b9e34251b56a7f"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0059-line-0002",
+            "bbox": [
+              84,
+              326,
+              481,
+              452
+            ],
+            "text": "◦추론 기반 기법",
+            "prediction": "- 폭로기반 기법",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0003",
+            "bbox": [
+              102,
+              423,
+              1325,
+              577
+            ],
+            "text": "- 추론을 하는 기법으로 추론 과정에 신경망을 이용.",
+            "prediction": "- 주문을 하는 개업으로 폭로 과정에 산정망을 이용.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0004",
+            "bbox": [
+              90,
+              580,
+              1146,
+              707
+            ],
+            "text": "- 통계기반 기법과 추론기반 기법 차이",
+            "prediction": "- 동재기반 개업과 주로 기반 개범 타이 → 배경측급.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0005",
+            "bbox": [
+              120,
+              684,
+              1147,
+              822
+            ],
+            "text": "동계기반기법: 전체 데이터를 SVD로",
+            "prediction": "L동계기반개법: 원지 데이터를 SVD로",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b5b74b0b-bb84-40f6-a79e-962d728d4e3b",
+            "bbox": [
+              1174,
+              567,
+              1445,
+              725
+            ],
+            "text": "-> 배치학습.",
+            "prediction": "",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0006",
+            "bbox": [
+              223,
+              810,
+              1295,
+              960
+            ],
+            "text": "추론기반기법: 미니배치를 이용해 신경망으로",
+            "prediction": "폭로반징법: 에이벤처를 이용해 산정방모로",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0007",
+            "bbox": [
+              120,
+              907,
+              2677,
+              1093
+            ],
+            "text": "- 여기 추론이란 주변 단어가 주어졌을 때 빈칸에 무슨 단어가 들어가는지를 추측하는 작업",
+            "prediction": "- 여기 폭로간 극보 단어가 저절을 때 빈칸에 묶는 단어가 들어가는 각들 폭흐하는 조업",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0008",
+            "bbox": [
+              120,
+              1052,
+              1939,
+              1222
+            ],
+            "text": "- 이처럼 추론 문제를 풀고 학습하는 것이 추론기반 기법이 다루는 문제",
+            "prediction": "- 여러 폭로체를 풀고 학습하는 것이 폭로기반 개범이 먹는 문제",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0009",
+            "bbox": [
+              108,
+              1205,
+              1679,
+              1355
+            ],
+            "text": "- 결국 통계든 추론이든 단어 분산 표현을 얻는 것이 목표",
+            "prediction": "- 결국 동제는 주요는 단어 분산 표현을 얻는 것이 목표",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0010",
+            "bbox": [
+              30,
+              1407,
+              212,
+              1517
+            ],
+            "text": "단어를",
+            "prediction": "단어를",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0011",
+            "bbox": [
+              63,
+              1503,
+              856,
+              1625
+            ],
+            "text": "◦고정길이 벡터로 변환하는 이유",
+            "prediction": "- 평겨일 벼터로 변환하는 이유",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0012",
+            "bbox": [
+              90,
+              1616,
+              1516,
+              1758
+            ],
+            "text": "- 신경망의 입력층의 뉴런 수를 고정할 수 있음.",
+            "prediction": "- 선행의 입력층의 듯한 수를 꼬집할 수 있음.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0013",
+            "bbox": [
+              48,
+              1874,
+              2250,
+              2033
+            ],
+            "text": "◦완전연결계층은 이전 층의 모든 뉴런이 다음 층의 모든 뉴런과 연결되어 있는 층",
+            "prediction": "- 완전연결계층은 어린 층의 모든 뉴리에 다음층의 모든 뉴리와 연경되어 있는 중",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0014",
+            "bbox": [
+              90,
+              2032,
+              1630,
+              2162
+            ],
+            "text": "- 완전연결계층의 계산은 행렬 곱으로 수행할 수 있음.",
+            "prediction": "- 관련혈계층의 계산은 행혈 꼽으려 석행할 수 있음.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0015",
+            "bbox": [
+              48,
+              2314,
+              496,
+              2416
+            ],
+            "text": "◦ Word 2vec",
+            "prediction": "- Word 2vec",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0018",
+            "bbox": [
+              103,
+              2415,
+              2647,
+              2573
+            ],
+            "text": "- 단어를 신경망으로 학습하여 의미를 담은 밀집 벡터, 즉 단어분산표현을 만드는 알고리즘",
+            "prediction": "- 단어를 산정 밖으로 학습하여 의미를 삼은 일법부터, 증 한이 벗눈표현을 만드는 앞편증.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0017",
+            "bbox": [
+              1236,
+              2173,
+              1785,
+              2279
+            ],
+            "text": "Word 2vec 에서 맥락의",
+            "prediction": "(Word 2vec)",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0016",
+            "bbox": [
+              1230,
+              2261,
+              1909,
+              2387
+            ],
+            "text": "윈도우 크기는 하이퍼파라미터",
+            "prediction": "익도의 크는 하이퍼하기의",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0019",
+            "bbox": [
+              81,
+              2741,
+              518,
+              2839
+            ],
+            "text": "◦CBOW 모델",
+            "prediction": "- (BOW 모드)",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0021",
+            "bbox": [
+              78,
+              2858,
+              1252,
+              2972
+            ],
+            "text": "- 맥락으로부터 타깃을 추측하는 용도의 신경망",
+            "prediction": "- 연합으로부터 타인을 주휴하는 용도의 산정망",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0020",
+            "bbox": [
+              695,
+              2701,
+              1921,
+              2847
+            ],
+            "text": "- 즉, 맥락으로부터 타깃을 정확하게 추측하는 것",
+            "prediction": "- 증 애호그백이 멋을 전혀하게 흑해하겠어짐",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0023",
+            "bbox": [
+              635,
+              2983,
+              1630,
+              3113
+            ],
+            "text": "타깃 : 중앙 단어, 그 주변 단어들이 맥락",
+            "prediction": "다찾: 중앙 단어. 그러던 단어들이 멍멍.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0022",
+            "bbox": [
+              1720,
+              2818,
+              2326,
+              2940
+            ],
+            "text": "이 목적을 위해 학습진행시",
+            "prediction": "이 목적을 위해 학습진행시",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0024",
+            "bbox": [
+              1660,
+              2923,
+              2529,
+              3053
+            ],
+            "text": "단어 의미가 인코딩된 '단어, 분산 표현'이 나옴",
+            "prediction": "단어 왜가 쓰임된 십번 낡한 표현이봄",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0025",
+            "bbox": [
+              30,
+              3273,
+              1757,
+              3408
+            ],
+            "text": "◦은닉층의 뉴런 수를 입력 층의 뉴런 수보다 작게 하는 이유",
+            "prediction": "- 원칙의 누전 수를 압력 중의 뉴로 수 보다 겪지 않는 이유",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0026",
+            "bbox": [
+              60,
+              3419,
+              1773,
+              3545
+            ],
+            "text": "- 은닉층에 단어 예측에 필요한 정보를 간결하게 담게 되어",
+            "prediction": "- 인증에 단어 예측제 필요한 정보를 간결하게 담기 되어",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0027",
+            "bbox": [
+              151,
+              3580,
+              1319,
+              3694
+            ],
+            "text": "결과적으로 밀집벡터표현을 얻을 수 있다.",
+            "prediction": "결과적으로 임접백되 표현을 얻틀 수 있다.",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0028",
+            "bbox": [
+              1590,
+              3592,
+              2181,
+              3694
+            ],
+            "text": "CBOW 모델은 사후확률을",
+            "prediction": "CBOW 모델은 학휴활을",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0059-line-0029",
+            "bbox": [
+              1914,
+              3709,
+              2096,
+              3811
+            ],
+            "text": "모델링",
+            "prediction": "오딩싱",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T13:18:28.309Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T12:56:04.849Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 29
+        }
+      ]
     },
     "hf-0060": {
       "id": "hf-0060",
