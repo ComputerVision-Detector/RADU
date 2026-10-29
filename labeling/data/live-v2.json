@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T14:02:28.297Z",
+  "updated_at": "2026-10-29T14:03:46.754Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -9501,20 +9501,263 @@
         "source_sha256": "767a888cd2b44a8bd3433a27f6de9bebd6ef9e5ee6c508db1e1b2eae1d13457a"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0043-line-0003",
+            "bbox": [
+              151,
+              451,
+              536,
+              569
+            ],
+            "text": "◦학습률 감소",
+            "prediction": "- 밝은 꽃 길로",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0004",
+            "bbox": [
+              254,
+              524,
+              1712,
+              678
+            ],
+            "text": "- 처음에는 크게 학습 -> 점차 조금씩 작게 학습.",
+            "prediction": "- 귀에는 크게 학습 → 전화 조금씩 갖게 학습.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0005",
+            "bbox": [
+              151,
+              822,
+              530,
+              928
+            ],
+            "text": "- AdaGrad",
+            "prediction": "- AjaGrad",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0006",
+            "bbox": [
+              151,
+              907,
+              1370,
+              1049
+            ],
+            "text": "- 각각의 매개변수에 맞춤형 값을 만들어 줌",
+            "prediction": "- 각체 배개변수에 맞춤형 효을 만들어 줍",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0007",
+            "bbox": [
+              151,
+              1181,
+              360,
+              1291
+            ],
+            "text": "◦Adam",
+            "prediction": "Adam",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0008",
+            "bbox": [
+              151,
+              1302,
+              1177,
+              1420
+            ],
+            "text": "- AdaGrad + 모멘텀 융합",
+            "prediction": "- AdaGrad + 도넨텀 융합",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0009",
+            "bbox": [
+              151,
+              1580,
+              496,
+              1682
+            ],
+            "text": "◦가중치 감소",
+            "prediction": "- 가중지 감소",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0011",
+            "bbox": [
+              151,
+              1697,
+              1331,
+              1807
+            ],
+            "text": "- 과대적합을 억제, 범용 성능을 높이는 것",
+            "prediction": "- 과제정향을 억제, 법률 심농을 높이는 것.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0013",
+            "bbox": [
+              151,
+              1822,
+              1231,
+              1948
+            ],
+            "text": "- 가중치 매개변수의 값이 작아지도록 학습",
+            "prediction": "- 가중지 배변수의 잡어 착취도록 학습",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0010",
+            "bbox": [
+              1466,
+              1536,
+              2341,
+              1670
+            ],
+            "text": "- 큰 가중치에 대해서는 그에 상응하는",
+            "prediction": "- 큰 꽃길에 대해는 그에 싫음하는",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0012",
+            "bbox": [
+              1530,
+              1653,
+              1990,
+              1783
+            ],
+            "text": "큰 패널티를 부과",
+            "prediction": "큰 패널을 보다",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0014",
+            "bbox": [
+              120,
+              2088,
+              388,
+              2194
+            ],
+            "text": "◦기울기 소실",
+            "prediction": "- 기록기 쇼릿",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0015",
+            "bbox": [
+              120,
+              2209,
+              2692,
+              2343
+            ],
+            "text": "- 데이터가 0과 1에 치우쳐 분포하게 되면 역전파의 기울기 값이 점점 작아지다 사라짐",
+            "prediction": "- 데이터가 0과 1에 취쳐 분포하게 되면 여전하며 기울기 겁이 컸힘 작아져서라릴",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0016",
+            "bbox": [
+              120,
+              2487,
+              2323,
+              2605
+            ],
+            "text": "◦Xavier 초깃값 - 활성화 함수가 선형이라는 전제 (Sigmoid, Tanh 등)",
+            "prediction": "- Xauiel 드갖춤 - 황성화 하수가 신형다는 편제 (Sigmoid, tanh 등)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0017",
+            "bbox": [
+              120,
+              2624,
+              2622,
+              2758
+            ],
+            "text": "- 앞 층에 노드가 많을수록 대상 노드의 초깃값으로 설정하는 가중치가 좁게 퍼짐",
+            "prediction": "- 또 중에 노도가 많은 수족 대상 노드의 죄값으로 실험하는 가중치가 좋게 퍼릴",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0018",
+            "bbox": [
+              120,
+              2886,
+              1029,
+              3020
+            ],
+            "text": "- He 초깃값 - ReLU 사용시",
+            "prediction": "- He 로깃잖다 - ReLU 사용",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0043-line-0019",
+            "bbox": [
+              120,
+              3036,
+              1996,
+              3182
+            ],
+            "text": "- 앞 계층의 노드가 n개일 때, 표준편차가 (2/n)^1/2 인 정규분포 사용",
+            "prediction": "- 앞 계층의 노도가 배일 데, 포즌편차가 √증인 장렬포 사용",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T14:27:28.297Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T14:03:46.754Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 17
+        }
+      ]
     },
     "hf-0044": {
       "id": "hf-0044",
