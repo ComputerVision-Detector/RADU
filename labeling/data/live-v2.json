@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T14:08:28.335Z",
+  "updated_at": "2026-10-29T14:09:31.839Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -9769,20 +9769,319 @@
         "source_sha256": "cfecb5b359cfdabb759821dbde2e294810ac3d5a3cffc8265faf554379958200"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
         "proposal_version": "",
-        "boxes": []
+        "boxes": [
+          {
+            "id": "line-7dbcdbd6-df85-411c-afff-9ba751fa8c3e",
+            "bbox": [
+              168,
+              262,
+              544,
+              391
+            ],
+            "text": "◦배치 정규화",
+            "prediction": "",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-06ecedf4-f693-411a-b25b-d2ef30bca6e9",
+            "bbox": [
+              205,
+              395,
+              1455,
+              505
+            ],
+            "text": "- 각 층이 활성화를 적당히 퍼뜨리도록 강제",
+            "prediction": "",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c0163f17-b009-4bd9-b907-71948719e84a",
+            "bbox": [
+              187,
+              482,
+              2046,
+              629
+            ],
+            "text": "- 학습 진행 빠름, 초깃값에 크게 의존하지 않음. 과대적합 억제",
+            "prediction": "",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-babd8db1-35af-4396-b7e6-b4b9ac7ded96",
+            "bbox": [
+              225,
+              605,
+              2160,
+              768
+            ],
+            "text": "- 데이터 분포를 정규화하는 '배치 정규화 계층'을 신경망에 삽입",
+            "prediction": "",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-af587b74-7d82-47e7-bbaa-232ac4c62291",
+            "bbox": [
+              216,
+              758,
+              1103,
+              896
+            ],
+            "text": "- 미니배치를 단위로 정규화",
+            "prediction": "",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b08698d6-5f17-40c1-acbb-3ce9f35fe66d",
+            "bbox": [
+              182,
+              1025,
+              563,
+              1144
+            ],
+            "text": "◦과대적합",
+            "prediction": "",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0a6be553-4591-44b1-8241-979d9cd0462a",
+            "bbox": [
+              235,
+              1139,
+              1646,
+              1254
+            ],
+            "text": "- 신경망이 훈련 데이터에만 지나치게 적응되는 것.",
+            "prediction": "",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d28f8f4b-039a-4350-a683-48a363c6110e",
+            "bbox": [
+              248,
+              1273,
+              968,
+              1402
+            ],
+            "text": "- 과대적합이 일어나는 경우",
+            "prediction": "",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-12bdd030-a5a3-4383-bc87-2faef3dba2d6",
+            "bbox": [
+              373,
+              1383,
+              1479,
+              1531
+            ],
+            "text": "1. 매개변수가 많고 표현력이 높은 모델",
+            "prediction": "",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c57b17fb-2782-4c57-bbbc-7bf87817b56f",
+            "bbox": [
+              420,
+              1535,
+              1082,
+              1650
+            ],
+            "text": "2. 훈련 데이터가 적음.",
+            "prediction": "",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-265dfb4e-26e7-4037-95b2-fe17ab94132e",
+            "bbox": [
+              149,
+              1802,
+              497,
+              1941
+            ],
+            "text": "◦드롭아웃",
+            "prediction": "",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0d5eb558-1510-4943-9f62-929c33ccab07",
+            "bbox": [
+              200,
+              1926,
+              1369,
+              2083
+            ],
+            "text": "- 뉴런을 임의로 삭제하면서 학습하는 방법.",
+            "prediction": "",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e99c53fa-f30c-48a3-8f04-56e6d7e117d7",
+            "bbox": [
+              592,
+              1793,
+              964,
+              1955
+            ],
+            "text": "(일시적인 비활성)",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-89d593a9-3333-4bc4-8241-8f1030d34a8c",
+            "bbox": [
+              139,
+              2136,
+              2700,
+              2355
+            ],
+            "text": "◦하이퍼 파라미터(ex, 각 층의 뉴런 수, 배치 크기, 매개변수 갱신 시의 학습률과 가중치 감소 등)",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9ac4e007-3b42-4f98-b4da-4549c00e925f",
+            "bbox": [
+              134,
+              2475,
+              573,
+              2627
+            ],
+            "text": "◦검증 데이터",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f7d2c7a4-6064-49fa-ad13-393328430032",
+            "bbox": [
+              192,
+              2618,
+              1093,
+              2785
+            ],
+            "text": "- 하이퍼 파라미터 조정용 데이터",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-1ff1a911-5e05-4dd1-981c-5e3a97886b53",
+            "bbox": [
+              149,
+              2727,
+              2662,
+              2894
+            ],
+            "text": "- 사용이유: 시험 데이터를 사용하여 하이퍼 파라미터를 조정하면 하이퍼 파라미터 값이",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ddb442c1-771b-41f1-80fb-951914c14719",
+            "bbox": [
+              425,
+              2894,
+              1555,
+              3028
+            ],
+            "text": "시험 데이터에 과적합되기 때문.",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2c3ad45c-c78f-4e56-b078-b1ab0ad380f2",
+            "bbox": [
+              177,
+              3061,
+              1012,
+              3199
+            ],
+            "text": "- 훈련 데이터: 매개변수 학습",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c6e3947b-a062-437c-b1d1-fa0b519cd814",
+            "bbox": [
+              149,
+              3175,
+              1441,
+              3347
+            ],
+            "text": "- 검증데이터 : 하이퍼파라미터 성능평가",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6fba6855-ed28-4ea1-8760-9da5baaa689a",
+            "bbox": [
+              196,
+              3322,
+              1402,
+              3518
+            ],
+            "text": "- 시험 데이터 : 신경망의 범용 성능 평가",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T14:33:28.335Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T14:09:31.839Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 21
+        }
+      ]
     },
     "hf-0045": {
       "id": "hf-0045",
