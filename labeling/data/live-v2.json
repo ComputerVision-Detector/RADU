@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T13:29:28.347Z",
+  "updated_at": "2026-10-29T13:30:30.049Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -8091,20 +8091,291 @@
         "source_sha256": "c3cd09a1084ec4bc05d8a50e082fb20237fc8cbb3f3da19e27b48434b86ea3cb"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0038-line-0003",
+            "bbox": [
+              294,
+              374,
+              1544,
+              496
+            ],
+            "text": "◦교차 엔트로피 오차 (손실함수 中)",
+            "prediction": "- 2.4 엔토리의 요리 (혈상수 4)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0004",
+            "bbox": [
+              553,
+              628,
+              1395,
+              746
+            ],
+            "text": "E = - \\(\\sum_{k} k_c\\) / \\(log_{2}k\\)",
+            "prediction": "E = - \\(\\sum_{k} k_c\\) / \\(log_{2}k\\)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0005",
+            "bbox": [
+              1112,
+              483,
+              1661,
+              621
+            ],
+            "text": "-> 정답 레이블.",
+            "prediction": "- 참급 레이블.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0006",
+            "bbox": [
+              1115,
+              745,
+              1900,
+              859
+            ],
+            "text": "- 신경망의 출력",
+            "prediction": "- 산첨망의 줄격",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0007",
+            "bbox": [
+              390,
+              870,
+              1643,
+              1008
+            ],
+            "text": "- log는 밑이 e인 자연로그 (log_e)",
+            "prediction": "- 10는 본이 엔 자연크그 (log₀₁₀)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0008",
+            "bbox": [
+              381,
+              965,
+              2217,
+              1142
+            ],
+            "text": "- t_k는 정답에 해당하는 인덱스의 원소만 1",
+            "prediction": "- t_k는 정잖에 해상하는 인덱스미 원소만 |",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0009",
+            "bbox": [
+              526,
+              1141,
+              1059,
+              1246
+            ],
+            "text": "(원 - 핫 인코딩)",
+            "prediction": "(원 - 총 연도)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0010",
+            "bbox": [
+              390,
+              1229,
+              2341,
+              1379
+            ],
+            "text": "- 정답이 아닌 나머지는 모두가 0이므로 log y_k와",
+            "prediction": "- 정충의 아닌 나먹다 오득가 ④이므로 100%과",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0011",
+            "bbox": [
+              547,
+              1354,
+              2377,
+              1508
+            ],
+            "text": "곱해도 0이 되어 결과에 영향을 주지 않음.",
+            "prediction": "곰해도 이이되어 결과에 영향을 주지 않음.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0012",
+            "bbox": [
+              353,
+              1475,
+              2792,
+              1646
+            ],
+            "text": "- 즉, 교차 엔트로피 오차는 정답일 때의 출력이 전체 값을 정함",
+            "prediction": "- 즉, 고자 엔트러피 짧는 정날일 대의 출력이 전체 줄을 정함.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0013",
+            "bbox": [
+              269,
+              1745,
+              2598,
+              1928
+            ],
+            "text": "◦평균 손실 함수를 이용하면 훈련데이터 개수와 관계없이 언제든",
+            "prediction": "- 평균 선설 향수를 응용하면 훈련 데이터 개념와 관계업이 만돈든",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0014",
+            "bbox": [
+              332,
+              1919,
+              1410,
+              2061
+            ],
+            "text": "통일된 지표를 얻을 수 있음.",
+            "prediction": "동일된 자료를 얻을 수 있음.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0015",
+            "bbox": [
+              244,
+              2189,
+              539,
+              2323
+            ],
+            "text": "◦미니배치",
+            "prediction": "- 애니 배치",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0016",
+            "bbox": [
+              275,
+              2306,
+              2299,
+              2476
+            ],
+            "text": "- 훈련 데이터로부터 일부만 골라 학습을 수행하는 것",
+            "prediction": "- 훈련 데이터로 맞춰 일부만 끝자락 향습을 쇼핑하는 것.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0017",
+            "bbox": [
+              244,
+              2628,
+              835,
+              2770
+            ],
+            "text": "◦ 미니배치 학습.",
+            "prediction": "- 메뉴링 향습.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0018",
+            "bbox": [
+              257,
+              2737,
+              2353,
+              2916
+            ],
+            "text": "- 전체 훈련 데이터 중 무작위로 뽑아 학습시키는 것.",
+            "prediction": "- 진체 훈련 데이터 중 특징으로 뽑은 가 학습 시에는 것.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0019",
+            "bbox": [
+              229,
+              3044,
+              1591,
+              3230
+            ],
+            "text": "- 정확도를 지표로 삼지 않는 이유",
+            "prediction": "- 정확도를 자료로 삼지 않는 9유",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0020",
+            "bbox": [
+              244,
+              3177,
+              2710,
+              3375
+            ],
+            "text": "- 미분 값이 대부분의 장소에서 0이 되어 매개변수를",
+            "prediction": "- 미분 겁이 대박분의 징소에서 이 되어 매개번수를",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0038-line-0021",
+            "bbox": [
+              359,
+              3354,
+              1382,
+              3524
+            ],
+            "text": "갱신할 수 없기 때문.",
+            "prediction": "챙신할 수 없기 때문.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T13:54:28.347Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T13:30:30.049Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 19
+        }
+      ]
     },
     "hf-0039": {
       "id": "hf-0039",
