@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T12:35:28.326Z",
+  "updated_at": "2026-10-29T12:35:44.838Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -6518,20 +6518,151 @@
         "source_sha256": "7dbcc16478c6dd73152930a9e98e3c40ff7ded9049dc5e01edc358e4ed61e511"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
-        "notes": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
+        "notes": "알파벳 D가 아닌 그림처럼 보임.",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0031-line-0003",
+            "bbox": [
+              120,
+              391,
+              548,
+              509
+            ],
+            "text": "◦비선형 영역",
+            "prediction": "- 내선형 영역",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0031-line-0004",
+            "bbox": [
+              229,
+              483,
+              1001,
+              634
+            ],
+            "text": "- 곡선의 영역 (XOR)",
+            "prediction": "- 곡선의 영역 (XOR)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0031-line-0005",
+            "bbox": [
+              102,
+              616,
+              1017,
+              771
+            ],
+            "text": "- 직선의 영역 (선형 영역)",
+            "prediction": "- 길선의 영역 (선형 영역)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0031-line-0006",
+            "bbox": [
+              205,
+              758,
+              1014,
+              892
+            ],
+            "text": "- AND, OR NAND",
+            "prediction": "- AND, OR NAND",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0031-line-0007",
+            "bbox": [
+              84,
+              959,
+              1757,
+              1162
+            ],
+            "text": "- 다층피셉트론을 이용해 XOR을 구현 가능",
+            "prediction": "- 다층피셉트를 을 이용해 XOR을 갱한 가능",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0031-line-0008",
+            "bbox": [
+              190,
+              1282,
+              324,
+              1383
+            ],
+            "text": "x,",
+            "prediction": "x,",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0031-line-0009",
+            "bbox": [
+              692,
+              1278,
+              838,
+              1383
+            ],
+            "text": "D.",
+            "prediction": "D.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0031-line-0010",
+            "bbox": [
+              1161,
+              1399,
+              1304,
+              1525
+            ],
+            "text": "D",
+            "prediction": "D",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0031-line-0011",
+            "bbox": [
+              163,
+              1564,
+              312,
+              1662
+            ],
+            "text": "\\( x_2 \\)",
+            "prediction": "\\( x_2 \\)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T13:00:28.326Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T12:35:44.838Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 9
+        }
+      ]
     },
     "hf-0032": {
       "id": "hf-0032",
