@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T13:20:28.376Z",
+  "updated_at": "2026-10-29T13:22:15.589Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -7555,20 +7555,249 @@
         "source_sha256": "99f69036508965fbcef1aced2f415b65cddd1aede5f2f74339c7e0ee74d06ddf"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0036-line-0002",
+            "bbox": [
+              272,
+              177,
+              1131,
+              295
+            ],
+            "text": "- 출력층의 뉴런 수 정하기",
+            "prediction": "- 훈련 클의 슈퍼 수 잡하기",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0036-line-0003",
+            "bbox": [
+              348,
+              294,
+              1804,
+              436
+            ],
+            "text": "- 분류에서는 분류하고 싶은 클래스 수로 설정",
+            "prediction": "- 밝은이사는 밝혀고 싶은 클래스 수도 설쳤다",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0036-line-0004",
+            "bbox": [
+              236,
+              565,
+              1130,
+              675
+            ],
+            "text": "- MNIST 데이터셋",
+            "prediction": "- MNIST",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0036-line-0006",
+            "bbox": [
+              332,
+              685,
+              1404,
+              820
+            ],
+            "text": "- 손 글씨 숫자 이미지 집합.",
+            "prediction": "- 손 클씨",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0036-line-0008",
+            "bbox": [
+              290,
+              919,
+              1936,
+              1073
+            ],
+            "text": "- 원 - 핫 인코딩 (one-hot encoding)",
+            "prediction": "- 원 - 핫 인코딩 (one-hot (in coding))",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0036-line-0009",
+            "bbox": [
+              332,
+              1040,
+              2789,
+              1222
+            ],
+            "text": "- [0,0,1,0,0,0,…] 처럼 정답을 뜻하는 원소만 1(핫)",
+            "prediction": "- [0,0,1,0,0,0,…] 처럼 정돈을 뜻하는 원소만 1(짧)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0036-line-0010",
+            "bbox": [
+              483,
+              1209,
+              1525,
+              1355
+            ],
+            "text": "나머지는 모두 0인 배열",
+            "prediction": "나라지는 모두 이인 배열",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0036-line-0011",
+            "bbox": [
+              229,
+              1479,
+              563,
+              1617
+            ],
+            "text": "◦정규화",
+            "prediction": "2 점균화",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0036-line-0012",
+            "bbox": [
+              278,
+              1616,
+              1763,
+              1758
+            ],
+            "text": "- 데이터를 특정 범위로 변환하는 처리.",
+            "prediction": "- 데이터를 특정 법론 변환하는 처리.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0036-line-0013",
+            "bbox": [
+              235,
+              1935,
+              563,
+              2057
+            ],
+            "text": "◦ 전처리",
+            "prediction": "- 진취리",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0036-line-0014",
+            "bbox": [
+              278,
+              2039,
+              2360,
+              2186
+            ],
+            "text": "- 신경망의 입력 데이터에 특정 변환을 가하는 작업",
+            "prediction": "- 신경암의",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0036-line-0016",
+            "bbox": [
+              241,
+              2334,
+              1186,
+              2468
+            ],
+            "text": "◦데이터 백색화",
+            "prediction": "- 빠져찾는 데이터 배쇄화",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0036-line-0017",
+            "bbox": [
+              290,
+              2479,
+              1936,
+              2613
+            ],
+            "text": "- 전체 데이터를 균일하게 분포시키는 것",
+            "prediction": "- 전체 데이터를 균일화지 분포시키는 것",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0036-line-0018",
+            "bbox": [
+              217,
+              2774,
+              829,
+              2912
+            ],
+            "text": "◦배치 (batch)",
+            "prediction": "- 배치 (batch)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0036-line-0019",
+            "bbox": [
+              250,
+              2923,
+              1331,
+              3061
+            ],
+            "text": "- 하나로 묶은 입력 데이터",
+            "prediction": "- 하나쪽 묶은 입력 데이터",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0036-line-0020",
+            "bbox": [
+              290,
+              3064,
+              1751,
+              3198
+            ],
+            "text": "- 이미지가 지폐처럼 다발로 묶여있다.",
+            "prediction": "- 이야기 자체 처럼 다발로 물어 있다.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T13:45:28.376Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T13:22:15.589Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 16
+        }
+      ]
     },
     "hf-0037": {
       "id": "hf-0037",
