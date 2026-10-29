@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T13:50:28.352Z",
+  "updated_at": "2026-10-29T13:51:56.030Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -9219,20 +9219,277 @@
         "source_sha256": "496b01ffc8e9c292c29ae82b08fd160ebe1ace1a0eb0355386f6609e9ba3b5d9"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0042-line-0003",
+            "bbox": [
+              244,
+              318,
+              584,
+              412
+            ],
+            "text": "◦계산그래프",
+            "prediction": "- 겨산대부도",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0004",
+            "bbox": [
+              260,
+              423,
+              1984,
+              541
+            ],
+            "text": "- 계산과정을 표현한 그래프, 국소적 계산 전파",
+            "prediction": "- 겨산과정을 표현한 그래프, 좌석 겨산 전파",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0005",
+            "bbox": [
+              244,
+              560,
+              639,
+              654
+            ],
+            "text": "- 노드 (node)",
+            "prediction": "- 노드 (node)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0006",
+            "bbox": [
+              229,
+              790,
+              938,
+              924
+            ],
+            "text": "- 에지 (엣지 edge)",
+            "prediction": "- 이지 (잇기 edge)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0007",
+            "bbox": [
+              332,
+              923,
+              983,
+              1037
+            ],
+            "text": "- 노드 사이의 직선.",
+            "prediction": "- 노드 사이의 경신.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0008",
+            "bbox": [
+              244,
+              1181,
+              512,
+              1283
+            ],
+            "text": "- 순전파",
+            "prediction": "- 승전화",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0009",
+            "bbox": [
+              254,
+              1286,
+              2051,
+              1428
+            ],
+            "text": "- 계산 그래프의 출발점부터 종착점까지의 전파",
+            "prediction": "- 지산 그래프의 출범점 모두 중첩점 가지의 전파.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0010",
+            "bbox": [
+              229,
+              1580,
+              548,
+              1686
+            ],
+            "text": "◦합성함수",
+            "prediction": "- 향성향수",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0011",
+            "bbox": [
+              238,
+              1705,
+              1097,
+              1827
+            ],
+            "text": "- 여러함수로 구성된 함수.",
+            "prediction": "- 여러분수로",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0013",
+            "bbox": [
+              223,
+              1967,
+              548,
+              2089
+            ],
+            "text": "◦연쇄법칙",
+            "prediction": "- 연쇄법적",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0014",
+            "bbox": [
+              229,
+              2092,
+              1915,
+              2238
+            ],
+            "text": "- 합성 함수의 미분은 합성 함수를 구성하는",
+            "prediction": "- 합성 향수의 새로운 협상 향수를 평화하는",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0015",
+            "bbox": [
+              314,
+              2229,
+              1945,
+              2379
+            ],
+            "text": "각 함수의 미분의 곱으로 나타낼 수 있음",
+            "prediction": "각 향수의 기분의 곱으로 나타나면 수 있음",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0016",
+            "bbox": [
+              217,
+              2520,
+              732,
+              2645
+            ],
+            "text": "◦ 어파인 변환",
+            "prediction": "- 어파인 보험한",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0017",
+            "bbox": [
+              208,
+              2644,
+              1945,
+              2799
+            ],
+            "text": "- 신경망의 순전파 때 수행하는 행렬의 곱",
+            "prediction": "- 신경찬의 순전과 대 수행하는 향설의 꼽고",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0018",
+            "bbox": [
+              169,
+              2971,
+              1168,
+              3105
+            ],
+            "text": "◦ 확률적 경사 하강법 (SGD)",
+            "prediction": "- 확률적 경사 하층법 (SGD)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0019",
+            "bbox": [
+              193,
+              3104,
+              2710,
+              3258
+            ],
+            "text": "- 매개변수 기울기를 구해 기울어진 방향으로 매개변수 값을 갱신하는 일 (미분)",
+            "prediction": "- 애재현수 기술기를 구해 기울어진 방향으로 애재현수 검토를 개선하는 일 (이념)",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0020",
+            "bbox": [
+              314,
+              3265,
+              1570,
+              3404
+            ],
+            "text": "→ 그러면서 점점 최적의 값에 다가감.",
+            "prediction": "→ 그래면서 점점 최적의 값에 대책.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0042-line-0021",
+            "bbox": [
+              193,
+              3411,
+              1803,
+              3553
+            ],
+            "text": "- 단점 : 비등방성 함수에서는 탐색 경로가 비효율적이다.",
+            "prediction": "- 단정: 비동방증 향쇄세는 당부 경로가 비효율적이다.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T14:15:28.352Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T13:51:56.030Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 18
+        }
+      ]
     },
     "hf-0043": {
       "id": "hf-0043",
