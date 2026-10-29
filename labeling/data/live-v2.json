@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T13:17:28.439Z",
+  "updated_at": "2026-10-29T13:18:03.734Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -7385,20 +7385,165 @@
         "source_sha256": "faac0c09be0ff9d9fc30a32ed821dd00b7ea87e47214f2efdeb36a641681f847"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0035-line-0001",
+            "bbox": [
+              190,
+              274,
+              1017,
+              432
+            ],
+            "text": "◦ 소프트 맥스 함수의 특징",
+            "prediction": "- 쓰도 맞서 합성의 특징",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0035-line-0002",
+            "bbox": [
+              211,
+              391,
+              1370,
+              565
+            ],
+            "text": "- 출력은 0에서 1.0 사이의 실수",
+            "prediction": "- 줄렸은 0에서 1.0 사이의 실수",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0035-line-0003",
+            "bbox": [
+              217,
+              564,
+              911,
+              702
+            ],
+            "text": "- 출력 총합은 1",
+            "prediction": "- 줄렸 흥함은 1",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0035-line-0004",
+            "bbox": [
+              211,
+              620,
+              2090,
+              843
+            ],
+            "text": "- 해당 성질 덕분에 출력을 '확률'로 해석 가능.",
+            "prediction": "- 새님 새님 성질 떨에 줄렸을 '확률'로 해석 가능.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0035-line-0005",
+            "bbox": [
+              193,
+              745,
+              2553,
+              980
+            ],
+            "text": "- 소프트맥스 함수를 적용해도 각 원소의 대소 관계는 변하지 않음",
+            "prediction": "- 새님 액수 향수를 적용해도 각 원쇄 새로 판례는 변하지 않음.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0035-line-0006",
+            "bbox": [
+              287,
+              895,
+              2244,
+              1113
+            ],
+            "text": "L 지수 함수 y = exp(x) 가 단조 증가 함수이기 때문",
+            "prediction": "L 싸움 수 $\\lambda = \\exp(x)$ 가 단조 증가 향수 어져 매슬",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0035-line-0008",
+            "bbox": [
+              756,
+              1177,
+              1875,
+              1331
+            ],
+            "text": "정의역 원소 a, b가 a<= b일 때,",
+            "prediction": "접이엑 원소 a.b가 a ≤ b 일대,",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0035-line-0009",
+            "bbox": [
+              765,
+              1306,
+              1993,
+              1468
+            ],
+            "text": "$f(a) \\leq f(b)$ 가 성립하는 함수",
+            "prediction": "$f(a) \\leq f(b)$ 가 성감하는 향수",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0035-line-0010",
+            "bbox": [
+              193,
+              1596,
+              2042,
+              1767
+            ],
+            "text": "- 추론 출력층에서는 소프트맥스함수를 생략함",
+            "prediction": "- 루돈 훈련층에서는 소프트 맥스 향수를 생각함",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0035-line-0011",
+            "bbox": [
+              272,
+              1737,
+              2178,
+              1904
+            ],
+            "text": "하지만 학습 출력층에서는 소프트맥스 함수를 사용.",
+            "prediction": "하지만 학습 클럭층에서는 소프트액스 향수를 사용.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T13:42:28.439Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T13:18:03.734Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 10
+        }
+      ]
     },
     "hf-0036": {
       "id": "hf-0036",
