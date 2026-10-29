@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T14:23:28.345Z",
+  "updated_at": "2026-10-29T14:24:53.986Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -10685,20 +10685,221 @@
         "source_sha256": "54ec0e71b2b23a96140d1e76fd10910cb47b8f49a08c7c092339b08fcca85ea7"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0047-line-0004",
+            "bbox": [
+              244,
+              358,
+              953,
+              476
+            ],
+            "text": "◦CNN ( 합성곱 신경망)",
+            "prediction": "- (NN (향상률 산정량))",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0047-line-0006",
+            "bbox": [
+              254,
+              467,
+              1231,
+              597
+            ],
+            "text": "- 필터의 매개변수가 가중치에 해당",
+            "prediction": "- 필터의 애플렌드가 기록되에 해당.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0047-line-0007",
+            "bbox": [
+              254,
+              592,
+              2075,
+              722
+            ],
+            "text": "- 필터를 적용한 결과에 편향을 더해줌으로 출력 데이터가 나옴.",
+            "prediction": "- 폴리틀 적용한 결과에 편향을 다해줌으로 줄겨 데이터가 나옴.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0047-line-0003",
+            "bbox": [
+              1814,
+              181,
+              2498,
+              319
+            ],
+            "text": "이때 편향의 크기는 항상",
+            "prediction": "이에 편향의 크기는 향상",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0047-line-0005",
+            "bbox": [
+              1935,
+              298,
+              2205,
+              396
+            ],
+            "text": "|x|크기",
+            "prediction": "1×1 크기",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0047-line-0009",
+            "bbox": [
+              172,
+              1370,
+              672,
+              1488
+            ],
+            "text": "◦패딩 (padding)",
+            "prediction": "- 패널 (Pdd)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0047-line-0008",
+            "bbox": [
+              411,
+              1225,
+              1104,
+              1343
+            ],
+            "text": "- pad : 덧대다, 채워넣다.",
+            "prediction": "- Pdi: 덮채 채워넣다.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0047-line-0010",
+            "bbox": [
+              202,
+              1499,
+              2453,
+              1642
+            ],
+            "text": "- 합성곱 연산을 수행하기 전에 입력 데이터 주변을 특정 값으로 채우는 것",
+            "prediction": "- 참여금 연산실 5행에 적어 참격 데이터 표극했을 듯정 값으로 채워온 것",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0047-line-0011",
+            "bbox": [
+              163,
+              1766,
+              472,
+              1859
+            ],
+            "text": "◦스트라이드",
+            "prediction": "- 스타일드",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0047-line-0012",
+            "bbox": [
+              172,
+              1899,
+              2075,
+              2033
+            ],
+            "text": "- 필터를 적용하는 위치의 간격, 스트라이드를 키우면 출력은 작아짐",
+            "prediction": "- 필터를 접종하는 위험 간격, 스토리드를 커우먼 혼격은 장애림",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0047-line-0013",
+            "bbox": [
+              895,
+              2447,
+              1198,
+              2553
+            ],
+            "text": "(합성곱 연산)",
+            "prediction": "(참짧면)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0047-line-0014",
+            "bbox": [
+              344,
+              2701,
+              623,
+              2815
+            ],
+            "text": "입력데이터",
+            "prediction": "- 패털 예비",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0047-line-0015",
+            "bbox": [
+              1381,
+              2681,
+              1531,
+              2807
+            ],
+            "text": "필터",
+            "prediction": "필터",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0047-line-0016",
+            "bbox": [
+              257,
+              2850,
+              1162,
+              3000
+            ],
+            "text": "1칸 이동 : 스트라이드가 1이다.",
+            "prediction": "- 1단 이동: 스토리드 1이다.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T14:48:28.345Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T14:24:53.986Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 14
+        }
+      ]
     },
     "hf-0048": {
       "id": "hf-0048",
