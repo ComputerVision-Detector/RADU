@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T12:26:28.391Z",
+  "updated_at": "2026-10-29T12:26:40.883Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -5807,20 +5807,291 @@
         "source_sha256": "f3d58707873a0008fad702439229f0a39e2e778109f9e55809755b9f50edc8d7"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0024-line-0003",
+            "bbox": [
+              223,
+              399,
+              1742,
+              597
+            ],
+            "text": "◦ 그래디언트 소멸 문제는 시그모이드 함수에서 더욱 심함.",
+            "prediction": "- 겨울에는 소멸 문제는 시모트는 밤식에서 더욱 상황.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0004",
+            "bbox": [
+              208,
+              633,
+              1839,
+              839
+            ],
+            "text": "◦ReLU 함수는 S가 양수일 때 그래디언트는 1. 음수이면 0",
+            "prediction": "- RelU 향수는 와병수 일 때 그래서도는 1. 음수이면 0.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0005",
+            "bbox": [
+              278,
+              774,
+              1872,
+              956
+            ],
+            "text": "따라서 시그모이드에 비해 그레디언트 소멸 발생 가능성이 낮음",
+            "prediction": "여자서 시모트에 배해 그데이번도 소멸 밤생 가능해 났음",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0006",
+            "bbox": [
+              269,
+              951,
+              787,
+              1121
+            ],
+            "text": "z_j^l = T_l(s_j^l)",
+            "prediction": "\\( z_j^1 = T_2(S_j^1) \\)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0007",
+            "bbox": [
+              244,
+              1145,
+              1673,
+              1331
+            ],
+            "text": "◦과소적합 -> 모델용량을 크게하면 해결",
+            "prediction": "- 과소적함. → 모델용종을 크기하면 해결",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0008",
+            "bbox": [
+              260,
+              1294,
+              2217,
+              1464
+            ],
+            "text": "- 데이터에 비해 작은 용량의 모델을 사용해 오차가 많아지는 현상",
+            "prediction": "- 데이터에 배해 잘은 용종이 모델을 사용해 오차가 높아지는 현상.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0009",
+            "bbox": [
+              314,
+              1483,
+              1159,
+              1585
+            ],
+            "text": "ex) 입력 -> 선형식 -> 출력",
+            "prediction": "의 입력 → 선택성 → 출력.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0010",
+            "bbox": [
+              381,
+              1584,
+              2175,
+              1718
+            ],
+            "text": "작은 모델이 있는 경우, 표현할 수 있는 함수가 제한적.",
+            "prediction": "옛 층은 오릴이 있는 경우, 포현할 수 있는 향수가 저반적.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0011",
+            "bbox": [
+              374,
+              1709,
+              2175,
+              1843
+            ],
+            "text": "-> 아무리 데이터를 많이 넣어도 모델 자체가 표현할 수 없는",
+            "prediction": "→ 아무건 데이터를 많이 봉안도 모델 자체가 포현할 수 없는",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0012",
+            "bbox": [
+              444,
+              1842,
+              1685,
+              1976
+            ],
+            "text": "복잡한 관계는 제도로 학습을 못할 수 있음.",
+            "prediction": "복잡한 관계는 제도로 착습을 못할 수 있음.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0013",
+            "bbox": [
+              190,
+              2108,
+              1842,
+              2234
+            ],
+            "text": "◦기계학습의 최종목적은 일반화 능력을 최대화 하는 것.",
+            "prediction": "- 제향층의 좌종목적은 일반화 능력을 최대화 하는 것.",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0014",
+            "bbox": [
+              190,
+              2370,
+              481,
+              2480
+            ],
+            "text": "◦과잉적합",
+            "prediction": "- 과정적합",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0015",
+            "bbox": [
+              214,
+              2495,
+              2583,
+              2645
+            ],
+            "text": "- 너무 큰 모델이 데이터에 과도하게 적응하여 일반화 능력을 잃는 현상",
+            "prediction": "- 너득 큰 모델이 데이터에 파도하게 적용하여 일반화 능력을 잃는 현상.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0016",
+            "bbox": [
+              208,
+              2644,
+              1029,
+              2754
+            ],
+            "text": "- 데이터 양을 늘리면 해결.",
+            "prediction": "- 데이터 양을 늘렸다 해결.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0017",
+            "bbox": [
+              142,
+              2890,
+              775,
+              3029
+            ],
+            "text": "◦ 데이터 증대 방법.",
+            "prediction": "- 대뜨의 중대 방법.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0018",
+            "bbox": [
+              148,
+              3028,
+              1915,
+              3202
+            ],
+            "text": "- 주어진 데이터를 인위적으로 변형하여 데이터를 늘리는 방법",
+            "prediction": "- 주연 데이터를 연극으로 변형하여 데이터를 늘리는 방법",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0019",
+            "bbox": [
+              133,
+              3306,
+              838,
+              3432
+            ],
+            "text": "◦ 분류 ( classification)",
+            "prediction": "- 분류 ( classification)",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0020",
+            "bbox": [
+              172,
+              3443,
+              1476,
+              3577
+            ],
+            "text": "- 레이블이 이산인 경우, MNIST, iris 등.",
+            "prediction": "- 2010년 이산민 정부, MNIST, ikiS 등.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0024-line-0021",
+            "bbox": [
+              172,
+              3588,
+              1077,
+              3714
+            ],
+            "text": "- SKlearn에서 SVM, SVC",
+            "prediction": "- S셀라닉에서 SVM, SVC",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T12:51:28.391Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T12:26:40.883Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 19
+        }
+      ]
     },
     "hf-0025": {
       "id": "hf-0025",
