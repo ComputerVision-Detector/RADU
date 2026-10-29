@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T14:14:28.386Z",
+  "updated_at": "2026-10-29T14:16:12.504Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -10093,20 +10093,263 @@
         "source_sha256": "56d9d5038b5cec60927a9de79dd824980dab3e2d99c866991f9b9ba11ffcbb89"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "line-931e3c58-a081-4aef-aac5-091b5b7791d5",
+            "bbox": [
+              211,
+              248,
+              1203,
+              396
+            ],
+            "text": "◦ 하이퍼파라미터 최적화 단계",
+            "prediction": "",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-1b767fb5-82f2-487e-98a9-19ad45806688",
+            "bbox": [
+              281,
+              381,
+              1392,
+              519
+            ],
+            "text": "1. 하이퍼파라미터 값의 범위를 설정",
+            "prediction": "",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-4db38a34-f7ef-4e11-ab55-ef8d2c0f5177",
+            "bbox": [
+              240,
+              487,
+              1680,
+              654
+            ],
+            "text": "2. 설정된 범위에서 하파 값을 무작위로 추출",
+            "prediction": "",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5b726072-f3c8-45b1-8f98-96b22e7a563e",
+            "bbox": [
+              243,
+              610,
+              1898,
+              796
+            ],
+            "text": "3. 위 단계에서 샘플링한 하파 값을 사용하여 학습",
+            "prediction": "",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-dfc009cb-560d-41b8-9f09-53790b63030e",
+            "bbox": [
+              401,
+              782,
+              1460,
+              897
+            ],
+            "text": "-> 검증 데이터로 정확도 평가",
+            "prediction": "",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a72b5aec-fdfe-4327-bd17-8095e3d99547",
+            "bbox": [
+              229,
+              892,
+              1917,
+              1044
+            ],
+            "text": "4. 2단계와 3단계를 특정횟수(ex. 100회) 반복하며.",
+            "prediction": "",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b591aff2-d08f-4195-9a15-e04c731da28b",
+            "bbox": [
+              397,
+              1016,
+              1903,
+              1221
+            ],
+            "text": "그 정확도의 결과를 보고 하파 범위를 좁힘.",
+            "prediction": "",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9c524815-d106-4b3f-ae94-a8b3200f78aa",
+            "bbox": [
+              173,
+              1292,
+              764,
+              1468
+            ],
+            "text": "◦ 완전연결 (전결합)",
+            "prediction": "",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-36a90b5a-76c3-4cce-bdb5-ac3e27537cd9",
+            "bbox": [
+              220,
+              1435,
+              1898,
+              1607
+            ],
+            "text": "- 인접한 계층의 모든 뉴런과 결합되어 있는 것",
+            "prediction": "",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-408a67e9-3d1c-4056-94b7-b52308691391",
+            "bbox": [
+              96,
+              1602,
+              1474,
+              1888
+            ],
+            "text": "Affine 계층 수행하는 수학적 연산 설명이름 (완전연결계층) 구조를 설명하는 이름",
+            "prediction": "",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-1a0cdeb9-8f7f-4412-b1fb-79ef088dbf71",
+            "bbox": [
+              192,
+              1883,
+              983,
+              2022
+            ],
+            "text": "- 완전히 연결된 계층",
+            "prediction": "",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-73b28824-e1d2-4611-a28d-15cd0748b91c",
+            "bbox": [
+              153,
+              2016,
+              1550,
+              2169
+            ],
+            "text": "- 완전연결 계층이 Affine 연산을 수행하기에",
+            "prediction": "",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ee7a9c52-c284-49aa-b8f5-911f1b00c8e5",
+            "bbox": [
+              239,
+              2155,
+              1578,
+              2321
+            ],
+            "text": "완전연결계층 = Affine 계층이 됨.",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-08bf4c1c-1507-4c2d-a4c5-bf49f0a16529",
+            "bbox": [
+              258,
+              2285,
+              2056,
+              2485
+            ],
+            "text": "하지만 완전연결 계층에서 다른 연산을 하게 되면",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0e2728ca-2fa9-45fb-9e31-1da8f8e29312",
+            "bbox": [
+              296,
+              2446,
+              1608,
+              2622
+            ],
+            "text": "완전연결계층(o), Affine 계층 (x)",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-63639690-5f11-4ccc-97bb-e2c3a3b9f0d4",
+            "bbox": [
+              125,
+              2513,
+              2966,
+              3099
+            ],
+            "text": "MNIST 2 -> Affine -> ReLU -ReLU 계층 -> Affine -> ReLU -> ... -> Affine -> softmax -softmax계층 ->",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f720dfa8-e664-4fd9-881f-0abe72aca25c",
+            "bbox": [
+              692,
+              3247,
+              1627,
+              3390
+            ],
+            "text": "완전연결 (Affine 계층)",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T14:39:28.386Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T14:16:12.504Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 17
+        }
+      ]
     },
     "hf-0046": {
       "id": "hf-0046",
