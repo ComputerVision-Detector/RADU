@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T12:44:28.343Z",
+  "updated_at": "2026-10-29T12:46:24.429Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -8690,20 +8690,921 @@
         "source_sha256": "3c5ea64cb3de14ca20ffc164b5fb304add9f35d4cc074876c3132e9e3630aa1d"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "line-18c5e5f4-eb79-483f-9655-844e8ffe06e8",
+            "bbox": [
+              9,
+              2303,
+              294,
+              2416
+            ],
+            "text": "고립 수준",
+            "prediction": "",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0001",
+            "bbox": [
+              1719,
+              15,
+              2543,
+              119
+            ],
+            "text": "제임스 템플린, 앤드류 리",
+            "prediction": "제비스 팁플린, 샌드류 리",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0002",
+            "bbox": [
+              0,
+              189,
+              294,
+              330
+            ],
+            "text": "부속질의",
+            "prediction": "부속질의",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0003",
+            "bbox": [
+              388,
+              180,
+              1903,
+              283
+            ],
+            "text": "SELECT orderid AS 주문번호, saleprice AS 판매가격x",
+            "prediction": "SELECT orderid AS 주목받는, saleprice AS 판매가격x",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0004",
+            "bbox": [
+              388,
+              289,
+              770,
+              377
+            ],
+            "text": "FROM Orders",
+            "prediction": "FROM Orders",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0005",
+            "bbox": [
+              388,
+              388,
+              2199,
+              492
+            ],
+            "text": "WHERE saleprice > (SELECT AVG(saleprice) FROM Orders);",
+            "prediction": "WHERE sale/sprice>(SELECT AVG(salgrice) FROM Orders);",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0006",
+            "bbox": [
+              0,
+              602,
+              315,
+              743
+            ],
+            "text": "REPLACE",
+            "prediction": "REPLACE",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0007",
+            "bbox": [
+              381,
+              587,
+              1257,
+              703
+            ],
+            "text": "SELECT booid AS 도서번호,",
+            "prediction": "SELECT booid AS 도서번호,",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0008",
+            "bbox": [
+              677,
+              702,
+              2337,
+              802
+            ],
+            "text": "REPLACE(bookname,'축구','농구')AS 변경된 도서명 ,",
+            "prediction": "REPLACE(bookname,'국구','농구')AS 변화된 왜명,",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0009",
+            "bbox": [
+              685,
+              811,
+              1654,
+              911
+            ],
+            "text": "publisher AS 출판사, priceAS가격",
+            "prediction": "publisher AS 확보자, priceAS가적",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0010",
+            "bbox": [
+              381,
+              901,
+              778,
+              998
+            ],
+            "text": "FROM Book",
+            "prediction": "FROM Book",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0011",
+            "bbox": [
+              381,
+              997,
+              1522,
+              1107
+            ],
+            "text": "WHERE bookname LIKE '%축구%';",
+            "prediction": "WHERE bookname LIKE '※구기';",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0012",
+            "bbox": [
+              0,
+              1205,
+              186,
+              1331
+            ],
+            "text": "ADD",
+            "prediction": "ADD",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0013",
+            "bbox": [
+              381,
+              1193,
+              1969,
+              1300
+            ],
+            "text": "SELECT orderid AS 주문번호, orderdate AS 주문일,",
+            "prediction": "SELECT orderid AS 뮤비번호, orderdate AS 주문일,",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0014",
+            "bbox": [
+              0,
+              1314,
+              265,
+              1440
+            ],
+            "text": "DATE",
+            "prediction": "DATE",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0015",
+            "bbox": [
+              653,
+              1299,
+              2485,
+              1402
+            ],
+            "text": "ADDDATE(orderdate,INTERVAL 10 DAY) AS 매출확정일",
+            "prediction": "ADDDATE(orderdate,INTERVAL 10 DAY) AS 매출획정일",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0016",
+            "bbox": [
+              388,
+              1401,
+              860,
+              1505
+            ],
+            "text": "FROM Orders;",
+            "prediction": "FROM Orders;",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0017",
+            "bbox": [
+              2000,
+              1439,
+              2255,
+              1517
+            ],
+            "text": "LS상태",
+            "prediction": "LS상태",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0018",
+            "bbox": [
+              2307,
+              1432,
+              2567,
+              1517
+            ],
+            "text": "LX상태",
+            "prediction": "LX상태",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ad6adf10-30c7-49b8-9ef2-fc884fe5f6cd",
+            "bbox": [
+              1722,
+              1518,
+              1941,
+              1605
+            ],
+            "text": "LS 요청",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-efb244ba-75a4-4198-831e-a99ccaa6b0f8",
+            "bbox": [
+              2025,
+              1526,
+              2247,
+              1630
+            ],
+            "text": "허용",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0064961b-ba7c-49ca-8993-b25b96194595",
+            "bbox": [
+              2350,
+              1547,
+              2503,
+              1609
+            ],
+            "text": "대기",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0019",
+            "bbox": [
+              381,
+              1603,
+              882,
+              1701
+            ],
+            "text": "개년 - 논리 - 물리",
+            "prediction": "개년 - 본리 - 폴리",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0020",
+            "bbox": [
+              1719,
+              1603,
+              1927,
+              1701
+            ],
+            "text": "LX 요청",
+            "prediction": "LX 요청",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0021",
+            "bbox": [
+              2044,
+              1643,
+              2193,
+              1728
+            ],
+            "text": "대기",
+            "prediction": "\\( \\text{CH}_4 \\)",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0022",
+            "bbox": [
+              2332,
+              1655,
+              2494,
+              1740
+            ],
+            "text": "대기",
+            "prediction": "\\( \\pi \\)",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0023",
+            "bbox": [
+              7,
+              1790,
+              223,
+              1896
+            ],
+            "text": "ACID",
+            "prediction": "ACID",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0024",
+            "bbox": [
+              381,
+              1802,
+              1451,
+              1896
+            ],
+            "text": "원자성 ; all or nothing - 회복관리자",
+            "prediction": "환자성 ; all or nothing - 회복완리자",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0026",
+            "bbox": [
+              388,
+              1911,
+              1609,
+              1999
+            ],
+            "text": "일관성: 일관된 상태 유지 - 무결성 제약조건",
+            "prediction": "일관성: 일관된 상태 유지 - 무질침 제약조건",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0028",
+            "bbox": [
+              381,
+              2010,
+              1596,
+              2105
+            ],
+            "text": "고립성: 수행 중 끼어들기 방지 - 동시성 제어",
+            "prediction": "고립성: 수행 중 게이트가 방지 - 동시성 제어",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0029",
+            "bbox": [
+              381,
+              2113,
+              1411,
+              2210
+            ],
+            "text": "지속성: 완료된 건 영구 저장- 회복",
+            "prediction": "지속성: 환율된 건 영구 저장- 회복",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0025",
+            "bbox": [
+              1739,
+              1813,
+              2639,
+              1908
+            ],
+            "text": "REDO (재실행): START + COMMIT",
+            "prediction": "REDO (제일행): START(COMMIT)",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0027",
+            "bbox": [
+              1767,
+              1917,
+              2641,
+              2008
+            ],
+            "text": "UNDO (취소): START O / COMMIT X",
+            "prediction": "UNDO (취소): START/COMMIT",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0030",
+            "bbox": [
+              1240,
+              2250,
+              1353,
+              2328
+            ],
+            "text": "오손",
+            "prediction": "오프",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0031",
+            "bbox": [
+              1450,
+              2250,
+              1689,
+              2328
+            ],
+            "text": "반복불가능",
+            "prediction": "비복설비능",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0032",
+            "bbox": [
+              1741,
+              2243,
+              2043,
+              2328
+            ],
+            "text": "유령데이터",
+            "prediction": "유령데이터",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0033",
+            "bbox": [
+              395,
+              2310,
+              1132,
+              2410
+            ],
+            "text": "READ UNCOMMITTED",
+            "prediction": "READ UNCOMMITTED",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0034",
+            "bbox": [
+              1259,
+              2331,
+              1312,
+              2394
+            ],
+            "text": "O",
+            "prediction": "0",
+            "order": 41,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0035",
+            "bbox": [
+              1513,
+              2340,
+              1564,
+              2400
+            ],
+            "text": "O",
+            "prediction": "0",
+            "order": 42,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0036",
+            "bbox": [
+              1836,
+              2331,
+              1890,
+              2394
+            ],
+            "text": "O",
+            "prediction": "0",
+            "order": 43,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0037",
+            "bbox": [
+              384,
+              2408,
+              1012,
+              2515
+            ],
+            "text": "READ COMMITTED",
+            "prediction": "READ COMMITTED",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0038",
+            "bbox": [
+              1270,
+              2433,
+              1329,
+              2493
+            ],
+            "text": "X",
+            "prediction": "X",
+            "order": 44,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0039",
+            "bbox": [
+              1505,
+              2424,
+              1564,
+              2493
+            ],
+            "text": "O",
+            "prediction": "0",
+            "order": 45,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0040",
+            "bbox": [
+              1809,
+              2424,
+              1866,
+              2493
+            ],
+            "text": "O",
+            "prediction": "0",
+            "order": 46,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0041",
+            "bbox": [
+              374,
+              2520,
+              1047,
+              2617
+            ],
+            "text": "REPEATABLE READ",
+            "prediction": "REPEATABLE READ",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0042",
+            "bbox": [
+              1270,
+              2536,
+              1329,
+              2602
+            ],
+            "text": "X",
+            "prediction": "X",
+            "order": 47,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0043",
+            "bbox": [
+              1526,
+              2536,
+              1583,
+              2602
+            ],
+            "text": "X",
+            "prediction": "X",
+            "order": 48,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0044",
+            "bbox": [
+              1815,
+              2536,
+              1877,
+              2602
+            ],
+            "text": "O",
+            "prediction": "0",
+            "order": 49,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0045",
+            "bbox": [
+              378,
+              2623,
+              953,
+              2717
+            ],
+            "text": "SERIALIZABLE",
+            "prediction": "SERIALIZABLE",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0046",
+            "bbox": [
+              1293,
+              2632,
+              1361,
+              2698
+            ],
+            "text": "X",
+            "prediction": "X",
+            "order": 50,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0047",
+            "bbox": [
+              1526,
+              2632,
+              1583,
+              2698
+            ],
+            "text": "X",
+            "prediction": "X",
+            "order": 51,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0048",
+            "bbox": [
+              1836,
+              2638,
+              1890,
+              2698
+            ],
+            "text": "X",
+            "prediction": "X",
+            "order": 52,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0049",
+            "bbox": [
+              0,
+              2834,
+              186,
+              2925
+            ],
+            "text": "SQL.",
+            "prediction": "SQL.",
+            "order": 53,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0050",
+            "bbox": [
+              396,
+              2834,
+              580,
+              2925
+            ],
+            "text": "데이블",
+            "prediction": "데이블",
+            "order": 54,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0051",
+            "bbox": [
+              722,
+              2834,
+              818,
+              2925
+            ],
+            "text": "행",
+            "prediction": "형",
+            "order": 55,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0052",
+            "bbox": [
+              896,
+              2834,
+              1001,
+              2925
+            ],
+            "text": "열",
+            "prediction": "열",
+            "order": 56,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0053",
+            "bbox": [
+              1066,
+              2834,
+              1265,
+              2925
+            ],
+            "text": "기본키",
+            "prediction": "기본기",
+            "order": 57,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0054",
+            "bbox": [
+              1315,
+              2834,
+              1535,
+              2925
+            ],
+            "text": "셀렉트",
+            "prediction": "샌드렌드",
+            "order": 58,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0055",
+            "bbox": [
+              0,
+              2937,
+              281,
+              3043
+            ],
+            "text": "Firebase",
+            "prediction": "Firebase",
+            "order": 59,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0056",
+            "bbox": [
+              396,
+              2937,
+              612,
+              3043
+            ],
+            "text": "컬렉션",
+            "prediction": "팔렉션",
+            "order": 60,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0057",
+            "bbox": [
+              677,
+              2937,
+              800,
+              3037
+            ],
+            "text": "문서",
+            "prediction": "문서",
+            "order": 61,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0058",
+            "bbox": [
+              896,
+              2937,
+              1022,
+              3034
+            ],
+            "text": "필드",
+            "prediction": "필드",
+            "order": 62,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0059",
+            "bbox": [
+              1066,
+              2937,
+              1265,
+              3037
+            ],
+            "text": "문서ID",
+            "prediction": "문서ID",
+            "order": 63,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0128-line-0060",
+            "bbox": [
+              1315,
+              2937,
+              1604,
+              3037
+            ],
+            "text": "onSnapshot",
+            "prediction": "onSnapshot",
+            "order": 64,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T13:09:28.343Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T12:46:24.429Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 64
+        }
+      ]
     },
     "hf-0129": {
       "id": "hf-0129",
