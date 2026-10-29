@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T13:41:28.333Z",
+  "updated_at": "2026-10-29T13:41:31.493Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -8683,20 +8683,305 @@
         "source_sha256": "e6c76909607ec7e31209506d6aec2f0f322b901bc2c44a7817a0827d183fa28b"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0040-line-0003",
+            "bbox": [
+              229,
+              314,
+              753,
+              424
+            ],
+            "text": "◦안장점",
+            "prediction": "- 눈썹그 난장점",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0004",
+            "bbox": [
+              244,
+              411,
+              2601,
+              549
+            ],
+            "text": "- 어느 방향에서 보면 극댓값이 다른 방향에서 보면 극솟값이 되는 점.",
+            "prediction": "- ㅇㅗ 방향에서 보면 극빛 좀 뜬 방향에서 보면 크슛줄이 되는 걸",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0005",
+            "bbox": [
+              323,
+              556,
+              678,
+              682
+            ],
+            "text": "(말 안장)",
+            "prediction": "(뜬 선정)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0006",
+            "bbox": [
+              238,
+              693,
+              1516,
+              799
+            ],
+            "text": "◦최솟값을 찾으면 => 경사 하강법",
+            "prediction": "- 희웃꽁을 찾으면 → 절사 하장법",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0007",
+            "bbox": [
+              229,
+              806,
+              1727,
+              936
+            ],
+            "text": "◦최댓값을 찾으면 => 경사 상승법",
+            "prediction": "- 최윗줄을 찾으면 → 정사 상승법.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0008",
+            "bbox": [
+              217,
+              1052,
+              493,
+              1182
+            ],
+            "text": "- 학습률",
+            "prediction": "- 학습률",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0009",
+            "bbox": [
+              254,
+              1181,
+              1358,
+              1311
+            ],
+            "text": "- η (에타 eta) 로 나타냄.",
+            "prediction": "- 7 (에너 eto) 로 나타냄.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0010",
+            "bbox": [
+              229,
+              1310,
+              2287,
+              1436
+            ],
+            "text": "- 한 번의 학습으로 얼마만큼 학습할지, 즉 매개변수 값을",
+            "prediction": "- 한 빛의 학습으로 일하던 클럽 학습 확보, 즉 매매백속 효율",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0011",
+            "bbox": [
+              381,
+              1435,
+              1283,
+              1573
+            ],
+            "text": "얼마나 갱신하느냐 정하는 것",
+            "prediction": "연가 갱상닉도 쌓아 갔",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0012",
+            "bbox": [
+              178,
+              1713,
+              1116,
+              1831
+            ],
+            "text": "- 하이퍼 파라미터 (초매개변수)",
+            "prediction": "- 하이퍼 따라미터 (쾌개범수)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0013",
+            "bbox": [
+              208,
+              1838,
+              1612,
+              1968
+            ],
+            "text": "- 사람이 직접 설정해야 하는 매개변수",
+            "prediction": "- 석장이 직접 쓸짐하야 하는 배개념수",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0014",
+            "bbox": [
+              223,
+              1963,
+              663,
+              2097
+            ],
+            "text": "- ex. 학습률",
+            "prediction": "- ex. 학습률",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0015",
+            "bbox": [
+              120,
+              2245,
+              2656,
+              2391
+            ],
+            "text": "◦신경망 학습에서의 기울기 - 가중치 매개변수에 대한 손실 함수의 기울기",
+            "prediction": "산경상 학습에서의 기울기 - 기중치 메개변수에 대한 손실 합수의 기울기",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0016",
+            "bbox": [
+              102,
+              2528,
+              1207,
+              2658
+            ],
+            "text": "◦확률적 경사 하강법 (SGD)",
+            "prediction": "- 화물적 종사 학생법 (SGD)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0017",
+            "bbox": [
+              142,
+              2677,
+              2238,
+              2811
+            ],
+            "text": "- 확률적으로 무작위로 골라낸 데이터에 대해 수행하는",
+            "prediction": "- 확률적으로 목적적으로 풀어낸 데이터에 대해 성창하는",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0018",
+            "bbox": [
+              241,
+              2826,
+              629,
+              2944
+            ],
+            "text": "경사하강법",
+            "prediction": "종사 하장법",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0019",
+            "bbox": [
+              1282,
+              2830,
+              1667,
+              2960
+            ],
+            "text": "미니배치",
+            "prediction": "1) 대비치",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0020",
+            "bbox": [
+              69,
+              3084,
+              351,
+              3234
+            ],
+            "text": "◦과적합",
+            "prediction": "- 과학학",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0021",
+            "bbox": [
+              78,
+              3237,
+              2598,
+              3420
+            ],
+            "text": "- 훈련 데이터에 포함된 이미지만 제대로 구분하고, 그렇지 않은",
+            "prediction": "- 흔한 데이터에 포함된 이미지만 제대로 구분하고, 그렇지 않은",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0040-line-0022",
+            "bbox": [
+              181,
+              3394,
+              1655,
+              3549
+            ],
+            "text": "이미지는 식별할 수 없다는 뜻",
+            "prediction": "이기지는 싸웠을 싶은 삶을 다음에 쓰다.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T14:06:28.333Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T13:41:31.493Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 20
+        }
+      ]
     },
     "hf-0041": {
       "id": "hf-0041",
