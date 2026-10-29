@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-29T13:23:28.302Z",
+  "updated_at": "2026-10-29T13:26:19.151Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -7809,20 +7809,277 @@
         "source_sha256": "7571288db047b5306890b04cc69ada4120da02a1ec93b77cf6458ef6d1f8e92e"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0037-line-0004",
+            "bbox": [
+              281,
+              338,
+              693,
+              452
+            ],
+            "text": "신경망 학습.",
+            "prediction": "신경망 학습.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0005",
+            "bbox": [
+              290,
+              467,
+              499,
+              573
+            ],
+            "text": "- 학습",
+            "prediction": "- 학습",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0006",
+            "bbox": [
+              305,
+              461,
+              2592,
+              698
+            ],
+            "text": "- 훈련 데이터로부터 가중치 매개변수의 최적값을 자동으로 획득",
+            "prediction": "- 흔적 (데이터로부터 가중리 얘기보수의 최적화를 자동으로 획득)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0007",
+            "bbox": [
+              281,
+              697,
+              2622,
+              936
+            ],
+            "text": "◦손실 함수 : 신경망 성능의 나쁨을 나타내는 지표 = 비용함수",
+            "prediction": "열쇠 향수 : 셈망 성능의 나쁨을 나타내는 기표 = 비용 향수",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0008",
+            "bbox": [
+              290,
+              870,
+              1788,
+              1057
+            ],
+            "text": "- 신경망이 학습할 수 있도록 해주는 지표.",
+            "prediction": "- 셈망이 흥승한 수 있도록 하옥는 지표.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0009",
+            "bbox": [
+              272,
+              963,
+              2674,
+              1174
+            ],
+            "text": "- 손실 함수의 결괏값을 가장 작게 만드는 가중치 매개변수를",
+            "prediction": "- 손실 참석 결과를 가장 작게 만드는 가중치 얘기보수를",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0010",
+            "bbox": [
+              326,
+              1153,
+              923,
+              1295
+            ],
+            "text": "찾는 것이 목표",
+            "prediction": "찾는 것이 목표",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0011",
+            "bbox": [
+              235,
+              1399,
+              1077,
+              1537
+            ],
+            "text": "◦딥러닝 = 종단간 머신러닝",
+            "prediction": "- 임더빙 = 골선간 메섬녕",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0012",
+            "bbox": [
+              647,
+              1528,
+              1280,
+              1654
+            ],
+            "text": "L 처음부터 끝까지.",
+            "prediction": "L 케온부터 끝까지.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0013",
+            "bbox": [
+              208,
+              1782,
+              1461,
+              1912
+            ],
+            "text": "- 훈련 데이터와 시험 데이터로 나눔.",
+            "prediction": "- 훈련 데이터와 사험 데이터로 나눔.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0014",
+            "bbox": [
+              260,
+              1915,
+              2408,
+              2045
+            ],
+            "text": "- 훈련 데이터만 사용하여 학습 -> 최적의 매개변수를 찾음",
+            "prediction": "- 훈련 데이터와 사용하여 학습 → 취적의 얘기보수를 찾음",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0015",
+            "bbox": [
+              278,
+              2044,
+              2583,
+              2170
+            ],
+            "text": "→ 그 후 시험데이터를 사용하여 훈련한 모델의 실력을 평가",
+            "prediction": "→ 그 효 시 힘데이터를 사용하여 훈련한 도덕의 실력을 평가",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0016",
+            "bbox": [
+              238,
+              2185,
+              1546,
+              2303
+            ],
+            "text": "※ 범용 능력을 제대로 평가하기 위해",
+            "prediction": "※ 법률 승격을 제비로 평가하기 위해.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0017",
+            "bbox": [
+              199,
+              2455,
+              1373,
+              2577
+            ],
+            "text": "- 오차제곱합 (손실함수 中)",
+            "prediction": "- 오차제품함 (손실함수 4)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0018",
+            "bbox": [
+              326,
+              2717,
+              1298,
+              2867
+            ],
+            "text": "E = \\(\\frac{1}{2}\\sum (Y_k - t_k)^2\\)",
+            "prediction": "E = \\(\\frac{1}{2}\\sum (Y_k - t_k)^2\\)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0019",
+            "bbox": [
+              1451,
+              2592,
+              1845,
+              2726
+            ],
+            "text": "정답레이블",
+            "prediction": "정창 레일볼",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0020",
+            "bbox": [
+              190,
+              2919,
+              527,
+              3033
+            ],
+            "text": "데이터 차원수",
+            "prediction": "대답 게일수",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0037-line-0022",
+            "bbox": [
+              680,
+              3011,
+              1446,
+              3158
+            ],
+            "text": "신경망의 출력 (추정한 값)",
+            "prediction": "신청역 혼격(적합 효)",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-29T13:48:28.302Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-29T13:26:19.151Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 18
+        }
+      ]
     },
     "hf-0038": {
       "id": "hf-0038",
