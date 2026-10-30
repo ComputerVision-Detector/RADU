@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T17:42:29.586Z",
+  "updated_at": "2026-10-30T17:44:00.757Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -18513,20 +18513,641 @@
         "source_sha256": "f59b1ba62b15c22d1806d731fc8a7bcf9f733c528dfbbc0b1806da6ede954a91"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0124-line-0001",
+            "bbox": [
+              401,
+              41,
+              813,
+              138
+            ],
+            "text": "<IT 산트>",
+            "prediction": "<IT 込入>",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0002",
+            "bbox": [
+              1374,
+              117,
+              1824,
+              259
+            ],
+            "text": "* 정보화 사회:",
+            "prediction": "- 접렬하나 사회: (102) 정보 (103) 정체 (104) 정보",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0003",
+            "bbox": [
+              251,
+              293,
+              348,
+              356
+            ],
+            "text": "IT",
+            "prediction": "IT",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0004",
+            "bbox": [
+              401,
+              293,
+              960,
+              366
+            ],
+            "text": ": 통신기술 + 컴퓨터 기술",
+            "prediction": ": 황신개호 + 답둘러가요",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0005",
+            "bbox": [
+              2326,
+              272,
+              2551,
+              363
+            ],
+            "text": "키워드임.",
+            "prediction": "커뮤니얼.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0006",
+            "bbox": [
+              235,
+              396,
+              348,
+              459
+            ],
+            "text": "ICT",
+            "prediction": "ICT",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0007",
+            "bbox": [
+              390,
+              393,
+              2132,
+              476
+            ],
+            "text": ": 정보 사회를 위한 모든 기술을 포함. (정보기술 환경, 통신 기술, 하드웨어, SW …)",
+            "prediction": ": 정보 사회를 위한 모든 기술은 포함. (접보가요 환경, 홍신 기술, 헤드레이, SW...)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0008",
+            "bbox": [
+              336,
+              496,
+              2568,
+              590
+            ],
+            "text": "⇒ 정보화 시대: [컴퓨터 혁명]으로 시작됨. → 스마트폰, IoT, AI를 기반으로 모든 것이",
+            "prediction": "$\\Rightarrow$ 접화 시대: [권유희 혁명]으로 사회화. 2→ 스마트폰. IoT, AS를 기반으로 오른 것이",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0009",
+            "bbox": [
+              435,
+              600,
+              1140,
+              687
+            ],
+            "text": "* ICT에 안착하지 못한 기업.",
+            "prediction": "* ICT에 인쇄하며 못한 기업.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0010",
+            "bbox": [
+              1585,
+              589,
+              2632,
+              687
+            ],
+            "text": "언결되는 [초연결 사회] 사회가 본격적으로 시작.",
+            "prediction": "언결리는 [새벽] 사회가 보급적으로 시작.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0011",
+            "bbox": [
+              518,
+              703,
+              1077,
+              798
+            ],
+            "text": "⇒ 소니, 싸이월드 등",
+            "prediction": "$\\Rightarrow$ 소니, 짜마웠고 등 $\\odot D$ 1춘 관계에 서우 잡화하며",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0012",
+            "bbox": [
+              1224,
+              813,
+              1883,
+              894
+            ],
+            "text": "face book 등장과 동시에 밀림.",
+            "prediction": "face hook 등점과 뒤이어 밀림.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0013",
+            "bbox": [
+              6,
+              1001,
+              2601,
+              1106
+            ],
+            "text": "· 1차 IT 빅뱅 : 개인용 컴퓨터 보급과 인터넷 대중화의 시대. ⇒ 정보처리 신속·정화 및 정보활용 분야 다양화.",
+            "prediction": "- 퍼 IT 비행",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0014",
+            "bbox": [
+              336,
+              1107,
+              2193,
+              1197
+            ],
+            "text": "⇒ [무어의 법칙]: 반도체의 마이크로칩 저장용량이 2년마다 2배씩 증가하는 것.",
+            "prediction": "$\\Rightarrow$ [무역의 법론]: 변도체의 마이크림 저장용량이 2만마다 2배씩 증가하는 것.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0015",
+            "bbox": [
+              336,
+              1193,
+              2657,
+              1286
+            ],
+            "text": "$\\rightarrow$ 닷컴버블의 탄생. (금리 인상 정책으로 인해 붕괴됨. But, 새로운 기술과 산업의 발전을 이끎)",
+            "prediction": "$\\rightarrow$ [무역의 법론]: 변도체의 마이크림 저장용량이 2만마다 2배씩 증가하는 것.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0016",
+            "bbox": [
+              8,
+              1414,
+              348,
+              1504
+            ],
+            "text": "· 2차 IT 비행",
+            "prediction": "- 첫 IT 비행",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0124-line-0017",
+            "bbox": [
+              390,
+              1398,
+              2193,
+              1492
+            ],
+            "text": "$\\therefore$ 담컴 버블 붕괴로 회의감 발생. ⇒ 모바일 시대 탄생 / 3세대 이동통신 등장.",
+            "prediction": "$\\therefore$ 담럿 비밀 볼귀로 회약감 발생. $\\Rightarrow$ 모바일 시대 탄생 / 3세대 이름률신 등장.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5bbc9ce0-f083-4960-a622-8f0a2188c3fc",
+            "bbox": [
+              1283,
+              1501,
+              1639,
+              1589
+            ],
+            "text": "안드로이드 & ios",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-69483ceb-1af5-4519-9c9a-d63b9411a09c",
+            "bbox": [
+              1,
+              1622,
+              1486,
+              1716
+            ],
+            "text": "· AI의 사대 : ICT 산업의 경계는 사라짐. AI 시대로 변화 중",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-79a2b4ab-daa6-4c75-8460-4b9f912dafce",
+            "bbox": [
+              0,
+              1821,
+              2169,
+              1908
+            ],
+            "text": "· 3차 IT 빅뱅 : 스마토피아 시대. → 서로 다른 영역을 융합하여 새로운 가치를 창출하는 시대.",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c2834c78-2975-4282-9610-3d4c68927aa4",
+            "bbox": [
+              299,
+              1920,
+              2231,
+              2017
+            ],
+            "text": "→ 필요한 대응책: 기술 유출 방지. 양극화, 일자리 감소 등의 문제 해결 필요.",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-32fe9ce7-dbda-4a57-b946-57c8289102c2",
+            "bbox": [
+              0,
+              2126,
+              2196,
+              2216
+            ],
+            "text": "· 클라우드 시스템 : 인터넷으로 연결된 공용 저장공간에 데이터/응용프로그램을 저장하고 빠르게 처리.",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6e41b863-82c0-4be0-a785-82cb7c2b9dab",
+            "bbox": [
+              410,
+              2230,
+              968,
+              2325
+            ],
+            "text": "ex) AI, 블록체인, IoT",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-3d38b603-41ac-4af1-a35f-fd520c434671",
+            "bbox": [
+              330,
+              2334,
+              1313,
+              2427
+            ],
+            "text": "→ 스마트팩토리는 클라우드 시스템이 필수.",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-3398ba62-4e1e-4cf6-8784-37c2afc94089",
+            "bbox": [
+              309,
+              2431,
+              2634,
+              2517
+            ],
+            "text": "→ [엣지 컴퓨팅] : 연산과 저장공간을 데이터 소스와 가까운 곳에 두는 '분산 컴퓨팅 프레임워크?'",
+            "prediction": "",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-46e36bc5-9a45-4d45-a5e2-6f368a833124",
+            "bbox": [
+              385,
+              2755,
+              1051,
+              2852
+            ],
+            "text": "· 1.0, 2.0, 3.0, ....",
+            "prediction": "",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9f53d1c0-5e2b-4fea-bb51-409a7596f943",
+            "bbox": [
+              387,
+              2850,
+              1056,
+              2961
+            ],
+            "text": "· 음악: 아날로그, 디지털.",
+            "prediction": "",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-81b8dd0e-d849-4e1b-82dd-01612846acab",
+            "bbox": [
+              376,
+              2980,
+              714,
+              3068
+            ],
+            "text": "· TCP / IP",
+            "prediction": "",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0708efa6-dc4d-46b1-b908-06a2975d9c4a",
+            "bbox": [
+              394,
+              3077,
+              753,
+              3174
+            ],
+            "text": "· IPv4, IPv6",
+            "prediction": "",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d93c00c5-51ff-4fe1-9b2c-832ca75a751e",
+            "bbox": [
+              364,
+              3176,
+              869,
+              3294
+            ],
+            "text": "· co.kr, ac …",
+            "prediction": "",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ccd44c8f-1a71-4021-b89a-6c1173be6251",
+            "bbox": [
+              1461,
+              2755,
+              2356,
+              2845
+            ],
+            "text": "· 산업혁명 순서 및 키워드.",
+            "prediction": "",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-4c7206bc-bda7-4bd7-930d-d35e15da59ce",
+            "bbox": [
+              1572,
+              2841,
+              2668,
+              2956
+            ],
+            "text": "ex) 3차 산업혁명 땐 뭐가 중요 사건이었",
+            "prediction": "",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-1baf4b47-22e2-40d6-90df-5a67c1359482",
+            "bbox": [
+              1701,
+              2952,
+              1923,
+              3063
+            ],
+            "text": "는지.",
+            "prediction": "",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-4a324375-241d-4bd9-b95d-22dbce40a855",
+            "bbox": [
+              1468,
+              3051,
+              2152,
+              3158
+            ],
+            "text": "· 1G~5G에 대한 거.",
+            "prediction": "",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-80c46164-3317-4f31-affe-dedba5681bd6",
+            "bbox": [
+              1489,
+              3169,
+              1910,
+              3271
+            ],
+            "text": "· ICBMSA",
+            "prediction": "",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d1e8076b-d76e-47e8-b255-3fe367f9f831",
+            "bbox": [
+              1470,
+              3262,
+              2553,
+              3398
+            ],
+            "text": "SAAS, IAAS, PAAS",
+            "prediction": "",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d84f2a72-7297-40c7-8fa9-54394effdcec",
+            "bbox": [
+              2264,
+              125,
+              2363,
+              208
+            ],
+            "text": "⇒",
+            "prediction": "",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c0d023f4-b94f-4fc9-8936-7f45f1a50682",
+            "bbox": [
+              2344,
+              106,
+              2569,
+              176
+            ],
+            "text": "정보가",
+            "prediction": "",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-467e43e0-6a45-4a25-aa7a-0989aa5ec0ce",
+            "bbox": [
+              2328,
+              185,
+              2643,
+              273
+            ],
+            "text": "새로운 문명의",
+            "prediction": "",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-09b1515b-af51-47c2-a6ea-4e47068549e6",
+            "bbox": [
+              2039,
+              83,
+              2185,
+              160
+            ],
+            "text": "사회",
+            "prediction": "",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e8d8905b-945b-460d-9cd2-9d3d8a4ea99e",
+            "bbox": [
+              2111,
+              197,
+              2229,
+              280
+            ],
+            "text": "경제",
+            "prediction": "",
+            "order": 41,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-4ede2d83-bf16-4da5-81b7-08440ff69126",
+            "bbox": [
+              1907,
+              166,
+              2037,
+              243
+            ],
+            "text": "정보.",
+            "prediction": "",
+            "order": 42,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-60a8d6b9-a3f8-4e94-9168-d75a015b7e0e",
+            "bbox": [
+              1195,
+              696,
+              1755,
+              780
+            ],
+            "text": "1촌 관계에 너무 집착하여",
+            "prediction": "",
+            "order": 43,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ad2b3320-ecdc-4649-86c4-0a0d20ffcbc3",
+            "bbox": [
+              1796,
+              1515,
+              2674,
+              1587
+            ],
+            "text": "PC가 아닌 휴대폰으로도 인터넷 사용 가능",
+            "prediction": "",
+            "order": 44,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T18:07:29.586Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T17:44:00.757Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 44
+        }
+      ]
     },
     "hf-0125": {
       "id": "hf-0125",
