@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T14:09:29.513Z",
+  "updated_at": "2026-10-30T14:10:14.887Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -17242,20 +17242,165 @@
         "source_sha256": "be519efb725a7687763e9ed3d9663193885463c9b91ab4a6142af27d17f5e1b1"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0117-line-0001",
+            "bbox": [
+              193,
+              374,
+              575,
+              484
+            ],
+            "text": "2021.04.13",
+            "prediction": "2021.04.13",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0117-line-0002",
+            "bbox": [
+              1088,
+              346,
+              2214,
+              476
+            ],
+            "text": "웹디자인기능사실기 메뉴슬라이드(아래로)",
+            "prediction": "乳(CT)71号外(20)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0117-line-0003",
+            "bbox": [
+              211,
+              524,
+              554,
+              621
+            ],
+            "text": "Java Script.",
+            "prediction": "Java Script.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0117-line-0004",
+            "bbox": [
+              220,
+              641,
+              1249,
+              742
+            ],
+            "text": "jQuery (document), ready (function() {",
+            "prediction": "jQuery (document), ready (function() {",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0117-line-0005",
+            "bbox": [
+              402,
+              749,
+              1407,
+              851
+            ],
+            "text": "$C'.menu>li'}, mouse over (function() {",
+            "prediction": "$C.menu);}, mouse over (function() {",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0117-line-0006",
+            "bbox": [
+              532,
+              858,
+              1824,
+              964
+            ],
+            "text": "$(this), find('.submenu').stop(), SlideDawn(500);",
+            "prediction": "$cthis), find('submenu').stop(}, SlideDawn(500);",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0117-line-0007",
+            "bbox": [
+              393,
+              983,
+              1062,
+              1073
+            ],
+            "text": "}).mouseout (function() {",
+            "prediction": "}, mouseout (function) {",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0117-line-0008",
+            "bbox": [
+              520,
+              1092,
+              1845,
+              1186
+            ],
+            "text": "$(this), find('.submenu').stop(), slideUp(500);",
+            "prediction": "$cthis), find('submenu').stop(C), SlideUp(500);",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0117-line-0009",
+            "bbox": [
+              356,
+              1201,
+              451,
+              1295
+            ],
+            "text": "});",
+            "prediction": "3);",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0117-line-0010",
+            "bbox": [
+              184,
+              1318,
+              279,
+              1412
+            ],
+            "text": "});",
+            "prediction": "3);",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T14:34:29.513Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T14:10:14.887Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 10
+        }
+      ]
     },
     "hf-0118": {
       "id": "hf-0118",
