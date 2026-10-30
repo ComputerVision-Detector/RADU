@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T18:18:29.957Z",
+  "updated_at": "2026-10-30T18:20:25.015Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -21097,20 +21097,431 @@
         "source_sha256": "d3e284a3245f5bd35bbd7bcabbdf87b33b881d6f86e0d2b79d039466173d2e47"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0144-line-0001",
+            "bbox": [
+              403,
+              79,
+              766,
+              185
+            ],
+            "text": "C4W1L",
+            "prediction": "C4W1L",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0002",
+            "bbox": [
+              54,
+              267,
+              453,
+              357
+            ],
+            "text": "02 강 ~ 03강",
+            "prediction": "02 20~03",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0003",
+            "bbox": [
+              395,
+              385,
+              2128,
+              489
+            ],
+            "text": "Vertical edge detection: 합성곱 연산을 통해 수직·수평으로 급격히 변화하는",
+            "prediction": "Vertical edge detection: 합병곱 면산을 통해 수직·수평으로 급격히 변화하는",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0004",
+            "bbox": [
+              403,
+              498,
+              611,
+              565
+            ],
+            "text": "Horizontal",
+            "prediction": "Horizontal",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0005",
+            "bbox": [
+              1050,
+              504,
+              2019,
+              591
+            ],
+            "text": "경계선을 도출하는 것. (이미지의 경계 찾기.)",
+            "prediction": "경계선을 도출하는 것. (이미지의 검체 참기.)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0006",
+            "bbox": [
+              403,
+              702,
+              882,
+              779
+            ],
+            "text": "vertical example →",
+            "prediction": "vertical example →",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0008",
+            "bbox": [
+              1136,
+              617,
+              1254,
+              683
+            ],
+            "text": "filter",
+            "prediction": "$\\therefore$ filter",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0009",
+            "bbox": [
+              1134,
+              708,
+              1572,
+              790
+            ],
+            "text": ": 세로 선을 검출",
+            "prediction": "$\\therefore$ 서로 선물 검출",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0010",
+            "bbox": [
+              403,
+              814,
+              913,
+              878
+            ],
+            "text": "horizontal example →",
+            "prediction": "horizontal example →",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0011",
+            "bbox": [
+              1136,
+              812,
+              1526,
+              896
+            ],
+            "text": ": 가로 선을 검출",
+            "prediction": "$\\therefore$ 가로 선물 건축",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0012",
+            "bbox": [
+              403,
+              983,
+              1034,
+              1066
+            ],
+            "text": "* 이전에는 filter 를 지정했었음.",
+            "prediction": "* 이전에는 filter 를 지정했었음.",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0013",
+            "bbox": [
+              452,
+              1093,
+              2039,
+              1178
+            ],
+            "text": "그러나, 딥러닝 기술이 발전함에 따라 filter에 틀어갈 값을 스스로 확습하고",
+            "prediction": "그러나. 딥러닝 기술이 발전함에 따라 filter에 틀랄 값을 스스로 확습하고",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0014",
+            "bbox": [
+              452,
+              1200,
+              2567,
+              1290
+            ],
+            "text": "역전달 형식으로 학습된 9개의 숫자가 filter로 사용되는 형식으로 바뀜. (filter가 폭 3×3인 것은 X)",
+            "prediction": "역전달 협력으로 학습된 9개의 숫자가 filter로 시뮬화는 협력으로 바뀔. (filter가 폭 3×3인 검은자)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0015",
+            "bbox": [
+              46,
+              1372,
+              197,
+              1459
+            ],
+            "text": "04강",
+            "prediction": "0476",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0016",
+            "bbox": [
+              330,
+              1497,
+              2317,
+              1594
+            ],
+            "text": "· padding: 합성곱을 거치면 이미지가 축소된다는 단점과, 가장자리의 값에 대한 연산이 비교적",
+            "prediction": "padding: 합병곱을 거치면 이미지가 축소된다는 단전과, 가끔지지의 값에 대한 연산이 비교적",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0017",
+            "bbox": [
+              635,
+              1593,
+              1681,
+              1683
+            ],
+            "text": "적게 된다는 문제를 해결하고자 도입된 방법.",
+            "prediction": "적게 된다는 문제를 해결하고자 외일된 방법.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0018",
+            "bbox": [
+              330,
+              1698,
+              2456,
+              1792
+            ],
+            "text": "⇒ 합성곱 연산을 할 이미지 가장지리미 픽셀을 추가함. (이때 padding되는 픽셀 갯수가 p=n)",
+            "prediction": "=7 합님을 연산을 할 이미지 가장지리미 필요를 즉가할. (이때 padding, 뒤는 긱셀 갯수가 p=n)",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0019",
+            "bbox": [
+              480,
+              1797,
+              2482,
+              1888
+            ],
+            "text": "ex) 6×6 이미지를 3×3 filter에 합성곱 시킬 때, padding이 없으면 n-f+1의 수식을 통해",
+            "prediction": "ex) 6x6 이미지를 3x3 filter에 합병곱 시킬 때, padding이 떠오면 n-f+1의 수닭을 붙새해",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0020",
+            "bbox": [
+              604,
+              1900,
+              1577,
+              1977
+            ],
+            "text": "6-3+1 = 4. 따라서 4×4 사이즈로 축소됨.",
+            "prediction": "6-3+1 = 9. 덕리서 4×4 사이즈로 축소된.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0021",
+            "bbox": [
+              604,
+              2002,
+              2345,
+              2082
+            ],
+            "text": "그러나 p=1을 적용하면, n+2p-f+1이 되고, 6+2-3+1=6 이므로 이미지의",
+            "prediction": "그러나 p=1을 정형하면, n+2p-f+1이 되고, 6+2-3+1=6 이므로 여러 이미지의",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0022",
+            "bbox": [
+              604,
+              2098,
+              1533,
+              2175
+            ],
+            "text": "size가 축소되지 않았음을 확인할 수 있음.",
+            "prediction": "size가 축소되지 않았음을 확인할 수 있음.",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0023",
+            "bbox": [
+              330,
+              2281,
+              1134,
+              2356
+            ],
+            "text": "· Valid and Some Convolutions",
+            "prediction": "Valid and Some Convolutions",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0024",
+            "bbox": [
+              477,
+              2375,
+              1811,
+              2469
+            ],
+            "text": "Valid: 유효 합성곱. ⇒ 패딩(padding)이 없는 것을 의미.",
+            "prediction": "Valid: 유효 합병곱. => 패넘(padding)이 없는 것을 의미.",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0025",
+            "bbox": [
+              646,
+              2484,
+              1456,
+              2554
+            ],
+            "text": "ex) nn * ff = n-f+1 * n-f+1",
+            "prediction": "ex) n-n * f-f = n-f+1 * n-f+1",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0026",
+            "bbox": [
+              433,
+              2573,
+              1950,
+              2659
+            ],
+            "text": "Same: 동일 합성곱 ⇒ input size와 output size가 동일한 것을 의미.",
+            "prediction": "4 Same: 폼밀 합병곱 => input size out output size가 동일한 것을 의미.",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0027",
+            "bbox": [
+              622,
+              2678,
+              1865,
+              2753
+            ],
+            "text": "ex) p=1을 적용했을 때, n+2p-f+1 * n+2p-f+1 = n*n",
+            "prediction": "ex) p=1을 적용했을 때, n+2p-f+1 * n+2p-f+1 = n*n",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0028",
+            "bbox": [
+              413,
+              2859,
+              1282,
+              2950
+            ],
+            "text": "* 짝수의 filter를 거의 사용하지 않음.",
+            "prediction": "× 딱이 빌어를 거쳐 사용하지 않음.",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0029",
+            "bbox": [
+              475,
+              2969,
+              1938,
+              3074
+            ],
+            "text": "그 이유는 중심점이 없기 때문에 합성곱 연산시, 홀수개의 filter 보다",
+            "prediction": "그 이유는 중심점이 없기 때문에 합병곱 면산지, 홍주개념 filter 보다",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0144-line-0030",
+            "bbox": [
+              480,
+              3068,
+              1878,
+              3171
+            ],
+            "text": "좋은 연산을 기대할 수 없음. ⇒ 따라서, 성능이 좋게 나오기 어려움",
+            "prediction": "멀리 연산을 기대할 수 없음. $\\Rightarrow$ 따라서, 성능이 좋게 보기 어려운",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T18:43:29.957Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T18:20:25.015Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 29
+        }
+      ]
     },
     "hf-0145": {
       "id": "hf-0145",
