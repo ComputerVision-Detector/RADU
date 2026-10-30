@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T14:52:34.294Z",
+  "updated_at": "2026-10-30T14:53:14.488Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -6663,20 +6663,305 @@
         "source_sha256": "bd06991d9fa050e061d72023dc6f8cf0100ef8538247ee267387aba2342b2d12"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0025-line-0002",
+            "bbox": [
+              229,
+              318,
+              887,
+              432
+            ],
+            "text": "- 회귀 문제(regression)",
+            "prediction": "- 뒤처 옵저(regression)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0003",
+            "bbox": [
+              278,
+              443,
+              941,
+              565
+            ],
+            "text": "- 레이블이 연속인 경우.",
+            "prediction": "- 제어볼이 편한 경우.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0004",
+            "bbox": [
+              326,
+              580,
+              971,
+              678
+            ],
+            "text": "ex) 비트코인 가격 예측 등.",
+            "prediction": "(2) 비트코인 책의 흑 등.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0005",
+            "bbox": [
+              290,
+              669,
+              1739,
+              823
+            ],
+            "text": "- sklearnz에서 SVR (회귀 문제를 푸는 SVM).",
+            "prediction": "- Shearn all of SUR (뉴리 웹절 딱는 SVM).",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0006",
+            "bbox": [
+              223,
+              971,
+              989,
+              1093
+            ],
+            "text": "- 평균제곱 오차 (MSE).",
+            "prediction": "- 평균균형 오차 (MSE).",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0007",
+            "bbox": [
+              250,
+              1068,
+              2462,
+              1222
+            ],
+            "text": "- 신경망은 여러 개의 샘플과 구성된 미니배치 단위로 손상함수를 정의",
+            "prediction": "- 신경암은 여러 개의 샘플그 캠핑 인터넷 완의도 쓴실 삶스를 줘이.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0008",
+            "bbox": [
+              314,
+              1209,
+              2477,
+              1343
+            ],
+            "text": "하는데 이때 미니배치 단위에 적용하고 평균을 취한 값이 평균제곱오차.",
+            "prediction": "하늘에 이에 왜냐리 눈위에 짐몰하고 평례를 취한 값이 평례에뜨렸다.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0009",
+            "bbox": [
+              532,
+              1487,
+              1101,
+              1617
+            ],
+            "text": "e = 11½ - 011².",
+            "prediction": "e = 11½ - 011².",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0010",
+            "bbox": [
+              553,
+              1713,
+              877,
+              1831
+            ],
+            "text": "레이블(정답)",
+            "prediction": "2008(정남)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0011",
+            "bbox": [
+              873,
+              1624,
+              2060,
+              1767
+            ],
+            "text": "↑ 신경망출력(신경망이 예측한 값).",
+            "prediction": "↑ ↔ 측량망홀락(신경안이 예측한 효기).",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0012",
+            "bbox": [
+              263,
+              1899,
+              2241,
+              2037
+            ],
+            "text": "- MSE는 통계학에서 아주 오래 전부터 사용된 대표적인 손실함수",
+            "prediction": "- MSE는 통계학에서 하옥 오래 전부터 사용된 44표적인 손실함수",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0013",
+            "bbox": [
+              223,
+              2193,
+              1936,
+              2303
+            ],
+            "text": "- 학습은 오류를 줄이는 방향으로 가중치를 교정하는 작업.",
+            "prediction": "- 학습은 유효를 좋은 방향으로 챙겨줄 편성하는 작업.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0014",
+            "bbox": [
+              196,
+              2467,
+              790,
+              2581
+            ],
+            "text": "- 엔트로피(entropy)",
+            "prediction": "- 연도리(entry)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0015",
+            "bbox": [
+              263,
+              2612,
+              1894,
+              2730
+            ],
+            "text": "- 확률 분포의 무작위성, 즉 불확실성응 측정하는 함수.",
+            "prediction": "- 확률 분포의 무죄위성, 증 블럭실성을 측정하는 방식.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0016",
+            "bbox": [
+              278,
+              2753,
+              2541,
+              2867
+            ],
+            "text": "ex) 찌그러진 주사위가 있어 1의 면적이 가장 넓다면 예측 가능성이 높아짐.",
+            "prediction": "(e) 제그러젠 3사위가 있어 1의 연적이 가장 넓다면, 예측 참성이 높아짐.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0017",
+            "bbox": [
+              480,
+              2890,
+              1113,
+              3004
+            ],
+            "text": "→ 불확실성이 낮아짐.",
+            "prediction": "→ 블럭실성이 낮아짐.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0018",
+            "bbox": [
+              444,
+              3044,
+              1721,
+              3158
+            ],
+            "text": "즉, 공정한 주사위의 엔트로피가 가장 높고",
+            "prediction": "주, 규정한 3수위의 에도로파가 가장 높고",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0019",
+            "bbox": [
+              580,
+              3185,
+              1900,
+              3299
+            ],
+            "text": "많이 찌그러질수록 엔트로피가 낮다진다.",
+            "prediction": "많이 제그져질수록 에도로 파가 낮다진다.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0020",
+            "bbox": [
+              498,
+              3330,
+              953,
+              3436
+            ],
+            "text": "엔트로피 식.(아래화살표)",
+            "prediction": "에도로미 A. 2",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0025-line-0021",
+            "bbox": [
+              350,
+              3435,
+              1848,
+              3662
+            ],
+            "text": "\\( H(\\pi) = -\\sum_{j=1, k} p(e_j) \\log p(e_j) \\)",
+            "prediction": "\\( H(\\pi) = -\\sum_{j=1, k} p(e_j) \\log p(e_j) \\)",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "6be33c5a-7092-46e0-8238-612e07e7bfe8",
-        "until": "2026-10-30T15:17:34.294Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T14:53:14.488Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 20
+        }
+      ]
     },
     "hf-0026": {
       "id": "hf-0026",
