@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T17:24:29.568Z",
+  "updated_at": "2026-10-30T17:25:58.114Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -20449,20 +20449,361 @@
         "source_sha256": "f5598115b66947a5ddc8bf27c0c8e45f0cb0993ed5df5cb3936ec63674c60064"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0152-line-0001",
+            "bbox": [
+              72,
+              89,
+              560,
+              201
+            ],
+            "text": "· 회귀모델 평가",
+            "prediction": "- 회귀모델 평가",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0002",
+            "bbox": [
+              120,
+              217,
+              2362,
+              370
+            ],
+            "text": "- R-Square: 모델의 설명력. 변수가 많으면 값이 증가하는 경우가 있어, Adj R^2 채택.",
+            "prediction": "- R-Square: 모뎀의 실명력. 변기와 판례께 값이 종괴하는 경우가 있어, Adj \\( R^2 \\) 해역.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0003",
+            "bbox": [
+              120,
+              346,
+              1193,
+              453
+            ],
+            "text": "- Adj R-Square: 조정된 R-Square 값.",
+            "prediction": "- Adj R-Square: 조절된 R-Square 값.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0004",
+            "bbox": [
+              72,
+              554,
+              684,
+              654
+            ],
+            "text": "· 로지스틱 회귀 모델 특징",
+            "prediction": "- 2지스틱 회귀 모델 특징",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0005",
+            "bbox": [
+              110,
+              663,
+              647,
+              766
+            ],
+            "text": "1) 종속변수가 질적척도",
+            "prediction": "1) 종속변경: 진정곡도",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0006",
+            "bbox": [
+              110,
+              788,
+              1068,
+              891
+            ],
+            "text": "2) 예측이 아니라 카테고리를 분류하는 모델",
+            "prediction": "2) 예측이 이미라 쿼레길를 분류해 모델",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0007",
+            "bbox": [
+              105,
+              904,
+              1143,
+              1014
+            ],
+            "text": "3) 이항으로 이루어져, 합/볼합 등을 예측.",
+            "prediction": "3) 이항으로 이루어져, 합/볼합 등을 예측.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0008",
+            "bbox": [
+              120,
+              1131,
+              727,
+              1228
+            ],
+            "text": "- Odds와 로짓 변환.",
+            "prediction": "- Odds of 로컬 변환.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0009",
+            "bbox": [
+              283,
+              1247,
+              1848,
+              1367
+            ],
+            "text": "→ Odds: 사건이 발생할 가능성이 발생하지 않을 가능성보다 얼마나 큰가.",
+            "prediction": "Odds: 사진에 발생할 가능성이 발생하다 많은 개능보다 몰매시켜가.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0010",
+            "bbox": [
+              553,
+              1362,
+              702,
+              1498
+            ],
+            "text": "수식)",
+            "prediction": "식) 밤병는 밤병되지 않. 효) 발생확률이 40% 억을 확률이 40% $\\Rightarrow$ Odds비=15.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0011",
+            "bbox": [
+              62,
+              1577,
+              498,
+              1680
+            ],
+            "text": "〈의사결정 니무〉",
+            "prediction": "〈의사결정 니무〉",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0012",
+            "bbox": [
+              62,
+              1696,
+              352,
+              1789
+            ],
+            "text": "· 구성요소",
+            "prediction": "- 귀념요요",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0013",
+            "bbox": [
+              96,
+              1815,
+              1251,
+              1914
+            ],
+            "text": "1) 뿌리 노드: 분류가 시작되는 전체 데이터 노드",
+            "prediction": "1) 뿌려도: 분류가 사막되는 전체 데이터 노드",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0014",
+            "bbox": [
+              86,
+              1933,
+              849,
+              2027
+            ],
+            "text": "2) 부모 노드: 분리되기 전의 노드",
+            "prediction": "2) 부모 노드: 분리되기 전의 노드",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0015",
+            "bbox": [
+              81,
+              2049,
+              842,
+              2136
+            ],
+            "text": "3) 자식 노드: 분리된 후의 노드",
+            "prediction": "3) 자식 노드: 분리된 후의 노드",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0016",
+            "bbox": [
+              74,
+              2168,
+              1061,
+              2254
+            ],
+            "text": "4) 중간 노드: 나무 구조 중간에 있는 노드",
+            "prediction": "4) 굴긴 노드: 나무 구조 중간에 있는 노드",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0017",
+            "bbox": [
+              79,
+              2286,
+              1208,
+              2376
+            ],
+            "text": "5) 끝 노드: 더 이상 분리되지 않는 끝노드.",
+            "prediction": "5) 끝 노드: (1 이상 분리되지 않는 끝도.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0018",
+            "bbox": [
+              72,
+              2409,
+              1359,
+              2499
+            ],
+            "text": "6) 깊이: 뿌리부터 끝 노드까지 노드의 층수.",
+            "prediction": "6) 깊이: 뿌리부터 끝 노트까지 노드의 능수.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0019",
+            "bbox": [
+              62,
+              2636,
+              1660,
+              2736
+            ],
+            "text": "· 정보 획득량: 분류를 통해 지니계수 or 엔트로피가 증가/감소한 양.",
+            "prediction": "- 정보 빛득량: 분류를 풀해 지내숙 아 엔트로피기 증가/감소한 양.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0020",
+            "bbox": [
+              120,
+              2758,
+              724,
+              2845
+            ],
+            "text": "- 지니 계수: 불순도 구하기.",
+            "prediction": "- 지니 계수: 율준궈 군하기.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0021",
+            "bbox": [
+              361,
+              2824,
+              1100,
+              2968
+            ],
+            "text": "공식: 1- ( 보유자/전체 )² - (미보유자/전체)²,,",
+            "prediction": "Lp공식: 1- ( \\( \\frac{80\\%}{2} \\) )² - ( \\( \\frac{100\\%}{2} \\) )², 100% 컨셀) 2, 100% 컨셀.",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0152-line-0022",
+            "bbox": [
+              113,
+              3085,
+              1506,
+              3198
+            ],
+            "text": "- 엔드로피: 이진로그를 취함으로써 정규회를 적용함.",
+            "prediction": "- 핸드로피: 이인모그론 취함으로써 정규회를 적용함.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6cf4ef8c-904a-4c80-9a9d-b792de7a86c6",
+            "bbox": [
+              721,
+              1348,
+              1009,
+              1503
+            ],
+            "text": "발생함/발생하지 않",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-64ed4ccc-da00-4576-95f8-713fd8ef44c8",
+            "bbox": [
+              1100,
+              1379,
+              2384,
+              1501
+            ],
+            "text": "ex) 발생확률이 60% 않을 확률이 40% ⇒ Odds비 = 1.5",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T17:49:29.568Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T17:25:58.114Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 24
+        }
+      ]
     },
     "hf-0153": {
       "id": "hf-0153",
