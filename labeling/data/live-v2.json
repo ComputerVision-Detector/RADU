@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T13:57:29.478Z",
+  "updated_at": "2026-10-30T14:00:22.210Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -16874,20 +16874,123 @@
         "source_sha256": "85391a69bb16107cb472cfe668801132e6b92881329e34a1584866d95d7410a2"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0114-line-0001",
+            "bbox": [
+              671,
+              423,
+              1697,
+              533
+            ],
+            "text": "<li><a href=\"#\">서브메뉴2</a></li>",
+            "prediction": "\\( \\langle l_i \\rangle < a.href = \\# \\) \\( \\langle l_i a.d1 \\rangle = 2 < |a\\rangle < |i\\rangle \\)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0114-line-0002",
+            "bbox": [
+              680,
+              532,
+              1676,
+              638
+            ],
+            "text": "<li><a href=\"#\">서브메뉴3</a><li>",
+            "prediction": "\\( \\langle l_i \\rangle < a.href = \\# \\) \\( A(b) = 3 < |a\\rangle < |i\\rangle \\)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0114-line-0003",
+            "bbox": [
+              680,
+              641,
+              1727,
+              746
+            ],
+            "text": "<li><a href=\"#\">서브메뉴4</a></li>",
+            "prediction": "\\( \\langle l_i \\rangle < a.href = \\# \\) \\( \\langle l_i a.d1 \\rangle = 4 < |a\\rangle < |i\\rangle \\)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0114-line-0004",
+            "bbox": [
+              589,
+              782,
+              744,
+              859
+            ],
+            "text": "</ul>",
+            "prediction": "\\( \\langle l(u) \\rangle \\)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0114-line-0005",
+            "bbox": [
+              492,
+              891,
+              639,
+              972
+            ],
+            "text": "</li>",
+            "prediction": "\\( \\langle l_i \\rangle \\)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0114-line-0006",
+            "bbox": [
+              381,
+              1003,
+              554,
+              1081
+            ],
+            "text": "</ul>",
+            "prediction": "\\( \\langle / u \\rangle \\)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0114-line-0007",
+            "bbox": [
+              272,
+              1124,
+              484,
+              1202
+            ],
+            "text": "</nav>",
+            "prediction": "\\( \\langle /na_0 \\rangle \\)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T14:22:29.478Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T14:00:22.210Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 7
+        }
+      ]
     },
     "hf-0115": {
       "id": "hf-0115",
