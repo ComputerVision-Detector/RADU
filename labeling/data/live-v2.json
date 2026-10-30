@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T16:24:29.618Z",
+  "updated_at": "2026-10-30T16:26:32.725Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -20533,20 +20533,431 @@
         "source_sha256": "670ce256df9825f03be7c10ea7ec25625d50b9dfbfecf8e8a9121062a3371b8d"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0156-line-0001",
+            "bbox": [
+              24,
+              22,
+              693,
+              112
+            ],
+            "text": "\" SD 1.5 Inpainting Model.\"",
+            "prediction": "\" SD 1.5 Impacting Model.\"",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0002",
+            "bbox": [
+              64,
+              131,
+              444,
+              217
+            ],
+            "text": "· Inpainting 이란?",
+            "prediction": "- Impointing (1.11)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0003",
+            "bbox": [
+              99,
+              239,
+              1938,
+              332
+            ],
+            "text": ": 이미지 전체를 새로 생성하는 것이 아니라, 마스크로 지정한 특정 영역만 생성/수정하는 것.",
+            "prediction": "- 이미지 관책을 새로 생성했는 것이 아니라, 마스크로 이청한 특정 영역만 생리/수정하는 것.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0004",
+            "bbox": [
+              99,
+              357,
+              1321,
+              450
+            ],
+            "text": "- Original Image와 Mask가 추가로 입력으로 작용하고,",
+            "prediction": "- Original Image of Mask가 주제로 업격으로 작용하고,",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0005",
+            "bbox": [
+              139,
+              465,
+              1844,
+              555
+            ],
+            "text": "이에 따라 U-Net이 현재 이미지를 어떻게 유지해야 하는지를 알 수 있게 됨.",
+            "prediction": "어떻게 따라 U-Net이 현재 이미적을 어떻게 유지해야 하는지를 보수 있게 뭔.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0006",
+            "bbox": [
+              99,
+              577,
+              1351,
+              673
+            ],
+            "text": "- SD 1.5 Inpainting Model의 U-Net channel은 9개.",
+            "prediction": "- SD 1.5 Impacting Model of U-Net channel은 9개.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0007",
+            "bbox": [
+              194,
+              701,
+              832,
+              784
+            ],
+            "text": "1) Noisy Latent: 4 channel",
+            "prediction": "1) Nixy Latent: 4 channel",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0008",
+            "bbox": [
+              189,
+              813,
+              638,
+              892
+            ],
+            "text": "2) Mask: 1 channel",
+            "prediction": "2) Mask: 1 channel",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0009",
+            "bbox": [
+              1215,
+              800,
+              1660,
+              899
+            ],
+            "text": "Total: 9 channels",
+            "prediction": "Total: 9 channels",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0010",
+            "bbox": [
+              179,
+              908,
+              1067,
+              1010
+            ],
+            "text": "3) Masked Image Latent: 4 channel.",
+            "prediction": "3) Masked Image Latent: 4 channel.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0011",
+            "bbox": [
+              194,
+              1042,
+              907,
+              1125
+            ],
+            "text": "⇒ 1)은 현재 생성 중인 이미지,",
+            "prediction": "$\\Rightarrow$ 1)은 현재 생성 중인 이미지,",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0012",
+            "bbox": [
+              1549,
+              1036,
+              2001,
+              1128
+            ],
+            "text": "이를 통해, U-Net은",
+            "prediction": "이를 통해, U-Net은",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0013",
+            "bbox": [
+              256,
+              1141,
+              1204,
+              1240
+            ],
+            "text": "2)는 어디를 수정해야 하는지 알려 주는 역할,",
+            "prediction": "2)는 어디를 숙명해야 하는지 알려 주는 역할,",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0014",
+            "bbox": [
+              1549,
+              1127,
+              2195,
+              1227
+            ],
+            "text": "어디에 무엇을 생성해야 하는지와",
+            "prediction": "하디에 뚜렷을 설명해야 하는지요",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0015",
+            "bbox": [
+              256,
+              1246,
+              1440,
+              1351
+            ],
+            "text": "3)은 원본 이미지에서 남겨야 하는 context를 알려 줌",
+            "prediction": "3)은 원본 마케터에서 남해야 하는 context를 알려 값",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0016",
+            "bbox": [
+              1549,
+              1219,
+              2399,
+              1328
+            ],
+            "text": "그 주변 장면의 모습에 대해서 알게 됨.",
+            "prediction": "그 외면 장면의 모습에 대해서 날개 편.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0017",
+            "bbox": [
+              179,
+              1347,
+              2332,
+              1466
+            ],
+            "text": "But, 출력은 기존의 동일한 4 channel임. (Mask와 Masked Image Latent는 조건일 뿐이기 때문)",
+            "prediction": "But, 출력은 기존의 동일한 4-channel. (Mask of Masked Image Latent는 조건일 뿐이기 때문)",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0018",
+            "bbox": [
+              124,
+              1560,
+              2477,
+              1692
+            ],
+            "text": "- Mask Dailation 이 필요할 수도 있음. (Mask가 너무 타이트하면 인물의 일부 정보를 놓칠 수도 있기 때문)",
+            "prediction": "- Mask Doddation 이 필요할 수도 없다. (Mask가 너의 타이트하면 인도의 일부 정보를 놓칠 수도 있기 때문)",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0019",
+            "bbox": [
+              184,
+              1688,
+              1866,
+              1801
+            ],
+            "text": "그러나, 너무 많이 팽창 시키면 배경까지 수정되며 Utility가 손상될 수 있음.",
+            "prediction": "그러나, 바쁜 많이 풍랑 새겨면 배견까지 축적되며 Utility가 온산일 수 있는.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0020",
+            "bbox": [
+              214,
+              1803,
+              1640,
+              1922
+            ],
+            "text": "∴ Privacy와 Background Preservation은 trust-off 관계임.",
+            "prediction": "Privacy of Background Preservation to trust-off 관계인.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0021",
+            "bbox": [
+              283,
+              1928,
+              1286,
+              2030
+            ],
+            "text": "(이는 실현 변수의 후보러 작용할 가능성이 ↑)",
+            "prediction": "(이는 싶혀 범주의 후보의 곽용함 가능한이 4)",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0022",
+            "bbox": [
+              139,
+              2170,
+              436,
+              2266
+            ],
+            "text": "- Strength",
+            "prediction": "- Strength",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0023",
+            "bbox": [
+              241,
+              2265,
+              1241,
+              2368
+            ],
+            "text": "∴ 원본 이미지에서 얼마나 벗어날지를 결정하는 요소.",
+            "prediction": ": 온블 이미지에서 얼마나 벗어날지를 결정하는 모요.",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0024",
+            "bbox": [
+              264,
+              2373,
+              1537,
+              2493
+            ],
+            "text": "Strength ↓ ⇒ 좋은 품질이지만, Privacy 위험이 증가.",
+            "prediction": "Strength $\\Rightarrow$ 좋은 품질이어지면, Privacy 위험이 증가.",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0025",
+            "bbox": [
+              269,
+              2492,
+              1692,
+              2607
+            ],
+            "text": "Strength ↑ ⇒ 자연스러움이 적어짐, Privacy는 증가할 가능이 있음.",
+            "prediction": "Strength $\\Rightarrow$ 자연스러운이 적이짐, Privacy는 증가한 가능이 있음.",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0026",
+            "bbox": [
+              283,
+              2603,
+              1749,
+              2722
+            ],
+            "text": "$\\therefore$ Strength 또한, Privacy와 Utility 사이의 trade-off 를",
+            "prediction": "$\\therefore$ Strength 모란, Privacy와 Utility 싸의 trade-off 클",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0027",
+            "bbox": [
+              388,
+              2724,
+              1331,
+              2840
+            ],
+            "text": "만드는 parameter로 작용할 가능성이 있음.",
+            "prediction": "만드는 parameter로 작용할 가능성이 있도.",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0028",
+            "bbox": [
+              129,
+              2947,
+              2213,
+              3076
+            ],
+            "text": "☆ 같은 ID의 사람이 여러 frame에 등장하는 경우, 같은 모습으로 Inpainting 해야하기",
+            "prediction": "* 같은 ID의 사람이 여러 frame에 등장하는 경우, 같은 모드로 Impointing 해야하기",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0156-line-0029",
+            "bbox": [
+              194,
+              3069,
+              1869,
+              3198
+            ],
+            "text": "때문에 [Pose Control Net + Reference Conditioning)]이 필요함!!",
+            "prediction": "때문에 [Pose (control Net + Reference (conditioning)]이 필요한!!]",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T16:49:29.618Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T16:26:32.725Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 29
+        }
+      ]
     },
     "hf-0157": {
       "id": "hf-0157",
