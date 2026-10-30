@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T12:46:48.226Z",
+  "updated_at": "2026-10-30T12:48:50.502Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -13400,20 +13400,291 @@
         "source_sha256": "dae4a6e2af1e4318101e84b7fa996ce86bd7fbf19d04a1649b8402512a083d97"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0058-line-0002",
+            "bbox": [
+              193,
+              270,
+              911,
+              384
+            ],
+            "text": "◦점별 상호정보량(PMI)",
+            "prediction": "- 컴벨 상호정보 (PMI)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0003",
+            "bbox": [
+              244,
+              391,
+              1382,
+              513
+            ],
+            "text": "- PMI 값이 높을수록 관련성이 높다는 얘기",
+            "prediction": "- PMI 줄이 높을 수록 관련성이 높다해 얘기",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0004",
+            "bbox": [
+              244,
+              524,
+              1854,
+              658
+            ],
+            "text": "- 두 단어의 동시발생 횟수가 0이면 log_2 O = -∞가됨.",
+            "prediction": "- 두 번이의 동지발생 횟수가 0이면 1명20 = -∞가됨.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0005",
+            "bbox": [
+              341,
+              661,
+              1252,
+              783
+            ],
+            "text": "해당 문제를 피하기 위해 구현 시에는",
+            "prediction": "해상 문제를 펴냄기 위해 견현시키는",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0006",
+            "bbox": [
+              341,
+              798,
+              1268,
+              920
+            ],
+            "text": "양의 상호정보량(PPMI)를 사용.",
+            "prediction": "압력 상호정보층 (PPM)를 사용.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0007",
+            "bbox": [
+              323,
+              927,
+              1546,
+              1057
+            ],
+            "text": "- 양의 상호정보량 : 음수는 전부 0으로 만듦.",
+            "prediction": "- 앵의 상호정보층: 용성 전략 0으로 만들.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0008",
+            "bbox": [
+              208,
+              1241,
+              530,
+              1339
+            ],
+            "text": "◦ 차원 감소",
+            "prediction": "- 차원 효소",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0009",
+            "bbox": [
+              193,
+              1346,
+              980,
+              1468
+            ],
+            "text": "- 벡터의 차원을 줄이는 방법.",
+            "prediction": "- 배역 자유를 줄이는 방법.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0010",
+            "bbox": [
+              217,
+              1495,
+              1068,
+              1617
+            ],
+            "text": "- 가장 적합한 축을 찾아야함",
+            "prediction": "- 가장 전환 횟수 찾아가는 짜",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0011",
+            "bbox": [
+              229,
+              1600,
+              2323,
+              1754
+            ],
+            "text": "- 희소벡터에서 중요한 축을 찾아내어 더 작은 차원으로 다시 표현하는 것",
+            "prediction": "- 희소병의이사 종련 축을 찾아내며 더 겪은 차원으로 다시 포인팅하는 것.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0012",
+            "bbox": [
+              311,
+              1749,
+              1425,
+              1892
+            ],
+            "text": "- 원소 대부분이 0인 행렬 또는 벡터",
+            "prediction": "- 육소 대비분의 0인 발걸 또는 빛뒤",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0013",
+            "bbox": [
+              269,
+              1899,
+              1785,
+              2041
+            ],
+            "text": "→ 이로인해 0이 아닌 값으로 구성된 밀집 벡터로 변환됨.",
+            "prediction": "→ 이조관해 0이야기 좀으로 구성된 일접 백터로 변환됨.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0014",
+            "bbox": [
+              193,
+              2193,
+              871,
+              2327
+            ],
+            "text": "◦ 특잇값 분해 (SVD)",
+            "prediction": "- 들원좀 분해 (SVD)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0015",
+            "bbox": [
+              214,
+              2342,
+              1007,
+              2468
+            ],
+            "text": "- 차원 감소 방법 중 하나",
+            "prediction": "- 자원 첨 밖법 중 하나",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0016",
+            "bbox": [
+              214,
+              2459,
+              1688,
+              2609
+            ],
+            "text": "- 하나의 큰 행렬을 세 개의 작은 행렬로 분해하는 방법.",
+            "prediction": "- 하나의 큰 행복을 세계적으로 챙겨낼 밖법.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0017",
+            "bbox": [
+              250,
+              2632,
+              1068,
+              2754
+            ],
+            "text": "- 특잇값 : '해당 축'의 중요도",
+            "prediction": "- 듯짓: ‘배송 죄’의 중요도",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0018",
+            "bbox": [
+              238,
+              2729,
+              2513,
+              2912
+            ],
+            "text": "- 시간복잡도는 O(N³) 너무 오래 걸리기에 Trucated SUD처럼 응용한 것을 이용",
+            "prediction": "- 사찰복잡은 (CN³) 억수 오랜 정치에 Trucated SUD 차림 융용한 길을 이용",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0019",
+            "bbox": [
+              190,
+              3088,
+              1089,
+              3214
+            ],
+            "text": "- PTB 데이터셋 (펜 트리뱅크)",
+            "prediction": "- PTB 데이터셋 (편 덧뱀으)",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0058-line-0020",
+            "bbox": [
+              244,
+              3245,
+              796,
+              3375
+            ],
+            "text": "- 말뭉치 데이터셋",
+            "prediction": "- 앵물리 데이터셋",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-30T13:11:48.226Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T12:48:50.502Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 19
+        }
+      ]
     },
     "hf-0059": {
       "id": "hf-0059",
