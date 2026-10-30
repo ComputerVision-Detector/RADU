@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T12:37:49.553Z",
+  "updated_at": "2026-10-30T12:38:41.331Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -12477,20 +12477,235 @@
         "source_sha256": "6c917850326e4ed66354075b4279e0d6188da231e5493a07ee0b89247d246ff2"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0054-line-0001",
+            "bbox": [
+              151,
+              149,
+              2580,
+              291
+            ],
+            "text": "◦ 순전파를 통해 출력을 하고 분류를 한 후 확률을 뽑은 다음 모든 계층이 끝나면 역전파를",
+            "prediction": "- 센프가를 뒀다 흘렸다 놓고 뿌룡을 한 후 낮잠을 봤고 다음 모든 계층이 끝나면 얼굴마를",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0054-line-0002",
+            "bbox": [
+              193,
+              306,
+              1561,
+              428
+            ],
+            "text": "이용해 손실을 줄일 수 있는 기울기를 구하게 됨.",
+            "prediction": "아울녠 손실을 줄일 수 있는 기울기를 귀하게 됨.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0054-line-0003",
+            "bbox": [
+              151,
+              608,
+              442,
+              706
+            ],
+            "text": "◦ 손실함수.",
+            "prediction": "- 손실향수.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0054-line-0004",
+            "bbox": [
+              151,
+              717,
+              2175,
+              863
+            ],
+            "text": "- 학습 단계의 특징 시점에서 신경망의 성능을 나타내는 척도로 손실을 사용.",
+            "prediction": "- 농습 단계의 특징 시점에서 신경망의 심화를 나타내는 점도로 혈실을 사용.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0054-line-0005",
+            "bbox": [
+              160,
+              858,
+              2126,
+              1000
+            ],
+            "text": "- 신경망의 손실은 손실함수를 사용해 구함. ( ex. 교차 엔트로피 오차..)",
+            "prediction": "- 산쟁망의 손실은 손실 향수를 사용해 규칙 (ex. 교차 엔E오피 차..)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0054-line-0006",
+            "bbox": [
+              151,
+              1169,
+              708,
+              1275
+            ],
+            "text": "◦ 교차엔트로피 오차",
+            "prediction": "- 모취인드로피 초차",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0054-line-0007",
+            "bbox": [
+              151,
+              1278,
+              2323,
+              1432
+            ],
+            "text": "- 신경망이 출력하는 각 클래스의 확률과 정답 레이블을 이용해 구할 수 있음",
+            "prediction": "- 신경망이 훌륭하는 각 클래스의 확률과 정책 레이블을 이용해 구할 수 있음",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0054-line-0008",
+            "bbox": [
+              151,
+              1624,
+              345,
+              1722
+            ],
+            "text": "◦기울기",
+            "prediction": "기울기",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0054-line-0009",
+            "bbox": [
+              151,
+              1745,
+              1325,
+              1875
+            ],
+            "text": "- 벡터의 각 원소에 대한 미분을 정리한 것",
+            "prediction": "- 빅디의 각 원소에 대한 메뉴를 정리한 것",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0054-line-0010",
+            "bbox": [
+              151,
+              2076,
+              539,
+              2190
+            ],
+            "text": "◦연쇄 법칙",
+            "prediction": "- 연쇄 법칙",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0054-line-0011",
+            "bbox": [
+              160,
+              2209,
+              1138,
+              2347
+            ],
+            "text": "- 합성함수에 대한 미분의 법칙",
+            "prediction": "- 합성화수에 대한 메뉴의 법칙",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0054-line-0012",
+            "bbox": [
+              160,
+              2318,
+              2692,
+              2488
+            ],
+            "text": "- 함수가 아무리 복잡하더라도, 아무리 많은 함수를 연결해도, 그 미분은 개별 함수",
+            "prediction": "- 향수가 아끼져 볶춥하더라도, 아무건 좋은 참수를 연결해도, 그 이블로 개별 합수의",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0054-line-0013",
+            "bbox": [
+              314,
+              2491,
+              1440,
+              2637
+            ],
+            "text": "미분들을 이용해 구할 수 있기 때문.",
+            "prediction": "기분들을 이용해 구할 수 없기 때문.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0054-line-0014",
+            "bbox": [
+              344,
+              2632,
+              1969,
+              2807
+            ],
+            "text": "→ 각 함수의 국소적인 미분을 계산할 수 있으면",
+            "prediction": "→ 초 향수의 국소적인 메뉴를 계산할 수 있으면",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0054-line-0015",
+            "bbox": [
+              474,
+              2786,
+              2018,
+              2956
+            ],
+            "text": "그 값들을 곱해서 전체의 미분을 구할 수 있음.",
+            "prediction": "그 춥 들을 꼽혀서 전체의 메뉴를 구할 수 있음",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-30T13:02:49.553Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T12:38:41.331Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 15
+        }
+      ]
     },
     "hf-0055": {
       "id": "hf-0055",
