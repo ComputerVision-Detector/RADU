@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T15:51:29.581Z",
+  "updated_at": "2026-10-30T15:52:02.370Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -21503,20 +21503,1649 @@
         "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0160-line-0001",
+            "bbox": [
+              224,
+              157,
+              341,
+              208
+            ],
+            "text": "x=0",
+            "prediction": "\\( x = 0 \\)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0002",
+            "bbox": [
+              142,
+              312,
+              491,
+              377
+            ],
+            "text": "a>0 and b>0",
+            "prediction": "\\( \\alpha > 0 \\) and \\( b > 0 \\)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0003",
+            "bbox": [
+              612,
+              268,
+              821,
+              333
+            ],
+            "text": "⇒ 4개",
+            "prediction": "\\( \\rightarrow \\) \\( \\downarrow \\) \\( \\downarrow \\)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0004",
+            "bbox": [
+              701,
+              332,
+              839,
+              403
+            ],
+            "text": "(T,T)",
+            "prediction": "\\( (T, T) \\)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0005",
+            "bbox": [
+              1295,
+              279,
+              1354,
+              330
+            ],
+            "text": "a",
+            "prediction": "\\( a \\)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0006",
+            "bbox": [
+              1432,
+              262,
+              1480,
+              333
+            ],
+            "text": "b",
+            "prediction": "\\( b \\)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0007",
+            "bbox": [
+              1553,
+              271,
+              1607,
+              333
+            ],
+            "text": "c",
+            "prediction": "\\( c \\)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0008",
+            "bbox": [
+              1746,
+              262,
+              1837,
+              333
+            ],
+            "text": "if",
+            "prediction": "\\( i^f \\)",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0009",
+            "bbox": [
+              2094,
+              247,
+              2174,
+              318
+            ],
+            "text": "if",
+            "prediction": "\\( i^f \\)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0010",
+            "bbox": [
+              2202,
+              250,
+              2253,
+              315
+            ],
+            "text": "2",
+            "prediction": "2",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0011",
+            "bbox": [
+              701,
+              408,
+              847,
+              482
+            ],
+            "text": "(T,F)",
+            "prediction": "\\( (T, F) \\)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0012",
+            "bbox": [
+              1105,
+              356,
+              1237,
+              420
+            ],
+            "text": "TC#1",
+            "prediction": "\\( TC\\#1 \\)",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0013",
+            "bbox": [
+              1316,
+              361,
+              1349,
+              432
+            ],
+            "text": "1",
+            "prediction": "\\( l \\)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0014",
+            "bbox": [
+              1445,
+              352,
+              1480,
+              426
+            ],
+            "text": "1",
+            "prediction": "\\( l \\)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0015",
+            "bbox": [
+              1551,
+              358,
+              1607,
+              432
+            ],
+            "text": "1",
+            "prediction": "\\( l \\)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0016",
+            "bbox": [
+              1762,
+              364,
+              1889,
+              435
+            ],
+            "text": "T,T",
+            "prediction": "T.T",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0017",
+            "bbox": [
+              2144,
+              370,
+              2277,
+              435
+            ],
+            "text": " T, T ",
+            "prediction": "\\( T, T \\)",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0018",
+            "bbox": [
+              218,
+              527,
+              354,
+              581
+            ],
+            "text": "x + 1",
+            "prediction": "\\( x + 1 \\)",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0019",
+            "bbox": [
+              538,
+              481,
+              581,
+              534
+            ],
+            "text": "F",
+            "prediction": "\\( F_1 \\)",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0020",
+            "bbox": [
+              701,
+              489,
+              842,
+              560
+            ],
+            "text": "(F,T)",
+            "prediction": "\\( (F, T) \\)",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0021",
+            "bbox": [
+              1089,
+              454,
+              1254,
+              520
+            ],
+            "text": "TC#2",
+            "prediction": "\\( TCF2 \\)",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0022",
+            "bbox": [
+              1303,
+              460,
+              1335,
+              525
+            ],
+            "text": "1",
+            "prediction": "\\( l \\)",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0023",
+            "bbox": [
+              1427,
+              466,
+              1486,
+              543
+            ],
+            "text": "0",
+            "prediction": "0.",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0024",
+            "bbox": [
+              1564,
+              460,
+              1618,
+              537
+            ],
+            "text": "0",
+            "prediction": "0",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0025",
+            "bbox": [
+              1754,
+              478,
+              1876,
+              540
+            ],
+            "text": "T,F",
+            "prediction": "T.F",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0026",
+            "bbox": [
+              2126,
+              498,
+              2280,
+              557
+            ],
+            "text": "F,T",
+            "prediction": "\\( F_1 \\)",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0027",
+            "bbox": [
+              701,
+              565,
+              847,
+              639
+            ],
+            "text": "(F,F)",
+            "prediction": "\\( (T, F) \\)",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0028",
+            "bbox": [
+              1089,
+              582,
+              1243,
+              651
+            ],
+            "text": "TC#3",
+            "prediction": "\\( TC\\#3 \\)",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0029",
+            "bbox": [
+              1295,
+              597,
+              1349,
+              660
+            ],
+            "text": "0",
+            "prediction": "0",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0030",
+            "bbox": [
+              1435,
+              586,
+              1473,
+              657
+            ],
+            "text": "1",
+            "prediction": "\\( l \\)",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0031",
+            "bbox": [
+              1572,
+              580,
+              1610,
+              657
+            ],
+            "text": "1",
+            "prediction": "\\( l \\)",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0032",
+            "bbox": [
+              1748,
+              580,
+              1895,
+              651
+            ],
+            "text": "F,T",
+            "prediction": "\\( f, T \\)",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0033",
+            "bbox": [
+              2120,
+              594,
+              2285,
+              660
+            ],
+            "text": "T,F",
+            "prediction": "\\( T, F \\)",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0034",
+            "bbox": [
+              131,
+              714,
+              436,
+              764
+            ],
+            "text": "C>0 or a>0",
+            "prediction": "\\( c > 0 \\) or \\( a > 0 \\)",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0035",
+            "bbox": [
+              524,
+              711,
+              594,
+              759
+            ],
+            "text": "⇒",
+            "prediction": "\\( = 7 \\)",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0036",
+            "bbox": [
+              662,
+              699,
+              755,
+              747
+            ],
+            "text": "4개",
+            "prediction": "\\( 414 \\)",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0037",
+            "bbox": [
+              1081,
+              737,
+              1217,
+              799
+            ],
+            "text": "TC#4",
+            "prediction": "\\( TCF4 \\)",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0038",
+            "bbox": [
+              1289,
+              737,
+              1349,
+              799
+            ],
+            "text": "0,",
+            "prediction": "0.",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0039",
+            "bbox": [
+              1427,
+              717,
+              1480,
+              770
+            ],
+            "text": "0",
+            "prediction": "\\( O \\)",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0040",
+            "bbox": [
+              1545,
+              705,
+              1599,
+              773
+            ],
+            "text": "0",
+            "prediction": "\\( O \\)",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0041",
+            "bbox": [
+              1756,
+              737,
+              1876,
+              802
+            ],
+            "text": "F,F",
+            "prediction": "\\( F, F \\)",
+            "order": 41,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0042",
+            "bbox": [
+              2131,
+              726,
+              2277,
+              794
+            ],
+            "text": "F,F",
+            "prediction": "\\( F, F \\)",
+            "order": 42,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0043",
+            "bbox": [
+              656,
+              775,
+              826,
+              855
+            ],
+            "text": "(T,T)",
+            "prediction": "\\( (T, T) \\)",
+            "order": 43,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0044",
+            "bbox": [
+              234,
+              930,
+              338,
+              977
+            ],
+            "text": "x+2",
+            "prediction": "\\( x + 2 \\)",
+            "order": 44,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0045",
+            "bbox": [
+              495,
+              886,
+              539,
+              945
+            ],
+            "text": "F",
+            "prediction": "\\( F \\)",
+            "order": 45,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0046",
+            "bbox": [
+              672,
+              868,
+              816,
+              942
+            ],
+            "text": "(T,F)",
+            "prediction": "\\( (TF) \\)",
+            "order": 46,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0047",
+            "bbox": [
+              662,
+              956,
+              834,
+              1033
+            ],
+            "text": "(F,T)",
+            "prediction": "\\( (F, T) \\)",
+            "order": 47,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0048",
+            "bbox": [
+              218,
+              1070,
+              365,
+              1120
+            ],
+            "text": "return",
+            "prediction": "return",
+            "order": 48,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0049",
+            "bbox": [
+              680,
+              1043,
+              834,
+              1123
+            ],
+            "text": "(F,F)",
+            "prediction": "\\( (EF) \\)",
+            "order": 49,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0050",
+            "bbox": [
+              116,
+              1367,
+              328,
+              1424
+            ],
+            "text": "result = 0",
+            "prediction": "result = 0",
+            "order": 50,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0051",
+            "bbox": [
+              197,
+              1449,
+              272,
+              1504
+            ],
+            "text": "↓",
+            "prediction": "\\( \\sqrt{} \\)",
+            "order": 51,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0052",
+            "bbox": [
+              688,
+              1472,
+              763,
+              1520
+            ],
+            "text": "8개",
+            "prediction": "\\( 8 \\geq 0 \\)",
+            "order": 52,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0053",
+            "bbox": [
+              36,
+              1525,
+              425,
+              1604
+            ],
+            "text": "( x > 0 ) and ( y > 0 )",
+            "prediction": "\\( x > 0 \\) and \\( y > 0 \\)",
+            "order": 53,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0054",
+            "bbox": [
+              213,
+              1627,
+              267,
+              1663
+            ],
+            "text": "or",
+            "prediction": "or",
+            "order": 54,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0055",
+            "bbox": [
+              168,
+              1700,
+              317,
+              1747
+            ],
+            "text": "z > 0",
+            "prediction": "\\( x \\geq 0 \\)",
+            "order": 55,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0056",
+            "bbox": [
+              622,
+              1700,
+              855,
+              1779
+            ],
+            "text": "FFT FFF",
+            "prediction": "\\( TCF \\) \\( ETF \\)",
+            "order": 56,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0057",
+            "bbox": [
+              1136,
+              1705,
+              1274,
+              1771
+            ],
+            "text": "TC#1",
+            "prediction": "\\( TCF \\)",
+            "order": 57,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0058",
+            "bbox": [
+              1130,
+              1796,
+              1293,
+              1874
+            ],
+            "text": "TC#2",
+            "prediction": "\\( TCF \\)",
+            "order": 58,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0060",
+            "bbox": [
+              1321,
+              1606,
+              1383,
+              1668
+            ],
+            "text": "x",
+            "prediction": "\\( x \\)",
+            "order": 59,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0061",
+            "bbox": [
+              1328,
+              1697,
+              1393,
+              1756
+            ],
+            "text": "1",
+            "prediction": "\\( l \\)",
+            "order": 60,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0062",
+            "bbox": [
+              1440,
+              1606,
+              1488,
+              1668
+            ],
+            "text": "y",
+            "prediction": "\\( y \\)",
+            "order": 61,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0063",
+            "bbox": [
+              1450,
+              1696,
+              1502,
+              1756
+            ],
+            "text": "1",
+            "prediction": "1",
+            "order": 62,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0064",
+            "bbox": [
+              1545,
+              1600,
+              1599,
+              1668
+            ],
+            "text": "2",
+            "prediction": "2",
+            "order": 63,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0065",
+            "bbox": [
+              1559,
+              1708,
+              1591,
+              1762
+            ],
+            "text": "1",
+            "prediction": "1",
+            "order": 64,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0066",
+            "bbox": [
+              1677,
+              1691,
+              1802,
+              1759
+            ],
+            "text": "TTT",
+            "prediction": "TTT",
+            "order": 65,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0067",
+            "bbox": [
+              1685,
+              1577,
+              1812,
+              1657
+            ],
+            "text": "if 1",
+            "prediction": "\\( i^f \\)",
+            "order": 66,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0069",
+            "bbox": [
+              2073,
+              1683,
+              2191,
+              1759
+            ],
+            "text": "FT",
+            "prediction": "\\( i^f \\)",
+            "order": 67,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0070",
+            "bbox": [
+              2066,
+              1584,
+              2194,
+              1651
+            ],
+            "text": "if 2",
+            "prediction": "\\( i^f \\)",
+            "order": 68,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0072",
+            "bbox": [
+              1366,
+              1831,
+              1407,
+              1896
+            ],
+            "text": "6",
+            "prediction": "6",
+            "order": 69,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0073",
+            "bbox": [
+              1458,
+              1822,
+              1495,
+              1869
+            ],
+            "text": "1",
+            "prediction": "1",
+            "order": 70,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0074",
+            "bbox": [
+              1566,
+              1816,
+              1610,
+              1864
+            ],
+            "text": "0",
+            "prediction": "0",
+            "order": 71,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0075",
+            "bbox": [
+              1696,
+              1807,
+              1831,
+              1870
+            ],
+            "text": "TTF",
+            "prediction": "TTF",
+            "order": 72,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0076",
+            "bbox": [
+              2078,
+              1785,
+              2211,
+              1864
+            ],
+            "text": "TT",
+            "prediction": "\\( TTF \\)",
+            "order": 73,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0077",
+            "bbox": [
+              171,
+              1956,
+              365,
+              2013
+            ],
+            "text": "result + 1",
+            "prediction": "result + 1",
+            "order": 74,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0078",
+            "bbox": [
+              1158,
+              1939,
+              1288,
+              1992
+            ],
+            "text": "TC#3",
+            "prediction": "TC\\#3",
+            "order": 75,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0079",
+            "bbox": [
+              1353,
+              1947,
+              1393,
+              1992
+            ],
+            "text": "0",
+            "prediction": "0",
+            "order": 76,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0080",
+            "bbox": [
+              1474,
+              1936,
+              1517,
+              1983
+            ],
+            "text": "0",
+            "prediction": "0",
+            "order": 77,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0081",
+            "bbox": [
+              1593,
+              1919,
+              1626,
+              1992
+            ],
+            "text": "1",
+            "prediction": "1",
+            "order": 78,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0082",
+            "bbox": [
+              1685,
+              1919,
+              1854,
+              1992
+            ],
+            "text": "FFT",
+            "prediction": "FFT",
+            "order": 79,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0083",
+            "bbox": [
+              2086,
+              1904,
+              2195,
+              1986
+            ],
+            "text": "FT",
+            "prediction": "FT",
+            "order": 80,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0084",
+            "bbox": [
+              1150,
+              2073,
+              1290,
+              2135
+            ],
+            "text": "TC#4",
+            "prediction": "TC\\#4",
+            "order": 81,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0085",
+            "bbox": [
+              1353,
+              2058,
+              1388,
+              2115
+            ],
+            "text": "6",
+            "prediction": "6",
+            "order": 82,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0086",
+            "bbox": [
+              1487,
+              2058,
+              1528,
+              2103
+            ],
+            "text": "0",
+            "prediction": "0",
+            "order": 83,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0087",
+            "bbox": [
+              1603,
+              2026,
+              1655,
+              2106
+            ],
+            "text": "3",
+            "prediction": "3",
+            "order": 84,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0088",
+            "bbox": [
+              1712,
+              2037,
+              1894,
+              2103
+            ],
+            "text": "TFT",
+            "prediction": "TFT",
+            "order": 85,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0089",
+            "bbox": [
+              2086,
+              2035,
+              2180,
+              2115
+            ],
+            "text": "TF",
+            "prediction": "TF",
+            "order": 86,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0090",
+            "bbox": [
+              2358,
+              2029,
+              2573,
+              2085
+            ],
+            "text": "coverage",
+            "prediction": "coverage",
+            "order": 87,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0091",
+            "bbox": [
+              113,
+              2204,
+              491,
+              2278
+            ],
+            "text": "x > 5 and z < 3",
+            "prediction": "\\( x > 44 \\) and \\( z \\leq 3 \\)",
+            "order": 88,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0092",
+            "bbox": [
+              709,
+              2184,
+              787,
+              2220
+            ],
+            "text": "4개",
+            "prediction": "\\( 414 \\)",
+            "order": 89,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0093",
+            "bbox": [
+              1147,
+              2184,
+              1290,
+              2252
+            ],
+            "text": "TC#5",
+            "prediction": "TC\\#5",
+            "order": 90,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0094",
+            "bbox": [
+              1371,
+              2175,
+              1401,
+              2231
+            ],
+            "text": "1",
+            "prediction": "1",
+            "order": 91,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0095",
+            "bbox": [
+              1487,
+              2187,
+              1531,
+              2231
+            ],
+            "text": "0",
+            "prediction": "0",
+            "order": 92,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0096",
+            "bbox": [
+              1603,
+              2175,
+              1649,
+              2225
+            ],
+            "text": "0",
+            "prediction": "0",
+            "order": 93,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0097",
+            "bbox": [
+              1730,
+              2178,
+              1871,
+              2231
+            ],
+            "text": "TFF",
+            "prediction": "TFF",
+            "order": 94,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0098",
+            "bbox": [
+              2113,
+              2149,
+              2203,
+              2205
+            ],
+            "text": "FT",
+            "prediction": "FT",
+            "order": 95,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0099",
+            "bbox": [
+              1155,
+              2286,
+              1288,
+              2345
+            ],
+            "text": "TC#6",
+            "prediction": "TC\\#6",
+            "order": 96,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0100",
+            "bbox": [
+              1366,
+              2294,
+              1407,
+              2345
+            ],
+            "text": "0",
+            "prediction": "0",
+            "order": 97,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0101",
+            "bbox": [
+              1501,
+              2289,
+              1531,
+              2345
+            ],
+            "text": "1",
+            "prediction": "1",
+            "order": 98,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0102",
+            "bbox": [
+              1603,
+              2264,
+              1669,
+              2351
+            ],
+            "text": "4",
+            "prediction": "4",
+            "order": 99,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0103",
+            "bbox": [
+              1735,
+              2259,
+              1914,
+              2345
+            ],
+            "text": "FTT",
+            "prediction": "FTT",
+            "order": 100,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0104",
+            "bbox": [
+              2126,
+              2271,
+              2240,
+              2348
+            ],
+            "text": "FF",
+            "prediction": "FE",
+            "order": 101,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0105",
+            "bbox": [
+              337,
+              2356,
+              386,
+              2415
+            ],
+            "text": "T",
+            "prediction": "\\( T \\)",
+            "order": 102,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0106",
+            "bbox": [
+              561,
+              2379,
+              618,
+              2462
+            ],
+            "text": "F",
+            "prediction": "\\( F \\)",
+            "order": 103,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0107",
+            "bbox": [
+              1163,
+              2394,
+              1288,
+              2465
+            ],
+            "text": "TC#7",
+            "prediction": "TC\\#9",
+            "order": 104,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0108",
+            "bbox": [
+              1371,
+              2394,
+              1412,
+              2441
+            ],
+            "text": "0",
+            "prediction": "0",
+            "order": 105,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0109",
+            "bbox": [
+              1503,
+              2388,
+              1533,
+              2447
+            ],
+            "text": "1",
+            "prediction": "1",
+            "order": 106,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0110",
+            "bbox": [
+              1619,
+              2394,
+              1660,
+              2441
+            ],
+            "text": "0",
+            "prediction": "0",
+            "order": 107,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0111",
+            "bbox": [
+              1748,
+              2399,
+              1881,
+              2459
+            ],
+            "text": "FTF",
+            "prediction": "FTF",
+            "order": 108,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0112",
+            "bbox": [
+              2136,
+              2390,
+              2232,
+              2462
+            ],
+            "text": "FT",
+            "prediction": "FT",
+            "order": 109,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0113",
+            "bbox": [
+              179,
+              2478,
+              417,
+              2537
+            ],
+            "text": "result + 2",
+            "prediction": "result + 2",
+            "order": 110,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0114",
+            "bbox": [
+              1163,
+              2507,
+              1301,
+              2572
+            ],
+            "text": "TC#8",
+            "prediction": "TC\\#8",
+            "order": 111,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0115",
+            "bbox": [
+              1392,
+              2504,
+              1436,
+              2552
+            ],
+            "text": "0",
+            "prediction": "0",
+            "order": 112,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0116",
+            "bbox": [
+              1519,
+              2501,
+              1565,
+              2552
+            ],
+            "text": "0",
+            "prediction": "0",
+            "order": 113,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0117",
+            "bbox": [
+              1617,
+              2496,
+              1665,
+              2552
+            ],
+            "text": "0",
+            "prediction": "0",
+            "order": 114,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0118",
+            "bbox": [
+              1754,
+              2504,
+              1921,
+              2564
+            ],
+            "text": "FFF",
+            "prediction": "FTTF",
+            "order": 115,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0160-line-0119",
+            "bbox": [
+              2136,
+              2499,
+              2233,
+              2569
+            ],
+            "text": "FT",
+            "prediction": "FT",
+            "order": 116,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T16:16:29.581Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T15:52:02.370Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 116
+        }
+      ]
     },
     "hf-0161": {
       "id": "hf-0161",
