@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T14:46:34.389Z",
+  "updated_at": "2026-10-30T14:47:52.569Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -19637,20 +19637,459 @@
         "source_sha256": "16124d25adbf45c1e711ead9271ec9639801de7b7ebbdd667567b41deb194bd6"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0148-line-0001",
+            "bbox": [
+              53,
+              178,
+              824,
+              254
+            ],
+            "text": "11강 ---- Why convolutions?",
+            "prediction": "11강 --- - - Why (convolutions?",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0002",
+            "bbox": [
+              330,
+              272,
+              1727,
+              357
+            ],
+            "text": "FC 대신 CONV 를 사용할 때의 이점 : 1) 변수 공유, 2) 희소 연결",
+            "prediction": "FC 대신 (ONV 를 사용할 때의 이점 : 1) 변수 곱은, 2) 희소 연결",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0003",
+            "bbox": [
+              338,
+              391,
+              542,
+              457
+            ],
+            "text": "example)",
+            "prediction": "example)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0004",
+            "bbox": [
+              849,
+              460,
+              992,
+              507
+            ],
+            "text": "→",
+            "prediction": "\\[ f = 5 \\]",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0005",
+            "bbox": [
+              816,
+              556,
+              981,
+              636
+            ],
+            "text": "filter 6",
+            "prediction": "futter 6",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0006",
+            "bbox": [
+              569,
+              653,
+              741,
+              711
+            ],
+            "text": "32×32×3",
+            "prediction": "32×32×3",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0007",
+            "bbox": [
+              1052,
+              629,
+              1247,
+              692
+            ],
+            "text": "28×28×6",
+            "prediction": "28×28×6",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0008",
+            "bbox": [
+              579,
+              758,
+              695,
+              822
+            ],
+            "text": "3,072",
+            "prediction": "3,092",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0009",
+            "bbox": [
+              1070,
+              737,
+              1208,
+              795
+            ],
+            "text": "4,704",
+            "prediction": "4,904",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0010",
+            "bbox": [
+              1296,
+              799,
+              1765,
+              873
+            ],
+            "text": "⇒ 3,072×4,704 ≈ 14M",
+            "prediction": "\\( \\Rightarrow 3.092 \\times 4,904 \\approx 14M \\)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0011",
+            "bbox": [
+              1808,
+              718,
+              2259,
+              778
+            ],
+            "text": "* 이렇게 FC를 이용하면",
+            "prediction": "\\( x \\) 이렇게 FC를 이용하면",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0012",
+            "bbox": [
+              1866,
+              772,
+              2297,
+              835
+            ],
+            "text": "가중치 행렬 실행의 갯수가",
+            "prediction": "가치의 협력 설렘의 개수가",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0013",
+            "bbox": [
+              1866,
+              829,
+              2208,
+              886
+            ],
+            "text": "기하급수적으로 증가.",
+            "prediction": "가야콩책으로 좋아.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0014",
+            "bbox": [
+              1876,
+              891,
+              2325,
+              949
+            ],
+            "text": "만일, 1000×1000 사이즈라면",
+            "prediction": "만일. 1000×1000 사이즈이면",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0015",
+            "bbox": [
+              1876,
+              948,
+              2241,
+              1013
+            ],
+            "text": "사실상 불가한 수준.",
+            "prediction": "사실상 붙기한 수준.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0016",
+            "bbox": [
+              338,
+              1080,
+              728,
+              1159
+            ],
+            "text": "1) Parameter sharing",
+            "prediction": "1) Parameter sharing",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0017",
+            "bbox": [
+              396,
+              1169,
+              1389,
+              1243
+            ],
+            "text": ": 1개의 변수를 여러번 이용해 특성을 검출해 내는 것.",
+            "prediction": ": 1개의 변수를 여러번 이용해 특성을 검출해 내는 것.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0018",
+            "bbox": [
+              452,
+              1285,
+              626,
+              1354
+            ],
+            "text": "example)",
+            "prediction": "example)",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0019",
+            "bbox": [
+              1215,
+              1250,
+              2424,
+              1335
+            ],
+            "text": "이렇게 연산을 하면, 3×3 필터 (변수 9개)를 Input인 6×6이",
+            "prediction": "시련제 면산을 피면, 3×3 필터 (변수 9개)를 Input인 6×6이",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0020",
+            "bbox": [
+              1223,
+              1328,
+              1987,
+              1405
+            ],
+            "text": "중복으로 적용해서 결론을 도출해 낼 수 있음.",
+            "prediction": "웹으로 정확해서 결론을 고창해 낼 수 있는.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0021",
+            "bbox": [
+              338,
+              1588,
+              852,
+              1667
+            ],
+            "text": "2) Sparsity of connections",
+            "prediction": "2) Sparsity of connections",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0022",
+            "bbox": [
+              396,
+              1674,
+              1791,
+              1753
+            ],
+            "text": ": 각 변수들끼리 전부 연산되는 것이 아니라, 해당 연산에 쓰인 부분만 사용됨.",
+            "prediction": ": 각 변쇄들끼리 전부 연산되는 것이 아니다, 해당 면산에 쓰인 부분만 사용된.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0023",
+            "bbox": [
+              445,
+              1796,
+              626,
+              1861
+            ],
+            "text": "example)",
+            "prediction": "example)",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0024",
+            "bbox": [
+              1289,
+              1771,
+              2299,
+              1844
+            ],
+            "text": "이전 식으로, 결과의 첫번째 값에 쓰인 면산된 변수는",
+            "prediction": "이전 쓰으로, 결과의 첫번째 값에 쓰인 면산된 변수는",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0025",
+            "bbox": [
+              1285,
+              1864,
+              2004,
+              1926
+            ],
+            "text": "36개의 Input중 단 9개만 사용됨.",
+            "prediction": "36m² Input줄 단 9개만 사용된.",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0026",
+            "bbox": [
+              1271,
+              1915,
+              2299,
+              2011
+            ],
+            "text": "이에 따라, 연산량이 많이 줄어들었음을 알 수 있음.",
+            "prediction": "이에 따라 면산량이 많이 흘러들었음을 알 수 있는.",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0027",
+            "bbox": [
+              330,
+              2074,
+              1791,
+              2167
+            ],
+            "text": "* 합성곱 신경망은 이동불변성 (translation innovation)을 포착하는 데도 유리함.",
+            "prediction": "* 합성곱 신경망은 이동불변성 (translation innovation)을 포착하는 데도 유리한.",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0028",
+            "bbox": [
+              396,
+              2174,
+              2063,
+              2265
+            ],
+            "text": ": 몇 픽셀을 이동한 이미지도 유사한 속성을 가진다는 것. → 따라서 동일한 결과를 가짐",
+            "prediction": ": 몇 폭염을 이용한 이미지도 유사한 축분을 기진되는 것. ㅤ→ 머리서 뚫일한 결과를 가진",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0029",
+            "bbox": [
+              269,
+              2398,
+              448,
+              2475
+            ],
+            "text": "· 결론:",
+            "prediction": "0 절론:",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0148-line-0030",
+            "bbox": [
+              338,
+              2487,
+              1585,
+              2580
+            ],
+            "text": "Convolutions를 사용하는 이유는 비용함수 J를 줄이기 위해서이다!!",
+            "prediction": "(convolutions를 사용하는 이유는 비롭한수 5를 줄이기 위해서이다!!)",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-4a34b646-6813-4020-943d-e564f9fb6c77",
+            "bbox": [
+              831,
+              500,
+              970,
+              558
+            ],
+            "text": "f=5",
+            "prediction": "",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T15:10:29.510Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T14:47:52.569Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 31
+        }
+      ]
     },
     "hf-0149": {
       "id": "hf-0149",
