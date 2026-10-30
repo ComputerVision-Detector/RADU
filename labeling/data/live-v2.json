@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T14:21:30.138Z",
+  "updated_at": "2026-10-30T14:29:01.574Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -17454,20 +17454,375 @@
         "source_sha256": "7d0de070002a84b7a1154cbcaf39b88065d881e50e4bce14f713069a0366889a"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0120-line-0001",
+            "bbox": [
+              559,
+              282,
+              2229,
+              448
+            ],
+            "text": "- npm을 쳤는데 에러가 난다면 PondShell을 관리자 권한으로 실행",
+            "prediction": "- npm을 접근해 메리라 낸번d PondShell을 판과 권한으로 사용",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0002",
+            "bbox": [
+              638,
+              423,
+              1785,
+              557
+            ],
+            "text": "→ Set- Execution Policy Remote Signed",
+            "prediction": "→ Set- Execution Policy Remote Signed",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0003",
+            "bbox": [
+              662,
+              580,
+              844,
+              670
+            ],
+            "text": "→ Y",
+            "prediction": "$\\rightarrow Y$",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0004",
+            "bbox": [
+              689,
+              661,
+              1258,
+              771
+            ],
+            "text": "→ VS code 재시작.",
+            "prediction": "$\\rightarrow V_S$ code 채신쪽",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0005",
+            "bbox": [
+              281,
+              753,
+              1425,
+              879
+            ],
+            "text": "· 서버 자동으로 껏다 켜주는 라이브러리",
+            "prediction": "- A비자동으로 갖다 갔는다 라이브 러디",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0006",
+            "bbox": [
+              281,
+              878,
+              1310,
+              996
+            ],
+            "text": "- npm install -g nodemon",
+            "prediction": "- npm install -g nodemon",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0007",
+            "bbox": [
+              981,
+              971,
+              2256,
+              1097
+            ],
+            "text": "컴퓨터 모든 폴더에서도 실행가능하게 해주세요.",
+            "prediction": "- nodemon 접접해 오른 폴드비싸는 상생창하재 해주세요.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0008",
+            "bbox": [
+              302,
+              1104,
+              1068,
+              1206
+            ],
+            "text": "- nodemon server.js",
+            "prediction": "- nodemon 접접해 JS",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0009",
+            "bbox": [
+              381,
+              1193,
+              1945,
+              1323
+            ],
+            "text": "→ 에러가 뜨면 → 관리자권한으로 powerShell 실행",
+            "prediction": "→ 이러가 쓰면 → 관리하귀한으로 powerShell 사항!",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0010",
+            "bbox": [
+              483,
+              1278,
+              2810,
+              1436
+            ],
+            "text": "→ execution policy → get-exe cution Policy unrestricted",
+            "prediction": "→ execution policy → get-exe Cution Policy un�ological",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0011",
+            "bbox": [
+              517,
+              1427,
+              681,
+              1517
+            ],
+            "text": "→ Y",
+            "prediction": "$\\rightarrow Y$",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0012",
+            "bbox": [
+              281,
+              1536,
+              1633,
+              1646
+            ],
+            "text": "- 저장만 해도 자동으로 서버를 껏다 켜줌.",
+            "prediction": "- 접촉해 해요 자동으로 시내를 갔다 죄율.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0013",
+            "bbox": [
+              244,
+              1757,
+              669,
+              1859
+            ],
+            "text": "· Boot strap.",
+            "prediction": "- Boot strap.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0014",
+            "bbox": [
+              281,
+              1846,
+              2619,
+              1980
+            ],
+            "text": "- 쌩코딩 없이 복붙으로 UI 개발 가능한 HTML/CSS",
+            "prediction": "- 서상경 웹이 복불으로 UI 개발 가능한 HTML/CSS",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0015",
+            "bbox": [
+              359,
+              1987,
+              645,
+              2077
+            ],
+            "text": "라이브 러리.",
+            "prediction": "리비라리.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0016",
+            "bbox": [
+              229,
+              2209,
+              1029,
+              2307
+            ],
+            "text": "· 상단 메뉴 바 : Navbar",
+            "prediction": "- 새로운 매뉴: Naubat",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0017",
+            "bbox": [
+              229,
+              2326,
+              738,
+              2432
+            ],
+            "text": "· 초기 설정.",
+            "prediction": "- 패턴 클리스컴젠.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0018",
+            "bbox": [
+              290,
+              2431,
+              2417,
+              2541
+            ],
+            "text": "- Node.js 설치 → Vs code 터미널 실행 → npm init 입력",
+            "prediction": "- Node.js 섞쳐 → Vs code E이벌 사행 → npm init 입력",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0019",
+            "bbox": [
+              323,
+              2548,
+              2671,
+              2666
+            ],
+            "text": "→ 엔터 침 (entry point 가 뜰 때가지) → 자신이 원하는 서버 js 이름",
+            "prediction": "→ 앤더 킬 (entry point 가 뜰 예가지) → 자신이 왔하는 서버 JS 이름",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0020",
+            "bbox": [
+              365,
+              2669,
+              2302,
+              2779
+            ],
+            "text": "기입. (ex) server.js → 엔터 연속 → npm install express.",
+            "prediction": "기업. (ex) server.js → 만난 연속 → npm install express.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0021",
+            "bbox": [
+              323,
+              2782,
+              2459,
+              2908
+            ],
+            "text": "→ 폴더가 생김. → server.js (entry point 에서 친 이름.) 생성.",
+            "prediction": "→ 풀냄새 생길 → server.js (entry point 에시스 팬 이름.) 섬성.",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0022",
+            "bbox": [
+              169,
+              3032,
+              1588,
+              3149
+            ],
+            "text": "· 서버 끄는 법: ctrl + c [터미널에서)",
+            "prediction": "싸머꼭 범: cth + ( [ E이벤-(1.1)1)",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0023",
+            "bbox": [
+              142,
+              3148,
+              1168,
+              3266
+            ],
+            "text": "· 다시 키기 : node server.js",
+            "prediction": "- cth 키기 : node server.js",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0024",
+            "bbox": [
+              142,
+              3286,
+              554,
+              3379
+            ],
+            "text": "· npm 이란? →",
+            "prediction": "- npm 이란? →",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0120-line-0025",
+            "bbox": [
+              1303,
+              3278,
+              2087,
+              3375
+            ],
+            "text": "노드 패키지 매니저의 약자.",
+            "prediction": "- 上上 화장이 액자의 약자.",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T14:46:30.138Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T14:29:01.574Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 25
+        }
+      ]
     },
     "hf-0121": {
       "id": "hf-0121",
