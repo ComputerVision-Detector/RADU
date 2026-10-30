@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T11:24:29.631Z",
+  "updated_at": "2026-10-30T11:25:37.459Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -15450,20 +15450,529 @@
         "source_sha256": "8a636ec5dd2a3e716a6544fc5c2caa0d6243964b117ba146cd0fb75c8319bec8"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0158-line-0001",
+            "bbox": [
+              23,
+              95,
+              533,
+              227
+            ],
+            "text": "· 이번 연구의 중요한 구조",
+            "prediction": "- 빈털 연구의 궤화 구조",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0002",
+            "bbox": [
+              121,
+              223,
+              443,
+              322
+            ],
+            "text": "Original Image",
+            "prediction": "Original Image",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0003",
+            "bbox": [
+              1209,
+              196,
+              1842,
+              299
+            ],
+            "text": "- 각 입력이 담당하는 역할.",
+            "prediction": "- 잘 입력이 앞당하는 역할.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0004",
+            "bbox": [
+              1315,
+              314,
+              2083,
+              414
+            ],
+            "text": "1) Original Image: 기존 장면 정보.",
+            "prediction": "1) Original Image: 기존 정면 정보.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0005",
+            "bbox": [
+              148,
+              433,
+              409,
+              516
+            ],
+            "text": "Person Mask",
+            "prediction": "Person Mask",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0006",
+            "bbox": [
+              545,
+              433,
+              878,
+              516
+            ],
+            "text": "Pose Estimator",
+            "prediction": "Pose Estimator",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0007",
+            "bbox": [
+              1300,
+              433,
+              1827,
+              522
+            ],
+            "text": "2) Mask: 어디를 바꿀지",
+            "prediction": "2) Mask: 허디를 바꿨지",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0008",
+            "bbox": [
+              148,
+              574,
+              433,
+              676
+            ],
+            "text": "Masked Image",
+            "prediction": "Masked Image",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0009",
+            "bbox": [
+              612,
+              574,
+              823,
+              683
+            ],
+            "text": "Pose Map",
+            "prediction": "Pose Map",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0010",
+            "bbox": [
+              1300,
+              541,
+              1997,
+              644
+            ],
+            "text": "3) Masked Image: 주변 context",
+            "prediction": "3) Masked Image: 주변 context",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0011",
+            "bbox": [
+              148,
+              741,
+              469,
+              827
+            ],
+            "text": "VAE Encoder",
+            "prediction": "VAE Encoder",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0012",
+            "bbox": [
+              636,
+              741,
+              878,
+              827
+            ],
+            "text": "Control Net",
+            "prediction": "Control Net",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0013",
+            "bbox": [
+              1293,
+              656,
+              1887,
+              755
+            ],
+            "text": "4) Prompt: 무엇을 생성할지",
+            "prediction": "4) Prompt: 뚜렷을 생성하지",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0014",
+            "bbox": [
+              1300,
+              764,
+              1954,
+              860
+            ],
+            "text": "5) Pose: 어떤 자세로 생성할지",
+            "prediction": "5) Pose: 어떤 자세로 생성할지",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0015",
+            "bbox": [
+              121,
+              905,
+              445,
+              1004
+            ],
+            "text": "Masked Latent",
+            "prediction": "Masked Latent",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0016",
+            "bbox": [
+              1300,
+              872,
+              2296,
+              972
+            ],
+            "text": "(1) Seed: stochastic generation의 초기 상태.",
+            "prediction": "(1) Seed: stochastic generation) 초기 생긴.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0017",
+            "bbox": [
+              1300,
+              990,
+              2004,
+              1090
+            ],
+            "text": "7) referance: ~처럼 보게 함.",
+            "prediction": "9) Reference: ~처리로 보게 한.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0018",
+            "bbox": [
+              133,
+              1122,
+              981,
+              1228
+            ],
+            "text": "Noisy Latent + Mask + Masked Latent",
+            "prediction": "Noisy Latent + Mask + Masked Latent",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0019",
+            "bbox": [
+              337,
+              1322,
+              727,
+              1421
+            ],
+            "text": "Inpainting U-Net",
+            "prediction": "Inpainting U-Net",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0020",
+            "bbox": [
+              325,
+              1502,
+              816,
+              1592
+            ],
+            "text": "control Net Residual",
+            "prediction": "control Net Residual",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0021",
+            "bbox": [
+              337,
+              1699,
+              732,
+              1779
+            ],
+            "text": "Noise Prediction",
+            "prediction": "Noise Prediction",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0022",
+            "bbox": [
+              62,
+              1922,
+              1504,
+              2038
+            ],
+            "text": "- Control Strength (control Net 에서 매우 중요한 parameter임)",
+            "prediction": "- Control Strength (control Net of AI 메우 절차 parameter)",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0023",
+            "bbox": [
+              604,
+              2063,
+              964,
+              2146
+            ],
+            "text": "Pose Influence",
+            "prediction": "Pore Influence",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0024",
+            "bbox": [
+              102,
+              2165,
+              694,
+              2255
+            ],
+            "text": "낮은 값 : 모델이 자유롭게 생성.",
+            "prediction": "넓은 골: 모델이 개념에 새로운 책임.",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0025",
+            "bbox": [
+              1305,
+              2244,
+              2143,
+              2343
+            ],
+            "text": "├ 장점: 자세 유지, 행동 정보 보존",
+            "prediction": "- 잠겐: 자체가고, 행동 정보 보존",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0026",
+            "bbox": [
+              181,
+              2372,
+              943,
+              2478
+            ],
+            "text": "└ 단점 : 원본 자세가 바뀔 수 있음.",
+            "prediction": "단점: 뭔므로 자체가 바뀌 수 있도.",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0027",
+            "bbox": [
+              1382,
+              2349,
+              2117,
+              2455
+            ],
+            "text": "└ 단점: 생성 자유도가 감소하며,",
+            "prediction": "단점: 생명 자료가 감소하며,",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0028",
+            "bbox": [
+              1601,
+              2480,
+              2282,
+              2570
+            ],
+            "text": "잘못된 pose estimation로 강제로",
+            "prediction": "광복된 pose estimation로 강제조",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0029",
+            "bbox": [
+              205,
+              2611,
+              1067,
+              2717
+            ],
+            "text": "∴ Control Strength는 실험 변수로 작용.",
+            "prediction": "... Control Strength는 실천 변화로 굉용.",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0030",
+            "bbox": [
+              1597,
+              2585,
+              1920,
+              2678
+            ],
+            "text": "반영될 수 있음",
+            "prediction": "변별할 수 없음",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0031",
+            "bbox": [
+              222,
+              2739,
+              923,
+              2845
+            ],
+            "text": "- 측정 1) privacy: D→O",
+            "prediction": "- 측정 (1) privacy: D→O",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0032",
+            "bbox": [
+              451,
+              2857,
+              1124,
+              2950
+            ],
+            "text": "2) consistency: D→D",
+            "prediction": "2) constant consistency: D→D",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0033",
+            "bbox": [
+              449,
+              2975,
+              871,
+              3078
+            ],
+            "text": "3) Utility: Yolo",
+            "prediction": "3) Utility: Yolo",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0034",
+            "bbox": [
+              1506,
+              2913,
+              1751,
+              3006
+            ],
+            "text": "를 비교.",
+            "prediction": "를 비교.",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0035",
+            "bbox": [
+              449,
+              3080,
+              1418,
+              3193
+            ],
+            "text": "4) Quality: LPIPS / Failure Rate",
+            "prediction": "4) Quality: LPIPS / Failure Rate",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0158-line-0036",
+            "bbox": [
+              1664,
+              3130,
+              2066,
+              3219
+            ],
+            "text": "노벨티와 연결됨.",
+            "prediction": "느낄다라 연결된.",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T11:49:29.631Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T11:25:37.459Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 36
+        }
+      ]
     },
     "hf-0159": {
       "id": "hf-0159",
