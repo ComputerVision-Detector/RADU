@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T13:54:29.478Z",
+  "updated_at": "2026-10-30T13:56:50.577Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -15610,20 +15610,319 @@
         "source_sha256": "eae7716dcd4e9a9d1cb093f6e50d2719e41d58658dc809300a5c12dde78fab04"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0082-line-0001",
+            "bbox": [
+              151,
+              197,
+              484,
+              299
+            ],
+            "text": "· 영역 분할",
+            "prediction": "- 영역 분할",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0002",
+            "bbox": [
+              229,
+              290,
+              1304,
+              420
+            ],
+            "text": "- 물체가 점유한 영역을 구분하는 작업.",
+            "prediction": "- 틀케가 정유한 영역을 검하는 작업.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0003",
+            "bbox": [
+              229,
+              391,
+              1984,
+              545
+            ],
+            "text": "- 에지가 완벽하면 영역은 불필요 영역이 완벽하면 에지가 불필요.",
+            "prediction": "- 아가 완벽하면 영역은 볼필요 영역이 완벽하면 아마가 볼필요.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0004",
+            "bbox": [
+              151,
+              705,
+              466,
+              811
+            ],
+            "text": "· 의미 분할",
+            "prediction": "- 의미 분할",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0005",
+            "bbox": [
+              229,
+              822,
+              1086,
+              940
+            ],
+            "text": "- 의미 있는 단위로 분할하는 방식",
+            "prediction": "- 의이 있는 단위로 밝힘하는 방식",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0006",
+            "bbox": [
+              250,
+              971,
+              872,
+              1074
+            ],
+            "text": "- 주로 딥러닝에서 이용.",
+            "prediction": "- 3조 답닝빛에서 이용.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0007",
+            "bbox": [
+              196,
+              1249,
+              518,
+              1355
+            ],
+            "text": "· 클러스터링",
+            "prediction": "- 클러스터길",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0008",
+            "bbox": [
+              214,
+              1362,
+              1265,
+              1492
+            ],
+            "text": "- 데이터를 서로 비슷한 것끼리 묶는 것.",
+            "prediction": "- 데이터를 샌 빼쳤는 것 못는 것.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0009",
+            "bbox": [
+              229,
+              1435,
+              2408,
+              1625
+            ],
+            "text": "- 정답을 미리 알려주지 않고, 데이터들끼리의 유사성을 보고 알아서 그룹을 만드는 것.",
+            "prediction": "- 접총을 씨 알려주지 않고, 데이터들께의 유산을 보고 얗아서 그룹을 만드는 것.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0010",
+            "bbox": [
+              181,
+              1782,
+              472,
+              1892
+            ],
+            "text": "· 워터셰드",
+            "prediction": "- 워터셔드",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0011",
+            "bbox": [
+              196,
+              1882,
+              1978,
+              2041
+            ],
+            "text": "- 비가 오면 오목한 곳에 웅덩이가 생기는 현상을 모방한 연산",
+            "prediction": "- 빠가 오면 오듬한 곳에 웅엄이가 생기는 현상을 모범한 연산",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0012",
+            "bbox": [
+              205,
+              2007,
+              2368,
+              2178
+            ],
+            "text": "- 에지 강도 맵을 지형으로 간주하고 낮은 곳 부터 물을 채워(물을 채우는 연산)",
+            "prediction": "- 어머 종도 법을 가칠으로 간격하고 낮은 곳 봐져 묻을 채워(물을 채워 연산)",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0013",
+            "bbox": [
+              314,
+              2185,
+              971,
+              2315
+            ],
+            "text": "웅덩이로 영역을 찾음.",
+            "prediction": "웅덩이로 영역을 좇음.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0014",
+            "bbox": [
+              190,
+              2463,
+              959,
+              2597
+            ],
+            "text": "· 슈퍼화소 (Spuer-pixel)",
+            "prediction": "- 슈퍼화소 (Spa-pixel)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0015",
+            "bbox": [
+              205,
+              2580,
+              2169,
+              2746
+            ],
+            "text": "- 영상을 화소보다 크지만 물체보다 작은 영역으로 분할해 놓은 영역.",
+            "prediction": "- 영상을 화소보다 크지만 물체보다 작은 영역으로 밝힐해 됐어 영역.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0016",
+            "bbox": [
+              178,
+              2931,
+              448,
+              3045
+            ],
+            "text": "· SLIC",
+            "prediction": "O SLIC",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0017",
+            "bbox": [
+              211,
+              2977,
+              2663,
+              3169
+            ],
+            "text": "- k-평균 군집화 알고리즘과 비슷하게 작동하지만 처리 과정이 단순하고 성능이 좋음",
+            "prediction": "- K-팜코 컵집화 알려주다 이슈게 작동하지만 컵이 타쳤이 단순하고 성능이 좋음",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0018",
+            "bbox": [
+              229,
+              3176,
+              1700,
+              3335
+            ],
+            "text": "- 입력 영상에서 k개 화소를 군집 중심으로 지정",
+            "prediction": "- 입력 영상에서 K개 좌선을 편집 중심으로 정칙",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0019",
+            "bbox": [
+              302,
+              3306,
+              2226,
+              3476
+            ],
+            "text": "등 간격으로 패치로 분할한 후 패치 중심을 군집 중심으로 간주.",
+            "prediction": "둔 간격으로 패치로 분할한 후 패치 줄센을 균침 중심으로 간직.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0020",
+            "bbox": [
+              223,
+              3439,
+              2710,
+              3633
+            ],
+            "text": "- 화소를 색상을 나타내는 3개, 위치를 나타내는 2개 값을 결합해 (R,G,B,x,y)",
+            "prediction": "- 화소를 생숨을 나타내는 짜, 잊틀을 나타내는 값 줄을 결합해 (R.S.B.T.J.)",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0082-line-0021",
+            "bbox": [
+              290,
+              3636,
+              1062,
+              3774
+            ],
+            "text": "의 5차원 벡터로 표현",
+            "prediction": "의 낮잠 벡터로 표현.",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T14:19:29.478Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T13:56:50.577Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 21
+        }
+      ]
     },
     "hf-0083": {
       "id": "hf-0083",
