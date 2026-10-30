@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T12:04:48.177Z",
+  "updated_at": "2026-10-30T12:07:27.897Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -10911,20 +10911,319 @@
         "source_sha256": "5a6f37a11824cc3fa122dd5197af418658a83eeba2d7c9a8ec7e8e9dc7e75d54"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0048-line-0003",
+            "bbox": [
+              208,
+              229,
+              1334,
+              343
+            ],
+            "text": "◦출력 데이터 크기를 구할 수 있는 공식.",
+            "prediction": "- 홈럭 다이터 크기를 컬닝 수 있는 꿈식.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0004",
+            "bbox": [
+              208,
+              403,
+              1192,
+              601
+            ],
+            "text": "OH = \\(\\frac{H + 2P - FH}{S}\\) +1",
+            "prediction": "OH = \\(\\frac{H + 2P - FH}{S}\\) +1",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0005",
+            "bbox": [
+              1465,
+              326,
+              2148,
+              452
+            ],
+            "text": "입력 데이터 크기 (H, W)",
+            "prediction": "(H, W)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0006",
+            "bbox": [
+              1475,
+              467,
+              2099,
+              585
+            ],
+            "text": "필터 크기 (FH, FW)",
+            "prediction": "필터 크기 (FH, FW)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0007",
+            "bbox": [
+              1499,
+              592,
+              2129,
+              706
+            ],
+            "text": "홈럭 크기 (OH, OW)",
+            "prediction": "홈럭 크기 (OH, OW)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0008",
+            "bbox": [
+              192,
+              759,
+              1192,
+              992
+            ],
+            "text": "OW = \\(\\frac{W + 2P - FW}{S}\\) +1",
+            "prediction": "OW = \\(\\frac{W + 2P - FW}{S}\\) +1",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0010",
+            "bbox": [
+              1515,
+              850,
+              1948,
+              956
+            ],
+            "text": "스트라이드 S",
+            "prediction": "스드라이드 S",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0011",
+            "bbox": [
+              1524,
+              721,
+              1806,
+              835
+            ],
+            "text": "패딩 P",
+            "prediction": "패딩 P",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0012",
+            "bbox": [
+              208,
+              1088,
+              1449,
+              1242
+            ],
+            "text": "※ 정수로 떨어져야함.(행렬의 크기이기 때문).",
+            "prediction": "※ 컴으로 열어져야 함. (행복의 향기에 머물)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0013",
+            "bbox": [
+              199,
+              1387,
+              877,
+              1512
+            ],
+            "text": "◦3차원 데이터 합성곱 연산",
+            "prediction": "- 커움의 다이터 합성균 연소",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0014",
+            "bbox": [
+              214,
+              1459,
+              2547,
+              1646
+            ],
+            "text": "- 각채널 입력 데이터는 각 필터와만 계산 (1번은 1번 필터와 2번은 2번 필터와)",
+            "prediction": "- 측책벌 입력 데이터는 각 필터와는 제산 (1번은 1번 포터와 2번은 1번 펀더와)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0015",
+            "bbox": [
+              341,
+              1628,
+              1192,
+              1771
+            ],
+            "text": "계산된 각 채널값을 더함.",
+            "prediction": "제산된 각 패널·삽륜 디향.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0016",
+            "bbox": [
+              374,
+              1766,
+              1440,
+              1892
+            ],
+            "text": "그것이 출력 행렬 중 하나의 값이 됨.",
+            "prediction": "그것이 홀력 헹결 중 하나섞 겁이 몸.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0017",
+            "bbox": [
+              199,
+              2056,
+              509,
+              2178
+            ],
+            "text": "◦풀링 계층.",
+            "prediction": "- 폴형 계층",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0018",
+            "bbox": [
+              272,
+              2149,
+              1621,
+              2315
+            ],
+            "text": "- 세로 가로 방향의 공간을 줄이는 연산",
+            "prediction": "- 세로·조선 방향의 옆선을 공간을 줄여는 연산",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0019",
+            "bbox": [
+              281,
+              2282,
+              1676,
+              2452
+            ],
+            "text": "- 최대 풀링 : 영역에서 가장 큰 원소 하나를 꺼냄",
+            "prediction": "- 로벨 폴킹: 영역에서 가장 큰 월소 하나를 개발",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0020",
+            "bbox": [
+              290,
+              2427,
+              1379,
+              2585
+            ],
+            "text": "- 평균 풀링 : 영역에서 평균을 계산",
+            "prediction": "- 평균 폴킹: 영역에서 평균을 계산.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0021",
+            "bbox": [
+              302,
+              2560,
+              1730,
+              2730
+            ],
+            "text": "- 대부분 이미지 분야에서는 주로 최대 풀링을 사용.",
+            "prediction": "-대부분 이찌 분야에서는 절 로내 폴킹을 사용.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0022",
+            "bbox": [
+              314,
+              2713,
+              1519,
+              2879
+            ],
+            "text": "- 특징 ① 학습해야 할 매개변수가 없다.",
+            "prediction": "- 특정 ① 학습해야 할 메뉴성가 없다.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0023",
+            "bbox": [
+              526,
+              2866,
+              1331,
+              3016
+            ],
+            "text": "② 채널 수가 변하지 않는다",
+            "prediction": "② 채널 수가 변하지 않는다",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0048-line-0024",
+            "bbox": [
+              532,
+              2983,
+              1875,
+              3154
+            ],
+            "text": "③ 입력의 변화에 영향을 적게 받는다(강건하다)",
+            "prediction": "③ 협력 변화에 영향을 적극 받는다 (강진하다)",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-30T12:29:48.177Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T12:07:27.897Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 21
+        }
+      ]
     },
     "hf-0049": {
       "id": "hf-0049",
