@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T12:13:48.178Z",
+  "updated_at": "2026-10-30T12:15:06.670Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -11235,20 +11235,347 @@
         "source_sha256": "b10f2c2afa7775401f9d85495f6e02dff72c6dea9abb90aaeaa253fc02f1858c"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0049-line-0002",
+            "bbox": [
+              289,
+              241,
+              1709,
+              419
+            ],
+            "text": "◦CNN에서 계층 사이에 흐르는 데이터가 4차원인 이유",
+            "prediction": "- CNU에서 계층 사이에 흐르는 데이터가 4차원인 이유",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0003",
+            "bbox": [
+              311,
+              362,
+              1963,
+              536
+            ],
+            "text": "- 데이터 수, 채널 수, 높이, 너비로 변수가 4개이기 때문",
+            "prediction": "- 데이터 수, 캐빌 수, 높이 너비로 변수가 4개어쩌며문",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0004",
+            "bbox": [
+              344,
+              495,
+              2314,
+              638
+            ],
+            "text": "- 여기서 변수가 많아지면 5차원, 6차원 N차원이 됨. 즉 축이 추가됨.",
+            "prediction": "- 어머냐 백가 쌓아지면 5차원, 6차원 ~ N차원이 될 증 풀이 즉가 될.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0005",
+            "bbox": [
+              290,
+              774,
+              2492,
+              900
+            ],
+            "text": "◦합성곱 계층과 풀링 계층을 거듭하며 마지막으로 완전연결 계층을 거쳐 결과를",
+            "prediction": "- 합병 계층과 폴킹 계층을 기능하며 머막으로 완전면결 계층을 가려 결과를",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5d07bcf8-6ce5-41bd-a672-3b962a1b001d",
+            "bbox": [
+              330,
+              933,
+              666,
+              1046
+            ],
+            "text": "출력합니다",
+            "prediction": "",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0006",
+            "bbox": [
+              332,
+              1056,
+              2634,
+              1166
+            ],
+            "text": "-> 합성곱 계층에서 특징(Feature)를 추출하고 풀링계층에서 특징은 유지하고 공간은",
+            "prediction": "- 합성돔 계층에서 특징 (Feature)를 주류하고 홈링계층에서 특징 유지하고 궁단은",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0007",
+            "bbox": [
+              393,
+              1181,
+              2256,
+              1315
+            ],
+            "text": "축소하는 것을 거듭하며 마지막으로 완전연결(Affine) 계층을 통해",
+            "prediction": "후소하는 지을 자유하여 여쭤느릅 완전연결(Affine) 계층을 통해",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0008",
+            "bbox": [
+              405,
+              1310,
+              2129,
+              1448
+            ],
+            "text": "특징을 최종적으로 분류하고 softmax 계층을 통해 출력값을",
+            "prediction": "특징을 최종적으로 분류하고 Softmax 계층을 통해 출력효율을",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0009",
+            "bbox": [
+              441,
+              1451,
+              1633,
+              1581
+            ],
+            "text": "확률로 변환해 출력 결과를 출력합니다.",
+            "prediction": "흑룀로 변환해 홀럭 결과를 훈련합니다.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0010",
+            "bbox": [
+              244,
+              1721,
+              617,
+              1819
+            ],
+            "text": "◦Affine 계층",
+            "prediction": "- Affine 계층",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0011",
+            "bbox": [
+              269,
+              1842,
+              2574,
+              2016
+            ],
+            "text": "- 분류 계층(분류를 위한 정수를 계산하는 계층. softmax 계층에서 이 점수를 확률로",
+            "prediction": "- 눈꼭 계층 (봄유들 위한 경수를 계산하는 계층, softmax 계층에서 이 첩수로 확률도",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0012",
+            "bbox": [
+              692,
+              1991,
+              1319,
+              2117
+            ],
+            "text": "변환 최종 분류에 사용).",
+            "prediction": "변환 화총 봉유에 사용).",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0013",
+            "bbox": [
+              260,
+              2116,
+              1727,
+              2266
+            ],
+            "text": "- 신경망에서 가장 기본적이고 학습하기 쉬운 선형 변환",
+            "prediction": "- 산경봉이씨 가장 개별적고 학습하기 위로 산형 변환",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0014",
+            "bbox": [
+              260,
+              2270,
+              1244,
+              2379
+            ],
+            "text": "- 특징마다 중요도를 부여하는 계산기",
+            "prediction": "- 특징이나 중요도를 보여하는 계산기",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0015",
+            "bbox": [
+              250,
+              2382,
+              2114,
+              2573
+            ],
+            "text": "- SVM, Decision tree, KNN, Random forest 등 분류 모델은 많지만",
+            "prediction": "- SVM, Decision tree, KNN, Random forest 등 높은 호력은 많지만",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0016",
+            "bbox": [
+              311,
+              2544,
+              1946,
+              2723
+            ],
+            "text": "Conv 와 제일 궁합이 좋음. 또한 Conv가 특징을 잘 추출",
+            "prediction": "Conv 와 제일 궁핍이 좋음, 또한 Conv가 특징을 잘 극출",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0017",
+            "bbox": [
+              290,
+              2689,
+              1806,
+              2851
+            ],
+            "text": "장점 - 미분 쉬움. GPU가 계산하기 쉬움, Conv와 연결성 좋음.",
+            "prediction": "정보 - 이분 쉬움, SVM가 계측해져옳, Conv와 연결성 좋음.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0018",
+            "bbox": [
+              1288,
+              2866,
+              1948,
+              3012
+            ],
+            "text": "-Conv가 피처 맵을 뱉음.",
+            "prediction": "Conv가 떠져 빵을 뽑음.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0019",
+            "bbox": [
+              1300,
+              3007,
+              1936,
+              3141
+            ],
+            "text": "Flatten ( 평탄화)하면",
+            "prediction": "Flatten ( 폭탄화) 하반",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0020",
+            "bbox": [
+              1297,
+              3144,
+              1585,
+              3283
+            ],
+            "text": "벡터가 됨.",
+            "prediction": "벡터가 됨.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0021",
+            "bbox": [
+              1312,
+              3310,
+              2389,
+              3460
+            ],
+            "text": "벡터는 Affine에 넣기 제일 좋은 형태.",
+            "prediction": "벡터는 Affine에 붉기 제일 좋은 형태.",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0022",
+            "bbox": [
+              84,
+              3540,
+              2256,
+              3758
+            ],
+            "text": "◦완전연결 계층 - 지금까지 추출한 특징들을 가지고 어떤 클래스인지 결정하는 단계",
+            "prediction": "연천연절 계층 - 장기적 주류한 특징을 가지고 어떤 폴킹하지 결정하는 단지",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0049-line-0023",
+            "bbox": [
+              93,
+              3677,
+              1975,
+              3895
+            ],
+            "text": "◦완전연결계층으로만 이루어진 신경망 : 다층 퍼셉트론, 완전연결 신경망",
+            "prediction": "- 완전연결 계층으로는 이목연 신경장: 다중 파센트론, 완전연절 신경장.",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-30T12:38:48.178Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T12:15:06.670Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 23
+        }
+      ]
     },
     "hf-0050": {
       "id": "hf-0050",
