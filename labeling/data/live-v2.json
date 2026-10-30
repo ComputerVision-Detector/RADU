@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T12:31:48.263Z",
+  "updated_at": "2026-10-30T12:32:18.936Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -12060,20 +12060,319 @@
         "source_sha256": "4709726fc05abc4ee6248c2181ad4f7d2f6a3d9c4095cec8f3c070abaddfe075"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0051-line-0001",
+            "bbox": [
+              272,
+              72,
+              1763,
+              262
+            ],
+            "text": "AlexNet, Clarifi, VGG. GoogLeNet, ResNet",
+            "prediction": "AlexNet, Clarifi, VGG. GoogLeNet, ResNet",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0004",
+            "bbox": [
+              1173,
+              282,
+              1633,
+              380
+            ],
+            "text": "논문 파헤치기",
+            "prediction": "논문 파히하기",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0005",
+            "bbox": [
+              214,
+              431,
+              472,
+              537
+            ],
+            "text": "- VGG",
+            "prediction": "- VGG",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0006",
+            "bbox": [
+              229,
+              508,
+              1703,
+              654
+            ],
+            "text": "- 합성곱 계층과 풀링 계층으로 구성되는 기본적인 CNN",
+            "prediction": "- 밥상돔 제중과 폴집 계층으로 구성되는 챔벽인 CNN",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0007",
+            "bbox": [
+              217,
+              782,
+              524,
+              875
+            ],
+            "text": "◦인셉션 구조",
+            "prediction": "- 인센션 검",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0008",
+            "bbox": [
+              217,
+              869,
+              2335,
+              996
+            ],
+            "text": "- 크기가 다른 필터와 풀링을 여러 개 적용하여 그 결과를 결함하는 것.",
+            "prediction": "- 크기 때문",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0010",
+            "bbox": [
+              223,
+              1008,
+              2287,
+              1133
+            ],
+            "text": "- CNN 내부의 한 계층에서 여러 보기의 특징 추출을 동시에 수행하는 구조",
+            "prediction": "- CNN 내부의 반 계층에서 여러 크기를 특징 측출론 동시에 설명하는 구조",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0011",
+            "bbox": [
+              229,
+              1141,
+              1990,
+              1250
+            ],
+            "text": "- 앙상블은 여러 개의 독립적인 모델을 결합하는 것과는 조금 다름.",
+            "prediction": "- 상상블로 여러 개의 독립적인 모델을 결합하는 것과는 조례를",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0012",
+            "bbox": [
+              250,
+              1266,
+              1915,
+              1383
+            ],
+            "text": "앙상블 : 여러명의 전문가 의견 결합 후 최종 결정 내리기",
+            "prediction": "- 앞장볼: 여러명이 작을가 의견 걸찾는 화 회총 결정 내기",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0013",
+            "bbox": [
+              311,
+              1395,
+              2507,
+              1500
+            ],
+            "text": "인셉션 : 한 전문가가 하나의 분석 결과를 위해 여러 도구를 동시에 사용하는 것",
+            "prediction": "인센션: 하나의 범죄 결과를 위해 여러 5구를 동시에 사용하는 것.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0014",
+            "bbox": [
+              139,
+              1653,
+              412,
+              1758
+            ],
+            "text": "- 스킵 연결",
+            "prediction": "- 스킬 연결",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0015",
+            "bbox": [
+              151,
+              1782,
+              1857,
+              1883
+            ],
+            "text": "- 입력 데이터를 합성곱 계층을 건너뛰어 출력에 바로 더하는 구조",
+            "prediction": "- 입력 데이터를 합성끝 계층을 채택이 클릭에 바로 대하는 것",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0016",
+            "bbox": [
+              157,
+              1907,
+              2392,
+              2025
+            ],
+            "text": "- 역전파 때 스킵 연결이 신호 감쇠를 막아주기 때문에 층이 깊어져도 효율적으로 학습",
+            "prediction": "- 역전과 메스탭 연결이 신호 강의를 억어줘 예쁨에 돌아갔어요 효율적으로 적순",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0017",
+            "bbox": [
+              208,
+              2024,
+              1773,
+              2166
+            ],
+            "text": "L 층을 깊게 할수록 기울기가 작아지는 소실 문제를 줄여줌",
+            "prediction": "L 층을 깊게 할 수록 기술가 작세는 소실 문제를 못예측",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0018",
+            "bbox": [
+              102,
+              2306,
+              315,
+              2408
+            ],
+            "text": "- FCN",
+            "prediction": "- FCN",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0019",
+            "bbox": [
+              139,
+              2443,
+              1945,
+              2565
+            ],
+            "text": "- 단 한 번의 순전파 처리로 모든 픽셀의 클래스를 분류해주는 기법",
+            "prediction": "- 단호법의 습전과 차이로 모든 핵심의 클래스를 분류해주는 개념",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0020",
+            "bbox": [
+              54,
+              2721,
+              291,
+              2831
+            ],
+            "text": "◦ NIC",
+            "prediction": "ONIC",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0021",
+            "bbox": [
+              93,
+              2855,
+              1883,
+              3006
+            ],
+            "text": "- 심층 CCN 과 자연어를 다루는 순환 신경망 (RNN)으로 구성",
+            "prediction": "- 손송 (NN과)",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0023",
+            "bbox": [
+              102,
+              2999,
+              1361,
+              3152
+            ],
+            "text": "- 딥러닝으로 사진 캡션을 생성할 때 사용",
+            "prediction": "- 답답으로 신진",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0025",
+            "bbox": [
+              39,
+              3278,
+              472,
+              3412
+            ],
+            "text": "◦ 멀티모달 처리",
+            "prediction": "- 모님모잘 쳐라",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0051-line-0026",
+            "bbox": [
+              57,
+              3423,
+              1900,
+              3593
+            ],
+            "text": "- 사진이나 자연어와 같은 여러 종류의 정보를 조합하고 처리하는 일",
+            "prediction": "- 사전에 자연어와 같은 여러 종류의 정보를 조합하고 처분하는 일",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-30T12:56:48.263Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T12:32:18.936Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 21
+        }
+      ]
     },
     "hf-0052": {
       "id": "hf-0052",
