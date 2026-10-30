@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T12:25:48.193Z",
+  "updated_at": "2026-10-30T12:26:08.607Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -11820,20 +11820,235 @@
         "source_sha256": "c1eae73ed22110f076da09249e0fc0f50d829e0ec443ef206f6791763be565d0"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0050-line-0001",
+            "bbox": [
+              99,
+              258,
+              1358,
+              392
+            ],
+            "text": "◦학습된 모델에 가중치 파일을 PKI 사용 이유",
+            "prediction": "- 허술된 모델에 기존의 패널을 끼기를 사용 이유",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0050-line-0002",
+            "bbox": [
+              151,
+              346,
+              2801,
+              529
+            ],
+            "text": "- 가중치 전용 파일이 아니라 python 객체를 그대로 저장하는  pickle 형식의 파일이기 때문",
+            "prediction": "- 게웃긴 전용 파일에 따라 Python 캠페인 값으로 저장하는 Pickle 청의 파일이 메콩",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0050-line-0003",
+            "bbox": [
+              120,
+              782,
+              1180,
+              928
+            ],
+            "text": "- python 안에 있는 직렬화 라이브러리",
+            "prediction": "- Pitcher 찾아 있는 학작화 가이봄리다",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0050-line-0004",
+            "bbox": [
+              837,
+              870,
+              2362,
+              1029
+            ],
+            "text": "메모리에 있는 python 객체를 파일로 저장한다는 의미",
+            "prediction": "에널에 있는 Python 객체를 파일로 장창한 다른 의미",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0050-line-0005",
+            "bbox": [
+              108,
+              1245,
+              475,
+              1355
+            ],
+            "text": "◦데이터 확장",
+            "prediction": "- 커피의 효능",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0050-line-0006",
+            "bbox": [
+              120,
+              1314,
+              2268,
+              1496
+            ],
+            "text": "- 입력 이미지(훈련 이미지)를 알고리즘을 동원해 '인위적'으로 확장하는 것.",
+            "prediction": "- 알려 이제 (한편 이제) 를 잘못했을 동의해 인식적으로 표현하는 경.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0050-line-0007",
+            "bbox": [
+              223,
+              1483,
+              1286,
+              1625
+            ],
+            "text": "(소프트웨어 품질관리에서 했던 과제)",
+            "prediction": "(소프트웨어 콘텐츠잉이셔 웹젠 객체)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0050-line-0008",
+            "bbox": [
+              84,
+              1790,
+              992,
+              1928
+            ],
+            "text": "◦ 신경망 층이 깊을 수록 이점. 부분",
+            "prediction": "- 신경장 중에 값을 쓰게 아닐 뿐뿐",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0050-line-0009",
+            "bbox": [
+              164,
+              1869,
+              2060,
+              2047
+            ],
+            "text": "① 매개변수가 줄어듦(매개변수를 줄여 수용영역을 소화할 수 있다.)",
+            "prediction": "① 배캐빈수가 줄어들(애찌빈수를 줄여 싫음영역을 쇠퇴할 수 있다.)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0050-line-0010",
+            "bbox": [
+              1264,
+              1999,
+              2761,
+              2158
+            ],
+            "text": "- 특정 뉴런 하나가 입력 데이터에서 영향을 받는 공간 범위",
+            "prediction": "- 웹 웹 해냐 압력 데이터에서 영향을 받는 몸도 범위.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0050-line-0011",
+            "bbox": [
+              139,
+              2374,
+              672,
+              2504
+            ],
+            "text": "② 학습의 효율성",
+            "prediction": "② 홍습의 호율성",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0050-line-0012",
+            "bbox": [
+              235,
+              2467,
+              2526,
+              2645
+            ],
+            "text": "- 층을 깊게 함으로써 데이터의 양을 줄여 학습을 고속으로 수행할 수 있음.",
+            "prediction": "- 충을 갚게 하고써 데이터 암을 줄여 황습을 고속으로 설비할 수 있음.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0050-line-0013",
+            "bbox": [
+              87,
+              2794,
+              1213,
+              2960
+            ],
+            "text": "③ 정보를 계층적으로 전달할 수 있음",
+            "prediction": "③ 정보를 제중적으로 전후한 수 있음",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0050-line-0014",
+            "bbox": [
+              151,
+              2859,
+              2554,
+              3097
+            ],
+            "text": "- 층을 깊게 함으로써 각 층이 학습해야 할 문제를 '풀기 쉬운 단순한 문제'",
+            "prediction": "- 충을 갚게 하고써 측 줄이 핵심해야 할 문제를 '폴기 쉬운 손잎한 문제'",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0050-line-0015",
+            "bbox": [
+              244,
+              3084,
+              1464,
+              3246
+            ],
+            "text": "로 분해할 수 있어 효율적 학습이 가능.",
+            "prediction": "- 냄새흘를 수 있어 효율적 협습이 가능.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-30T12:50:48.193Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T12:26:08.607Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 15
+        }
+      ]
     },
     "hf-0051": {
       "id": "hf-0051",
