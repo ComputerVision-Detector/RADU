@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T12:40:48.227Z",
+  "updated_at": "2026-10-30T12:42:49.886Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -12717,20 +12717,319 @@
         "source_sha256": "fc937d27b53f3c5304841d245561b9ae28891c0613894d556d4b7659b5e8143d"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0055-line-0003",
+            "bbox": [
+              154,
+              379,
+              799,
+              509
+            ],
+            "text": "◦신경망의 간단한 학습 순서",
+            "prediction": "- 섬념의 갖담한 학습 순서",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0004",
+            "bbox": [
+              154,
+              516,
+              442,
+              625
+            ],
+            "text": "- 미니배치",
+            "prediction": "- 이내비지",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0005",
+            "bbox": [
+              160,
+              645,
+              524,
+              750
+            ],
+            "text": "- 기울기 계산",
+            "prediction": "- 기울기 계산",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0006",
+            "bbox": [
+              160,
+              766,
+              527,
+              871
+            ],
+            "text": "- 매개변수 갱신",
+            "prediction": "- 애텐슈 겸인",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0007",
+            "bbox": [
+              837,
+              633,
+              986,
+              763
+            ],
+            "text": "반복",
+            "prediction": "- 얼빛",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0008",
+            "bbox": [
+              151,
+              1024,
+              445,
+              1138
+            ],
+            "text": "◦경사하강법",
+            "prediction": "- 경사하랩법",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0009",
+            "bbox": [
+              160,
+              1092,
+              2014,
+              1258
+            ],
+            "text": "- 매개변수를 그 기울기와 반대 방향으로 갱신하여 손실을 줄이는 것",
+            "prediction": "- 애텐넛수술 2 기울기와 반대 방향으로 갱신하여 온실을 줄이는 것",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0010",
+            "bbox": [
+              160,
+              1257,
+              899,
+              1379
+            ],
+            "text": "- 확률적 경사하강법 (SGD)",
+            "prediction": "- 확률력 정사하랍법 (SGD)",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0011",
+            "bbox": [
+              244,
+              1350,
+              2005,
+              1508
+            ],
+            "text": "L '확률적'은 무작위로 선택된 데이터에 대한 기울기를 이용한다는 뜻",
+            "prediction": "L·황렬뜬 무척되로 선택된 데이터에 대한 기울기를 이용한다는 뜻",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0012",
+            "bbox": [
+              994,
+              1479,
+              1222,
+              1565
+            ],
+            "text": "(미니배치)",
+            "prediction": "(기내지)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0013",
+            "bbox": [
+              120,
+              1790,
+              572,
+              1892
+            ],
+            "text": "◦ 에폭 (epoch)",
+            "prediction": "- 에폭 (epoch)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0014",
+            "bbox": [
+              154,
+              1882,
+              1788,
+              2029
+            ],
+            "text": "- 학습 단위로써, 1에폭은 학습 데이터를 모두 '살펴본'시점",
+            "prediction": "- 학습 협회로써, 1에폭은 학습 데이터를 모두 '손돌본' 시점",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0015",
+            "bbox": [
+              139,
+              2181,
+              436,
+              2279
+            ],
+            "text": "◦결정 경계",
+            "prediction": "- 결철 경계",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0016",
+            "bbox": [
+              154,
+              2274,
+              2241,
+              2424
+            ],
+            "text": "- 학습이 끝난 신경망이 입력값을 어떤 규칙으로 분류하는지 보여주는 경계",
+            "prediction": "- 향승이 갑난 싱경강이 입력 줄을 이먼 규팅으로 분류하는데 보여주는 경계",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0017",
+            "bbox": [
+              130,
+              2584,
+              769,
+              2694
+            ],
+            "text": "- NLP (자연어 처리)",
+            "prediction": "- NLP (자연어 피리)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0018",
+            "bbox": [
+              130,
+              2717,
+              835,
+              2831
+            ],
+            "text": "- 자연어를 처리하는 분야",
+            "prediction": "- 자연어를 귀환하는 분야",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0019",
+            "bbox": [
+              78,
+              2995,
+              1062,
+              3105
+            ],
+            "text": "◦시소러스(the saurus)(유의어 사전)",
+            "prediction": "- 새로운 (the salutary) (新刊の発刊)",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0020",
+            "bbox": [
+              102,
+              3120,
+              2770,
+              3234
+            ],
+            "text": "- 유의어 사전으로 뜻이 같은 단어(동의어)나 뜻이 비슷한 단어가 한 그룹으로 분류되어 있다.",
+            "prediction": "- 럼얼 4권으로 쓰임 같은 찬이(동의어) ↓ 몫이 비춰찬 온가 한 그룹으로 밝은되어 찾다",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0021",
+            "bbox": [
+              120,
+              3394,
+              1128,
+              3500
+            ],
+            "text": "- 시대 변화에 대응하기 어려움.",
+            "prediction": "- 새로운 새로운 책이 읽혀져요.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0022",
+            "bbox": [
+              293,
+              3519,
+              1077,
+              3645
+            ],
+            "text": "사람을 사용하기에 비용이 크다",
+            "prediction": "새로운 사용하기에 비용 폐수",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0055-line-0023",
+            "bbox": [
+              302,
+              3669,
+              1440,
+              3791
+            ],
+            "text": "단어의 미묘한 차이를 표현할 수 없다",
+            "prediction": "찬의 옛날 차이를 포함한 즉 있다.",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-30T13:05:48.227Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T12:42:49.886Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 21
+        }
+      ]
     },
     "hf-0056": {
       "id": "hf-0056",
