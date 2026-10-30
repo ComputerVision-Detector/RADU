@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T18:30:29.689Z",
+  "updated_at": "2026-10-30T18:31:15.155Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -6283,20 +6283,305 @@
         "source_sha256": "7d15f8df2a0e7299a1815cc627ca0089a754af7465a320c1d506f7be46c99ddb"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0020-line-0003",
+            "bbox": [
+              131,
+              396,
+              2199,
+              583
+            ],
+            "text": "- i번째 에지는 특징 x_i와 가중치 w_i를 곱해 출력 노드로 전달",
+            "prediction": "- 1984年诺贝尔物理学奖获得者",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b21450ad-1b4f-4618-a878-3a442ab1267c",
+            "bbox": [
+              200,
+              535,
+              1990,
+              697
+            ],
+            "text": "출력노드는 x_i×w_i + 편향에 대해 결과를 활성 함수에",
+            "prediction": "",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-60df2e2a-a60a-4393-a649-c0089ee05830",
+            "bbox": [
+              256,
+              702,
+              1185,
+              841
+            ],
+            "text": "적용한 결과를 출력으로 내보냄.",
+            "prediction": "",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a30aed49-1501-4d4d-ba2c-1e62cf631c19",
+            "bbox": [
+              126,
+              960,
+              480,
+              1102
+            ],
+            "text": "· 이진 분류기",
+            "prediction": "",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f0652ef0-c873-4f20-9d22-9772a3d8b13c",
+            "bbox": [
+              163,
+              1085,
+              1100,
+              1249
+            ],
+            "text": "- 특징 공간을 두 공간으로 분류",
+            "prediction": "",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c7db300b-0775-41bf-b55c-7155ec3d6df0",
+            "bbox": [
+              109,
+              1348,
+              1352,
+              1473
+            ],
+            "text": "·신경망을 학습하는 일은 전형적인 최적화 문제.",
+            "prediction": "",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-1037505d-9f8f-4b92-9940-b6475db1efdd",
+            "bbox": [
+              211,
+              1464,
+              1687,
+              1606
+            ],
+            "text": "→ 신경망 학습 알고리즘은 전형적인 최적화 알고리즘.",
+            "prediction": "",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-63c9da4e-216f-4673-a85f-88c25285dc23",
+            "bbox": [
+              72,
+              1730,
+              599,
+              1863
+            ],
+            "text": "· 에폭 (epoch)",
+            "prediction": "",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-953e2491-1908-4e0e-b5d1-c5622b809218",
+            "bbox": [
+              89,
+              1861,
+              1202,
+              2005
+            ],
+            "text": "- 훈련 집합 전체를 한 번처리하는 일",
+            "prediction": "",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-3028a24e-b0bc-49e3-aecd-029d885dfa8d",
+            "bbox": [
+              81,
+              2096,
+              424,
+              2251
+            ],
+            "text": "· 분류 문제",
+            "prediction": "",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-378f4aed-c2f8-4e5e-87b9-006cfdf333d3",
+            "bbox": [
+              800,
+              2147,
+              1316,
+              2257
+            ],
+            "text": "손실 함수에 반영",
+            "prediction": "",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-90dae000-08f6-41b0-963e-faf133190d67",
+            "bbox": [
+              667,
+              1999,
+              2389,
+              2200
+            ],
+            "text": "예측한 바운딩 박스와 레이블에 해당하는 바운딩박스 간의 겹침 정도를",
+            "prediction": "",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9576b8af-1944-45c9-ba35-e9626d323157",
+            "bbox": [
+              123,
+              2240,
+              2117,
+              2396
+            ],
+            "text": "- 물체 검출 (object detection): 바운딩 박스로 물체 영역 레이블링",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-42596c46-87df-4e7b-8285-898343c62ece",
+            "bbox": [
+              129,
+              2387,
+              2332,
+              2532
+            ],
+            "text": "- 물체 분할 (object segmentation): 화소별로 어떤 물체에 속하는지 레이블링. ",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6e0bb47e-c9e3-454d-9b2f-321988ccd301",
+            "bbox": [
+              636,
+              2526,
+              2652,
+              2696
+            ],
+            "text": "화소별로 레이블이 지정한 물체에 해당하는지 여부를 따지는 손실함수",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6be79b3a-4190-4fb1-91ed-50d940111000",
+            "bbox": [
+              7,
+              2764,
+              1692,
+              2928
+            ],
+            "text": "·기계학습의 경사하강법과 항공공학의 경사하강법의 다른점",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-34e48835-b1ba-4b9a-8e80-04e2aea28408",
+            "bbox": [
+              129,
+              2920,
+              588,
+              3073
+            ],
+            "text": "1. 데이터가 개입",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-137c8b88-9c3a-455a-885d-9e0b22b7d3a2",
+            "bbox": [
+              242,
+              3050,
+              1115,
+              3214
+            ],
+            "text": "- 기계학습에는 x, y가 있음",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-616d0245-b4d6-484c-b177-d42519e511f7",
+            "bbox": [
+              120,
+              3180,
+              1418,
+              3362
+            ],
+            "text": "2. 기계학습의 경사하강법은 매개변수가 방대.",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5854e4ff-d5c4-4dd3-8cff-31cc7ff2e155",
+            "bbox": [
+              115,
+              3336,
+              1505,
+              3523
+            ],
+            "text": "3. 학습된 모델은 일반화 능력이 뛰어나야 함.",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T18:55:29.689Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T18:31:15.155Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 20
+        }
+      ]
     },
     "hf-0021": {
       "id": "hf-0021",
