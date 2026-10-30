@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T12:52:48.180Z",
+  "updated_at": "2026-10-30T12:54:26.337Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -14153,20 +14153,263 @@
         "source_sha256": "3df33b8b2d5f5c9b245ad6842e3f3a19adc131d1dcfe987464016566872da011"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0061-line-0001",
+            "bbox": [
+              154,
+              253,
+              1479,
+              370
+            ],
+            "text": "- Word2 VEC 사용되는 신경망에는 가중치 2개",
+            "prediction": "- Wor2 VEC",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0003",
+            "bbox": [
+              240,
+              389,
+              1362,
+              504
+            ],
+            "text": "- W_in : 입력측 완전연결계층 가중치",
+            "prediction": "- Win : 압력측 완전연결계층 가중치",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0004",
+            "bbox": [
+              592,
+              508,
+              1652,
+              629
+            ],
+            "text": "각 행이 각 단어의 분산 표현에 해당",
+            "prediction": "각 행이 각 단어의 분산 표현에 해당",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0005",
+            "bbox": [
+              208,
+              766,
+              1401,
+              892
+            ],
+            "text": "- W_out: 출력 측 완전연결 계층의 가중치",
+            "prediction": "- Wout: 줄렁 측 환전연결 지름억 가중죄",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0006",
+            "bbox": [
+              529,
+              899,
+              1670,
+              1021
+            ],
+            "text": "단어의 의미가 인코딩된 벡터가 저장되고 있음",
+            "prediction": "혼에 의하자 인코딩된 벚나 자장되고 있음",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0007",
+            "bbox": [
+              535,
+              1032,
+              1742,
+              1162
+            ],
+            "text": "분산 표현이 열방향(수직 방향)으로 저장됨.",
+            "prediction": "분산 표현이 열방향(쇄방향)으로 짜장뒀",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0008",
+            "bbox": [
+              120,
+              1314,
+              569,
+              1420
+            ],
+            "text": "◦음의 로그 가능도",
+            "prediction": "- 음악 로그 창도",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0009",
+            "bbox": [
+              169,
+              1435,
+              2096,
+              1561
+            ],
+            "text": "- 손실 함수에서 나온 확률에 10g를 취한 당므 마이너스를 붙이는 것",
+            "prediction": "- 손실 앞세서 날쯤 확률이 100를 취한 다음 아이날를 붙은 것",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0010",
+            "bbox": [
+              169,
+              1576,
+              1763,
+              1698
+            ],
+            "text": "- 이유: 확률을 학습하기 좋은 손실값으로 바꾸기 위해서.",
+            "prediction": "- 이유: 확률을 확습하기 좋은 손잡음으로 바뀌기 위해서.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0011",
+            "bbox": [
+              93,
+              1866,
+              663,
+              1972
+            ],
+            "text": "◦skip - gram 모델",
+            "prediction": "- SKP - Gram 모델",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0012",
+            "bbox": [
+              120,
+              1999,
+              1522,
+              2117
+            ],
+            "text": "- CBow에서 다루는 맥락과 타깃을 역전시킨 모델",
+            "prediction": "- (Bowall) 다른 맥락과 벼슬 여전시킨 모델",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0013",
+            "bbox": [
+              151,
+              2145,
+              1869,
+              2258
+            ],
+            "text": "- 중앙의 단어(타깃)로부터 주변의 여러 단어(맥락)을 추측",
+            "prediction": "- 중앙의 단어(터넷)로 놓이 주변의 어려 단어(백소)을 즉측",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0014",
+            "bbox": [
+              124,
+              2290,
+              1383,
+              2396
+            ],
+            "text": "- CBow는 입력층이 여러개 출력층이 하나지만",
+            "prediction": "- Bow는 압력측이 여러개 줄렁측이 하나지만",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0015",
+            "bbox": [
+              190,
+              2423,
+              1621,
+              2529
+            ],
+            "text": "Skip-gram은 입력층이 한개 출력층이 여러개",
+            "prediction": "SKIP-frame 압력측이 한개 줄렁측이 여러개",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0016",
+            "bbox": [
+              120,
+              2560,
+              1485,
+              2682
+            ],
+            "text": "- 손실함수는 맥락별 손실을 구한 다음 모두 더함",
+            "prediction": "- 손실하는 백객철 손실을 켜낸 다음 모두 더해.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0017",
+            "bbox": [
+              120,
+              2697,
+              1894,
+              2835
+            ],
+            "text": "- CBow보다 단어 분산 표현의 정밀도가 더 좋은 경우가 많음.",
+            "prediction": "- CBow보다 허어봤는 표현의 전일도가 더 좋은 경우가 참음.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0061-line-0018",
+            "bbox": [
+              120,
+              2846,
+              2084,
+              2980
+            ],
+            "text": "- 학습 속도는 CBow 보다 느림 (맥락의 수만큼 구해야 해서)",
+            "prediction": "- 학습 속도는 (Bow 보다 느림 (맥 막의 수만큼 구해야 해서)",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-30T13:17:48.180Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T12:54:26.337Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 17
+        }
+      ]
     },
     "hf-0062": {
       "id": "hf-0062",
