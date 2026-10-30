@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T15:30:29.566Z",
+  "updated_at": "2026-10-30T15:32:08.107Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -21524,20 +21524,585 @@
         "source_sha256": "437acd04a82739a1c6da39252bde9c3afbd483f81cb38ea86da65b3bfa3a78c0"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0161-line-0001",
+            "bbox": [
+              0,
+              24,
+              771,
+              158
+            ],
+            "text": "· 내가 버티면 상대방이 무너진다.",
+            "prediction": "- 1974年，由美国国家航空航天局（NASA）发射了载人航天飞船。",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0002",
+            "bbox": [
+              7,
+              183,
+              768,
+              291
+            ],
+            "text": "· TRIZ 이론의 탄생배경 4기지.",
+            "prediction": "- TRIZ 아론의 탄생배경 4기지.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0003",
+            "bbox": [
+              101,
+              301,
+              1074,
+              399
+            ],
+            "text": "1) 문제의식: 문제 해결이 어려운 이유는 무엇일까?",
+            "prediction": "1) 문제의식: 문제 해결이 어려운 이유는 무엇됐렀기?",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0004",
+            "bbox": [
+              87,
+              415,
+              1501,
+              506
+            ],
+            "text": "2) 이상성: 어떤 사람은 창의적인데, 왜 다른 사람은 창의적이지 못할까?",
+            "prediction": "2) 이상성: 어떤 사람은 죽어줘인데, 왜 다온 시간도 강의했어? 못할까?",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0005",
+            "bbox": [
+              79,
+              531,
+              1074,
+              632
+            ],
+            "text": "3) 빅데이터: 전세계의 특허정보를 이용할 수 있을까?",
+            "prediction": "3) 백제이런: 전세계의 특허장소를 이용할 수 있을까?",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0006",
+            "bbox": [
+              67,
+              644,
+              1173,
+              742
+            ],
+            "text": "4) 지식 정보 : 인류의 모든 지식을 이용할 수 없을까?",
+            "prediction": "4) 지식 잘보: 인후의 모든 자문 이용실 씨 없옴까?",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0007",
+            "bbox": [
+              76,
+              782,
+              2454,
+              884
+            ],
+            "text": "(전개: 전세계의 25만 건의 특허 → DB 구축 및 유형별 분류 → 발명적 특허 4만 건 주출 → 40가지 요량 도출.)",
+            "prediction": "4(전계: 전세계의 25만 건의 특허 → DB 구축 및 유형별 보충 → 벌망척 특허 4만 건 주출 → 40기지 모령 도출)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0008",
+            "bbox": [
+              29,
+              949,
+              592,
+              1040
+            ],
+            "text": "· 4개의 중요한 발견",
+            "prediction": "- 4개의 중요한 발견-",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0009",
+            "bbox": [
+              62,
+              1062,
+              1393,
+              1149
+            ],
+            "text": "1) 발명의 정의 : 적어도 한 개 이상이 모순이 포함돼야 함.",
+            "prediction": "1) 발명의 장의: 전이도 한 개 이상이 모셨어 포함되돼야 한다.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0010",
+            "bbox": [
+              1532,
+              907,
+              2568,
+              989
+            ],
+            "text": "---------------",
+            "prediction": "- 70000 모순의 개념",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0011",
+            "bbox": [
+              67,
+              1193,
+              1206,
+              1287
+            ],
+            "text": "2) 발명의 수준 : 5가지가 있음: (1수준, 2수준 …)",
+            "prediction": "2) 발명의 수준: 50000 밟음: (14준, 24준...)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0012",
+            "bbox": [
+              1542,
+              1026,
+              2039,
+              1125
+            ],
+            "text": "· 기술적 모순의 개념",
+            "prediction": "- 7개 개선 세미나 이번 B가 확보되됨.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0014",
+            "bbox": [
+              1588,
+              1114,
+              2425,
+              1215
+            ],
+            "text": ": A가 개선 시키고자 하면 B가 악화됨.",
+            "prediction": "- 1단 말로는 절출면, 타변 모춘이 있음.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0015",
+            "bbox": [
+              38,
+              1315,
+              911,
+              1408
+            ],
+            "text": "3) 발명 문제의 유형 : 40가지가 있음.",
+            "prediction": "4) 기술 시스템의 관리 방식: 4단계",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0016",
+            "bbox": [
+              1610,
+              1219,
+              2561,
+              1342
+            ],
+            "text": "→ 다른 말로든 절충모순, 타협 모순이 있음.",
+            "prediction": "- 목리적 모순의 폴어 깨끗.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0017",
+            "bbox": [
+              32,
+              1416,
+              843,
+              1526
+            ],
+            "text": "4) 기술 시스템의 진화 법칙 : 4단계",
+            "prediction": "- 40기귀 원리",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0019",
+            "bbox": [
+              0,
+              1597,
+              362,
+              1679
+            ],
+            "text": "· 40가지 원리",
+            "prediction": "- 2. 추출",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0020",
+            "bbox": [
+              1617,
+              1526,
+              2468,
+              1601
+            ],
+            "text": ": C가 증가해야 하지만 감소해야 하고",
+            "prediction": "- 17대 앞으로는 고위 모춘이 있음.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0021",
+            "bbox": [
+              1580,
+              1406,
+              2152,
+              1510
+            ],
+            "text": "· 물리적 모순의 개념",
+            "prediction": "- 27대로의 허지만 존재하지 않아야 한.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0022",
+            "bbox": [
+              34,
+              1697,
+              448,
+              1783
+            ],
+            "text": "· -1. 분할",
+            "prediction": "- 3. 쿠션적 성질-4. 협력 비대성-5. 통합-6. 명확-7. 모션기.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0023",
+            "bbox": [
+              1614,
+              1728,
+              2466,
+              1816
+            ],
+            "text": "→ 다른 말로는 고유 모순이 있음.",
+            "prediction": "- 간모하게 온쓰는 냉벌: 2대11개 있다.",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0025",
+            "bbox": [
+              1610,
+              1872,
+              2510,
+              1968
+            ],
+            "text": "· 간결하게 글쓰는 방법 : 군더더기가 없다.",
+            "prediction": "- 4. 폴폴 완성: 정원사는 볼필로한 기지를",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0026",
+            "bbox": [
+              1635,
+              1992,
+              2494,
+              2097
+            ],
+            "text": "→ 실력 좋은 정원사는 불필요한 가지를",
+            "prediction": "- 4. 폴폴 완성: 정원사는 볼필로한 기지를",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0027",
+            "bbox": [
+              1640,
+              2085,
+              2223,
+              2192
+            ],
+            "text": "아낌없이 잘라낸다.",
+            "prediction": "- 4. 폴폴 완성: 정원사는 볼필로한 기지를",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0029",
+            "bbox": [
+              0,
+              2483,
+              837,
+              2577
+            ],
+            "text": "· No mirror No man No make up",
+            "prediction": "- No. minor No. view No. make up.",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0030",
+            "bbox": [
+              1623,
+              2248,
+              2264,
+              2341
+            ],
+            "text": "· 나를 한 마디로 표현하자면?",
+            "prediction": "- 41000은 쓰일 수 보고 힘써져오는 필요도",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0031",
+            "bbox": [
+              1684,
+              2383,
+              2657,
+              2463
+            ],
+            "text": ": 어디에는 쓰일 수 있고 항시적으로 필요로",
+            "prediction": "- 41000은 쓰일 수 보고 힘써져오는 필요도",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0161-line-0032",
+            "bbox": [
+              1663,
+              2487,
+              2289,
+              2575
+            ],
+            "text": "하는 '못'같은 사람이다.",
+            "prediction": "- 41000는 쓰일 수 보고 힘써져오는 필요도",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b51ea786-bb3f-4e0d-be7e-b7a4eae33e89",
+            "bbox": [
+              118,
+              1794,
+              396,
+              1873
+            ],
+            "text": "- 2. 추출",
+            "prediction": "",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-36927533-2263-44e9-8736-7c74a47c0c83",
+            "bbox": [
+              124,
+              1915,
+              476,
+              1990
+            ],
+            "text": "- 3. 국소적 성질",
+            "prediction": "",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-3fa592af-2a27-40ca-a634-347a9a6fc0b0",
+            "bbox": [
+              117,
+              2001,
+              492,
+              2074
+            ],
+            "text": "- 4. 비대칭",
+            "prediction": "",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9e4e6dd0-dac5-49c7-8990-b82abbe9ccb0",
+            "bbox": [
+              110,
+              2097,
+              369,
+              2186
+            ],
+            "text": "- 5. 통합",
+            "prediction": "",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b66cce74-436f-44b0-ae10-66b0797696f8",
+            "bbox": [
+              131,
+              2200,
+              429,
+              2297
+            ],
+            "text": "- 6. 다용도",
+            "prediction": "",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f2fe438b-5e90-4854-883a-4c680d94afa7",
+            "bbox": [
+              133,
+              2322,
+              419,
+              2393
+            ],
+            "text": "- 7. 포개기.",
+            "prediction": "",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-8f80083f-7a37-4376-890d-27fba86fd1ad",
+            "bbox": [
+              8,
+              2648,
+              1447,
+              2761
+            ],
+            "text": "· 지금은 아니다. 라고 생각하는 사례 : 운전은 남자가 더 잘한다.",
+            "prediction": "",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-46d69aea-8b51-47eb-a0b7-928ea9659ac3",
+            "bbox": [
+              60,
+              2764,
+              2580,
+              2888
+            ],
+            "text": "⇒ 여성 기사(택시, 버스, 화물차 등)분들도 증가하는 추세일 뿐더러, 통계상 여성 운전자의 사고율이 낮은 것으로 나타남.",
+            "prediction": "",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-144f49ae-83bb-48a8-a648-4cfeeb52c19e",
+            "bbox": [
+              13,
+              2961,
+              1813,
+              3038
+            ],
+            "text": "· Victory Belong To The Most Teracious : 성공은 가장 끈질긴 자의 것이다.",
+            "prediction": "",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f30a5267-c0c5-47eb-b994-cfa6b50908c1",
+            "bbox": [
+              6,
+              3096,
+              2391,
+              3179
+            ],
+            "text": "· 산 정상의 바람이 가장 센 이유: 성공할 수록 바람이 세진다는 뜻으로, 바람이 세고 힘들다는 건, 그만큼",
+            "prediction": "",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2f5280cf-ff13-4fed-b839-10cf05bf10b0",
+            "bbox": [
+              815,
+              3191,
+              1563,
+              3287
+            ],
+            "text": "성공한 것이라는 뜻이기도 함.",
+            "prediction": "",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0c783697-513b-4bdc-9efb-56754be70228",
+            "bbox": [
+              1693,
+              1608,
+              2516,
+              1708
+            ],
+            "text": "존재해야 하지만 존재하지 않아야 함.",
+            "prediction": "",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T15:55:29.566Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T15:32:08.107Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 40
+        }
+      ]
     },
     "hf-0162": {
       "id": "hf-0162",
