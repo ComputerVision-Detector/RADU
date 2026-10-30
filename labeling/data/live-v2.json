@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T18:06:29.613Z",
+  "updated_at": "2026-10-30T18:08:01.897Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -21687,20 +21687,445 @@
         "source_sha256": "3275f946a606285826ff62be88740aa6769cab88dabed102e4eb937f43453a6b"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0151-line-0001",
+            "bbox": [
+              117,
+              32,
+              399,
+              125
+            ],
+            "text": "<회귀모델>",
+            "prediction": "$\\langle\\frac{1}{2}\\rangle$ 引撃 $\\langle\\frac{1}{2}\\rangle$",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0002",
+            "bbox": [
+              99,
+              258,
+              539,
+              363
+            ],
+            "text": "· 변수 영향력 해석",
+            "prediction": "- 변수 명밀력 향상",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0003",
+            "bbox": [
+              647,
+              274,
+              1652,
+              383
+            ],
+            "text": "Parameter Estimate: 각 변수의 계수 의미.",
+            "prediction": "Parameter Estimate: 객 변수의 거수 의미.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0004",
+            "bbox": [
+              637,
+              382,
+              1453,
+              491
+            ],
+            "text": "Intercept: 모델의 절편을 의미",
+            "prediction": "Intercept: 모델의 절편을 의미",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0005",
+            "bbox": [
+              637,
+              487,
+              1273,
+              586
+            ],
+            "text": "Standard Error: 표준오차",
+            "prediction": "Standard Error: 표준모자",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0006",
+            "bbox": [
+              637,
+              601,
+              1986,
+              710
+            ],
+            "text": "T value: 선형관계가 얼마나 강한가? (높은 수록 Good)",
+            "prediction": "T value: 변명관계가 멀어나 강한가? (높은 수록 Good)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0007",
+            "bbox": [
+              637,
+              709,
+              1889,
+              821
+            ],
+            "text": "P value: 유의확률 (T 값과 자유도에 따라 결정됨)",
+            "prediction": "P value: 유의확률 (T값과 지속도에 따라 결천된)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0008",
+            "bbox": [
+              637,
+              823,
+              1620,
+              929
+            ],
+            "text": "Toleramce, VIF: 다중공선성 판단 지표.",
+            "prediction": "Tolerance, VIF: 디즐턴성 판단 지표.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0009",
+            "bbox": [
+              104,
+              1023,
+              444,
+              1128
+            ],
+            "text": "· 변수 선택법",
+            "prediction": "- 변수 선택법",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0010",
+            "bbox": [
+              575,
+              1036,
+              2188,
+              1145
+            ],
+            "text": "전진 선택법: 유의미한 독립변수 순으로 변수를 하나씩 추가하는 방법.",
+            "prediction": "전진 선택법: 유의미한 특례변수 손으로 변수를 하나씩 추가하는 방법.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0011",
+            "bbox": [
+              575,
+              1144,
+              2267,
+              1253
+            ],
+            "text": "후진 제거법: 모든 독립변수가 포함된 상태에서 유의미하지 않은 순으로 제거.",
+            "prediction": "후진 제거법: 모든 독립변수가 포함된 상태에서 유의이하지 않은 층으로 제거.",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0012",
+            "bbox": [
+              567,
+              1248,
+              2242,
+              1360
+            ],
+            "text": "단계적 선택법: 처음에는 전진 선택법과 같이 하나씩 추가하다가, 변수가",
+            "prediction": "단계적 변혁법: 채용에는 전진 변혁법과 같이 하나씩 추가하다가, 변수가",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0013",
+            "bbox": [
+              931,
+              1372,
+              2377,
+              1472
+            ],
+            "text": "3개 이상이 되었을 때부터는 추가와 제거를 번갈아 가며 진행.",
+            "prediction": "3개 이상이 되었을 때부터는 후기와 제기를 변경하기 기여 진행.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0014",
+            "bbox": [
+              107,
+              1575,
+              1884,
+              1687
+            ],
+            "text": "· Ridge: 예측에 영향을 거의 미치지 않는 변수에 0에 가까운 가중치를 줌.",
+            "prediction": "- Ridge: 여주에 명창을 거의 마치지 않는 변수에 000 개기로 가중치를 줄.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0015",
+            "bbox": [
+              214,
+              1686,
+              1582,
+              1792
+            ],
+            "text": "$\\rightarrow L2 - norm.$ 계수값이 너무 커지는 것을 방지해줌.",
+            "prediction": "$\\rightarrow L2 - norm.$ 계수감이 너무 커지는 것을 방지해줌.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0016",
+            "bbox": [
+              428,
+              1791,
+              738,
+              1870
+            ],
+            "text": "유클리드 거리",
+            "prediction": "유클리드 거리",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0017",
+            "bbox": [
+              2055,
+              1797,
+              2325,
+              1887
+            ],
+            "text": "결합한 것이",
+            "prediction": "검사한 것이",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0018",
+            "bbox": [
+              2025,
+              1928,
+              2407,
+              2034
+            ],
+            "text": "Elastic Net 임.",
+            "prediction": "Elastic Net in.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0019",
+            "bbox": [
+              107,
+              2010,
+              1889,
+              2119
+            ],
+            "text": "· Lasso: 중요한 변수를 제의한 변수들에 가중치를 0으로 주어서 영향력을 제거함.",
+            "prediction": "- Lasso: 질묘한 변수를 제의한 변수들에 가중지를 0으로 주지서 명창검을 제거한.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0151-line-0020",
+            "bbox": [
+              231,
+              2128,
+              596,
+              2227
+            ],
+            "text": "→ L1 - norm.",
+            "prediction": "- L1 - norm",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ee4b32fc-b84d-4cd2-837e-2f1be93ef38f",
+            "bbox": [
+              2014,
+              2061,
+              2476,
+              2149
+            ],
+            "text": "혼합 비율을 조정하는",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-51a48786-d829-487c-8fd9-8b276f6a191d",
+            "bbox": [
+              2023,
+              2169,
+              2211,
+              2255
+            ],
+            "text": "방식.",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6bcb3e13-2814-43cb-9d1a-05fd64e96d15",
+            "bbox": [
+              423,
+              2223,
+              763,
+              2312
+            ],
+            "text": "맨헤튼 거리",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-4dd47552-c216-464b-806f-119ba3b33dbd",
+            "bbox": [
+              215,
+              2323,
+              375,
+              2471
+            ],
+            "text": "Ridge",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a16a3f54-dc33-40fa-9078-6796a92eec17",
+            "bbox": [
+              1036,
+              2332,
+              1205,
+              2451
+            ],
+            "text": "Lasso",
+            "prediction": "",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-3417c2b7-3bd5-451a-b6b2-f8424a3a9afc",
+            "bbox": [
+              1652,
+              2346,
+              2009,
+              2468
+            ],
+            "text": "Flastic Net.",
+            "prediction": "",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c803bcbd-92fd-4b26-bd7a-485394e7f3ed",
+            "bbox": [
+              111,
+              2945,
+              179,
+              3010
+            ],
+            "text": "L2",
+            "prediction": "",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-1f502c67-4600-464d-ad08-717eb4dc0767",
+            "bbox": [
+              93,
+              3013,
+              204,
+              3087
+            ],
+            "text": "Norm",
+            "prediction": "",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-fc132c87-43f0-404c-b45c-2e97e6017023",
+            "bbox": [
+              278,
+              3084,
+              768,
+              3210
+            ],
+            "text": "최대한 0이 되지 않게.",
+            "prediction": "",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6ac5b09f-01f9-44e6-a990-f2322eb83440",
+            "bbox": [
+              1051,
+              3141,
+              1313,
+              3247
+            ],
+            "text": "0이 되도록.",
+            "prediction": "",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T18:31:29.613Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T18:08:01.897Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 30
+        }
+      ]
     },
     "hf-0152": {
       "id": "hf-0152",
