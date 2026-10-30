@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T16:45:29.584Z",
+  "updated_at": "2026-10-30T16:46:21.484Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -20470,20 +20470,361 @@
         "source_sha256": "60ac514a933828c004936dce94b330b680b9e56fd5cc604074c6849de7d82c9d"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0153-line-0001",
+            "bbox": [
+              50,
+              39,
+              339,
+              132
+            ],
+            "text": "<회귀나무>",
+            "prediction": "<拉斐尔>",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0002",
+            "bbox": [
+              66,
+              167,
+              453,
+              253
+            ],
+            "text": "· 잔차의 제곱합",
+            "prediction": "- 잔재의 제공함",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0003",
+            "bbox": [
+              86,
+              386,
+              1399,
+              485
+            ],
+            "text": "<데이터 구간화> : 이산형 변수를 범주형 변수로 변환.",
+            "prediction": "<미래의 권리> : 이한형 변수를 범주형 변환로 변환.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0004",
+            "bbox": [
+              86,
+              504,
+              2012,
+              600
+            ],
+            "text": "→ 데이터 분석의 성능을 향상 시키기 위해, 해석의 편리성을 위해 사용됨.",
+            "prediction": "- 데이터 본부의 삼성을 향상시키기 위해, 해석의 편리성을 억쳐서 사용되긴.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0005",
+            "bbox": [
+              86,
+              841,
+              2254,
+              941
+            ],
+            "text": "[강화학습방법론, 섀플리 벨류, 요인적 제곱 행렬, 카이제곱, R², 동일표.] † k-means.",
+            "prediction": "[강리학습방법론, 새물리 범주, 요인적 제품행렬, 개기제품, R², 동일표.] † k-means.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0006",
+            "bbox": [
+              2071,
+              969,
+              2279,
+              1096
+            ],
+            "text": "비지도",
+            "prediction": "\\( k_1 \\) (1000)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0007",
+            "bbox": [
+              137,
+              1067,
+              624,
+              1183
+            ],
+            "text": "카이제곱: 교차법.",
+            "prediction": "카이셀랩: 고차범.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0008",
+            "bbox": [
+              162,
+              1185,
+              1475,
+              1278
+            ],
+            "text": "섀플리 벨류 : 각 요소의 기여도. (모든 집합에 대해)",
+            "prediction": "새플리 밸류 : 각 보드의 기억도 (모든 집합에 대해)",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0009",
+            "bbox": [
+              142,
+              1297,
+              1280,
+              1403
+            ],
+            "text": "가변수 처리: 범주형변수를 0.1로 변환.",
+            "prediction": "가변화 차리: 법주형변주를 0.1로 변한.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0010",
+            "bbox": [
+              246,
+              1398,
+              2404,
+              1517
+            ],
+            "text": "→ 3개 이상인 경우에는 (카테고리 -1개)만큼 생성. : 다중공선성 방지를 위해",
+            "prediction": "- 874 이상연 경우에는 (카테고리-174) 먼저 생성. : 디줄링닌천 방지를수밖",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0011",
+            "bbox": [
+              155,
+              1526,
+              1704,
+              1632
+            ],
+            "text": "가중치 벨런싱: 중요한 를 틀리면 더 큰 손실가중치를 부여.",
+            "prediction": "가족의 변전성: 중요한 변화를 틀리면 더 큰 원인을 맞이.",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0012",
+            "bbox": [
+              541,
+              1634,
+              2137,
+              1743
+            ],
+            "text": ": 중요한 클래시를 잘못 분류하면, 더 큰 손실가중치를 부여.",
+            "prediction": ": 중요한 클랜젠을 장옷 묻혀보면, 더 큰 쓰인기효치를 넣어.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0013",
+            "bbox": [
+              167,
+              1742,
+              1323,
+              1855
+            ],
+            "text": "코사인 유사도: 벡터사이의값을 이용하는 것.",
+            "prediction": "퍼식인 옥식듻: 1핵퇴사기의값을 헐하는 것.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0014",
+            "bbox": [
+              167,
+              1847,
+              1704,
+              1973
+            ],
+            "text": "DBSCAN: 밀도 기반 클러스터링기법. ⇒ k 지정 X",
+            "prediction": "DBSCAN: 일로 기반 클러치리기법. => KX 지정 X",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0016",
+            "bbox": [
+              193,
+              2106,
+              746,
+              2202
+            ],
+            "text": "회귀분석의 기본조건",
+            "prediction": "최커블브의 기본조건",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0017",
+            "bbox": [
+              782,
+              2077,
+              1873,
+              2197
+            ],
+            "text": "잔차의 정규성 (정규분포 따르",
+            "prediction": "(장차의 정규법) (정규보호 대신)",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0018",
+            "bbox": [
+              722,
+              2211,
+              1198,
+              2310
+            ],
+            "text": "├ 잔차의 등분산성",
+            "prediction": "- 잔치의 등분산성",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0019",
+            "bbox": [
+              722,
+              2319,
+              1005,
+              2428
+            ],
+            "text": "├ 독립성.",
+            "prediction": "- 독립성.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0020",
+            "bbox": [
+              755,
+              2427,
+              1008,
+              2536
+            ],
+            "text": "- 선형성.",
+            "prediction": "선형성.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0021",
+            "bbox": [
+              205,
+              2555,
+              1552,
+              2680
+            ],
+            "text": "T-value: 높은 수욕 Good. ⇒ X와 Y의 선형관계",
+            "prediction": "T-value: 높은 수욕 Good. $\\Rightarrow$ XDL Y의 선명한비",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0022",
+            "bbox": [
+              216,
+              2686,
+              812,
+              2801
+            ],
+            "text": "P-value: 유의확률.",
+            "prediction": "P-value: 유의력률.",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0023",
+            "bbox": [
+              246,
+              2902,
+              1313,
+              3028
+            ],
+            "text": "식별계수: 각 모델의 평균 R²를 비교.",
+            "prediction": "식별기능: 각 모델의 평균 R²를 비교.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0153-line-0024",
+            "bbox": [
+              261,
+              3118,
+              2467,
+              3254
+            ],
+            "text": "소프트마진: 과적합 방지. 하프마진 이상치를 허용하지 X ⇒ 과적합!!",
+            "prediction": "소프트마지: 과정합 방지. 하드마켓 이상치를 회복하지 X $\\Rightarrow$ 과정암살!",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-456e7d02-f296-4af8-bd73-ddfb994059a8",
+            "bbox": [
+              2105,
+              1940,
+              2342,
+              2068
+            ],
+            "text": "ㅗ",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T17:10:29.584Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T16:46:21.484Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 24
+        }
+      ]
     },
     "hf-0154": {
       "id": "hf-0154",
