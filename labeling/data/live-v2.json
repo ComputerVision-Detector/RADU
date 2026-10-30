@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T13:07:48.307Z",
+  "updated_at": "2026-10-30T13:08:47.455Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -14801,20 +14801,123 @@
         "source_sha256": "566a945d2fef3460197a4da496558163a21a7da2c1e134f2a96bb09921866dc9"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0063-line-0001",
+            "bbox": [
+              142,
+              262,
+              602,
+              359
+            ],
+            "text": "◦중간 질문 & 답",
+            "prediction": "- 축산 관련 & 축산",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0063-line-0002",
+            "bbox": [
+              151,
+              370,
+              1824,
+              480
+            ],
+            "text": "- 정확도를 손실함수로 쓰지 않는 이유 -> 미분이 안 되기 때문",
+            "prediction": "- 잠화도를 손실했던 쇠지 않는 이유 → 이분이 안 되기 때문",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0063-line-0003",
+            "bbox": [
+              157,
+              474,
+              2032,
+              605
+            ],
+            "text": "- 왜 교차엔트로피를 사용하는가? -> 기울기가 갈 전달되기 때문",
+            "prediction": "- 왜 교차엔드리틀 사용하는가? → 기울기가 화촌 전날짜 때문",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0063-line-0004",
+            "bbox": [
+              157,
+              616,
+              2483,
+              738
+            ],
+            "text": "- 왜 Embedding 에서 + = 를 하는가? → 같은 단어의 gradient를 모두 합쳐야 하기 때문",
+            "prediction": "- 왜 Embedding 에너 + = 를 하는가? → 존은 삽이의 gradients을 넣는 삽이로 해머리",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0063-line-0005",
+            "bbox": [
+              160,
+              749,
+              2402,
+              875
+            ],
+            "text": "- 왜 Matmul 계층이 필요한가 → 가중지에 대한 gradient들 계산하기 쉬워서",
+            "prediction": "- 왜 Marmal 계층이 포도한가 → 가중지에 대한 gladness 돌 계산하기 쉬워서",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0063-line-0006",
+            "bbox": [
+              160,
+              895,
+              2314,
+              1013
+            ],
+            "text": "- Softmax와 Cross Entropy 같이 사용 이유 → 역전파 수식이 간단해져서",
+            "prediction": "- Socimax 하 Cross Entropy 졸이 사용 이유 → 확신하 수익이 관념하려서",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0063-line-0007",
+            "bbox": [
+              160,
+              1056,
+              1219,
+              1146
+            ],
+            "text": "- 순전파는 '추론' 역전파는 '학습'",
+            "prediction": "- 순전하는 '축조' 의견하는 '참습'",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-30T13:32:48.307Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T13:08:47.455Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 7
+        }
+      ]
     },
     "hf-0064": {
       "id": "hf-0064",
