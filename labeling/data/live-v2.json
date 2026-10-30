@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T18:57:29.680Z",
+  "updated_at": "2026-10-30T18:58:16.421Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -16813,20 +16813,375 @@
         "source_sha256": "3514e1793442aa1ab5030366375fc1a3ff819bf5ed9fefee320e718aec2c6a12"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0064-line-0001",
+            "bbox": [
+              1614,
+              28,
+              1757,
+              117
+            ],
+            "text": "←",
+            "prediction": "←",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0004",
+            "bbox": [
+              235,
+              338,
+              1053,
+              444
+            ],
+            "text": "· 네거티브 샘플링 (부정적 샘플링)",
+            "prediction": "- 내미보 생활 (부착적 생활형).",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0005",
+            "bbox": [
+              281,
+              435,
+              1727,
+              569
+            ],
+            "text": "- 다중 분류 (다중 콘텐츠 분류)를 이진 분류로 근사하는 것.",
+            "prediction": "- 다중 분류 (대중 콘텐츠 분류)를 연 봉류로 탄사하는 길.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0006",
+            "bbox": [
+              314,
+              524,
+              2377,
+              686
+            ],
+            "text": "L 출력측 가중치행렬 (Embedding Matrix)에서 정답단어와 몇 개의 네거티브",
+            "prediction": "L 홀럭푹 가중치행렬 (Embedding Matrix)에서 접촬벤트에와 열 개의 내미티보",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0007",
+            "bbox": [
+              411,
+              653,
+              2265,
+              803
+            ],
+            "text": "단어에 해당하는 행 (단어 벡터)만 Lookup한 뒤, 각 벡터와 은닉층의",
+            "prediction": "다이어 해충해는 행 (단어 벨터)만 [hook]한 뒤, 각 벨터와 탄날충의",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0008",
+            "bbox": [
+              411,
+              810,
+              1325,
+              940
+            ],
+            "text": "출력 벡터 h의 내적을 계산한다.",
+            "prediction": "폴럭 빅터 1의 내역을 개선한다.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0009",
+            "bbox": [
+              266,
+              1054,
+              1605,
+              1195
+            ],
+            "text": "- 긍정적인 예를 타깃으로 한 경우의 손실을 구함.",
+            "prediction": "- 긍정적인 예를 더징으로 한 경위 손실을 구한도",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0010",
+            "bbox": [
+              359,
+              1169,
+              1727,
+              1327
+            ],
+            "text": "그와 동시에 부정적 예를 몇 개 샘플링(선별)하여,",
+            "prediction": "2와 동시에 부정적 예를 덮개 생활경(선별)하여,",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0011",
+            "bbox": [
+              350,
+              1313,
+              1679,
+              1460
+            ],
+            "text": "그 부정적 예에 대해서도 마찬가지로 손실을 구함.",
+            "prediction": "그 부장책 예에 대해서도 머쥔가치로 손실을 구할.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0012",
+            "bbox": [
+              350,
+              1411,
+              2129,
+              1585
+            ],
+            "text": "그리고 각각의 데이터 (긍정적 예와 샘플링된 부정적 예)의 손실을",
+            "prediction": "그리고 각책제 테이터 (긍정적 애와 삶활성화 부정적 예)의 손실을",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0013",
+            "bbox": [
+              374,
+              1588,
+              1159,
+              1710
+            ],
+            "text": "더한 값을 최종 손실로 함.",
+            "prediction": "다만 좋을 죄종 손실도 한.",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0014",
+            "bbox": [
+              281,
+              1737,
+              868,
+              1863
+            ],
+            "text": "- 부정적인 예 샘플링",
+            "prediction": "- 부정적인 예 생활형",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0015",
+            "bbox": [
+              347,
+              1818,
+              1978,
+              1984
+            ],
+            "text": "L 말뭉치에서 각 단어의 출현 회수를 구해 확률 분포로 나타냄",
+            "prediction": "L 얼룸지에서 농 운아의 줄현 회수를 구해 확론 분포로 나타낼",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0016",
+            "bbox": [
+              441,
+              1971,
+              1168,
+              2109
+            ],
+            "text": "확률분표대로 단어 샘플링",
+            "prediction": "황포분포대로 단어 생활정",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0017",
+            "bbox": [
+              235,
+              2298,
+              502,
+              2408
+            ],
+            "text": "· 유니그램",
+            "prediction": "- 유디컬",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0018",
+            "bbox": [
+              302,
+              2419,
+              965,
+              2549
+            ],
+            "text": "- 하나의 연속된 단어",
+            "prediction": "- 해사의 연속된 한어",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0019",
+            "bbox": [
+              235,
+              2713,
+              518,
+              2847
+            ],
+            "text": "· 바이그램",
+            "prediction": "- 바이그램",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0020",
+            "bbox": [
+              1076,
+              2685,
+              1488,
+              2823
+            ],
+            "text": "⇒ 트라이그램",
+            "prediction": "→ 토자이그램",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0021",
+            "bbox": [
+              281,
+              2846,
+              859,
+              2984
+            ],
+            "text": "- 2개의 연속된 단어",
+            "prediction": "- 2개의 연속된 한어",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0022",
+            "bbox": [
+              1088,
+              2798,
+              1773,
+              2944
+            ],
+            "text": "- 3개의 연속된 단어",
+            "prediction": "- 3개의 연속된 한어",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0023",
+            "bbox": [
+              244,
+              3148,
+              899,
+              3287
+            ],
+            "text": "· bag - of - words",
+            "prediction": "- log - of - w/o/s",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0024",
+            "bbox": [
+              290,
+              3229,
+              2005,
+              3440
+            ],
+            "text": "- 문장의 각 단어를 분산표현으로 변환하고 그합을 구하는 것.",
+            "prediction": "- 문충의 각 단어를 봉안포험으로 변환하고 그합을 구하는 길.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0025",
+            "bbox": [
+              359,
+              3411,
+              1407,
+              3593
+            ],
+            "text": "즉, 단어의 순서를 고려하지 않는 모델",
+            "prediction": "증 손이의 손서들 편리하지 않는오릴",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0064-line-0026",
+            "bbox": [
+              290,
+              3511,
+              1863,
+              3738
+            ],
+            "text": "- 가방안의 단어란 뜻으로 가방 속읟 ㅏㄴ어 순서는 무시됨",
+            "prediction": "- 개방한의 한어잔 쪽으로 개방 후의 손이를 손서는 묵시왔.",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-417b40c9-7899-4fc3-a6c1-b811fcce70b4",
+            "bbox": [
+              1011,
+              953,
+              1518,
+              1043
+            ],
+            "text": "이 값이 최종점수.",
+            "prediction": "",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T19:22:29.680Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T18:58:16.421Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 25
+        }
+      ]
     },
     "hf-0065": {
       "id": "hf-0065",
