@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T18:00:29.809Z",
+  "updated_at": "2026-10-30T18:00:50.232Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -20148,20 +20148,501 @@
         "source_sha256": "6149a437ceb94d501413ab3da78018408f325cd8cbad3757822069a33d574ba7"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0129-line-0001",
+            "bbox": [
+              256,
+              54,
+              1044,
+              141
+            ],
+            "text": "ε_cond: prompt가 반영된 ε 값.",
+            "prediction": "$\\Sigma$-cord: prompt $\\gamma$ 回図 $\\Sigma$ 彼.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0002",
+            "bbox": [
+              251,
+              149,
+              1209,
+              241
+            ],
+            "text": "ε_ uncond: prompt가 반영되지 않은 ε 값.",
+            "prediction": "$\\Sigma$-uncord: prompt $\\gamma$ 回図 $\\Sigma$ 彼.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0003",
+            "bbox": [
+              285,
+              332,
+              1340,
+              415
+            ],
+            "text": "위의 두 개 값의 차를 이용하는 것이 CFG의 원리.",
+            "prediction": "- 채팅 투개 값의 차로 아침하는 것이 CFG이 된다.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0004",
+            "bbox": [
+              24,
+              505,
+              2103,
+              604
+            ],
+            "text": "* CFG: Classifier - Free Guidance,, ⇒ Guidance를 위한 분류기 (Classifier)을 사용하기 않는다는 뜻.",
+            "prediction": "CFG: Classifier - Free Guidance, $\\Rightarrow$ Guidance를 역할 분류기 (Classifier)을 사용하기 않는다는 뜻.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0005",
+            "bbox": [
+              300,
+              591,
+              2362,
+              698
+            ],
+            "text": "⇒ ∴ prompt가 있는 경우와 없는 경우를 같은 U-Net 하나로 학습해 Guidance를 구현함",
+            "prediction": "$\\Rightarrow$ prompt가 있는 법은 검은 U-Net 헤지 학습이 Guidance를 기반한",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0006",
+            "bbox": [
+              31,
+              798,
+              940,
+              872
+            ],
+            "text": "· Reuerse Diffusion 진행을 위한 Architecture.",
+            "prediction": "Reverse Diffusion Architecture.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0007",
+            "bbox": [
+              578,
+              892,
+              664,
+              976
+            ],
+            "text": "x_t",
+            "prediction": "\\( x_t \\)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0008",
+            "bbox": [
+              285,
+              1011,
+              516,
+              1094
+            ],
+            "text": "Null prompt",
+            "prediction": "Null prompt",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0009",
+            "bbox": [
+              726,
+              1011,
+              969,
+              1094
+            ],
+            "text": "Text Prompt",
+            "prediction": "Text Prompt",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0010",
+            "bbox": [
+              1533,
+              1066,
+              1861,
+              1143
+            ],
+            "text": "· self-attention",
+            "prediction": "self-attention",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0011",
+            "bbox": [
+              285,
+              1142,
+              451,
+              1222
+            ],
+            "text": "U-Net",
+            "prediction": "U-Net",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0012",
+            "bbox": [
+              796,
+              1109,
+              969,
+              1183
+            ],
+            "text": "U-Net",
+            "prediction": "U-Net",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0013",
+            "bbox": [
+              1588,
+              1151,
+              2238,
+              1235
+            ],
+            "text": "→ Query, Key, Value: Image",
+            "prediction": "Query, Key, Value: Image",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0014",
+            "bbox": [
+              285,
+              1261,
+              461,
+              1347
+            ],
+            "text": "ε_uncond",
+            "prediction": "$\\Sigma$ uncord",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0015",
+            "bbox": [
+              622,
+              1358,
+              686,
+              1423
+            ],
+            "text": "$\\downarrow$",
+            "prediction": "$\\downarrow$",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0016",
+            "bbox": [
+              833,
+              1249,
+              979,
+              1323
+            ],
+            "text": "ε_cond",
+            "prediction": "$\\Sigma$ cord",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0017",
+            "bbox": [
+              1533,
+              1340,
+              1892,
+              1408
+            ],
+            "text": "· cross.attention",
+            "prediction": "cross-attention",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0018",
+            "bbox": [
+              295,
+              1429,
+              388,
+              1518
+            ],
+            "text": "┌ ε",
+            "prediction": "$\\Gamma$",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0019",
+            "bbox": [
+              387,
+              1447,
+              1250,
+              1536
+            ],
+            "text": "guidance = ε_uncord + w (ε_uncord - ε_cond)┘",
+            "prediction": "Guidance = $\\sum$ uncord + W ($\\sum$ uncord - $\\sum$ cond) $\\downarrow$",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0020",
+            "bbox": [
+              1564,
+              1432,
+              1962,
+              1512
+            ],
+            "text": "$\\rightarrow$ Query: Image",
+            "prediction": "$\\rightarrow$ Query: Image",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0021",
+            "bbox": [
+              462,
+              1563,
+              984,
+              1637
+            ],
+            "text": "Reverse Diffusion 진행.",
+            "prediction": "Reverse Diffusion - 긴장.",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0022",
+            "bbox": [
+              1634,
+              1529,
+              2045,
+              1609
+            ],
+            "text": "Key, Value: Text.",
+            "prediction": "Key, Value: Text.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0023",
+            "bbox": [
+              14,
+              1800,
+              347,
+              1880
+            ],
+            "text": "U-Net 내부의",
+            "prediction": "U-Net w/u/e",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0024",
+            "bbox": [
+              387,
+              1809,
+              1323,
+              1880
+            ],
+            "text": "Transformer. (self $\\rightarrow$ Cross $\\rightarrow$ MLP 순서)",
+            "prediction": "Transformer. (self $\\rightarrow$ Cross $\\rightarrow$ HLP)",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0025",
+            "bbox": [
+              387,
+              1886,
+              2139,
+              1978
+            ],
+            "text": "prompt가 있음에도 불구하고 Cross attention부터 수행하지 않는 이유?",
+            "prediction": "prinopt가 않는데도 복구하고 Cross attention 부류 수정하지 않는 이유?",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0026",
+            "bbox": [
+              372,
+              1977,
+              2151,
+              2072
+            ],
+            "text": "⇒ future Map w의 Token들은 서로의 위치를 모르기 데이터 서로의 위치를",
+            "prediction": "$\\Rightarrow$ future Map well token론은 서의의치를 모르기 데이터 A321 익시즌",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0027",
+            "bbox": [
+              443,
+              2081,
+              1369,
+              2161
+            ],
+            "text": "알기 위해 self attention을 우선적으로 수행.",
+            "prediction": "- 길가 위치 self attention를 수행적으로 수행.",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0028",
+            "bbox": [
+              363,
+              2175,
+              1502,
+              2264
+            ],
+            "text": "$\\therefore$ 이미의 내부의 문맥을 먼저 만들기 위한 작업인 것.",
+            "prediction": "$\\therefore$ 이미의 씨뿌리 문명을 떠올려 살펴 자신만 것.",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0029",
+            "bbox": [
+              353,
+              2358,
+              2284,
+              2444
+            ],
+            "text": "cross attention: self attention을 통해 만들어진 문맥 위에 prompt를 입히는 작업.",
+            "prediction": "cross attention: self attention을 둘레 만들어진 문명 위패 prompt를 입히는 장면.",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0030",
+            "bbox": [
+              249,
+              2562,
+              315,
+              2633
+            ],
+            "text": "*",
+            "prediction": "*",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0031",
+            "bbox": [
+              363,
+              2541,
+              1696,
+              2633
+            ],
+            "text": "Quary = 이미지, key, value = 텍스트인 이유는?",
+            "prediction": "Query = 0.0021, key, value = 패넷트인 •막는?",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0032",
+            "bbox": [
+              353,
+              2638,
+              1621,
+              2734
+            ],
+            "text": "⇒ Image를 prompt에 맞게 변경하고자 하는 것이 때문에,",
+            "prediction": "$\\Rightarrow$ Image를 prompt이 있게 변경하자 하는 것이 떠돼지,",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0033",
+            "bbox": [
+              397,
+              2730,
+              1936,
+              2837
+            ],
+            "text": "Image가 prompt에서 자신과 관련있는 정보를 찾고자 하기 때문.",
+            "prediction": "Image? prompt 이씨 지난과 관련있는 정보를 참고가 하기 어렵다.",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0129-line-0034",
+            "bbox": [
+              118,
+              2915,
+              2413,
+              3029
+            ],
+            "text": "이후에 MLP(Feel Fold Networks)를 통해, prompt가 반영된 feature를 비선형적으로 가공",
+            "prediction": "MLP(Feel Fold Networks) 클릭, prompt가 반영된 feature로 미념한 패턴으로 경우.",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T18:25:29.809Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T18:00:50.232Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 34
+        }
+      ]
     },
     "hf-0130": {
       "id": "hf-0130",
