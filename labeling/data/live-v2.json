@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T14:06:29.665Z",
+  "updated_at": "2026-10-30T14:07:28.830Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -17023,8 +17023,8 @@
         "source_sha256": "e43ccd7d7bb630cd23379c4566bcf93a32fd9879442d19a60890e2b538277f01"
       },
       "bbox_annotation": {
-        "status": "draft",
-        "revision": 1,
+        "status": "verified",
+        "revision": 2,
         "annotator": "김혜린",
         "notes": "",
         "no_text": false,
@@ -17038,11 +17038,11 @@
               896,
               404
             ],
-            "text": "heighti 40px;",
+            "text": "height: 40px;",
             "prediction": "height: 40px;",
             "order": 1,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0116-line-0002",
@@ -17056,7 +17056,7 @@
             "prediction": "width: 180px;",
             "order": 2,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0116-line-0003",
@@ -17070,7 +17070,7 @@
             "prediction": "line-height: 40px;",
             "order": 3,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0116-line-0004",
@@ -17080,11 +17080,11 @@
               983,
               730
             ],
-            "text": "font-size: 16px;",
+            "text": "font-size: 14px;",
             "prediction": "font-size: 16px;",
             "order": 4,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0116-line-0005",
@@ -17098,7 +17098,7 @@
             "prediction": "font-weight: bold;",
             "order": 5,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0116-line-0006",
@@ -17108,11 +17108,11 @@
               1222,
               960
             ],
-            "text": "background-color: 666666;",
+            "text": "background-color: cccccc;",
             "prediction": "background-color: 666666;",
             "order": 6,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0116-line-0007",
@@ -17122,11 +17122,11 @@
               1047,
               1077
             ],
-            "text": "color: #FFFFFF;",
+            "text": "color: #ffffff;",
             "prediction": "color: #FFFFFF;",
             "order": 7,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0116-line-0008",
@@ -17136,11 +17136,11 @@
               929,
               1186
             ],
-            "text": "float: 16pt;",
+            "text": "float: left;",
             "prediction": "float: 16pt;",
             "order": 8,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0116-line-0009",
@@ -17150,11 +17150,11 @@
               463,
               1311
             ],
-            "text": "3",
+            "text": "}",
             "prediction": "3",
             "order": 9,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0116-line-0010",
@@ -17164,11 +17164,11 @@
               1101,
               1416
             ],
-            "text": ".submenu > li > a:hover",
+            "text": ".submenu > li > a:hover{",
             "prediction": ".submenu > li > a:hover",
             "order": 10,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0116-line-0011",
@@ -17182,7 +17182,7 @@
             "prediction": "background-color: #999999;",
             "order": 11,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0116-line-0012",
@@ -17196,7 +17196,7 @@
             "prediction": "color: #ffffff00;",
             "order": 12,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0116-line-0013",
@@ -17206,20 +17206,23 @@
               472,
               1746
             ],
-            "text": "3",
+            "text": "}",
             "prediction": "3",
             "order": 13,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           }
         ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T14:31:29.665Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-10-30T14:07:28.830Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 2,
+          "box_count": 13
+        },
         {
           "at": "2026-10-30T14:05:25.833Z",
           "author": "김혜린",
