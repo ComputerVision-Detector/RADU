@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T16:36:26.732Z",
+  "updated_at": "2026-10-30T16:36:48.173Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -21695,7 +21695,7 @@
       },
       "bbox_annotation": {
         "status": "verified",
-        "revision": 2,
+        "revision": 3,
         "annotator": "김혜린",
         "notes": "",
         "no_text": false,
@@ -22232,15 +22232,32 @@
             "order": 38,
             "uncertain": false,
             "reviewed": true
+          },
+          {
+            "id": "line-5f359529-f149-4549-bbda-e736c96f410a",
+            "bbox": [
+              190,
+              2269,
+              954,
+              2363
+            ],
+            "text": "- 장점: 자연스럽고 생성 자유도가 높음.",
+            "prediction": "",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
           }
         ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T17:01:26.732Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-10-30T16:36:48.173Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 3,
+          "box_count": 39
+        },
         {
           "at": "2026-10-30T16:36:22.768Z",
           "author": "김혜린",
