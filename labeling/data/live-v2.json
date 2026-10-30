@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T17:27:29.657Z",
+  "updated_at": "2026-10-30T17:29:48.438Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -19817,20 +19817,165 @@
         "source_sha256": "46d040e1a071a493d58365bfca163f6f162616b8bdd697a595328889224dc94b"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0143-line-0001",
+            "bbox": [
+              448,
+              73,
+              1516,
+              171
+            ],
+            "text": "├ 대체 키 (alternate key) : 기본 키로 선정되지 않은 후보키.",
+            "prediction": "…… 대체 키 (alternate key) : 기본 키로 선정되지 않은 후보이.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0143-line-0002",
+            "bbox": [
+              441,
+              163,
+              1767,
+              281
+            ],
+            "text": "└ 외래 키 (foreign key) : 다른 릴레이션의 key를 참조.",
+            "prediction": "…… 외래 키 (foreign key) : 다른 림레이션의 key를 참조.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0143-line-0003",
+            "bbox": [
+              2,
+              377,
+              785,
+              459
+            ],
+            "text": "무결성 제약 조건 ------------",
+            "prediction": "무덤성 제약 조건 --",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a75d5cfd-f464-4945-8751-c794cf2e20d4",
+            "bbox": [
+              343,
+              465,
+              1759,
+              583
+            ],
+            "text": "· 데이터 무결성 : DB에서 저장된 데이터의 일관성과 정확성을 지키는 것.",
+            "prediction": "",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d7fd8f16-6401-4eb0-ba43-f523d0f11d22",
+            "bbox": [
+              8,
+              647,
+              823,
+              771
+            ],
+            "text": "조인(join)----------",
+            "prediction": "",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-bdfd9ce9-24de-4781-8bf7-4a4f33455988",
+            "bbox": [
+              339,
+              775,
+              742,
+              852
+            ],
+            "text": "· 조인 연산 종류",
+            "prediction": "",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6c1cc069-0789-400e-be59-8d14f64d0b81",
+            "bbox": [
+              392,
+              852,
+              1598,
+              957
+            ],
+            "text": "1) 세타 조인 : 두 릴레이션의 속성값을 비교 → 맞는 튜플 반환",
+            "prediction": "",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a7cb5d2b-af9b-4344-a2e7-08d01bd70bbf",
+            "bbox": [
+              398,
+              950,
+              2000,
+              1059
+            ],
+            "text": "2) 자연 조인 : 속성 이름이 같은 튜플만 대상으로 하되, 중복 속성 제거 후 반환.",
+            "prediction": "",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-018b689d-3cd7-4eac-8ec1-9a837d35f990",
+            "bbox": [
+              371,
+              1238,
+              1895,
+              1356
+            ],
+            "text": "5) 외부 조인 : 조인에 실패한 튜플을 모두 보여주되, 값이 없는 대응 속성에는 Null.",
+            "prediction": "",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-49a40072-a04a-40d4-b89c-fa00cb789a2f",
+            "bbox": [
+              368,
+              1354,
+              1705,
+              1454
+            ],
+            "text": "6) 세미 조인 : 자연 조인을 한 후, 한 쪽의 릴레이션 결과만 반환.",
+            "prediction": "",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T17:52:29.657Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T17:29:48.438Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 10
+        }
+      ]
     },
     "hf-0144": {
       "id": "hf-0144",
