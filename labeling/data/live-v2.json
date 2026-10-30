@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T18:39:29.652Z",
+  "updated_at": "2026-10-30T18:42:02.857Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -13622,20 +13622,361 @@
         "source_sha256": "9a30a58c6884e5d55c048e857b05f41db3e7cc9422a85ff048baebff6524c6e9"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0053-line-0002",
+            "bbox": [
+              220,
+              290,
+              378,
+              375
+            ],
+            "text": "· 벡터",
+            "prediction": "- 넥더",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0053-line-0003",
+            "bbox": [
+              229,
+              391,
+              811,
+              496
+            ],
+            "text": "- 크기와 방향을 가진 양",
+            "prediction": "- 크자와 반참을 가진 샷.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0053-line-0004",
+            "bbox": [
+              235,
+              487,
+              1924,
+              621
+            ],
+            "text": "- 숫자가 일렬로 늘어선 집합으로 표현 가능. (Python 에선 1차원 배열).",
+            "prediction": "- 숫차 열절로 붙어선 검찰으로 표현 가능. (Bathroom 에서 1차원 배열).",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0053-line-0005",
+            "bbox": [
+              196,
+              790,
+              342,
+              879
+            ],
+            "text": "· 행렬",
+            "prediction": "- 행열",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0053-line-0006",
+            "bbox": [
+              208,
+              888,
+              1382,
+              1013
+            ],
+            "text": "- 숫자가 2차원 형태 (사각형 형상)도 늘어선 것.",
+            "prediction": "- 소저 2곳원 청태 (서초청형송)로 늘어진 것.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0053-line-0007",
+            "bbox": [
+              244,
+              1040,
+              753,
+              1129
+            ],
+            "text": "- 행: 가로줄 (row)",
+            "prediction": "- 행: 가도를 (tow)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-12093ef4-e437-4520-bdf0-1487f7cdf3e9",
+            "bbox": [
+              253,
+              1168,
+              802,
+              1303
+            ],
+            "text": "열:세로줄(col)",
+            "prediction": "",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2031a957-728d-420e-80f4-2ffffddebedc",
+            "bbox": [
+              201,
+              1314,
+              1175,
+              1444
+            ],
+            "text": "- 숫자들을 세로로 나열: 열벡터",
+            "prediction": "",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-19a8f0d2-b68f-4013-979d-9a4dd051c719",
+            "bbox": [
+              169,
+              1447,
+              1151,
+              1593
+            ],
+            "text": "숫자들을 가로로 나열 :행벡터",
+            "prediction": "",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-77f3b54f-f776-488f-8bc9-6d3dd9ebc069",
+            "bbox": [
+              145,
+              1844,
+              307,
+              1953
+            ],
+            "text": "· 텐서",
+            "prediction": "",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d188013f-b08a-4798-ab36-ca503fdb9ea8",
+            "bbox": [
+              153,
+              1958,
+              2024,
+              2139
+            ],
+            "text": "- 벡터와 행렬을 확장하여 숫자 집합을 N차원으로 표현한 것.",
+            "prediction": "",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c2c7cb76-673c-449b-9fe9-ec7112a016e4",
+            "bbox": [
+              72,
+              2523,
+              1243,
+              2677
+            ],
+            "text": "· 완전연결 계층에 의한 변환은 '선형' 변환",
+            "prediction": "",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-7122a7c2-c4c2-4d6e-b89e-a20e34b561da",
+            "bbox": [
+              96,
+              2664,
+              1437,
+              2840
+            ],
+            "text": "'비선형' 효과를 부여하는 것이 활성화 함수.",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-85fdc829-f2f2-4ff6-9a7e-4d40b7be5203",
+            "bbox": [
+              158,
+              2794,
+              2189,
+              2988
+            ],
+            "text": "- 비선형 활성화 함수를 이용함으로써 신경망의 표현력을 높일 수 있음.",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-fe45856c-508b-4b2b-bf9c-74e0bc65bffc",
+            "bbox": [
+              840,
+              1206,
+              916,
+              1296
+            ],
+            "text": "col",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2657ffbe-16f2-4ab5-b25a-6d14be2d82c2",
+            "bbox": [
+              945,
+              1226,
+              1000,
+              1283
+            ],
+            "text": "↙",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f2cdd0c4-e0b7-4c0b-88a2-c8daf7a973c9",
+            "bbox": [
+              1166,
+              1200,
+              1208,
+              1269
+            ],
+            "text": "6",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-94bdf558-64a3-4020-815b-57ed1cbf5db2",
+            "bbox": [
+              1158,
+              1131,
+              1238,
+              1173
+            ],
+            "text": "4",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-85265087-438c-4087-ac45-02f45c34323e",
+            "bbox": [
+              1137,
+              1056,
+              1220,
+              1107
+            ],
+            "text": "2",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a770e9dd-53cb-4dc6-8b64-8fdbb2e776e9",
+            "bbox": [
+              1046,
+              1061,
+              1091,
+              1105
+            ],
+            "text": "1",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-963d0d74-086d-4f3a-902b-fcb2fdb9d7bb",
+            "bbox": [
+              1064,
+              1136,
+              1111,
+              1178
+            ],
+            "text": "3",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ea296de1-325e-4446-9dd3-bfac2a301691",
+            "bbox": [
+              1048,
+              1194,
+              1101,
+              1241
+            ],
+            "text": "5",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b1a44820-a7bd-43f2-b443-fdb5200a29ad",
+            "bbox": [
+              1320,
+              990,
+              1440,
+              1048
+            ],
+            "text": "row",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-85265e95-7eb8-4799-a85a-9a769f510dc0",
+            "bbox": [
+              1260,
+              1003,
+              1296,
+              1051
+            ],
+            "text": "↙",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T19:04:29.652Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T18:42:02.857Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 24
+        }
+      ]
     },
     "hf-0054": {
       "id": "hf-0054",
