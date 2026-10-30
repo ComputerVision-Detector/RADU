@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T14:05:02.363Z",
+  "updated_at": "2026-10-30T14:05:25.833Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -17023,20 +17023,211 @@
         "source_sha256": "e43ccd7d7bb630cd23379c4566bcf93a32fd9879442d19a60890e2b538277f01"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "draft",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0116-line-0001",
+            "bbox": [
+              520,
+              318,
+              896,
+              404
+            ],
+            "text": "heighti 40px;",
+            "prediction": "height: 40px;",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0116-line-0002",
+            "bbox": [
+              520,
+              431,
+              890,
+              509
+            ],
+            "text": "width: 180px;",
+            "prediction": "width: 180px;",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0116-line-0003",
+            "bbox": [
+              541,
+              544,
+              1014,
+              621
+            ],
+            "text": "line-height: 40px;",
+            "prediction": "line-height: 40px;",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0116-line-0004",
+            "bbox": [
+              541,
+              657,
+              983,
+              730
+            ],
+            "text": "font-size: 16px;",
+            "prediction": "font-size: 16px;",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0116-line-0005",
+            "bbox": [
+              541,
+              770,
+              1062,
+              847
+            ],
+            "text": "font-weight: bold;",
+            "prediction": "font-weight: bold;",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0116-line-0006",
+            "bbox": [
+              556,
+              878,
+              1222,
+              960
+            ],
+            "text": "background-color: 666666;",
+            "prediction": "background-color: 666666;",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0116-line-0007",
+            "bbox": [
+              556,
+              999,
+              1047,
+              1077
+            ],
+            "text": "color: #FFFFFF;",
+            "prediction": "color: #FFFFFF;",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0116-line-0008",
+            "bbox": [
+              556,
+              1108,
+              929,
+              1186
+            ],
+            "text": "float: 16pt;",
+            "prediction": "float: 16pt;",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0116-line-0009",
+            "bbox": [
+              408,
+              1225,
+              463,
+              1311
+            ],
+            "text": "3",
+            "prediction": "3",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0116-line-0010",
+            "bbox": [
+              414,
+              1334,
+              1101,
+              1416
+            ],
+            "text": ".submenu > li > a:hover",
+            "prediction": ".submenu > li > a:hover",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0116-line-0011",
+            "bbox": [
+              532,
+              1435,
+              1361,
+              1517
+            ],
+            "text": "background-color: #999999;",
+            "prediction": "background-color: #999999;",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0116-line-0012",
+            "bbox": [
+              526,
+              1544,
+              1007,
+              1625
+            ],
+            "text": "color: #ffffff00;",
+            "prediction": "color: #ffffff00;",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "hf-0116-line-0013",
+            "bbox": [
+              423,
+              1665,
+              472,
+              1746
+            ],
+            "text": "3",
+            "prediction": "3",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": false
+          }
+        ]
       },
       "claim": {
         "name": "김혜린",
         "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T14:30:02.363Z"
+        "until": "2026-10-30T14:30:25.833Z"
       },
-      "history": []
+      "history": [
+        {
+          "at": "2026-10-30T14:05:25.833Z",
+          "author": "김혜린",
+          "status": "draft",
+          "revision": 1,
+          "box_count": 13
+        }
+      ]
     },
     "hf-0117": {
       "id": "hf-0117",
