@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T14:39:29.542Z",
+  "updated_at": "2026-10-30T14:40:04.755Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -5551,20 +5551,347 @@
         "source_sha256": "416aa328ebfdcac41f6be7722bd0a16f472af6e289c617544a59144c3fda3920"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0018-line-0001",
+            "bbox": [
+              423,
+              4,
+              1077,
+              117
+            ],
+            "text": "SVN: 서포트 벡터를 이용하는",
+            "prediction": "SUN: 서포도 백이를 이용하는",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0002",
+            "bbox": [
+              444,
+              108,
+              938,
+              206
+            ],
+            "text": "머신러닝 방법론의 큰 틀",
+            "prediction": "매젠 밤밤로의 끈 흘",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0005",
+            "bbox": [
+              196,
+              459,
+              1431,
+              625
+            ],
+            "text": "- 결정 경계를 정하는 문제에서 고려할 사항",
+            "prediction": "- 걱정 경계를 잡히는 문제에서 따라할 사항",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0006",
+            "bbox": [
+              302,
+              584,
+              1325,
+              730
+            ],
+            "text": "1. 대부분의 데이터가 선형 분류가 불가능",
+            "prediction": "1. 채널분의 태양가 선형 분류가 불가능",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0007",
+            "bbox": [
+              396,
+              721,
+              1001,
+              859
+            ],
+            "text": "→ 비선형 분류기가 필요",
+            "prediction": "→ 빠접 분류가 필요",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0008",
+            "bbox": [
+              260,
+              951,
+              1325,
+              1097
+            ],
+            "text": "2. 과적합/과잉적합을 피해야 함.",
+            "prediction": "2. 과정범 / 과일경합 물 피해야 함.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0009",
+            "bbox": [
+              556,
+              846,
+              1116,
+              972
+            ],
+            "text": "SUM, 신경망 등...",
+            "prediction": "SUM, 성장 등...",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0010",
+            "bbox": [
+              1421,
+              814,
+              2377,
+              1004
+            ],
+            "text": "- 과적합으로 훈련집합에 정확도는 높지만",
+            "prediction": "- 규찰으로 협력 감축에 정보도 높지는 늦지는 않아요",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0011",
+            "bbox": [
+              1475,
+              903,
+              2438,
+              1089
+            ],
+            "text": "테스트 집합에 대한 정확도는 떨어지는 현상",
+            "prediction": "테스트 접참에 따라 정보도 열렸다 원상",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0012",
+            "bbox": [
+              374,
+              1072,
+              1310,
+              1210
+            ],
+            "text": "→ ex 아웃라이어에 의한 과적합.",
+            "prediction": "→ ex 아웃자이어에 의한 과정함.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0013",
+            "bbox": [
+              547,
+              1145,
+              2247,
+              1335
+            ],
+            "text": "- 아웃라이어를 맞추기 위해 과도하게 복잡한 결정 경계를 만든 경우",
+            "prediction": "- 옷접어서를 잊혀 왜에 따라져 복합한 결정 경제를 먼저 경우",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0014",
+            "bbox": [
+              181,
+              1439,
+              1694,
+              1577
+            ],
+            "text": "- SUM에서 두 부류 까지의 거리 = 여백 (margin)",
+            "prediction": "- SUM에서 득 부유 개지의 거리 = 여백 (margin)",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0015",
+            "bbox": [
+              181,
+              2096,
+              723,
+              2194
+            ],
+            "text": "- SUM 학습 알고리즘",
+            "prediction": "- SUM 환급 알고침증",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0016",
+            "bbox": [
+              244,
+              2193,
+              1464,
+              2327
+            ],
+            "text": "- 여백을 최대화화는 결정경계릉 찾는 것.",
+            "prediction": "- 옛날을 좌채하는 절장경계를 쫓는 것.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0017",
+            "bbox": [
+              244,
+              2322,
+              1664,
+              2448
+            ],
+            "text": "- 선형 분류 한계를 벗어나기 위해 커널 트릭을 사용.",
+            "prediction": "- 선형 분주 학계를 봤어내 위해 거닐 트럼을 사용.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0018",
+            "bbox": [
+              238,
+              2725,
+              1089,
+              2831
+            ],
+            "text": "- SUM에서 사용하는 커널 함수",
+            "prediction": "- SUM에서 사용하는 거널 합수",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0019",
+            "bbox": [
+              311,
+              2846,
+              636,
+              2964
+            ],
+            "text": "polynomial",
+            "prediction": "polynomial",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0020",
+            "bbox": [
+              311,
+              2971,
+              675,
+              3073
+            ],
+            "text": "radial basis",
+            "prediction": "radial basis",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0021",
+            "bbox": [
+              311,
+              3108,
+              602,
+              3214
+            ],
+            "text": "sigmoid",
+            "prediction": "sigmoid",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0022",
+            "bbox": [
+              217,
+              3241,
+              2039,
+              3351
+            ],
+            "text": "- 여백에 크기와 잘못 분류한 샘플의 수는 트레이드 오프 관계",
+            "prediction": "- 예뻐에 크기와 잘못 밝혀져 생풀의 수는 드레이트 모드 컨커",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0023",
+            "bbox": [
+              238,
+              3378,
+              2105,
+              3492
+            ],
+            "text": "- SUM에는 여백의 크기와 잘못 분류한 샘플의 수 사이에서",
+            "prediction": "- SUM에는 여백의 크기로 잘못 분류한 생족의 수 사이에서",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0024",
+            "bbox": [
+              350,
+              3503,
+              1464,
+              3613
+            ],
+            "text": "둘을 조정하는 하이퍼 매개변수가 있음.",
+            "prediction": "돌을 조절하는 하이티 배벤스가 있음.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0018-line-0025",
+            "bbox": [
+              359,
+              3628,
+              1854,
+              3774
+            ],
+            "text": "C를 여백, C 여백↑, 잘못 분류한 샘플↑",
+            "prediction": "(C를 4 캡↓, C는 여백↑, 총론 붙는십불↑",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "6be33c5a-7092-46e0-8238-612e07e7bfe8",
-        "until": "2026-10-30T15:03:03.613Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T14:40:04.755Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 23
+        }
+      ]
     },
     "hf-0019": {
       "id": "hf-0019",
