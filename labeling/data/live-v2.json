@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T18:24:29.638Z",
+  "updated_at": "2026-10-30T18:24:49.072Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -8171,20 +8171,277 @@
         "source_sha256": "97a196399291ec0319a5ca8e0ca39b74dbce75feffdb69b04b5b29f77d5fd946"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0032-line-0003",
+            "bbox": [
+              311,
+              403,
+              1283,
+              533
+            ],
+            "text": "· 입력층, 은닉층, 출력 층",
+            "prediction": "- 입력흡, 은닉흡, 출력 흡",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-1aab5273-e786-406f-bf09-35065eacdb9f",
+            "bbox": [
+              383,
+              1187,
+              618,
+              1368
+            ],
+            "text": "입력층",
+            "prediction": "",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-07c2e4a5-a5cf-4bac-ba8a-de1a6a1d3e13",
+            "bbox": [
+              848,
+              1214,
+              1067,
+              1352
+            ],
+            "text": "은닉층",
+            "prediction": "",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5dfe89f6-aab4-4b05-9b84-bebd4e4acaf2",
+            "bbox": [
+              1264,
+              1176,
+              1483,
+              1341
+            ],
+            "text": "출력층",
+            "prediction": "",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5d8c2ff3-8609-45d0-98f4-7af94c851258",
+            "bbox": [
+              315,
+              1487,
+              561,
+              1596
+            ],
+            "text": "· 편향",
+            "prediction": "",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-4bd23f74-28e7-44c0-88be-580cf453c07f",
+            "bbox": [
+              396,
+              1587,
+              2105,
+              1736
+            ],
+            "text": "- 뉴런이 얼마나 쉽게 활성화 되냐를 제어.",
+            "prediction": "",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6635b2bf-f2e3-471a-a5a1-814308492a5d",
+            "bbox": [
+              344,
+              1752,
+              610,
+              1875
+            ],
+            "text": "· 가중치",
+            "prediction": "",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6c1a58dd-bb5c-4ac2-99a0-1b77558d5616",
+            "bbox": [
+              1505,
+              1517,
+              1651,
+              1617
+            ],
+            "text": "느",
+            "prediction": "",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-1634d420-13a8-493b-aaf9-40aff2faa3e0",
+            "bbox": [
+              418,
+              1866,
+              1551,
+              2004
+            ],
+            "text": "- 각 신호의 영향력을 제어.",
+            "prediction": "",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d2922200-18dd-4c53-af80-84674452d7ae",
+            "bbox": [
+              312,
+              2047,
+              918,
+              2182
+            ],
+            "text": "· 활성화 함수",
+            "prediction": "",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b29aaa95-80d9-41fb-b562-80b75742f8d3",
+            "bbox": [
+              345,
+              2163,
+              2300,
+              2304
+            ],
+            "text": "- 입력 신호의 총합을 출력 신호로 변환하는 함수.",
+            "prediction": "",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-fbaa8122-a130-4ce6-8d63-650806706341",
+            "bbox": [
+              285,
+              2318,
+              1359,
+              2466
+            ],
+            "text": "· 해당 책에선 뉴런 = 노드",
+            "prediction": "",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-93d78a4c-f4c7-4923-a9c1-c292cffd52c6",
+            "bbox": [
+              277,
+              2483,
+              1372,
+              2602
+            ],
+            "text": "· 단층 퍼셉트론 = 계단 함수",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c58ba5e7-e9ea-4904-ae32-029f8a17b6bc",
+            "bbox": [
+              404,
+              2602,
+              2249,
+              2748
+            ],
+            "text": "- 계속 0이다가 어떠한 순간(임계값을 넘은 순간)",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ad856cf1-bd3b-40d0-926d-dfe9e0b3ad1a",
+            "bbox": [
+              502,
+              2756,
+              975,
+              2918
+            ],
+            "text": "1로 변환",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-47c25465-97b7-4aa2-b031-86fbcedd03a9",
+            "bbox": [
+              569,
+              2891,
+              791,
+              3037
+            ],
+            "text": "임계값",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-80227fee-4eef-43af-862a-f86ef5a38e42",
+            "bbox": [
+              264,
+              3186,
+              2341,
+              3386
+            ],
+            "text": "· 활성화 함수는 임계값을 경게로 출력이 바뀜.",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-61257aa0-06f1-4705-9348-0ac80f0071fb",
+            "bbox": [
+              1094,
+              2894,
+              1197,
+              3026
+            ],
+            "text": "1",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T18:49:29.638Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T18:24:49.072Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 18
+        }
+      ]
     },
     "hf-0033": {
       "id": "hf-0033",
