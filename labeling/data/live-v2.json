@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T16:37:08.356Z",
+  "updated_at": "2026-10-30T16:37:42.495Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -20513,7 +20513,7 @@
       },
       "bbox_annotation": {
         "status": "verified",
-        "revision": 1,
+        "revision": 2,
         "annotator": "김혜린",
         "notes": "",
         "no_text": false,
@@ -20826,15 +20826,46 @@
             "order": 22,
             "uncertain": false,
             "reviewed": true
+          },
+          {
+            "id": "line-5f97c132-c587-4176-8c65-7485186cf391",
+            "bbox": [
+              1499,
+              1189,
+              2252,
+              1269
+            ],
+            "text": "위 두 개를 모두 만족하는 것이",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ef9883f5-6e2f-4efb-b2c2-a675dcbd1283",
+            "bbox": [
+              1484,
+              1275,
+              2176,
+              1378
+            ],
+            "text": "본 연구의 이상적인 상태임.",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
           }
         ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T17:02:08.356Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-10-30T16:37:42.495Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 2,
+          "box_count": 24
+        },
         {
           "at": "2026-10-30T16:35:27.331Z",
           "author": "김혜린",
