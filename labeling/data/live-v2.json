@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T17:18:29.569Z",
+  "updated_at": "2026-10-30T17:19:29.623Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -20836,20 +20836,725 @@
         "source_sha256": "63d14353cefb40d84691518e4a9f8cdc5fef03a78ea74d2055363330a8afc9af"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0154-line-0001",
+            "bbox": [
+              1284,
+              0,
+              1567,
+              79
+            ],
+            "text": "추천 model.",
+            "prediction": "model.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0154-line-0002",
+            "bbox": [
+              1244,
+              88,
+              1952,
+              191
+            ],
+            "text": "→ [SD 1.5 Inpainting Model.]",
+            "prediction": "[SD 1.5 Impointing Model.]",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0154-line-0003",
+            "bbox": [
+              22,
+              275,
+              567,
+              388
+            ],
+            "text": "· Diffusion Inpainting",
+            "prediction": "Diffusion Inpainting",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0154-line-0004",
+            "bbox": [
+              24,
+              387,
+              1067,
+              487
+            ],
+            "text": "[ 기존 Image + Mask + Prompt] ⇒ input.",
+            "prediction": "[ Image + Mask + Prompt] => Input.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0154-line-0005",
+            "bbox": [
+              34,
+              486,
+              1084,
+              602
+            ],
+            "text": "Output: Mask 영역에 대한 Diffusion 결과.",
+            "prediction": "Output: Mask Diffusion 22.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0154-line-0006",
+            "bbox": [
+              34,
+              737,
+              414,
+              830
+            ],
+            "text": "· Pose control",
+            "prediction": "Pose control",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0154-line-0007",
+            "bbox": [
+              997,
+              714,
+              1423,
+              820
+            ],
+            "text": "(Utility 정보)",
+            "prediction": "(Utility)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0154-line-0008",
+            "bbox": [
+              98,
+              938,
+              1510,
+              1058
+            ],
+            "text": "· pose estimator: head, shoulder, heep, knee, ankle",
+            "prediction": "- pose estimator: head, shoulder, keep, knee, ankle",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0154-line-0009",
+            "bbox": [
+              84,
+              1047,
+              1581,
+              1177
+            ],
+            "text": "⇒ Original - pose estimator - Control net pose - Diffusion",
+            "prediction": "Original - pose estimator - Control net pose - Diffusion",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0154-line-0010",
+            "bbox": [
+              534,
+              1138,
+              2474,
+              1300
+            ],
+            "text": "keypoint-pose skeleton-control image-control net-U-Net conditioning",
+            "prediction": "keypoint-pose skeleton-control image-control net-U-Net conditions",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0154-line-0011",
+            "bbox": [
+              69,
+              1404,
+              495,
+              1510
+            ],
+            "text": "· Pseudo-ID",
+            "prediction": "Pseudo-ID",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0154-line-0012",
+            "bbox": [
+              150,
+              1465,
+              1962,
+              1636
+            ],
+            "text": "☆ Pseudo ID Consistency ☆ (여러 frame에 존재하는같은 사람의",
+            "prediction": "Pseudo ID Consistency (case from all cases)",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2e2930a2-7daf-43ed-9bf3-81cb34f2b9aa",
+            "bbox": [
+              87,
+              807,
+              1932,
+              940
+            ],
+            "text": "사람의 자세가 바뀌면 안 되기 때문에 가능한 자세를 유지할 필요가 있음.",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e7aee3b9-ada5-4bb1-80bc-e0f2b5547b60",
+            "bbox": [
+              1088,
+              1594,
+              1902,
+              1688
+            ],
+            "text": "pseudo ID의 일관성이 중요!!)",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-298d6077-a1c7-4b3d-b368-bea918eacc82",
+            "bbox": [
+              217,
+              1742,
+              789,
+              1845
+            ],
+            "text": "∴ seed가 중요함.",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-3782af34-831c-459a-9734-4ad5ad2cccf4",
+            "bbox": [
+              230,
+              1845,
+              2213,
+              1943
+            ],
+            "text": "변경되어야 하는 것 : pose, viewpoint, camera, lighting, location, clotiong,",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-374c78bb-f5d2-44ef-8674-7b53ca53f8ce",
+            "bbox": [
+              205,
+              1950,
+              2048,
+              2064
+            ],
+            "text": "유지되어야 〃 : pseudo appearance, Body charateristics,",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5b21fd1f-1c3f-4631-9412-7013b2df1d86",
+            "bbox": [
+              766,
+              2066,
+              1432,
+              2173
+            ],
+            "text": "referencem pseudo ID",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-65732443-eb89-4430-a21a-8a7f3955121b",
+            "bbox": [
+              381,
+              2157,
+              2308,
+              2294
+            ],
+            "text": "→ 위와 같이 (정답 X) identity와 pose를 분리하여 제어하는 것이 핵심.",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-dd28ccea-67a1-4cd3-b310-4bebe8b4bc00",
+            "bbox": [
+              66,
+              2417,
+              604,
+              2536
+            ],
+            "text": "· A to C 구조",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-50e5dc7c-6c61-4f32-bb9a-44d6a8761d0c",
+            "bbox": [
+              162,
+              2554,
+              249,
+              2616
+            ],
+            "text": "A",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-00bbe060-b5d7-405d-a359-9fe58fdc12c2",
+            "bbox": [
+              196,
+              2634,
+              582,
+              2702
+            ],
+            "text": "├ Original image",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6818eb61-151e-484c-a168-e046e93aa75d",
+            "bbox": [
+              169,
+              2711,
+              579,
+              2784
+            ],
+            "text": "├ person mask",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-27708e45-9bdb-47fe-8d77-896b33694ebe",
+            "bbox": [
+              182,
+              2800,
+              550,
+              2876
+            ],
+            "text": "├ Bounding Box",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-146a7068-ea77-4589-9ed9-82b2ac855f34",
+            "bbox": [
+              171,
+              2880,
+              499,
+              2944
+            ],
+            "text": "├ Annotation",
+            "prediction": "",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2f9f2def-de94-4607-b92f-ba831efca96d",
+            "bbox": [
+              169,
+              2942,
+              506,
+              3008
+            ],
+            "text": "├ person ID",
+            "prediction": "",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-73517143-aed3-45ba-b1ba-b69c72764bc8",
+            "bbox": [
+              155,
+              3013,
+              557,
+              3101
+            ],
+            "text": "├ camera ID",
+            "prediction": "",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2b0445bf-388c-4c53-9c8a-34b7098f4a94",
+            "bbox": [
+              171,
+              3106,
+              673,
+              3186
+            ],
+            "text": "└ Dataset Manifast",
+            "prediction": "",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-675fe4a0-0a87-43fa-bd79-996f0142461d",
+            "bbox": [
+              285,
+              3213,
+              538,
+              3293
+            ],
+            "text": "↓",
+            "prediction": "",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-be5ceb08-884f-4354-b5cc-2a226445fcb4",
+            "bbox": [
+              374,
+              3304,
+              481,
+              3380
+            ],
+            "text": "C",
+            "prediction": "",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-8c8a805a-bb8f-4f65-a68e-dd90e4a9090a",
+            "bbox": [
+              917,
+              2832,
+              1022,
+              2928
+            ],
+            "text": "⇒",
+            "prediction": "",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0c97b2f2-01d6-4c71-b5a8-b49bf7351302",
+            "bbox": [
+              746,
+              2524,
+              890,
+              3341
+            ],
+            "text": "}",
+            "prediction": "",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-cea0f905-c278-41bc-8f78-c6d4bcfc26f4",
+            "bbox": [
+              55,
+              2570,
+              157,
+              3371
+            ],
+            "text": "{",
+            "prediction": "",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-bca4edd2-3181-41e7-af6d-ab51ee5edef5",
+            "bbox": [
+              1109,
+              2518,
+              1191,
+              3350
+            ],
+            "text": "{",
+            "prediction": "",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5e39348a-3f7a-4d5a-be32-785499c2a8a9",
+            "bbox": [
+              1166,
+              2520,
+              1439,
+              2604
+            ],
+            "text": "Person ID",
+            "prediction": "",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a75baaf3-7f6c-494b-a2ca-402a9a527015",
+            "bbox": [
+              1252,
+              2607,
+              1346,
+              2659
+            ],
+            "text": "↓",
+            "prediction": "",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-978f502d-4ba9-4f7b-a2c1-99e8bf01ab0d",
+            "bbox": [
+              1188,
+              2657,
+              1670,
+              2741
+            ],
+            "text": "Pseudo ID lookup",
+            "prediction": "",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2217896e-b6c2-462f-959a-14f7c82db309",
+            "bbox": [
+              1200,
+              2782,
+              1619,
+              2857
+            ],
+            "text": "ID001 → PID001",
+            "prediction": "",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-dde88829-b30f-45cb-b689-79bbf4dbb357",
+            "bbox": [
+              1341,
+              2857,
+              1642,
+              2926
+            ],
+            "text": "├ referance",
+            "prediction": "",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e12baa2c-5733-4dda-b3af-a8d52b136402",
+            "bbox": [
+              1362,
+              2921,
+              1546,
+              2983
+            ],
+            "text": "└ seed",
+            "prediction": "",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-bde29d90-5d81-4090-8f81-e3adcf06e1ca",
+            "bbox": [
+              1471,
+              2971,
+              1562,
+              3040
+            ],
+            "text": "↓",
+            "prediction": "",
+            "order": 41,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d7e358ee-094b-4e2e-84f2-7bf61edad934",
+            "bbox": [
+              1348,
+              3026,
+              1866,
+              3113
+            ],
+            "text": "origenal+mask+Pose",
+            "prediction": "",
+            "order": 42,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-36971df8-1500-4311-b626-ce45655e8cfa",
+            "bbox": [
+              1581,
+              3111,
+              1688,
+              3193
+            ],
+            "text": "↓",
+            "prediction": "",
+            "order": 43,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0fa7c69e-e555-4057-b893-a3058b1e082b",
+            "bbox": [
+              1485,
+              3184,
+              1832,
+              3266
+            ],
+            "text": "Diffusion.",
+            "prediction": "",
+            "order": 44,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-598184d5-b190-4985-b175-394d51aa5dad",
+            "bbox": [
+              1866,
+              2499,
+              2007,
+              3339
+            ],
+            "text": "}",
+            "prediction": "",
+            "order": 45,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-169ec020-e72d-4f57-96a7-3704982df29c",
+            "bbox": [
+              2016,
+              2593,
+              2343,
+              2677
+            ],
+            "text": "∴ A의 오류는",
+            "prediction": "",
+            "order": 46,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-82b376aa-b6a9-4a6d-b0e4-08713a6d2e44",
+            "bbox": [
+              2087,
+              2664,
+              2411,
+              2762
+            ],
+            "text": "C의 part에서",
+            "prediction": "",
+            "order": 47,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-53a751cf-a76e-41e5-a4c9-03a5f81f9e24",
+            "bbox": [
+              2067,
+              2759,
+              2336,
+              2853
+            ],
+            "text": "치명적임",
+            "prediction": "",
+            "order": 48,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9eccd72c-d438-4ee3-854a-e76f553881a0",
+            "bbox": [
+              2071,
+              2860,
+              2441,
+              2942
+            ],
+            "text": "→ 검증 포인트는",
+            "prediction": "",
+            "order": 49,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-8fae33ed-b27b-4e49-a7fd-2f3c6e99afd4",
+            "bbox": [
+              2140,
+              2949,
+              2336,
+              3042
+            ],
+            "text": "뒷장.",
+            "prediction": "",
+            "order": 50,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T17:43:29.569Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T17:19:29.623Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 50
+        }
+      ]
     },
     "hf-0155": {
       "id": "hf-0155",
