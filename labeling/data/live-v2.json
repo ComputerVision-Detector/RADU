@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T12:34:49.447Z",
+  "updated_at": "2026-10-30T12:34:57.158Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -12384,20 +12384,67 @@
         "source_sha256": "6216b341bc9bf3148c6e7503e8b0f0d226c5ce6d80212d7a7b9a559cb080fb12"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0052-line-0002",
+            "bbox": [
+              190,
+              395,
+              1017,
+              484
+            ],
+            "text": "◦softmax - with - Loss 계층",
+            "prediction": "- 50% max - with - 10% 20%",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d4d02678-320c-4e2a-a15c-fe5a5ac7abd7",
+            "bbox": [
+              177,
+              795,
+              570,
+              903
+            ],
+            "text": "◦자연어 처리",
+            "prediction": "",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-8de86c00-4d1c-48d9-9b9e-79904570969b",
+            "bbox": [
+              206,
+              893,
+              1925,
+              1031
+            ],
+            "text": "- 우리가 평소 말하는 언어를 컴퓨터가 이해하도록 만드는 기술",
+            "prediction": "",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-30T12:59:49.447Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T12:34:57.158Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 3
+        }
+      ]
     },
     "hf-0053": {
       "id": "hf-0053",
