@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T18:48:29.663Z",
+  "updated_at": "2026-10-30T18:51:16.237Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -14552,20 +14552,389 @@
         "source_sha256": "4691c150a1e5238daea713d469220c99675f47bf221518ce776ca65284911db9"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0056-line-0001",
+            "bbox": [
+              135,
+              247,
+              468,
+              323
+            ],
+            "text": "· World Net",
+            "prediction": "- World Net",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0002",
+            "bbox": [
+              157,
+              374,
+              608,
+              456
+            ],
+            "text": "- 자연어 처리에서",
+            "prediction": "- 자연어 커리어서",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0003",
+            "bbox": [
+              632,
+              374,
+              1162,
+              456
+            ],
+            "text": "기장 유명한 시소러스",
+            "prediction": "기장 평범한 사례러스",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0004",
+            "bbox": [
+              124,
+              644,
+              633,
+              730
+            ],
+            "text": "· Corpus (말뭉치)",
+            "prediction": "- (atPas (발휴지)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0005",
+            "bbox": [
+              151,
+              729,
+              1854,
+              871
+            ],
+            "text": "- 자연어 처리 연구나 애플리케이션을 염두에 두고 수집된 텍스트 데이터",
+            "prediction": "- 자연어 컸던커 에폴칼에션를 염색에 투고 쉽렸던 텍스트 데이터",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0006",
+            "bbox": [
+              149,
+              991,
+              2084,
+              1138
+            ],
+            "text": "· 대량의 텍스트 데이터로부터 ‘단어의 의미'를 자동으로 추출 하는 기법 2개",
+            "prediction": "- 해헬 텍쓴 데이터모부터 ‘한에 의기’를 작동으로 즉출 하는 기법 개념",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0007",
+            "bbox": [
+              196,
+              1165,
+              696,
+              1263
+            ],
+            "text": "- 통계 기반 기법",
+            "prediction": "- 둘째 개념 개념",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0008",
+            "bbox": [
+              211,
+              1298,
+              705,
+              1420
+            ],
+            "text": "- 추론 기반 기법.",
+            "prediction": "- 흐른 개념 개념.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0009",
+            "bbox": [
+              142,
+              1564,
+              527,
+              1690
+            ],
+            "text": "· 말뭉치 전처리",
+            "prediction": "- 향룩치 잡혀리",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0010",
+            "bbox": [
+              151,
+              1677,
+              2429,
+              1835
+            ],
+            "text": "- 텍스트 데이터를 단어로 분할하고 분할된 단어들을 단어 ID 목록으로 변환하는 일",
+            "prediction": "- 텍스트 데이터를 한어요 분찰하고 분찰된 텍스트들을 참여 ID 목록으로 참호하는 일",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0011",
+            "bbox": [
+              133,
+              1983,
+              829,
+              2113
+            ],
+            "text": "· 해당 책에서 사용하는 용어",
+            "prediction": "- 해충 책씨 사용하는 용어",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0012",
+            "bbox": [
+              142,
+              2128,
+              911,
+              2254
+            ],
+            "text": "- corpus: 단어 ID 목록",
+            "prediction": "- capus: the ID 목록",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0013",
+            "bbox": [
+              151,
+              2249,
+              1673,
+              2400
+            ],
+            "text": "- word_to_id: 단어에서 단어 ID로의 딕셔너리",
+            "prediction": "- word- to-id: 높어온에 the ID로의 완벽히",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0014",
+            "bbox": [
+              151,
+              2387,
+              1764,
+              2549
+            ],
+            "text": "- id_to_word: 단어ID에서 단어로의 딕ㅅ",
+            "prediction": "- id_to_word: 단어ID에서 한어로의 옷",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0015",
+            "bbox": [
+              120,
+              2709,
+              648,
+              2835
+            ],
+            "text": "· 단어의 분산 표현",
+            "prediction": "- 단어의 분산 표현",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0016",
+            "bbox": [
+              151,
+              2830,
+              1727,
+              2992
+            ],
+            "text": "- '단어의 의미'를 정확하게 파악할 수 있는 벡터 표현",
+            "prediction": "- 한의 의기를 접촉하게 패억할 수 있는 배터리 표현",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0017",
+            "bbox": [
+              151,
+              2979,
+              1727,
+              3141
+            ],
+            "text": "- 단어를 고정 길이의 밀집 벡터 (dense vector)로",
+            "prediction": "- 단어를 그정 길의 멜림 빛의 (dense vector)로",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0018",
+            "bbox": [
+              1814,
+              2636,
+              2256,
+              2766
+            ],
+            "text": "- 통계학에서 분산은",
+            "prediction": "- 둘째 향에서 분산은",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0019",
+            "bbox": [
+              1823,
+              2745,
+              2483,
+              2891
+            ],
+            "text": "데이터가 평균에서 얼마나",
+            "prediction": "데이터가 땅골에서 일찍나",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0020",
+            "bbox": [
+              1832,
+              2919,
+              2166,
+              3033
+            ],
+            "text": "퍼져 있는가",
+            "prediction": "끝져 있는가",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0056-line-0021",
+            "bbox": [
+              151,
+              3431,
+              1358,
+              3577
+            ],
+            "text": "- 대부분의 원소가 0이 아닌 실수인 벡터",
+            "prediction": "- 멍멍멍의 원성가 0이 맨 손잎인 빅의",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-4ff02c56-5be9-42b5-8bb9-cb3df3febc73",
+            "bbox": [
+              1435,
+              626,
+              1577,
+              725
+            ],
+            "text": "대량의",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-7120b6a9-1993-445b-9b52-12ae7d84860c",
+            "bbox": [
+              1762,
+              1913,
+              2491,
+              2031
+            ],
+            "text": "· 단어의 분산 표현에서의 분산",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-88f534d9-4e96-49fd-98b3-7b1dc32e263f",
+            "bbox": [
+              1825,
+              2085,
+              2481,
+              2209
+            ],
+            "text": "- 통계학에서와 비슷하지만",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f223a42e-1869-41cf-9310-2c7eb5ce1e6a",
+            "bbox": [
+              1835,
+              2225,
+              2590,
+              2349
+            ],
+            "text": "단어의 의미를 여러 차원에",
+            "prediction": "",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-fe024102-e577-4d20-9654-47b12b1a1457",
+            "bbox": [
+              1883,
+              2301,
+              2776,
+              2479
+            ],
+            "text": "나누어 (분산)하여 저장한다는의미",
+            "prediction": "",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T19:13:29.663Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T18:51:16.237Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 26
+        }
+      ]
     },
     "hf-0057": {
       "id": "hf-0057",
