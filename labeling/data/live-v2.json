@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T16:12:29.899Z",
+  "updated_at": "2026-10-30T16:13:04.087Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -20554,20 +20554,403 @@
         "source_sha256": "349ea80334c0190975146b242634d0646f504fd163c16e257d3ee93a3a7d9a61"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0157-line-0001",
+            "bbox": [
+              104,
+              108,
+              417,
+              183
+            ],
+            "text": "Control Net",
+            "prediction": "Control Net",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0002",
+            "bbox": [
+              97,
+              203,
+              2068,
+              312
+            ],
+            "text": "· Control Net 이 필요한 이유. : Inpointing 시, 형태가 변하는 문제가 발생할 수 있기 때문.",
+            "prediction": "- Control Net 이 필요한 이유. : Impointing 시, 분배기 변화 컴제가 발생할 거 있기 때문.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0003",
+            "bbox": [
+              874,
+              325,
+              1802,
+              414
+            ],
+            "text": "∴ pose를 강제 조건으로 넣을 필요가 있음.",
+            "prediction": "∴ pose 골 길제 조건으로 봉출 필요가 있는.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0004",
+            "bbox": [
+              82,
+              545,
+              2192,
+              651
+            ],
+            "text": "· Control Net 핵심 개념: SD를 처음부터 학습 시키는 게 아니라, 기존 pretrained",
+            "prediction": "- Control Net 핵심 개념: SD를 채워누더 학습 시에는 게 아니라, 기존 pretrained",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0005",
+            "bbox": [
+              732,
+              674,
+              1082,
+              746
+            ],
+            "text": "diffusion model",
+            "prediction": "diffusion model",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0006",
+            "bbox": [
+              155,
+              779,
+              1927,
+              868
+            ],
+            "text": "- 대표조건: Canny Edge, Depth, Segmentation, Normal Map, Human Pose...",
+            "prediction": "- 대표조건: Canny Edge, Depth, Segmentation, Normal Map, Human Pose...",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0007",
+            "bbox": [
+              214,
+              887,
+              1707,
+              969
+            ],
+            "text": "中 금번 연구에서는 [ Human Pose Control Net ]을 사용할 예정.",
+            "prediction": "中 금번 연구에서는 [ Human Pose Control Net ]을 사용함 예정.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0008",
+            "bbox": [
+              331,
+              995,
+              1695,
+              1081
+            ],
+            "text": "⇒ 기존 U-Net에 Pose 정보를 보조 입력으로 넣게 되는 것임.",
+            "prediction": "$\\Rightarrow$ 기존 U-Net에 Pose 정보를 보조 업력으로 넣게 되는 것인.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0009",
+            "bbox": [
+              82,
+              1226,
+              507,
+              1315
+            ],
+            "text": "· Pose Image 란?",
+            "prediction": "- Pose Image 관?",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0010",
+            "bbox": [
+              146,
+              1334,
+              2192,
+              1416
+            ],
+            "text": "- 프레임에서 검출된 사람이 있다면, [ Original Image → Pose Estimator → Keypoints] 순으로",
+            "prediction": "- 프레젠에서 검찰된 사람이 임다면, [ Original Image $\\rightarrow$ Pose Estimator $\\rightarrow$ Keypoints] 윤으로",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0011",
+            "bbox": [
+              221,
+              1446,
+              690,
+              1531
+            ],
+            "text": "keypoints 가 도출됨.",
+            "prediction": "Keypoints 가 모호된.",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0012",
+            "bbox": [
+              219,
+              1558,
+              2182,
+              1647
+            ],
+            "text": "해당 keypoint 들을 skeleton으로 렌더링. → 이렇게 생성된 Image가 Control Net 에",
+            "prediction": "해당 Keypoint 들을 skeleton으로 견뎌림. ㅋㅋ 이렇게 냉전된 Image가 Control Net 이",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0013",
+            "bbox": [
+              1331,
+              1646,
+              2219,
+              1724
+            ],
+            "text": "들어가는 Pose Control Image가 되는 것.",
+            "prediction": "토머는 Pose Control Image가 되는 것.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0014",
+            "bbox": [
+              70,
+              1784,
+              1123,
+              1870
+            ],
+            "text": "· Pose Estimator와 Control Net의 차이.",
+            "prediction": "- Pose Estimator와 Control Net의 차이.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0015",
+            "bbox": [
+              170,
+              1889,
+              1668,
+              1985
+            ],
+            "text": "· Pose Estimator: Image에서 사람의 관절을 찾음. ⇒ Pose 추출",
+            "prediction": "Pose Estimator: Image에서 사랑의 권한을 찾음. => Pose 축출",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0016",
+            "bbox": [
+              170,
+              2008,
+              2372,
+              2100
+            ],
+            "text": "Control Net: Pose 구조를 조건으로 사용해서 Diffusion 생성 결과의 자세를 제시함. ⇒ pose를 생성",
+            "prediction": "Control Net: Pose 구조를 조건으로 사용해서 Diffusion 생성 결과의 자세를 제시한. => Pose를 냉정",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0017",
+            "bbox": [
+              2130,
+              2110,
+              2401,
+              2185
+            ],
+            "text": "조건으로 사용.",
+            "prediction": "조건으로 사용.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0018",
+            "bbox": [
+              82,
+              2238,
+              1045,
+              2321
+            ],
+            "text": "· Control Net 이 U-Net 과 어떻게 연결되는가?",
+            "prediction": "9 Control Net 이 U-Net 과 여량에 연결되는가?",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0019",
+            "bbox": [
+              136,
+              2357,
+              2078,
+              2439
+            ],
+            "text": ": Control Net이 Pose를 처리하며, feature를 만듦. → 이를 U-Net의 여러 Black에",
+            "prediction": "- Control Net이 Pose를 쳐내 처리하며, feature를 만들다. -7 이름 U-Net의 여러 Blackout",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0020",
+            "bbox": [
+              1453,
+              2462,
+              1939,
+              2541
+            ],
+            "text": "residual 형태로 주입.",
+            "prediction": "residual 협력도 주인.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0021",
+            "bbox": [
+              63,
+              2580,
+              819,
+              2663
+            ],
+            "text": "· Zero Convolution 이 왜 나오는가?",
+            "prediction": "- Zero Convolution 이 패 나오는가?",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0022",
+            "bbox": [
+              121,
+              2689,
+              1816,
+              2791
+            ],
+            "text": "- Zero Convolution: 처음 weight가 전부 O으로 초기화된 convolution layer임.",
+            "prediction": "- Zero Convolution: 철도 weight가 전부 O-O로 초라와의 convolution layer인.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0023",
+            "bbox": [
+              221,
+              2807,
+              2256,
+              2919
+            ],
+            "text": "$\\Rightarrow$ 이를 사용하는 이유: 처음부터 Control Net이 강한 feature를 U-Net에 넣어버리면,",
+            "prediction": "$\\Rightarrow$ 이를 사용하는 아쉬: 차원옥리 Control Net이 강한 feature를 U-Net이 넓이버리면,",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0024",
+            "bbox": [
+              762,
+              2926,
+              2037,
+              3036
+            ],
+            "text": "기존의 pretrained SD의 성능을 망칠 수도 있기 때문.",
+            "prediction": "기존의 pretrained SDEI 성능을 맞춰 주고 있기 때문.",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0025",
+            "bbox": [
+              316,
+              3031,
+              2392,
+              3167
+            ],
+            "text": "$\\therefore$ 처음에는 [Control Net Output = 0]으로 두고, 학습이 진행되면서 점점 pose condition이",
+            "prediction": "$\\therefore$ 차원에는 [Control Net Output = 0]으로 두고, 학습이 진행되면서 전환 pose condition이",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0026",
+            "bbox": [
+              389,
+              3156,
+              1598,
+              3238
+            ],
+            "text": "의미있는 Residual feature를 학습하게 됨에 따라서.",
+            "prediction": "의미있는 Residual feature를 학습하게 될게 떠나서.",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0157-line-0027",
+            "bbox": [
+              350,
+              3271,
+              1959,
+              3376
+            ],
+            "text": "\"기존 model의 능력을 유지하며, 새로운 조건을 추가\"할 수 있게 됨.",
+            "prediction": "\"기준 model의 측면을 숙자하며, 새로운 조건을 추가\"와 후 인게 된.",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T16:37:29.899Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T16:13:04.087Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 27
+        }
+      ]
     },
     "hf-0158": {
       "id": "hf-0158",
