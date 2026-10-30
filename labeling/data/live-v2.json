@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T13:01:48.197Z",
+  "updated_at": "2026-10-30T13:02:47.849Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -14421,20 +14421,375 @@
         "source_sha256": "06b488602735d92fc275e10a7b6dec3d08aab99c4a69092cd68f1be812f8545c"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0062-line-0001",
+            "bbox": [
+              214,
+              149,
+              1147,
+              275
+            ],
+            "text": "◦통계 기반과 추론 기반 차이점",
+            "prediction": "- 長型 単単 과 콘 랜 캐냅 차이점",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0002",
+            "bbox": [
+              263,
+              282,
+              1252,
+              404
+            ],
+            "text": "- 추론과 통계는 서로 관련이 있긴함",
+            "prediction": "- 쿠몬과 동제는 새로 판례 외긴 황",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0003",
+            "bbox": [
+              314,
+              399,
+              1509,
+              521
+            ],
+            "text": "- 단어 추가시 분산 표현을 갱신해야 하는 경우",
+            "prediction": "- 단어 큐가 뿐손 표현을 행신해야 하는경우",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0004",
+            "bbox": [
+              432,
+              536,
+              1298,
+              662
+            ],
+            "text": "L 통계 : 계산을 처음부터 다시",
+            "prediction": "L 롭게: 거반을 귀엽부터 다시",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0005",
+            "bbox": [
+              492,
+              608,
+              2764,
+              783
+            ],
+            "text": "추론 : 매개변수를 다시 학습.( 지금까지 학습한 가중치를 초깃값으로 다시 하기에 효율적)",
+            "prediction": "쿠푸: 애개변수를 다시 학습(정체 학습한 창립률 죄값으로 다시 하)에 효율적)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0006",
+            "bbox": [
+              323,
+              802,
+              1168,
+              924
+            ],
+            "text": "- 성격이나 정밀도 (단어 분산 표현)",
+            "prediction": "- 성취나 점검도 (단어 붉은표현)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0007",
+            "bbox": [
+              423,
+              923,
+              1183,
+              1053
+            ],
+            "text": "L 통계 : 단어의 유사성 인코딩",
+            "prediction": "L 둘께: 단어의 유상 연긍링",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0008",
+            "bbox": [
+              492,
+              1028,
+              1857,
+              1178
+            ],
+            "text": "추론 : 단어의 유사성 + 단어 사이의 패턴까지 인코딩",
+            "prediction": "충돌: 단어 유산성 + 단어 사이의 패턴까지 인코딩.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0009",
+            "bbox": [
+              223,
+              1302,
+              1168,
+              1432
+            ],
+            "text": "Embedding 계층 (임베딩 계층)",
+            "prediction": "Embedding 제중 (잉비빔 제중)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0010",
+            "bbox": [
+              272,
+              1423,
+              1576,
+              1573
+            ],
+            "text": "Embedding 계층에 단어 임베딩(분산 표현)을 저장.",
+            "prediction": "Embedding 제중에 한이 잉비빔(분산 표현)을 자층.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0011",
+            "bbox": [
+              895,
+              1564,
+              1479,
+              1662
+            ],
+            "text": "L 단어의 밀집벡터표현",
+            "prediction": "L 단어의 일급배터 표현",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0012",
+            "bbox": [
+              263,
+              1649,
+              2580,
+              1835
+            ],
+            "text": "- 신경망을 사용한 추론 기반 기법으로 얻은 단어는 distributed representation 이라함.",
+            "prediction": "- 선형양을 사용한 측돈 깰 밟으로 만든 산이는 distributed representation 야하.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0013",
+            "bbox": [
+              272,
+              1810,
+              1915,
+              1972
+            ],
+            "text": "- Embedding 계층의 순전파는 가중치 w의 특정 행을 추출할 뿐",
+            "prediction": "Embedding 계층의 순전한 충치 w의 특정 행을 측렴할 뿐",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0014",
+            "bbox": [
+              374,
+              1927,
+              2314,
+              2097
+            ],
+            "text": "가중치 특정 행 뉴런만을(아무것도 손대지 않고) 다음층으로 흘려보냄.",
+            "prediction": "가중리 특경 행 뉴잔만을 (여옥갖도 손치 옴고) 아음못으로 흘려 보냄.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0015",
+            "bbox": [
+              435,
+              2060,
+              2529,
+              2238
+            ],
+            "text": "앞 층으로 전해진 기울기를 가중치 기울기 dw의 특정행(idx번째 행)에 설정",
+            "prediction": "앞종묘 잔비빈 갈림을 창조의 겨울기 싹의 특징행 (idx 행제 행)에 손정.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0016",
+            "bbox": [
+              314,
+              2217,
+              1742,
+              2375
+            ],
+            "text": "- 즉 임베딩 계층은 특정 단어(임베딩)을 꺼내는 것 뿐.",
+            "prediction": "- 즉 임배병 지중은 특권 단어(김배병)을 계배는 것 본.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0017",
+            "bbox": [
+              350,
+              2334,
+              2541,
+              2508
+            ],
+            "text": "(word2vec은 정말로 꺼내고 끝. 하지만 GPT처럼 LLM모델에선 꺼내는 것은",
+            "prediction": "(word2vec)은 정맥도 재고 끝, 하지만 GPT 키컴 LLM 모델에선 계배는 것은",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0018",
+            "bbox": [
+              393,
+              2471,
+              2459,
+              2654
+            ],
+            "text": "같지만 후에 수십게의 Transformer 블록을 거치며 문맥 정보를 계속 반영하게 됨.)",
+            "prediction": "갈반혜수십 개의 Trans fatta 붕괴은 거꺼이 문액 정돈을 계속 백성하게 됩)",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0019",
+            "bbox": [
+              290,
+              2774,
+              2529,
+              2968
+            ],
+            "text": "- Embedding Matrix (임베딩행렬) : 행렬 자체가 가중지로 학습되는 가중지",
+            "prediction": "- Embedding Matrix (잉비빔행) : 행렬 채제가 가중지로 학습되는 가중지",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0020",
+            "bbox": [
+              281,
+              2907,
+              2468,
+              3109
+            ],
+            "text": "- Embedding Layer (임베딩계층): 토큰ID가 3이라면 임베딩행렬의 3번째 행",
+            "prediction": "- Embedding Layer (잉비빔계룡): 토큰 5가 30만 번 잉비빔 행혈의 3번째 행",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0021",
+            "bbox": [
+              1239,
+              3076,
+              2120,
+              3218
+            ],
+            "text": "을 그대로 꺼내는 Lookup 계층",
+            "prediction": "온 그대로 객배는 Lookup 계층",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0022",
+            "bbox": [
+              272,
+              3225,
+              1872,
+              3404
+            ],
+            "text": "- Embedding (임베딩) : 최종적으로 꺼낸 하나의 벡터  ↓",
+            "prediction": "- Embedding (잉비빔) : 희극적으로 객배 해가의 벨리 2.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0023",
+            "bbox": [
+              314,
+              3362,
+              2265,
+              3557
+            ],
+            "text": "Distributed Representation ex. apple → [0.23, -1.01, 0.54,..., 0.87]",
+            "prediction": "Distributed Representation ex. appk → [0.23, -1.01, 0.54,..., 0.01]",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0024",
+            "bbox": [
+              323,
+              3564,
+              832,
+              3702
+            ],
+            "text": "Dense Vector",
+            "prediction": "Rense Vector",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0062-line-0025",
+            "bbox": [
+              1137,
+              3467,
+              2852,
+              3653
+            ],
+            "text": "Apple의 임베딩 혹은 apple의 분산 표현 또는 apple의 밀집 벡터.",
+            "prediction": "Appleの 임배망 혹은 app(e)의 분산 표현. 또는 app(e)의 맞춤 벡터.",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-30T13:26:48.197Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T13:02:47.849Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 25
+        }
+      ]
     },
     "hf-0063": {
       "id": "hf-0063",
