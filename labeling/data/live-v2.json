@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T12:19:08.381Z",
+  "updated_at": "2026-10-30T12:19:11.081Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -4973,20 +4973,249 @@
         "source_sha256": "736f8e4675f81654214234bc38925946099f4bedc66f87ed519d0241ded33c11"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0016-line-0003",
+            "bbox": [
+              87,
+              483,
+              445,
+              601
+            ],
+            "text": "- 특이도와 민감도",
+            "prediction": "- 튀냉과 인호도",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0016-line-0004",
+            "bbox": [
+              142,
+              504,
+              1860,
+              718
+            ],
+            "text": "- 의료 진단처럼 한쪽 클래스가 중요한 분류 문제에서 특히 유용한 성능 지표.",
+            "prediction": "- 의료 헌폐일 채용 결과가 중과한 분류 문제에서 특히 융용한 섬농 재포.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0016-line-0005",
+            "bbox": [
+              1418,
+              608,
+              2344,
+              750
+            ],
+            "text": "- 특이도는 옆에 민감도의 보조지표로 사용.",
+            "prediction": "- 튀냐는 옆에 안강 노력 쇼크대로 사용.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0016-line-0006",
+            "bbox": [
+              154,
+              697,
+              2045,
+              920
+            ],
+            "text": "- T/N, 민감도 = $\\frac{TP}{TP+FN}$ - 이거 교수님이 안보신다 하심.",
+            "prediction": "- T/N, 민감도 = $\\frac{TP}{TP+FN}$ - 이게 피석에 안보하 허명.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0016-line-0007",
+            "bbox": [
+              108,
+              1056,
+              530,
+              1182
+            ],
+            "text": "- 정밀도와 재현율",
+            "prediction": "- 정일도와 저현을",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0016-line-0008",
+            "bbox": [
+              142,
+              1116,
+              1739,
+              1299
+            ],
+            "text": "- 웹에서 정보 검색을 수행하거나 영상에서 물체를 검출하는 경우",
+            "prediction": "- 웹에서 캠보 광색을 새해하거나 영업에서 물레 검출을 하는 경우",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0016-line-0009",
+            "bbox": [
+              160,
+              1217,
+              1996,
+              1416
+            ],
+            "text": "- 정밀도: 내가 positive라고 예측한 것 중 실제 positive가 얼마나 되는가?",
+            "prediction": "- 정밀도: H/A positive 하고 예측한 길중 쓸지 Positive가 얻어나 되는가?",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0016-line-0010",
+            "bbox": [
+              214,
+              1391,
+              2057,
+              1629
+            ],
+            "text": "잘못 = $\\frac{TP}{TP+FN}$ $\\rightarrow$ 모델이 1이라고 한 것 중에서 진짜로 맞춘 것.",
+            "prediction": "잘못 = $\\frac{TP}{TP+FN}$ $\\rightarrow$ 델에 그어고 한 것 중에서 잘못도 못줄겠.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0016-line-0011",
+            "bbox": [
+              133,
+              1725,
+              1546,
+              1883
+            ],
+            "text": "- 재현율: 실제 positive 중에서 내가 얼마자 찾아냈는가?",
+            "prediction": "- 재현을: 손지 Positive 중에서 날아 왔어나 찾아봤는가?",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0016-line-0012",
+            "bbox": [
+              229,
+              1858,
+              2018,
+              2121
+            ],
+            "text": "재현율 = $\\frac{TP}{TP+FN}$ $\\rightarrow$ 실제로 1인 것 중에서 모델이 얼마나 맞추었나.",
+            "prediction": "재현을 = $\\frac{TP}{TP+FN}$ $\\rightarrow$ 손돌 1인 것 중에서 노력이 왔어나 맞추겠나.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0016-line-0013",
+            "bbox": [
+              99,
+              2241,
+              965,
+              2363
+            ],
+            "text": "- 훈련 집합, 검증 집합, 테스트 집합.",
+            "prediction": "- 헌납 잠잠, 김증 잡잠. 태스트 잡잠.",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0016-line-0014",
+            "bbox": [
+              120,
+              2624,
+              2205,
+              2742
+            ],
+            "text": "- 성능 평가에서 데이터는 역할에 따라 훈련/검증/테스트 집합으로 나눌 수 있음",
+            "prediction": "- 샌뇨 평가에 더해는 약한데 따라 환전/검증/테스트 접합으로 나눌 수 있음",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0016-line-0015",
+            "bbox": [
+              151,
+              2749,
+              2066,
+              2867
+            ],
+            "text": "- 교차 검증은 훈련/검증에 사용할 데이터를 여러번 나누어 학습과 검증을",
+            "prediction": "- 피구 검증은 한진/검증에 사험을 데이터를 여겨낸 내에 복습과 검증을",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0016-line-0016",
+            "bbox": [
+              139,
+              2878,
+              648,
+              2992
+            ],
+            "text": "반복하는 평가 방법.",
+            "prediction": "반복하는 뜻가 방법.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0016-line-0017",
+            "bbox": [
+              63,
+              3148,
+              1358,
+              3258
+            ],
+            "text": "- K-겹 교차 검증 (K-Fold Cross Validation)",
+            "prediction": "- K-검 교차 경흥 (K-Fold Cross Latiation)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0016-line-0018",
+            "bbox": [
+              99,
+              3282,
+              1319,
+              3395
+            ],
+            "text": "- 훈련 집합을 크기의 부분집합 k개로 나눔.",
+            "prediction": "- 출전 접촬을 엮기의 방법함 느껴요 4초.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "6be33c5a-7092-46e0-8238-612e07e7bfe8",
-        "until": "2026-10-30T12:44:08.381Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T12:19:11.081Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 16
+        }
+      ]
     },
     "hf-0017": {
       "id": "hf-0017",
