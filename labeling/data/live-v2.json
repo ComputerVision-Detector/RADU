@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T14:42:29.586Z",
+  "updated_at": "2026-10-30T14:43:34.409Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -6674,7 +6674,7 @@
       "claim": {
         "name": "이나현",
         "client": "6be33c5a-7092-46e0-8238-612e07e7bfe8",
-        "until": "2026-10-30T15:05:59.100Z"
+        "until": "2026-10-30T15:08:34.409Z"
       },
       "history": []
     },
