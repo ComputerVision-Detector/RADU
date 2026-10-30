@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T11:33:29.403Z",
+  "updated_at": "2026-10-30T11:35:49.531Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -15984,20 +15984,389 @@
         "source_sha256": "75da405756b177e195740dd8b6317117fe0e213a07b4d3ec66e901257cf62845"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0159-line-0001",
+            "bbox": [
+              57,
+              49,
+              800,
+              136
+            ],
+            "text": "· pose는 신원 정보로 작용을 하는가?",
+            "prediction": "- pose = 俯视 仰视 仰视 仰视 仰视",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0002",
+            "bbox": [
+              134,
+              151,
+              1305,
+              244
+            ],
+            "text": "- 일반적으로 pose는 Non-Identity Information임.",
+            "prediction": "- 追臨臨之際 pose: Non-Identity Information in.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0003",
+            "bbox": [
+              193,
+              243,
+              2360,
+              356
+            ],
+            "text": "하지만, pose / gait / body proportion 등이 반복적으로 나타나면 Identity cue가 될 수 있음.",
+            "prediction": "하지만, pose / gait / body proportion 등이 변복적으로 나타나면 Identity cue가 필요한 접근성이 높아져 있다.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0004",
+            "bbox": [
+              206,
+              362,
+              2083,
+              483
+            ],
+            "text": "ex)[키, 팔 길이, 다리 비율, 자세 습관]은 사람마다 다른데, 이러한 특징들이",
+            "prediction": "(x)[7], 팔 길이. 다리 바뀔, 자세 습관]은 사람마다 다른데, 이러한 특징들이",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0005",
+            "bbox": [
+              312,
+              477,
+              1690,
+              580
+            ],
+            "text": "너무 보존되면 privacy 측면에서 되려 문제가 될 수 있음.",
+            "prediction": "너무 보존되면 privacy 흑연에서 되려 문제가 필요한 억압.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0006",
+            "bbox": [
+              206,
+              596,
+              1312,
+              689
+            ],
+            "text": "∴ 우리 연구에서 실험을 통해 확인해야 하는 것",
+            "prediction": "우리 연구매체 상황을 총체 확인해야 하는 것",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0007",
+            "bbox": [
+              218,
+              700,
+              1941,
+              810
+            ],
+            "text": "[pose preservation → Utility 임. 하지만 Identity leakage는?],,",
+            "prediction": "[pose preservation → Utility in. 하지만 Identity leakage?],",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0008",
+            "bbox": [
+              59,
+              945,
+              656,
+              1048
+            ],
+            "text": "· pose map에 포함되는 정보",
+            "prediction": "- pose map 中 꽃한도는 정보",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0009",
+            "bbox": [
+              114,
+              1065,
+              1320,
+              1158
+            ],
+            "text": "- skeleton pose는 RGB appearance가 포함되지 않음.",
+            "prediction": "- skeleton pose: RGB appearance 윗화되지 않다.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0010",
+            "bbox": [
+              206,
+              1169,
+              1359,
+              1269
+            ],
+            "text": "∴ 얼굴, 웃색상, 피부색, 텍스쳐는 포함되지 않음.",
+            "prediction": "∴ 얼굴. 웃색상. 피부덕, 텍쓰려는 포함되지 않다.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0011",
+            "bbox": [
+              44,
+              1395,
+              631,
+              1485
+            ],
+            "text": "· 여러 사람이 있는 경우.",
+            "prediction": "- 여러 사람이 많은 경우.",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0012",
+            "bbox": [
+              99,
+              1513,
+              1518,
+              1616
+            ],
+            "text": "- C part에서는 특정 person make를 기준으로 진행해야 하므로,",
+            "prediction": "- (part of the system) 특정 person make 온도를 기준으로 진행해야 하므로,",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0013",
+            "bbox": [
+              173,
+              1629,
+              1332,
+              1728
+            ],
+            "text": "아래 두 방식을 사용해야 함. (中 1개 채택 필요)",
+            "prediction": "아래 득 방식을 사용해야 한. (후 174 채택 필요)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0014",
+            "bbox": [
+              171,
+              1740,
+              512,
+              1834
+            ],
+            "text": "1) BBox",
+            "prediction": "1) BBox BBox",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0015",
+            "bbox": [
+              908,
+              1770,
+              1453,
+              1864
+            ],
+            "text": "2) full Image pose",
+            "prediction": "2) full Image pose",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0016",
+            "bbox": [
+              260,
+              1888,
+              669,
+              1978
+            ],
+            "text": "target person crop",
+            "prediction": "target person crop",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0017",
+            "bbox": [
+              953,
+              1893,
+              1669,
+              1993
+            ],
+            "text": "BBBox와 겹치는 skeleton 선택.",
+            "prediction": "BBBox1 검사는 skeleton 변형.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0018",
+            "bbox": [
+              264,
+              1997,
+              607,
+              2088
+            ],
+            "text": "pose estimation",
+            "prediction": "pose estimation",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0019",
+            "bbox": [
+              155,
+              2132,
+              965,
+              2221
+            ],
+            "text": "⇒ BBox와 Pose를 연결하는 방법.",
+            "prediction": "$\\Rightarrow$ BBox of Posterior 면접하는 방법.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0020",
+            "bbox": [
+              209,
+              2229,
+              1942,
+              2323
+            ],
+            "text": "∴ 전달 받은 BBox를 기준으로 pose estimation가 여러 skeleton을 찾고,",
+            "prediction": ": 전달 받은 BBox를 거절으로 pose estimation가 여러 skeleton을 찾고,",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0021",
+            "bbox": [
+              272,
+              2348,
+              1610,
+              2438
+            ],
+            "text": "BBBox 내부 keypoint 비율이 가장 높은 skeleton을 매핑함.",
+            "prediction": "BBBox 백복 keypoint 바웠기 가장 높은 skeleton을 매필함.",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0022",
+            "bbox": [
+              293,
+              2480,
+              1756,
+              2559
+            ],
+            "text": "∴ [Person ID → BBox → Pose] → ID001 Pose ",
+            "prediction": "$\\therefore$ [Person ID $\\rightarrow$ BBox $\\rightarrow$ Pose] $\\leftrightarrow$ ID001 Pose",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0023",
+            "bbox": [
+              26,
+              2677,
+              2362,
+              2800
+            ],
+            "text": "☆ Control Net: pretrained Diffusion 모델의 생성 능력을 유지하며 추가 조건을 residual feature",
+            "prediction": "Control Net: pretrained Diffusion 모델의 생성 능력을 유지하며 추가 조건을 residual feature",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0024",
+            "bbox": [
+              431,
+              2829,
+              2161,
+              2929
+            ],
+            "text": "헝태로 U-Net에 주입해 생성결과의 공간적 구조를 제어하는 네트워크",
+            "prediction": "헝메로 U-Net이 주합해 생성결과의 공간적 구조를 제안하는 데 네트워크",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0025",
+            "bbox": [
+              193,
+              3060,
+              2348,
+              3166
+            ],
+            "text": "→ 이를 본 연구에서는, 사람의 외형은 diffusion으로 변형하면서 원본 pose와",
+            "prediction": "- 몸이 몸 면구매한, 사건의 쇼핑몬 diffusion으로 변형이면서 원본 pose와",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0159-line-0026",
+            "bbox": [
+              322,
+              3192,
+              1118,
+              3278
+            ],
+            "text": "행동 구조를 유지하기 위해 사용.",
+            "prediction": "협동 구조를 유지하기 위해 사용.",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T11:58:29.403Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T11:35:49.531Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 26
+        }
+      ]
     },
     "hf-0160": {
       "id": "hf-0160",
