@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-30T16:33:29.631Z",
+  "updated_at": "2026-10-30T16:35:27.331Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -20512,20 +20512,333 @@
         "source_sha256": "2c0ba1ddad3c7040ec165c0ff79d8fd77dff860fa44d36a10d552e9ddfabf466"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0155-line-0001",
+            "bbox": [
+              65,
+              65,
+              671,
+              157
+            ],
+            "text": "· A to C 검증 point.",
+            "prediction": "A to ( 杂 point.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0002",
+            "bbox": [
+              141,
+              170,
+              936,
+              281
+            ],
+            "text": "- Mask가 사람을 충분히 덮는가?",
+            "prediction": "- Mask 차 시장은 황비 말논가?",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0003",
+            "bbox": [
+              128,
+              282,
+              1282,
+              385
+            ],
+            "text": "- \" 주변 배경을 너무 침범하지 않는가?",
+            "prediction": "- \" 구변 배범(대모 힘백리) 않는가?",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0004",
+            "bbox": [
+              128,
+              407,
+              1592,
+              516
+            ],
+            "text": "- Mask $\\leftrightarrow$ frame $\\leftrightarrow$ Person ID Mapping이 정확한가?",
+            "prediction": "- Mask $\\leftrightarrow$ frame $\\leftrightarrow$ Person ID Mapping이 장락한가?",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0005",
+            "bbox": [
+              65,
+              649,
+              356,
+              738
+            ],
+            "text": "· C to B",
+            "prediction": "G to B",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0006",
+            "bbox": [
+              128,
+              766,
+              1592,
+              852
+            ],
+            "text": "- C에서 B로 전달하는 것: Original & Diffusion Image.",
+            "prediction": "- coml B: 컨설팅은 것: Original & Diffusion Image.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0007",
+            "bbox": [
+              128,
+              866,
+              2412,
+              969
+            ],
+            "text": "- 이로써 얻고자 하는 것 ① 가명화한 사람을 보고 원본 사람이 어떤 사람인지 찾을 수 있는가?",
+            "prediction": "- 이로써 본과 하는 것 ①커멍하한 사람을 보고 옆에 커멍이 사감이 어떤 사감인지 찾을 수 있는가?",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0008",
+            "bbox": [
+              746,
+              988,
+              2422,
+              1080
+            ],
+            "text": "②가명처리된 PID001을 다른 카메라에서도 PID001로 알아볼 수 있는가?",
+            "prediction": "(기명차기된 PID001을 다른 자녀라에서로 PID001로 달아보 수 있는가.)",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0009",
+            "bbox": [
+              300,
+              1105,
+              1372,
+              1197
+            ],
+            "text": "①: D → O Rank - 1 ↓, D → O mAP ↓",
+            "prediction": "①: D → O Rank - 1 t, D → O mAP t",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0010",
+            "bbox": [
+              479,
+              1225,
+              1299,
+              1331
+            ],
+            "text": "Original identity 제거 성공.",
+            "prediction": "- Original identity 제거 성공.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0011",
+            "bbox": [
+              259,
+              1341,
+              1322,
+              1428
+            ],
+            "text": "②: D → D Rank-1↑, D → D mAP ↑",
+            "prediction": "②: D → D Rank-1♀, D → D mAP ↑",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0012",
+            "bbox": [
+              433,
+              1455,
+              1259,
+              1553
+            ],
+            "text": "Pesudo-ID consistency 좋음.",
+            "prediction": "- Pesudo-ID consistency 줄어.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0013",
+            "bbox": [
+              75,
+              1675,
+              361,
+              1767
+            ],
+            "text": "· C to D",
+            "prediction": "G to D",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0014",
+            "bbox": [
+              141,
+              1803,
+              2422,
+              1898
+            ],
+            "text": "- 전달해야 할 정보: diffusion-quality, generation-failure, runtime, consistency_ summary",
+            "prediction": "- 신한해야 할 정보: diffusion-quality, generation-failure, runtime, consistency. summary",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0015",
+            "bbox": [
+              731,
+              1948,
+              2323,
+              2026
+            ],
+            "text": "☆ 배경 보존으로 인해 SSIM의 수치가 매우 높게 나올 수 있으므로,",
+            "prediction": "- 배경 보존으로 인해 SSIYI의 우리가 떠온 높게 4을 수 있으므로,",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0016",
+            "bbox": [
+              70,
+              2034,
+              504,
+              2133
+            ],
+            "text": "· Quality 평가",
+            "prediction": "G Quality 평가 $\\rightarrow$ '좌의 frame, Mask내부, Mask 의복'에 따른 것을 줄여 줄잔적으로",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0017",
+            "bbox": [
+              171,
+              2133,
+              2217,
+              2257
+            ],
+            "text": "· SSIM: 이미지의 구조적 유사성 matrix. (이미지 구조 보존 정도) 평가해야 함!!",
+            "prediction": "SSIM: 이미지의 구조적 익사성 matrix. (이미지 구조 보존 검토) 평가해야 할!!",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0018",
+            "bbox": [
+              171,
+              2270,
+              2343,
+              2380
+            ],
+            "text": "· LPIPS: Deep Network feature 를 이용해 두 이미지 사이의 perceptual similarity를 측정,",
+            "prediction": "LPIPS: Deep Network feature 를 이용해 두 이미지 사이의 perceptual similarity를 측정,",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0019",
+            "bbox": [
+              171,
+              2398,
+              810,
+              2479
+            ],
+            "text": "· Generate failure Rate.",
+            "prediction": "Generate failure Rate.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0020",
+            "bbox": [
+              171,
+              2509,
+              591,
+              2590
+            ],
+            "text": "· Inference time",
+            "prediction": "Inference time",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0155-line-0021",
+            "bbox": [
+              171,
+              2626,
+              591,
+              2718
+            ],
+            "text": "· GPU mamory",
+            "prediction": "GPU memory",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-994166c2-3447-4ce6-bddb-bdc76b6543eb",
+            "bbox": [
+              642,
+              2040,
+              2498,
+              2128
+            ],
+            "text": "$\\rightarrow$ '전체 frame, Mask내부, Mask 외부'에 대한 것을 종합적으로",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-30T16:58:29.631Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-30T16:35:27.331Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 22
+        }
+      ]
     },
     "hf-0156": {
       "id": "hf-0156",
