@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-31T10:02:50.781Z",
+  "updated_at": "2026-10-31T10:03:17.983Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -19097,20 +19097,361 @@
         "source_sha256": "e66e120a43325ae34628c4948bf19757eb8bcb8aab48dbba3f68fe0a62f2afc3"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0073-line-0006",
+            "bbox": [
+              151,
+              600,
+              856,
+              698
+            ],
+            "text": "◦컨볼루션 (convolution)",
+            "prediction": "- 컨블 쿠션 (convolution)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5cabe7ea-f443-4e09-9c85-e1a4f9c79ef5",
+            "bbox": [
+              296,
+              85,
+              2666,
+              224
+            ],
+            "text": "연산 도중 발생하는 값을 입력 영상 f 자체에 기록하는 제자리 연산으로 구현할 수 없음",
+            "prediction": "",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0001",
+            "bbox": [
+              1632,
+              28,
+              1915,
+              105
+            ],
+            "text": "(in-place)",
+            "prediction": "(in-place)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0002",
+            "bbox": [
+              317,
+              196,
+              1688,
+              314
+            ],
+            "text": "- L 다음 화소의 값을 계산할 때 이웃 화솟값이 바뀌어",
+            "prediction": "- L 얼 와의 잠을 제산할 때 이웃 화송 값이 바뀌어",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0003",
+            "bbox": [
+              456,
+              306,
+              926,
+              404
+            ],
+            "text": "있으면 안되기 때문",
+            "prediction": "멘앤 연화 예윤",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0007",
+            "bbox": [
+              196,
+              697,
+              2087,
+              831
+            ],
+            "text": "- 입력 영상 f의 각 화소에 필터를 적용해 곱의 합을 구하는 연산",
+            "prediction": "- 탑경 영상 f의 각 화조에 폴터를 작용해 꼽의 합을 귀하는 연산",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0008",
+            "bbox": [
+              130,
+              959,
+              829,
+              1057
+            ],
+            "text": "- Padding (패딩) 종류",
+            "prediction": "- Padding (紐) 종류",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0009",
+            "bbox": [
+              142,
+              1064,
+              1827,
+              1186
+            ],
+            "text": "- 0 Padding: 필요한 만큼 가장자리를 확장 후 0으로 채우기",
+            "prediction": "- ∞ Padding: 팔로한 안롱 창처리를 밝혀 ∞오 채널기",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0010",
+            "bbox": [
+              139,
+              1213,
+              1494,
+              1323
+            ],
+            "text": "- Copy Padding: 가장자리 화소 값으로 채우기",
+            "prediction": "- Copy Padding: 144 차 화소 값으로 채우기",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0011",
+            "bbox": [
+              102,
+              1467,
+              388,
+              1581
+            ],
+            "text": "◦컨볼루션",
+            "prediction": "- 권블루션",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0012",
+            "bbox": [
+              130,
+              1596,
+              1449,
+              1722
+            ],
+            "text": "- 컨볼루션 자체는 특정한 목적이 없는 일반 연산",
+            "prediction": "- 권블런 체는 특정한 목적이 없는 일반 연산",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0013",
+            "bbox": [
+              169,
+              1721,
+              1107,
+              1851
+            ],
+            "text": "L 필터가 정해지면 목적이 결정됨.",
+            "prediction": "L 팔러가 짐해지면 목적이 결정됨.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0014",
+            "bbox": [
+              223,
+              1850,
+              874,
+              1968
+            ],
+            "text": "(ex. 수직 에지 검출 등).",
+            "prediction": "(ex. 쇠직 에지 결출 등)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0015",
+            "bbox": [
+              154,
+              1979,
+              1570,
+              2101
+            ],
+            "text": "L 스무딩 필터, 샤프닝 필터, 엠보싱 필터 등이 있음.",
+            "prediction": "L 쇼딩 필터, 샤프닝 필터, 앨보싱 필터 등이 있음.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0016",
+            "bbox": [
+              229,
+              2088,
+              518,
+              2222
+            ],
+            "text": "L잡음 잡기",
+            "prediction": "L잡음 잡기",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0017",
+            "bbox": [
+              226,
+              2213,
+              2105,
+              2400
+            ],
+            "text": "(어떤 점의 값이 주위에 비해 아주 낮을 때 자신은 커지고 주위는 작아져",
+            "prediction": "(에멀 접의 값이 주위에 내해 아주 붙을 예  거친한 커지고 주의는 작아져",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0018",
+            "bbox": [
+              261,
+              2346,
+              859,
+              2508
+            ],
+            "text": "잡음을 누그러 뜨림)",
+            "prediction": "돼백소수 졸음을 누그러뜨림)",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0019",
+            "bbox": [
+              202,
+              2487,
+              2205,
+              2678
+            ],
+            "text": "스무딩 필터는 물체의 경계를 흐릿하게 만드는 블러링이라는 부작용이 있음.",
+            "prediction": "스팅 필터는 문제의 결제를 흐렸다게 안드는 블램이어서는 부작용이 있음.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0020",
+            "bbox": [
+              169,
+              2620,
+              2045,
+              2819
+            ],
+            "text": "샤프닝 필터: 에지를 선명하게 해서 물체의 식별을 돕는 작용을 함.",
+            "prediction": "샤프닝 필터: 에피를 선정하게 해서 물제의 쇼벌을 돕는 작용을하다.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0021",
+            "bbox": [
+              492,
+              2798,
+              1298,
+              2932
+            ],
+            "text": "부작용으로 잡음 확대가 있음",
+            "prediction": "복용으로 졸음 확대가 있음",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0022",
+            "bbox": [
+              133,
+              2911,
+              1425,
+              3089
+            ],
+            "text": "앰보싱 필터 : 이미지에 돋을 새김 느낌을 주는 필터",
+            "prediction": "보보싱 필터: 에이지에 몸을 새김 느낌을 주는 필터",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0023",
+            "bbox": [
+              707,
+              3072,
+              1703,
+              3234
+            ],
+            "text": "평평한 표면에 무언가가 볼록하게",
+            "prediction": "덕평한 표현에 9만가 불륙하게",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0073-line-0024",
+            "bbox": [
+              813,
+              3217,
+              1773,
+              3371
+            ],
+            "text": "튀어나와 있는 것처럼 표현하는 것.",
+            "prediction": "뒤나와 완긴하길 표현하는 것.",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-320fe031-f567-4380-a4ee-4f2ede4a6ca2",
+            "bbox": [
+              0,
+              2316,
+              221,
+              2511
+            ],
+            "text": "3X3 모든화소 1/q",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-31T10:27:50.781Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-31T10:03:17.983Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 24
+        }
+      ]
     },
     "hf-0074": {
       "id": "hf-0074",
