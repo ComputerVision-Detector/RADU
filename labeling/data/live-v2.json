@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-31T09:46:13.021Z",
+  "updated_at": "2026-10-31T09:46:22.840Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -18060,20 +18060,291 @@
         "source_sha256": "d649d733e8ba98e4dd969f7f52830aea0ce2a1b5fc1177c54993b10ead04b9d0"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0069-line-0001",
+            "bbox": [
+              293,
+              254,
+              602,
+              351
+            ],
+            "text": "◦명암 영상",
+            "prediction": "- 명망 영상",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0002",
+            "bbox": [
+              356,
+              374,
+              1116,
+              476
+            ],
+            "text": "- 2차원 구조의 배열로 표현",
+            "prediction": "- 24 월 72의 배열로 표현",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0003",
+            "bbox": [
+              344,
+              504,
+              684,
+              609
+            ],
+            "text": "- 채널 하나",
+            "prediction": "- 재설 하나",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0004",
+            "bbox": [
+              290,
+              782,
+              587,
+              879
+            ],
+            "text": "◦컬러 영상",
+            "prediction": "- 퀄터 영상",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0005",
+            "bbox": [
+              323,
+              911,
+              753,
+              1017
+            ],
+            "text": "- 3개 채널로 구성",
+            "prediction": "- 캐셀로 구성",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0006",
+            "bbox": [
+              332,
+              1016,
+              1110,
+              1142
+            ],
+            "text": "- 3차원 구조의 배열로 표현",
+            "prediction": "- 3차원 규모 배열로 표현",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0007",
+            "bbox": [
+              254,
+              1302,
+              880,
+              1412
+            ],
+            "text": "◦웹캠 등 컬러 동영상",
+            "prediction": "- 월 캠퉁 걸리 동영상",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0008",
+            "bbox": [
+              311,
+              1435,
+              1110,
+              1541
+            ],
+            "text": "- 4차원 구조의 배열로 표현",
+            "prediction": "- 4월 72의 배열로 표현",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0009",
+            "bbox": [
+              244,
+              1713,
+              1198,
+              1831
+            ],
+            "text": "◦다분광 / 초분광 / MR / CT 영상",
+            "prediction": "- (발화/호분광/새/CT 영상)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0010",
+            "bbox": [
+              272,
+              1858,
+              1053,
+              1960
+            ],
+            "text": "- 3차원 구조의 배열로 표현",
+            "prediction": "- 3월 72의 배열로 표현",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0011",
+            "bbox": [
+              290,
+              1987,
+              2214,
+              2097
+            ],
+            "text": "- 단지 세번째 축의 크기가 3에서 3보다 큰 값으로 확장될 뿐",
+            "prediction": "- 먼지 세빈 대 롱의 크기 3에서 캐나 큰 측으로 확장될 뿐",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0012",
+            "bbox": [
+              229,
+              2270,
+              959,
+              2391
+            ],
+            "text": "◦물체 거리까지 측정한 영상",
+            "prediction": "- 둘째 계절 족칭한 영상",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0013",
+            "bbox": [
+              278,
+              2407,
+              1788,
+              2553
+            ],
+            "text": "- 거리를 깊이(depth) 또는 레인지(range)라고 부름",
+            "prediction": "- 거리를 깊이 (depth) 또는 레밧치(large) 차고 복음",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0014",
+            "bbox": [
+              272,
+              2556,
+              2145,
+              2698
+            ],
+            "text": "- 거리를 표현한 영상은 '깊이 영상' 또는 '레인지 영상'이라 부름",
+            "prediction": "- 기존 표현완 영상은 ‘깊이 영상’ 또는 ‘레밸치 영상’ 이다. 복음",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0015",
+            "bbox": [
+              290,
+              2697,
+              1122,
+              2831
+            ],
+            "text": "- 종류 : RGB - O , 라이다 등",
+            "prediction": "종류: RGB-D, 2014 등",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0016",
+            "bbox": [
+              514,
+              2830,
+              1627,
+              2988
+            ],
+            "text": "RGB컬러 센서와 깊이 센서가 통합된 것.",
+            "prediction": "RGB램써A와 꽃이 섰어 돌랐 뿐것.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0017",
+            "bbox": [
+              244,
+              2991,
+              920,
+              3121
+            ],
+            "text": "- 점 구름 영상으로 표현",
+            "prediction": "- 정 꼽 명상으로 표현",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0018",
+            "bbox": [
+              266,
+              3112,
+              1894,
+              3327
+            ],
+            "text": "L점 까지 거리 d를 (x_i,y_i,d_i)형식으로 저장",
+            "prediction": "L컴 게시 게 4를 (x₁, x₂, d₁) 형식으로 작성.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0069-line-0019",
+            "bbox": [
+              244,
+              3548,
+              1110,
+              3710
+            ],
+            "text": "- H: 색상, S: 채도, V: 명암",
+            "prediction": "- H: 색상, S: 채도, V: 영양",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-31T10:09:50.789Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-31T09:46:22.840Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 19
+        }
+      ]
     },
     "hf-0070": {
       "id": "hf-0070",
