@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-31T09:55:13.013Z",
+  "updated_at": "2026-10-31T09:56:13.744Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -18955,20 +18955,137 @@
         "source_sha256": "d4919a4a9e52d09e679982680289d836be3e48ca4d4b0a60e0b8d19667718372"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0072-line-0002",
+            "bbox": [
+              120,
+              370,
+              436,
+              460
+            ],
+            "text": "◦점 연산",
+            "prediction": "- 점 연산",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0072-line-0003",
+            "bbox": [
+              196,
+              475,
+              1894,
+              605
+            ],
+            "text": "- 각 픽셀의 값을 주변 픽셀과 독립적으로 변환하는 연산",
+            "prediction": "- 3 괴설의 짜을 주변 괴설과 독립적으로 변환하는 연산",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0072-line-0004",
+            "bbox": [
+              196,
+              633,
+              1476,
+              746
+            ],
+            "text": "- 감마 보정, 히스토그램 평활화가 이에 해당.",
+            "prediction": "- 참아보침, 하소그램 평론화가 아예 해당.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0072-line-0005",
+            "bbox": [
+              139,
+              915,
+              509,
+              1013
+            ],
+            "text": "◦영역 연산",
+            "prediction": "- 영역 연산",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0072-line-0006",
+            "bbox": [
+              181,
+              1056,
+              1588,
+              1158
+            ],
+            "text": "- 이웃 화소를 같이 고려해 새로운 값을 결정",
+            "prediction": "- 이동 화소를 총이 꼬레해 사용은 줄을 결정",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0072-line-0007",
+            "bbox": [
+              214,
+              1213,
+              1177,
+              1315
+            ],
+            "text": "- 주로 컨볼루션을 통해 이루어짐",
+            "prediction": "-주로 권분 특선을 통해 이주임.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0072-line-0008",
+            "bbox": [
+              208,
+              1322,
+              2377,
+              1460
+            ],
+            "text": "- CNN의 컨볼루션은 영상 처리에서 사용하던 영역연산이 컨볼루션 연산을",
+            "prediction": "- CUN의 권분폭선은 영상 켜져서 사용하던 영역선이 권분규선 연산을",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0072-line-0009",
+            "bbox": [
+              269,
+              1495,
+              1198,
+              1605
+            ],
+            "text": "신경망의 학습 구조에 가져온 것.",
+            "prediction": "성형답 밝다 견에 가려는 것.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-31T10:19:43.793Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-31T09:56:13.744Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 8
+        }
+      ]
     },
     "hf-0073": {
       "id": "hf-0073",
