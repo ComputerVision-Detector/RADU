@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-31T13:55:13.110Z",
+  "updated_at": "2026-10-31T13:55:40.592Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -25015,20 +25015,431 @@
         "source_sha256": "aead697faa28ced77c810f2c92e26534d0d42fc41b10541e815206a3c7d1e2fc"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0142-line-0001",
+            "bbox": [
+              392,
+              92,
+              868,
+              175
+            ],
+            "text": "2장. 관계 데이터 모델",
+            "prediction": "23. 관계 데이터 모델",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0142-line-0002",
+            "bbox": [
+              0,
+              286,
+              839,
+              380
+            ],
+            "text": "릴레이션의 개념 ----------",
+            "prediction": "랄데이션의 개념 -",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0142-line-0003",
+            "bbox": [
+              335,
+              393,
+              1012,
+              477
+            ],
+            "text": "· 릴레이션 : 행과 열로 구성된 테이블",
+            "prediction": "- 혈레이션 : 향다 흘렀 구성원 데이블",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0142-line-0004",
+            "bbox": [
+              357,
+              491,
+              726,
+              576
+            ],
+            "text": "⇒ 릴레이션 스키마",
+            "prediction": "$\\rightarrow$ 혈레이션 스키다 - 축성 : 향제한 스키미의 혈",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0142-line-0005",
+            "bbox": [
+              735,
+              572,
+              1509,
+              665
+            ],
+            "text": "├ 도메인: 속성이 가질 수 있는 값의 집합",
+            "prediction": "- 도매인: 솔싱이 개념 수 없는 깊은 값의 긴장",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0142-line-0006",
+            "bbox": [
+              724,
+              683,
+              1104,
+              745
+            ],
+            "text": "└ 차수 : 속성이 갯수.",
+            "prediction": "치수 : 솔싱이 깨닥",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0142-line-0007",
+            "bbox": [
+              326,
+              852,
+              814,
+              926
+            ],
+            "text": "· 릴레이션 구조 관련 용어",
+            "prediction": "- 혈레이션 구조 관련 용어",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0142-line-0008",
+            "bbox": [
+              403,
+              959,
+              925,
+              1020
+            ],
+            "text": "1) 릴레이션 = 테이블 = 파일",
+            "prediction": "1) 혈레이션 = 데이블 = 파워",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0142-line-0009",
+            "bbox": [
+              406,
+              1059,
+              869,
+              1120
+            ],
+            "text": "2) 스키마 = 내포 = 헤더",
+            "prediction": "2) 스키다 = 내포 = 헤더",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0142-line-0010",
+            "bbox": [
+              407,
+              1154,
+              913,
+              1218
+            ],
+            "text": "3) 인스턴스 = 외연 = 데이터",
+            "prediction": "3) 인덱스 = 미연 = 데이터",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0142-line-0011",
+            "bbox": [
+              407,
+              1253,
+              870,
+              1317
+            ],
+            "text": "4) 튜플 = 행 = 레코드",
+            "prediction": "4) 류율 = 행 = 레코드",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0142-line-0012",
+            "bbox": [
+              407,
+              1348,
+              821,
+              1413
+            ],
+            "text": "5) 속성 = 열 = 필드",
+            "prediction": "5) 숙성 = 열 = 클럽",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e29bbf2e-7658-4675-a90f-bdc13774561e",
+            "bbox": [
+              744,
+              475,
+              1248,
+              554
+            ],
+            "text": "┌ 속성: 릴레이션 스키마의 열",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d4f7635d-ded1-46ec-9203-4b2bcd429252",
+            "bbox": [
+              18,
+              1524,
+              814,
+              1610
+            ],
+            "text": "릴레이션의 특징 -----------",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-abb85923-5706-4b11-bed5-7eecf2765eb7",
+            "bbox": [
+              317,
+              1628,
+              789,
+              1710
+            ],
+            "text": "1) 속성은 단일 값을 가짐.",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c1fa4351-bc6f-473f-acce-7c9e3429a712",
+            "bbox": [
+              330,
+              1725,
+              905,
+              1795
+            ],
+            "text": "2) 속성은 서로 다른 이름을 가짐",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f3d4e8bd-d9a1-4b98-9d82-f5a0c73bbbfd",
+            "bbox": [
+              330,
+              1823,
+              1085,
+              1890
+            ],
+            "text": "3) 한 속성의 값은 모두 같은 도메인을 가짐.",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-783d07c7-76d5-469f-a21e-52f247b2abf6",
+            "bbox": [
+              323,
+              1920,
+              843,
+              1988
+            ],
+            "text": "4) 속성의 순서는 상관 없음.",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9c8748f1-5d4f-484a-8436-3823c02c034c",
+            "bbox": [
+              335,
+              2008,
+              1167,
+              2080
+            ],
+            "text": "5) 릴레이션 내에 중복된 튜플은 허용되지 않음.",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-69dfff11-b61e-4f3f-b973-72a5ffa997e0",
+            "bbox": [
+              337,
+              2108,
+              891,
+              2180
+            ],
+            "text": "6) 튜플의 순서는 상관 없음.",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-492e0778-0f66-41bb-ac29-f481312da310",
+            "bbox": [
+              36,
+              2309,
+              877,
+              2379
+            ],
+            "text": "키(key) ---------------",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a35bda76-3391-497e-8af3-b9e404d897b4",
+            "bbox": [
+              332,
+              2395,
+              1547,
+              2460
+            ],
+            "text": "· 키 (key) : 무결성을 지키기 위해 사용. (Value 값을 찾는 역할)",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2312f32f-d2c4-4577-97de-ec24c276c349",
+            "bbox": [
+              468,
+              2476,
+              1809,
+              2549
+            ],
+            "text": "└ 슈퍼키 (super key) : 튜플이 유일하게 식별할 수 있는 하나 혹은 집합.",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-bde24778-1449-4280-a51a-6808ef87790b",
+            "bbox": [
+              941,
+              2569,
+              1269,
+              2653
+            ],
+            "text": "ex) 주민번호 등",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-7736954d-bf40-417e-8619-9a59d186213e",
+            "bbox": [
+              459,
+              2655,
+              2334,
+              2754
+            ],
+            "text": "├ 후보키(condidate key): 튜플이 유일하게 식별할 수 있는 속성의 최소 집합. (기본 키가 될 수 있는 키)",
+            "prediction": "",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-336663ad-9aea-43b3-8e3f-0da5a36406ef",
+            "bbox": [
+              1006,
+              2768,
+              1508,
+              2847
+            ],
+            "text": "ex) 주문 번호, 고객 번호 등",
+            "prediction": "",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a5d03df0-c469-4353-872b-f245e3dba61e",
+            "bbox": [
+              468,
+              2861,
+              2533,
+              2956
+            ],
+            "text": "├ 기본 키(primary key) : 후보 키중에서 대표로 삼는 키. ⇒ 고유 값의 키여야 함, Null 불가, 변동 없어야 함 …",
+            "prediction": "",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2afb9471-8b83-4713-a273-4098842b0b0c",
+            "bbox": [
+              1009,
+              2958,
+              1506,
+              3044
+            ],
+            "text": "ex) 고객 번호, 도서 번호 등",
+            "prediction": "",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a57de3b1-d192-4802-af09-997cbca46546",
+            "bbox": [
+              452,
+              3051,
+              2465,
+              3134
+            ],
+            "text": "├ 대리키 (surrogate key) : 기본 키가 보안을 필요로 하거나 복잡할 때, 가상의 속성을 만들어 키로 사용.",
+            "prediction": "",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-31T14:20:13.110Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-31T13:55:40.592Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 29
+        }
+      ]
     },
     "hf-0143": {
       "id": "hf-0143",
