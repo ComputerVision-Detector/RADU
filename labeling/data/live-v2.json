@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-31T06:24:23.549Z",
+  "updated_at": "2026-10-31T06:25:46.322Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -17566,20 +17566,193 @@
         "source_sha256": "1ee3f727458d72c37ad912ad676156df77b74417dfb3c4bcdb50019151dcc4a3"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0067-line-0001",
+            "bbox": [
+              208,
+              233,
+              1516,
+              388
+            ],
+            "text": "· BPTT (Back Pro Pagation Through Time).",
+            "prediction": "- BPTT (Back Pro Fogation Through Time).",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0067-line-0002",
+            "bbox": [
+              214,
+              374,
+              1382,
+              513
+            ],
+            "text": "- 시간 방향으로 펼친 신경망의 오차역전파법",
+            "prediction": "- 시간 밟음으로 필요 쇼핑망의 뜨릭한 파법",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0067-line-0003",
+            "bbox": [
+              214,
+              471,
+              1927,
+              638
+            ],
+            "text": "- 시계열 데이터가 길어짐에 따라 계산량과 메모리 사용량도 증가함.",
+            "prediction": "- 시계열 데이터가 길어짐에 따라 계산총과 메모리 사용종도 중지함.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0067-line-0004",
+            "bbox": [
+              266,
+              592,
+              2341,
+              775
+            ],
+            "text": "(BPTT를 이용해 기울기를 구하기 위해서는 매 시작 RNN 계층의 중간 데이터를",
+            "prediction": "(BPTT를 이용해 기울기를 권리 위배시는 애 삭축 RNN 계층의 중간 데이터 를",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0067-line-0005",
+            "bbox": [
+              293,
+              766,
+              1065,
+              900
+            ],
+            "text": "메모리에 유지해야 하기 때문).",
+            "prediction": "메모리에 유지해야 하기 예문)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0067-line-0006",
+            "bbox": [
+              154,
+              1052,
+              775,
+              1162
+            ],
+            "text": "· Truncated BPTT",
+            "prediction": "- Thunated BPTT",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0067-line-0007",
+            "bbox": [
+              208,
+              1147,
+              1223,
+              1295
+            ],
+            "text": "- 적당한 길이로 잘라낸 오차역전파법.",
+            "prediction": "- 적숭한 길이로 줄어날 우차역편다법.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0067-line-0008",
+            "bbox": [
+              196,
+              1278,
+              1739,
+              1428
+            ],
+            "text": "- 시간축 방향으로 너무 길어진 신경망을 적당한 지점에서",
+            "prediction": "- 시간효 밝혀오도 넉 길어진 신경병을 정당한 처럼에서",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0067-line-0009",
+            "bbox": [
+              281,
+              1419,
+              1358,
+              1549
+            ],
+            "text": "잘라내어 작은 신경망 여러개로 만드는 것.",
+            "prediction": "졸비에 작은 신경병 여겨로 얻는 것",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0067-line-0010",
+            "bbox": [
+              196,
+              1556,
+              1785,
+              1690
+            ],
+            "text": "- 순전파의 흐름은  끊지 않고 역전파의 흐름만 끊음.",
+            "prediction": "- 쇼핑하며 흐름은 줄줄 찾고 역전파의 흐름만 줄음.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0067-line-0011",
+            "bbox": [
+              151,
+              1701,
+              1881,
+              1835
+            ],
+            "text": "- 미니 배치 학습을 수행할 때는 단어를 무작로 선택했지만",
+            "prediction": "- 이내지 학습을 삭향할 뒤는 단어를 목착으로 선택했지만",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0067-line-0012",
+            "bbox": [
+              250,
+              1838,
+              2238,
+              1972
+            ],
+            "text": "Truncated BPTT를 수행할 때는 데이터를 순서대로 입력해야 함.",
+            "prediction": "Truncated BPTT를 성형한 데이터를 손해로 입력해야 한다.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-31T06:49:23.549Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-31T06:25:46.322Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 12
+        }
+      ]
     },
     "hf-0068": {
       "id": "hf-0068",
