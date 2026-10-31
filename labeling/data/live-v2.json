@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-31T13:01:13.225Z",
+  "updated_at": "2026-10-31T13:04:04.413Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -20799,20 +20799,417 @@
         "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0095-line-0003",
+            "bbox": [
+              208,
+              302,
+              675,
+              396
+            ],
+            "text": "* 소액투자의 원칙",
+            "prediction": "* 소변투자의 틀칭",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0004",
+            "bbox": [
+              311,
+              391,
+              1779,
+              500
+            ],
+            "text": "① 저평가를 찾아라 （싼것과 저평가 구분 필수）",
+            "prediction": "④ 저평가를 했다라 （싼것과 저평가 구분 필수）",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0005",
+            "bbox": [
+              456,
+              516,
+              1385,
+              609
+            ],
+            "text": "- 상승 호재 - 교통망 발달 전망 有",
+            "prediction": "- 상승 효채 - 교통량 별 절망 혁명",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0006",
+            "bbox": [
+              910,
+              628,
+              1404,
+              714
+            ],
+            "text": "일자리 창출 계획",
+            "prediction": "일자리 찾출 계획",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0007",
+            "bbox": [
+              931,
+              713,
+              1854,
+              835
+            ],
+            "text": "공공기관 기전 가능성 여부 check.",
+            "prediction": "공공관 가전 거음성 여부 check.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0008",
+            "bbox": [
+              937,
+              822,
+              1730,
+              948
+            ],
+            "text": "대기업 이전 가능성 check.",
+            "prediction": "레시피 이전 가능성 check.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0009",
+            "bbox": [
+              411,
+              963,
+              1029,
+              1069
+            ],
+            "text": "· 저평가 구분 방법",
+            "prediction": "- 저평가 구분 방법",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0010",
+            "bbox": [
+              606,
+              1033,
+              2798,
+              1171
+            ],
+            "text": "저평가 지역 check - 교통망 정보수집 - 네이버부동산 / 아실에서 정보확인기능",
+            "prediction": "저평가 지역 check - 교통량 정보논집 -네에버뇽동산 / 이실에서 정보확인기능",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0011",
+            "bbox": [
+              381,
+              1181,
+              1110,
+              1303
+            ],
+            "text": "② 레버리지를 활용하라",
+            "prediction": "② 레버리지를 활용하다",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0012",
+            "bbox": [
+              583,
+              1257,
+              2332,
+              1408
+            ],
+            "text": "- 투자와 거주를 구분하라 (주택담보대출, 반전세 이동 등...)",
+            "prediction": "- 무자와 가주를 한분하라 (주핵렬보내출. 변번세이듬 등...)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0013",
+            "bbox": [
+              601,
+              1403,
+              1449,
+              1517
+            ],
+            "text": "- 전세를 안고 투자하는 범법",
+            "prediction": "- 잔세로 만고 투자하는 범법",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0014",
+            "bbox": [
+              632,
+              1495,
+              2205,
+              1642
+            ],
+            "text": "- 담보대출 활용 → 주담보. 마이너스 대출. 보험약관대출.",
+            "prediction": "- 담보매출 활용 → 주렴보. 이야기는 대출. 보험약관대출.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0015",
+            "bbox": [
+              423,
+              1653,
+              877,
+              1762
+            ],
+            "text": "③ 타이밍 중요.",
+            "prediction": "③ 라이밍 중요.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0016",
+            "bbox": [
+              565,
+              1701,
+              2767,
+              1883
+            ],
+            "text": "타이밍 맞추는 방법 - 수요공급 파악. 몇년후의 수·공도 확인가능 → 부동산지인",
+            "prediction": "라이밍 잊추는 범법 - 수포콤 파악 · 멋년축의 구양은 혁민가능·첫동산지인",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0017",
+            "bbox": [
+              587,
+              1838,
+              2505,
+              1996
+            ],
+            "text": "옥석가리기 -재건축. 재개발. 완화지역 살피기. ex) 1기신도시.",
+            "prediction": "목석기기 -재건축.재개방.문화지역 상피기.왜기기신도시.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0018",
+            "bbox": [
+              205,
+              2140,
+              657,
+              2262
+            ],
+            "text": "* 사이트활용",
+            "prediction": "사이트활용",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0019",
+            "bbox": [
+              290,
+              2199,
+              2662,
+              2366
+            ],
+            "text": "· 아실 → APT 실거래가 및 갭투자. 공급예상 불량등: 다양한 정보 수집가능",
+            "prediction": "- 아실 → APT 설계가 및 갑투자. 공급예상 온랄음: 대량한 접보 수입가능.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0020",
+            "bbox": [
+              323,
+              2306,
+              2844,
+              2518
+            ],
+            "text": "· 부동산지인 → APT 수요공급 확인가능, 몇년후의 수요·공급도 확인가능. 미분양 확인.",
+            "prediction": "- 협산재인 → APT 수료금 협인자능, 멋년후의 수요 협근로 혁민자능, 이분양 협인.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0021",
+            "bbox": [
+              332,
+              2467,
+              1881,
+              2633
+            ],
+            "text": "· 혁신도시 → 산업단지등 개발의 호재 확인가능.",
+            "prediction": "- 혁신도시 → 산업단체는 개발의 혼재 혁민가능.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0022",
+            "bbox": [
+              341,
+              2580,
+              2042,
+              2770
+            ],
+            "text": "· 한국부동산원 → 매매가격지수 / 그래프로 chek 가능.",
+            "prediction": "- 한국부동산원 → 매매가격지수 / 그래프로 chek 기능.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0023",
+            "bbox": [
+              329,
+              2697,
+              2232,
+              2895
+            ],
+            "text": "· 국토교통부 → 인허가 건수 확인 : 주택물량공급의 선지표가 될 수 있다.",
+            "prediction": "- 국토교통부 → 인하자 건수 혁신 : 주랴활용공합의 쓰레기가될수 있어.",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0024",
+            "bbox": [
+              190,
+              2983,
+              1863,
+              3190
+            ],
+            "text": "* 혁신도시 투자 방법 → 장기적 안정적 투자 가능.",
+            "prediction": "혁신도시 투자 방법 → 장거척 인정적 투자 기능.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0025",
+            "bbox": [
+              302,
+              3144,
+              1500,
+              3315
+            ],
+            "text": "· 지방의 혁신도시 일수록 일자리가 중요.",
+            "prediction": "지방의 혁신도시 일부를 일찍기다듬다.",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0026",
+            "bbox": [
+              314,
+              3286,
+              1385,
+              3460
+            ],
+            "text": "· 지방 공공기관 이전이 될수록 좋음.",
+            "prediction": "지방공공가원 안이 탈락론 좋음.",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0027",
+            "bbox": [
+              299,
+              3427,
+              1461,
+              3601
+            ],
+            "text": "· 혁신도시주변 비규제지역이 저렴",
+            "prediction": "- 혁신도시주변 비귀치지얼이 저절",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0028",
+            "bbox": [
+              374,
+              3507,
+              2891,
+              3746
+            ],
+            "text": "→ 혁신도시에 새 아파트가 많아서 비싸면 혁신도시에서 밀려나는 사람들이",
+            "prediction": "→ 혁신도시에 새 아파트가 만나서 비싸면 혁신도시에서 밀려가는 사람들이",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0095-line-0030",
+            "bbox": [
+              456,
+              3721,
+              1316,
+              3891
+            ],
+            "text": "몰릴주변 지역에 투자하라.",
+            "prediction": "몰릴수변 지역에 후차하다.",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-461ebb2e-041e-4cc2-a5e3-d955fca9e90e",
+            "bbox": [
+              2456,
+              2411,
+              2811,
+              2560
+            ],
+            "text": "입주물량확인",
+            "prediction": "",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-31T13:26:13.225Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-31T13:04:04.413Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 28
+        }
+      ]
     },
     "hf-0096": {
       "id": "hf-0096",
