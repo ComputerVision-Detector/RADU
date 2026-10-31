@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-31T09:49:13.036Z",
+  "updated_at": "2026-10-31T09:50:23.638Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -18356,20 +18356,305 @@
         "source_sha256": "2942b0b9e35013d1a5e3972a62a0fc4e9be043b38c597dad4a6fca06eaf61bb6"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0070-line-0003",
+            "bbox": [
+              244,
+              306,
+              980,
+              416
+            ],
+            "text": "◦이진 영상 (binary image)",
+            "prediction": "- 연영상 (bindy image)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0004",
+            "bbox": [
+              302,
+              423,
+              1349,
+              525
+            ],
+            "text": "- 화소가 0(흑) 또는 1(백)인 영상",
+            "prediction": "- 하소가 0 (총) 또는 1 (백)인 영상.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0005",
+            "bbox": [
+              302,
+              548,
+              968,
+              654
+            ],
+            "text": "- 화소당 1비트면 저장",
+            "prediction": "- 과소당 1배트면 2당.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0006",
+            "bbox": [
+              244,
+              806,
+              466,
+              904
+            ],
+            "text": "◦이진화",
+            "prediction": "- 이전화",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0007",
+            "bbox": [
+              281,
+              911,
+              2217,
+              1041
+            ],
+            "text": "- 임계값 T보다 큰 화소는 1, 그렇지 않은 화소는 0으로 바꾸는 것.",
+            "prediction": "- 잉대하고 보다 큰 과소는 1. 컴지 않은 화소는 0으로 하주는 것.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0008",
+            "bbox": [
+              290,
+              1036,
+              2329,
+              1178
+            ],
+            "text": "- 히스토그램의 계곡 근처를 임계값으로 결정해 쏠림 현상을 누그러뜨림",
+            "prediction": "- 하스토객의 제목 근리를 암계값으로 결정해 쏠김 현상을 누려뜨겁다.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0009",
+            "bbox": [
+              411,
+              1165,
+              1763,
+              1295
+            ],
+            "text": "L > 0.1, … L-1의 명암 단계 각각에 대해",
+            "prediction": "L > 0.1, … L-1의 영양 변제 즉각에 대해",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0010",
+            "bbox": [
+              517,
+              1294,
+              1646,
+              1420
+            ],
+            "text": "화소 발생 빈도를 나타내는 1차원 배열",
+            "prediction": "화소 발생 빈도를 나타내는 타원 배열",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0011",
+            "bbox": [
+              244,
+              1580,
+              1419,
+              1686
+            ],
+            "text": "- 오츄 알고리즘 ( 오츠 알고리즘 | otsu)",
+            "prediction": "- 오류 알려줌 (오프 알려줌 | outu)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0012",
+            "bbox": [
+              290,
+              1677,
+              2287,
+              1819
+            ],
+            "text": "- 이미지의 픽셀 밝기 분포를 보고, 배경과 객체를 가장 잘 나누는",
+            "prediction": "- 이제의 필요 발기 분포를 보고, 배경화 체제를 가장 잘 나누는",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0013",
+            "bbox": [
+              344,
+              1818,
+              1431,
+              1940
+            ],
+            "text": "임계값을 자동으로 찾아주는 알고리즘",
+            "prediction": "양계값을 자동으로 찾아온 알려줌",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0014",
+            "bbox": [
+              223,
+              2076,
+              2069,
+              2250
+            ],
+            "text": "- 컴퓨터 비전은 주어진 문제를 최적화 문제로 푸는 경우가 많음.",
+            "prediction": "- 경품터 비전은 20번 문제를 최적화 문제로 푸는 경우가 많음.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0015",
+            "bbox": [
+              223,
+              2382,
+              1198,
+              2525
+            ],
+            "text": "- 해 공간 (Solution Space)",
+            "prediction": "- 해 공간 (Solution Space)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0016",
+            "bbox": [
+              272,
+              2515,
+              1425,
+              2670
+            ],
+            "text": "- 발생할 수 있는 모든 해의 집합.",
+            "prediction": "- 발생할 수 있는 모든 해의 검찰.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0017",
+            "bbox": [
+              223,
+              2778,
+              2468,
+              2956
+            ],
+            "text": "- 낱낱 탐색 알고리즘 (exhaustive search algorithm) = (완전탐색)",
+            "prediction": "- 눈높 택색 쓸리즘 (exhaustive search algorithm) -> (완전탐색)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0018",
+            "bbox": [
+              244,
+              2947,
+              1319,
+              3097
+            ],
+            "text": "- 모든 해를 다 검사하는 방법.",
+            "prediction": "- 모든 해를 다 검사하는 방법.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0019",
+            "bbox": [
+              208,
+              3237,
+              566,
+              3371
+            ],
+            "text": "- 연결 요소",
+            "prediction": "- 연결 요소",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0020",
+            "bbox": [
+              229,
+              3350,
+              1881,
+              3524
+            ],
+            "text": "-이진 영상에서 1의 값을 가진 연결된 화소의 집합",
+            "prediction": "- 옛 영상에서 1의 꽃을 새겨 연결된 화소의 집합.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0021",
+            "bbox": [
+              223,
+              3491,
+              2060,
+              3674
+            ],
+            "text": "- 4-연결성: 상하좌우 4개 이웃만 연결된 것으로 간주",
+            "prediction": "- 4-연결성: 상하좌육 4개 이름만 연결된 것으로 간주",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0070-line-0022",
+            "bbox": [
+              229,
+              3636,
+              1984,
+              3827
+            ],
+            "text": "- 8-연결성: 대각선에 위치한 화소도 연결된 것으로 간주",
+            "prediction": "- 8-연결성: 대학원에 위치한 화소도 연결된 것으로 간주",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-31T10:12:50.796Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-31T09:50:23.638Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 20
+        }
+      ]
     },
     "hf-0071": {
       "id": "hf-0071",
