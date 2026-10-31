@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-31T09:50:33.593Z",
+  "updated_at": "2026-10-31T09:50:40.222Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -18357,9 +18357,9 @@
       },
       "bbox_annotation": {
         "status": "verified",
-        "revision": 1,
+        "revision": 2,
         "annotator": "이진우",
-        "notes": "",
+        "notes": "그림 제외",
         "no_text": false,
         "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
         "boxes": [
@@ -18645,12 +18645,15 @@
           }
         ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-31T10:15:33.593Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-10-31T09:50:40.222Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 2,
+          "box_count": 20
+        },
         {
           "at": "2026-10-31T09:50:23.638Z",
           "author": "이진우",
