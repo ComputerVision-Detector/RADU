@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-31T14:40:59.517Z",
+  "updated_at": "2026-10-31T14:42:04.235Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -24889,20 +24889,613 @@
         "source_sha256": "e6c0b1734875f7427c1282be2f72945acfe4108c9565580b335520c4e4f4484d"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0136-line-0001",
+            "bbox": [
+              83,
+              66,
+              442,
+              158
+            ],
+            "text": "과제#0",
+            "prediction": "2121#O",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0002",
+            "bbox": [
+              417,
+              410,
+              475,
+              483
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0003",
+            "bbox": [
+              279,
+              504,
+              745,
+              593
+            ],
+            "text": "출력 \"계산식 >>\"",
+            "prediction": "“”>”",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0004",
+            "bbox": [
+              444,
+              608,
+              502,
+              675
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0005",
+            "bbox": [
+              230,
+              693,
+              745,
+              776
+            ],
+            "text": "입력 피1, 연, 피2",
+            "prediction": "11,212",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0006",
+            "bbox": [
+              663,
+              854,
+              744,
+              915
+            ],
+            "text": "T",
+            "prediction": "T",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0007",
+            "bbox": [
+              850,
+              879,
+              1133,
+              950
+            ],
+            "text": "피1 + 피2",
+            "prediction": "211+212",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0008",
+            "bbox": [
+              501,
+              999,
+              559,
+              1060
+            ],
+            "text": "F",
+            "prediction": "F",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0009",
+            "bbox": [
+              677,
+              1097,
+              781,
+              1164
+            ],
+            "text": "T",
+            "prediction": "T",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0010",
+            "bbox": [
+              861,
+              1135,
+              1111,
+              1202
+            ],
+            "text": "피1-피2",
+            "prediction": "212",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0011",
+            "bbox": [
+              501,
+              1268,
+              596,
+              1325
+            ],
+            "text": "F",
+            "prediction": "T",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0012",
+            "bbox": [
+              707,
+              1359,
+              762,
+              1407
+            ],
+            "text": "T",
+            "prediction": "T",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0013",
+            "bbox": [
+              869,
+              1365,
+              1152,
+              1432
+            ],
+            "text": "피1*피2",
+            "prediction": "211*212",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0014",
+            "bbox": [
+              501,
+              1526,
+              550,
+              1618
+            ],
+            "text": "↓",
+            "prediction": "T",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0015",
+            "bbox": [
+              720,
+              1595,
+              775,
+              1650
+            ],
+            "text": "T",
+            "prediction": "T",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0016",
+            "bbox": [
+              915,
+              1618,
+              1173,
+              1685
+            ],
+            "text": "피2 ≠ 0",
+            "prediction": "2120",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0017",
+            "bbox": [
+              1275,
+              1564,
+              1365,
+              1637
+            ],
+            "text": "T",
+            "prediction": "T",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0018",
+            "bbox": [
+              1449,
+              1586,
+              1799,
+              1656
+            ],
+            "text": "피1 / 피2",
+            "prediction": "211/212",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0019",
+            "bbox": [
+              1054,
+              1763,
+              1129,
+              1869
+            ],
+            "text": "↓",
+            "prediction": "F",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0136-line-0020",
+            "bbox": [
+              541,
+              1889,
+              594,
+              1956
+            ],
+            "text": "F",
+            "prediction": "F",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f9035c7a-59cf-4396-bbe3-1e620d1b189e",
+            "bbox": [
+              382,
+              302,
+              510,
+              379
+            ],
+            "text": "시작",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2e6de6c3-2f62-4f79-82b9-b560a15ad6cb",
+            "bbox": [
+              430,
+              897,
+              499,
+              968
+            ],
+            "text": "+",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-aefc779e-ccfe-4297-97b9-76937c57d8ab",
+            "bbox": [
+              430,
+              803,
+              510,
+              877
+            ],
+            "text": "↓",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-55de797a-f0ae-47e6-bbfe-8800f48f7137",
+            "bbox": [
+              442,
+              1014,
+              527,
+              1125
+            ],
+            "text": "↓",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-341dc311-56f7-4bcf-b0a5-e78273365898",
+            "bbox": [
+              450,
+              1171,
+              530,
+              1228
+            ],
+            "text": "-",
+            "prediction": "",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-462c5b3a-3736-4659-b7fd-a668bb242184",
+            "bbox": [
+              462,
+              1262,
+              539,
+              1370
+            ],
+            "text": "↓",
+            "prediction": "",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-1bb24aac-f2d4-4cd6-945c-6a06a7a625df",
+            "bbox": [
+              476,
+              1410,
+              530,
+              1476
+            ],
+            "text": "*",
+            "prediction": "",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-47024b65-de41-46c5-94ee-bcb046389bd0",
+            "bbox": [
+              570,
+              1527,
+              624,
+              1584
+            ],
+            "text": "F",
+            "prediction": "",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6e0381a9-bb08-4171-a9a5-a3f47e14e825",
+            "bbox": [
+              496,
+              1775,
+              559,
+              2011
+            ],
+            "text": "↓",
+            "prediction": "",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-3935a287-a37e-4cf7-8bfd-39f2e3dfbe86",
+            "bbox": [
+              496,
+              1638,
+              539,
+              1723
+            ],
+            "text": "/",
+            "prediction": "",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-7853231e-5210-4cd7-bf45-8b77cf518d5e",
+            "bbox": [
+              519,
+              2071,
+              576,
+              2131
+            ],
+            "text": "%",
+            "prediction": "",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2b2a9f51-4d17-4cbf-8b8d-dfdbfc7d585c",
+            "bbox": [
+              972,
+              1877,
+              1807,
+              1977
+            ],
+            "text": "\"0으로 나눌 수 없습니다.\" 출력",
+            "prediction": "",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-87c380f4-60d7-4673-98e6-116b98854d10",
+            "bbox": [
+              1114,
+              1746,
+              1194,
+              1832
+            ],
+            "text": "F",
+            "prediction": "",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-fcb30022-9187-4d9f-b960-9cd3f6a1ca99",
+            "bbox": [
+              715,
+              2017,
+              775,
+              2068
+            ],
+            "text": "T",
+            "prediction": "",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-14b90b57-6290-4820-a0e6-fe399b05890c",
+            "bbox": [
+              579,
+              2171,
+              627,
+              2251
+            ],
+            "text": "F",
+            "prediction": "",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-cbc8a73a-42c3-46b9-9caa-573f306f64d7",
+            "bbox": [
+              903,
+              2057,
+              1254,
+              2131
+            ],
+            "text": "피1 % 피2",
+            "prediction": "",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-8b122472-ea5d-45ed-bb21-b0eff1f5d24d",
+            "bbox": [
+              636,
+              2074,
+              846,
+              2125
+            ],
+            "text": "→",
+            "prediction": "",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-78a9c335-8278-4dd5-a099-05b7a60b9ea9",
+            "bbox": [
+              1319,
+              2051,
+              1513,
+              2100
+            ],
+            "text": "→",
+            "prediction": "",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-7a6956d5-f4fc-4703-808f-97d3c4e33003",
+            "bbox": [
+              1587,
+              2003,
+              1983,
+              2085
+            ],
+            "text": "계산 결과 출력",
+            "prediction": "",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-58f89cee-a7a3-46b6-a098-fa2c126897b1",
+            "bbox": [
+              2046,
+              1704,
+              2553,
+              1803
+            ],
+            "text": "계산 결과 출력",
+            "prediction": "",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-837c4be1-0e83-4f17-90ee-1e183b3e8eb6",
+            "bbox": [
+              2231,
+              2125,
+              2345,
+              2216
+            ],
+            "text": "종료",
+            "prediction": "",
+            "order": 41,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-eb8fa646-9762-4de5-9a55-73b1b91a3490",
+            "bbox": [
+              601,
+              1647,
+              852,
+              1709
+            ],
+            "text": "→",
+            "prediction": "",
+            "order": 42,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-31T15:05:59.517Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-31T14:42:04.235Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 42
+        }
+      ]
     },
     "hf-0137": {
       "id": "hf-0137",
