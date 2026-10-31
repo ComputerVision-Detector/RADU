@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-31T15:07:13.566Z",
+  "updated_at": "2026-10-31T15:10:07.256Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -20589,20 +20589,305 @@
         "source_sha256": "4411060edbdf9051795f633c2325e5be48374abe3427e652dce01dc1010fb9e2"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0085-line-0003",
+            "bbox": [
+              214,
+              356,
+              1169,
+              468
+            ],
+            "text": "· LTP (Local Ternary Pattern)",
+            "prediction": "- LTP (Local) Terahay Ritich) ↓122",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0004",
+            "bbox": [
+              239,
+              471,
+              2486,
+              585
+            ],
+            "text": "- 임계값 T=10 이라면 중앙 화솟값 기준으로 122-10 보다 적은 화소에는 -1,",
+            "prediction": "- 체납 T=10 이하면 중상 화송값 기준으로 122-10 보다 적은 좌소에는 -1,",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0005",
+            "bbox": [
+              290,
+              600,
+              2066,
+              710
+            ],
+            "text": "122+10 보다 큰 화소에는 1. 그렇지 않은 화소에는 0을 부여해",
+            "prediction": "122+10 보다 큰 좌소에는 1. 그럼의 헙은 좌소에는 0을 부여해",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0006",
+            "bbox": [
+              290,
+              721,
+              769,
+              831
+            ],
+            "text": "3진 코드를 얻는다.",
+            "prediction": "3진 모드를 얻는다",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0007",
+            "bbox": [
+              302,
+              846,
+              1848,
+              964
+            ],
+            "text": "3진 코드를 이진 코드 2개로 변환 → 각각 십진수로 변환",
+            "prediction": "3진 모드를 이어 23 개로 변환 → 각종 상진수로 변환",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0008",
+            "bbox": [
+              311,
+              979,
+              1240,
+              1081
+            ],
+            "text": "각각에 대해 히스토그램을 구하면",
+            "prediction": "각종에 해해 허스드껍을 구하면",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0009",
+            "bbox": [
+              320,
+              1104,
+              1395,
+              1222
+            ],
+            "text": "칸이 256 개인 히스토그램 2개를 얻음",
+            "prediction": "칸이 256 개인 허산도갤 개를 얻음",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0010",
+            "bbox": [
+              332,
+              1237,
+              1500,
+              1347
+            ],
+            "text": "결국 512 차원 LTP 특징 벡터를 얻음.",
+            "prediction": "칼국 512 차원 LTP 독립 벡터를 얻음.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0011",
+            "bbox": [
+              154,
+              1491,
+              484,
+              1605
+            ],
+            "text": "· 대응점 문제",
+            "prediction": "- 대웅정 문제",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0012",
+            "bbox": [
+              181,
+              1620,
+              2039,
+              1783
+            ],
+            "text": "- 이웃한 영상에 나타난 같은 물체의 같은 곳을 쌍으로 묶어주는 일.",
+            "prediction": "- 이완영상에 내년 같은 물체의 같은 곳을 상으로 웃어주는 일.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0013",
+            "bbox": [
+              154,
+              1886,
+              584,
+              1992
+            ],
+            "text": "· 지역 특징의 조건",
+            "prediction": "- 지역 특징의 편",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0014",
+            "bbox": [
+              169,
+              2120,
+              404,
+              2258
+            ],
+            "text": "- 불변성",
+            "prediction": "- 빠빔상",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0015",
+            "bbox": [
+              181,
+              2265,
+              2005,
+              2424
+            ],
+            "text": "- 분별력: 물체의 다른 곳에서 추출된 특징과 두드러지게 달라야 한다.",
+            "prediction": "- 블랙격: 물체의 4은 곳에 클릭된 특허과 두드러져 날카로움다.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0016",
+            "bbox": [
+              181,
+              2399,
+              2535,
+              2593
+            ],
+            "text": "-지역성: 작은 영역을 중심으로 특정 벡터를 추출해야 물체에 가림이 발생해도 매칭이 안정적",
+            "prediction": "-지역성: 잘못 억억을 중심으로 특정 백터를 충분해야 물체에 가겠어 백냉해도 애향이 안됩직",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0017",
+            "bbox": [
+              172,
+              2544,
+              1803,
+              2690
+            ],
+            "text": "- 적당한 양: 물체를 추적하려면 몇 개의 대응점만 있으면 된다.",
+            "prediction": "- 객충한 웅: 물재를 충착하려면 볼 거야 대웅정한 있으면 됩니다.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0018",
+            "bbox": [
+              163,
+              2673,
+              1503,
+              2831
+            ],
+            "text": "- 계산 효율 : 계산 시간이 배우 중요한 응용이 많음.",
+            "prediction": "- 제산 보물: 제산 시간이 배우 중요한 응용이 많음.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0085-line-0019",
+            "bbox": [
+              163,
+              2822,
+              1047,
+              2952
+            ],
+            "text": "- 조건들은 상충 관계에 있음.",
+            "prediction": "- 조선들은 상중 판지에 있음.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-7016db54-d5b9-4cfb-845c-9facb0249628",
+            "bbox": [
+              1212,
+              400,
+              1271,
+              499
+            ],
+            "text": "↙",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f2dedaed-bcd8-4088-b985-c1f7688fc6dd",
+            "bbox": [
+              1209,
+              386,
+              1376,
+              444
+            ],
+            "text": "122",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-bf458b25-9509-4e9e-bb2e-b2aeff806057",
+            "bbox": [
+              174,
+              2021,
+              411,
+              2119
+            ],
+            "text": "- 반복성",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-31T15:32:13.566Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-31T15:10:07.256Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 20
+        }
+      ]
     },
     "hf-0086": {
       "id": "hf-0086",
