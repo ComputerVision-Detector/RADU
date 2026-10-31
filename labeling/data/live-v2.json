@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-31T09:53:50.802Z",
+  "updated_at": "2026-10-31T09:54:33.276Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -18673,20 +18673,277 @@
         "source_sha256": "940741c3bd1bf502ffa22874539c7e7f43dfaea2ff75ceac986113cbb2a59205"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이진우",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0071-line-0001",
+            "bbox": [
+              151,
+              173,
+              569,
+              283
+            ],
+            "text": "◦모폴로지 연산",
+            "prediction": "- 모듈리 연산",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0002",
+            "bbox": [
+              151,
+              282,
+              1183,
+              432
+            ],
+            "text": "- 물체의 모양과 구조를 다루는 연산",
+            "prediction": "- 물체의 모습과 구조를 다뤄 연산",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0003",
+            "bbox": [
+              151,
+              415,
+              1890,
+              573
+            ],
+            "text": "- 영상을 변환하는 과정에서 하나의 물체가 여러 영역으로",
+            "prediction": "- 영상을 벗쳤다는 대청에서 해이 물처가 어디 영명으로",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0004",
+            "bbox": [
+              229,
+              536,
+              2423,
+              706
+            ],
+            "text": "분리되거나 다른 물체가 한 영역으로 붙는 경우 등이 발생하는 부작용을",
+            "prediction": "분리되나 다른 물체가 한 영역으로 붙는 경우 등에 발생하는 부족용을",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0005",
+            "bbox": [
+              238,
+              713,
+              995,
+              835
+            ],
+            "text": "누그러뜨리기 위해 사용.",
+            "prediction": "누그러뜨게 위해 사용.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0006",
+            "bbox": [
+              151,
+              822,
+              2459,
+              992
+            ],
+            "text": "- 팽창: 구조 요소의 중심을 1인화소에 씌운 다음 구조요소에 해당하는",
+            "prediction": "- 팽창: 구조 요의 중심을 1인화소에 쓰다 다음 구조 요소에 해당하는",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0007",
+            "bbox": [
+              541,
+              963,
+              2389,
+              1121
+            ],
+            "text": "모든 화소를 1로 바꿈(이 과정을 1인 모든 화소에 적용)",
+            "prediction": "모든 화소를 1로 바꿈(이 과정을 1년 모든 화소에 적용)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0008",
+            "bbox": [
+              139,
+              1245,
+              2468,
+              1404
+            ],
+            "text": "-침식 : 구조 요소의 중심을 1인 화소 P에 씌운 다음 구조 요소에 해당하는",
+            "prediction": "- 콩: 구조 요소의 중심을 1년 화소 P에 쓰율 다음 구조 요소에 해당하는",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0009",
+            "bbox": [
+              374,
+              1403,
+              2335,
+              1545
+            ],
+            "text": "모든 화소가 1인 경우에 P를 유지, 그렇지 않으면 0으로 바꿈",
+            "prediction": "모든 화소가 1인 정읍에 끝 유지, 그림지 않으면 0으로 바꿈",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0010",
+            "bbox": [
+              151,
+              1721,
+              1295,
+              1835
+            ],
+            "text": "- 열림 : 침식한 결과에 팽창을 적용",
+            "prediction": "- 열침: 침식한 결과에 팽창을 갖춤",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0011",
+            "bbox": [
+              181,
+              1999,
+              1358,
+              2117
+            ],
+            "text": "- 닫힘 : 팽창한 결과에 침식을 적용.",
+            "prediction": "-단힘: 팽흥한 결과에 휘셈 검용.",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0012",
+            "bbox": [
+              87,
+              2286,
+              2480,
+              2420
+            ],
+            "text": "- 화소 입장에서 바라본 영상 처리 연산이란 화소가 새로운 값을 받는 과정",
+            "prediction": "- 화소 입장에서 바라본 영상 켜리 연산연화소가 새로운 효율 받는 대청",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0013",
+            "bbox": [
+              120,
+              2431,
+              1812,
+              2549
+            ],
+            "text": "- 점 연산, 영역 연산, 기하 연산 세 종류가 있음.",
+            "prediction": "- 검연산, 영역 연산, 가하 연산 세 종류가 있음.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0014",
+            "bbox": [
+              87,
+              2709,
+              657,
+              2823
+            ],
+            "text": "◦수학에서 선형 연산",
+            "prediction": "- 책에서 컨형연산",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0015",
+            "bbox": [
+              151,
+              2846,
+              1258,
+              2988
+            ],
+            "text": "- 상수를 곱해서 더하기만 하는 연산",
+            "prediction": "- 상상을 꿈해서 여기서 하는 연산",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0016",
+            "bbox": [
+              57,
+              3128,
+              684,
+              3262
+            ],
+            "text": "◦ 히스토그램 평활화",
+            "prediction": "- 하스도겸 평활화.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0017",
+            "bbox": [
+              69,
+              3261,
+              2408,
+              3428
+            ],
+            "text": "- 히스토그램이 평평하게 되도록 영상을 조작해 영상의 명암 대비를 높이는 기법",
+            "prediction": "- 하셨으냐검이 평평하게 되도록 영상을 조작해 영상의 영상 대비들 늘어는 기법.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0071-line-0018",
+            "bbox": [
+              117,
+              3403,
+              2247,
+              3577
+            ],
+            "text": "L명암 대비가 높아지면 영상에 있는 물체를 더 잘 식별할 수 있다.",
+            "prediction": "L영상 대비가 높아지면 영상에 있는 둘레를 더 잘 식별할 수있다.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이진우",
-        "client": "e57c94b0-5e19-4ed2-97cd-5d3e17459eb2",
-        "until": "2026-10-31T10:18:50.802Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-31T09:54:33.276Z",
+          "author": "이진우",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 18
+        }
+      ]
     },
     "hf-0072": {
       "id": "hf-0072",
