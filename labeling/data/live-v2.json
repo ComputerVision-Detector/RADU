@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-31T13:19:13.137Z",
+  "updated_at": "2026-10-31T13:20:09.343Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -25663,20 +25663,1033 @@
         "source_sha256": "4eb461ab8bb26b7a57e6c7173f47953b10ce3831405ed0858c9e0d7541a86889"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0146-line-0001",
+            "bbox": [
+              372,
+              72,
+              582,
+              148
+            ],
+            "text": "example)",
+            "prediction": "example)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0002",
+            "bbox": [
+              397,
+              449,
+              578,
+              505
+            ],
+            "text": "39·39·3",
+            "prediction": "39.39.3",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0003",
+            "bbox": [
+              700,
+              339,
+              835,
+              409
+            ],
+            "text": " f^{[1]}= 3",
+            "prediction": "\\( f(x) = 3 \\)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0004",
+            "bbox": [
+              700,
+              401,
+              835,
+              462
+            ],
+            "text": "S^{[x]} = 1",
+            "prediction": "\\( S[x] = 1 \\)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0005",
+            "bbox": [
+              700,
+              461,
+              835,
+              522
+            ],
+            "text": "p^{[1]} = 0",
+            "prediction": "\\( p(x) = 0 \\)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0006",
+            "bbox": [
+              896,
+              480,
+              1166,
+              550
+            ],
+            "text": "n_H^{[1]} = n_w^{[1]} = 37",
+            "prediction": "\\( n_H^{12} = n_H^{12} = 39 \\)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0007",
+            "bbox": [
+              919,
+              417,
+              1086,
+              471
+            ],
+            "text": "37·37·10",
+            "prediction": "39.97.10",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0008",
+            "bbox": [
+              1240,
+              339,
+              1391,
+              409
+            ],
+            "text": "f^{(2)} = 5",
+            "prediction": "\\( f^{(2)} = 5 \\)",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0009",
+            "bbox": [
+              1240,
+              408,
+              1391,
+              471
+            ],
+            "text": "S^{[2]} = 2",
+            "prediction": "\\( S^{(3)} = 2 \\)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0010",
+            "bbox": [
+              1240,
+              470,
+              1396,
+              540
+            ],
+            "text": "p^{([2]} = 0",
+            "prediction": "\\( p^{(2)} = 0 \\)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0011",
+            "bbox": [
+              1472,
+              451,
+              1717,
+              531
+            ],
+            "text": "n_H^{[2]} = n_w^{[2]} = 17",
+            "prediction": "\\( n_H^{12} = n_H^{12} = 17 \\)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0012",
+            "bbox": [
+              1480,
+              408,
+              1657,
+              465
+            ],
+            "text": "17·17·20",
+            "prediction": "\\( 17.17 \\cdot 20 \\)",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0013",
+            "bbox": [
+              1506,
+              313,
+              1610,
+              387
+            ],
+            "text": "a^{[2]}",
+            "prediction": "\\( a^{[2]} \\)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0014",
+            "bbox": [
+              1821,
+              470,
+              1975,
+              540
+            ],
+            "text": "p^{[3]} = 0",
+            "prediction": "\\( p^{(3)} = 0 \\)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0015",
+            "bbox": [
+              1824,
+              408,
+              1975,
+              471
+            ],
+            "text": "S^{[3]} = 2",
+            "prediction": "\\( S^{(3)} = 2 \\)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0016",
+            "bbox": [
+              1824,
+              339,
+              1975,
+              409
+            ],
+            "text": "f^{[2]} = 5",
+            "prediction": "\\( f^{(2)} = 5 \\)",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0017",
+            "bbox": [
+              2072,
+              382,
+              2220,
+              440
+            ],
+            "text": "7·7·40",
+            "prediction": "7.7.90",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0018",
+            "bbox": [
+              405,
+              588,
+              599,
+              655
+            ],
+            "text": "n_c^{[0]} = 3",
+            "prediction": "\\( n_c^{(3)} = 3 \\)",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0019",
+            "bbox": [
+              896,
+              558,
+              1086,
+              628
+            ],
+            "text": "n_c^{[1]} = 10",
+            "prediction": "\\( n_c^{12} = 16 \\)",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0020",
+            "bbox": [
+              1227,
+              539,
+              1401,
+              603
+            ],
+            "text": "20filters",
+            "prediction": "20 filters",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0021",
+            "bbox": [
+              1472,
+              539,
+              1678,
+              603
+            ],
+            "text": "n_c^{[2]} = 20",
+            "prediction": "\\( n_c^{(2)} = 20 \\)",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0022",
+            "bbox": [
+              1808,
+              539,
+              1985,
+              609
+            ],
+            "text": "40filters",
+            "prediction": "40 filters",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0023",
+            "bbox": [
+              307,
+              750,
+              1367,
+              848
+            ],
+            "text": "· Types of layer in a convolutional network:",
+            "prediction": "Types of layer in a convolutional network:",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0024",
+            "bbox": [
+              393,
+              861,
+              879,
+              936
+            ],
+            "text": "┌ Convolution (conv)",
+            "prediction": "Convolution (conv)",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0025",
+            "bbox": [
+              399,
+              957,
+              822,
+              1033
+            ],
+            "text": "├ Pooling (Pool)",
+            "prediction": "Pooling (Pool)",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0026",
+            "bbox": [
+              395,
+              1038,
+              941,
+              1127
+            ],
+            "text": "└ Fully connected (FC)",
+            "prediction": "Fully connected (FC)",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0027",
+            "bbox": [
+              74,
+              1246,
+              181,
+              1325
+            ],
+            "text": "9강",
+            "prediction": "92",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0028",
+            "bbox": [
+              377,
+              1330,
+              1869,
+              1426
+            ],
+            "text": "Max pooling: 필터이 한 부분에서 특성이 검출되면 해당 값을 남기는 것.",
+            "prediction": "Max pooling: 팀터이 한 부병에서 특성이 검출되면 해당 검출 날개는 것.",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0029",
+            "bbox": [
+              403,
+              1456,
+              494,
+              1510
+            ],
+            "text": "ex)",
+            "prediction": "ex)",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0030",
+            "bbox": [
+              1302,
+              1447,
+              1845,
+              1542
+            ],
+            "text": "Hyper parameter: f = 2",
+            "prediction": "Hyper parameter: \\( f = 2 \\)",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0031",
+            "bbox": [
+              1720,
+              1531,
+              1845,
+              1598
+            ],
+            "text": "S = 2",
+            "prediction": "\\( S = 2 \\)",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0032",
+            "bbox": [
+              565,
+              1688,
+              683,
+              1752
+            ],
+            "text": "4×4",
+            "prediction": "4x4",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0033",
+            "bbox": [
+              2015,
+              1673,
+              2466,
+              1752
+            ],
+            "text": "Hyper parameter의 값.",
+            "prediction": "Hyper parameter of st.",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0034",
+            "bbox": [
+              2015,
+              1767,
+              2140,
+              1840
+            ],
+            "text": "Why?",
+            "prediction": "Why?",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0035",
+            "bbox": [
+              372,
+              1820,
+              1869,
+              1925
+            ],
+            "text": "Average pooling: 필터 내의 값들의 평균을 도출해 사용하는 것.",
+            "prediction": "Average pooling: 팀터 대체해 네트 값들의 팔존을 도출날 사용하는 것.",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0036",
+            "bbox": [
+              395,
+              1943,
+              481,
+              2003
+            ],
+            "text": "ex)",
+            "prediction": "ex)",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0037",
+            "bbox": [
+              1235,
+              2018,
+              1845,
+              2122
+            ],
+            "text": "Hyper parameter: f = 2",
+            "prediction": "Hyper parameter: \\( f = 2 \\)",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0038",
+            "bbox": [
+              524,
+              2191,
+              1029,
+              2273
+            ],
+            "text": "4×4 ------> 2×2",
+            "prediction": "4x4..... 2x2",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0040",
+            "bbox": [
+              403,
+              2426,
+              1709,
+              2527
+            ],
+            "text": "* 최근에는 Average pooling 보다 Max pooling을 더 많이 사용.",
+            "prediction": "Average pooling 보다 Max pooling을 더 많이 사용.",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0041",
+            "bbox": [
+              403,
+              2520,
+              2569,
+              2631
+            ],
+            "text": "* pooling 시에는 padding을 거의 사용하지 않음. (Why? pooling을 사용하는 목적은 대부분 다운샘폴링이기 때문)",
+            "prediction": "pooling 네트 pooling 흐 개의 사용하지 않음. (Why? pooling을 사용하는 목적은 대부분 다음센폴링이기 때문)",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0042",
+            "bbox": [
+              403,
+              2627,
+              1401,
+              2725
+            ],
+            "text": "* pooling 네트는 학습하는 parameter가 없음!!",
+            "prediction": "pooling 네트는 학습하는 parameter가 없다!!",
+            "order": 41,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0043",
+            "bbox": [
+              459,
+              2727,
+              1533,
+              2822
+            ],
+            "text": "따라서, 역전파해 보면 역전파가 가능한 변수가 없음.",
+            "prediction": "(2214), 먹전화해 보면 덕전화기 가능한 1년수가 뭍컬요.",
+            "order": 42,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0044",
+            "bbox": [
+              459,
+              2828,
+              1473,
+              2929
+            ],
+            "text": "Why? 검증을 통해 이루어진 parameter 이기 때문.",
+            "prediction": "Why? 검증을 통해 이루어진 parameter 이기 때문.",
+            "order": 43,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0146-line-0045",
+            "bbox": [
+              459,
+              2925,
+              1543,
+              3026
+            ],
+            "text": "( ⇒ 신경망이 한 층에서 계산하는 '고정 함수'임.)",
+            "prediction": "(=) 신념방이 한 층에서 계산하는 '고정 한수'인.)",
+            "order": 44,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-1eaab6ab-8823-47b0-b10f-8fa9305ff78d",
+            "bbox": [
+              1994,
+              1849,
+              2386,
+              1922
+            ],
+            "text": "H와 W를 절반으로",
+            "prediction": "",
+            "order": 45,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2da0cccd-0005-4c23-89df-41862eeb9d28",
+            "bbox": [
+              2071,
+              1914,
+              2570,
+              2010
+            ],
+            "text": "줄여주는 효과가 있기 때문.",
+            "prediction": "",
+            "order": 46,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-7ecae21e-99d6-4754-9b43-1045413dee37",
+            "bbox": [
+              951,
+              1684,
+              1084,
+              1749
+            ],
+            "text": "2×2",
+            "prediction": "",
+            "order": 47,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-95e7ccd2-eb4f-4b16-9c47-791fbb918906",
+            "bbox": [
+              928,
+              297,
+              1025,
+              385
+            ],
+            "text": "a^{[1]}",
+            "prediction": "",
+            "order": 48,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a9b016a3-ef8f-4287-8218-03ce5b01db8e",
+            "bbox": [
+              378,
+              499,
+              679,
+              581
+            ],
+            "text": "n_H^{[0]} = n_w^{[0]} = 39",
+            "prediction": "",
+            "order": 49,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-cb05fa30-932f-4cb1-9b0e-2a905a72f264",
+            "bbox": [
+              715,
+              521,
+              891,
+              589
+            ],
+            "text": "10filters",
+            "prediction": "",
+            "order": 50,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-efd96b47-427d-4239-8d05-530787df3644",
+            "bbox": [
+              2011,
+              1608,
+              2352,
+              1681
+            ],
+            "text": "일반적으로 사용되는",
+            "prediction": "",
+            "order": 51,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-34719996-eb8f-4f52-af77-23c7ecf80982",
+            "bbox": [
+              1691,
+              2109,
+              1841,
+              2172
+            ],
+            "text": "S = 2",
+            "prediction": "",
+            "order": 52,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c5fc2bff-af67-4004-992b-a0286ae545dc",
+            "bbox": [
+              515,
+              1979,
+              543,
+              2031
+            ],
+            "text": "1",
+            "prediction": "",
+            "order": 53,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f7f400c5-c212-47d2-93e3-866948d2dcd8",
+            "bbox": [
+              546,
+              1975,
+              586,
+              2037
+            ],
+            "text": "3",
+            "prediction": "",
+            "order": 54,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-545d9ee2-4f05-4ae1-87b4-89da7cfedf8c",
+            "bbox": [
+              604,
+              1982,
+              647,
+              2034
+            ],
+            "text": "2",
+            "prediction": "",
+            "order": 55,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6cc0e5e3-5b79-4148-8d50-ab7cc679cafe",
+            "bbox": [
+              658,
+              1985,
+              707,
+              2031
+            ],
+            "text": "1",
+            "prediction": "",
+            "order": 56,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2e76cca6-a7be-4a6f-a10a-d11137c8892e",
+            "bbox": [
+              653,
+              2046,
+              701,
+              2090
+            ],
+            "text": "1",
+            "prediction": "",
+            "order": 57,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e53fa7de-50a6-481e-818b-cfd73193b1b6",
+            "bbox": [
+              607,
+              2043,
+              629,
+              2079
+            ],
+            "text": "1",
+            "prediction": "",
+            "order": 58,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-901c75a1-1bc6-4c5a-8ab5-030d8cae2967",
+            "bbox": [
+              554,
+              2042,
+              581,
+              2087
+            ],
+            "text": "9",
+            "prediction": "",
+            "order": 59,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b39e4740-06c9-41a7-b24c-f2edba922678",
+            "bbox": [
+              515,
+              2038,
+              537,
+              2083
+            ],
+            "text": "2",
+            "prediction": "",
+            "order": 60,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2ea30580-29a1-4ba1-b0f3-a8d4eb3e6c07",
+            "bbox": [
+              516,
+              2097,
+              538,
+              2142
+            ],
+            "text": "1",
+            "prediction": "",
+            "order": 61,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c4224405-dbfe-46ea-aa68-c8e881416518",
+            "bbox": [
+              548,
+              2097,
+              576,
+              2136
+            ],
+            "text": "3",
+            "prediction": "",
+            "order": 62,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0a9bdce7-e749-4fab-bb51-22bdc63bdf1e",
+            "bbox": [
+              599,
+              2102,
+              635,
+              2140
+            ],
+            "text": "2",
+            "prediction": "",
+            "order": 63,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-8b19ea54-8c37-4464-acfc-49f2c09e9808",
+            "bbox": [
+              650,
+              2099,
+              699,
+              2141
+            ],
+            "text": "3",
+            "prediction": "",
+            "order": 64,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-227f9ae8-c2fa-4788-a63d-d7253e236b0a",
+            "bbox": [
+              508,
+              2149,
+              539,
+              2197
+            ],
+            "text": "5",
+            "prediction": "",
+            "order": 65,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f46a933d-0f85-47ac-803a-e63620c53399",
+            "bbox": [
+              538,
+              2148,
+              579,
+              2185
+            ],
+            "text": "6",
+            "prediction": "",
+            "order": 66,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-4aeff76c-e68f-420e-8fb2-5f1a35d99010",
+            "bbox": [
+              598,
+              2149,
+              623,
+              2188
+            ],
+            "text": "1",
+            "prediction": "",
+            "order": 67,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-508b7ab2-01fc-4055-9766-d14957aaa2ae",
+            "bbox": [
+              647,
+              2150,
+              680,
+              2184
+            ],
+            "text": "2",
+            "prediction": "",
+            "order": 68,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d19584d6-2556-45c7-92ad-37a91bdee76e",
+            "bbox": [
+              885,
+              2012,
+              973,
+              2068
+            ],
+            "text": "3.75",
+            "prediction": "",
+            "order": 69,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f0a413f9-02cf-4cd2-864a-10e47fd81e74",
+            "bbox": [
+              982,
+              2009,
+              1047,
+              2071
+            ],
+            "text": "1.25",
+            "prediction": "",
+            "order": 70,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-8174d64a-957c-4000-b416-bae56e3435ca",
+            "bbox": [
+              981,
+              2087,
+              1026,
+              2142
+            ],
+            "text": "2",
+            "prediction": "",
+            "order": 71,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a515ef2a-3f77-4c52-a236-54e963b51326",
+            "bbox": [
+              901,
+              2084,
+              960,
+              2159
+            ],
+            "text": "4",
+            "prediction": "",
+            "order": 72,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-31T13:44:13.137Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-31T13:20:09.343Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 72
+        }
+      ]
     },
     "hf-0147": {
       "id": "hf-0147",
