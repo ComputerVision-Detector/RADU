@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-31T14:52:13.155Z",
+  "updated_at": "2026-10-31T14:52:49.055Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -23268,20 +23268,347 @@
         "source_sha256": "e2438b260f22ff226948d4bba5bb37cb6e18eba6a6146aa7a0f62da9987a74d8"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0125-line-0001",
+            "bbox": [
+              379,
+              34,
+              536,
+              138
+            ],
+            "text": "ch.3",
+            "prediction": "Ch.3",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d74686d3-befb-4469-a9ec-a18f7fad5bb1",
+            "bbox": [
+              266,
+              237,
+              1898,
+              352
+            ],
+            "text": "· 인터페이스 ⇒ 동영상.음향 신호를 전달하기 위한 케이블, 단자.",
+            "prediction": "",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-3de4d24f-e536-4caa-805f-278db73f54ac",
+            "bbox": [
+              929,
+              368,
+              1537,
+              454
+            ],
+            "text": "HDMI 특징이기도 함.",
+            "prediction": "",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a65d8093-e656-4e39-ac57-f212691b0860",
+            "bbox": [
+              376,
+              457,
+              1934,
+              550
+            ],
+            "text": "→ C-type, USB … 기계랑 연결할 수 있으면 다 인터페이스임.",
+            "prediction": "",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-7c718de6-c707-4876-b1c7-befe459ca22e",
+            "bbox": [
+              270,
+              655,
+              1577,
+              761
+            ],
+            "text": "·  HDMI : 전송 용량 48Gbps (2.0에 비해 2배 ↑)",
+            "prediction": "",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-30881eed-fe00-4fef-96e9-35d92a41e0fd",
+            "bbox": [
+              390,
+              768,
+              979,
+              864
+            ],
+            "text": "→ 표준 인터페이스",
+            "prediction": "",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b2bbba90-e1c4-4dad-a704-ed39c1ae4b93",
+            "bbox": [
+              294,
+              964,
+              2279,
+              1065
+            ],
+            "text": "· USB: 버전이 바뀌어도 사용 가능. 전자기기에서 사용하는 범용적인 인터페이스.",
+            "prediction": "",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e6745c37-c618-46f4-8ff3-70f8d11dcdac",
+            "bbox": [
+              17,
+              1177,
+              1771,
+              1261
+            ],
+            "text": "----- · HCI (Human Computer Interection) -----",
+            "prediction": "",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-91a2d8d5-86f6-4c9e-8719-291334e39265",
+            "bbox": [
+              287,
+              1373,
+              776,
+              1471
+            ],
+            "text": "· UI, UX의 개념.",
+            "prediction": "",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-71332287-451b-4981-adf9-68b4be199ae6",
+            "bbox": [
+              400,
+              1474,
+              1687,
+              1579
+            ],
+            "text": "⇒ User Interface : UI / UI가 확장된 게 UX",
+            "prediction": "",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-20bf4748-974e-4774-bcab-91bfdefe4aaf",
+            "bbox": [
+              280,
+              1675,
+              1130,
+              1785
+            ],
+            "text": "· UI/UX 성공 사례 ⇒ BTS",
+            "prediction": "",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-96d9f56a-e9ff-4764-bb8c-7b1a6acec618",
+            "bbox": [
+              416,
+              1795,
+              1778,
+              1881
+            ],
+            "text": "- 사용자는 UX의 완성도가 높을 수록 혁신적이라고 인지.",
+            "prediction": "",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-24ca68cf-35f5-44a8-827d-7a6ed52c537a",
+            "bbox": [
+              495,
+              1888,
+              1879,
+              1986
+            ],
+            "text": "∴ 디자인 중심 사고를 넘어서 경험 중심 사고를 해야 함",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2aa504f3-94e9-46d1-9a78-cbdabeaab0a5",
+            "bbox": [
+              287,
+              2096,
+              833,
+              2197
+            ],
+            "text": "· UI/UX 실패 사례",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0adf0ffa-51ef-4edf-abec-038a61b21618",
+            "bbox": [
+              376,
+              2199,
+              957,
+              2312
+            ],
+            "text": "→ 인터넷 뱅킹, 신문",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0c2986b3-4d73-4968-ab90-d5549daad7c2",
+            "bbox": [
+              364,
+              2309,
+              723,
+              2407
+            ],
+            "text": "→ 전자책 등",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-753098ed-5907-426d-b8c1-69dcb82498da",
+            "bbox": [
+              266,
+              2517,
+              1156,
+              2613
+            ],
+            "text": "· 언택트 시대의 UI/UX Disgn",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-719df1b8-43d1-465e-a155-930ab4acd7b1",
+            "bbox": [
+              359,
+              2623,
+              2501,
+              2704
+            ],
+            "text": "→ 사용자가 빠르고, 쉽계!! 불필요한 것은 과감히 제거. [사용자의 편의성이 최우선!]",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e9bffff0-6cb7-4d51-886b-001af372c9e0",
+            "bbox": [
+              301,
+              2833,
+              1185,
+              2929
+            ],
+            "text": "· 인터렉션과 HCI (잘 구분하기)",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a6fa6aa6-6312-465c-8782-4adb5c73d2a5",
+            "bbox": [
+              397,
+              2941,
+              2688,
+              3037
+            ],
+            "text": "- 인터렉션: 사람들 사이의 상호작용과 인공 매체와 사람사이의 상호작용을 의미",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-30978a52-98cb-42a4-9437-7bfc0437c247",
+            "bbox": [
+              364,
+              3152,
+              979,
+              3271
+            ],
+            "text": "- HCI 중요도 증가 요인",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-482ef176-132d-489c-b842-154b5836195b",
+            "bbox": [
+              979,
+              3152,
+              2465,
+              3257
+            ],
+            "text": "┌ 보편성 : 일반인도 흥미를 갖고 쉽게 사용할 수 있도록. -",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-66c7145b-9c22-483c-9f0f-eabb07295858",
+            "bbox": [
+              986,
+              3262,
+              2564,
+              3377
+            ],
+            "text": "└ 경량화 : 디지털 기기와 서비스를 유용하게 사용하도록 설계.",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-31T15:17:13.155Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-31T14:52:49.055Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 23
+        }
+      ]
     },
     "hf-0126": {
       "id": "hf-0126",
