@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-10-31T07:52:12.928Z",
+  "updated_at": "2026-10-31T07:52:43.739Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -17764,20 +17764,291 @@
         "source_sha256": "e03b0bf0e015add4a81c7f110381434debf2c24d6225910c76a1f531b38bf98c"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0068-line-0003",
+            "bbox": [
+              244,
+              306,
+              572,
+              432
+            ],
+            "text": "· 넘버 크런처",
+            "prediction": "- 답변 관리",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0004",
+            "bbox": [
+              250,
+              459,
+              699,
+              565
+            ],
+            "text": "- 엄청난 양의",
+            "prediction": "- 엄책만 망의",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0005",
+            "bbox": [
+              725,
+              459,
+              2196,
+              557
+            ],
+            "text": "단순 계산을 반복하는 사람 또는 기계를 일컬음.",
+            "prediction": "눈손 깨잠을 빠져라는 A잠 또는 가게를 일컬음.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0006",
+            "bbox": [
+              223,
+              705,
+              1147,
+              827
+            ],
+            "text": "· 비주얼 서보잉 (visual servoing)",
+            "prediction": "- 비주얼 세보인 (Visual 较loin)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0007",
+            "bbox": [
+              281,
+              842,
+              1915,
+              960
+            ],
+            "text": "- 로봇을 위해 컴퓨터 비전이 실시간으로 상황을 주시하는 일",
+            "prediction": "- 그냥을 위해 경류터 방언이 싫어요 참향을 찾아는 일",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0008",
+            "bbox": [
+              223,
+              1108,
+              699,
+              1214
+            ],
+            "text": "· open CV -",
+            "prediction": "- open CV -",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0009",
+            "bbox": [
+              698,
+              1116,
+              1862,
+              1235
+            ],
+            "text": "- 구성하는 함수 클래스는 C, C++로 개발",
+            "prediction": "- 팔끔한 책이 헤져줬는데, 클러스터 (C, C+로 개발)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0010",
+            "bbox": [
+              272,
+              1249,
+              1794,
+              1347
+            ],
+            "text": "- 컴퓨터 비전 전문 라이브러리. 인텔에서 제작/공개",
+            "prediction": "- 컨퓨터 벤젠 접촉 라이브러리. 인테리어 제작/송개",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0011",
+            "bbox": [
+              250,
+              1524,
+              1017,
+              1633
+            ],
+            "text": "텐서플로 (Tensorflow)",
+            "prediction": "E린서플로 ( E린sof fblw)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0012",
+            "bbox": [
+              272,
+              1661,
+              811,
+              1758
+            ],
+            "text": "- 딥러닝 라이브러리",
+            "prediction": "- 힙셈 라이브러리",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0013",
+            "bbox": [
+              199,
+              1935,
+              2129,
+              2041
+            ],
+            "text": "· C++은 알고리즘 구현 언어로, Python은 앤티페이스 언어로 사용",
+            "prediction": "- C++은 솔련즌 컨퍼런스, p-thono온 앤티페이스 언어로 사용",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0014",
+            "bbox": [
+              635,
+              2078,
+              1153,
+              2186
+            ],
+            "text": "(Blue, Green, Red)",
+            "prediction": "(Blue, Green, Red)",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0015",
+            "bbox": [
+              314,
+              2209,
+              1543,
+              2319
+            ],
+            "text": "openCV는 BGR 로 3개의 채널 구성.",
+            "prediction": "openCV는 BGR 로 개의 채널 액션.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0016",
+            "bbox": [
+              311,
+              2344,
+              2660,
+              2468
+            ],
+            "text": "영상에서 화소위치는 행좌표(r)과 열좌표(c)를 이용해 (r,c)로 표기",
+            "prediction": "영상에 봐쇼컴는 행과표(1)과 여과표(c)를 이용해 (r,c)로 표기",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0017",
+            "bbox": [
+              991,
+              2487,
+              1621,
+              2593
+            ],
+            "text": "(y축) (x축)",
+            "prediction": "(성죽) (x축)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0018",
+            "bbox": [
+              293,
+              2636,
+              2281,
+              2762
+            ],
+            "text": "좌표를 쓸 때는 (y, x) 또는 (r, c)와 같이 y축 먼저 표기",
+            "prediction": "표준를 쓸에는 (y, x) 또는 (h, c)와 같이 날축 멀리 표기",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0019",
+            "bbox": [
+              169,
+              2927,
+              1602,
+              3065
+            ],
+            "text": "· 디지털 영상 좌표가 일반적인 표기와 다른점",
+            "prediction": "- 컨클링 영상 조료가 일반적인 표현과 다르겠다",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0020",
+            "bbox": [
+              250,
+              3112,
+              781,
+              3222
+            ],
+            "text": "- 원점이 왼쪽 위",
+            "prediction": "- 원정이 원칙이",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0068-line-0021",
+            "bbox": [
+              235,
+              3215,
+              1511,
+              3367
+            ],
+            "text": "- (x, y) 대신 (y, x) 표기 사용.",
+            "prediction": "- (x, y) 대신 (y, x) 표기 사용:",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-10-31T08:17:12.928Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-10-31T07:52:43.739Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 19
+        }
+      ]
     },
     "hf-0069": {
       "id": "hf-0069",
