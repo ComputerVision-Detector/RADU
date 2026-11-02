@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T07:32:28.690Z",
+  "updated_at": "2026-11-02T07:34:07.548Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -10858,20 +10858,263 @@
         "source_sha256": "c870412cec4b083b867bc711ef3dceabb2293c54e178ba6f964899e226394161"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0034-line-0003",
+            "bbox": [
+              250,
+              354,
+              584,
+              468
+            ],
+            "text": "· 항등 함수",
+            "prediction": "- 향동 향수",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0004",
+            "bbox": [
+              314,
+              475,
+              1265,
+              581
+            ],
+            "text": "- 입력을 그대로 출력하는 함수",
+            "prediction": "- 압력을 그해로 풀려하는 향수",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0005",
+            "bbox": [
+              250,
+              653,
+              2574,
+              843
+            ],
+            "text": "· 신경망으로 어떤 문제를 해결하냐에 따라 출력층에서 활성화 함수가 달라짐",
+            "prediction": "- 선경봉죄 어떤 문제를 해결하기에 따라 훨컬에서 향상화 향수가 알려줄",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0006",
+            "bbox": [
+              341,
+              834,
+              950,
+              944
+            ],
+            "text": "- 회귀 : 항등 함수",
+            "prediction": "- 회귀 : 향등 향수",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0007",
+            "bbox": [
+              341,
+              951,
+              1283,
+              1085
+            ],
+            "text": "- 분류 : 소프트맥스 함수.",
+            "prediction": "- 분류 완돈도 멕스 향수.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0008",
+            "bbox": [
+              250,
+              1217,
+              614,
+              1327
+            ],
+            "text": "· 소프트맥스",
+            "prediction": "- 소프트웨어",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0009",
+            "bbox": [
+              381,
+              1310,
+              2861,
+              1662
+            ],
+            "text": "\\(y_k = \\frac{\\exp(a_k)}{\\sum_{i=1}^{n}\\exp(a_i)} = \\frac{C\\exp(a_k)}{C\\sum_{i=1}^{n}\\exp(a_i)} = \\frac{\\exp(a_k + \\log C)}{\\sum_{i=1}^{n}\\exp(a_i + \\log C)}\\)",
+            "prediction": "\\[ y_k = \\frac{\\exp(a_k)}{\\sum_{j=1}^{n} \\exp(a_j)} = \\frac{\\left( \\exp(a_k) \\right)}{\\left( \\sum_{j=1}^{n} \\exp(a_j) \\right)} = \\frac{\\exp(a_k + \\log C)}{\\sum_{j=1}^{n} \\exp(a_j + \\log C)} \\]",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0010",
+            "bbox": [
+              341,
+              1685,
+              1275,
+              2064
+            ],
+            "text": "\\(= \\frac{\\exp(a_k + C')}{\\sum_{i=1}^{n}\\exp(a_i + C')}\\)",
+            "prediction": "\\[ = \\frac{\\exp(a_k + C')}{\\sum_{j=1}^{n} \\exp(a_j + C')} \\]",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0011",
+            "bbox": [
+              314,
+              2056,
+              2937,
+              2246
+            ],
+            "text": "- 소프트맥스의 지수 함수를 계산할 때 어떤 정수를 더해도(혹은 빼도)",
+            "prediction": "- 소프트웨어의 지능 향수를 제산할 때 어떤 점수를 대해도 (앞은 빛도)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0012",
+            "bbox": [
+              635,
+              2249,
+              1364,
+              2371
+            ],
+            "text": "결과는 바뀌지 않음.",
+            "prediction": "결과는 바보다 흔들다.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0013",
+            "bbox": [
+              526,
+              2358,
+              2075,
+              2520
+            ],
+            "text": "- \\(C'\\)에 어떤 값을 대입해도 상관없지만",
+            "prediction": "- C'에 어떤 값을 대입해도 상대상자만",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0014",
+            "bbox": [
+              644,
+              2491,
+              2474,
+              2662
+            ],
+            "text": "오버플로 방지 목적으로 입력 신호중 최댓값을 이용",
+            "prediction": "긴패프로 방지 목적으로 입력 신호줄 회벌축을 이용",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0015",
+            "bbox": [
+              483,
+              2644,
+              1900,
+              2787
+            ],
+            "text": "a= np.array([1010, 1000, 990])",
+            "prediction": "$a = nP$, $a$ is anITIES$([1010, 1000, 990})$$",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0016",
+            "bbox": [
+              483,
+              2786,
+              1210,
+              2932
+            ],
+            "text": "C = np.max(a)",
+            "prediction": "$C = nP_{\\max}(a)$",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0017",
+            "bbox": [
+              538,
+              3068,
+              2513,
+              3202
+            ],
+            "text": "np.exp(a-C) / np.sum(np.exp(a-C))",
+            "prediction": "np, exp(a-c) / np, Sum (np, exp(a-c))",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0018",
+            "bbox": [
+              450,
+              3362,
+              2024,
+              3500
+            ],
+            "text": "↳ 입력신호 중 최댓값을 빼주면 올바르게 계산가능",
+            "prediction": "입력 신호 중 희망을 배려면 올바르게 제산자능",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0034-line-0019",
+            "bbox": [
+              635,
+              3499,
+              2598,
+              3645
+            ],
+            "text": "현재에선 a-C => array([0, -10, -20]) 이 됨",
+            "prediction": "한제에선 $a-c=2$ arrow ([0,-10,-20]) 이 듣기",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T07:57:28.690Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T07:34:07.548Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 17
+        }
+      ]
     },
     "hf-0035": {
       "id": "hf-0035",
