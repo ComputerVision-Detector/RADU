@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T14:57:09.443Z",
+  "updated_at": "2026-11-02T14:58:34.571Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -45525,20 +45525,571 @@
         "source_sha256": "05d65a715a8049199fdbb851dbc23db813b2a38a267793ce8d40c6a63227232f"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0135-line-0001",
+            "bbox": [
+              53,
+              0,
+              747,
+              116
+            ],
+            "text": "\\[ f(x) = x(x-2)(x+1) \\quad [-1,2] \\]",
+            "prediction": "\\[ f(x) = x(x-2)(x+1) \\quad [-1,2] \\]",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0002",
+            "bbox": [
+              1102,
+              0,
+              1626,
+              118
+            ],
+            "text": "$f(x)=3e^x+x, (0,3)$",
+            "prediction": "\\[ f(x) = 3e^x + x, (0,1) \\]",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0003",
+            "bbox": [
+              1797,
+              0,
+              2312,
+              143
+            ],
+            "text": "$a) f(x^3+x^{-1})dx$",
+            "prediction": "\\[ f(x^2 + x^3 - 1) dx \\]",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0004",
+            "bbox": [
+              64,
+              206,
+              1042,
+              310
+            ],
+            "text": "\\[ f(2) = (4-4) \\cdot 3 = 0 \\]\n\\[ f(-1) = -1 \\cdot 0 = 0 \\]",
+            "prediction": "\\[ f(x) = (4-4) \\cdot 3 = 0 \\]\n\\[ f(-1) = -1 \\cdot 0 = 0 \\]",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0005",
+            "bbox": [
+              1161,
+              115,
+              1533,
+              234
+            ],
+            "text": "$y-f(0)=f'(0)(x-0)$",
+            "prediction": "\\[ y = f(x) = f'(x)(x - 0) \\]",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0006",
+            "bbox": [
+              1153,
+              216,
+              1483,
+              314
+            ],
+            "text": "$y-3e=(3e+1)$",
+            "prediction": "\\[ y = x \\cdot (3e + 1) \\]",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0008",
+            "bbox": [
+              0,
+              465,
+              569,
+              577
+            ],
+            "text": "\\[ f(x) = (x^2-2x)(x+1) \\]",
+            "prediction": "\\[ f(x) = 2x^2(x+1) \\]",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0009",
+            "bbox": [
+              0,
+              576,
+              569,
+              685
+            ],
+            "text": "\\[ = x^3+x^2 - 2x^2-2x \\]",
+            "prediction": "\\[ f'(x) = x^2 - 2x \\]",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0010",
+            "bbox": [
+              0,
+              682,
+              1114,
+              803
+            ],
+            "text": "\\[ =x^3-x^2-2x \\]",
+            "prediction": "\\[ f(x) = \\frac{1}{\\sqrt{x}} + \\sqrt{x} \\]",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0011",
+            "bbox": [
+              0,
+              842,
+              569,
+              952
+            ],
+            "text": "$f'(x)=3x^2-2x-2$",
+            "prediction": "\\[ = x^3 + x^2 - 2x - 2x \\]",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0013",
+            "bbox": [
+              0,
+              1024,
+              559,
+              1125
+            ],
+            "text": "$77x^{76}-2x+1$",
+            "prediction": "\\[ f'(x) = 3x^2 - 2x - 2 \\]",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0014",
+            "bbox": [
+              0,
+              1152,
+              559,
+              1251
+            ],
+            "text": "$b) f'(x)=4x^3-21x^2+3$",
+            "prediction": "\\[ f'(x) = 2x^2 + 5x + 2 \\]",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0015",
+            "bbox": [
+              0,
+              1261,
+              566,
+              1355
+            ],
+            "text": "$e) f'(x)=5x^4+2e^x$",
+            "prediction": "\\[ f'(x) = 4x^2 + 2x^3 \\]",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0017",
+            "bbox": [
+              0,
+              1467,
+              545,
+              1569
+            ],
+            "text": "$f'(x)=(3x)^{\\frac{1}{2}}+7^\\frac{1}{3}$",
+            "prediction": "\\[ f'(x) = (2x)^2 + 9^2 \\]",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0018",
+            "bbox": [
+              0,
+              1583,
+              573,
+              1707
+            ],
+            "text": "$=\\frac{1}{\\sqrt[2]{3x}}$",
+            "prediction": "\\[ = \\frac{1}{\\sqrt{2\\pi}} \\]",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0019",
+            "bbox": [
+              0,
+              1744,
+              566,
+              1853
+            ],
+            "text": "$e) f(x)=\\frac{1}{\\sqrt{x}}+\\sqrt[5]{x}$",
+            "prediction": "\\[ f(x) = \\frac{1}{\\sqrt{2}} + \\sqrt{x} \\]",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0020",
+            "bbox": [
+              579,
+              1827,
+              1256,
+              1944
+            ],
+            "text": "$f(x)=2x^3-x^2+7, (1,8)$",
+            "prediction": "\\[ f(x) = 2x^2 - x^2 + 9, (1,8) \\]",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0021",
+            "bbox": [
+              593,
+              2086,
+              1007,
+              2178
+            ],
+            "text": "y-8 = 4x-4",
+            "prediction": "\\[ f'(x) = 4x - 4 \\]",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0022",
+            "bbox": [
+              593,
+              1943,
+              1256,
+              2054
+            ],
+            "text": "$y-f(1)=f'(1)(x-1)$",
+            "prediction": "\\[ f'(x) = 2x^2 - x^2 + 9, (1,8) \\]",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0023",
+            "bbox": [
+              608,
+              1294,
+              1153,
+              1388
+            ],
+            "text": "$f'(x)=2x*sinx+x$",
+            "prediction": "\\[ f'(x) = 3x^2 + 4x + 13 \\]",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0025",
+            "bbox": [
+              611,
+              1409,
+              1524,
+              1609
+            ],
+            "text": "$f'(x)=\\frac{(cosx*1 + cosx)-(sinx-sinx)}{(1+cosx)^2}$",
+            "prediction": "\\[ f'(x) = 2x \\cos x \\sin x + x^2 \\cos x \\]",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0026",
+            "bbox": [
+              615,
+              1197,
+              1138,
+              1284
+            ],
+            "text": "$f'(x)=3cosx+5sinx$",
+            "prediction": "\\[ f'(x) = \\cos x + \\sin x \\]",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0033",
+            "bbox": [
+              1383,
+              312,
+              1540,
+              381
+            ],
+            "text": "+ 3e",
+            "prediction": "\\[ y = 3e + 1 + 3e \\]",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0035",
+            "bbox": [
+              1639,
+              281,
+              1754,
+              348
+            ],
+            "text": "$\\sqrt{w}$",
+            "prediction": "\\[ y = 2\\pi \\]",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0037",
+            "bbox": [
+              1649,
+              1419,
+              1843,
+              1486
+            ],
+            "text": "4",
+            "prediction": "\\[ 36 - 12 + 5 \\]",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0038",
+            "bbox": [
+              1649,
+              1497,
+              1857,
+              1583
+            ],
+            "text": "x-4",
+            "prediction": "\\[ 13 - 29 = 9 \\]",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0042",
+            "bbox": [
+              1788,
+              1953,
+              2049,
+              2034
+            ],
+            "text": "$f'(x)=4x$",
+            "prediction": "\\[ f'(x) = 4x - 5 \\]",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0045",
+            "bbox": [
+              1934,
+              377,
+              2180,
+              484
+            ],
+            "text": "=x^4+x",
+            "prediction": "\\[ = x^4 + \\frac{1}{2} \\]",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0048",
+            "bbox": [
+              1934,
+              692,
+              2312,
+              819
+            ],
+            "text": "$x^2dx=$",
+            "prediction": "\\[ f(x^2 + x^3 - 1) dx \\]",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0049",
+            "bbox": [
+              1934,
+              843,
+              2312,
+              965
+            ],
+            "text": "3dx = ",
+            "prediction": "\\[ f(x^2 + x^3 - 1) dx \\]",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0051",
+            "bbox": [
+              1934,
+              1135,
+              2312,
+              1259
+            ],
+            "text": "$\\intop\\limits_{}^{}a^xdx=$",
+            "prediction": "\\[ f(x^2 + x^3 - 1) dx \\]",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0053",
+            "bbox": [
+              1934,
+              1422,
+              2312,
+              1543
+            ],
+            "text": "sinxd",
+            "prediction": "\\[ f(x^2 + x^3 - 1) dx \\]",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0054",
+            "bbox": [
+              1934,
+              1565,
+              2312,
+              1692
+            ],
+            "text": "$=4x+5 [-1,3]$",
+            "prediction": "\\[ f(x^2 + x^3 - 1) dx \\]",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0055",
+            "bbox": [
+              1934,
+              1731,
+              2195,
+              1843
+            ],
+            "text": "-4",
+            "prediction": "\\[ f(x^2 + x^3 - 1) dx \\]",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0057",
+            "bbox": [
+              1934,
+              2003,
+              2195,
+              2115
+            ],
+            "text": "$c=\\frac{5}{4}$",
+            "prediction": "\\[ f(x^2 + x^3 - 1) dx \\]",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0058",
+            "bbox": [
+              1934,
+              2136,
+              2195,
+              2248
+            ],
+            "text": "$) = -sinx$",
+            "prediction": "\\[ f(x^2 + x^3 - 1) dx \\]",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0059",
+            "bbox": [
+              2201,
+              0,
+              2429,
+              109
+            ],
+            "text": "dx",
+            "prediction": "\\[ f(x^2 + x^3 - 1) dx \\]",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0065",
+            "bbox": [
+              2201,
+              858,
+              2429,
+              977
+            ],
+            "text": "=3x+c",
+            "prediction": "\\[ f(x^2 + x^3 - 1) dx \\]",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0135-line-0070",
+            "bbox": [
+              2201,
+              1600,
+              2429,
+              1727
+            ],
+            "text": "[1,3]",
+            "prediction": "\\[ f(x^2 + x^3 - 1) dx \\]",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T15:22:09.443Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T14:58:34.571Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 39
+        }
+      ]
     },
     "hf-0136": {
       "id": "hf-0136",
