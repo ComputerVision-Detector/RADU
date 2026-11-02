@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T12:56:05.010Z",
+  "updated_at": "2026-11-02T12:56:25.801Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -34950,20 +34950,473 @@
         "source_sha256": "6e31ddef314173a0d9d28fdc33d4bbaa122dc3b0c211382b3f43fc6e1875cb29"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0115-line-0001",
+            "bbox": [
+              205,
+              137,
+              542,
+              255
+            ],
+            "text": "2021.04.13",
+            "prediction": "2021.04.13",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0002",
+            "bbox": [
+              743,
+              104,
+              832,
+              198
+            ],
+            "text": "/",
+            "prediction": "/",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0003",
+            "bbox": [
+              1088,
+              60,
+              2281,
+              214
+            ],
+            "text": "웹디자인기능사실기 메뉴슬라이드(아래로)",
+            "prediction": "월(다자인기능4실기) 메뉴쇼라이드 (여자13)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0004",
+            "bbox": [
+              205,
+              270,
+              357,
+              375
+            ],
+            "text": "CSS",
+            "prediction": "CSS",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0005",
+            "bbox": [
+              205,
+              487,
+              363,
+              577
+            ],
+            "text": "nav {",
+            "prediction": "nav {",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0006",
+            "bbox": [
+              290,
+              592,
+              617,
+              670
+            ],
+            "text": "width: 180px;",
+            "prediction": "width: 100px;",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0007",
+            "bbox": [
+              290,
+              701,
+              744,
+              775
+            ],
+            "text": "text-align: center;",
+            "prediction": "text-align: center;",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0008",
+            "bbox": [
+              281,
+              802,
+              729,
+              879
+            ],
+            "text": "margin-top: 10px;",
+            "prediction": "margin-top: 10px;",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0009",
+            "bbox": [
+              184,
+              899,
+              239,
+              980
+            ],
+            "text": "}",
+            "prediction": "3",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0010",
+            "bbox": [
+              178,
+              1016,
+              424,
+              1105
+            ],
+            "text": ".menu > li{",
+            "prediction": ".menu)li {",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0011",
+            "bbox": [
+              250,
+              1116,
+              587,
+              1202
+            ],
+            "text": "float: left;",
+            "prediction": "float: left;",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0012",
+            "bbox": [
+              244,
+              1225,
+              596,
+              1307
+            ],
+            "text": "width: 180px;",
+            "prediction": "width: 100px;",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0013",
+            "bbox": [
+              154,
+              1326,
+              206,
+              1412
+            ],
+            "text": "}",
+            "prediction": "3",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0014",
+            "bbox": [
+              154,
+              1439,
+              472,
+              1525
+            ],
+            "text": ".menu > li > a {",
+            "prediction": ".menu)li>a {",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0015",
+            "bbox": [
+              220,
+              1536,
+              557,
+              1625
+            ],
+            "text": "height: 40px;",
+            "prediction": "height: 40px;",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0016",
+            "bbox": [
+              196,
+              1632,
+              554,
+              1722
+            ],
+            "text": "width: 180px;",
+            "prediction": "width: 100px;",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0017",
+            "bbox": [
+              196,
+              1737,
+              702,
+              1831
+            ],
+            "text": "line-height: 40px;",
+            "prediction": "line-height: topx;",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0018",
+            "bbox": [
+              184,
+              1842,
+              602,
+              1936
+            ],
+            "text": "font-size: 16px;",
+            "prediction": "font-size: 16px;",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0019",
+            "bbox": [
+              178,
+              1955,
+              678,
+              2049
+            ],
+            "text": "font-weight: bold;",
+            "prediction": "font-weight: bold;",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0020",
+            "bbox": [
+              184,
+              2056,
+              983,
+              2162
+            ],
+            "text": "background-color: #222328;",
+            "prediction": "background-color: #222328;",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0021",
+            "bbox": [
+              160,
+              2169,
+              578,
+              2262
+            ],
+            "text": "color: #fffffff;",
+            "prediction": "color: #fffffff;",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0022",
+            "bbox": [
+              154,
+              2274,
+              512,
+              2371
+            ],
+            "text": "float: left;",
+            "prediction": "float: left;",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0023",
+            "bbox": [
+              63,
+              2390,
+              118,
+              2480
+            ],
+            "text": "}",
+            "prediction": "}",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0024",
+            "bbox": [
+              48,
+              2511,
+              596,
+              2617
+            ],
+            "text": ".menu > li > a :hover{",
+            "prediction": ".menu)li>a:hover{",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0025",
+            "bbox": [
+              130,
+              2628,
+              995,
+              2738
+            ],
+            "text": "background-color: #930930;",
+            "prediction": "background-color: #930930;",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0026",
+            "bbox": [
+              120,
+              2737,
+              605,
+              2855
+            ],
+            "text": "color: #ffff00;",
+            "prediction": "color: #ffff00;",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0027",
+            "bbox": [
+              30,
+              2854,
+              79,
+              2952
+            ],
+            "text": "}",
+            "prediction": "}",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0028",
+            "bbox": [
+              30,
+              2971,
+              354,
+              3077
+            ],
+            "text": ".submenu {",
+            "prediction": ".sgabmenu {",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0029",
+            "bbox": [
+              108,
+              3084,
+              457,
+              3198
+            ],
+            "text": "float: left;",
+            "prediction": "float: left;",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0030",
+            "bbox": [
+              99,
+              3205,
+              457,
+              3315
+            ],
+            "text": "width: 100%;",
+            "prediction": "width: 100%;",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0031",
+            "bbox": [
+              87,
+              3318,
+              457,
+              3432
+            ],
+            "text": "display: none;",
+            "prediction": "display: none;",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0115-line-0032",
+            "bbox": [
+              0,
+              3560,
+              424,
+              3670
+            ],
+            "text": "submenu > li > a {",
+            "prediction": "Submenu &gt; 1 &gt; a {",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T13:21:05.010Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T12:56:25.801Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 32
+        }
+      ]
     },
     "hf-0116": {
       "id": "hf-0116",
