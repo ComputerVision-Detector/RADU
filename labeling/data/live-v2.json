@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:32:39.039Z",
+  "updated_at": "2026-11-02T10:34:15.977Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -26241,20 +26241,417 @@
         "source_sha256": "309ed8416a052f231fbc938c82357011fd06852882aca767219f220f52e873f7"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0086-line-0001",
+            "bbox": [
+              260,
+              173,
+              675,
+              283
+            ],
+            "text": "· 스케일 공간 이론",
+            "prediction": "- 세일 골 열",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0002",
+            "bbox": [
+              293,
+              306,
+              681,
+              404
+            ],
+            "text": "-하나의 이미지를",
+            "prediction": "-하나의 이미지를",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0003",
+            "bbox": [
+              743,
+              306,
+              2120,
+              404
+            ],
+            "text": "여러크기(스케일)에서 바라보면서 작은 세부 정보부터",
+            "prediction": "여러데(스케델)에서 밝혀보면서 작은 세박 집보냈다",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0004",
+            "bbox": [
+              341,
+              431,
+              1113,
+              533
+            ],
+            "text": "큰 구조까지 분석하는 방법",
+            "prediction": "큰 견고기로 본하는 방법.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0005",
+            "bbox": [
+              281,
+              560,
+              1827,
+              678
+            ],
+            "text": "- SIFT ( Scale-Invariant Feature Transform)",
+            "prediction": "- SIFT ( Scale-Invariant Feature Transform)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0006",
+            "bbox": [
+              341,
+              689,
+              2045,
+              799
+            ],
+            "text": "L 크기가 달라져도 같은 특징을 찾아내려고 하는 알고리즘",
+            "prediction": "L 크기 온라인도 큰 특허를 찾아 내리고 하는 알고려즘.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0007",
+            "bbox": [
+              275,
+              822,
+              1304,
+              924
+            ],
+            "text": "- 다중스케일 영상을 구성하는 방법",
+            "prediction": "- 다중스케일 영상을 구성하는 방법",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0008",
+            "bbox": [
+              350,
+              943,
+              829,
+              1057
+            ],
+            "text": "1. 피라미드 방법",
+            "prediction": "1. 파견에도 방법",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0009",
+            "bbox": [
+              441,
+              1060,
+              2402,
+              1186
+            ],
+            "text": "L 물체의 거리가 멀어짐에 따라 물체의 크기가 작아지는 현상을 모방",
+            "prediction": "L 몸줘의 가까이 밀어짐에 따라 몰줘의 평가 작가는 현상을 모방",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0010",
+            "bbox": [
+              441,
+              1197,
+              1815,
+              1323
+            ],
+            "text": "L 연속적인 스케일로 줄일 수 있는 한계가 있음",
+            "prediction": "L 연속 꽃인 스케밍도 줄릴 수 있는 한계가 있음.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0011",
+            "bbox": [
+              275,
+              1334,
+              950,
+              1444
+            ],
+            "text": "2. 가우시안 스무딩 방법",
+            "prediction": "2. 가우샌 수덕성 방법",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0012",
+            "bbox": [
+              441,
+              1455,
+              2129,
+              1581
+            ],
+            "text": "L 거리가 멀어지면 세부 내용이 점점 흐려지는 현상 모방",
+            "prediction": "L 가각가 밑이머면 세박 내용이 검증 흐려는 현상 보냈다.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0013",
+            "bbox": [
+              465,
+              1596,
+              1903,
+              1726
+            ],
+            "text": "L 표준편차 σ를 연속된 값으로 조절 가능",
+            "prediction": "L 표준편차 S를 연속된 축으로 조절 가능.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0014",
+            "bbox": [
+              486,
+              1713,
+              2362,
+              1855
+            ],
+            "text": "L 연속 공간에서 유도한 수식과 알고리즘을 디지털 공간으로 변환해",
+            "prediction": "L 연속 꾸간에서 윤리한 수식과 알려줌을 다칠 공간으로 범찬해",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0015",
+            "bbox": [
+              592,
+              1854,
+              1325,
+              1984
+            ],
+            "text": "사용할 수 있다는 장점",
+            "prediction": "사용 쌀 수 있는 장점.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0016",
+            "bbox": [
+              1318,
+              2024,
+              2036,
+              2137
+            ],
+            "text": "옥타브 : 가우시안 스무딩을 적용해",
+            "prediction": "쿼터: 가옥산 스웨딩을 정용해",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0017",
+            "bbox": [
+              235,
+              2145,
+              524,
+              2250
+            ],
+            "text": "- SIFT",
+            "prediction": "- SIFT",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0018",
+            "bbox": [
+              1357,
+              2136,
+              1739,
+              2242
+            ],
+            "text": "만들어진 영상",
+            "prediction": "연동이면 영상",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0019",
+            "bbox": [
+              290,
+              2282,
+              1162,
+              2400
+            ],
+            "text": "- 1.단계. 다중 스케일 영상 구축",
+            "prediction": "- 1.단계. 다중 스케일 영상 구축",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0020",
+            "bbox": [
+              359,
+              2395,
+              2362,
+              2529
+            ],
+            "text": "- 가우시안 스무딩과 피라미드 방법을 결합해 다중 스케일 영상 구성",
+            "prediction": "- 가옥산 스웨딩과 따라도 방법을 결합해 다중 스웨딩 영상 정책.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0021",
+            "bbox": [
+              275,
+              2548,
+              1274,
+              2678
+            ],
+            "text": "2단계. 다중 스케일 영상에 미분 적용",
+            "prediction": "2단계. 연속 스케일 영상에 이분 검증",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0022",
+            "bbox": [
+              374,
+              2673,
+              2598,
+              2827
+            ],
+            "text": "- 정규 라플라시안을 사용하지만 DOG를 사용하여 계산 시간을 획기적으로 줄임",
+            "prediction": "- 정규 귀퉁시선을 사용하지만 DOG를 사용하며 제한 선을 확기적으로 줄임.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0023",
+            "bbox": [
+              250,
+              2838,
+              756,
+              2972
+            ],
+            "text": "3단계: 극점 검출",
+            "prediction": "3단계: 극경 검출",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0024",
+            "bbox": [
+              314,
+              2963,
+              2417,
+              3113
+            ],
+            "text": "- 3차원 구조의 특징 가능성 맵 C에 비최대 억제를 적용하여 극점을 찾고",
+            "prediction": "- 좌원 편의 특징 가능성 암 (에 비해에 의제를 적용하여 접견을 찾고",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0025",
+            "bbox": [
+              381,
+              3120,
+              887,
+              3266
+            ],
+            "text": "특징점을 취함",
+            "prediction": "육청점을 취하요.",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0026",
+            "bbox": [
+              290,
+              3265,
+              2120,
+              3408
+            ],
+            "text": "- 에지를 여러 스케일로 만들어 놓고, 어떤 픽셀이 주변 픽셀보다",
+            "prediction": "- 이재를 여러 스케일로 만들어 놓고, 어떤 획일이 적변 획일돼요.",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0027",
+            "bbox": [
+              326,
+              3431,
+              1128,
+              3557
+            ],
+            "text": "특별히 튀는 지점을 찾는 것",
+            "prediction": "특별히 듣는 접응 좋은 것.",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0086-line-0028",
+            "bbox": [
+              2582,
+              3693,
+              3021,
+              3783
+            ],
+            "text": "Keun Young Co.",
+            "prediction": "Keun Young Co.",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T10:57:39.039Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T10:34:15.977Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 28
+        }
+      ]
     },
     "hf-0087": {
       "id": "hf-0087",
