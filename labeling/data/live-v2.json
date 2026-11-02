@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T06:59:51.102Z",
+  "updated_at": "2026-11-02T07:01:39.886Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -5557,7 +5557,7 @@
       },
       "bbox_annotation": {
         "status": "verified",
-        "revision": 1,
+        "revision": 2,
         "annotator": "이나현",
         "notes": "",
         "no_text": false,
@@ -5571,7 +5571,7 @@
               445,
               601
             ],
-            "text": "- 특이도와 민감도",
+            "text": "· 특이도와 민감도",
             "prediction": "- 튀냉과 인호도",
             "order": 1,
             "uncertain": false,
@@ -5608,12 +5608,12 @@
           {
             "id": "hf-0016-line-0006",
             "bbox": [
-              154,
+              168,
               697,
               2045,
-              920
+              966
             ],
-            "text": "- T/N, 민감도 = $\\frac{TP}{TP+FN}$ - 이거 교수님이 안보신다 하심.",
+            "text": "특이도 = \\(\\frac{TN}{TN + FP}\\), 민감도 = \\(\\frac{TP}{TP + FN}\\)  - 이거 교수님이 안보신다 하심.",
             "prediction": "- T/N, 민감도 = $\\frac{TP}{TP+FN}$ - 이게 피석에 안보하 허명.",
             "order": 4,
             "uncertain": false,
@@ -5627,7 +5627,7 @@
               530,
               1182
             ],
-            "text": "- 정밀도와 재현율",
+            "text": "· 정밀도와 재현율",
             "prediction": "- 정일도와 저현을",
             "order": 5,
             "uncertain": false,
@@ -5669,7 +5669,7 @@
               2057,
               1629
             ],
-            "text": "잘못 = $\\frac{TP}{TP+FN}$ $\\rightarrow$ 모델이 1이라고 한 것 중에서 진짜로 맞춘 것.",
+            "text": "정밀도 = \\(\\frac{TP}{TP + FP}\\) ← 모델이 1이라고 한 것 중에서 진짜로 맞춘 것.",
             "prediction": "잘못 = $\\frac{TP}{TP+FN}$ $\\rightarrow$ 델에 그어고 한 것 중에서 잘못도 못줄겠.",
             "order": 8,
             "uncertain": false,
@@ -5692,12 +5692,12 @@
           {
             "id": "hf-0016-line-0012",
             "bbox": [
-              229,
-              1858,
-              2018,
-              2121
+              232,
+              1860,
+              2021,
+              2123
             ],
-            "text": "재현율 = $\\frac{TP}{TP+FN}$ $\\rightarrow$ 실제로 1인 것 중에서 모델이 얼마나 맞추었나.",
+            "text": "재현율 = \\(\\frac{TP}{TP + FN}\\) ← 실제로 1인 것 중에서 모델이 얼마나 맞추었나.",
             "prediction": "재현을 = $\\frac{TP}{TP+FN}$ $\\rightarrow$ 손돌 1인 것 중에서 노력이 왔어나 맞추겠나.",
             "order": 10,
             "uncertain": false,
@@ -5711,9 +5711,9 @@
               965,
               2363
             ],
-            "text": "- 훈련 집합, 검증 집합, 테스트 집합.",
+            "text": "· 훈련 집합, 검증 집합, 테스트 집합.",
             "prediction": "- 헌납 잠잠, 김증 잡잠. 태스트 잡잠.",
-            "order": 11,
+            "order": 12,
             "uncertain": false,
             "reviewed": true
           },
@@ -5725,9 +5725,9 @@
               2205,
               2742
             ],
-            "text": "- 성능 평가에서 데이터는 역할에 따라 훈련/검증/테스트 집합으로 나눌 수 있음",
+            "text": "· 성능 평가에서 데이터는 역할에 따라 훈련/검증/테스트 집합으로 나눌 수 있음",
             "prediction": "- 샌뇨 평가에 더해는 약한데 따라 환전/검증/테스트 접합으로 나눌 수 있음",
-            "order": 12,
+            "order": 14,
             "uncertain": false,
             "reviewed": true
           },
@@ -5741,7 +5741,7 @@
             ],
             "text": "- 교차 검증은 훈련/검증에 사용할 데이터를 여러번 나누어 학습과 검증을",
             "prediction": "- 피구 검증은 한진/검증에 사험을 데이터를 여겨낸 내에 복습과 검증을",
-            "order": 13,
+            "order": 15,
             "uncertain": false,
             "reviewed": true
           },
@@ -5755,7 +5755,7 @@
             ],
             "text": "반복하는 평가 방법.",
             "prediction": "반복하는 뜻가 방법.",
-            "order": 14,
+            "order": 16,
             "uncertain": false,
             "reviewed": true
           },
@@ -5767,9 +5767,9 @@
               1358,
               3258
             ],
-            "text": "- K-겹 교차 검증 (K-Fold Cross Validation)",
+            "text": "· K-겹 교차 검증 (K-Fold Cross Validation)",
             "prediction": "- K-검 교차 경흥 (K-Fold Cross Latiation)",
-            "order": 15,
+            "order": 17,
             "uncertain": false,
             "reviewed": true
           },
@@ -5783,18 +5783,63 @@
             ],
             "text": "- 훈련 집합을 크기의 부분집합 k개로 나눔.",
             "prediction": "- 출전 접촬을 엮기의 방법함 느껴요 4초.",
-            "order": 16,
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2881b6b3-b160-40d3-b4ab-6004cd6138fe",
+            "bbox": [
+              1056,
+              2070,
+              2294,
+              2218
+            ],
+            "text": "- 정밀도와 재현율은 반비례(트레이드오프)관계.",
+            "prediction": "",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-cf6e6a44-8ad7-47bb-afbb-da70ab5d05b8",
+            "bbox": [
+              151,
+              2419,
+              993,
+              2531
+            ],
+            "text": "훈련 단계 테스트 단계",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2c06737a-cbfe-4b71-96f8-617011e768a4",
+            "bbox": [
+              426,
+              3390,
+              560,
+              3502
+            ],
+            "text": "같은",
+            "prediction": "",
+            "order": 19,
             "uncertain": false,
             "reviewed": true
           }
         ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T07:24:28.646Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-11-02T07:01:39.886Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 2,
+          "box_count": 19
+        },
         {
           "at": "2026-10-30T12:19:11.081Z",
           "author": "이나현",
