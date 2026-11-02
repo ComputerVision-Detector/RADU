@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T13:20:28.968Z",
+  "updated_at": "2026-11-02T13:20:56.187Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -39949,20 +39949,81 @@
         "source_sha256": "6ff00c674ba8700adb7ad151075cfa3994219dfb88118013846c82a2624bb0be"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0126-line-0001",
+            "bbox": [
+              397,
+              143,
+              954,
+              226
+            ],
+            "text": "CUI, GUI, NUI 표",
+            "prediction": "CUI, GUI, NUI 표",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0126-line-0002",
+            "bbox": [
+              486,
+              245,
+              629,
+              317
+            ],
+            "text": "CUI",
+            "prediction": "CUI",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0126-line-0003",
+            "bbox": [
+              876,
+              231,
+              1038,
+              317
+            ],
+            "text": "GUI",
+            "prediction": "GUI",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0126-line-0004",
+            "bbox": [
+              1263,
+              231,
+              1436,
+              317
+            ],
+            "text": "NUI",
+            "prediction": "NUI",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T13:45:28.968Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T13:20:56.187Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 4
+        }
+      ]
     },
     "hf-0127": {
       "id": "hf-0127",
