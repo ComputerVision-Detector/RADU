@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T11:05:38.946Z",
+  "updated_at": "2026-11-02T11:05:41.432Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -30033,20 +30033,403 @@
         "source_sha256": "08ac9f6f7c4c3535e58d4b1adcca6df6bd5d828bcb354db5f3d46d4dcdd6af49"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0099-line-0001",
+            "bbox": [
+              1121,
+              129,
+              1555,
+              263
+            ],
+            "text": "통장 프로그램",
+            "prediction": "동장 프로 객담",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0002",
+            "bbox": [
+              244,
+              262,
+              820,
+              375
+            ],
+            "text": "#include<stdio>",
+            "prediction": "#include<stdio>",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0003",
+            "bbox": [
+              326,
+              391,
+              859,
+              496
+            ],
+            "text": "int main(void) {",
+            "prediction": "int main(void) {",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0004",
+            "bbox": [
+              453,
+              491,
+              1476,
+              593
+            ],
+            "text": "int money = 0; in_min = 0; out_min = 0;",
+            "prediction": "int money = 0; in_min = 0; out_min = 0;",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0005",
+            "bbox": [
+              459,
+              600,
+              917,
+              702
+            ],
+            "text": "int ch_num = 0;",
+            "prediction": "int ch_num = 0;",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0006",
+            "bbox": [
+              411,
+              907,
+              1585,
+              1008
+            ],
+            "text": "Print(\"현재동장에 있는 돈: %d\", wtn, money);",
+            "prediction": "Print(\"현재동장에 있는 돈: %d\", wtn, money);",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0007",
+            "bbox": [
+              381,
+              1008,
+              1482,
+              1121
+            ],
+            "text": "\\( \\text{Jul}(j) \\rightarrow \\text{사용자정리장수쪽완만등} \\)",
+            "prediction": "\\( \\text{Jul}(j) \\rightarrow \\text{사용자정리장수쪽완만등} \\)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0008",
+            "bbox": [
+              411,
+              1116,
+              1727,
+              1226
+            ],
+            "text": "Print(\"입금할려면 1, 출금하려면 2, wtn :\");",
+            "prediction": "Print(\"입금할려면 1, 출금하려면 2, wtn :\");",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0009",
+            "bbox": [
+              402,
+              1245,
+              1107,
+              1335
+            ],
+            "text": "\\( \\text{Scanf}(``\\%d, 'Q ch_num); \\)",
+            "prediction": "\\( \\text{Scan}(``\\%d, 'Q ch_num); \\)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0010",
+            "bbox": [
+              423,
+              1354,
+              911,
+              1440
+            ],
+            "text": "\\( i(ch\\_num == 1) \\)",
+            "prediction": "\\( i(ch\\_num = 1) \\)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0011",
+            "bbox": [
+              520,
+              1423,
+              2299,
+              1553
+            ],
+            "text": "Printf(\"입금을 선택하셨습니까 wtn 입금할돈을 입력하주시므로 :\");",
+            "prediction": "Print(\"입금을 선택하셨습니까 wtn 입금할돈을 입력하주시므로 :\");",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0012",
+            "bbox": [
+              517,
+              1552,
+              1207,
+              1654
+            ],
+            "text": "scanf(\"%d\",&in_mn);",
+            "prediction": "\\( \\text{Scan}(``\\%d, 'Q ch_min); \\)",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0013",
+            "bbox": [
+              547,
+              1669,
+              1298,
+              1767
+            ],
+            "text": "money = money + in_mn;",
+            "prediction": "money = money + in-min",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0014",
+            "bbox": [
+              547,
+              1741,
+              2692,
+              1883
+            ],
+            "text": "Print f(\"%d 월을 입금하셨고 동장에는 %d 월이 왔습니다 wtn\", in-mn, money);",
+            "prediction": "Print f(\"%d 월을 입금하셨고 동장에는 %d 월이 왔습니다 wtn\", in-mn, money);",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0015",
+            "bbox": [
+              568,
+              1891,
+              766,
+              1988
+            ],
+            "text": "break;",
+            "prediction": "break;",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0016",
+            "bbox": [
+              405,
+              1987,
+              1213,
+              2097
+            ],
+            "text": "} else if(ch_num == 2){",
+            "prediction": "\\( \\text{Belge} \\, f(ch\\_num == 2) \\)",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0017",
+            "bbox": [
+              562,
+              2072,
+              2459,
+              2218
+            ],
+            "text": "Printf(\"출금을 선택하셨습니다 \\n 출금할돈을 입력하주세요 。”);",
+            "prediction": "Print f(\"출금을 선택하셨습니다 wtn 출금할돈을 입력하주세요 。”);",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0018",
+            "bbox": [
+              562,
+              2209,
+              1355,
+              2331
+            ],
+            "text": "scanf(\"%d\",&out_mn);",
+            "prediction": "\\( \\text{Scan}(``\\%d'' / 'Q_{out} - mn); \\)",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0019",
+            "bbox": [
+              571,
+              2326,
+              1325,
+              2444
+            ],
+            "text": "money = money - out _mn;",
+            "prediction": "money = money - out - mn;",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0020",
+            "bbox": [
+              568,
+              2443,
+              1092,
+              2569
+            ],
+            "text": "if(money < 0){",
+            "prediction": "\\( i(c(\\text{money}(o)) \\)",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0021",
+            "bbox": [
+              704,
+              2532,
+              2450,
+              2670
+            ],
+            "text": "Printf(\"잔액이 부족하며 출금할 수 없습니다. wtn\"); exit(o);",
+            "prediction": "Print f(\"친예이 부족하며 출금할 수 없습니다. wtn\"); exit(o);",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0022",
+            "bbox": [
+              559,
+              2689,
+              608,
+              2787
+            ],
+            "text": "}",
+            "prediction": "3",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0023",
+            "bbox": [
+              544,
+              2753,
+              2861,
+              2920
+            ],
+            "text": "Printf(\"싶은 물을 줄금하셨고 동장에는 %d 월이 있습니까 wtn\", at_mn, money);",
+            "prediction": "Print(\"싶은 물을 줄금하셨고 동장에는 %d 월이 있습니까 wtn\", at_mn, money);",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0024",
+            "bbox": [
+              553,
+              2923,
+              829,
+              3033
+            ],
+            "text": "breake;",
+            "prediction": "breaten;",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0025",
+            "bbox": [
+              359,
+              3056,
+              406,
+              3158
+            ],
+            "text": "}",
+            "prediction": "3",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0026",
+            "bbox": [
+              317,
+              3278,
+              714,
+              3408
+            ],
+            "text": "return o;",
+            "prediction": "return oj",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0099-line-0027",
+            "bbox": [
+              205,
+              3423,
+              248,
+              3528
+            ],
+            "text": "}",
+            "prediction": "3",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T11:30:38.946Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T11:05:41.432Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 27
+        }
+      ]
     },
     "hf-0100": {
       "id": "hf-0100",
