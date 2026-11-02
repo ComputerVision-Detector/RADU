@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:14:28.766Z",
+  "updated_at": "2026-11-02T10:14:43.958Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -22607,8 +22607,8 @@
         "source_sha256": "62892940ee1b37063ac4aa0ff4fe2d64960aac58e77c198c9bc3a6dcc1af8f18"
       },
       "bbox_annotation": {
-        "status": "draft",
-        "revision": 2,
+        "status": "verified",
+        "revision": 3,
         "annotator": "이나현",
         "notes": "",
         "no_text": false,
@@ -22720,11 +22720,11 @@
               561,
               1360
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "기하변환",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 8,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0074-line-0013",
@@ -22874,11 +22874,11 @@
               2667,
               3101
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "\\(x\\)방향으로 \\(S_x\\)\n\\(y\\)방향으로 \\(S_x\\) 만큼\n크기 조정\n(1보다 크면 확대,\n1보다작으면 축소)",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 19,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0074-line-0026",
@@ -22888,11 +22888,11 @@
               1934,
               3353
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "- 동차행렬 : 동차 좌표에 기하 변환을 적용하기 위한 변환 도구",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 20,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0074-line-0027",
@@ -22902,11 +22902,11 @@
               2017,
               3505
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "- 동차 좌표 사용시 수학 표기가 깔끔하고 계산 효율에 장점이 있음.",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 21,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0074-line-0028",
@@ -22916,11 +22916,11 @@
               2761,
               3657
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "└ 변환해야 하는 점이 많고 여러 단계의 변환을 적용해야 하는 경우 변환 행렬을",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 22,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0074-line-0029",
@@ -22930,11 +22930,11 @@
               2319,
               3801
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "모두 곱해 하나의 변환 행렬을 만들어두고 점마다 한 번의 행렬 곱셈으로",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 23,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0074-line-0030",
@@ -22944,20 +22944,23 @@
               1126,
               3976
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "계산하는 이점",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 24,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           }
         ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T10:39:28.766Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-11-02T10:14:43.958Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 3,
+          "box_count": 24
+        },
         {
           "at": "2026-11-02T10:12:44.557Z",
           "author": "이나현",
