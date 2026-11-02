@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T12:47:05.529Z",
+  "updated_at": "2026-11-02T12:48:04.971Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -33752,20 +33752,417 @@
         "source_sha256": "cb6eb15da95a065f22810329a0b8e7c3212fbfa136c07825259c28a80f3736de"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0111-line-0001",
+            "bbox": [
+              483,
+              217,
+              880,
+              335
+            ],
+            "text": "float: left;",
+            "prediction": "float: left;",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0002",
+            "bbox": [
+              483,
+              338,
+              929,
+              440
+            ],
+            "text": "Padding: 5px o;",
+            "prediction": "Padding: 5px o;",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0003",
+            "bbox": [
+              474,
+              451,
+              1128,
+              561
+            ],
+            "text": "transition: all 0.4s;",
+            "prediction": "than sition; all 0.45;",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0004",
+            "bbox": [
+              471,
+              572,
+              929,
+              678
+            ],
+            "text": "cursor: pointer;",
+            "prediction": "்கார்: Pointer;",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0005",
+            "bbox": [
+              465,
+              677,
+              1001,
+              795
+            ],
+            "text": "position: relative;",
+            "prediction": "position: relative;",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0006",
+            "bbox": [
+              368,
+              802,
+              442,
+              900
+            ],
+            "text": "}",
+            "prediction": "1",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0007",
+            "bbox": [
+              368,
+              907,
+              856,
+              1013
+            ],
+            "text": ".menu > li : hover{",
+            "prediction": "menu)li:hover",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0008",
+            "bbox": [
+              441,
+              1008,
+              1249,
+              1133
+            ],
+            "text": "background-color: #333335;",
+            "prediction": "background-color: #333335;",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0009",
+            "bbox": [
+              420,
+              1124,
+              832,
+              1242
+            ],
+            "text": "color: #fff;",
+            "prediction": "color: #fff;",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0010",
+            "bbox": [
+              335,
+              1241,
+              409,
+              1339
+            ],
+            "text": "}",
+            "prediction": "3",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0011",
+            "bbox": [
+              335,
+              1346,
+              672,
+              1464
+            ],
+            "text": ".submenu{",
+            "prediction": "- submenu",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0012",
+            "bbox": [
+              402,
+              1447,
+              814,
+              1581
+            ],
+            "text": "width: 100%;",
+            "prediction": "width: 100%;",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0013",
+            "bbox": [
+              387,
+              1560,
+              911,
+              1694
+            ],
+            "text": "margin-top: 5px;",
+            "prediction": "margin-top: 5px;",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0014",
+            "bbox": [
+              365,
+              1665,
+              835,
+              1807
+            ],
+            "text": "display:none;",
+            "prediction": "display:none;",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0015",
+            "bbox": [
+              374,
+              1774,
+              1071,
+              1920
+            ],
+            "text": "position: absolute;",
+            "prediction": "position: absolute;",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0016",
+            "bbox": [
+              347,
+              1895,
+              784,
+              2021
+            ],
+            "text": "2-index: 1;",
+            "prediction": "2-index: 1;",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0017",
+            "bbox": [
+              335,
+              2003,
+              1189,
+              2158
+            ],
+            "text": "background-color: #333335;",
+            "prediction": "background-color: #333335;",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0018",
+            "bbox": [
+              250,
+              2116,
+              324,
+              2218
+            ],
+            "text": "}",
+            "prediction": "3",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0019",
+            "bbox": [
+              235,
+              2225,
+              708,
+              2371
+            ],
+            "text": ".submenu > li {",
+            "prediction": "- submenu)li:",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0020",
+            "bbox": [
+              344,
+              2342,
+              856,
+              2496
+            ],
+            "text": "width: 100%;",
+            "prediction": "width: 100%;",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0021",
+            "bbox": [
+              323,
+              2467,
+              911,
+              2617
+            ],
+            "text": "padding: 5px o;",
+            "prediction": "padding: 5px o;",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0022",
+            "bbox": [
+              323,
+              2584,
+              1138,
+              2746
+            ],
+            "text": "transition: all 0.45;",
+            "prediction": "transition: all 0.45;",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0023",
+            "bbox": [
+              302,
+              2701,
+              799,
+              2867
+            ],
+            "text": "float: left;",
+            "prediction": "float: left;",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0024",
+            "bbox": [
+              178,
+              2826,
+              251,
+              2940
+            ],
+            "text": "}",
+            "prediction": "3",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0025",
+            "bbox": [
+              181,
+              2939,
+              850,
+              3105
+            ],
+            "text": ".submenu > li: hover {",
+            "prediction": "- submenu) li: hover",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0026",
+            "bbox": [
+              272,
+              3064,
+              1358,
+              3258
+            ],
+            "text": "background-color: #fffff0;",
+            "prediction": "background-color: #fffff0;",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0027",
+            "bbox": [
+              254,
+              3181,
+              723,
+              3343
+            ],
+            "text": "color: #000;",
+            "prediction": "color: #000;",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0111-line-0028",
+            "bbox": [
+              120,
+              3310,
+              212,
+              3436
+            ],
+            "text": "}",
+            "prediction": "3",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T13:12:05.529Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T12:48:04.971Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 28
+        }
+      ]
     },
     "hf-0112": {
       "id": "hf-0112",
