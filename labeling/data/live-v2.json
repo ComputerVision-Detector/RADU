@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T03:08:57.944Z",
+  "updated_at": "2026-11-02T03:10:31.677Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -7504,20 +7504,305 @@
         "source_sha256": "cd4c09564783c368bf5036116409b39bb33a138584b763f944d83a153e507094"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0022-line-0001",
+            "bbox": [
+              1844,
+              60,
+              1999,
+              154
+            ],
+            "text": "NO.",
+            "prediction": "NO.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0002",
+            "bbox": [
+              1844,
+              72,
+              2680,
+              246
+            ],
+            "text": "NO.\nyear month day ()",
+            "prediction": "year month day ()",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0003",
+            "bbox": [
+              120,
+              504,
+              645,
+              589
+            ],
+            "text": "그래디언트 소멸 문",
+            "prediction": "- 244567890 567890 1234567890",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0004",
+            "bbox": [
+              574,
+              504,
+              693,
+              593
+            ],
+            "text": "문제",
+            "prediction": "문제",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0005",
+            "bbox": [
+              120,
+              620,
+              636,
+              702
+            ],
+            "text": "- 오류 역전파 시",
+            "prediction": "- 2023年全球气候变化报告",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0006",
+            "bbox": [
+              574,
+              544,
+              1978,
+              718
+            ],
+            "text": "여러 층을 거치면서 그래디언트 값이 점점 작아져",
+            "prediction": "어려움을 가졌어서 그래서도 좋아 걱정 찾아져",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0007",
+            "bbox": [
+              208,
+              701,
+              1494,
+              839
+            ],
+            "text": "압력롭게 가까워 지면 변화가 거의 없는 상태.",
+            "prediction": "압력롭게 가까워 지면 변화가 가져 왔는 상태.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0008",
+            "bbox": [
+              120,
+              991,
+              403,
+              1081
+            ],
+            "text": "· 옵티마이저",
+            "prediction": "- 옆터야 커서",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0009",
+            "bbox": [
+              142,
+              1080,
+              1600,
+              1218
+            ],
+            "text": "- 신경망의 매개변수를 어떻게 바굴지 결정하는 알고리즘",
+            "prediction": "- 신경망액 얘기방식 를 이렇게 봐줵지 찾혀있는 알려줌.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0010",
+            "bbox": [
+              120,
+              1366,
+              572,
+              1468
+            ],
+            "text": "· 완전 연결 구조",
+            "prediction": "- 완전 연결 구조",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0011",
+            "bbox": [
+              169,
+              1483,
+              1736,
+              1601
+            ],
+            "text": "- 인접한 두 층의 모든 노드 사이에 에지가 있는 연결 구조",
+            "prediction": "- 압축한 두 줌도 모드 서에 아차 있는 연결 겪고",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0012",
+            "bbox": [
+              193,
+              1616,
+              1494,
+              1734
+            ],
+            "text": "- FC (Fully-Connected) 라 하기도 함",
+            "prediction": "- FC (Fully-Conne cted) 가 해요 참.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0013",
+            "bbox": [
+              108,
+              1886,
+              920,
+              1988
+            ],
+            "text": "- 혼동행렬 Confusion Matrix",
+            "prediction": "- 혼동행결 Confusion Matrix",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0014",
+            "bbox": [
+              181,
+              1995,
+              1703,
+              2117
+            ],
+            "text": "- 부류 별로 옳은 분류와 틀린 부분의 개수를 기록한 행렬",
+            "prediction": "- 뉴런 병조 옴은 분주와 듣던 분류역 개를 쪽한 행실",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0015",
+            "bbox": [
+              181,
+              2132,
+              2151,
+              2242
+            ],
+            "text": "- TP: True positive ex) 1인데 1로 맞추었다. / 진양성",
+            "prediction": "- TP: True positive ex) 1인데 13 맛죽었다 / 찬양성",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0016",
+            "bbox": [
+              250,
+              2253,
+              2151,
+              2371
+            ],
+            "text": "FP: False positive ex) 0인데 1로 예측했다. / 위양성",
+            "prediction": "FP: False positive ex) (인데 13 예학했다. 1 의성성",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0017",
+            "bbox": [
+              235,
+              2390,
+              2665,
+              2508
+            ],
+            "text": "FU: False negative ex) 0인데 0로 예측했다. (0인데 실제값도 동일) / 진음성",
+            "prediction": "FU: 옷 negative ex) 엔데 요 에뜨봇다. (인데 삼족도 동원) / 진윤성",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0018",
+            "bbox": [
+              214,
+              2515,
+              2752,
+              2654
+            ],
+            "text": "TN: True negative ex) 1인데 0로 예측 (0인데 실제값이 상이) / 위음성",
+            "prediction": "TN: True negative ex) 1인데 (1조에흡. (이에 신제감은 상이) /위응성",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0019",
+            "bbox": [
+              622,
+              2657,
+              2054,
+              2779
+            ],
+            "text": "T: 진, F: 위, P: 양성, N: 음성",
+            "prediction": "T: 진, F: 위, P: 쌍성, N: 윤성.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0022-line-0020",
+            "bbox": [
+              181,
+              2907,
+              1476,
+              3037
+            ],
+            "text": "- Threshold 를 기준으로 1일 거다 아래는 0일 거다",
+            "prediction": "- Threshold 를 가르쳐도 1일 가는 이제는 일거다.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T03:33:35.962Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T03:10:31.677Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 20
+        }
+      ]
     },
     "hf-0023": {
       "id": "hf-0023",
