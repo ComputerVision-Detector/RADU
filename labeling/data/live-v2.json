@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T15:19:00.136Z",
+  "updated_at": "2026-11-02T15:20:45.652Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -51807,20 +51807,375 @@
         "source_sha256": "24c4be11019e2adca32ca9c5319a3cfd9911726c8d892317048b5d3ad7203d69"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0147-line-0001",
+            "bbox": [
+              39,
+              447,
+              338,
+              541
+            ],
+            "text": "10 강 ---",
+            "prediction": "10 감 ---",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0002",
+            "bbox": [
+              353,
+              441,
+              1023,
+              541
+            ],
+            "text": "--- Neural network example",
+            "prediction": "--- Neural network example",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0003",
+            "bbox": [
+              374,
+              550,
+              2486,
+              641
+            ],
+            "text": ": 층의 갯수를 셀 때, 가중치가 있는 층으로 묶어서 셈 (예를 들어 pool 층은 가중치가 없으므로 conv층에 묶임)",
+            "prediction": "희겊 갱신을 써 떠. 가렴가 있는 층으로 목욕서 셈. (예측 들여 pod 층 길 가침이 담으로 conv 층이 묶임.)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0004",
+            "bbox": [
+              437,
+              714,
+              588,
+              796
+            ],
+            "text": "Input",
+            "prediction": "Input",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0005",
+            "bbox": [
+              985,
+              733,
+              1155,
+              802
+            ],
+            "text": "CONV1",
+            "prediction": "CONV1",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0006",
+            "bbox": [
+              1589,
+              750,
+              1738,
+              818
+            ],
+            "text": "POOL 1",
+            "prediction": "POOL 1",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0007",
+            "bbox": [
+              2085,
+              740,
+              2233,
+              805
+            ],
+            "text": "CONV2",
+            "prediction": "CONV2",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0008",
+            "bbox": [
+              2472,
+              740,
+              2631,
+              812
+            ],
+            "text": "pool2",
+            "prediction": "pool2",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0009",
+            "bbox": [
+              437,
+              865,
+              562,
+              998
+            ],
+            "text": "7",
+            "prediction": "7",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0010",
+            "bbox": [
+              724,
+              949,
+              844,
+              1024
+            ],
+            "text": "\\( f = 5 \\)",
+            "prediction": "\\( f = 5 \\)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0011",
+            "bbox": [
+              1289,
+              956,
+              1471,
+              1014
+            ],
+            "text": "maxpooling",
+            "prediction": "maxpooling",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0012",
+            "bbox": [
+              1834,
+              956,
+              1941,
+              1024
+            ],
+            "text": "\\( f = 5 \\)",
+            "prediction": "\\( f = 5 \\)",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0013",
+            "bbox": [
+              403,
+              1075,
+              631,
+              1137
+            ],
+            "text": "32 x 32 x 3",
+            "prediction": "32 x 32 x 3",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0014",
+            "bbox": [
+              724,
+              1023,
+              833,
+              1089
+            ],
+            "text": "\\( s = 1 \\)",
+            "prediction": "\\( s = 1 \\)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0015",
+            "bbox": [
+              930,
+              1055,
+              1105,
+              1117
+            ],
+            "text": "28 x 28 x 6",
+            "prediction": "28 x 28 x 6",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0016",
+            "bbox": [
+              1304,
+              1046,
+              1429,
+              1101
+            ],
+            "text": "\\( f = 2 \\)",
+            "prediction": "\\( f = 2 \\)",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0017",
+            "bbox": [
+              1539,
+              1046,
+              1722,
+              1101
+            ],
+            "text": "\\( 14 \\times 14 \\times 6 \\)",
+            "prediction": "\\( 14 \\times 14 \\times 6 \\)",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0018",
+            "bbox": [
+              1834,
+              1023,
+              1941,
+              1082
+            ],
+            "text": "\\( s = 1 \\)",
+            "prediction": "\\( s = 1 \\)",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0019",
+            "bbox": [
+              1992,
+              1030,
+              2175,
+              1089
+            ],
+            "text": "\\( 10 \\times 10 \\times 16 \\)",
+            "prediction": "\\( 10 \\times 10 \\times 16 \\)",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0020",
+            "bbox": [
+              2409,
+              1013,
+              2579,
+              1072
+            ],
+            "text": "\\( 5 \\times 5 \\times 16 \\)",
+            "prediction": "\\( 5 \\times 5 \\times 16 \\)",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0021",
+            "bbox": [
+              1088,
+              1184,
+              1313,
+              1272
+            ],
+            "text": "layer 1",
+            "prediction": "layer 1",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0022",
+            "bbox": [
+              2135,
+              1155,
+              2357,
+              1249
+            ],
+            "text": "Layer 2",
+            "prediction": "Layer 2",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0023",
+            "bbox": [
+              948,
+              1297,
+              1063,
+              1365
+            ],
+            "text": "FC3",
+            "prediction": "FC3",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0024",
+            "bbox": [
+              1241,
+              1313,
+              1347,
+              1388
+            ],
+            "text": "FC4",
+            "prediction": "FC4",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0147-line-0025",
+            "bbox": [
+              1845,
+              1297,
+              2584,
+              1385
+            ],
+            "text": "> 연속적인 숫자드을 0~1 사이의 확률값으로",
+            "prediction": "연극적인 옷자들을 0~1 사이의 확률감으로",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T15:44:00.136Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T15:20:45.652Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 25
+        }
+      ]
     },
     "hf-0148": {
       "id": "hf-0148",
