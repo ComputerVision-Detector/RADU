@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T15:06:09.454Z",
+  "updated_at": "2026-11-02T15:07:59.656Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -47367,20 +47367,753 @@
         "source_sha256": "97dfd4cd7c4d368edb323542595e5739ca70a86c206184a72448d7e734ae5f23"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0139-line-0001",
+            "bbox": [
+              724,
+              203,
+              1274,
+              279
+            ],
+            "text": "(a) int [][] makeArray()",
+            "prediction": "(A) int[C] makeArray()",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0002",
+            "bbox": [
+              1382,
+              190,
+              2472,
+              266
+            ],
+            "text": "(B) int findlongestRowlength(int[][] raggedArray)",
+            "prediction": "(B) int_find_largest_Ranklength (int [C]) rankedArray()",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0003",
+            "bbox": [
+              982,
+              288,
+              1028,
+              340
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0004",
+            "bbox": [
+              1858,
+              275,
+              1915,
+              340
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0005",
+            "bbox": [
+              35,
+              373,
+              345,
+              452
+            ],
+            "text": "(A) makeArray",
+            "prediction": "(A) makeArray",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0006",
+            "bbox": [
+              921,
+              356,
+              1175,
+              425
+            ],
+            "text": "int Array 생성",
+            "prediction": "int_array a_a",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0007",
+            "bbox": [
+              1736,
+              356,
+              2069,
+              425
+            ],
+            "text": "raggedArray 받기",
+            "prediction": "\\( kggedArray \\) \\( w = 1 \\)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0008",
+            "bbox": [
+              217,
+              465,
+              276,
+              527
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0009",
+            "bbox": [
+              982,
+              434,
+              1028,
+              490
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0010",
+            "bbox": [
+              1858,
+              424,
+              1945,
+              500
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0011",
+            "bbox": [
+              60,
+              543,
+              514,
+              629
+            ],
+            "text": "(B) findLogestRowLength",
+            "prediction": "(B) find_least_Rank_length",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0012",
+            "bbox": [
+              876,
+              492,
+              1168,
+              565
+            ],
+            "text": "intArray 반환",
+            "prediction": "int_Array 地址",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0013",
+            "bbox": [
+              982,
+              570,
+              1028,
+              626
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0014",
+            "bbox": [
+              1501,
+              513,
+              2406,
+              592
+            ],
+            "text": "longestRowLength = raggedArray[0].length",
+            "prediction": "longest Rank Length = ragged Array [0], length",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0015",
+            "bbox": [
+              217,
+              642,
+              276,
+              704
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0016",
+            "bbox": [
+              876,
+              638,
+              1074,
+              704
+            ],
+            "text": "(A) 종료",
+            "prediction": "(A) 32",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0017",
+            "bbox": [
+              1858,
+              591,
+              1945,
+              667
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0018",
+            "bbox": [
+              60,
+              723,
+              436,
+              806
+            ],
+            "text": "(C) calculateArray",
+            "prediction": "(C) calculateArray",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0019",
+            "bbox": [
+              1526,
+              696,
+              2360,
+              779
+            ],
+            "text": "for each element in raggedArray",
+            "prediction": "for each element in raycarray",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0020",
+            "bbox": [
+              217,
+              805,
+              276,
+              870
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0021",
+            "bbox": [
+              197,
+              876,
+              317,
+              952
+            ],
+            "text": "종료",
+            "prediction": "\\( \\frac{1}{2} \\)",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0022",
+            "bbox": [
+              1585,
+              863,
+              1945,
+              935
+            ],
+            "text": "longestRowLength",
+            "prediction": "largest Row length",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0023",
+            "bbox": [
+              2015,
+              883,
+              2145,
+              962
+            ],
+            "text": "False",
+            "prediction": "False",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0024",
+            "bbox": [
+              1724,
+              941,
+              1829,
+              1003
+            ],
+            "text": "<=",
+            "prediction": "\\( \\leq \\)",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0025",
+            "bbox": [
+              1630,
+              999,
+              1910,
+              1071
+            ],
+            "text": "array.length",
+            "prediction": "Army length",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0026",
+            "bbox": [
+              101,
+              1090,
+              1120,
+              1169
+            ],
+            "text": "(C) void calculateArray(int[][] array, int row)",
+            "prediction": "(C) void calculateArray(int [C]) array, int row)",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0027",
+            "bbox": [
+              595,
+              1189,
+              656,
+              1261
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0028",
+            "bbox": [
+              1719,
+              1162,
+              1897,
+              1248
+            ],
+            "text": "↓True",
+            "prediction": "↓True",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0029",
+            "bbox": [
+              541,
+              1270,
+              707,
+              1343
+            ],
+            "text": "\\( j = 0 \\)",
+            "prediction": "\\( j = 0 \\)",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0030",
+            "bbox": [
+              1544,
+              1267,
+              2193,
+              1353
+            ],
+            "text": "longestRowLength = array length",
+            "prediction": "longest Ranklength = array length",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0031",
+            "bbox": [
+              595,
+              1352,
+              656,
+              1428
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0033",
+            "bbox": [
+              554,
+              1488,
+              712,
+              1553
+            ],
+            "text": "\\( j = row \\)",
+            "prediction": "\\( j = row \\)",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0034",
+            "bbox": [
+              1757,
+              1529,
+              1808,
+              1587
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0035",
+            "bbox": [
+              640,
+              1620,
+              750,
+              1689
+            ],
+            "text": "↓True",
+            "prediction": "True",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0036",
+            "bbox": [
+              1577,
+              1600,
+              2115,
+              1689
+            ],
+            "text": "longestRowLength 반환",
+            "prediction": "longest Ranklength, 地址",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0037",
+            "bbox": [
+              281,
+              1746,
+              1039,
+              1825
+            ],
+            "text": "Sum = 0, n = 0, average = 0.0, i = 0",
+            "prediction": "Sum = 0, n = 0, average = 0.0, i = 0",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0038",
+            "bbox": [
+              1757,
+              1695,
+              1818,
+              1764
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0039",
+            "bbox": [
+              1635,
+              1777,
+              1856,
+              1852
+            ],
+            "text": "(B) 종료",
+            "prediction": "(B) 圣岛",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0040",
+            "bbox": [
+              405,
+              1981,
+              912,
+              2049
+            ],
+            "text": "SUM t = array [i][j]",
+            "prediction": "SUM t = array [i &lt; 0]",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0041",
+            "bbox": [
+              1610,
+              1981,
+              2360,
+              2056
+            ],
+            "text": "* 예외처리는 flow chart에",
+            "prediction": "* int[1] + 2[1] = flow_chart_out",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0042",
+            "bbox": [
+              643,
+              2069,
+              699,
+              2138
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 41,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0043",
+            "bbox": [
+              1709,
+              2082,
+              2175,
+              2151
+            ],
+            "text": "포함 시키지 않음!!",
+            "prediction": "至站 1117 站号!!",
+            "order": 42,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0044",
+            "bbox": [
+              592,
+              2157,
+              813,
+              2226
+            ],
+            "text": "i++, n++",
+            "prediction": "\\( i + j, n + n \\)",
+            "order": 43,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0045",
+            "bbox": [
+              665,
+              2263,
+              717,
+              2328
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 44,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0046",
+            "bbox": [
+              336,
+              2375,
+              464,
+              2444
+            ],
+            "text": "True",
+            "prediction": "True",
+            "order": 45,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0047",
+            "bbox": [
+              551,
+              2402,
+              861,
+              2488
+            ],
+            "text": "i < array.length",
+            "prediction": "Karney teeth",
+            "order": 46,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0048",
+            "bbox": [
+              681,
+              2558,
+              808,
+              2637
+            ],
+            "text": "False",
+            "prediction": "Fake",
+            "order": 47,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0049",
+            "bbox": [
+              470,
+              2691,
+              894,
+              2770
+            ],
+            "text": "average = sum / n",
+            "prediction": "average = sum / n",
+            "order": 48,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0050",
+            "bbox": [
+              658,
+              2793,
+              717,
+              2865
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 49,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0051",
+            "bbox": [
+              491,
+              2888,
+              950,
+              2977
+            ],
+            "text": "sum, average 출력",
+            "prediction": "sum, average 239",
+            "order": 50,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0052",
+            "bbox": [
+              665,
+              3081,
+              717,
+              3144
+            ],
+            "text": "↓",
+            "prediction": "↓",
+            "order": 51,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0139-line-0053",
+            "bbox": [
+              549,
+              3156,
+              763,
+              3249
+            ],
+            "text": "(c) 종료",
+            "prediction": "(c) 圣岛",
+            "order": 52,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T15:31:09.454Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T15:07:59.656Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 52
+        }
+      ]
     },
     "hf-0140": {
       "id": "hf-0140",
