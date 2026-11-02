@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T11:02:38.992Z",
+  "updated_at": "2026-11-02T11:03:56.726Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -29497,20 +29497,151 @@
         "source_sha256": "bf67609874512babededb9b8bdea6a1b7f3535c451307d2f9bb125efd19b32ea"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0097-line-0001",
+            "bbox": [
+              287,
+              270,
+              887,
+              396
+            ],
+            "text": "모아타운 투자 point!",
+            "prediction": "오아리문 투자 point!",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0097-line-0002",
+            "bbox": [
+              241,
+              411,
+              1017,
+              529
+            ],
+            "text": "1. 공시가격 1억 미만 지역 찾기",
+            "prediction": "1. 공역기적 105 미만 지역 찾기",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0097-line-0003",
+            "bbox": [
+              226,
+              512,
+              2120,
+              694
+            ],
+            "text": "2. 매매가와 전세가 차이(갭투자)가 저렴한 지역 (서울외곽지역부터 찾기)",
+            "prediction": "2. OHAMAA 친막가 차이 (캡쿠자) 가 적합한 지역 (새로워져지역부터 찾기)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0097-line-0004",
+            "bbox": [
+              205,
+              628,
+              1739,
+              783
+            ],
+            "text": "3. 보도자료구역과 네이버 부동산 매매 물건 위치 비교 & 대조.",
+            "prediction": "3. 부렌자화역과 네이버 부동산 OHAO 윤건 위씨 비교 윤대길.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0097-line-0005",
+            "bbox": [
+              160,
+              846,
+              457,
+              972
+            ],
+            "text": "빌라인 경우.",
+            "prediction": "벌하인 경우.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0097-line-0006",
+            "bbox": [
+              217,
+              959,
+              1461,
+              1125
+            ],
+            "text": "지하철 역하고 먼경우 방3칸. 주차장이 필수!!!",
+            "prediction": "지하철역님소 맘객객 봉노한. 주식담이 필수!!!",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0097-line-0007",
+            "bbox": [
+              187,
+              1173,
+              832,
+              1315
+            ],
+            "text": "서울빌라는 수익 내기에 좋음",
+            "prediction": "서로별과는 705 내지에 좋다",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0097-line-0008",
+            "bbox": [
+              172,
+              1282,
+              2256,
+              1529
+            ],
+            "text": "단기매도빌라는 10년이내 준신축급빌라여야함.(주차장. 방3개. 깨끗해야함)",
+            "prediction": "선기메르빈과는 (다년여대 준산횡급빈과 여야담, (주식담.봉13. 재갖쇄야함))",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0097-line-0009",
+            "bbox": [
+              235,
+              1407,
+              672,
+              1557
+            ],
+            "text": "아파트 대체 상품.",
+            "prediction": "아라트 4430 상품.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T11:27:31.100Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T11:03:56.726Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 9
+        }
+      ]
     },
     "hf-0098": {
       "id": "hf-0098",
