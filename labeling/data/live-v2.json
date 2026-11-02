@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T02:47:28.708Z",
+  "updated_at": "2026-11-02T02:47:36.168Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -6645,7 +6645,7 @@
       "claim": {
         "name": "정하경",
         "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T03:09:36.397Z"
+        "until": "2026-11-02T03:12:36.168Z"
       },
       "history": []
     },
