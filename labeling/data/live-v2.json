@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T02:47:36.168Z",
+  "updated_at": "2026-11-02T02:48:13.149Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -15,8 +15,8 @@
         "source_sha256": "9714c2728d5e783ccc27bf47f9d21733cf40e7ee4f368e28bcdd97fd77497087"
       },
       "bbox_annotation": {
-        "status": "verified",
-        "revision": 2,
+        "status": "draft",
+        "revision": 3,
         "annotator": "이나현",
         "notes": "",
         "no_text": false,
@@ -35,15 +35,120 @@
             "order": 1,
             "uncertain": false,
             "reviewed": true
+          },
+          {
+            "id": "line-1057d796-4b24-4525-ac8b-433ed730e8f5",
+            "bbox": [
+              930,
+              184,
+              1932,
+              287
+            ],
+            "text": "Token IDs [N] N=입력 토큰 개수",
+            "prediction": "",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-02425830-adb0-46e3-b5ce-851306c3b9ac",
+            "bbox": [
+              986,
+              300,
+              1075,
+              399
+            ],
+            "text": "↓",
+            "prediction": "",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9a1fded7-7b15-4fbb-86cf-a7e74349733b",
+            "bbox": [
+              910,
+              372,
+              2132,
+              513
+            ],
+            "text": "Embedding - Embedding Matrix[201088, 2880]",
+            "prediction": "",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-01df96e1-a638-4952-9492-b78c2f18927e",
+            "bbox": [
+              965,
+              523,
+              1036,
+              614
+            ],
+            "text": "↓",
+            "prediction": "",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-d82f411c-6670-4d83-a45c-893aa7aec9f9",
+            "bbox": [
+              858,
+              626,
+              1438,
+              713
+            ],
+            "text": "Transformer Block x 24",
+            "prediction": "",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9d82a124-2f9b-41f8-ae02-892fde579690",
+            "bbox": [
+              1105,
+              719,
+              1452,
+              810
+            ],
+            "text": "AttentionBlock",
+            "prediction": "",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-55659187-1819-4081-9a39-83548192c1fb",
+            "bbox": [
+              1259,
+              816,
+              1967,
+              901
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": false
           }
         ]
       },
       "claim": {
         "name": "이나현",
         "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T03:12:28.708Z"
+        "until": "2026-11-02T03:13:13.149Z"
       },
       "history": [
+        {
+          "at": "2026-11-02T02:48:13.149Z",
+          "author": "이나현",
+          "status": "draft",
+          "revision": 3,
+          "box_count": 8
+        },
         {
           "at": "2026-10-27T04:40:36.781Z",
           "author": "이나현",
