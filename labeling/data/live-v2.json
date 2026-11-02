@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T00:47:33.726Z",
+  "updated_at": "2026-11-02T00:50:09.105Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -20118,20 +20118,347 @@
         "source_sha256": "59cf2343ed01f8a5b6a78acd6124540ac7a68ceb081a2a01ceb34cb3ac713e48"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0079-line-0002",
+            "bbox": [
+              130,
+              346,
+              484,
+              436
+            ],
+            "text": "- 캐니 알고리즘",
+            "prediction": "- 채내 알고리즘",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0003",
+            "bbox": [
+              169,
+              383,
+              1564,
+              553
+            ],
+            "text": "- Canny는 여러 단계를 결합한 에지 검출 알고리즘이고",
+            "prediction": "- (곳이는 여러 단계를 결합한 이의 길을 알고다졌어요)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0004",
+            "bbox": [
+              229,
+              487,
+              1739,
+              674
+            ],
+            "text": "NMS는 그중 그래디언트의 방향을 이용해 에지를 한 픽셀",
+            "prediction": "NMS는 그중 객체에도의 방향을 이용해 여기를 한 편셈",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0005",
+            "bbox": [
+              235,
+              669,
+              808,
+              795
+            ],
+            "text": "수준으로 얇게 만드는 단계",
+            "prediction": "센브로 옮겨 번든 단계",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0006",
+            "bbox": [
+              154,
+              729,
+              2804,
+              936
+            ],
+            "text": "- 가우시안 필터 → sobel 미분 → 그래디언트 계산 → NMS → 이중 임계값 → 히스테리시스 → 최종 (anay에지)",
+            "prediction": "- 가워난 필터 → 손손이 이분 → 그래서는 제한 → NMS → 이중 임대감 → 허스테리시스 → 최종 (good/bad)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0007",
+            "bbox": [
+              196,
+              943,
+              766,
+              1041
+            ],
+            "text": "가우시안 필터 → 노이즈 제거",
+            "prediction": "가봤는 봐요 → 노트 제거",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0008",
+            "bbox": [
+              163,
+              1040,
+              1131,
+              1186
+            ],
+            "text": "Sobel → x, y 방향 밝기 변화 계산",
+            "prediction": "Sobe! → x, 닐 방향 빛취 변화 계산",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0009",
+            "bbox": [
+              181,
+              1177,
+              1029,
+              1303
+            ],
+            "text": "Gradient → 에지 강도와 방향 계산",
+            "prediction": "(Stadion) → 예제 갑도와 방향 계산",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0010",
+            "bbox": [
+              1342,
+              1185,
+              1975,
+              1287
+            ],
+            "text": "거짓 긍정: 실제 에지가 아닌데",
+            "prediction": "깃짓징: 솔제 여자 아날데",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0011",
+            "bbox": [
+              181,
+              1322,
+              1068,
+              1424
+            ],
+            "text": "NMS → 두꺼운 에지를 얇게 만듦",
+            "prediction": "NMS → 두꺼운 이미를 얽게 만들어",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0012",
+            "bbox": [
+              1330,
+              1286,
+              1975,
+              1388
+            ],
+            "text": "에지로 검출된 화소를 뜻함.",
+            "prediction": "에지로 강론된 화소를 뜻함.",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0013",
+            "bbox": [
+              190,
+              1447,
+              1213,
+              1557
+            ],
+            "text": "이중 임계값 => 강한 에지 / 약한 에지 분류",
+            "prediction": "양앞에 좌장한 에지 / 약한 에져 봉투",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0014",
+            "bbox": [
+              181,
+              1576,
+              1573,
+              1698
+            ],
+            "text": "하스테리시스 → 강한 에지와 연결된 약한 에지만 살림.",
+            "prediction": "하스테리시스 → 강한 에지와 연결된 약한 에지한 살림.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0015",
+            "bbox": [
+              130,
+              1689,
+              2450,
+              1835
+            ],
+            "text": "- 케니 알고리즘은 거짓긍정을 줄이기 위해 2개의 이력 임계값 Tlow와 Thigh를 이용한",
+            "prediction": "- 커싱 알퍼즌은 갯 귀정을 줄이 위해 그대 이력 얻게값 Tlow와 T high, 둘 이용한",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0016",
+            "bbox": [
+              181,
+              1862,
+              826,
+              1960
+            ],
+            "text": "에지 추적을 추가로 적용",
+            "prediction": "에지 흑림을 즉가로 적용",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0017",
+            "bbox": [
+              181,
+              1971,
+              1794,
+              2097
+            ],
+            "text": "에지 추적은 에지 강동가 Thigh 이상인 에지 화소에서 시작.",
+            "prediction": "에지 흑적은 에지 강등가 Thigh, 이용인 에지 화소에서 시작.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0018",
+            "bbox": [
+              190,
+              2104,
+              1612,
+              2222
+            ],
+            "text": "(실제 에지일 가능성 높은 곳에서 추적을 시작하겠다!)",
+            "prediction": "(속제 에지일 경쟁이 늘어져 폭력을 책취하셨나!)",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0019",
+            "bbox": [
+              202,
+              2245,
+              2353,
+              2367
+            ],
+            "text": "시작, 화소가 정해지면 이후 추적은 Tlow 임계값을 넘는 에지를 대상으로 진행",
+            "prediction": "책, 화소가 장해지면 9칙 흑림은 Tlow 암계좌를 넘는 에지를 다양으로 장행",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0020",
+            "bbox": [
+              205,
+              2390,
+              2238,
+              2504
+            ],
+            "text": "즉, 추적 이력이 있는 이웃을 가진 화소는 에지 강도가 낮더라도 실제 에디로",
+            "prediction": "즉, 흑림 이격이 있는 이웃을 겪힌 화소는 에지 향도 낮더라도 실제 에디로",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0021",
+            "bbox": [
+              229,
+              2528,
+              738,
+              2633
+            ],
+            "text": "인정한다는 전략.",
+            "prediction": "인정할가는 점축,",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0022",
+            "bbox": [
+              229,
+              2661,
+              1875,
+              2787
+            ],
+            "text": "(Thigh를 Tlow의 2~3배로 설정하는 것을 권고함.)",
+            "prediction": "(Thigh,를 Tlow의 ㄱㅡ캠로 싶잖하는 곳을 윤고함.)",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0023",
+            "bbox": [
+              99,
+              2927,
+              608,
+              3033
+            ],
+            "text": "- 에지 맵에서 경계선",
+            "prediction": "에지 뽑에나 경제선",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0079-line-0024",
+            "bbox": [
+              142,
+              3056,
+              1664,
+              3182
+            ],
+            "text": "- 서로 다른 영역이나 물체가 만나는 곳을 선으로 나타낸 것.",
+            "prediction": "- A3 다른 영역에서 물리가 허가는 뜻을 선으로 나타낸 것.",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "3e5b8a49-411f-46ac-a1f5-0f988b96528c",
-        "until": "2026-11-02T01:12:33.726Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T00:50:09.105Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 23
+        }
+      ]
     },
     "hf-0080": {
       "id": "hf-0080",
