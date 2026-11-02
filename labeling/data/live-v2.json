@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T02:32:57.132Z",
+  "updated_at": "2026-11-02T02:33:32.437Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -3875,20 +3875,53 @@
         "source_sha256": "7cf37df3995aa1a55c1a1c8bb98d5728491aa5c03e34f6cc5daf4a1b241de1e5"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0012-line-0001",
+            "bbox": [
+              314,
+              133,
+              1116,
+              242
+            ],
+            "text": "도서관 이름 : Library Application",
+            "prediction": "2. 100%: Library Application",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0012-line-0002",
+            "bbox": [
+              341,
+              241,
+              938,
+              347
+            ],
+            "text": "TreeSet 을 사용한 이유",
+            "prediction": "TreeSet 10 A-1000",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T02:57:57.132Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T02:33:32.437Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 2
+        }
+      ]
     },
     "hf-0013": {
       "id": "hf-0013",
