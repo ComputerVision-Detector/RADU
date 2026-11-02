@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T13:17:05.628Z",
+  "updated_at": "2026-11-02T13:18:54.302Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -38009,20 +38009,809 @@
         "source_sha256": "ee438ee01f076a4a4077c7f52325bef28071675ffd1c794831f23588e9f65891"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0122-line-0001",
+            "bbox": [
+              18,
+              10,
+              865,
+              165
+            ],
+            "text": "$f(x) = x^3-3x^2-12x+5$",
+            "prediction": "\\[ f(x) = 2x^3 - 3x^2 - 12x + 5 \\]",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0002",
+            "bbox": [
+              1604,
+              37,
+              2330,
+              183
+            ],
+            "text": "$f(x) = x^2 [1,3]$",
+            "prediction": "\\[ f(x) = x^2 \\] [1, 3]",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0003",
+            "bbox": [
+              22,
+              197,
+              519,
+              302
+            ],
+            "text": "$f'(x)=6x^2-6x-12$",
+            "prediction": "\\[ f(x) = 6x^2 - 6x - 12 \\]",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0004",
+            "bbox": [
+              728,
+              177,
+              1244,
+              279
+            ],
+            "text": "\\[ f'(-1) = -6 + 6 - 12 \\]",
+            "prediction": "\\[ f'(-1) = -6 + 6 - 12 \\]",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0005",
+            "bbox": [
+              1619,
+              225,
+              1932,
+              362
+            ],
+            "text": "\\[ f(x) = -f(x) \\]",
+            "prediction": "\\[ f(x) = -f(x) \\]",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0006",
+            "bbox": [
+              2272,
+              210,
+              2367,
+              279
+            ],
+            "text": "\\( q = \\)",
+            "prediction": "\\( q = \\)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0007",
+            "bbox": [
+              2487,
+              197,
+              2525,
+              274
+            ],
+            "text": "\\( l \\)",
+            "prediction": "\\( l \\)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0008",
+            "bbox": [
+              157,
+              316,
+              620,
+              421
+            ],
+            "text": "→ \\[ f(x^2 - x - 2) = 0 \\]",
+            "prediction": "\\[ f(x^2 - x - 2) = 0 \\]",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0009",
+            "bbox": [
+              912,
+              283,
+              1090,
+              350
+            ],
+            "text": "\\( = -12 \\)",
+            "prediction": "\\( = -12 \\)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0010",
+            "bbox": [
+              1731,
+              346,
+              1856,
+              418
+            ],
+            "text": "3-1",
+            "prediction": "3-1",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0011",
+            "bbox": [
+              2445,
+              349,
+              2533,
+              400
+            ],
+            "text": "\\( z \\)",
+            "prediction": "\\( z \\)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0012",
+            "bbox": [
+              2915,
+              253,
+              3029,
+              395
+            ],
+            "text": "\\( 4 \\)",
+            "prediction": "\\( 4 \\)",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0013",
+            "bbox": [
+              187,
+              404,
+              1225,
+              560
+            ],
+            "text": "\\( 6(x-2)(x+1)=0 \\) \\( f(x)=24-24-14 \\).",
+            "prediction": "\\( 6(x-2)(x+1)=0 \\) \\( f(x)=24-24-14 \\).",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0014",
+            "bbox": [
+              78,
+              577,
+              549,
+              686
+            ],
+            "text": "임계점 = 2, -1",
+            "prediction": "\\( \\therefore \\vert x\\vert \\geq 2, -1 \\)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0015",
+            "bbox": [
+              33,
+              733,
+              594,
+              843
+            ],
+            "text": "\\( f(x) = 16 - 12 - 24 + 5 \\)",
+            "prediction": "\\( f(x) = 16 - 12 - 24 + 5 \\)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0016",
+            "bbox": [
+              120,
+              858,
+              617,
+              950
+            ],
+            "text": "= -15 → 극대",
+            "prediction": "\\[ f(x) = -15 \\rightarrow 300 \\]",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0017",
+            "bbox": [
+              26,
+              969,
+              587,
+              1084
+            ],
+            "text": "\\[ f(x) = -2 - 3 + 12 + 5 \\]",
+            "prediction": "\\[ f(x) = -2 - 3 + 12 + 5 \\]",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0018",
+            "bbox": [
+              112,
+              1100,
+              579,
+              1195
+            ],
+            "text": "= 12 → 극소",
+            "prediction": "\\( f(x) = -12 \\) \\( -p \\geq 2 \\)",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0019",
+            "bbox": [
+              713,
+              1093,
+              974,
+              1157
+            ],
+            "text": "$x<-1 = 0$",
+            "prediction": "\\( x \\leq -1 \\leq 0 \\)",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0020",
+            "bbox": [
+              691,
+              918,
+              1327,
+              1026
+            ],
+            "text": "(w, -1),(-1,2),(2,w)",
+            "prediction": "\\( (w, -1), (-1, 2), (2, -1) \\)",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0021",
+            "bbox": [
+              1743,
+              1128,
+              1920,
+              1200
+            ],
+            "text": "1000원",
+            "prediction": "\\( 1000 \\)",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0022",
+            "bbox": [
+              1848,
+              999,
+              1902,
+              1058
+            ],
+            "text": "\\( T \\)",
+            "prediction": "\\( T \\)",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0023",
+            "bbox": [
+              2246,
+              1108,
+              2352,
+              1167
+            ],
+            "text": "\\( 1500 \\)",
+            "prediction": "\\( 150 \\)",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0024",
+            "bbox": [
+              2355,
+              982,
+              2405,
+              1043
+            ],
+            "text": "\\( T \\)",
+            "prediction": "\\( T \\)",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0025",
+            "bbox": [
+              2817,
+              1068,
+              3006,
+              1137
+            ],
+            "text": "\\( 1800원 \\)",
+            "prediction": "\\( 1800 \\)",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0026",
+            "bbox": [
+              3155,
+              744,
+              3216,
+              808
+            ],
+            "text": "\\( F \\)",
+            "prediction": "\\( F \\)",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0027",
+            "bbox": [
+              3212,
+              1080,
+              3397,
+              1150
+            ],
+            "text": "\\( 2000원 \\)",
+            "prediction": "\\( 2000 \\)",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0028",
+            "bbox": [
+              41,
+              1361,
+              102,
+              1425
+            ],
+            "text": "\\( x \\)",
+            "prediction": "\\( x \\)",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0029",
+            "bbox": [
+              1393,
+              1366,
+              1533,
+              1456
+            ],
+            "text": "TCS",
+            "prediction": "\\( T_2 \\)",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0030",
+            "bbox": [
+              1818,
+              1445,
+              1947,
+              1519
+            ],
+            "text": "입력",
+            "prediction": "\\( \\sqrt{23} \\)",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0031",
+            "bbox": [
+              11,
+              1462,
+              124,
+              1544
+            ],
+            "text": "\\( f'(x) \\)",
+            "prediction": "\\( f'(x) \\)",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0032",
+            "bbox": [
+              1472,
+              1723,
+              1657,
+              1808
+            ],
+            "text": "TC#1",
+            "prediction": "\\( T \\)（共1）",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0033",
+            "bbox": [
+              1487,
+              1852,
+              1669,
+              1937
+            ],
+            "text": "TC#2",
+            "prediction": "\\( T(\\#2) \\)",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0034",
+            "bbox": [
+              1510,
+              2014,
+              1684,
+              2094
+            ],
+            "text": "TC#3",
+            "prediction": "\\( T(4) \\)",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0035",
+            "bbox": [
+              1525,
+              2179,
+              1699,
+              2266
+            ],
+            "text": "TC#4",
+            "prediction": "\\( T \\in \\mathbb{R} \\)",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0036",
+            "bbox": [
+              1762,
+              1700,
+              1920,
+              1777
+            ],
+            "text": "수요일",
+            "prediction": "\\( 48\\% \\)",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0037",
+            "bbox": [
+              2021,
+              1822,
+              2142,
+              1896
+            ],
+            "text": "60세",
+            "prediction": "\\( 60\\% \\)",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0038",
+            "bbox": [
+              2021,
+              1976,
+              2146,
+              2046
+            ],
+            "text": "20세",
+            "prediction": "\\( 20\\% \\)",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0039",
+            "bbox": [
+              2025,
+              1822,
+              2146,
+              1896
+            ],
+            "text": "60세",
+            "prediction": "\\( 60\\% \\)",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0040",
+            "bbox": [
+              2212,
+              2126,
+              2371,
+              2200
+            ],
+            "text": "회원x",
+            "prediction": "\\( 2000 \\)",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0041",
+            "bbox": [
+              2445,
+              1948,
+              2559,
+              2010
+            ],
+            "text": "\\( 1800 \\)",
+            "prediction": "\\( 1800 \\)",
+            "order": 41,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0042",
+            "bbox": [
+              2457,
+              1672,
+              2585,
+              1727
+            ],
+            "text": "\\( 1000 \\)",
+            "prediction": "\\( 1000 \\)",
+            "order": 42,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0043",
+            "bbox": [
+              2457,
+              1802,
+              2567,
+              1861
+            ],
+            "text": "\\( 1500\\)",
+            "prediction": "\\( 1400 \\)",
+            "order": 43,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0044",
+            "bbox": [
+              2457,
+              1948,
+              2559,
+              2005
+            ],
+            "text": "\\( 1800 \\)",
+            "prediction": "\\( 1800 \\)",
+            "order": 44,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0045",
+            "bbox": [
+              2731,
+              1761,
+              2897,
+              1853
+            ],
+            "text": "\\( 1500 \\)",
+            "prediction": "\\( 1500 \\)",
+            "order": 45,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0046",
+            "bbox": [
+              2738,
+              2072,
+              2875,
+              2139
+            ],
+            "text": "\\( 2000 \\)",
+            "prediction": "\\( 2000 \\)",
+            "order": 46,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0047",
+            "bbox": [
+              2753,
+              1908,
+              2886,
+              1980
+            ],
+            "text": "\\( 1800 \\)",
+            "prediction": "\\( 1800 \\)",
+            "order": 47,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0049",
+            "bbox": [
+              3088,
+              1723,
+              3141,
+              1803
+            ],
+            "text": "\\( p \\)",
+            "prediction": "\\( p \\)",
+            "order": 48,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0050",
+            "bbox": [
+              3095,
+              1827,
+              3149,
+              1906
+            ],
+            "text": "\\( p \\)",
+            "prediction": "\\( p \\)",
+            "order": 49,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0051",
+            "bbox": [
+              3095,
+              2014,
+              3153,
+              2096
+            ],
+            "text": "\\( p \\)",
+            "prediction": "\\( p \\)",
+            "order": 50,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0052",
+            "bbox": [
+              3099,
+              1637,
+              3145,
+              1699
+            ],
+            "text": "\\( p \\)",
+            "prediction": "\\( r \\)",
+            "order": 51,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0053",
+            "bbox": [
+              3246,
+              1723,
+              3408,
+              1800
+            ],
+            "text": "\\( CP: 2 \\)",
+            "prediction": "\\( CP: 2 \\)",
+            "order": 52,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0054",
+            "bbox": [
+              3249,
+              1855,
+              3423,
+              1942
+            ],
+            "text": "\\( CP: 3 \\)",
+            "prediction": "\\( CP: 3 \\)",
+            "order": 53,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0055",
+            "bbox": [
+              3253,
+              1981,
+              3446,
+              2104
+            ],
+            "text": "\\( CP: 4 \\)",
+            "prediction": "\\( CP: 9 \\)",
+            "order": 54,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0056",
+            "bbox": [
+              3249,
+              1645,
+              3382,
+              1722
+            ],
+            "text": "\\( CP: 1 \\)",
+            "prediction": "\\( CP: 1 \\)",
+            "order": 55,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0122-line-0057",
+            "bbox": [
+              3253,
+              1842,
+              3423,
+              1924
+            ],
+            "text": "\\( CP: 3 \\)",
+            "prediction": "\\( CP: 3 \\)",
+            "order": 56,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T13:42:05.628Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T13:18:54.302Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 56
+        }
+      ]
     },
     "hf-0123": {
       "id": "hf-0123",
