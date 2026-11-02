@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T07:10:47.817Z",
+  "updated_at": "2026-11-02T07:10:53.493Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -8975,20 +8975,221 @@
         "source_sha256": "67e8fdebf13603cae725f8e16c0f02f92aa203c71c87874e33ce97638314fbf4"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0027-line-0003",
+            "bbox": [
+              169,
+              411,
+              658,
+              540
+            ],
+            "text": "· 교차 엔트로피",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0027-line-0004",
+            "bbox": [
+              234,
+              516,
+              1610,
+              646
+            ],
+            "text": "- 두 확률 분포가 다른 정도를 측정.",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0027-line-0005",
+            "bbox": [
+              271,
+              637,
+              1455,
+              809
+            ],
+            "text": "ex) 공정한 주사위 2개가 있을 때",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0027-line-0006",
+            "bbox": [
+              398,
+              762,
+              2014,
+              917
+            ],
+            "text": "둘은 확률 분포가 같으므로 교차 엔트로피가 작음.",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0027-line-0007",
+            "bbox": [
+              381,
+              870,
+              2767,
+              1072
+            ],
+            "text": "공정한 주사위와 찌그러진 주사위로 교차 엔트로피를 계산하면 큰 값이 됨.",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0027-line-0008",
+            "bbox": [
+              346,
+              1159,
+              1383,
+              1382
+            ],
+            "text": "\\(e = -\\sum_{i=1,c} y_i \\log O_i\\)",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0027-line-0009",
+            "bbox": [
+              931,
+              1431,
+              1483,
+              1637
+            ],
+            "text": "↳ 분류의 개수\n숫자인식의 경우 10.",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0027-line-0010",
+            "bbox": [
+              241,
+              1722,
+              2075,
+              1864
+            ],
+            "text": "- 평균제곱 오차가 안고 있는 불공정성 문제를 해결함.",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0027-line-0011",
+            "bbox": [
+              357,
+              1872,
+              1150,
+              2005
+            ],
+            "text": "→ 딥러닝에서 주로 사용.",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0027-line-0012",
+            "bbox": [
+              162,
+              2102,
+              1897,
+              2278
+            ],
+            "text": "· L1 Norm → 절댓값의 합. → 맨해튼 거리",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0027-line-0013",
+            "bbox": [
+              161,
+              2276,
+              1842,
+              2417
+            ],
+            "text": "· L2 Norm → 제곱합의 제곱근 → 유클리드 거리",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0027-line-0014",
+            "bbox": [
+              165,
+              2534,
+              2020,
+              2708
+            ],
+            "text": "· RMS Norm (Root Mean Square Normalization)",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0027-line-0015",
+            "bbox": [
+              187,
+              2697,
+              1427,
+              2852
+            ],
+            "text": "- 제곱 평균제곱근을 이용한 정규화",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0027-line-0016",
+            "bbox": [
+              295,
+              2849,
+              1585,
+              3209
+            ],
+            "text": "\\(RMS(x) = \\sqrt{\\frac{1}{d}\\sum_{i=1}^{d} x_i^2 + \\epsilon}\\)",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T07:35:47.817Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T07:10:53.493Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 14
+        }
+      ]
     },
     "hf-0028": {
       "id": "hf-0028",
