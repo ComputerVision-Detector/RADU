@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:29:38.953Z",
+  "updated_at": "2026-11-02T10:31:33.292Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -25621,20 +25621,305 @@
         "source_sha256": "6fa4406fdf4140fc90045963f75e48da9cb8ad34ef63e229156fddebec148991"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "line-833f9d39-19a4-4282-a19c-efbd574588db",
+            "bbox": [
+              231,
+              378,
+              585,
+              490
+            ],
+            "text": "· 네트워크 흐름",
+            "prediction": "",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-3d28112f-abae-4ace-b8f3-9a9d14e5882e",
+            "bbox": [
+              258,
+              481,
+              2134,
+              605
+            ],
+            "text": "- 여러지점을 거치는 물이나 전기 흐름을 그래프로 표현하고 병목 지점을",
+            "prediction": "",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9aaa4165-34bd-4fe0-b0c0-c1f68845e2a6",
+            "bbox": [
+              296,
+              620,
+              1063,
+              747
+            ],
+            "text": "찾아 흐름을 개선하는 문제",
+            "prediction": "",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-094be428-00f4-41ad-9dbe-d71f0f2b2f4d",
+            "bbox": [
+              240,
+              726,
+              1733,
+              859
+            ],
+            "text": "- 사람이 붓칠한 것을 기반으로 물체와 배경을 나누어",
+            "prediction": "",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ab80cdba-5640-4073-ae81-76221723c7cb",
+            "bbox": [
+              305,
+              862,
+              1063,
+              995
+            ],
+            "text": "각각 히스토그램을 만듦.",
+            "prediction": "",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e27d5f53-6897-4dbf-b35d-43a4e6238edf",
+            "bbox": [
+              335,
+              971,
+              2064,
+              1127
+            ],
+            "text": "나머지 영역들은 (나머지 화소) 두 히스토그램과 유사성을 따져",
+            "prediction": "",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9c696cbc-014f-4256-a72e-9b8edcf54e48",
+            "bbox": [
+              355,
+              1107,
+              1291,
+              1254
+            ],
+            "text": "물체 영역과 배경 영역을 갱신함.",
+            "prediction": "",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a240f71e-9531-43bd-8ef5-d0db95dc4e4b",
+            "bbox": [
+              361,
+              1222,
+              1898,
+              1366
+            ],
+            "text": "영역이 거의 변하지 않으면 수렴한 것으로 간주하고 멈춤.",
+            "prediction": "",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-50d40874-5e8a-4ee2-9e68-fcfc49986803",
+            "bbox": [
+              190,
+              1526,
+              919,
+              1658
+            ],
+            "text": "· 불변성 (invariant)",
+            "prediction": "",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-1b924cac-fec3-4393-baa6-a206c5e2b6ee",
+            "bbox": [
+              214,
+              1635,
+              1963,
+              1785
+            ],
+            "text": "- 변환을 해도 특징의 값이 변하지 않는다면 불변성이 있다.",
+            "prediction": "",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-da98d63c-eb85-4c1d-92ee-f0231c0de533",
+            "bbox": [
+              169,
+              1912,
+              972,
+              2074
+            ],
+            "text": "· 등변성 (equivariant)",
+            "prediction": "",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d360ac7c-6eee-4936-b6b0-e53ded7d847e",
+            "bbox": [
+              240,
+              2018,
+              2595,
+              2178
+            ],
+            "text": "- 불변성과 반대 개념. 특징이 어떤 변환에 대해 따라 변한다면 등변이다.",
+            "prediction": "",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-20b5a513-c213-4b9e-9e84-1961cf2a0808",
+            "bbox": [
+              462,
+              2343,
+              751,
+              2473
+            ],
+            "text": "텍스처 ",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9433a2e1-0eab-4eb2-b2cb-7d776a550407",
+            "bbox": [
+              214,
+              2470,
+              1013,
+              2603
+            ],
+            "text": "- 일정한 패턴의 반복.",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0c053eb2-5220-4f5f-9853-68858143ddef",
+            "bbox": [
+              187,
+              2747,
+              1202,
+              2918
+            ],
+            "text": "· LBP (Local Binary Pattern)",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-203ccc3b-74f7-451e-a23e-cc154abfeef9",
+            "bbox": [
+              205,
+              2880,
+              2055,
+              3048
+            ],
+            "text": "- 중심 화소와 주위 화소의 명암값을 비교해서 텍스처를 구함.",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d5c86ea1-ebd8-40ab-b86f-263b3ea32f99",
+            "bbox": [
+              214,
+              3004,
+              2860,
+              3175
+            ],
+            "text": "- 주위 8개 화소와 값을 비교하여 회색 화소보다 큰 화소는 1, 작은 화소는 0 으로 표시",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-65f64afd-52d8-413e-b3a3-cc8ffe364938",
+            "bbox": [
+              323,
+              3157,
+              2270,
+              3308
+            ],
+            "text": "영역에 모든 화소를 조사 후 256 개 값에 대한 발생 빈도를",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-be404f98-98e3-454b-8371-ba03d0c478e0",
+            "bbox": [
+              302,
+              3311,
+              1016,
+              3479
+            ],
+            "text": "센 히스토그램을 구함.",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f3d3dcdf-06bd-428b-919c-714e327da067",
+            "bbox": [
+              314,
+              3455,
+              1975,
+              3620
+            ],
+            "text": "이렇게 구한 LBP는 256차원의 특징 벡터가 됨",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T10:54:28.882Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T10:31:33.292Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 20
+        }
+      ]
     },
     "hf-0085": {
       "id": "hf-0085",
