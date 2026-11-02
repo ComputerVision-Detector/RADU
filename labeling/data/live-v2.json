@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:23:38.998Z",
+  "updated_at": "2026-11-02T10:24:44.956Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -7985,20 +7985,221 @@
         "source_sha256": "914878d2155612aefecdf534eeb374069ef1b365aa0a21f4bc27ce3136f77c89"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0023-line-0001",
+            "bbox": [
+              1995,
+              28,
+              2175,
+              121
+            ],
+            "text": "NO.",
+            "prediction": "NO.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0023-line-0002",
+            "bbox": [
+              1995,
+              80,
+              2786,
+              198
+            ],
+            "text": "year month day ( )",
+            "prediction": "year month day ( )",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0023-line-0003",
+            "bbox": [
+              323,
+              423,
+              666,
+              525
+            ],
+            "text": "F1 score",
+            "prediction": "F1 state",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0023-line-0004",
+            "bbox": [
+              362,
+              552,
+              693,
+              642
+            ],
+            "text": "- 정밀도와",
+            "prediction": "- 30150501",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0023-line-0005",
+            "bbox": [
+              387,
+              524,
+              669,
+              629
+            ],
+            "text": "- 정밀도와",
+            "prediction": "- 30150501",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0023-line-0044",
+            "bbox": [
+              674,
+              524,
+              911,
+              629
+            ],
+            "text": "재현율",
+            "prediction": "- 30150501",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0023-line-0045",
+            "bbox": [
+              674,
+              524,
+              923,
+              629
+            ],
+            "text": "- 재현율",
+            "prediction": "- 30150501",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0023-line-0046",
+            "bbox": [
+              674,
+              524,
+              938,
+              629
+            ],
+            "text": "- 재현율의",
+            "prediction": "- 30150501",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0023-line-0047",
+            "bbox": [
+              674,
+              524,
+              953,
+              629
+            ],
+            "text": "- 재현율의",
+            "prediction": "- 30150501",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0023-line-0048",
+            "bbox": [
+              674,
+              524,
+              968,
+              629
+            ],
+            "text": "- 재현율의",
+            "prediction": "- 30150501",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0023-line-0049",
+            "bbox": [
+              674,
+              524,
+              980,
+              629
+            ],
+            "text": "- 재현율의",
+            "prediction": "- 30150501",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0023-line-0050",
+            "bbox": [
+              674,
+              524,
+              995,
+              629
+            ],
+            "text": "- 재현율의",
+            "prediction": "- 30150501",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0023-line-0051",
+            "bbox": [
+              674,
+              524,
+              1011,
+              629
+            ],
+            "text": "- 재현율의",
+            "prediction": "- 30150501",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0023-line-0108",
+            "bbox": [
+              674,
+              524,
+              1866,
+              629
+            ],
+            "text": "- 재현율의 조화 평균",
+            "prediction": "- 30150501",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T10:48:38.998Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T10:24:44.956Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 14
+        }
+      ]
     },
     "hf-0024": {
       "id": "hf-0024",
