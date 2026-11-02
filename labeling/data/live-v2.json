@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T13:08:05.042Z",
+  "updated_at": "2026-11-02T13:10:14.424Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -37093,20 +37093,487 @@
         "source_sha256": "2b8cfe9a8347384836756dd21faf1882ce1ed370d3420cb33682aee0bfa6c248"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0119-line-0001",
+            "bbox": [
+              976,
+              24,
+              1770,
+              174
+            ],
+            "text": "서버 만들기 (코딩애플).",
+            "prediction": "서버 만들기 (코닝애플).",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0002",
+            "bbox": [
+              48,
+              201,
+              1210,
+              388
+            ],
+            "text": "· Server : 쉽게 생각해서 서빙해주는 사람",
+            "prediction": "- Set up: 쉽게 생각해서 시범해질는 상탁.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0003",
+            "bbox": [
+              66,
+              306,
+              1543,
+              500
+            ],
+            "text": "- 서비스: 요청을 받으면 요청한 내용을 보내주는 프로그램",
+            "prediction": "- 서비스: 요청을 받으면 요청한 내용을 빌려드렸다.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0004",
+            "bbox": [
+              402,
+              451,
+              1258,
+              601
+            ],
+            "text": "- 읽기 (Get) - 읽게 해주세요",
+            "prediction": "- 옮기 (Set) - 월계해제요.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0005",
+            "bbox": [
+              142,
+              620,
+              273,
+              702
+            ],
+            "text": "오청의",
+            "prediction": "오령이",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0006",
+            "bbox": [
+              411,
+              516,
+              1936,
+              706
+            ],
+            "text": "- 읽기 (Get) - \n- 쓰기 (Post) - 생성해주세요. ex) 댓글, 블로그 포스트",
+            "prediction": "쓰기 (Post) - 새삼해주세요. 씨 멋을 볼렀고 또스트.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0007",
+            "bbox": [
+              411,
+              697,
+              805,
+              815
+            ],
+            "text": "수정 (PUT)",
+            "prediction": "쓰정 (PUT)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0008",
+            "bbox": [
+              411,
+              753,
+              1476,
+              924
+            ],
+            "text": "삭제 (DELETE) - 단어 뜻 그대로",
+            "prediction": "새체 (DELETE) ] 먼저 뜻 그대로.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0009",
+            "bbox": [
+              99,
+              1028,
+              581,
+              1133
+            ],
+            "text": "JavaScript란?",
+            "prediction": "- JavaS(HPT) 끈?",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0010",
+            "bbox": [
+              1596,
+              1003,
+              2226,
+              1117
+            ],
+            "text": "각 브라우저의 해석엔진",
+            "prediction": "주 보자겠지의 배납안전",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0011",
+            "bbox": [
+              181,
+              1112,
+              1041,
+              1246
+            ],
+            "text": "HTML 조작을 위해 안들어전 언어.",
+            "prediction": "HTML 조작을 위해 안들어전 언어.",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0012",
+            "bbox": [
+              178,
+              1217,
+              1038,
+              1339
+            ],
+            "text": "- 자바스크립트는 브라우저가 해석",
+            "prediction": "채스크럼 드는 브러져가 하석",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0013",
+            "bbox": [
+              1475,
+              1193,
+              2241,
+              1315
+            ],
+            "text": "크롭 V8 엔진 (좋음)",
+            "prediction": "- 드롭 V.D 인진 (종용)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0014",
+            "bbox": [
+              102,
+              1346,
+              1189,
+              1456
+            ],
+            "text": "- HTML : 웹 페이지의 글 넣고 그림 넣고",
+            "prediction": "- HTML : 웹 페이지의 클냅고 걸 넣고.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0015",
+            "bbox": [
+              1478,
+              1322,
+              2114,
+              1436
+            ],
+            "text": "익프 Chakra 엔진",
+            "prediction": "의프r Chaika 인진",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0016",
+            "bbox": [
+              1478,
+              1415,
+              2444,
+              1549
+            ],
+            "text": "파폭 spiderMonkey 엔진",
+            "prediction": "파폰 Spider-Monkey 인진",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0017",
+            "bbox": [
+              93,
+              1556,
+              563,
+              1662
+            ],
+            "text": "Node.js 란?",
+            "prediction": "Node.js 라?",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0018",
+            "bbox": [
+              139,
+              1649,
+              1881,
+              1775
+            ],
+            "text": "L Chrome 에서 만든 V8 엔진을 떼어내 자치로 출시한 것",
+            "prediction": "L Clome all서 안도 V8 연진을 메이내 처리로 출시한 것",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0019",
+            "bbox": [
+              250,
+              1766,
+              1319,
+              1875
+            ],
+            "text": "즉, 크롬의 자바스크립트 해석 엔진",
+            "prediction": "를 크롬해의 자바스크집도 하범, 엔진",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0020",
+            "bbox": [
+              250,
+              1878,
+              1077,
+              1984
+            ],
+            "text": "자바스크립트 실행창. 실행 환경",
+            "prediction": "제바스크럼트 손행랑송행 환경",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0021",
+            "bbox": [
+              120,
+              1995,
+              1180,
+              2109
+            ],
+            "text": "- Node.js로 서비스를 만드는 이유.",
+            "prediction": "- Node.js로 서비스를 만드는 이유.",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0022",
+            "bbox": [
+              172,
+              2112,
+              403,
+              2214
+            ],
+            "text": "- 쉽다.",
+            "prediction": "- 쉽다.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0023",
+            "bbox": [
+              181,
+              2213,
+              2613,
+              2327
+            ],
+            "text": "- Non-blocking I/O → 쉽게 처리가능한 것 부터 처리 그 후 무거운 것 처리",
+            "prediction": "- Non-blocking I/O → 숙제 쉽게 처리하면 걷다 그후 왜께 걷 취리",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0024",
+            "bbox": [
+              181,
+              2338,
+              726,
+              2440
+            ],
+            "text": "- event - driven",
+            "prediction": "- event - driven",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0025",
+            "bbox": [
+              93,
+              2540,
+              1652,
+              2670
+            ],
+            "text": "- 문법 . ( Pover shell 이나 명령프롬프트 (터미널) 이용)",
+            "prediction": "- 문법. C Power field all 먹겠드릴론도 (버이닉) 이용).",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0026",
+            "bbox": [
+              120,
+              2669,
+              1001,
+              2766
+            ],
+            "text": "- Node - V : 현재 버전 확인",
+            "prediction": "- Node - V : 현재 4편 확인",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0027",
+            "bbox": [
+              120,
+              2774,
+              1222,
+              2895
+            ],
+            "text": "- node : 노드 작업 시작 (실행)",
+            "prediction": "- node : 노드 작업 시작 (신청)",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0028",
+            "bbox": [
+              96,
+              2890,
+              2093,
+              3033
+            ],
+            "text": "- Vor name=\"정\"; name을 입력했을 때 \"정\" 출력",
+            "prediction": "- Vor hime=\"접\"; name을 입력했을 때 \"정\" 효력",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0029",
+            "bbox": [
+              120,
+              3007,
+              1516,
+              3154
+            ],
+            "text": "- Console, log('안녕') : '안녕' 출력",
+            "prediction": "- Console, log(^ 쓴냉) : '쓴냉' 흔적.",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0030",
+            "bbox": [
+              57,
+              3241,
+              1198,
+              3379
+            ],
+            "text": "- Vs code 를 에디터로 이용.",
+            "prediction": "- Vs code 를 에디터로 이용.",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0031",
+            "bbox": [
+              57,
+              3370,
+              1506,
+              3512
+            ],
+            "text": "- express 라는 라이브러리를 써서 서버를 만듦",
+            "prediction": "- Express 다는 컨벤리를 새로써 싸다.",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0032",
+            "bbox": [
+              683,
+              3491,
+              2087,
+              3653
+            ],
+            "text": "L, 코드를 쉽게 짜기 위해 빌려쓰는 코드 모음집",
+            "prediction": "L, 모드를 쉽게 저기 위해 빌려쓰는 코드 모음집.",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0119-line-0033",
+            "bbox": [
+              698,
+              3620,
+              2002,
+              3783
+            ],
+            "text": "- npm : 라이브러리 설치를 도와주는 도구",
+            "prediction": "- nm : 헤브더검출 성취를 도와짐 도구",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T13:33:05.042Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T13:10:14.424Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 33
+        }
+      ]
     },
     "hf-0120": {
       "id": "hf-0120",
