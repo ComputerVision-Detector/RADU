@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T06:47:38.918Z",
+  "updated_at": "2026-11-02T06:49:11.553Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -8146,7 +8146,7 @@
       },
       "bbox_annotation": {
         "status": "verified",
-        "revision": 1,
+        "revision": 2,
         "annotator": "이나현",
         "notes": "",
         "no_text": false,
@@ -8160,7 +8160,7 @@
               887,
               432
             ],
-            "text": "- 회귀 문제(regression)",
+            "text": "· 회귀 문제(regression)",
             "prediction": "- 뒤처 옵저(regression)",
             "order": 1,
             "uncertain": false,
@@ -8202,7 +8202,7 @@
               1739,
               823
             ],
-            "text": "- sklearnz에서 SVR (회귀 문제를 푸는 SVM).",
+            "text": "- sklearn에서 SVR (회귀 문제를 푸는 SVM).",
             "prediction": "- Shearn all of SUR (뉴리 웹절 딱는 SVM).",
             "order": 4,
             "uncertain": false,
@@ -8216,7 +8216,7 @@
               989,
               1093
             ],
-            "text": "- 평균제곱 오차 (MSE).",
+            "text": "· 평균제곱 오차 (MSE).",
             "prediction": "- 평균균형 오차 (MSE).",
             "order": 5,
             "uncertain": false,
@@ -8253,12 +8253,12 @@
           {
             "id": "hf-0025-line-0009",
             "bbox": [
-              532,
+              538,
               1487,
-              1101,
+              1107,
               1617
             ],
-            "text": "e = 11½ - 011².",
+            "text": "\\(e = \\lVert y - O \\rVert^2\\)",
             "prediction": "e = 11½ - 011².",
             "order": 8,
             "uncertain": false,
@@ -8314,7 +8314,7 @@
               1936,
               2303
             ],
-            "text": "- 학습은 오류를 줄이는 방향으로 가중치를 교정하는 작업.",
+            "text": "· 학습은 오류를 줄이는 방향으로 가중치를 교정하는 작업.",
             "prediction": "- 학습은 유효를 좋은 방향으로 챙겨줄 편성하는 작업.",
             "order": 12,
             "uncertain": false,
@@ -8328,7 +8328,7 @@
               790,
               2581
             ],
-            "text": "- 엔트로피(entropy)",
+            "text": "· 엔트로피(entropy)",
             "prediction": "- 연도리(entry)",
             "order": 13,
             "uncertain": false,
@@ -8412,7 +8412,7 @@
               953,
               3436
             ],
-            "text": "엔트로피 식.(아래화살표)",
+            "text": "엔트로피 식. ↓",
             "prediction": "에도로미 A. 2",
             "order": 19,
             "uncertain": false,
@@ -8426,7 +8426,7 @@
               1848,
               3662
             ],
-            "text": "\\( H(\\pi) = -\\sum_{j=1, k} p(e_j) \\log p(e_j) \\)",
+            "text": "\\(H(x) = -\\sum_{i=1,\\ldots,k} P(e_i)\\log P(e_i)\\)",
             "prediction": "\\( H(\\pi) = -\\sum_{j=1, k} p(e_j) \\log p(e_j) \\)",
             "order": 20,
             "uncertain": false,
@@ -8434,12 +8434,15 @@
           }
         ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T07:12:28.702Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-11-02T06:49:11.553Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 2,
+          "box_count": 20
+        },
         {
           "at": "2026-10-30T14:53:14.488Z",
           "author": "이나현",
