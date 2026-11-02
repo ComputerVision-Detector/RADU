@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T15:00:09.394Z",
+  "updated_at": "2026-11-02T15:03:02.124Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -46791,20 +46791,571 @@
         "source_sha256": "8a44256a4374985b08d175f46314f514d817fdf279d403f85bf3718969e9016c"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0138-line-0001",
+            "bbox": [
+              451,
+              306,
+              591,
+              378
+            ],
+            "text": "시작",
+            "prediction": "\\( \\langle \\text{行} \\rangle \\)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0002",
+            "bbox": [
+              1523,
+              279,
+              2107,
+              372
+            ],
+            "text": "int number Of Row",
+            "prediction": "int number Of Row.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0003",
+            "bbox": [
+              501,
+              377,
+              563,
+              448
+            ],
+            "text": "↓",
+            "prediction": "$\\downarrow$",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0004",
+            "bbox": [
+              333,
+              408,
+              1581,
+              550
+            ],
+            "text": "makeArray() A int [][] make Array()",
+            "prediction": "make Array $\\leftarrow$ A int [C] make Array (1)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0005",
+            "bbox": [
+              1728,
+              398,
+              2050,
+              491
+            ],
+            "text": "raggedArray 생성",
+            "prediction": "regal Array \\( \\sqrt{a} \\)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0006",
+            "bbox": [
+              508,
+              543,
+              568,
+              614
+            ],
+            "text": "$\\downarrow$",
+            "prediction": "$\\downarrow$",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0007",
+            "bbox": [
+              713,
+              512,
+              2065,
+              657
+            ],
+            "text": "B int[][] initializeArray(int[][] array)",
+            "prediction": "B int [[]] initialize Array (int [[]] array)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0008",
+            "bbox": [
+              859,
+              632,
+              1689,
+              758
+            ],
+            "text": "void printArray (int[][] array)",
+            "prediction": "void printArray (int[] array)",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0009",
+            "bbox": [
+              720,
+              757,
+              1907,
+              893
+            ],
+            "text": "D int sumRowData (int [] Array)",
+            "prediction": "D int row sum Row data (int[] array)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0010",
+            "bbox": [
+              720,
+              877,
+              1583,
+              1013
+            ],
+            "text": "E void main (int[][] Array)",
+            "prediction": "E void main (int[][] array)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0011",
+            "bbox": [
+              1599,
+              972,
+              2413,
+              1084
+            ],
+            "text": "while, for-each. for-each",
+            "prediction": "while, for each. for each",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0012",
+            "bbox": [
+              212,
+              1101,
+              482,
+              1191
+            ],
+            "text": "B. -for",
+            "prediction": "B. for",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0013",
+            "bbox": [
+              745,
+              1076,
+              1284,
+              1194
+            ],
+            "text": "B-1 do-while",
+            "prediction": "B-1 do-while",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0014",
+            "bbox": [
+              227,
+              1190,
+              287,
+              1252
+            ],
+            "text": "$\\downarrow$",
+            "prediction": "$\\downarrow$",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0015",
+            "bbox": [
+              787,
+              1211,
+              857,
+              1286
+            ],
+            "text": "$\\downarrow$",
+            "prediction": "$\\downarrow$",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0016",
+            "bbox": [
+              172,
+              1264,
+              376,
+              1350
+            ],
+            "text": "\\( i = 0 \\)",
+            "prediction": "\\( i = 0 \\)",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0017",
+            "bbox": [
+              678,
+              1294,
+              1037,
+              1403
+            ],
+            "text": "(i+1)*10+j",
+            "prediction": "\\( (i+1) \\neq (0+i) \\)",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0018",
+            "bbox": [
+              1488,
+              1248,
+              2149,
+              1369
+            ],
+            "text": "i < array.length",
+            "prediction": "i &lt; array length &gt; F",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0019",
+            "bbox": [
+              274,
+              1343,
+              341,
+              1415
+            ],
+            "text": "$\\downarrow$",
+            "prediction": "$\\downarrow$",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0020",
+            "bbox": [
+              49,
+              1475,
+              517,
+              1581
+            ],
+            "text": "i < array.length",
+            "prediction": "\\( i < \\text{array length} \\)",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0021",
+            "bbox": [
+              834,
+              1420,
+              907,
+              1516
+            ],
+            "text": "$\\downarrow$",
+            "prediction": "$\\downarrow$",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0022",
+            "bbox": [
+              1817,
+              1438,
+              1894,
+              1516
+            ],
+            "text": "T",
+            "prediction": "T",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0023",
+            "bbox": [
+              251,
+              1635,
+              391,
+              1722
+            ],
+            "text": "$\\downarrow$ T",
+            "prediction": "$\\downarrow$ T",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0024",
+            "bbox": [
+              678,
+              1552,
+              1112,
+              1679
+            ],
+            "text": "j < array[i]",
+            "prediction": "\\( J < \\text{array } [i] \\)",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0025",
+            "bbox": [
+              197,
+              1761,
+              403,
+              1847
+            ],
+            "text": "B-1",
+            "prediction": "B-1",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0026",
+            "bbox": [
+              259,
+              1859,
+              329,
+              1949
+            ],
+            "text": "$\\downarrow$",
+            "prediction": "$\\downarrow$",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0027",
+            "bbox": [
+              1636,
+              1846,
+              1783,
+              1912
+            ],
+            "text": "\\( c-1 \\)",
+            "prediction": "\\( c-1 \\)",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0028",
+            "bbox": [
+              190,
+              1966,
+              349,
+              2038
+            ],
+            "text": "i + t",
+            "prediction": "\\( i + i \\)",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0029",
+            "bbox": [
+              404,
+              2181,
+              487,
+              2252
+            ],
+            "text": "D",
+            "prediction": "D",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0030",
+            "bbox": [
+              913,
+              2224,
+              1460,
+              2308
+            ],
+            "text": "for each element in array",
+            "prediction": "for each element in array",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0031",
+            "bbox": [
+              199,
+              2368,
+              734,
+              2455
+            ],
+            "text": "to each element in array?",
+            "prediction": "to each element in array?",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0032",
+            "bbox": [
+              308,
+              2503,
+              650,
+              2593
+            ],
+            "text": "sum += data",
+            "prediction": "sum + data",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0033",
+            "bbox": [
+              980,
+              2402,
+              1358,
+              2470
+            ],
+            "text": "array를 1차원",
+            "prediction": "array 零 1001",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0034",
+            "bbox": [
+              1646,
+              2377,
+              1756,
+              2516
+            ],
+            "text": "↓",
+            "prediction": "\\( \\sqrt{ } \\)",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0035",
+            "bbox": [
+              325,
+              2503,
+              734,
+              2596
+            ],
+            "text": "sum += data",
+            "prediction": "sum + data",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0036",
+            "bbox": [
+              1538,
+              2558,
+              1902,
+              2685
+            ],
+            "text": "temp 출력",
+            "prediction": "temp 227",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0037",
+            "bbox": [
+              254,
+              2755,
+              549,
+              2826
+            ],
+            "text": "return sum",
+            "prediction": "return sum",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0038",
+            "bbox": [
+              864,
+              2755,
+              1373,
+              2860
+            ],
+            "text": "sumRowData에",
+            "prediction": "sumRowData.txt",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0138-line-0039",
+            "bbox": [
+              940,
+              2868,
+              1112,
+              2967
+            ],
+            "text": "넣기",
+            "prediction": "421.",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T15:25:09.394Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T15:03:02.124Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 39
+        }
+      ]
     },
     "hf-0139": {
       "id": "hf-0139",
