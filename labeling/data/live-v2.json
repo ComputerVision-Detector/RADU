@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:50:39.075Z",
+  "updated_at": "2026-11-02T10:51:25.157Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -27707,20 +27707,347 @@
         "source_sha256": "ee3c340cf245927f0ce01e9ff64c04a4f4d6086236494ec9e5a8c2d883f0d293"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0091-line-0001",
+            "bbox": [
+              190,
+              282,
+              2247,
+              488
+            ],
+            "text": "부동산 정보관련 사이트 * 소유할 부동산 주변 시설이 중요",
+            "prediction": "- 새로운 책을 읽고 싶어해 쓰며 기쁨 느끼다.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0002",
+            "bbox": [
+              293,
+              491,
+              753,
+              601
+            ],
+            "text": "- 네이버 부동산",
+            "prediction": "- 네이버 부동산",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0003",
+            "bbox": [
+              281,
+              516,
+              2683,
+              726
+            ],
+            "text": "· 네이버 부동산\n· 다음 → 지도 (네이버지도 보다 잘 되어 있음) 거리, 면적, 스카이뷰로드뷰 사용가능",
+            "prediction": "- 샌델 → 지도 (비내지도 보다 작 외어님은), 거리. 변성, 서서비스로델 사용기능.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0004",
+            "bbox": [
+              601,
+              689,
+              1594,
+              835
+            ],
+            "text": "지하철 도보 10분거리 \"역세권\"",
+            "prediction": "자타철 로보 10분거리 \"떠세친\"",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0005",
+            "bbox": [
+              647,
+              818,
+              1494,
+              956
+            ],
+            "text": "도보 15분 약 1km로 예상",
+            "prediction": "로빌 1분 약 1km으로 예산,",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0006",
+            "bbox": [
+              290,
+              907,
+              2268,
+              1089
+            ],
+            "text": "·온나라 부동산정보 통합포털 (국토부 관하) → 공신력있는 사이트",
+            "prediction": "- 온나라 부음전쟁을 클림토럴 (나랴 완화) → 온선희원은 서이르.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0007",
+            "bbox": [
+              638,
+              1088,
+              1035,
+              1214
+            ],
+            "text": "부동산 가치 확인",
+            "prediction": "뽑힌가치할인",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0008",
+            "bbox": [
+              1037,
+              1262,
+              2680,
+              1420
+            ],
+            "text": "공시지가 $x 3.3 / 0.7$ => 대략의 시세(대지)",
+            "prediction": "공지이야 x = 3 - 0.0 ≥ 0.0001 (대리)",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0009",
+            "bbox": [
+              1088,
+              1370,
+              1379,
+              1452
+            ],
+            "text": "(면적m^2)",
+            "prediction": "(100000)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0010",
+            "bbox": [
+              683,
+              1423,
+              1915,
+              1561
+            ],
+            "text": "계획관리지역 → 개발예정이 있다는 뜻",
+            "prediction": "거희희리지억 → 새벽 여러일 있어도 웃",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0011",
+            "bbox": [
+              275,
+              1681,
+              1159,
+              1799
+            ],
+            "text": "· 토지이용규제 시스템 (국토부)",
+            "prediction": "- 로지이온규제 시스템 (구호)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0012",
+            "bbox": [
+              338,
+              1806,
+              1646,
+              1924
+            ],
+            "text": "행위제한정보 반드시 확인 → 토지매입전",
+            "prediction": "희빈 저희성보 빈드지 혁신 → 희귀매일전",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0013",
+            "bbox": [
+              275,
+              2036,
+              1159,
+              2170
+            ],
+            "text": "- 인천시 추정분담금 정보시스템",
+            "prediction": "- 인천시 주섭분합 점봉시스템",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0014",
+            "bbox": [
+              447,
+              2165,
+              2601,
+              2319
+            ],
+            "text": "추진현황 → 도시정비사업 추진현황 (재건축, 재개발 확인가능)",
+            "prediction": "노주관현황 → 쇼시젠씨사업 춘천현황 (재건축, 재개발 혁신)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0015",
+            "bbox": [
+              247,
+              2403,
+              1446,
+              2549
+            ],
+            "text": "· 클린업시스템(서울) (재건축, 재계발)",
+            "prediction": "- 클로럼시스템 (A패) (재벌을 제개방)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0016",
+            "bbox": [
+              350,
+              2548,
+              835,
+              2670
+            ],
+            "text": "정보공개 현황",
+            "prediction": "뉴잭팅펜 컨흐션",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0017",
+            "bbox": [
+              743,
+              2709,
+              1186,
+              2811
+            ],
+            "text": "- 산림청운영",
+            "prediction": "- 신뢰성율도.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0018",
+            "bbox": [
+              247,
+              2782,
+              1531,
+              2936
+            ],
+            "text": "· 산지정보시스템 : 임야 거래시 확인",
+            "prediction": "- 삼리정보시스템 : 일부 거래의 확인.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0019",
+            "bbox": [
+              592,
+              2919,
+              2235,
+              3081
+            ],
+            "text": "토지 → '공'자 들어가는 임야는 절대 매입하면 안됨",
+            "prediction": "로지 → '꽃'자 윤가는 앞바로 절대 Dn입니다면 안팀.",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0020",
+            "bbox": [
+              864,
+              3056,
+              1773,
+              3202
+            ],
+            "text": "공공형으로만 사용해야 함",
+            "prediction": "드롭망은한 사명에야 한다.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0021",
+            "bbox": [
+              517,
+              3169,
+              1745,
+              3335
+            ],
+            "text": "준보전 산지 → 개발가능성이 있음을 뜻함",
+            "prediction": "권한센지 → >빨가슴쌓이 얇을 묻는",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0022",
+            "bbox": [
+              223,
+              3443,
+              1053,
+              3585
+            ],
+            "text": "· 소상공인 (회원가입 필요)",
+            "prediction": "- 요즘곳인 (참문화일필)",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0091-line-0023",
+            "bbox": [
+              411,
+              3584,
+              1600,
+              3730
+            ],
+            "text": "상권정보, 폐업정보, 입지분석, 수익분석",
+            "prediction": "상원정보, (해남정보, 인치분석, 수익분석)",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T11:15:39.075Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T10:51:25.157Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 23
+        }
+      ]
     },
     "hf-0092": {
       "id": "hf-0092",
