@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:34:19.924Z",
+  "updated_at": "2026-11-02T10:35:13.612Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -26688,20 +26688,109 @@
         "source_sha256": "cb68718f6e202c59ce5998cb1b678a3d11cbac92665258c734b9a18580ee1588"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0088-line-0001",
+            "bbox": [
+              130,
+              262,
+              781,
+              396
+            ],
+            "text": "· 강인한 호모그래피 추정",
+            "prediction": "- 魏赵 班二班 列朝",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0088-line-0002",
+            "bbox": [
+              178,
+              411,
+              626,
+              533
+            ],
+            "text": "- 중앙값 사용",
+            "prediction": "- 온상황 사용.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0088-line-0003",
+            "bbox": [
+              178,
+              532,
+              766,
+              662
+            ],
+            "text": "- RANSAC 사용.",
+            "prediction": "- RANSAC 사용.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0088-line-0004",
+            "bbox": [
+              290,
+              552,
+              2429,
+              807
+            ],
+            "text": "L 샘플에 섞여 있는 아웃라이어를 회피하면서 최적해를 구하는 일반 기법",
+            "prediction": "L 샘플이 싸여있는 아웃라이어를 회피하면서 화해를 극하는 일반 개입",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0088-line-0005",
+            "bbox": [
+              169,
+              778,
+              1255,
+              940
+            ],
+            "text": "-PROSAC: RANSAC 를 개선한 것",
+            "prediction": "-PROSAC: RANSAC 를 기해한 것",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0088-line-0006",
+            "bbox": [
+              2636,
+              3818,
+              3003,
+              3895
+            ],
+            "text": "Keun Young",
+            "prediction": "Keun Young",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T10:59:19.924Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T10:35:13.612Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 6
+        }
+      ]
     },
     "hf-0089": {
       "id": "hf-0089",
