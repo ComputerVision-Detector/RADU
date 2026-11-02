@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T12:53:05.081Z",
+  "updated_at": "2026-11-02T12:53:54.960Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -34330,20 +34330,487 @@
         "source_sha256": "560dca2789b856edb6c2e259db3ac51ba0466fbd19954709bcfe41b4121985e6"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0113-line-0001",
+            "bbox": [
+              169,
+              161,
+              527,
+              275
+            ],
+            "text": "2021.04.13",
+            "prediction": "2021.04.13",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0002",
+            "bbox": [
+              722,
+              153,
+              790,
+              226
+            ],
+            "text": "/",
+            "prediction": "/",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0003",
+            "bbox": [
+              994,
+              92,
+              1945,
+              230
+            ],
+            "text": "웹디자인실기(메뉴슬라이드 아래로))",
+            "prediction": "別に対応して71（ヘルプをかけて（のに記3））",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0004",
+            "bbox": [
+              160,
+              306,
+              551,
+              416
+            ],
+            "text": "HTH HTML",
+            "prediction": "#F# HTML",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0005",
+            "bbox": [
+              205,
+              552,
+              369,
+              609
+            ],
+            "text": "<nav>",
+            "prediction": "<nav>",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0006",
+            "bbox": [
+              269,
+              657,
+              735,
+              722
+            ],
+            "text": "<ul class=\"menu\">",
+            "prediction": "<ul class=\"menu\">",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0007",
+            "bbox": [
+              356,
+              745,
+              1098,
+              835
+            ],
+            "text": "<li><a href=\"#\">메뉴1</a>",
+            "prediction": "<li><a href=\"##\">메뉴1</a>",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0008",
+            "bbox": [
+              483,
+              866,
+              1007,
+              932
+            ],
+            "text": "<ul class=\"submenu\">",
+            "prediction": "<ul class=\"submit\">",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0009",
+            "bbox": [
+              592,
+              959,
+              1413,
+              1041
+            ],
+            "text": "<li><a href=\"#\">서브메뉴1</a><li>",
+            "prediction": "<li><a href=\"##\">ヘビヨヨヨヨ</a><li>",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0010",
+            "bbox": [
+              601,
+              1064,
+              1461,
+              1150
+            ],
+            "text": "<li><a href=\"#\">서브메뉴2</a></li>",
+            "prediction": "<li><a href=\"##\">ヘビヨヨヨヨ</a></li>",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0011",
+            "bbox": [
+              580,
+              1173,
+              1446,
+              1254
+            ],
+            "text": "<li><a href=\"#\">서브메뉴3</a></li>",
+            "prediction": "<li><a href=\"##\">ヘビヨヨヨヨヨ</a></li>",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0012",
+            "bbox": [
+              574,
+              1278,
+              1446,
+              1363
+            ],
+            "text": "<li><a href=\"#\">서브메뉴4</a></li>",
+            "prediction": "<li><a href=\"##\">ヘビヨヨヨヨヨヨ</a></li>",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0013",
+            "bbox": [
+              423,
+              1382,
+              572,
+              1456
+            ],
+            "text": "</ul>",
+            "prediction": "</ul>",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0014",
+            "bbox": [
+              323,
+              1499,
+              451,
+              1577
+            ],
+            "text": "</li>",
+            "prediction": "<li>",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0015",
+            "bbox": [
+              293,
+              1604,
+              1001,
+              1686
+            ],
+            "text": "<li><a href=\"#\">메뉴2</a>",
+            "prediction": "<li><a href=\"##\">메뉴2</a>",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0016",
+            "bbox": [
+              423,
+              1713,
+              962,
+              1791
+            ],
+            "text": "<ul class=\"submenu\">",
+            "prediction": "<ul class=\"submit\">",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0017",
+            "bbox": [
+              517,
+              1814,
+              1379,
+              1896
+            ],
+            "text": "<li><a href=\"#\">서브메뉴1</a></li>",
+            "prediction": "<li><a href=\"##\">ヘビヨヨヨヨヨ</a><li>",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0018",
+            "bbox": [
+              498,
+              1915,
+              1395,
+              1996
+            ],
+            "text": "<li><a href=\"#\">서브메뉴2</a></li>",
+            "prediction": "<li><a href=\"##\">ヘビヨヨヨヨヨ</a></li>",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0019",
+            "bbox": [
+              492,
+              2020,
+              1395,
+              2101
+            ],
+            "text": "<li><a href=\"#\">서브메뉴3</a></li>",
+            "prediction": "<li><a href=\"##\">ヘビヨヨヨヨヨ</a></li>",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0020",
+            "bbox": [
+              483,
+              2128,
+              1395,
+              2210
+            ],
+            "text": "<li><a href=\"#\">서브메뉴4</a></li>",
+            "prediction": "<li><a href=\"##\">ヘビヨヨヨヨヨヨ</a></li>",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0021",
+            "bbox": [
+              341,
+              2241,
+              487,
+              2315
+            ],
+            "text": "</ul>",
+            "prediction": "</ul>",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0022",
+            "bbox": [
+              205,
+              2350,
+              342,
+              2428
+            ],
+            "text": "</li>",
+            "prediction": "</li>",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0023",
+            "bbox": [
+              193,
+              2463,
+              962,
+              2545
+            ],
+            "text": "<li><a href=\"#\">메뉴3</a>",
+            "prediction": "<li><a href=\"##\">메뉴3</a>",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0024",
+            "bbox": [
+              326,
+              2584,
+              911,
+              2662
+            ],
+            "text": "<ul class=\"submenu\">",
+            "prediction": "<ul class=\"submit\">",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0025",
+            "bbox": [
+              435,
+              2689,
+              1337,
+              2779
+            ],
+            "text": "<li><a href=\"#\">서브메뉴1</a><li>",
+            "prediction": "<li><a href=\"##\">ヘビヨヨヨヨヨヨ</a><li>",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0026",
+            "bbox": [
+              423,
+              2802,
+              1328,
+              2891
+            ],
+            "text": "<li><a href=\"#\">서브메뉴2</a><li>",
+            "prediction": "<li><a href=\"##\">ヘビヨヨヨヨヨヨ</a><li>",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0027",
+            "bbox": [
+              399,
+              2919,
+              1364,
+              3008
+            ],
+            "text": "<li><a href=\"#\">서브메뉴3</a></li>",
+            "prediction": "<li><a href=\"##\">ヘビヨヨヨヨヨヨ</a></li>",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0028",
+            "bbox": [
+              381,
+              3036,
+              1425,
+              3129
+            ],
+            "text": "<li><a href=\"#\">서브메뉴4</a></li>",
+            "prediction": "<li><a href=\"##\">ヘビヨヨヨヨヨヨヨ</a></li>",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0029",
+            "bbox": [
+              250,
+              3157,
+              421,
+              3238
+            ],
+            "text": "</ul>",
+            "prediction": "</ul>",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0030",
+            "bbox": [
+              102,
+              3273,
+              282,
+              3367
+            ],
+            "text": "</li>",
+            "prediction": "</li>",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0031",
+            "bbox": [
+              90,
+              3394,
+              926,
+              3488
+            ],
+            "text": "<li><a href=\"#\">메뉴4</a>",
+            "prediction": "<li><a href=\"##\">메뉴4</a>",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0032",
+            "bbox": [
+              238,
+              3515,
+              841,
+              3613
+            ],
+            "text": "<ul class=\"submenu\">",
+            "prediction": "<ul class=\"submit\">",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0113-line-0033",
+            "bbox": [
+              387,
+              3636,
+              1413,
+              3750
+            ],
+            "text": "<li><a href=\"#\">서브메뉴1</a></li>",
+            "prediction": "<li><a href=\"##\">ヘビヨヨヨヨヨヨヨ</a></li>",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T13:18:05.081Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T12:53:54.960Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 33
+        }
+      ]
     },
     "hf-0114": {
       "id": "hf-0114",
