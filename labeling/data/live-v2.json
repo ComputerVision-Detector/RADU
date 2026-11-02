@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T11:14:38.996Z",
+  "updated_at": "2026-11-02T11:15:12.070Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -31084,20 +31084,109 @@
         "source_sha256": "8c120ff66b63fffe69156a2ae4f31ea5ac21a3d392401b97fb61a3f3087ef041"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0102-line-0001",
+            "bbox": [
+              417,
+              374,
+              720,
+              452
+            ],
+            "text": "이 버튼을 누르면",
+            "prediction": "\\( \\sqrt{a^2 + b^2} \\)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0102-line-0002",
+            "bbox": [
+              1512,
+              637,
+              2704,
+              746
+            ],
+            "text": "3D형식으로 심플하고 간결하고 감성터지게 그린다.",
+            "prediction": "3D형식으로 심플하려는걸하고 싱싱씨게그릴다.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0102-line-0003",
+            "bbox": [
+              1599,
+              899,
+              2238,
+              1008
+            ],
+            "text": "학생, 교사는 잠시 사라진다.",
+            "prediction": "하씨고사는감시사라긴다.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0102-line-0004",
+            "bbox": [
+              1475,
+              1132,
+              2677,
+              1238
+            ],
+            "text": "\"OK\" 버튼과 \"Cancle\" 버튼만 생기고 업그레이드, 미니게임",
+            "prediction": "\"OK\"어두긴 'Circle\" 버튼만 삼기다 잃겠어느냐, 악벨씨",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0102-line-0005",
+            "bbox": [
+              1282,
+              1217,
+              1440,
+              1295
+            ],
+            "text": "\\( OKK \\)",
+            "prediction": "\\( OKK \\)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0102-line-0006",
+            "bbox": [
+              559,
+              1399,
+              1392,
+              1533
+            ],
+            "text": "정해진 크기에 방을 더할 수도 있다.",
+            "prediction": "컴패전그림에냄을타넣수도맞다.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T11:39:38.996Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T11:15:12.070Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 6
+        }
+      ]
     },
     "hf-0103": {
       "id": "hf-0103",
