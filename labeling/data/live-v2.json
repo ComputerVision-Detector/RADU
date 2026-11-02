@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T15:12:09.532Z",
+  "updated_at": "2026-11-02T15:15:08.744Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -48125,20 +48125,473 @@
         "source_sha256": "5e0f91d4b2f18fb7f70afdcb409fec401f214764d10b870517269d7ab745dea1"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0140-line-0001",
+            "bbox": [
+              414,
+              180,
+              1020,
+              260
+            ],
+            "text": "1장. 데이터베이스 시스템",
+            "prediction": "1 갖. 디이터네이션 신뢰.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0002",
+            "bbox": [
+              0,
+              365,
+              361,
+              455
+            ],
+            "text": "데이터베이스 활용",
+            "prediction": "데이터베이스 활용",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0003",
+            "bbox": [
+              311,
+              505,
+              1038,
+              574
+            ],
+            "text": "- 검색 · 변경 빈도에 따른 DB 유형",
+            "prediction": "- 검색 · 변경 빈도에 따른 DB 유형",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0004",
+            "bbox": [
+              422,
+              590,
+              1564,
+              680
+            ],
+            "text": "유럽 1: 검색 빈도↓ 변경빈도↓ ex) 공용 데이터 베이스",
+            "prediction": "유럽 1: 검색 빈도↓ 변경빈도↓ ex) 공용 디이터 베이스.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0005",
+            "bbox": [
+              461,
+              686,
+              1546,
+              769
+            ],
+            "text": "유형2: 검색 빈도↑ 변경빈도↓ ex) 도서 데이터베이스",
+            "prediction": "유형2: 검색 빈도↑ 변경빈도↓ ex) 모서 테이터베이스.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0006",
+            "bbox": [
+              453,
+              781,
+              1567,
+              868
+            ],
+            "text": "유형 3: 정색 빈도↓ 변경 빈도↑ ex) 비행기 예약 데이터",
+            "prediction": "유형 3: 정색 빈도↓ 변경 빈도↑ ex) 비빔밑 예약 디이터베이스",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0007",
+            "bbox": [
+              163,
+              877,
+              1564,
+              963
+            ],
+            "text": "여러움 …… ↓ 유형 4: 장색 빈도↑ 변경빈도↑ ex) 증권 데이터베이스",
+            "prediction": "여러툴 …… ↓ 유럽 4: 장색 빈도↑ 변경빈도↑ ex) 조원 테이터베이스.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0008",
+            "bbox": [
+              7,
+              1075,
+              361,
+              1148
+            ],
+            "text": "데이터베이스 개념",
+            "prediction": "데이터베이스 개념",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0009",
+            "bbox": [
+              363,
+              1171,
+              1787,
+              1260
+            ],
+            "text": "- 개념: 여러 사람이 공용으로 사용하기 위해 통합하고 저장한 운영 데이터의 집합",
+            "prediction": "- 개념: 여러 사람이 공동으로 사용하지 위해 활화하고 지각한 운영 데이터의 검토.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0010",
+            "bbox": [
+              438,
+              1276,
+              1100,
+              1352
+            ],
+            "text": "1) 통합된 데이터 (integrated data)",
+            "prediction": "1) 물질된 (G)이더 (integrated data)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0011",
+            "bbox": [
+              443,
+              1372,
+              1084,
+              1451
+            ],
+            "text": "2) 저장된 데이터 (stored data)",
+            "prediction": "2) 저장된 (E)이더 (stored data)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0012",
+            "bbox": [
+              443,
+              1464,
+              1152,
+              1547
+            ],
+            "text": "3) 운영 데이터 (operational data)",
+            "prediction": "3) 운영 데이터 (operational data)",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0013",
+            "bbox": [
+              443,
+              1560,
+              1084,
+              1643
+            ],
+            "text": "4) 공용 데이터 (shared data)",
+            "prediction": "4) 공충 티미터 (shared data)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0016",
+            "bbox": [
+              281,
+              1871,
+              1387,
+              1965
+            ],
+            "text": "· 실시간 접근성 : DB는 실시간으로 서비스됨.",
+            "prediction": "계육적인 변화: 데이터 값은 시간이 다라고 참상 나왔다.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0017",
+            "bbox": [
+              317,
+              1963,
+              1472,
+              2056
+            ],
+            "text": "· 계속적인 변화 : 데이터 값은 시간에 따라 항상 바뀐다.",
+            "prediction": "동서 공유: DB는 서로 다츠 업무, 다른 사용자 시계 옹장된다.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0018",
+            "bbox": [
+              277,
+              2062,
+              1544,
+              2152
+            ],
+            "text": "· 동시 공유 : DB는 서로 다른 업무, 다른 사용자에게 공유된다.",
+            "prediction": "4) 물이 따준 칠조: 물리적 위치가 아닌, 테이터 값이 따라 참조된.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0019",
+            "bbox": [
+              328,
+              2159,
+              1616,
+              2252
+            ],
+            "text": "· 내용에 따른 참조 : 물리적 위치가 아닌, 데이터 값에 따라 참조됨",
+            "prediction": "DB 시스템 발전 단계",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0020",
+            "bbox": [
+              326,
+              2448,
+              1491,
+              2541
+            ],
+            "text": "[1단계]····> 동네 서점 : 보유 서적 100권, 직접 장부 기록",
+            "prediction": "[단계]……> 묻네 서점: 보개 서접 100원, 식량 장취 기록.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0021",
+            "bbox": [
+              2335,
+              2445,
+              2593,
+              2507
+            ],
+            "text": "… 1970's",
+            "prediction": "… 1970's",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0022",
+            "bbox": [
+              129,
+              2577,
+              327,
+              2653
+            ],
+            "text": "큰 규모로",
+            "prediction": "콘 쿼로",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0023",
+            "bbox": [
+              321,
+              2538,
+              1857,
+              2635
+            ],
+            "text": "[2단계]……> 초기 전산화: 보유 서적 1,000권 회계 업무 및 파일 시스템 도입",
+            "prediction": "[2단계]……> 초기 정산화: 보개 서억 1000권, 한계 업무 및 파일 산림 모집.",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0024",
+            "bbox": [
+              2333,
+              2547,
+              2591,
+              2610
+            ],
+            "text": "… 1980's",
+            "prediction": "… 1980's",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0025",
+            "bbox": [
+              168,
+              2635,
+              371,
+              2708
+            ],
+            "text": "확장됨",
+            "prediction": "학문원.",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0026",
+            "bbox": [
+              330,
+              2630,
+              2056,
+              2734
+            ],
+            "text": "[3단계]……> DB 시스템 도입 : 보유 서적 10000권, 회계 업무 및 데이터베이스 시스템 도입",
+            "prediction": "[3단계]……> DB시간웹 모집: 보개 시책 10000원, 화폐 면무 및 커이터베이스 신고원 도입.",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0027",
+            "bbox": [
+              2333,
+              2648,
+              2591,
+              2714
+            ],
+            "text": "… 1990's",
+            "prediction": "… 1990's",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0028",
+            "bbox": [
+              313,
+              2711,
+              2578,
+              2828
+            ],
+            "text": "↓ [단계]……> 홈페이지 구축: 보유 서적 100,000권, 회계/인식 업무 및 웹 DB 시스템을 통해 지점간 연계 …2000`s",
+            "prediction": "↓ [단계]……> 홈페이지 구축: 보뉴 서적 100,000권, 화M/인사 검무 및 침 DB 시스템을 물해 지정한 편제... 2000's",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0029",
+            "bbox": [
+              374,
+              2840,
+              2004,
+              2940
+            ],
+            "text": "[단계]……> 인터넷 쇼핑몰로 확장 : 보유 서적 1,000,000권, DB 서버 여러개 구축",
+            "prediction": "[단계]……> 컨테일 노림율 확장: 보개 서적 1000000원, DB 서비스 여러 개 구축.",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0030",
+            "bbox": [
+              2333,
+              2838,
+              2583,
+              2897
+            ],
+            "text": "… 2010 ~",
+            "prediction": "… 2010 ~",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0031",
+            "bbox": [
+              46,
+              3071,
+              475,
+              3140
+            ],
+            "text": "파일 시스템과 DBMS",
+            "prediction": "파일 시스템과 DBMS",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0032",
+            "bbox": [
+              331,
+              3118,
+              2212,
+              3225
+            ],
+            "text": "1) 데이터 정의 - 응용 시스템 - DBMS 3) 데이터 접근 방법 - 응용 프로그램이 파일 - DBMS에 접근 요청",
+            "prediction": "1) 숭백의 점의 - 음압시킬 - DBMS 3) 테이터 잠근 방법 - 운동 프로그램이 되십 - DBMS에 관료 보십.",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0033",
+            "bbox": [
+              331,
+              3233,
+              1862,
+              3333
+            ],
+            "text": "2) 데이터 저장 - 파일 시스템 - DB       4) 사용언어 - 자바, C++ 등 - 자파, C++",
+            "prediction": "2) (데이터 자장 - 파일 시스템 - DB 4) 사용 년째 - 지배, (4) 등 - 지배, (4) +",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0140-line-0034",
+            "bbox": [
+              1177,
+              3301,
+              1800,
+              3384
+            ],
+            "text": "5) CPU/주기억장치 사용 - 적음 - 많음",
+            "prediction": "5) CPU/주택보취 사용 - 제한 - 완료",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T15:37:09.532Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T15:15:08.744Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 32
+        }
+      ]
     },
     "hf-0141": {
       "id": "hf-0141",
