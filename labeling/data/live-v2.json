@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T03:00:08.315Z",
+  "updated_at": "2026-11-02T03:01:08.477Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -16,7 +16,7 @@
       },
       "bbox_annotation": {
         "status": "draft",
-        "revision": 3,
+        "revision": 4,
         "annotator": "이나현",
         "notes": "",
         "no_text": false,
@@ -90,7 +90,7 @@
             "prediction": "",
             "order": 5,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-d82f411c-6670-4d83-a45c-893aa7aec9f9",
@@ -118,7 +118,7 @@
             "prediction": "",
             "order": 7,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-55659187-1819-4081-9a39-83548192c1fb",
@@ -133,15 +133,442 @@
             "order": 8,
             "uncertain": false,
             "reviewed": false
+          },
+          {
+            "id": "line-29f733ec-f887-4b1c-897c-92b8e069bc95",
+            "bbox": [
+              1281,
+              921,
+              2272,
+              1018
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-9eb65a89-5285-495b-a763-9a0fb148df99",
+            "bbox": [
+              1281,
+              1039,
+              2392,
+              1138
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-e2b039cd-a058-4a9e-9c3c-7b370c9f0f80",
+            "bbox": [
+              1300,
+              1130,
+              2553,
+              1239
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-706ab95d-761c-4df8-941f-2baec1523ba2",
+            "bbox": [
+              1287,
+              1258,
+              2130,
+              1338
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-b725ff95-fc8d-4d29-bff9-3924f649bf72",
+            "bbox": [
+              1287,
+              1351,
+              1430,
+              1444
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-31274581-55f4-42d1-acd2-4c8d47589b5c",
+            "bbox": [
+              1477,
+              1448,
+              2536,
+              1553
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-9c3085af-c0b7-465b-926c-8ac1d54462d0",
+            "bbox": [
+              1504,
+              1563,
+              2590,
+              1644
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-15913fc5-7207-4ac1-a9f8-f0002ec64eb0",
+            "bbox": [
+              1508,
+              1665,
+              2152,
+              1753
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-57c01b39-8d7b-47bf-badd-b019cacd1ecd",
+            "bbox": [
+              1502,
+              1784,
+              2171,
+              1863
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-55b30366-d322-4a3b-964d-dd54fc5d4f7b",
+            "bbox": [
+              1504,
+              1892,
+              2078,
+              1978
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-7ad3fa2d-5853-47b4-a19a-266ba8b20065",
+            "bbox": [
+              1486,
+              2001,
+              2099,
+              2090
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-5868814e-3b55-48a8-a04d-0861ea30cf11",
+            "bbox": [
+              1512,
+              2102,
+              2192,
+              2207
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-51e6de12-b060-4d23-9385-dafdeaa9be69",
+            "bbox": [
+              1500,
+              2216,
+              2171,
+              2309
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-eb29879f-8fe4-4eb9-8e51-7298041a0f55",
+            "bbox": [
+              1494,
+              2321,
+              2080,
+              2426
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-7e892111-5cfd-41ba-affc-834ad2916a4a",
+            "bbox": [
+              1725,
+              2404,
+              2371,
+              2488
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-76c17cd5-df49-4ca4-bc99-427cf0b5c1c1",
+            "bbox": [
+              1486,
+              2449,
+              2479,
+              2552
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-2339bee9-3e1b-4010-8c45-7444e823e8ec",
+            "bbox": [
+              1219,
+              2542,
+              1810,
+              2666
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-09e7a387-a6f5-4562-9260-d0f80f257aac",
+            "bbox": [
+              1892,
+              2610,
+              2249,
+              2691
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-e1aad2f1-f069-4252-a218-b25a6c0f6299",
+            "bbox": [
+              2072,
+              2565,
+              2179,
+              2618
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-6b62577a-176c-43bf-bf08-f9c59ddb237f",
+            "bbox": [
+              1192,
+              2695,
+              2613,
+              2790
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-73887a34-5128-47f4-98ff-4da0b8a52f42",
+            "bbox": [
+              1042,
+              2792,
+              1632,
+              2907
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-7cff399c-9cc8-4357-859d-bc625ad7d57a",
+            "bbox": [
+              1159,
+              2922,
+              1768,
+              3027
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-b45abb02-9086-4ade-9206-6879ca1f53ad",
+            "bbox": [
+              1164,
+              3027,
+              2214,
+              3137
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-0bfd8aab-c72f-498b-9333-8e56c33e25bb",
+            "bbox": [
+              1168,
+              3155,
+              1882,
+              3254
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-4c749909-55f8-4479-9490-15d12dcf575e",
+            "bbox": [
+              1161,
+              3267,
+              1440,
+              3372
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-6ac8ed87-673f-45e4-9951-e8ce5238f56c",
+            "bbox": [
+              1353,
+              3401,
+              2613,
+              3521
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-fa29755d-1eb6-4e78-a48d-74c2aa9b1753",
+            "bbox": [
+              1333,
+              3521,
+              1989,
+              3624
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-6f09c870-e30a-48d3-89b1-f1c5f1a29054",
+            "bbox": [
+              1327,
+              3665,
+              2633,
+              3766
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-8824c2e4-c95a-48a4-a9ff-64eab69a1b96",
+            "bbox": [
+              1126,
+              3766,
+              2452,
+              3886
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": false
+          },
+          {
+            "id": "line-eafb2ba0-c45d-42b5-a95e-036bb832168e",
+            "bbox": [
+              1126,
+              3886,
+              1735,
+              4004
+            ],
+            "text": "",
+            "prediction": "",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": false
           }
         ]
       },
       "claim": {
         "name": "이나현",
         "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T03:24:46.457Z"
+        "until": "2026-11-02T03:26:08.477Z"
       },
       "history": [
+        {
+          "at": "2026-11-02T03:01:08.477Z",
+          "author": "이나현",
+          "status": "draft",
+          "revision": 4,
+          "box_count": 38
+        },
         {
           "at": "2026-11-02T02:48:13.149Z",
           "author": "이나현",
