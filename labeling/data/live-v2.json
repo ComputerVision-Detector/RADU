@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T05:51:08.343Z",
+  "updated_at": "2026-11-02T05:51:28.712Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -15,8 +15,8 @@
         "source_sha256": "9714c2728d5e783ccc27bf47f9d21733cf40e7ee4f368e28bcdd97fd77497087"
       },
       "bbox_annotation": {
-        "status": "draft",
-        "revision": 4,
+        "status": "verified",
+        "revision": 5,
         "annotator": "이나현",
         "notes": "",
         "no_text": false,
@@ -128,11 +128,11 @@
               1967,
               901
             ],
-            "text": "",
+            "text": "RMSNorm [N,2880]",
             "prediction": "",
             "order": 8,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-29f733ec-f887-4b1c-897c-92b8e069bc95",
@@ -142,11 +142,11 @@
               2272,
               1018
             ],
-            "text": "",
+            "text": "QKV Projection [N,2880] → [N,5120]",
             "prediction": "",
             "order": 9,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-9eb65a89-5285-495b-a763-9a0fb148df99",
@@ -156,11 +156,11 @@
               2392,
               1138
             ],
-            "text": "",
+            "text": "Q/K/V 분리 [N,4096], [N,512], [N,512]",
             "prediction": "",
             "order": 10,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-e2b039cd-a058-4a9e-9c3c-7b370c9f0f80",
@@ -170,11 +170,11 @@
               2553,
               1239
             ],
-            "text": "",
+            "text": "Q/K/V/ Reshape [n,8,8,64],[N,8,64],[N,8,64]",
             "prediction": "",
             "order": 11,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-706ab95d-761c-4df8-941f-2baec1523ba2",
@@ -184,11 +184,11 @@
               2130,
               1338
             ],
-            "text": "",
+            "text": "RoPE [N,8,8,64],[N,8,64]",
             "prediction": "",
             "order": 12,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-b725ff95-fc8d-4d29-bff9-3924f649bf72",
@@ -198,11 +198,11 @@
               1430,
               1444
             ],
-            "text": "",
+            "text": "SDPA",
             "prediction": "",
             "order": 13,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-31274581-55f4-42d1-acd2-4c8d47589b5c",
@@ -212,11 +212,11 @@
               2536,
               1553
             ],
-            "text": "",
+            "text": "K/V Expand [N,8,8,64],[N,8,8,64]",
             "prediction": "",
             "order": 14,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-9c3085af-c0b7-465b-926c-8ac1d54462d0",
@@ -226,11 +226,11 @@
               2590,
               1644
             ],
-            "text": "",
+            "text": "Sink Reshape/Expand [64],[8,8,1,1],[8,8,N,1]",
             "prediction": "",
             "order": 15,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-15913fc5-7207-4ac1-a9f8-f0002ec64eb0",
@@ -240,11 +240,11 @@
               2152,
               1753
             ],
-            "text": "",
+            "text": "causal Mask [N,N]",
             "prediction": "",
             "order": 16,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-57c01b39-8d7b-47bf-badd-b019cacd1ecd",
@@ -254,25 +254,25 @@
               2171,
               1863
             ],
-            "text": "",
+            "text": "sliding window [N,N]",
             "prediction": "",
             "order": 17,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-55b30366-d322-4a3b-964d-dd54fc5d4f7b",
             "bbox": [
-              1504,
-              1892,
-              2078,
-              1978
+              1508,
+              1894,
+              2082,
+              1980
             ],
-            "text": "",
+            "text": "QK^T [8,8,N,N]",
             "prediction": "",
             "order": 18,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-7ad3fa2d-5853-47b4-a19a-266ba8b20065",
@@ -282,11 +282,11 @@
               2099,
               2090
             ],
-            "text": "",
+            "text": "SCaling [8,8,N,N]",
             "prediction": "",
             "order": 19,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-5868814e-3b55-48a8-a04d-0861ea30cf11",
@@ -296,11 +296,11 @@
               2192,
               2207
             ],
-            "text": "",
+            "text": "Mask 적용 [8,8,N,N]",
             "prediction": "",
             "order": 20,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-51e6de12-b060-4d23-9385-dafdeaa9be69",
@@ -310,11 +310,11 @@
               2171,
               2309
             ],
-            "text": "",
+            "text": "Sink 추가 [8,8,N,N+1]",
             "prediction": "",
             "order": 21,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-eb29879f-8fe4-4eb9-8e51-7298041a0f55",
@@ -324,11 +324,11 @@
               2080,
               2426
             ],
-            "text": "",
+            "text": "Softmax [8,8,N,N+1]",
             "prediction": "",
             "order": 22,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-7e892111-5cfd-41ba-affc-834ad2916a4a",
@@ -338,11 +338,11 @@
               2371,
               2488
             ],
-            "text": "",
+            "text": "<Sink weight 제거 [8,8,N,N]",
             "prediction": "",
             "order": 23,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-76c17cd5-df49-4ca4-bc99-427cf0b5c1c1",
@@ -352,11 +352,11 @@
               2479,
               2552
             ],
-            "text": "",
+            "text": "Attention x V [8,8,N,N],[N,8,8,64]",
             "prediction": "",
             "order": 24,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-2339bee9-3e1b-4010-8c45-7444e823e8ec",
@@ -366,11 +366,11 @@
               1810,
               2666
             ],
-            "text": "",
+            "text": "output projection [N,2880]",
             "prediction": "",
             "order": 27,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-09e7a387-a6f5-4562-9260-d0f80f257aac",
@@ -380,11 +380,11 @@
               2249,
               2691
             ],
-            "text": "",
+            "text": "[N,8,8,64]",
             "prediction": "",
             "order": 26,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-e1aad2f1-f069-4252-a218-b25a6c0f6299",
@@ -394,11 +394,11 @@
               2179,
               2618
             ],
-            "text": "",
+            "text": "↓",
             "prediction": "",
             "order": 25,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-6b62577a-176c-43bf-bf08-f9c59ddb237f",
@@ -408,11 +408,11 @@
               2613,
               2790
             ],
-            "text": "",
+            "text": "Pesidual [N,2880] reshape [N,8,8,64]→[N,4096]",
             "prediction": "",
             "order": 28,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-73887a34-5128-47f4-98ff-4da0b8a52f42",
@@ -422,11 +422,11 @@
               1632,
               2907
             ],
-            "text": "",
+            "text": "MLPBlock(MOE)",
             "prediction": "",
             "order": 29,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-7cff399c-9cc8-4357-859d-bc625ad7d57a",
@@ -436,11 +436,11 @@
               1768,
               3027
             ],
-            "text": "",
+            "text": "RMSNorm [N,2880]",
             "prediction": "",
             "order": 30,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-b45abb02-9086-4ade-9206-6879ca1f53ad",
@@ -450,11 +450,11 @@
               2214,
               3137
             ],
-            "text": "",
+            "text": "Router [N,32]→Linear 2880→32",
             "prediction": "",
             "order": 31,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-0bfd8aab-c72f-498b-9333-8e56c33e25bb",
@@ -464,11 +464,11 @@
               1882,
               3254
             ],
-            "text": "",
+            "text": "Top-4 [N,32→N,4]",
             "prediction": "",
             "order": 32,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-4c749909-55f8-4479-9490-15d12dcf575e",
@@ -478,11 +478,11 @@
               1440,
               3372
             ],
-            "text": "",
+            "text": "Expert MLP",
             "prediction": "",
             "order": 33,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-6ac8ed87-673f-45e4-9951-e8ce5238f56c",
@@ -492,11 +492,11 @@
               2613,
               3521
             ],
-            "text": "",
+            "text": "MLP #1 [32,5760,2880] → [N,4,5760,2880] → [N,4,5760]",
             "prediction": "",
             "order": 34,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-fa29755d-1eb6-4e78-a48d-74c2aa9b1753",
@@ -506,11 +506,11 @@
               1989,
               3624
             ],
-            "text": "",
+            "text": "SwiGLU [N,4,2880]",
             "prediction": "",
             "order": 35,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-6f09c870-e30a-48d3-89b1-f1c5f1a29054",
@@ -520,11 +520,11 @@
               2633,
               3766
             ],
-            "text": "",
+            "text": "MLP #2 [32,2880,2880], [N,4,2880,2880] → [N,4,2880]",
             "prediction": "",
             "order": 36,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-8824c2e4-c95a-48a4-a9ff-64eab69a1b96",
@@ -534,11 +534,11 @@
               2452,
               3886
             ],
-            "text": "",
+            "text": "Expert weighted Sum output [N,4,2880], weight [N,4] → [N,2880]",
             "prediction": "",
             "order": 37,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "line-eafb2ba0-c45d-42b5-a95e-036bb832168e",
@@ -548,20 +548,23 @@
               1735,
               4004
             ],
-            "text": "",
+            "text": "Residual [N,2880]",
             "prediction": "",
             "order": 38,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           }
         ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T06:15:28.650Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-11-02T05:51:28.712Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 5,
+          "box_count": 38
+        },
         {
           "at": "2026-11-02T03:01:08.477Z",
           "author": "이나현",
