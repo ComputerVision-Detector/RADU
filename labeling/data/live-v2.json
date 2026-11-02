@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:59:39.005Z",
+  "updated_at": "2026-11-02T10:59:57.235Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -29145,20 +29145,347 @@
         "source_sha256": "71615e31bd88169285adff3aa7b5eb640986600e27f8ef1167934f0d5849f4de"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0096-line-0001",
+            "bbox": [
+              314,
+              80,
+              2220,
+              311
+            ],
+            "text": "- 편의시설 / 병원, 시청, 대형마트, 고속터미널, 학교, 근접지역 투자",
+            "prediction": "- 표현시설 / 병원, 사원, 대형마트, 고속터이념, 학교, 근접지역, 후자",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0002",
+            "bbox": [
+              326,
+              306,
+              1020,
+              436
+            ],
+            "text": "- 지방일수록, 교통이 중요",
+            "prediction": "- 지방민수록, 교류이렴요.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0003",
+            "bbox": [
+              2633,
+              294,
+              2786,
+              388
+            ],
+            "text": "OK.",
+            "prediction": "OK.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0004",
+            "bbox": [
+              689,
+              338,
+              2232,
+              533
+            ],
+            "text": "- 교통이중요.\n· 서울과의 접근성이 좋은곳 선택 Ex) KTX, 고속터미널",
+            "prediction": "서로과의 집성이 참을듯 선택 (타) LTX, 고속론이널,",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0005",
+            "bbox": [
+              326,
+              431,
+              2792,
+              674
+            ],
+            "text": "- 세대수가 적어도 주변의 커뮤니티 좋은 곳 / 주변 세대수 적어도 여러 APT 모인곳이면",
+            "prediction": "- 세배수가 걱정의 커뮤니티 황도론. / 규범 세배수 장이로 여러APP 모인편편.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0006",
+            "bbox": [
+              120,
+              681,
+              2801,
+              916
+            ],
+            "text": "* 미분양 현황 확인 : 시청사이트. 지인 확인 가능 / 그래프가 하락하다가 상승곡선이 시작되는 시점",
+            "prediction": "* 미분양 현황 확인 : 시험시대트. 지인 혁신기능 / 그래프가 하렬 허가가 상승분선이 사회도행법",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0007",
+            "bbox": [
+              232,
+              895,
+              1032,
+              1029
+            ],
+            "text": "- 미분양 현황쉽게 파악가능",
+            "prediction": "- 미분양 현황 줄서 파닥가는",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0008",
+            "bbox": [
+              1596,
+              862,
+              1954,
+              964
+            ],
+            "text": "이 투자 적기",
+            "prediction": "이후의경기.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0009",
+            "bbox": [
+              244,
+              1024,
+              784,
+              1146
+            ],
+            "text": "- 입주물량도 확인",
+            "prediction": "- 민주공화로 확인.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0010",
+            "bbox": [
+              250,
+              1132,
+              971,
+              1254
+            ],
+            "text": "- 매매가격지수 check",
+            "prediction": "- 대매지경지수 check.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0011",
+            "bbox": [
+              238,
+              1205,
+              2571,
+              1383
+            ],
+            "text": "- 매매지수 그래프 3년이상 상승지역은 오래상승 했기에 상승동력 떨어짐",
+            "prediction": "- 대매지수 그래프 넛엔이상 상승지역은 오래상승 헛기에 상승동력 떨어짐.",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0012",
+            "bbox": [
+              302,
+              1346,
+              2099,
+              1496
+            ],
+            "text": "하락했다가 최근 2년이내 상승으로 변한곳 투자처로 유리",
+            "prediction": "허락했어가 화난 랜덤이대 상승으로 변화듯 투자처로 유리.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0013",
+            "bbox": [
+              130,
+              1632,
+              1177,
+              1767
+            ],
+            "text": "* 낙찰받은 집의 미납분처리 방법",
+            "prediction": "- 낙힘받은삶의 미션문제의 방법",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0014",
+            "bbox": [
+              229,
+              1697,
+              2713,
+              1892
+            ],
+            "text": "- 전기, 수도, 가스 => 각 해당 한전, 도시가스, 수도공사에 매각증명 완납도 제출",
+            "prediction": "-전기, 누드 가스 $\\Rightarrow$ 갈등상환전, 로세가스 수분에 (재객과 증명 완벌된) 제출",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0015",
+            "bbox": [
+              190,
+              1987,
+              1736,
+              2121
+            ],
+            "text": "- 공용관리비 (전기, A/v, 보수 안전검사, 소방점검 등...)",
+            "prediction": "- 곤봉관리비 (전기, 서냐, 보수 면접성) 핵심강증...)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0016",
+            "bbox": [
+              257,
+              2120,
+              1600,
+              2242
+            ],
+            "text": "→ 총 3년치의 미납요금도 낙찰자에게 인계됨",
+            "prediction": "- 종류 3년째의 미션법론 녹힐닉이에 인계됨",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0017",
+            "bbox": [
+              244,
+              2229,
+              2828,
+              2375
+            ],
+            "text": "→ 무조건 납부하지 말고 공용 수도, 공용전기인지 정확하게 파악하고 분리해서",
+            "prediction": "- 뿌리고 삶부뇌리하고 왕용 수로. 충렬기인의 장학비에 따막넘어 붉힌에서",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0018",
+            "bbox": [
+              332,
+              2382,
+              835,
+              2508
+            ],
+            "text": "납부하도록 한다.",
+            "prediction": "삽녕하도록 받다.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0019",
+            "bbox": [
+              57,
+              2661,
+              2934,
+              2799
+            ],
+            "text": "* 점유자의 물건이 낙찰받은집에 그대로 있을경우 (전 점유자가 본인의 짐을 정리하지 않고 떠남)",
+            "prediction": "*정유자의 못이어 쓸칠 받은침에 그대로 일컬을 수 $\\langle$ 전 접종지가 본인의 감을 정식이지 않고 떠날 \\rangle$",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0020",
+            "bbox": [
+              169,
+              2782,
+              2934,
+              2988
+            ],
+            "text": "- 강제집행을 해서 동산경매에 넣고 집행비용 상계처리 둘중 하나의 방법으로",
+            "prediction": "- 강제집행을 해서 혼란 절대에 넘고 삶집행비용 상지처의 7 틀을 살아다양법으로",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0021",
+            "bbox": [
+              160,
+              2927,
+              1954,
+              3069
+            ],
+            "text": "- 전 소유자와 연락이 되면 <동산 포기 각서> 받아서 정리",
+            "prediction": "- 전 소유자와 연속이 뒤면 <혼산포기 각서 > 벤씨서 정리",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0022",
+            "bbox": [
+              2307,
+              2971,
+              2553,
+              3097
+            ],
+            "text": "처리.",
+            "prediction": "처리.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0096-line-0023",
+            "bbox": [
+              93,
+              3064,
+              1446,
+              3202
+            ],
+            "text": "☆ 낙찰자가 임의로 처리하게 되면 위법임",
+            "prediction": "냉철지가 압히로 취비하지 외면 위법임",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T11:24:39.005Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T10:59:57.235Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 23
+        }
+      ]
     },
     "hf-0097": {
       "id": "hf-0097",
