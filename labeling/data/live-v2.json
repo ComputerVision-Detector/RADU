@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T06:38:28.688Z",
+  "updated_at": "2026-11-02T06:41:14.838Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -10169,7 +10169,7 @@
       },
       "bbox_annotation": {
         "status": "verified",
-        "revision": 1,
+        "revision": 2,
         "annotator": "이나현",
         "notes": "",
         "no_text": false,
@@ -10178,12 +10178,12 @@
           {
             "id": "hf-0033-line-0002",
             "bbox": [
-              241,
-              346,
+              217,
+              345,
               672,
               476
             ],
-            "text": "시그모이드 함수",
+            "text": "· 시그모이드 함수",
             "prediction": "$\\alpha\\beta\\gamma\\delta$ 共分",
             "order": 1,
             "uncertain": false,
@@ -10197,7 +10197,7 @@
               1243,
               613
             ],
-            "text": "- 令 \\( h(x) = \\frac{1}{1 + \\exp(-x)} \\)",
+            "text": "-식 \\[\nh(x) = \\frac{1}{1 + \\exp(-x)}\n\\]",
             "prediction": "- 令 \\( h(x) = \\frac{1}{1 + \\exp(-x)} \\)",
             "order": 2,
             "uncertain": false,
@@ -10211,7 +10211,7 @@
               1319,
               702
             ],
-            "text": "\\( e^{-x} \\)",
+            "text": "→ \\[\ne^{-x}\n\\]",
             "prediction": "\\( e^{-x} \\)",
             "order": 3,
             "uncertain": false,
@@ -10235,11 +10235,11 @@
             "id": "hf-0033-line-0006",
             "bbox": [
               151,
-              999,
-              563,
+              906,
+              1735,
               1105
             ],
-            "text": "- 계단함수와",
+            "text": "- 계단함수와 시그모이드 함수는 비선형함수.",
             "prediction": "- 제한성과",
             "order": 5,
             "uncertain": false,
@@ -10249,27 +10249,13 @@
             "id": "hf-0033-line-0007",
             "bbox": [
               157,
-              1116,
-              587,
+              1035,
+              2858,
               1226
             ],
-            "text": "- 선형함수:",
+            "text": "- 선형함수: 입력의 상수배만큼 변하는 함수. (직선 1개로 그릴 수 있음)",
             "prediction": "- 신형향상:",
             "order": 6,
-            "uncertain": false,
-            "reviewed": true
-          },
-          {
-            "id": "hf-0033-line-0008",
-            "bbox": [
-              574,
-              1020,
-              2831,
-              1206
-            ],
-            "text": "- 입력의 상수배만큼 변하는 함수. (직선 1개로 그릴 수 있음)",
-            "prediction": "- 십성의 삶의 희망을 보여주는 삶의 (추천해 1개로 그릴 수 있음)",
-            "order": 7,
             "uncertain": false,
             "reviewed": true
           },
@@ -10277,27 +10263,13 @@
             "id": "hf-0033-line-0009",
             "bbox": [
               157,
-              1241,
-              587,
+              1210,
+              1727,
               1351
             ],
-            "text": "- 비선형함수:",
+            "text": "- 비선형함수: 직선 1개로는 그릴 수 없는 함수",
             "prediction": "- 배선향상:",
-            "order": 8,
-            "uncertain": false,
-            "reviewed": true
-          },
-          {
-            "id": "hf-0033-line-0010",
-            "bbox": [
-              574,
-              1197,
-              1706,
-              1347
-            ],
-            "text": "-  직선 1개로는 그릴 수 없는 함수",
-            "prediction": "- 새로운 기능의 수업을 하다.",
-            "order": 9,
+            "order": 7,
             "uncertain": false,
             "reviewed": true
           },
@@ -10309,9 +10281,9 @@
               1676,
               1488
             ],
-            "text": "- 선형함수를 신경망에 이용하지 않는 이유.",
+            "text": "· 선형함수를 신경망에 이용하지 않는 이유.",
             "prediction": "- 산하향수를 산명망에 이용하지 않는 이유.",
-            "order": 10,
+            "order": 8,
             "uncertain": false,
             "reviewed": true
           },
@@ -10325,7 +10297,7 @@
             ],
             "text": "- 층을 아무리 깊게 해도 '은닉층이 없는 네트워크'로도",
             "prediction": "- 충을 막고 갈게 해도 본복층이 없는 비트뭐로 '조도'",
-            "order": 11,
+            "order": 9,
             "uncertain": false,
             "reviewed": true
           },
@@ -10339,7 +10311,7 @@
             ],
             "text": "똑같은 기능을 할 수 있음.",
             "prediction": "쪽돌은 가을 한 슈 있음.",
-            "order": 12,
+            "order": 10,
             "uncertain": false,
             "reviewed": true
           },
@@ -10351,9 +10323,9 @@
               1948,
               2166
             ],
-            "text": "- A열의 개수와 B행의 개수가 같아야 계산가능",
+            "text": "· A열의 개수와 B행의 개수가 같아야 계산가능",
             "prediction": "- A명의 개수와 B행의 개수가 끝까지 계산가능",
-            "order": 13,
+            "order": 11,
             "uncertain": false,
             "reviewed": true
           },
@@ -10365,9 +10337,9 @@
               2290,
               2472
             ],
-            "text": "A = \\(\\begin{bmatrix} 1, 2, 3 \\\\ 4, 5, 6 \\end{bmatrix}\\), X B = \\(\\begin{bmatrix} 1, 2 \\\\ 3, 4 \\\\ 5, 6 \\end{bmatrix}\\) = C = \\(\\begin{bmatrix} 2, 1, 2, 8 \\\\ 4, 9, 64 \\end{bmatrix}\\)",
+            "text": "\\[\nA = \\begin{bmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{bmatrix} \\times B = \\begin{bmatrix} 1 & 2 \\\\ 3 & 4 \\\\ 5 & 6 \\end{bmatrix} = C = \\begin{bmatrix} 22 & 28 \\\\ 49 & 64 \\end{bmatrix}\n\\]",
             "prediction": "A = \\(\\begin{bmatrix} 1, 2, 3 \\\\ 4, 5, 6 \\end{bmatrix}\\), X B = \\(\\begin{bmatrix} 1, 2 \\\\ 3, 4 \\\\ 5, 6 \\end{bmatrix}\\) = C = \\(\\begin{bmatrix} 2, 1, 2, 8 \\\\ 4, 9, 64 \\end{bmatrix}\\)",
-            "order": 14,
+            "order": 12,
             "uncertain": false,
             "reviewed": true
           },
@@ -10381,7 +10353,7 @@
             ],
             "text": "열 개수: 3개",
             "prediction": "설계수: 3개",
-            "order": 15,
+            "order": 13,
             "uncertain": false,
             "reviewed": true
           },
@@ -10395,7 +10367,7 @@
             ],
             "text": "행 개수: 3개",
             "prediction": "행계수: 3개",
-            "order": 16,
+            "order": 14,
             "uncertain": false,
             "reviewed": true
           },
@@ -10409,7 +10381,7 @@
             ],
             "text": "- 이렇게 계산하면 결과 C행렬은",
             "prediction": "- 이렇게 계산하면 결과 C행렬은",
-            "order": 17,
+            "order": 15,
             "uncertain": false,
             "reviewed": true
           },
@@ -10423,7 +10395,7 @@
             ],
             "text": "A행렬의 행수와 B행렬의 열 수가 됨.",
             "prediction": "A행결의 행수와 B행결의 덜 수가 됨.",
-            "order": 18,
+            "order": 16,
             "uncertain": false,
             "reviewed": true
           },
@@ -10435,9 +10407,9 @@
               369,
               3295
             ],
-            "text": "- 분류",
+            "text": "· 분류",
             "prediction": "- 농악",
-            "order": 19,
+            "order": 17,
             "uncertain": false,
             "reviewed": true
           },
@@ -10451,7 +10423,7 @@
             ],
             "text": "- 데이터가 어느 클래스에 속하냐",
             "prediction": "- CA이터가 안 클래스에 속하다.",
-            "order": 20,
+            "order": 18,
             "uncertain": false,
             "reviewed": true
           },
@@ -10463,9 +10435,9 @@
               451,
               3702
             ],
-            "text": "- 회귀",
+            "text": "· 회귀",
             "prediction": "0 눈기",
-            "order": 21,
+            "order": 19,
             "uncertain": false,
             "reviewed": true
           },
@@ -10479,18 +10451,21 @@
             ],
             "text": "- 입력 데이터에서 연속적인 수치를 예측하는 문제",
             "prediction": "- 압력 데이터에서 연속적인 속도를 확인한 첫째. 높다.",
-            "order": 22,
+            "order": 20,
             "uncertain": false,
             "reviewed": true
           }
         ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T07:03:28.688Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-11-02T06:41:14.838Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 2,
+          "box_count": 20
+        },
         {
           "at": "2026-11-02T00:40:30.908Z",
           "author": "이나현",
