@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T11:11:39.053Z",
+  "updated_at": "2026-11-02T11:14:18.204Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -30466,20 +30466,613 @@
         "source_sha256": "6bb8a40ea7bb3d4b3dee46684399fe438fbb0f5226c60693974ea4196b55c9c5"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0101-line-0001",
+            "bbox": [
+              1058,
+              108,
+              1198,
+              222
+            ],
+            "text": "App",
+            "prediction": "App",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0002",
+            "bbox": [
+              1209,
+              80,
+              2042,
+              198
+            ],
+            "text": "아이디어1(노가다게임-학원키우기)",
+            "prediction": "\\( \\alpha \\beta \\gamma \\delta \\epsilon \\zeta \\eta \\theta \\iota \\kappa \\lambda \\mu \\nu \\xi \\pi \\rho \\sigma \\tau \\upsilon \\phi \\chi \\psi \\omega \\)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0003",
+            "bbox": [
+              2186,
+              40,
+              2268,
+              121
+            ],
+            "text": "/",
+            "prediction": "/",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0004",
+            "bbox": [
+              2479,
+              40,
+              2553,
+              121
+            ],
+            "text": "/",
+            "prediction": "/",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0005",
+            "bbox": [
+              281,
+              229,
+              1189,
+              359
+            ],
+            "text": "시작화면 1 ↙ 저장하는 방법알면",
+            "prediction": "시작화면 2↓ ↙ 자장하는 양법알면",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0006",
+            "bbox": [
+              1772,
+              181,
+              2244,
+              319
+            ],
+            "text": "「게임시작화면2」",
+            "prediction": "제일시작화면 2↓",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0007",
+            "bbox": [
+              783,
+              314,
+              938,
+              380
+            ],
+            "text": "됀다.",
+            "prediction": "옵션다.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0008",
+            "bbox": [
+              2268,
+              334,
+              2780,
+              468
+            ],
+            "text": "배경에는 학원에서",
+            "prediction": "대장이는 학원에서",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0009",
+            "bbox": [
+              1841,
+              491,
+              2008,
+              605
+            ],
+            "text": "배경",
+            "prediction": "배경",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0010",
+            "bbox": [
+              2268,
+              451,
+              2798,
+              565
+            ],
+            "text": "선생님과 학생들이",
+            "prediction": "신임님과학생들이",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0011",
+            "bbox": [
+              302,
+              580,
+              832,
+              682
+            ],
+            "text": "이게임은 해당앱을 지울시",
+            "prediction": "이재일은 해양일을 지속시",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0012",
+            "bbox": [
+              2286,
+              572,
+              2734,
+              670
+            ],
+            "text": "분주하게 움직이는",
+            "prediction": "본주하제 윤곽이는",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0013",
+            "bbox": [
+              293,
+              681,
+              920,
+              803
+            ],
+            "text": "모든 활동 내역이 사라집니다",
+            "prediction": "모든 활동 내의이 사라질다.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0014",
+            "bbox": [
+              1844,
+              653,
+              2060,
+              746
+            ],
+            "text": "게임시작",
+            "prediction": "벌리지시작",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0015",
+            "bbox": [
+              2292,
+              689,
+              2761,
+              791
+            ],
+            "text": "모습을 모여준다.",
+            "prediction": "모습을 모여준다.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0016",
+            "bbox": [
+              474,
+              810,
+              657,
+              912
+            ],
+            "text": "확인",
+            "prediction": "화인",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0017",
+            "bbox": [
+              1315,
+              810,
+              1494,
+              900
+            ],
+            "text": "넣는다",
+            "prediction": "널보다.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0018",
+            "bbox": [
+              1877,
+              887,
+              2008,
+              976
+            ],
+            "text": "종료",
+            "prediction": "종료",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0019",
+            "bbox": [
+              2264,
+              874,
+              2774,
+              1017
+            ],
+            "text": "누르면 그냥 종료한",
+            "prediction": "수요면 그송료는 참",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0020",
+            "bbox": [
+              2271,
+              991,
+              2377,
+              1073
+            ],
+            "text": "다.",
+            "prediction": "다.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0021",
+            "bbox": [
+              127,
+              1120,
+              799,
+              1359
+            ],
+            "text": "편집을 누르면 편집창으로 간다\n「메인화면」",
+            "prediction": "편집을 하고 됐다",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0022",
+            "bbox": [
+              985,
+              1169,
+              2674,
+              1331
+            ],
+            "text": "옵션에들어가면 소리, 알림, 효과음, 등등 여러가지를 자신에 맞게 설정할 수 ",
+            "prediction": "옵션이들어가면 소리, 멍링, 효과를 듣음 여러가지를 개선에 앞제 설정할 수",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0023",
+            "bbox": [
+              387,
+              1262,
+              732,
+              1388
+            ],
+            "text": "「메인화면」",
+            "prediction": "[제안하면]",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0024",
+            "bbox": [
+              985,
+              1302,
+              1694,
+              1420
+            ],
+            "text": "있다. 옵션창으로 이동한다.",
+            "prediction": "/왔다, 옵션참으로 이동한다.",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0025",
+            "bbox": [
+              1814,
+              1326,
+              2072,
+              1440
+            ],
+            "text": "→게임이름",
+            "prediction": "→게임이로",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0026",
+            "bbox": [
+              1149,
+              1399,
+              2734,
+              1549
+            ],
+            "text": "메인화면에 들어가면 #One Room (원룸) 처럼 자신이 산 학원 밤이",
+            "prediction": "미안화원이들어가면 #One Room (원줄) 커질 자세에 산 학원 방어:",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0027",
+            "bbox": [
+              1152,
+              1499,
+              2444,
+              1650
+            ],
+            "text": "이어져있고 맨앞에는 로비가 기초적으로 깔려있다.",
+            "prediction": "어쩌썼고 멜맥에는 로이가 7조섬으로 갈려왔다.",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0028",
+            "bbox": [
+              1130,
+              1874,
+              1881,
+              2004
+            ],
+            "text": "미니게임 목차가 있는 창으로 이동한다.",
+            "prediction": "이나 병 목차지는 참으로 이동한다.",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0029",
+            "bbox": [
+              846,
+              2060,
+              986,
+              2162
+            ],
+            "text": "미니",
+            "prediction": "이나",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0030",
+            "bbox": [
+              393,
+              2108,
+              775,
+              2238
+            ],
+            "text": "업그레이드",
+            "prediction": "일그레이드",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0031",
+            "bbox": [
+              840,
+              2161,
+              1029,
+              2279
+            ],
+            "text": "게임",
+            "prediction": "게일",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0032",
+            "bbox": [
+              828,
+              2205,
+              2780,
+              2428
+            ],
+            "text": "가구를 사거나 방의 크기나 로비의 크기를 업그레이드, 학원생들 모집 등 여러가지를",
+            "prediction": "가구를 사겨나 밤의꺼나 코비의 크기를 얻겨내는, 하원생을 도집둥 여러가지를",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0033",
+            "bbox": [
+              843,
+              2358,
+              2281,
+              2520
+            ],
+            "text": "업그레이드할 수 있다. 업그레이드창으로 이동한다.",
+            "prediction": "임견에 이런 혼 수 있다. 엄그레이드총으로 이동한다.",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0034",
+            "bbox": [
+              293,
+              2632,
+              602,
+              2770
+            ],
+            "text": "「옵션창」",
+            "prediction": "옵션창",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0035",
+            "bbox": [
+              828,
+              2580,
+              2281,
+              2734
+            ],
+            "text": "O는 활성화 X는 비활성화, 선택된 버튼이 더 밝게 빛난다.",
+            "prediction": "이는 향상화 차는 비흐를 삼화, 센텍밀어줄더 밝게빛나다.",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0036",
+            "bbox": [
+              381,
+              2878,
+              911,
+              3008
+            ],
+            "text": "\"터치 효과\" O | X",
+            "prediction": "\"터치 효과\" 이×",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0037",
+            "bbox": [
+              1106,
+              2899,
+              2891,
+              3081
+            ],
+            "text": "스크롤로 위아래로 ※ 스크롤을 맨밑으로 내리면 도움말, 고객센터 신고",
+            "prediction": "스콘로 위아래로 ※스크를 뻗은 멘멀으로 내려얻 도울말, 고객센터센고",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0038",
+            "bbox": [
+              381,
+              3015,
+              908,
+              3121
+            ],
+            "text": "\" \" O | X",
+            "prediction": "\" \" 01x",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0039",
+            "bbox": [
+              1115,
+              3044,
+              2323,
+              3202
+            ],
+            "text": "내릴 수가 있다. 등 여러가지 기능이 있다.",
+            "prediction": "411 슈가 있다. 틈어려기가능이 있다.",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0040",
+            "bbox": [
+              1251,
+              3193,
+              1897,
+              3347
+            ],
+            "text": "이런식으로 설정이 가능한 것을",
+            "prediction": "이런새로 찾겠어짐만 짓을",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0041",
+            "bbox": [
+              1267,
+              3278,
+              2535,
+              3452
+            ],
+            "text": "적어놓아서 활성화나 비활성을 할 수 있게 한다",
+            "prediction": "죽어놓아서 활성화나 병실상을 할수 있거란다.",
+            "order": 41,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0101-line-0042",
+            "bbox": [
+              1058,
+              3427,
+              1646,
+              3577
+            ],
+            "text": "옵션창을 닫는 버튼이다.",
+            "prediction": "윤신님을 돈는이에이다.",
+            "order": 42,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T11:36:39.053Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T11:14:18.204Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 42
+        }
+      ]
     },
     "hf-0102": {
       "id": "hf-0102",
