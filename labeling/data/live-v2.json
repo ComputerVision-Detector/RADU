@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T14:58:38.452Z",
+  "updated_at": "2026-11-02T14:59:13.891Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -46719,20 +46719,67 @@
         "source_sha256": "5c5486a708c2cd1e06025cddfbdae7dbde4a837cda823f1f87c1a0e8e12f9dc3"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0137-line-0001",
+            "bbox": [
+              1101,
+              27,
+              1912,
+              104
+            ],
+            "text": "프로젝트 name : 실습 #1(20250418)",
+            "prediction": "53272 name: 544 # (1202504187)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0137-line-0002",
+            "bbox": [
+              77,
+              89,
+              412,
+              180
+            ],
+            "text": "실습#1",
+            "prediction": "综合#1.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0137-line-0003",
+            "bbox": [
+              514,
+              103,
+              708,
+              180
+            ],
+            "text": "(팀플)",
+            "prediction": "(5)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T15:23:38.452Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T14:59:13.891Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 3
+        }
+      ]
     },
     "hf-0138": {
       "id": "hf-0138",
