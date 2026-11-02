@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T07:30:44.868Z",
+  "updated_at": "2026-11-02T07:31:50.848Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -28648,20 +28648,683 @@
         "source_sha256": "07afa848e962e92b5b3a6de59142f56ac6146e28971d65878095703ffbb989d6"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "김혜린",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0141-line-0001",
+            "bbox": [
+              17,
+              142,
+              348,
+              216
+            ],
+            "text": "DBMS의 장점",
+            "prediction": "DBMS의 잠김",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0002",
+            "bbox": [
+              334,
+              258,
+              388,
+              315
+            ],
+            "text": "1)",
+            "prediction": "1)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0003",
+            "bbox": [
+              389,
+              169,
+              765,
+              202
+            ],
+            "text": "---------",
+            "prediction": "-----",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0004",
+            "bbox": [
+              434,
+              249,
+              1673,
+              326
+            ],
+            "text": "데이터 중복 최소화 : DBMS를 이용해 공유하기 때문에 중복 가능성 ↓",
+            "prediction": "E이더리 칼복 최진화 : DBMS를 이용해 공동하기 때문에 잘복 가능성 ↓",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0005",
+            "bbox": [
+              327,
+              364,
+              388,
+              418
+            ],
+            "text": "2)",
+            "prediction": "2)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0006",
+            "bbox": [
+              434,
+              354,
+              1420,
+              422
+            ],
+            "text": "데이터 일관성 유지 : 중복 데이터 제거로 일관성이 유지됨.",
+            "prediction": "E이더리 칼린성 유지 : 줄복 떠여려 제거로 열콘냄이 움지못",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0007",
+            "bbox": [
+              334,
+              466,
+              388,
+              520
+            ],
+            "text": "3)",
+            "prediction": "3)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0008",
+            "bbox": [
+              438,
+              456,
+              1740,
+              528
+            ],
+            "text": "데이터 독립성 유지 : 데이터 정의와 프로그램 간의 독립성을 유지할 수 있음.",
+            "prediction": "E이더 특렴성 육직 : E이더 정의와 프로그램 간의 독립형성 유제발 수 없죠.",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0009",
+            "bbox": [
+              334,
+              569,
+              388,
+              619
+            ],
+            "text": "4)",
+            "prediction": "4)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0010",
+            "bbox": [
+              412,
+              559,
+              1522,
+              626
+            ],
+            "text": "관리 기능 제공 : 데이터 복구, 보안, 관리 기능 등을 수행.",
+            "prediction": "관리 기능 제공 : E이더 부구, 보건, 관리 기능 등을 수행.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0011",
+            "bbox": [
+              334,
+              668,
+              388,
+              722
+            ],
+            "text": "5)",
+            "prediction": "5)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0012",
+            "bbox": [
+              414,
+              662,
+              1722,
+              741
+            ],
+            "text": "프로그램 개발 생산성 향상 : 짧은 시간에 큰 프로그램을 개발할 수 있음.",
+            "prediction": "프로그램 개발 생생널 향방 : 필든 시간이 큰 프로그램을 개발할 수 있죠.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0013",
+            "bbox": [
+              334,
+              774,
+              380,
+              815
+            ],
+            "text": "-",
+            "prediction": "-",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0014",
+            "bbox": [
+              425,
+              764,
+              536,
+              808
+            ],
+            "text": "기타",
+            "prediction": "기타",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0015",
+            "bbox": [
+              847,
+              753,
+              1705,
+              838
+            ],
+            "text": ": 데이터 무결성 유지, 데이터 표준 준수가 용이함.",
+            "prediction": ": E이더 모범성 우리, E이더 표준 준수가 용어찾는.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0016",
+            "bbox": [
+              17,
+              957,
+              330,
+              1027
+            ],
+            "text": "SQL의 구성",
+            "prediction": "SQL의 구성",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0017",
+            "bbox": [
+              334,
+              1072,
+              388,
+              1126
+            ],
+            "text": "1)",
+            "prediction": "1)",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0018",
+            "bbox": [
+              421,
+              1070,
+              1300,
+              1133
+            ],
+            "text": "데이터 정의어 : 테이블 구조를 정의하는 데 사용.",
+            "prediction": "E이더리 정인여 : 덴에볼 구조를 정의하는 데 사용.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0019",
+            "bbox": [
+              327,
+              1168,
+              388,
+              1225
+            ],
+            "text": "2)",
+            "prediction": "2)",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0020",
+            "bbox": [
+              421,
+              1161,
+              1537,
+              1232
+            ],
+            "text": "데이터 조작어 : 데이터를 검색, 삭제, 삽입, 수정하는 데 사용.",
+            "prediction": "E이더리 조작이 : E이더리슬 검색, 삭제, 삼입, 숙렁하는 F1 사용.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0021",
+            "bbox": [
+              327,
+              1267,
+              388,
+              1324
+            ],
+            "text": "3)",
+            "prediction": "3)",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0022",
+            "bbox": [
+              410,
+              1263,
+              1462,
+              1331
+            ],
+            "text": "데이터 제어어 : 데이터의 사용 권한을 관리하는 데 사용.",
+            "prediction": "E이더리 제미 : E이더의 사용 완전을 관리하는 데 사용.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0023",
+            "bbox": [
+              15,
+              1461,
+              274,
+              1532
+            ],
+            "text": "DB 시용자",
+            "prediction": "DB 시용자 ---",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0024",
+            "bbox": [
+              327,
+              1576,
+              388,
+              1633
+            ],
+            "text": "1)",
+            "prediction": "1)",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0025",
+            "bbox": [
+              428,
+              1561,
+              1635,
+              1629
+            ],
+            "text": "일반 사용자 : 프로그램을 이용하여, DB에 접근 (은행 창구, 관공서 …)",
+            "prediction": "엘한 사용자 : 프로그램을 이용하여. DB에 접근 (은행 창구, 관코닉 …)",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0026",
+            "bbox": [
+              327,
+              1660,
+              396,
+              1725
+            ],
+            "text": "2)",
+            "prediction": "2)",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0027",
+            "bbox": [
+              403,
+              1661,
+              1733,
+              1724
+            ],
+            "text": "응용 프로그래머 : 일반 사용자가 사용할 수 있도록 프로그램을 만드는 사람.",
+            "prediction": "응용 프로그래머 : 엘한 사용자가 시장갈 수 있도록 프로그램을 믿드는 시당.",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0028",
+            "bbox": [
+              318,
+              1772,
+              379,
+              1829
+            ],
+            "text": "3)",
+            "prediction": "3)",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0029",
+            "bbox": [
+              415,
+              1752,
+              1861,
+              1831
+            ],
+            "text": "SQL 사용자 : 응용 프로그램을 이용해 구성되지 않은 업무를 SQL을 통해 처리.",
+            "prediction": "SQL 사용자 : 음용 프로그램은 이용해 구성되지 않은 단위를 SQL로 통해 처리.",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0030",
+            "bbox": [
+              327,
+              1861,
+              392,
+              1936
+            ],
+            "text": "4)",
+            "prediction": "4)",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0031",
+            "bbox": [
+              410,
+              1860,
+              1504,
+              1930
+            ],
+            "text": "데이터베이스 관리자 : 데이터베이스 시스템을 총괄하는 사람.",
+            "prediction": "E이더베이스 관리자 : E이더베이스 스팀링을 출밀하는 사람.",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0032",
+            "bbox": [
+              6,
+              2076,
+              294,
+              2143
+            ],
+            "text": "DBMS의 기능",
+            "prediction": "DBMS의 기능 ---",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0034",
+            "bbox": [
+              320,
+              2165,
+              1886,
+              2242
+            ],
+            "text": "· 데이터 정의, 데이터 조작, 데이터 추출, 데이터 제어 ⇒ 각 가능별 특징 알기.",
+            "prediction": "E이더리 정의, E이더리 조작, E이더리 축출, E이더리 제어 $\\Rightarrow$ 각 가능별 특징 알기.",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0035",
+            "bbox": [
+              11,
+              2371,
+              312,
+              2445
+            ],
+            "text": "3단계 DB 구조",
+            "prediction": "3D계획 DB 구조 ---",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0037",
+            "bbox": [
+              346,
+              2464,
+              1262,
+              2544
+            ],
+            "text": "· 개념 스키마, 내부 스키마, 외부 스키마가 존재.",
+            "prediction": "재범 스케마, 내부 스케마, 외부 스케마가 존재.",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0038",
+            "bbox": [
+              437,
+              2571,
+              965,
+              2642
+            ],
+            "text": "⇒ 개념스키마 : 무조건 1개임.",
+            "prediction": "=>) 계념스케마 : 933711333.",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0039",
+            "bbox": [
+              437,
+              2681,
+              1912,
+              2751
+            ],
+            "text": "⇒ 내부 스키마 : 물리적 DB이 갯수가 n개이면, 스키마 갯수로 n개가 될 수 있음.",
+            "prediction": "=> 내부 으키마 : 물리적 DB이 겠냐가 7개이면, 스케마 갯잔로 7개가 될 수 있죠.",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0040",
+            "bbox": [
+              17,
+              2879,
+              393,
+              2950
+            ],
+            "text": "2가지 데이터 독립성",
+            "prediction": "2721 데이억 독립성",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0041",
+            "bbox": [
+              334,
+              2973,
+              407,
+              3052
+            ],
+            "text": "1)",
+            "prediction": "1)",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0042",
+            "bbox": [
+              426,
+              2982,
+              1564,
+              3056
+            ],
+            "text": "논리적 데이터 독립성 : 외부 단계와 개념 단계 사이의 독립성.",
+            "prediction": "논리적 데이터 독립성 : 외부 단계와 개념 단계 사이의 독립성.",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0043",
+            "bbox": [
+              324,
+              3094,
+              388,
+              3155
+            ],
+            "text": "2)",
+            "prediction": "2)",
+            "order": 41,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0141-line-0044",
+            "bbox": [
+              423,
+              3079,
+              1595,
+              3155
+            ],
+            "text": "물리적 데이터 독립성 : 개념 단계와 내부 단계 사이의 독립성.",
+            "prediction": "물리적 데이터 독립성 : 개념 단계와 내부 단계 사이의 독립성.",
+            "order": 42,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e80f3d74-42fd-4e15-90dd-95944278926f",
+            "bbox": [
+              352,
+              966,
+              791,
+              1023
+            ],
+            "text": "---------",
+            "prediction": "",
+            "order": 43,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-03ca4721-7c10-4b28-8cbe-f4496d5cff02",
+            "bbox": [
+              270,
+              1472,
+              798,
+              1525
+            ],
+            "text": "------------",
+            "prediction": "",
+            "order": 44,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-19e1faeb-1837-4132-8c7a-38875fab1d11",
+            "bbox": [
+              290,
+              2076,
+              816,
+              2129
+            ],
+            "text": "-----------",
+            "prediction": "",
+            "order": 45,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9eb73be2-d117-4482-90b6-8f00fc9e31d9",
+            "bbox": [
+              321,
+              2369,
+              845,
+              2435
+            ],
+            "text": "------------",
+            "prediction": "",
+            "order": 46,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b845256a-52fb-4d6e-9cd3-b369a6608eae",
+            "bbox": [
+              398,
+              2879,
+              927,
+              2933
+            ],
+            "text": "------------",
+            "prediction": "",
+            "order": 47,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "김혜린",
-        "client": "f790569d-0fd4-4b69-8317-1be2b26623ee",
-        "until": "2026-11-02T07:54:51.293Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T07:31:50.848Z",
+          "author": "김혜린",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 47
+        }
+      ]
     },
     "hf-0142": {
       "id": "hf-0142",
