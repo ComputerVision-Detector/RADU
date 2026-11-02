@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T02:50:35.869Z",
+  "updated_at": "2026-11-02T02:52:01.454Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -6739,20 +6739,333 @@
         "source_sha256": "8cd6c2d558b64375f029924405c154bb4bbd239d0013af36311be1fbd8973b23"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0021-line-0001",
+            "bbox": [
+              1944,
+              24,
+              2120,
+              105
+            ],
+            "text": "NO.",
+            "prediction": "NO.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0002",
+            "bbox": [
+              1953,
+              72,
+              2749,
+              194
+            ],
+            "text": "year month day ( )",
+            "prediction": "year month day ( )",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0003",
+            "bbox": [
+              235,
+              439,
+              463,
+              517
+            ],
+            "text": "배치 모드",
+            "prediction": "- 1984年- 2001年- 2010年",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0004",
+            "bbox": [
+              244,
+              548,
+              463,
+              629
+            ],
+            "text": "모든 상",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0005",
+            "bbox": [
+              244,
+              657,
+              463,
+              742
+            ],
+            "text": "틀린",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0007",
+            "bbox": [
+              244,
+              911,
+              463,
+              1000
+            ],
+            "text": "패턴 모드",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0008",
+            "bbox": [
+              244,
+              1036,
+              563,
+              1120
+            ],
+            "text": "한 세대",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0009",
+            "bbox": [
+              244,
+              1161,
+              463,
+              1250
+            ],
+            "text": "- 샘플",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0011",
+            "bbox": [
+              244,
+              1423,
+              463,
+              1512
+            ],
+            "text": "미니 배치",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0012",
+            "bbox": [
+              244,
+              1556,
+              463,
+              1646
+            ],
+            "text": "- 딥러닝",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0013",
+            "bbox": [
+              244,
+              1685,
+              463,
+              1775
+            ],
+            "text": "부분 집",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0014",
+            "bbox": [
+              244,
+              1810,
+              501,
+              1919
+            ],
+            "text": "( 배치",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0015",
+            "bbox": [
+              244,
+              1943,
+              527,
+              2049
+            ],
+            "text": "- 부분 집합",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0017",
+            "bbox": [
+              244,
+              2221,
+              463,
+              2311
+            ],
+            "text": "은닉층",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0018",
+            "bbox": [
+              244,
+              2354,
+              522,
+              2456
+            ],
+            "text": "- 임시 공간",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0019",
+            "bbox": [
+              244,
+              2487,
+              553,
+              2582
+            ],
+            "text": "- 은닉 공간",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0021",
+            "bbox": [
+              244,
+              2765,
+              463,
+              2855
+            ],
+            "text": "오류 역",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0022",
+            "bbox": [
+              244,
+              2899,
+              506,
+              2978
+            ],
+            "text": "- 오류를",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0024",
+            "bbox": [
+              244,
+              3181,
+              463,
+              3270
+            ],
+            "text": "하이퍼",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0025",
+            "bbox": [
+              244,
+              3318,
+              463,
+              3408
+            ],
+            "text": "모델의",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0026",
+            "bbox": [
+              244,
+              3455,
+              463,
+              3545
+            ],
+            "text": "ex) 학습",
+            "prediction": "- 1984年- 2001年- 2010年- 2023年",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0021-line-0028",
+            "bbox": [
+              2525,
+              3834,
+              2952,
+              3924
+            ],
+            "text": "Keun Young Co.",
+            "prediction": "Keun Young Co.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T03:15:35.869Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T02:52:01.454Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 22
+        }
+      ]
     },
     "hf-0022": {
       "id": "hf-0022",
