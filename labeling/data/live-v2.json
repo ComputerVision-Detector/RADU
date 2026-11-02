@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:54:59.576Z",
+  "updated_at": "2026-11-02T10:55:38.089Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -28059,20 +28059,263 @@
         "source_sha256": "2b9ac2ac528c25cab193f6a5fa0af7a49f40596c370e9992f4c3f49e88974c6c"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0092-line-0001",
+            "bbox": [
+              151,
+              161,
+              363,
+              271
+            ],
+            "text": "14기",
+            "prediction": "(47)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0092-line-0004",
+            "bbox": [
+              151,
+              262,
+              1516,
+              408
+            ],
+            "text": "법원경매정보 : 정보가 제한되어 있음.",
+            "prediction": "- 접속법에 적용: 접속자 지향되어 있음.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0092-line-0005",
+            "bbox": [
+              151,
+              395,
+              986,
+              529
+            ],
+            "text": "- 네이버 → 부동산 → 경매",
+            "prediction": "- 내용이 → 부음은 → 경매",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0092-line-0006",
+            "bbox": [
+              151,
+              514,
+              555,
+              642
+            ],
+            "text": "· GG옥션",
+            "prediction": "- GG옥센 → 해원가민.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0092-line-0008",
+            "bbox": [
+              151,
+              641,
+              596,
+              771
+            ],
+            "text": "· 굿옥션 ①",
+            "prediction": "- 국옥선 ①",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5a0cda12-e138-485e-8341-4aecaeea7156",
+            "bbox": [
+              724,
+              484,
+              1204,
+              610
+            ],
+            "text": "회원가입.",
+            "prediction": "",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0092-line-0009",
+            "bbox": [
+              151,
+              766,
+              596,
+              892
+            ],
+            "text": "· 부동산 태인.",
+            "prediction": "- 부족선 해민.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6e0d9313-f360-4abb-85d4-b91dd6571835",
+            "bbox": [
+              728,
+              626,
+              1499,
+              752
+            ],
+            "text": "3대 인터넷 정보사이트.",
+            "prediction": "",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0092-line-0011",
+            "bbox": [
+              208,
+              927,
+              282,
+              1017
+            ],
+            "text": "·",
+            "prediction": "- \n- \n-",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0092-line-0007",
+            "bbox": [
+              1753,
+              435,
+              2042,
+              638
+            ],
+            "text": "23.000",
+            "prediction": "23.000",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0092-line-0010",
+            "bbox": [
+              1871,
+              443,
+              2507,
+              863
+            ],
+            "text": "200-12-15 3441\n장혜주",
+            "prediction": "200-12-15 3441",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0092-line-0012",
+            "bbox": [
+              795,
+              1016,
+              1268,
+              1150
+            ],
+            "text": "세입자",
+            "prediction": "선택차량 커튼",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0092-line-0013",
+            "bbox": [
+              314,
+              1024,
+              2891,
+              1279
+            ],
+            "text": "말소기준보 → 세입자 최초전입이 있으면 우선순위자가 있다는뜻, 소유권 관계없음.",
+            "prediction": "칭찬온리가 왔다는다, 새짐잠깐잤다.",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0092-line-0014",
+            "bbox": [
+              317,
+              1241,
+              1452,
+              1404
+            ],
+            "text": "보존등기일 → 이 날짜에 등기가 됐다는뜻",
+            "prediction": "첫째가일 → 이날씨에 슬가 왔잤네",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0092-line-0015",
+            "bbox": [
+              713,
+              1342,
+              1939,
+              1512
+            ],
+            "text": "건물이 지어진 시기가 어떤 아니라는 뜻.",
+            "prediction": "길물이 지어진 싱가 뻗어내리는 흐름.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0092-line-0016",
+            "bbox": [
+              317,
+              1516,
+              2958,
+              1775
+            ],
+            "text": "· 평수가 넓은 아파트일수록 층수가 올라갈수록 유리 저층으로 갈수록 매매어려움.",
+            "prediction": "- 염좌 날씨 아파트악웃 즐쓰다 올라갈게 우리 저녁으로 갈수록 매해야할줄",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0092-line-0017",
+            "bbox": [
+              157,
+              1818,
+              2441,
+              2037
+            ],
+            "text": "· 낙찰금액계산 매가를 예상후 원하는 이익금을 환산후 경매 낙찰금액 기재.",
+            "prediction": "- 날씨가 좋아해 맑아를 싸우다 싸워졌어요 걱정하겠어요",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T11:18:28.804Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T10:55:38.089Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 17
+        }
+      ]
     },
     "hf-0093": {
       "id": "hf-0093",
