@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T14:21:09.394Z",
+  "updated_at": "2026-11-02T14:21:49.569Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -44683,20 +44683,837 @@
         "source_sha256": "4a7d516cc55b6175db590963c4168bf227f00a197644aca19ea504f0083dc937"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0134-line-0001",
+            "bbox": [
+              47,
+              10,
+              867,
+              110
+            ],
+            "text": "\\( f(x) = x^2 + 1 \\quad g(x) = 3x - 2 \\)",
+            "prediction": "\\( f(x) = x^2 + 1 \\quad g(x) = 3x - 2 \\)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0002",
+            "bbox": [
+              1106,
+              26,
+              1502,
+              115
+            ],
+            "text": "\\( h(x) = \\sin(x + 2) \\)",
+            "prediction": "\\( h(x) = \\sin(x + 1) \\)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0003",
+            "bbox": [
+              1860,
+              26,
+              2264,
+              115
+            ],
+            "text": "\\( h(x) = \\ln(5x + 2) \\)",
+            "prediction": "\\( h(x) = \\ln(5x + 2) \\)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0004",
+            "bbox": [
+              2415,
+              88,
+              2938,
+              193
+            ],
+            "text": "\\( f(x) = x^2 \\quad [1, 3] \\)",
+            "prediction": "\\( f(x) = x^2 \\quad [1, 3] \\)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0005",
+            "bbox": [
+              97,
+              177,
+              719,
+              279
+            ],
+            "text": "\\( f.g = f(y(x)) \\)",
+            "prediction": "\\( f.g = f(y(x)) \\)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0006",
+            "bbox": [
+              1236,
+              145,
+              1524,
+              222
+            ],
+            "text": "\\[ \\sin u \\]",
+            "prediction": "\\[ \\sin u \\]",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0007",
+            "bbox": [
+              1860,
+              130,
+              2075,
+              222
+            ],
+            "text": "\\( h'(x) = \\)",
+            "prediction": "\\( h'(x) = \\)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0008",
+            "bbox": [
+              1994,
+              203,
+              2253,
+              313
+            ],
+            "text": "\\[\n\\frac{1}{4} \\cdot 5 \\cdot 6\n\\]",
+            "prediction": "\\[\n\\frac{1}{4} \\cdot 5 \\cdot 6\n\\]",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0009",
+            "bbox": [
+              2553,
+              192,
+              3287,
+              313
+            ],
+            "text": "\\[\n\\Rightarrow \\frac{9-1}{3-1} = \\frac{8}{2} = 4.\n\\]",
+            "prediction": "\\[\n\\Rightarrow \\frac{9-1}{3-1} = \\frac{8}{2} = 4.\n\\]",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0010",
+            "bbox": [
+              152,
+              328,
+              610,
+              438
+            ],
+            "text": "\\( f(3x-2)^2 + 1 \\)",
+            "prediction": "\\( f(3x-2)^2 + 1 \\)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0011",
+            "bbox": [
+              1186,
+              242,
+              1419,
+              352
+            ],
+            "text": "\\[\n\\frac{1}{2} \\cdot 2x\n\\]",
+            "prediction": "\\[\n\\frac{1}{2} \\cdot 2x\n\\]",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0012",
+            "bbox": [
+              1973,
+              312,
+              2282,
+              457
+            ],
+            "text": "\\[ = \\frac{5}{5x + 2} \\]",
+            "prediction": "\\[ = \\frac{5}{5x + 2} \\]",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0013",
+            "bbox": [
+              2502,
+              388,
+              2786,
+              483
+            ],
+            "text": "\\[ f'(m) = 2x. \\]",
+            "prediction": "\\[ f'(m) = 2x. \\]",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0014",
+            "bbox": [
+              116,
+              515,
+              766,
+              616
+            ],
+            "text": "\\[ = 9x^2 - 12x + 4 + 1. \\]",
+            "prediction": "\\[ = 9x^2 - 12x - 8 + 4 + 1. \\]",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0015",
+            "bbox": [
+              2535,
+              518,
+              3127,
+              616
+            ],
+            "text": "\\( f'  f'(x) = 4 = 2x \\)",
+            "prediction": "\\( f'(x) = 4 = 2x \\)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0016",
+            "bbox": [
+              1809,
+              565,
+              2140,
+              657
+            ],
+            "text": "\\( h(x) = \\sqrt{x} \\sin x \\)",
+            "prediction": "\\( f(x) = \\sqrt{x} \\sin x \\)",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0017",
+            "bbox": [
+              141,
+              669,
+              624,
+              764
+            ],
+            "text": "\\[ 9x^2 - 12x + 5 \\]",
+            "prediction": "\\[ 9x^2 - 12x + 5 \\]",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0018",
+            "bbox": [
+              1196,
+              669,
+              1542,
+              780
+            ],
+            "text": "\\[ 2m \\cosx^2 \\]",
+            "prediction": "\\[ 2m \\cos \\theta^2 \\]",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0019",
+            "bbox": [
+              1809,
+              719,
+              2093,
+              798
+            ],
+            "text": "\\( h'(x) = \\sqrt{u} \\)",
+            "prediction": "\\( h'(x) = \\sqrt{u} \\)",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0020",
+            "bbox": [
+              2705,
+              719,
+              3185,
+              793
+            ],
+            "text": "\\( 2c = 4 = C = 2 \\)",
+            "prediction": "\\( 2c + 4 = 2 \\)",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0021",
+            "bbox": [
+              141,
+              813,
+              755,
+              920
+            ],
+            "text": "\\( g \\cdot f(x) = g(f(x)) \\)",
+            "prediction": "\\( g \\cdot f(x) = g(f(x)) \\)",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0022",
+            "bbox": [
+              1001,
+              875,
+              1411,
+              975
+            ],
+            "text": "\\[ h(x) = \\cos(3x^2) \\]",
+            "prediction": "\\[ h(x) = \\cos(3x^2) \\]",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0023",
+            "bbox": [
+              1965,
+              846,
+              2271,
+              941
+            ],
+            "text": "\\[ = u^{\\frac{1}{2}} \\cdot \\cos x \\]",
+            "prediction": "\\[ = u^{\\frac{1}{2}} \\cdot \\cos x \\]",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0024",
+            "bbox": [
+              47,
+              1011,
+              534,
+              1103
+            ],
+            "text": "\\[ g(x) = x^2 + 1 - 2 \\]",
+            "prediction": "\\[ f(x) = x^2 + 1 - 2 \\]",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0025",
+            "bbox": [
+              1022,
+              998,
+              1542,
+              1100
+            ],
+            "text": "\\[ h'(x) = \\]",
+            "prediction": "\\[ h'(x) = \\frac{1}{\\cos x} \\]",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0026",
+            "bbox": [
+              1965,
+              974,
+              2238,
+              1079
+            ],
+            "text": "\\[ = \\frac{\\cos x}{2\\sin x} \\]",
+            "prediction": "\\[ = \\frac{\\cos x}{2\\sin x} \\]",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0027",
+            "bbox": [
+              2455,
+              998,
+              2906,
+              1090
+            ],
+            "text": "\\[ f(x) = x^2 + 4x + 3 \\]",
+            "prediction": "\\[ f(x) = x^2 + 4x + 3 \\]",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0028",
+            "bbox": [
+              68,
+              1295,
+              519,
+              1384
+            ],
+            "text": "\\[ = 3x^2 + 1 \\]",
+            "prediction": "\\[ = 3x^2 + 1 \\]",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0029",
+            "bbox": [
+              83,
+              1167,
+              530,
+              1251
+            ],
+            "text": "\\[ 3x^2 + 3 - 2 \\]",
+            "prediction": "\\[ 3x^2 + 3 - 2 \\]",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0032",
+            "bbox": [
+              1189,
+              1222,
+              1560,
+              1296
+            ],
+            "text": "\\[ = \\sin u \\cdot 6x \\]",
+            "prediction": "\\[ = \\sin u \\cdot 6x \\]",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0033",
+            "bbox": [
+              1189,
+              1339,
+              1618,
+              1418
+            ],
+            "text": "\\[ = 6x - \\sin 3x^2 \\]",
+            "prediction": "\\[ = 6x - \\sin 3x^2 \\]",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0034",
+            "bbox": [
+              1759,
+              1183,
+              2115,
+              1283
+            ],
+            "text": "\\[ f(x) = (x^2 + 1)^3 \\]",
+            "prediction": "\\[ f(x) = (x^2 + 1)^3 \\]",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0035",
+            "bbox": [
+              1773,
+              1318,
+              2021,
+              1410
+            ],
+            "text": "\\[ f'(x) \\Rightarrow (u)^3 \\]",
+            "prediction": "\\[ f'(x) \\Rightarrow (u)^3 \\]",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0036",
+            "bbox": [
+              1882,
+              1435,
+              2198,
+              1515
+            ],
+            "text": "\\[ = 3u^2 \\cdot 2x \\]",
+            "prediction": "\\[ = 3u^2 \\cdot 2x \\]",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0037",
+            "bbox": [
+              1889,
+              1566,
+              2387,
+              1663
+            ],
+            "text": "$=3(x^2+1)^2 *2x$",
+            "prediction": "\\[ f(x) = (x^2 + 1)^2 \\]",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0038",
+            "bbox": [
+              2513,
+              1089,
+              2902,
+              1176
+            ],
+            "text": "$f(3)-f(1)$",
+            "prediction": "\\[ f(x) = x^2 + 4x + 3 \\]",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0039",
+            "bbox": [
+              2625,
+              1271,
+              2964,
+              1340
+            ],
+            "text": "\\[ 9 - 12 + 3 = 0 \\]",
+            "prediction": "\\[ 9 - 12 + 3 = 0 \\]",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0040",
+            "bbox": [
+              2698,
+              1375,
+              2949,
+              1475
+            ],
+            "text": "\\[ f(1) = f(3). \\]",
+            "prediction": "\\[ f(x) = f(x). \\]",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0041",
+            "bbox": [
+              36,
+              1441,
+              940,
+              1554
+            ],
+            "text": "\\[ f'(x) = 2a + 1, \\quad g'(x) = x^2 - 3 \\]",
+            "prediction": "\\[ f'(x) = 2a + 1, \\quad g'(x) = x^2 - 3 \\]",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0042",
+            "bbox": [
+              997,
+              1553,
+              1393,
+              1640
+            ],
+            "text": "\\[ h(x) = \\sin(\\sqrt{x}) \\]",
+            "prediction": "\\[ h(x) = \\sin(\\sqrt{x}) \\]",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0043",
+            "bbox": [
+              1889,
+              1560,
+              2391,
+              1663
+            ],
+            "text": "\\[ = 3(x^2 + 1)^2 \\cdot 2x \\]",
+            "prediction": "\\[ = 3(x^2 + 1)^2 \\cdot 2x \\]",
+            "order": 41,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0044",
+            "bbox": [
+              2640,
+              1527,
+              2986,
+              1621
+            ],
+            "text": "\\[ f'(x) = 2x - 4 \\]",
+            "prediction": "\\[ f'(x) = 2a - 4 \\]",
+            "order": 42,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0045",
+            "bbox": [
+              105,
+              1660,
+              697,
+              1762
+            ],
+            "text": "\\[ f.g = f(x^2 - 3) 2 + 1 \\]",
+            "prediction": "\\[ f.g = f(x^2 - 3) + 1 \\]",
+            "order": 43,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0046",
+            "bbox": [
+              997,
+              1654,
+              1604,
+              1773
+            ],
+            "text": "\\[ h'(x) = \\cos u \\cdot \\frac{1}{2\\sqrt{2x}} \\]",
+            "prediction": "\\[ h'(x) = \\cos u \\cdot \\sqrt{\\frac{1}{2x}} \\]",
+            "order": 44,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0048",
+            "bbox": [
+              2800,
+              1675,
+              3011,
+              1773
+            ],
+            "text": "$u=2$",
+            "prediction": "\\( x_1 = Q_1 \\)",
+            "order": 45,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0049",
+            "bbox": [
+              221,
+              1826,
+              519,
+              1911
+            ],
+            "text": "\\[ = 2x^2 = 5 \\]",
+            "prediction": "\\[ = 2a^2 - 5 \\]",
+            "order": 46,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0050",
+            "bbox": [
+              1127,
+              1813,
+              1480,
+              1921
+            ],
+            "text": "\\[ = \\frac{1}{2\\pi} \\cos \\sqrt{x} \\]",
+            "prediction": "\\[ = \\frac{1}{2\\pi} \\cos \\sqrt{x} \\]",
+            "order": 47,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0051",
+            "bbox": [
+              2469,
+              1850,
+              3033,
+              1942
+            ],
+            "text": "\\[ f(x) = \\sin x \\quad [0, \\pi] \\]",
+            "prediction": "\\[ f(x) = \\sin x \\quad [0, \\pi] \\]",
+            "order": 48,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0052",
+            "bbox": [
+              94,
+              1990,
+              693,
+              2098
+            ],
+            "text": "\\[ g \\cdot f = g(2x + 1)^2 - 3 \\]",
+            "prediction": "\\[ g \\cdot f = g(2x + 1)^2 - 3 \\]",
+            "order": 49,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0053",
+            "bbox": [
+              964,
+              1959,
+              1379,
+              2088
+            ],
+            "text": "\\[ h(x) = e^{(x^2 - 1)} \\]",
+            "prediction": "\\[ h(x) = e^{(x^2 - 1)} \\]",
+            "order": 50,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0054",
+            "bbox": [
+              1762,
+              1964,
+              2198,
+              2054
+            ],
+            "text": "\\[ f(x) = \\sin(2x + 3) \\]",
+            "prediction": "\\[ f(x) = \\sin(2x + 3) \\]",
+            "order": 51,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0055",
+            "bbox": [
+              2535,
+              1990,
+              2826,
+              2088
+            ],
+            "text": "\\[ f(\\pi) = f(0) \\]",
+            "prediction": "\\[ f(x) = f(x) \\]",
+            "order": 52,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0056",
+            "bbox": [
+              228,
+              2152,
+              642,
+              2249
+            ],
+            "text": "\\[ = 4x^2 + 4x - 2 \\]",
+            "prediction": "\\[ = 4x^2 + 4x - 2 \\]",
+            "order": 53,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0057",
+            "bbox": [
+              964,
+              2118,
+              1546,
+              2234
+            ],
+            "text": "\\[ h'(x) = e^x \\cdot u \\cdot 2x \\]",
+            "prediction": "\\[ h'(x) = e^x \\cdot u \\cdot 2x \\]",
+            "order": 54,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0058",
+            "bbox": [
+              1762,
+              2087,
+              2104,
+              2169
+            ],
+            "text": "\\[ f'(x) => sin u \\]",
+            "prediction": "\\[ f'(x) = 2\\sin u \\]",
+            "order": 55,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0059",
+            "bbox": [
+              1915,
+              2194,
+              2246,
+              2260
+            ],
+            "text": "\\[ = \\cos u \\cdot 2 \\]",
+            "prediction": "\\[ = \\cos u \\cdot 2 \\]",
+            "order": 56,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0060",
+            "bbox": [
+              1117,
+              2248,
+              1488,
+              2351
+            ],
+            "text": "\\[ = 2 \\times e \\cdot x^2 - 1 \\]",
+            "prediction": "\\[ = 2 \\times e \\cdot x^2 - 1 \\]",
+            "order": 57,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0134-line-0061",
+            "bbox": [
+              1889,
+              2340,
+              2256,
+              2414
+            ],
+            "text": "\\[ = 2 \\cos(2x + 3) \\]",
+            "prediction": "\\[ = 2 \\cos(2x + 3) \\]",
+            "order": 58,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T14:46:09.394Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T14:21:49.569Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 58
+        }
+      ]
     },
     "hf-0135": {
       "id": "hf-0135",
