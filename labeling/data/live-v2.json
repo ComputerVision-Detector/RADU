@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:25:46.820Z",
+  "updated_at": "2026-11-02T10:26:00.164Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -23470,20 +23470,361 @@
         "source_sha256": "c79c813b181df8f19497f36666047eb2ed51f6bf4bd24192df67a229b054efc7"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0076-line-0003",
+            "bbox": [
+              254,
+              508,
+              760,
+              601
+            ],
+            "text": "· 최근접 이웃 방법",
+            "prediction": "- 코드접 100 병법",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0076-line-0004",
+            "bbox": [
+              290,
+              588,
+              2238,
+              722
+            ],
+            "text": "- 기하 연산 후 나온 실수 좌표를 정수로 변환하는 과정에서 반올림을 사용해",
+            "prediction": "- 기하 면 흑 140 삭 라포를 정소 번화하는 과장에서 번율성을 사용해",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0076-line-0005",
+            "bbox": [
+              254,
+              963,
+              602,
+              1057
+            ],
+            "text": "· 선형 보간법",
+            "prediction": "- 서렘 보건법",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0076-line-0006",
+            "bbox": [
+              269,
+              1040,
+              2302,
+              1174
+            ],
+            "text": "- 실수 좌표 주변의 값을 하나만 가져오는게 아니라, 주변 값들을 거리에 따라",
+            "prediction": "- 실수 과로 직면의 잡을 하나만 가져오지 어둔, 지번 압돌을 가게 닥다",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0076-line-0007",
+            "bbox": [
+              329,
+              1181,
+              1189,
+              1291
+            ],
+            "text": "비율을 다르게 주어 계산하는 방법.",
+            "prediction": "배울을 다르게 징어 개선하는 방법.",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0076-line-0008",
+            "bbox": [
+              229,
+              1407,
+              663,
+              1537
+            ],
+            "text": "· 양선형 보간법",
+            "prediction": "양산청 완돼법",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a367ca4a-30e9-4ffc-a207-7c58a1da4e68",
+            "bbox": [
+              1025,
+              21,
+              1193,
+              135
+            ],
+            "text": "보간법",
+            "prediction": "",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-3587127f-95ec-480f-8604-d7f28e3e461a",
+            "bbox": [
+              1056,
+              110,
+              1350,
+              208
+            ],
+            "text": "└ 선형 보간",
+            "prediction": "",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-65d38ea9-d4e3-4c62-93e5-aaed9d567098",
+            "bbox": [
+              1050,
+              185,
+              1470,
+              282
+            ],
+            "text": "├ 최근접 이웃 보간",
+            "prediction": "",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-51b6761d-da13-4a57-9a43-299f7bd55444",
+            "bbox": [
+              1071,
+              259,
+              1451,
+              351
+            ],
+            "text": "├ 양선형 보간",
+            "prediction": "",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e7d07b4a-754c-4844-bcfe-19f7123bf584",
+            "bbox": [
+              1098,
+              322,
+              1468,
+              431
+            ],
+            "text": "└ 양 3차 보간",
+            "prediction": "",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-3e8279bd-8a4b-47d3-a764-f46dc6b90b15",
+            "bbox": [
+              365,
+              711,
+              1298,
+              838
+            ],
+            "text": "가장 가까운 화소에 배정하는 기법.",
+            "prediction": "",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2105c803-7b20-4d19-92cf-adbfbe79d51d",
+            "bbox": [
+              290,
+              1518,
+              1827,
+              1664
+            ],
+            "text": "- 주변 4개 픽셀을 사용하여 \\(x,y\\) 방향으로 선형 보간",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9c80b453-b1a5-44c3-aba0-d06170829b07",
+            "bbox": [
+              290,
+              1629,
+              2139,
+              1796
+            ],
+            "text": "- 선형 보간을 한 방향으로 한 번 적용하고, 그 결과에 다른 방향으로",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-df2d4cf9-cc5e-4e1e-a762-1f0af490ccd3",
+            "bbox": [
+              333,
+              1778,
+              1090,
+              1902
+            ],
+            "text": "다시 한번 적용하는 방법.",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9ca83ebe-c180-4260-92b5-75e6d76baa7b",
+            "bbox": [
+              213,
+              2027,
+              673,
+              2175
+            ],
+            "text": "· 양 3차 보간법",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6783c40d-cebb-45f3-8c98-9f83a8112494",
+            "bbox": [
+              246,
+              2121,
+              1658,
+              2292
+            ],
+            "text": "- 16개의 이웃과 3차 함수를 사용해 보간하는 방법.",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ebc3dc55-8d42-4345-a2eb-7e998ccee00f",
+            "bbox": [
+              194,
+              2409,
+              608,
+              2543
+            ],
+            "text": "· 에지 (edge)",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9ef0da7d-0715-403c-b700-64af3efb4f7b",
+            "bbox": [
+              228,
+              2535,
+              861,
+              2694
+            ],
+            "text": "- 물체 경계에 있는 점.",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-31b24a55-ee3e-4d9f-af9c-c98745a6dc6c",
+            "bbox": [
+              181,
+              2774,
+              2236,
+              2935
+            ],
+            "text": "· 에지 검출과 영역 분할을 각각 한 쪽이 완벽하게 해결되면 다른 쪽도",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e94eafea-de82-42ca-ae26-017a23204a13",
+            "bbox": [
+              248,
+              2942,
+              819,
+              3044
+            ],
+            "text": "해결되는 쌍대문제",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-59ee23b9-f2d2-44ad-884d-6c57dd758788",
+            "bbox": [
+              156,
+              3203,
+              464,
+              3349
+            ],
+            "text": "· 의미분할",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-90c40fae-b3f7-4a78-81f5-814d3babdf82",
+            "bbox": [
+              201,
+              3305,
+              2241,
+              3476
+            ],
+            "text": "- 영역 분할을 할 때 머리속에 기억된 물체 모델을 활용해 영역이 어떤",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e7cf91d3-af6b-429b-9c98-bc89b7677903",
+            "bbox": [
+              263,
+              3473,
+              1338,
+              3620
+            ],
+            "text": "물체에 해당하는지 동시에 알아내는 것.",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T10:48:28.777Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T10:26:00.164Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 24
+        }
+      ]
     },
     "hf-0077": {
       "id": "hf-0077",
