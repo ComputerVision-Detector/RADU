@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T15:18:09.451Z",
+  "updated_at": "2026-11-02T15:18:55.705Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -50333,20 +50333,431 @@
         "source_sha256": "5e7a311128506d67cd5ecd21aca6020fbe350a2f856031ded46cd8a09e70c9b3"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0145-line-0001",
+            "bbox": [
+              58,
+              226,
+              199,
+              307
+            ],
+            "text": "05 강",
+            "prediction": "05 감",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0002",
+            "bbox": [
+              291,
+              349,
+              325,
+              386
+            ],
+            "text": "0",
+            "prediction": "-",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0003",
+            "bbox": [
+              350,
+              326,
+              1620,
+              403
+            ],
+            "text": "Strided Convolution: Filter의 이동을 2칸 이상씩 진행하는 것",
+            "prediction": "Strided Convolution: Filter of 이름을 2간 이상씩 진행하는 것.",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0004",
+            "bbox": [
+              380,
+              425,
+              1255,
+              496
+            ],
+            "text": "=> 이때, 수식에는 stride = S 로 표기됨",
+            "prediction": "=> 이때, 수색에는 stride = S로 로커웠다.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0005",
+            "bbox": [
+              477,
+              512,
+              2438,
+              596
+            ],
+            "text": "$\\therefore \\frac{n+p-p}{s} + 1 \\times \\frac{n+p-p}{s} + 1 \\Rightarrow S = 2일 때, \\frac{n+0-3}{2} + 1 = 3 이므로 \\( 3 \\times 3 \\) 행렬이 도출됨",
+            "prediction": "$\\therefore \\frac{n+p-p}{s} + 1 \\times \\frac{n+p-p}{s} + 1 \\Rightarrow S = 2일 때, \\frac{n+0-3}{2} + 1 = 3 이므로 \\( 3 \\times 3 \\) 한념열이 모춘옷다.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0006",
+            "bbox": [
+              566,
+              612,
+              2281,
+              693
+            ],
+            "text": "if!! $\\frac{n+p-p}{s}$ it int 형이 아니라면? → 결과에서 내림을 해 가장 가까운 정수로 치환",
+            "prediction": "if!! $\\frac{n+p-p}{s}$ it int 혐이 이시리면? → 결과에서 내림은 헤 가잠 기간은 점수로 지한.",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0007",
+            "bbox": [
+              594,
+              711,
+              2022,
+              789
+            ],
+            "text": "(이는 filter가 image 밖으로 빠진 값을 연산하지 않겠다는 것과 비슷.)",
+            "prediction": "(이는 filter가 image 밖으로 비판 같은 (변산하지 않긴다는 것과 밖은))",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0008",
+            "bbox": [
+              71,
+              914,
+              826,
+              985
+            ],
+            "text": "6강 - - - - - - - 3차원에서의 합성곱",
+            "prediction": "675 - - - - - - - 3차전에서 간범돈돈",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0009",
+            "bbox": [
+              355,
+              1021,
+              925,
+              1095
+            ],
+            "text": "Convolutions on RGB image",
+            "prediction": "Convolutions on RGB image",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0010",
+            "bbox": [
+              1531,
+              1117,
+              2377,
+              1222
+            ],
+            "text": "- 해당 filter에 어떤 값을 넣는지에 따라",
+            "prediction": "- 채도 filter에 어떤 곳을 넣는데 따라,",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0011",
+            "bbox": [
+              1579,
+              1201,
+              2438,
+              1288
+            ],
+            "text": "R, G, B 에 대해 각각 또는 세 개를 아우르는",
+            "prediction": "R, G, B 에 대해 각각 모든 세 개를 이루는",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0012",
+            "bbox": [
+              396,
+              1354,
+              579,
+              1424
+            ],
+            "text": "6*6*3",
+            "prediction": "\\( 6 \\times 6 \\times 3 \\)",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0013",
+            "bbox": [
+              738,
+              1364,
+              904,
+              1424
+            ],
+            "text": "\\( 3 \\times 3 \\times 3 \\)",
+            "prediction": "\\( 3 \\times 3 \\times 3 \\)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0014",
+            "bbox": [
+              1081,
+              1364,
+              1194,
+              1418
+            ],
+            "text": "\\( 4 \\times 4 \\)",
+            "prediction": "\\( 4 \\times 4 \\)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0015",
+            "bbox": [
+              1594,
+              1364,
+              2179,
+              1438
+            ],
+            "text": "ex) R의 윤곽선 검출을 원할때",
+            "prediction": "ex) R이 문곽한 검찰을 짐날어.",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0016",
+            "bbox": [
+              368,
+              1440,
+              765,
+              1511
+            ],
+            "text": "height width channels.",
+            "prediction": "height width channels.",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0017",
+            "bbox": [
+              599,
+              1517,
+              1039,
+              1584
+            ],
+            "text": "의 사이즈가 동일해야 함",
+            "prediction": "의 A는 2가 폭발하다 한.",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0018",
+            "bbox": [
+              1373,
+              1583,
+              2438,
+              1691
+            ],
+            "text": "Summary: \\( n-f+1 \\times n-f+1 \\times |n_c| \\rightarrow A \\) 사용된 filter 수",
+            "prediction": "Summary: \\( n-f+1 \\times n-f+1 \\times |n_c| \\rightarrow A \\) 폭탄 filter 수",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0019",
+            "bbox": [
+              698,
+              1723,
+              876,
+              1777
+            ],
+            "text": "horizontal",
+            "prediction": "horizontal",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0020",
+            "bbox": [
+              1048,
+              1773,
+              1163,
+              1824
+            ],
+            "text": "\\( 4 \\times 4 \\)",
+            "prediction": "\\( 4 \\times 4 \\)",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0021",
+            "bbox": [
+              1594,
+              1696,
+              1854,
+              1760
+            ],
+            "text": "= 4 × 4 × 2",
+            "prediction": "= 4 × 4 × 2",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0022",
+            "bbox": [
+              0,
+              2089,
+              277,
+              2170
+            ],
+            "text": "7장 ~ 8장",
+            "prediction": "75 ~ 85%",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0023",
+            "bbox": [
+              337,
+              2089,
+              701,
+              2170
+            ],
+            "text": "- - - - ConvNet",
+            "prediction": "- - - - ConNet",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0024",
+            "bbox": [
+              375,
+              2202,
+              816,
+              2266
+            ],
+            "text": "convolution layer 'l':",
+            "prediction": "convolution layer 'i':",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0025",
+            "bbox": [
+              1421,
+              2162,
+              2250,
+              2286
+            ],
+            "text": "Input: \\( n_H^{[L-1]} \\times n_W^{[L-1]} \\times n_C^{[L-1]} \\)",
+            "prediction": "Input: \\( n_H^{[L-1]} \\times n_W^{[L-1]} \\times n_C^{[L-1]} \\)",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0026",
+            "bbox": [
+              385,
+              2285,
+              788,
+              2363
+            ],
+            "text": "\\( f^{[L]} = \\text{filter size} \\)",
+            "prediction": "\\( f^{[L]} = \\text{filter size} \\)",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0027",
+            "bbox": [
+              1429,
+              2265,
+              2136,
+              2376
+            ],
+            "text": "Output: \\( n_H^{[L]} \\times n_W^{[L]} \\times n_C^{[L]} \\)",
+            "prediction": "Output: \\( n_H^{[L]} \\times n_W^{[L]} \\times n_C^{[L]} \\)",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0028",
+            "bbox": [
+              385,
+              2378,
+              709,
+              2459
+            ],
+            "text": "p[l] = padding",
+            "prediction": "p[c] = padding",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0145-line-0029",
+            "bbox": [
+              391,
+              2475,
+              673,
+              2546
+            ],
+            "text": "s[l] = stride",
+            "prediction": "s[i] = stride",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T15:43:09.451Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T15:18:55.705Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 29
+        }
+      ]
     },
     "hf-0146": {
       "id": "hf-0146",
