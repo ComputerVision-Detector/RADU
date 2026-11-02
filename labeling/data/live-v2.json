@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T07:41:28.732Z",
+  "updated_at": "2026-11-02T07:42:36.286Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -18358,20 +18358,347 @@
         "source_sha256": "05fecd786e111b45a7c9ebe367217c35aca096d6c0e29033b7e8dee02104a3aa"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0060-line-0003",
+            "bbox": [
+              181,
+              346,
+              397,
+              440
+            ],
+            "text": "· 인코딩",
+            "prediction": "- 1984年- 2001年- 2010年",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0060-line-0005",
+            "bbox": [
+              178,
+              452,
+              1703,
+              593
+            ],
+            "text": "- 인간이 이해할 수 없는 코드로 쓰여있는 것. (은닉층의 정보)",
+            "prediction": "이해할 수 없는 코드로 쓰여줬는 길. (팀총의 점보)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0060-line-0007",
+            "bbox": [
+              184,
+              721,
+              368,
+              823
+            ],
+            "text": "· 디코딩",
+            "prediction": "- 1984年- 2002年- 2010年- 2023年",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0060-line-0009",
+            "bbox": [
+              176,
+              826,
+              1872,
+              980
+            ],
+            "text": "- 인코딩된 정보를 인간이 이해할 수 있는 표현으로 복원하는 작업.",
+            "prediction": "정보를 한다 이해할 수 있는 표현으로 복원하는 작업.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0060-line-0010",
+            "bbox": [
+              181,
+              1060,
+              1661,
+              1214
+            ],
+            "text": "- 딥러닝에서의 인코딩 : 의미를 계산하기 쉽게 표현",
+            "prediction": "- 압력에서의 친구의 : 이를 지낸 채 쉽게 표현",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a9cacf6c-0835-471b-ab3e-fa75219713c8",
+            "bbox": [
+              237,
+              1174,
+              1973,
+              1340
+            ],
+            "text": "- API/네트워크에서의 인코딩: 데이터를 안전하게 저장하거나 전송",
+            "prediction": "",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-df2e92f0-c439-44d6-b070-025fa8a0e009",
+            "bbox": [
+              1037,
+              1296,
+              2482,
+              1479
+            ],
+            "text": "(ex. 문자 → 바이트, 특수문자 → URL에서 사용 가능한 형태)",
+            "prediction": "",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-1eeac1dc-bfb9-4469-adfe-c3c28b0f4647",
+            "bbox": [
+              209,
+              1484,
+              1386,
+              1612
+            ],
+            "text": "- 딥러닝과 API/네트워크 인코딩의 공통점",
+            "prediction": "",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-7dad8ea5-11b2-417a-9074-3f79ee6f9235",
+            "bbox": [
+              381,
+              1592,
+              1552,
+              1742
+            ],
+            "text": "└ 정보를 더 다루기 쉬운 형태로 표현한다.",
+            "prediction": "",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-94b9f702-e09b-477e-b926-21d517f1ef1e",
+            "bbox": [
+              129,
+              1864,
+              1330,
+              2010
+            ],
+            "text": "· Matmul 계층 (Matrix Multiplication)",
+            "prediction": "",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-3b1022ee-537b-45f7-89b1-3400ed7175cf",
+            "bbox": [
+              176,
+              1966,
+              2186,
+              2154
+            ],
+            "text": "- 신경망에서 입력과 가중치를 행렬 곱하여 다음 계층으로 전달하는 계층.",
+            "prediction": "",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-4e152f52-07ce-48b6-95f0-3e456908b843",
+            "bbox": [
+              190,
+              2107,
+              2017,
+              2273
+            ],
+            "text": "- 입력 벡터와 가중치 행렬을 곱하여 새로운 벡터를 만드는 계층.",
+            "prediction": "",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-04074a61-e8bd-467d-9764-5db05e69deaa",
+            "bbox": [
+              613,
+              2284,
+              1004,
+              2426
+            ],
+            "text": "\\(Y = XW\\)",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-37597208-ebc1-46ad-992f-492c89afa0e9",
+            "bbox": [
+              481,
+              2437,
+              588,
+              2558
+            ],
+            "text": "출력",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ec33fd52-a374-4e4b-aabe-1b2fbc95e257",
+            "bbox": [
+              658,
+              2467,
+              1026,
+              2686
+            ],
+            "text": "입력 벡터\n(OR 행렬)",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-8217815d-703c-4a35-9849-55256fbf8221",
+            "bbox": [
+              1059,
+              2354,
+              1364,
+              2525
+            ],
+            "text": "가중치행렬",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-3d537641-ff0f-4c01-a59c-2df2dd0b085d",
+            "bbox": [
+              187,
+              2683,
+              1070,
+              2857
+            ],
+            "text": "- 합성곱계층(Conv)과 차이점.",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-67f6afd0-1100-47d5-98da-58d1ab8a0e65",
+            "bbox": [
+              198,
+              2783,
+              2335,
+              2999
+            ],
+            "text": "└ Matmul은 입력 전체를 가중치 행렬과 한 번에 계산 (완전연결 계층)",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a014253c-0a15-48ab-a37c-136d28f09ac9",
+            "bbox": [
+              273,
+              2963,
+              1737,
+              3156
+            ],
+            "text": "(ex. 784차원 입력이면 10개 뉴런과 모두 연결됨",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-82c8810f-37e1-44f1-a4fd-218f72cd9394",
+            "bbox": [
+              193,
+              3082,
+              2302,
+              3281
+            ],
+            "text": "└ Conv(합성곱)은 입력 전체를 보지 않고 작은 필터를 이동시키며 계산",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a6024fe1-83c3-4592-8e9b-00ab39644c0a",
+            "bbox": [
+              301,
+              3273,
+              865,
+              3419
+            ],
+            "text": "특징맵이 출력됨.",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5b509385-85b4-4864-b90a-34635f4578f8",
+            "bbox": [
+              123,
+              3508,
+              2393,
+              3740
+            ],
+            "text": "- 결국 Matmul도 모든 뉴런이 연결되기에 '완전연결계층'이라는 틀 안에 있음.",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a9c055e5-c05c-44d9-9cef-4b3fe45ab54f",
+            "bbox": [
+              143,
+              3668,
+              2784,
+              3873
+            ],
+            "text": "- Matmul(행렬 곱이라는 연산), Matmul 계층(그 연산을 수행하는 계층), 완전연결계층(계층의 구조)",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T08:06:28.732Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T07:42:36.286Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 23
+        }
+      ]
     },
     "hf-0061": {
       "id": "hf-0061",
