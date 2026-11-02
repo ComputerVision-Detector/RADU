@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T13:10:19.715Z",
+  "updated_at": "2026-11-02T13:10:51.491Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -37965,20 +37965,39 @@
         "source_sha256": "34b04d441e4e8bea7728dc5c22ce4bac879a97a5fe3abb769dbd915b73f25e33"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
         "proposal_version": "",
-        "boxes": []
+        "boxes": [
+          {
+            "id": "line-051f4ae7-bb8a-41e1-9e6f-532ea1953469",
+            "bbox": [
+              1192,
+              317,
+              2258,
+              459
+            ],
+            "text": "채팅사이드 만들기 (개발하는 정대리)",
+            "prediction": "",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T13:35:19.715Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T13:10:51.491Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 1
+        }
+      ]
     },
     "hf-0122": {
       "id": "hf-0122",
