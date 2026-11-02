@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:45:50.276Z",
+  "updated_at": "2026-11-02T10:45:53.575Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -27285,20 +27285,417 @@
         "source_sha256": "e909386945fb0cc8008cf1ec788cbf4215900738ba4f59fb277c5e1147c36c74"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0090-line-0001",
+            "bbox": [
+              87,
+              342,
+              499,
+              444
+            ],
+            "text": "\\(v=0,\\ u=-1\\)",
+            "prediction": "\\[ v = 0, \\quad u = -1 \\]",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0090-line-0002",
+            "bbox": [
+              556,
+              326,
+              983,
+              432
+            ],
+            "text": "\\(f(5,2)=0\\)",
+            "prediction": "\\( f(5,2) = 0 \\)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0090-line-0003",
+            "bbox": [
+              1400,
+              229,
+              2262,
+              375
+            ],
+            "text": "\\(v=0,\\ u=-1 \\quad f(7,2)=0\\)",
+            "prediction": "\\( v = 0, \\quad u = -1 \\quad f'(7,2) = 0 \\)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0090-line-0004",
+            "bbox": [
+              87,
+              463,
+              499,
+              565
+            ],
+            "text": "\\(v=0,\\ u=-1\\)",
+            "prediction": "\\( v = 0, \\quad u = -1 \\)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0090-line-0005",
+            "bbox": [
+              547,
+              443,
+              950,
+              553
+            ],
+            "text": "\\(f(5,3)=1\\)",
+            "prediction": "\\( f(5,3) = 1 \\)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0090-line-0006",
+            "bbox": [
+              1409,
+              362,
+              2272,
+              509
+            ],
+            "text": "\\(v=0,\\ u=-1 \\quad f(7,3)=0\\)",
+            "prediction": "\\( v = 0, \\quad u = -1 \\quad f(7,3) = 0 \\)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0090-line-0007",
+            "bbox": [
+              90,
+              584,
+              496,
+              686
+            ],
+            "text": "\\(v=0,\\ u=-1\\)",
+            "prediction": "\\( v = 0, \\quad u = -1 \\)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0090-line-0008",
+            "bbox": [
+              553,
+              568,
+              965,
+              670
+            ],
+            "text": "\\(f(5,4)=0\\)",
+            "prediction": "\\( f(5,4) = 0 \\)",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0090-line-0009",
+            "bbox": [
+              1418,
+              495,
+              2311,
+              638
+            ],
+            "text": "\\(v=0,\\ u=-1 \\quad f(7,4)=0\\)",
+            "prediction": "\\( v = 0, \\quad u = -1 \\quad f(7,4) = 0 \\)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0090-line-0010",
+            "bbox": [
+              90,
+              709,
+              496,
+              807
+            ],
+            "text": "\\(v=0,\\ u=-1\\)",
+            "prediction": "\\( v = 0, \\quad u = -1 \\)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0090-line-0011",
+            "bbox": [
+              553,
+              685,
+              965,
+              791
+            ],
+            "text": "\\(f(6,2)=0\\)",
+            "prediction": "\\( f(6,2) = 0 \\)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0090-line-0012",
+            "bbox": [
+              87,
+              838,
+              499,
+              944
+            ],
+            "text": "\\(v=0,\\ u=-1\\)",
+            "prediction": "\\( v = 0, \\quad u = -1 \\)",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0090-line-0013",
+            "bbox": [
+              547,
+              818,
+              974,
+              932
+            ],
+            "text": "\\(f(6,3)=1\\)",
+            "prediction": "\\( f(6,3) = 1 \\)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0090-line-0014",
+            "bbox": [
+              87,
+              971,
+              499,
+              1077
+            ],
+            "text": "\\(v=0,\\ u=-1\\)",
+            "prediction": "\\( v = 0, \\quad u = -1 \\)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0090-line-0015",
+            "bbox": [
+              562,
+              951,
+              1017,
+              1061
+            ],
+            "text": "\\(f(6,4)=0\\)",
+            "prediction": "\\( f(6,4) = 0 \\)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0090-line-0016",
+            "bbox": [
+              87,
+              1185,
+              2407,
+              1363
+            ],
+            "text": "\\((f(y+v,x+u)-f(y,x))^2\\) 인데 \\(v=0,\\ u=0\\) 이면",
+            "prediction": "\\( v = 0, \\quad u = 0 \\)",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c6d3986e-3399-4ff3-b356-e5ed7e8a74c0",
+            "bbox": [
+              582,
+              1364,
+              2198,
+              1471
+            ],
+            "text": "얘와 이놈이 같은 좌표를 가리키고",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6e61bfc4-d68f-40d6-a986-e2127fc01863",
+            "bbox": [
+              93,
+              1493,
+              1665,
+              1626
+            ],
+            "text": "결국 그것을 빼버리면 항상 0. 즉 \\(S(0,0)=0\\)",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e84fb234-908a-4940-8185-5e55b199ddeb",
+            "bbox": [
+              105,
+              1629,
+              1261,
+              1771
+            ],
+            "text": "(같은 좌표 - 같은 좌표)\\(^2\\) 가 됨.",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-143732d5-2d9f-459a-9705-86a17dd12167",
+            "bbox": [
+              87,
+              1909,
+              996,
+              2039
+            ],
+            "text": "\\(v=0,\\ u=1 \\quad f(5,2)=1\\)",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9f119808-68f6-4ad6-a8dc-bf264910b044",
+            "bbox": [
+              78,
+              2057,
+              1019,
+              2175
+            ],
+            "text": "\\(v=0,\\ u=1 \\quad f(5,3)=0\\)",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-1dcab03e-9083-4cb5-a686-7e9a22df3cfb",
+            "bbox": [
+              96,
+              2181,
+              1019,
+              2287
+            ],
+            "text": "\\(v=0,\\ u=1 \\quad f(5,4)=0\\)",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-73162f17-dc25-4378-a713-931bd2a400f3",
+            "bbox": [
+              102,
+              2290,
+              1001,
+              2423
+            ],
+            "text": "\\(v=0,\\ u=1 \\quad f(6,2)=1\\)",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-963aee97-bba0-46ed-8122-9f2f31c7088b",
+            "bbox": [
+              102,
+              2431,
+              1019,
+              2549
+            ],
+            "text": "\\(v=0,\\ u=1 \\quad f(6,3)=0\\)",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-90289bd1-284e-46e6-ba4b-e653f0d42a0b",
+            "bbox": [
+              105,
+              2570,
+              1052,
+              2679
+            ],
+            "text": "\\(v=0,\\ u=1 \\quad f(6,4)=0\\)",
+            "prediction": "",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-4b865638-dc9f-43e5-875d-804141b9482b",
+            "bbox": [
+              1406,
+              1886,
+              2252,
+              2057
+            ],
+            "text": "\\(v=0,\\ u=1 \\quad f(7,2)=0\\)",
+            "prediction": "",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-4d79202c-8ef4-42cf-bd52-a6a77bde2449",
+            "bbox": [
+              1403,
+              2027,
+              2300,
+              2154
+            ],
+            "text": "\\(v=0,\\ u=1 \\quad f(7,3)=0\\)",
+            "prediction": "",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5f5708ef-1d24-40e0-8568-3c462193170d",
+            "bbox": [
+              1435,
+              2160,
+              2347,
+              2278
+            ],
+            "text": "\\(v=0,\\ u=1 \\quad f(7,4)=0\\)",
+            "prediction": "",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T11:09:28.724Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T10:45:53.575Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 28
+        }
+      ]
     },
     "hf-0091": {
       "id": "hf-0091",
