@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T06:53:38.895Z",
+  "updated_at": "2026-11-02T06:56:24.158Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -6135,7 +6135,7 @@
       },
       "bbox_annotation": {
         "status": "verified",
-        "revision": 1,
+        "revision": 2,
         "annotator": "이나현",
         "notes": "",
         "no_text": false,
@@ -6177,7 +6177,7 @@
               1431,
               625
             ],
-            "text": "- 결정 경계를 정하는 문제에서 고려할 사항",
+            "text": "· 결정 경계를 정하는 문제에서 고려할 사항",
             "prediction": "- 걱정 경계를 잡히는 문제에서 따라할 사항",
             "order": 3,
             "uncertain": false,
@@ -6289,7 +6289,7 @@
               2247,
               1335
             ],
-            "text": "- 아웃라이어를 맞추기 위해 과도하게 복잡한 결정 경계를 만든 경우",
+            "text": "→ 아웃라이어를 맞추기 위해 과도하게 복잡한 결정 경계를 만든 경우",
             "prediction": "- 옷접어서를 잊혀 왜에 따라져 복합한 결정 경제를 먼저 경우",
             "order": 11,
             "uncertain": false,
@@ -6303,7 +6303,7 @@
               1694,
               1577
             ],
-            "text": "- SUM에서 두 부류 까지의 거리 = 여백 (margin)",
+            "text": "· SUM에서 두 부류 까지의 거리 = 여백 (margin)",
             "prediction": "- SUM에서 득 부유 개지의 거리 = 여백 (margin)",
             "order": 12,
             "uncertain": false,
@@ -6317,9 +6317,9 @@
               723,
               2194
             ],
-            "text": "- SUM 학습 알고리즘",
+            "text": "· SUM 학습 알고리즘",
             "prediction": "- SUM 환급 알고침증",
-            "order": 13,
+            "order": 18,
             "uncertain": false,
             "reviewed": true
           },
@@ -6333,21 +6333,21 @@
             ],
             "text": "- 여백을 최대화화는 결정경계릉 찾는 것.",
             "prediction": "- 옛날을 좌채하는 절장경계를 쫓는 것.",
-            "order": 14,
+            "order": 19,
             "uncertain": false,
             "reviewed": true
           },
           {
             "id": "hf-0018-line-0017",
             "bbox": [
-              244,
-              2322,
-              1664,
-              2448
+              240,
+              2325,
+              1660,
+              2451
             ],
             "text": "- 선형 분류 한계를 벗어나기 위해 커널 트릭을 사용.",
             "prediction": "- 선형 분주 학계를 봤어내 위해 거닐 트럼을 사용.",
-            "order": 15,
+            "order": 20,
             "uncertain": false,
             "reviewed": true
           },
@@ -6361,7 +6361,7 @@
             ],
             "text": "- SUM에서 사용하는 커널 함수",
             "prediction": "- SUM에서 사용하는 거널 합수",
-            "order": 16,
+            "order": 21,
             "uncertain": false,
             "reviewed": true
           },
@@ -6375,7 +6375,7 @@
             ],
             "text": "polynomial",
             "prediction": "polynomial",
-            "order": 17,
+            "order": 22,
             "uncertain": false,
             "reviewed": true
           },
@@ -6389,7 +6389,7 @@
             ],
             "text": "radial basis",
             "prediction": "radial basis",
-            "order": 18,
+            "order": 23,
             "uncertain": false,
             "reviewed": true
           },
@@ -6403,7 +6403,7 @@
             ],
             "text": "sigmoid",
             "prediction": "sigmoid",
-            "order": 19,
+            "order": 24,
             "uncertain": false,
             "reviewed": true
           },
@@ -6417,7 +6417,7 @@
             ],
             "text": "- 여백에 크기와 잘못 분류한 샘플의 수는 트레이드 오프 관계",
             "prediction": "- 예뻐에 크기와 잘못 밝혀져 생풀의 수는 드레이트 모드 컨커",
-            "order": 20,
+            "order": 25,
             "uncertain": false,
             "reviewed": true
           },
@@ -6431,7 +6431,7 @@
             ],
             "text": "- SUM에는 여백의 크기와 잘못 분류한 샘플의 수 사이에서",
             "prediction": "- SUM에는 여백의 크기로 잘못 분류한 생족의 수 사이에서",
-            "order": 21,
+            "order": 26,
             "uncertain": false,
             "reviewed": true
           },
@@ -6445,7 +6445,7 @@
             ],
             "text": "둘을 조정하는 하이퍼 매개변수가 있음.",
             "prediction": "돌을 조절하는 하이티 배벤스가 있음.",
-            "order": 22,
+            "order": 27,
             "uncertain": false,
             "reviewed": true
           },
@@ -6457,20 +6457,121 @@
               1854,
               3774
             ],
-            "text": "C를 여백, C 여백↑, 잘못 분류한 샘플↑",
+            "text": "→ C를 ↑ 여백 ↓, C ↓ 여백 ↑ 잘못 분류한 샘플 ↑",
             "prediction": "(C를 4 캡↓, C는 여백↑, 총론 붙는십불↑",
-            "order": 23,
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b16f5088-17dc-431c-8351-b64c79078e3b",
+            "bbox": [
+              1022,
+              1754,
+              1735,
+              1863
+            ],
+            "text": "SVM Support Vector Machine",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-bbd5ca9c-44cb-411a-aae2-06f05ac17a9c",
+            "bbox": [
+              1131,
+              1820,
+              1907,
+              1946
+            ],
+            "text": "SVC (Support Vector Classification)",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-49cce966-17d3-407c-b9f0-df84098f9810",
+            "bbox": [
+              1171,
+              1906,
+              1606,
+              2001
+            ],
+            "text": "└ 분류 (클래스분류)",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ee2338af-eb21-4393-b31b-eaf8dadbf9ae",
+            "bbox": [
+              1128,
+              1952,
+              1896,
+              2078
+            ],
+            "text": "SVR (Support Vector Regression)",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e26ea7c6-677c-42e3-b170-44bae3802a6d",
+            "bbox": [
+              1179,
+              2047,
+              1807,
+              2170
+            ],
+            "text": "└ 회귀 (연속적인 값 예측)",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c238569f-f989-4c3a-a059-5a36ea480f66",
+            "bbox": [
+              1082,
+              2459,
+              2228,
+              2574
+            ],
+            "text": "→커널 함수를 사용해 선형 공간을",
+            "prediction": "",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-1469ed6c-7de7-43a9-a96e-94051a5d403a",
+            "bbox": [
+              1176,
+              2580,
+              1821,
+              2723
+            ],
+            "text": "비선형 공간으로 확장.",
+            "prediction": "",
+            "order": 30,
             "uncertain": false,
             "reviewed": true
           }
         ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T07:18:28.717Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-11-02T06:56:24.158Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 2,
+          "box_count": 30
+        },
         {
           "at": "2026-10-30T14:40:04.755Z",
           "author": "이나현",
