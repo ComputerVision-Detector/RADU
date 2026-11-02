@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T11:00:00.509Z",
+  "updated_at": "2026-11-02T11:02:23.840Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -29522,20 +29522,375 @@
         "source_sha256": "b5fef76ebfc2736b22514ad78d974b00de1d31f7a80e7fa203fda2b1cf4c9bd0"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0098-line-0001",
+            "bbox": [
+              1944,
+              0,
+              2722,
+              73
+            ],
+            "text": "year month day ( )",
+            "prediction": "year month day ( )",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0002",
+            "bbox": [
+              1197,
+              262,
+              2217,
+              359
+            ],
+            "text": "- 나태주 <꽃을 보듯 너를 본다 中>",
+            "prediction": "- 4태크 <꽃을 보듯 볼 본다 147>",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0003",
+            "bbox": [
+              190,
+              387,
+              959,
+              480
+            ],
+            "text": "떠나야 할 때를 안다는 것은",
+            "prediction": "예내야 할 예를 안다는 것은",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0004",
+            "bbox": [
+              178,
+              516,
+              484,
+              609
+            ],
+            "text": "슬픈 일이다",
+            "prediction": "슬픈 일이다",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0005",
+            "bbox": [
+              160,
+              641,
+              896,
+              738
+            ],
+            "text": "잊어야 할 때를 안다는 것은",
+            "prediction": "일하야 볼 예를 안는 걷은",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0006",
+            "bbox": [
+              142,
+              766,
+              427,
+              871
+            ],
+            "text": "슬픈 일이다",
+            "prediction": "슬픈 일이다",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0007",
+            "bbox": [
+              151,
+              883,
+              899,
+              996
+            ],
+            "text": "내가 나를 안다는 것은 더욱",
+            "prediction": "내가 나를 안다는 것은 더욱",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0008",
+            "bbox": [
+              142,
+              1028,
+              445,
+              1138
+            ],
+            "text": "슬픈 일이다",
+            "prediction": "슬픈 일이다",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0009",
+            "bbox": [
+              142,
+              1294,
+              623,
+              1404
+            ],
+            "text": "우리는 잠시 세상에",
+            "prediction": "우리는 잠시 세상에",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0010",
+            "bbox": [
+              142,
+              1423,
+              608,
+              1537
+            ],
+            "text": "머물다 가는 사람들",
+            "prediction": "머물다 가는 사람들",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0011",
+            "bbox": [
+              142,
+              1564,
+              617,
+              1666
+            ],
+            "text": "네가 보고 있는 것은",
+            "prediction": "날가 보고 있는 것은",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0012",
+            "bbox": [
+              142,
+              1693,
+              472,
+              1803
+            ],
+            "text": "나의 흰구름",
+            "prediction": "4의 환급들",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0013",
+            "bbox": [
+              151,
+              1826,
+              705,
+              1936
+            ],
+            "text": "내가 보고 있는 것은",
+            "prediction": "44가 보고 있는 것은",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0014",
+            "bbox": [
+              151,
+              1963,
+              466,
+              2069
+            ],
+            "text": "너의 흰구름",
+            "prediction": "내의 환급름",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0015",
+            "bbox": [
+              142,
+              2217,
+              902,
+              2347
+            ],
+            "text": "누군가 개구쟁이 화가가 있어",
+            "prediction": "누군가 개편이 화척 있어",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0016",
+            "bbox": [
+              142,
+              2358,
+              950,
+              2480
+            ],
+            "text": "우리를 붓으로 말끔히 지운 뒤",
+            "prediction": "원롱 붓으로 발급하 자운 뒤",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0017",
+            "bbox": [
+              142,
+              2491,
+              1379,
+              2625
+            ],
+            "text": "엉뚱한 곳에 다시 말끔히 그려넣어 줄 수는 ",
+            "prediction": "엄동한 곳에 다시 붙증하 그러봄어 줄 수는",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0018",
+            "bbox": [
+              160,
+              2653,
+              554,
+              2758
+            ],
+            "text": "없는 일일까?",
+            "prediction": "얇는 일일가?",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0019",
+            "bbox": [
+              151,
+              2899,
+              1310,
+              3024
+            ],
+            "text": "떠나야 할 사람을 떠나보내지 못하는 것은",
+            "prediction": "예야 할 사람을 데뇨네지 못하는 것은",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0020",
+            "bbox": [
+              142,
+              3048,
+              533,
+              3154
+            ],
+            "text": "안타까운 일이다",
+            "prediction": "안타까운 일이다",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0021",
+            "bbox": [
+              151,
+              3177,
+              1110,
+              3291
+            ],
+            "text": "잊어야 할 사람을 잊지 못하는 것은",
+            "prediction": "일어야 할 사람을 잊지 못하는 것은",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0022",
+            "bbox": [
+              151,
+              3318,
+              593,
+              3428
+            ],
+            "text": "안타까운 일이다",
+            "prediction": "안타까운 일이다",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0023",
+            "bbox": [
+              160,
+              3455,
+              1319,
+              3573
+            ],
+            "text": "그러한 나를 내가 안다는 것은 더더욱",
+            "prediction": "그러한 나를 4가 안다는 것 더더욱",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0024",
+            "bbox": [
+              172,
+              3592,
+              623,
+              3694
+            ],
+            "text": "안타까운 일이다.",
+            "prediction": "안타까운 일이다.",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0098-line-0025",
+            "bbox": [
+              2419,
+              3693,
+              2843,
+              3783
+            ],
+            "text": "Keun Young Co.",
+            "prediction": "Keun Young Co.",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T11:25:00.509Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T11:02:23.840Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 25
+        }
+      ]
     },
     "hf-0099": {
       "id": "hf-0099",
