@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T12:32:05.049Z",
+  "updated_at": "2026-11-02T12:33:54.797Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -33104,20 +33104,235 @@
         "source_sha256": "b8ee35672b9e21c476b5bb60c6058c51e7e93738388fded27ce7c4c0c2d48252"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0109-line-0001",
+            "bbox": [
+              571,
+              282,
+              1561,
+              400
+            ],
+            "text": "<li><a href=\"#\">서브메뉴3</a></li>",
+            "prediction": "\\( \\langle i \\rangle \\langle a \\, hrefs^{a} \\#? \\wedge h b d 1 \\neq 3 \\langle / a \\rangle \\langle / i \\rangle \\)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0109-line-0002",
+            "bbox": [
+              508,
+              403,
+              654,
+              480
+            ],
+            "text": "</ul>",
+            "prediction": "\\( \\langle /u \\rangle \\)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0109-line-0003",
+            "bbox": [
+              405,
+              520,
+              548,
+              593
+            ],
+            "text": "</li>",
+            "prediction": "\\( \\langle /li \\rangle \\)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0109-line-0004",
+            "bbox": [
+              402,
+              624,
+              1382,
+              718
+            ],
+            "text": "<li><a href=\"#\">메뉴4</a>",
+            "prediction": "\\( \\langle l_i \\rangle \\langle a \\, href = \"#\" \\rangle \\, a1144 \\, \\langle /a \\rangle \\)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0109-line-0005",
+            "bbox": [
+              474,
+              741,
+              1047,
+              839
+            ],
+            "text": "<ul class = \"submenu\">",
+            "prediction": "\\( \\langle u \\mid \\text{class} = \\text{subset} \\rangle \\)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0109-line-0006",
+            "bbox": [
+              556,
+              846,
+              1600,
+              952
+            ],
+            "text": "<li><a href=\"#\">서브메뉴1</a></li>",
+            "prediction": "\\( \\langle l_i \\rangle \\langle a \\, href = \"#\" \\rangle \\forall i \\in \\mathbb{N} \\mid \\langle /a \\rangle \\langle /i \\rangle \\)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0109-line-0007",
+            "bbox": [
+              547,
+              959,
+              1576,
+              1065
+            ],
+            "text": "<li><a href=\"#\">서브메뉴2</a></li>",
+            "prediction": "\\( \\langle l_i \\rangle \\langle a \\, href = \"#\" \\rangle \\forall i \\in \\mathbb{N} \\) 2 \\( \\langle /a \\rangle \\langle /i \\rangle \\)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0109-line-0008",
+            "bbox": [
+              532,
+              1052,
+              1561,
+              1174
+            ],
+            "text": "<li><a href=\"#\">서브메뉴3</a></li>",
+            "prediction": "\\( \\langle l_i \\rangle \\langle a \\, href = \"#\" \\rangle \\forall i \\in \\mathbb{N} \\neq 3 \\langle /o \\rangle \\langle /i \\rangle \\)",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0109-line-0009",
+            "bbox": [
+              399,
+              1173,
+              548,
+              1250
+            ],
+            "text": "</ul>",
+            "prediction": "\\( \\langle /u \\rangle \\)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0109-line-0010",
+            "bbox": [
+              347,
+              1270,
+              496,
+              1355
+            ],
+            "text": "</li>",
+            "prediction": "\\( \\langle /li \\rangle \\)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0109-line-0011",
+            "bbox": [
+              281,
+              1378,
+              424,
+              1456
+            ],
+            "text": "</ul>",
+            "prediction": "\\( \\langle /u \\rangle \\)",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0109-line-0012",
+            "bbox": [
+              238,
+              1483,
+              403,
+              1561
+            ],
+            "text": "</nav>",
+            "prediction": "\\( \\langle \\text{nav} \\rangle \\)",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0109-line-0013",
+            "bbox": [
+              211,
+              1588,
+              457,
+              1682
+            ],
+            "text": "</header>",
+            "prediction": "\\( \\langle /head \\rangle \\)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0109-line-0014",
+            "bbox": [
+              190,
+              1705,
+              436,
+              1791
+            ],
+            "text": "</body>",
+            "prediction": "\\( \\langle /body \\rangle \\)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0109-line-0015",
+            "bbox": [
+              181,
+              1830,
+              418,
+              1912
+            ],
+            "text": "</html>",
+            "prediction": "\\( \\langle /html \\rangle \\)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T12:57:05.049Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T12:33:54.797Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 15
+        }
+      ]
     },
     "hf-0110": {
       "id": "hf-0110",
