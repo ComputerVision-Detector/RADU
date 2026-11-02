@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T07:01:56.888Z",
+  "updated_at": "2026-11-02T07:02:26.232Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -4480,7 +4480,7 @@
       },
       "bbox_annotation": {
         "status": "verified",
-        "revision": 3,
+        "revision": 4,
         "annotator": "이나현",
         "notes": "",
         "no_text": false,
@@ -4522,7 +4522,7 @@
               1331,
               871
             ],
-            "text": "- AI (인공지능: Artificial intelligence)",
+            "text": "· AI (인공지능: Artificial intelligence)",
             "prediction": "- AI (인권): Artificial intelligence)",
             "order": 3,
             "uncertain": false,
@@ -4838,12 +4838,15 @@
           }
         ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T07:26:56.888Z"
-      },
+      "claim": null,
       "history": [
+        {
+          "at": "2026-11-02T07:02:26.232Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 4,
+          "box_count": 25
+        },
         {
           "at": "2026-10-27T08:38:31.091Z",
           "author": "이나현",
