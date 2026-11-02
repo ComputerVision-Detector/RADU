@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:53:57.738Z",
+  "updated_at": "2026-11-02T10:54:56.009Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -28352,20 +28352,123 @@
         "source_sha256": "1e666a9dca0a305e188c3fd720c90d430e4db4c81939c5a75a1d4f276976273b"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0094-line-0001",
+            "bbox": [
+              1899,
+              104,
+              2021,
+              182
+            ],
+            "text": "Date.",
+            "prediction": "Date.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0094-line-0002",
+            "bbox": [
+              2479,
+              84,
+              2601,
+              170
+            ],
+            "text": "Page",
+            "prediction": "Page",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0094-line-0003",
+            "bbox": [
+              151,
+              225,
+              1461,
+              347
+            ],
+            "text": "@ 거래사례 비교법 (APT. 빌라에 적용)",
+            "prediction": "③ 거리시에 비교법 (APT. 벌레에 적용)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0094-line-0004",
+            "bbox": [
+              293,
+              350,
+              983,
+              456
+            ],
+            "text": "물건의 종류가 동일 할 것",
+            "prediction": "- 윤리의 접구가 몰입 살릿",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0094-line-0005",
+            "bbox": [
+              293,
+              455,
+              1984,
+              581
+            ],
+            "text": "물건이 많아야 함 1~2개로는 비교 않됨",
+            "prediction": "- 윤리의 문제는 날 (22개로는 새로 왔음)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0094-line-0006",
+            "bbox": [
+              293,
+              580,
+              1280,
+              698
+            ],
+            "text": "· 최신 물건 (평균 6개월)",
+            "prediction": "- 희망 물건 (탄탄 6개월)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0094-line-0007",
+            "bbox": [
+              535,
+              677,
+              1872,
+              815
+            ],
+            "text": "12층일경우 1층은 10% 빠짐",
+            "prediction": "12층 밀감 1층은 10% 비춰져줄어져줄어짐",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T11:18:57.738Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T10:54:56.009Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 7
+        }
+      ]
     },
     "hf-0095": {
       "id": "hf-0095",
