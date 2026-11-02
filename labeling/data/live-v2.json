@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T00:38:33.704Z",
+  "updated_at": "2026-11-02T00:40:30.908Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -8975,20 +8975,333 @@
         "source_sha256": "7ad3e108a4e018a0ff7fca999ab6958b9deba54352e5882f8e7fe1010767616e"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0033-line-0002",
+            "bbox": [
+              241,
+              346,
+              672,
+              476
+            ],
+            "text": "시그모이드 함수",
+            "prediction": "$\\alpha\\beta\\gamma\\delta$ 共分",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0003",
+            "bbox": [
+              244,
+              451,
+              1243,
+              613
+            ],
+            "text": "- 令 \\( h(x) = \\frac{1}{1 + \\exp(-x)} \\)",
+            "prediction": "- 令 \\( h(x) = \\frac{1}{1 + \\exp(-x)} \\)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0004",
+            "bbox": [
+              991,
+              576,
+              1319,
+              702
+            ],
+            "text": "\\( e^{-x} \\)",
+            "prediction": "\\( e^{-x} \\)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0005",
+            "bbox": [
+              1143,
+              689,
+              1543,
+              799
+            ],
+            "text": "- 자연상수",
+            "prediction": "- 차연상수",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0006",
+            "bbox": [
+              151,
+              999,
+              563,
+              1105
+            ],
+            "text": "- 계단함수와",
+            "prediction": "- 제한성과",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0007",
+            "bbox": [
+              157,
+              1116,
+              587,
+              1226
+            ],
+            "text": "- 선형함수:",
+            "prediction": "- 신형향상:",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0008",
+            "bbox": [
+              574,
+              1020,
+              2831,
+              1206
+            ],
+            "text": "- 입력의 상수배만큼 변하는 함수. (직선 1개로 그릴 수 있음)",
+            "prediction": "- 십성의 삶의 희망을 보여주는 삶의 (추천해 1개로 그릴 수 있음)",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0009",
+            "bbox": [
+              157,
+              1241,
+              587,
+              1351
+            ],
+            "text": "- 비선형함수:",
+            "prediction": "- 배선향상:",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0010",
+            "bbox": [
+              574,
+              1197,
+              1706,
+              1347
+            ],
+            "text": "-  직선 1개로는 그릴 수 없는 함수",
+            "prediction": "- 새로운 기능의 수업을 하다.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0011",
+            "bbox": [
+              172,
+              1326,
+              1676,
+              1488
+            ],
+            "text": "- 선형함수를 신경망에 이용하지 않는 이유.",
+            "prediction": "- 산하향수를 산명망에 이용하지 않는 이유.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0012",
+            "bbox": [
+              193,
+              1443,
+              2163,
+              1625
+            ],
+            "text": "- 층을 아무리 깊게 해도 '은닉층이 없는 네트워크'로도",
+            "prediction": "- 충을 막고 갈게 해도 본복층이 없는 비트뭐로 '조도'",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0013",
+            "bbox": [
+              323,
+              1616,
+              1252,
+              1754
+            ],
+            "text": "똑같은 기능을 할 수 있음.",
+            "prediction": "쪽돌은 가을 한 슈 있음.",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0014",
+            "bbox": [
+              151,
+              2007,
+              1948,
+              2166
+            ],
+            "text": "- A열의 개수와 B행의 개수가 같아야 계산가능",
+            "prediction": "- A명의 개수와 B행의 개수가 끝까지 계산가능",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0015",
+            "bbox": [
+              78,
+              2120,
+              2290,
+              2472
+            ],
+            "text": "A = \\(\\begin{bmatrix} 1, 2, 3 \\\\ 4, 5, 6 \\end{bmatrix}\\), X B = \\(\\begin{bmatrix} 1, 2 \\\\ 3, 4 \\\\ 5, 6 \\end{bmatrix}\\) = C = \\(\\begin{bmatrix} 2, 1, 2, 8 \\\\ 4, 9, 64 \\end{bmatrix}\\)",
+            "prediction": "A = \\(\\begin{bmatrix} 1, 2, 3 \\\\ 4, 5, 6 \\end{bmatrix}\\), X B = \\(\\begin{bmatrix} 1, 2 \\\\ 3, 4 \\\\ 5, 6 \\end{bmatrix}\\) = C = \\(\\begin{bmatrix} 2, 1, 2, 8 \\\\ 4, 9, 64 \\end{bmatrix}\\)",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0016",
+            "bbox": [
+              154,
+              2459,
+              548,
+              2573
+            ],
+            "text": "열 개수: 3개",
+            "prediction": "설계수: 3개",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0017",
+            "bbox": [
+              895,
+              2447,
+              1343,
+              2573
+            ],
+            "text": "행 개수: 3개",
+            "prediction": "행계수: 3개",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0018",
+            "bbox": [
+              133,
+              2709,
+              1349,
+              2867
+            ],
+            "text": "- 이렇게 계산하면 결과 C행렬은",
+            "prediction": "- 이렇게 계산하면 결과 C행렬은",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0019",
+            "bbox": [
+              208,
+              2858,
+              1727,
+              3020
+            ],
+            "text": "A행렬의 행수와 B행렬의 열 수가 됨.",
+            "prediction": "A행결의 행수와 B행결의 덜 수가 됨.",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0020",
+            "bbox": [
+              130,
+              3136,
+              369,
+              3295
+            ],
+            "text": "- 분류",
+            "prediction": "- 농악",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0021",
+            "bbox": [
+              169,
+              3290,
+              1525,
+              3464
+            ],
+            "text": "- 데이터가 어느 클래스에 속하냐",
+            "prediction": "- CA이터가 안 클래스에 속하다.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0022",
+            "bbox": [
+              87,
+              3568,
+              451,
+              3702
+            ],
+            "text": "- 회귀",
+            "prediction": "0 눈기",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0033-line-0023",
+            "bbox": [
+              148,
+              3721,
+              2680,
+              3944
+            ],
+            "text": "- 입력 데이터에서 연속적인 수치를 예측하는 문제",
+            "prediction": "- 압력 데이터에서 연속적인 속도를 확인한 첫째. 높다.",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "3e5b8a49-411f-46ac-a1f5-0f988b96528c",
-        "until": "2026-11-02T01:03:33.704Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T00:40:30.908Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 22
+        }
+      ]
     },
     "hf-0034": {
       "id": "hf-0034",
