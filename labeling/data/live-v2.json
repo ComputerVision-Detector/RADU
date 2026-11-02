@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T13:47:05.089Z",
+  "updated_at": "2026-11-02T13:48:55.293Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -42617,20 +42617,263 @@
         "source_sha256": "880c67cf3491939136ce4dd1d6118e91eb8cdc1fd47a751903a60c9b84411b06"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0130-line-0004",
+            "bbox": [
+              0,
+              430,
+              404,
+              518
+            ],
+            "text": "$f(x)=x^3+x$",
+            "prediction": "\\[ f'(x) = x^2 \\sin x \\]",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0005",
+            "bbox": [
+              0,
+              565,
+              404,
+              658
+            ],
+            "text": "$f'(x)=3x^2+1$",
+            "prediction": "\\[ f'(x) = x^2 + 2x \\]",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0007",
+            "bbox": [
+              0,
+              733,
+              404,
+              832
+            ],
+            "text": "1) f(x) = 3x^2-5x",
+            "prediction": "\\[ f'(x) = 5x + 1 \\]",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0008",
+            "bbox": [
+              0,
+              842,
+              404,
+              938
+            ],
+            "text": "$f'(x)=6x-5$",
+            "prediction": "\\[ g(x) = \\sqrt{x} \\]",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0009",
+            "bbox": [
+              0,
+              950,
+              404,
+              1046
+            ],
+            "text": "$g(x)=\\sqrt{x}$",
+            "prediction": "\\[ g'(x) = x^{-1} \\]",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0010",
+            "bbox": [
+              0,
+              1058,
+              404,
+              1157
+            ],
+            "text": "$g'(x)=x^{-1}$",
+            "prediction": "\\[ = x^{-2} \\]",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0011",
+            "bbox": [
+              0,
+              1325,
+              404,
+              1418
+            ],
+            "text": "2) y = (2x+1)^4",
+            "prediction": "\\[ y = x^2 \\]",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0015",
+            "bbox": [
+              0,
+              1752,
+              404,
+              1851
+            ],
+            "text": "$=4(2x+1)^3*2$",
+            "prediction": "\\[ = 8(2x+1)^2 \\]",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0016",
+            "bbox": [
+              0,
+              1869,
+              404,
+              1965
+            ],
+            "text": "$=q(2x+1)^3$",
+            "prediction": "\\[ f(x) = e^{x^2} \\]",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0024",
+            "bbox": [
+              0,
+              997,
+              475,
+              1093
+            ],
+            "text": "$g(x)=\\sqrt{x}$",
+            "prediction": "\\[ y = \\ln x + 1 \\]",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0025",
+            "bbox": [
+              0,
+              1106,
+              404,
+              1204
+            ],
+            "text": "$g'(x)=x^{-1}$",
+            "prediction": "\\[ y = x^2 \\]",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0026",
+            "bbox": [
+              0,
+              1217,
+              404,
+              1315
+            ],
+            "text": "$=-x^{-2}$",
+            "prediction": "\\[ y = x^2 \\]",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0027",
+            "bbox": [
+              0,
+              1340,
+              404,
+              1441
+            ],
+            "text": "2) y = (2x+1)^4",
+            "prediction": "\\[ y = x^2 \\]",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0028",
+            "bbox": [
+              0,
+              1473,
+              404,
+              1574
+            ],
+            "text": "$y'=(u)^4,u'$",
+            "prediction": "\\[ y = x^2 \\]",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0029",
+            "bbox": [
+              0,
+              1881,
+              404,
+              1980
+            ],
+            "text": "$=q(2x+1)^3$",
+            "prediction": "\\[ y = y(x_0 + t + \\frac{1}{n+1}) \\]",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0030",
+            "bbox": [
+              0,
+              2061,
+              404,
+              2168
+            ],
+            "text": "$) f(x) = e^3$",
+            "prediction": "\\[ y = x^2 \\]",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0130-line-0041",
+            "bbox": [
+              3,
+              2044,
+              407,
+              2145
+            ],
+            "text": "$) f(x)=x^{3x} y'=$",
+            "prediction": "\\[ y = x^2 + 2x \\]",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T14:12:05.089Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T13:48:55.293Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 17
+        }
+      ]
     },
     "hf-0131": {
       "id": "hf-0131",
