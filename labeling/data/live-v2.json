@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T12:50:05.048Z",
+  "updated_at": "2026-11-02T12:50:44.727Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -34174,20 +34174,151 @@
         "source_sha256": "450bba379b787893122c923fc1ac2ae4eed2499c3ca17bd986fa2c75d58eee86"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0112-line-0001",
+            "bbox": [
+              99,
+              161,
+              436,
+              259
+            ],
+            "text": "2021.04.01",
+            "prediction": "2021.04.01",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0112-line-0002",
+            "bbox": [
+              1049,
+              64,
+              1978,
+              226
+            ],
+            "text": "웹디자인기능사실기(메뉴슬라이드)",
+            "prediction": "影心时光馆 A1577 (2014) 2020052005)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0112-line-0003",
+            "bbox": [
+              99,
+              290,
+              484,
+              388
+            ],
+            "text": "JavaScript",
+            "prediction": "Java Script",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0112-line-0004",
+            "bbox": [
+              151,
+              374,
+              1343,
+              500
+            ],
+            "text": "$C\", menu > li\"). mouseout = (function() {",
+            "prediction": "$C\", menu > li\"). mouseout = (function() {",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0112-line-0005",
+            "bbox": [
+              275,
+              459,
+              1897,
+              617
+            ],
+            "text": "$(this).children(\".submenu\").sto().slideDown();",
+            "prediction": "$C this). children(\", submenu\"). stop(c). slideDown();",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0112-line-0006",
+            "bbox": [
+              99,
+              624,
+              230,
+              730
+            ],
+            "text": "});",
+            "prediction": "3);",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0112-line-0007",
+            "bbox": [
+              139,
+              717,
+              1434,
+              839
+            ],
+            "text": "$(\".menu > li\").mouseleave(function(){",
+            "prediction": "$C\", menu > li\"). mouse(leave(function) {",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0112-line-0008",
+            "bbox": [
+              260,
+              814,
+              1745,
+              952
+            ],
+            "text": "$(this).children(\".submenu\").stop().slideup();",
+            "prediction": "$C this). children(\", submenu\"). stop(c). slideUp();",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0112-line-0009",
+            "bbox": [
+              99,
+              971,
+              230,
+              1077
+            ],
+            "text": "});",
+            "prediction": "3);",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T13:15:05.048Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T12:50:44.727Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 9
+        }
+      ]
     },
     "hf-0113": {
       "id": "hf-0113",
