@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:24:49.056Z",
+  "updated_at": "2026-11-02T10:25:27.918Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -23495,20 +23495,95 @@
         "source_sha256": "34c530923deb9fc70859e0b72295743add30b055cee6f98c1195eaa28376361b"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0077-line-0001",
+            "bbox": [
+              362,
+              92,
+              1210,
+              246
+            ],
+            "text": "f'(x) = \\lim\\limits_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+            "prediction": "f'(x) = \\lim\\limits_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0077-line-0002",
+            "bbox": [
+              1802,
+              137,
+              1966,
+              230
+            ],
+            "text": "NO.",
+            "prediction": "NO.",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0077-line-0003",
+            "bbox": [
+              1802,
+              197,
+              2574,
+              315
+            ],
+            "text": "year month day ( )",
+            "prediction": "year month day ( )",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0077-line-0004",
+            "bbox": [
+              471,
+              354,
+              1274,
+              476
+            ],
+            "text": "\\((a+b)^2 = a^2 + 3ab + 3ab^2 + b^3\\)",
+            "prediction": "\\((a+b)^2 = a^2 + 3ab + 3ab^2 + b^2\\)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0077-line-0005",
+            "bbox": [
+              214,
+              491,
+              908,
+              593
+            ],
+            "text": "· 에지 검출 (Edge detection)",
+            "prediction": "- 0.01 测量 (Edge detection)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T10:49:49.056Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T10:25:27.918Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 5
+        }
+      ]
     },
     "hf-0078": {
       "id": "hf-0078",
