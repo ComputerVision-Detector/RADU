@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:26:38.984Z",
+  "updated_at": "2026-11-02T10:29:02.778Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -24677,20 +24677,305 @@
         "source_sha256": "259862374eee4c11cc4e5fbcb5027c90a8974081fd5e6312b6013e335b61c7c2"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0081-line-0001",
+            "bbox": [
+              223,
+              217,
+              1001,
+              327
+            ],
+            "text": "- 최소 평균 제곱 오차(LMSE)",
+            "prediction": "- 315 평균 제품 50과 (LUSE)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0002",
+            "bbox": [
+              244,
+              290,
+              2459,
+              460
+            ],
+            "text": "- 모든 점을 대상으로 오류를 계산하고 최소 오류를 범하는 직선을 찾는 알고리즘",
+            "prediction": "- 모든 점을 해소로 오류를 지낸하고 굳쓰 오류를 밝히는 검신을 찾는 알고리즘",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0003",
+            "bbox": [
+              214,
+              556,
+              1794,
+              698
+            ],
+            "text": "- 허브 변환과 최소평균제곱 오차는 둘 다 아웃라이어에",
+            "prediction": "- 허브 변환과 취소평균지곱 뜨는 돌 다 아웃라이머이",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0004",
+            "bbox": [
+              275,
+              705,
+              1044,
+              819
+            ],
+            "text": "민감한 강인하지 않은 기법",
+            "prediction": "민중한 긍정해지 많은 개법",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0005",
+            "bbox": [
+              199,
+              951,
+              560,
+              1073
+            ],
+            "text": "· 강인한 추정",
+            "prediction": "- 강인한 극장",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0006",
+            "bbox": [
+              235,
+              1072,
+              1633,
+              1198
+            ],
+            "text": "- 아웃라이어를 걸러내는 과정을 가진 추정 기법",
+            "prediction": "- 아웃라이어들 장례는 대청을 기린 쿠짐 백 기법",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0007",
+            "bbox": [
+              163,
+              1366,
+              481,
+              1452
+            ],
+            "text": "- RANSAC",
+            "prediction": "- RA N SAC",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0008",
+            "bbox": [
+              190,
+              1491,
+              2075,
+              1585
+            ],
+            "text": "-인라이어와 아웃라이어가 섞여 있는 상황에서 인라이어를 찾아",
+            "prediction": "- 9다이어와 송국이어가 섞어 있는 송화에서 9각이의들 찾아",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0009",
+            "bbox": [
+              254,
+              1616,
+              738,
+              1718
+            ],
+            "text": "최적 근하나는 기법",
+            "prediction": "최적 근대화는 기법.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0010",
+            "bbox": [
+              205,
+              1766,
+              1476,
+              1859
+            ],
+            "text": "- 에지 영상에서 선분을 추정하는 문제에서 적용",
+            "prediction": "- 이미 영상에서 선물 클릭하는 문제에서 직용.",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0011",
+            "bbox": [
+              196,
+              1891,
+              1969,
+              1988
+            ],
+            "text": "- 랜덤하게 두 점을 선택하고 두 점을 지나는 직선을 계산",
+            "prediction": "- 헌납하게 독 겁을 선택하고 득 검을 지내는 객신을 계산",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0012",
+            "bbox": [
+              278,
+              2020,
+              2042,
+              2129
+            ],
+            "text": "일정한 양의 오차 t를 허용해 직선에 일치하는 점의 개수를 셈",
+            "prediction": "일정한 양이 오차를 허용해 직선에 맞춰져진 점의 개수를 센",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0013",
+            "bbox": [
+              299,
+              2145,
+              1969,
+              2250
+            ],
+            "text": "개수가 임계값을 넘지 못하면 가능성이 없다고 보고 버림",
+            "prediction": "가냐 염제축을 넘지 못하면 가능성이 없다 보고 바길",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0014",
+            "bbox": [
+              308,
+              2286,
+              2323,
+              2396
+            ],
+            "text": "직선에 일치하는 점이 임계값을 넘으면 점을 가지고 최적 직선을 추정",
+            "prediction": "척선에 일찍는 장이 암제갑을 넘으면 잡을 가지고 최적 직선을 축정",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0015",
+            "bbox": [
+              595,
+              2524,
+              744,
+              2617
+            ],
+            "text": "(e)",
+            "prediction": "(e)",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0016",
+            "bbox": [
+              308,
+              2701,
+              2096,
+              2839
+            ],
+            "text": "이걸 반복 후 반복을 마치면 후보군에서 최적을 찾아 출력",
+            "prediction": "염 빠쭉 흑 백을 매척면 확보률 에서 좌직을 찾아 출력",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0017",
+            "bbox": [
+              93,
+              2995,
+              496,
+              3085
+            ],
+            "text": "· 에지에서 곡선",
+            "prediction": "- 에지에서 큰선",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0018",
+            "bbox": [
+              151,
+              3132,
+              1207,
+              3238
+            ],
+            "text": "- 열린곡선 : 시작점과 끝점이 다른 곡선",
+            "prediction": "- 영인곡선: 새검과 같은 곡선",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0019",
+            "bbox": [
+              139,
+              3257,
+              1903,
+              3391
+            ],
+            "text": "- 닫힌곡선(폐곡선) : 에지가 한 바퀴 돌아서 처음 위치로 연결되는 곡선",
+            "prediction": "- 담원곡선(패푸쉬): 어지기 한 벽 돌아서 처음 위치로 연절되는 목선",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0081-line-0020",
+            "bbox": [
+              2419,
+              3721,
+              2873,
+              3831
+            ],
+            "text": "Keun Young Co.",
+            "prediction": "Keun Young Co.",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T10:51:38.984Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T10:29:02.778Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 20
+        }
+      ]
     },
     "hf-0082": {
       "id": "hf-0082",
