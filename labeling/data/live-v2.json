@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:44:39.477Z",
+  "updated_at": "2026-11-02T10:45:50.276Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -27101,20 +27101,179 @@
         "source_sha256": "39eac9a61c87debf5d74529a71d7aefdadb4960bdf295a32623c1ac006c38a87"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0089-line-0001",
+            "bbox": [
+              269,
+              44,
+              623,
+              138
+            ],
+            "text": "1 - (1) 기준패치",
+            "prediction": "\\( I(-1)^{n-1} \\) 测试",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0089-line-0002",
+            "bbox": [
+              635,
+              116,
+              784,
+              202
+            ],
+            "text": "(6,3)",
+            "prediction": "\\( (k,3) \\)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0089-line-0003",
+            "bbox": [
+              895,
+              137,
+              1358,
+              230
+            ],
+            "text": "(-1, -1), (0, -1), (1, -1)",
+            "prediction": "\\( f(-1, -1), (a, -1), (1, -1) \\)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0089-line-0004",
+            "bbox": [
+              1844,
+              161,
+              1996,
+              246
+            ],
+            "text": "NO.",
+            "prediction": "NO.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0089-line-0005",
+            "bbox": [
+              290,
+              137,
+              1370,
+              404
+            ],
+            "text": "\\[\n\\begin{bmatrix}\n0 & 1 & 1 \\\\\n0 & \\underline{1} & 1 \\\\\n0 & 0 & 0\n\\end{bmatrix}\n\\quad \\longleftarrow (6,3)\n\\]\n\n\\[\n\\text{특징맵 } S =\n\\begin{bmatrix}\n(-1,-1) & (0,-1) & (1,-1) \\\\\n(-1,0) & (0,0) & (1,0) \\\\\n(-1,1) & (0,1) & (1,1)\n\\end{bmatrix}\n\\]",
+            "prediction": "\\[\n\\begin{cases}\n0 & \\frac{1}{1} \\\\\n0 & \\frac{1}{4} \\\\\n0 & 0\n\\end{cases}\n\\quad \\text{与则得} S = \\begin{cases}\n(-1, 0), (a, 0), (1, 0) \\\\\n(-1, 1), (a, 1), (1, 1)\n\\end{cases}\n\\]",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0089-line-0006",
+            "bbox": [
+              1844,
+              225,
+              2583,
+              323
+            ],
+            "text": "year month day ( )",
+            "prediction": "year month day ( )",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0089-line-0008",
+            "bbox": [
+              1436,
+              431,
+              2659,
+              613
+            ],
+            "text": "S(v,u)=\\sum_y\\sum_x\\left(f(y+v,x+u)-f(y,x)\\right)^2",
+            "prediction": "\\[ V = -1, \\quad u_i = -1 \\]\n\n\\[ V = -1, \\quad u_i < 1 \\quad \\text{当} \\quad u_i > 0 \\quad \\text{时} \\]\n\n\\[ S(V, U) = \\sum_{i=1}^{n} \\sum_{j=1}^{m} (f(U_i + U_j x + U_i) - f(U_i x))^2 \\]",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0089-line-0009",
+            "bbox": [
+              362,
+              645,
+              1014,
+              759
+            ],
+            "text": "$f(5,2) f(5,3) f(5,4)$",
+            "prediction": "\\[ f(8,2) \\quad f(5,3) \\quad f(5,9) \\]",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0089-line-0010",
+            "bbox": [
+              1445,
+              628,
+              1894,
+              706
+            ],
+            "text": "v = -1, u = -1",
+            "prediction": "\\( v = -1, \\quad u_i = -1 \\)",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0089-line-0011",
+            "bbox": [
+              362,
+              758,
+              1014,
+              863
+            ],
+            "text": "f(6,2) f(6,3) f(6,4)",
+            "prediction": "\\[ f(2,3) \\quad f(6,4) \\]",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0089-line-0012",
+            "bbox": [
+              362,
+              862,
+              1014,
+              972
+            ],
+            "text": "f(7,2) f(7,3) f(7,4)",
+            "prediction": "\\[ f(7,3) \\quad f(7,4) \\]",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T11:09:39.477Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T10:45:50.276Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 11
+        }
+      ]
     },
     "hf-0090": {
       "id": "hf-0090",
