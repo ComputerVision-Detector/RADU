@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T13:53:06.484Z",
+  "updated_at": "2026-11-02T13:53:08.697Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -42885,20 +42885,137 @@
         "source_sha256": "ab907492c111a0d1e16c71ea795d4c43144655d8afd03b2f93292c9279c5adc6"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0131-line-0003",
+            "bbox": [
+              1398,
+              60,
+              2035,
+              149
+            ],
+            "text": "\\[ f(x) = x^3 - 3x^2 + 2x. \\quad [0, 2] \\]",
+            "prediction": "\\[ f(x) = x^3 - 3x^2 + 2x^4. \\quad [0, 2] \\]",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0131-line-0005",
+            "bbox": [
+              2848,
+              22,
+              3565,
+              105
+            ],
+            "text": "\\[ f(x) = 2x^3 + 9x^2 + 12x \\quad [0, 2] \\]",
+            "prediction": "\\[ f(x) = 2x^2 + 2x^4 + 12x \\quad [0, 2] \\]",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0131-line-0007",
+            "bbox": [
+              1402,
+              166,
+              1801,
+              235
+            ],
+            "text": "\\[ f'(x) = 3x^2 - 6x + 2 \\]",
+            "prediction": "\\[ f'(x) = 3x^2 - 6x + 2 \\]",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0131-line-0009",
+            "bbox": [
+              2885,
+              135,
+              3052,
+              205
+            ],
+            "text": "\\( f(0) = 0 \\)",
+            "prediction": "\\( f(x) = 0 \\)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0131-line-0010",
+            "bbox": [
+              25,
+              230,
+              520,
+              308
+            ],
+            "text": "$e^t*cos(3t)+e^tsin(3t)$",
+            "prediction": "\\[ = e^t \\cos(t + e^t \\sin(t)) \\]",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0131-line-0030",
+            "bbox": [
+              2800,
+              275,
+              3687,
+              371
+            ],
+            "text": "$-36+24 f(x)=x^3-6x^2+9x [0,3]$",
+            "prediction": "\\( 16 - 36 + 49 \\) \\( f(x) = x^3 - 6x^2 + 9x \\) [0, 2]",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0131-line-0036",
+            "bbox": [
+              1081,
+              630,
+              1927,
+              716
+            ],
+            "text": "$f'(c)=0$",
+            "prediction": "\\[ f(x) = x^3 - 2x + 5, \\quad g'(x) = x^2 - 2x + 2. \\]",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0131-line-0040",
+            "bbox": [
+              3044,
+              594,
+              3532,
+              675
+            ],
+            "text": "$f'(x)=3x^2-12x+4$",
+            "prediction": "\\[ f(x) = 3x^2 - 12x + 9 \\]",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T14:18:06.484Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T13:53:08.697Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 8
+        }
+      ]
     },
     "hf-0132": {
       "id": "hf-0132",
