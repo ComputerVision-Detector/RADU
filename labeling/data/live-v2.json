@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T12:14:05.112Z",
+  "updated_at": "2026-11-02T12:15:05.429Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -32540,20 +32540,67 @@
         "source_sha256": "457d0b271738477aa3f56bf72129cc693f3e1657eb32332f7e10a50e32f003ea"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0107-line-0001",
+            "bbox": [
+              205,
+              209,
+              509,
+              291
+            ],
+            "text": "2021.03.23",
+            "prediction": "2021.03.23",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0107-line-0002",
+            "bbox": [
+              1106,
+              137,
+              1984,
+              255
+            ],
+            "text": "웹디자인기능사 실기(좌우슬라이딩)",
+            "prediction": "$\\text { 1. }$",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0107-line-0003",
+            "bbox": [
+              223,
+              318,
+              584,
+              404
+            ],
+            "text": "JavaScript",
+            "prediction": "Java Schpt",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T12:39:05.112Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T12:15:05.429Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 3
+        }
+      ]
     },
     "hf-0108": {
       "id": "hf-0108",
