@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T15:21:06.924Z",
+  "updated_at": "2026-11-02T15:21:26.023Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -52695,20 +52695,53 @@
         "source_sha256": "9f5240fa6732a51c0ec750869aadbf7104e1e556d4e52b7e76579d2869d134c4"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0150-line-0001",
+            "bbox": [
+              76,
+              89,
+              203,
+              174
+            ],
+            "text": "3강",
+            "prediction": "375",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0150-line-0002",
+            "bbox": [
+              393,
+              194,
+              984,
+              276
+            ],
+            "text": "Residual block (잔여 블럭)",
+            "prediction": "Residual block (RBL)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T15:46:06.924Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T15:21:26.023Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 2
+        }
+      ]
     },
     "hf-0151": {
       "id": "hf-0151",
