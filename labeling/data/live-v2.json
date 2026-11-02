@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T11:15:15.887Z",
+  "updated_at": "2026-11-02T11:15:52.245Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -31198,20 +31198,67 @@
         "source_sha256": "a7a600f3b7bb6a3312a83435856380adf6f396308eddfd6624b32f5275cd7526"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0103-line-0001",
+            "bbox": [
+              1239,
+              56,
+              1543,
+              162
+            ],
+            "text": "(2020.04.28)",
+            "prediction": "(2010.09.20).",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0103-line-0002",
+            "bbox": [
+              1239,
+              133,
+              1921,
+              255
+            ],
+            "text": "앱 아이디어 2. (미니게임?)",
+            "prediction": "2.(2)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0103-line-0003",
+            "bbox": [
+              302,
+              282,
+              563,
+              375
+            ],
+            "text": "「시작화면」",
+            "prediction": "\"A\"",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T11:40:15.887Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T11:15:52.245Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 3
+        }
+      ]
     },
     "hf-0104": {
       "id": "hf-0104",
