@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:53:39.079Z",
+  "updated_at": "2026-11-02T10:53:54.296Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -28084,20 +28084,263 @@
         "source_sha256": "f049a60e5cac7cf98beed5bfe805bf9a3fa33df03ac493f98cf8254d907f0f3c"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0093-line-0001",
+            "bbox": [
+              184,
+              161,
+              493,
+              283
+            ],
+            "text": "@원가법",
+            "prediction": "③",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0002",
+            "bbox": [
+              311,
+              254,
+              1555,
+              424
+            ],
+            "text": "분양가 - 토지세 + 건축비 + 재비용 + 이윤",
+            "prediction": "- (희망가 - 희망가) + 긴장비 + 재비용 + 야외",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0003",
+            "bbox": [
+              1197,
+              370,
+              1591,
+              496
+            ],
+            "text": "10% 10%",
+            "prediction": "10% 10%",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0004",
+            "bbox": [
+              592,
+              499,
+              1349,
+              642
+            ],
+            "text": "공시지가 → 시세의 70%",
+            "prediction": "$\\Rightarrow$ 새로운 맛이 맛있어.",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0005",
+            "bbox": [
+              613,
+              624,
+              1358,
+              750
+            ],
+            "text": "시가 * 0.7 = 공시지가",
+            "prediction": "\\( x \\times 0.1 = \\) 곳씨지가",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0006",
+            "bbox": [
+              622,
+              733,
+              1373,
+              859
+            ],
+            "text": "시가 = 공시지가 / 0.7",
+            "prediction": "\\( x_1 = \\frac{1}{2} \\) 혼자가 ㅇㅇ.1",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0007",
+            "bbox": [
+              441,
+              971,
+              1231,
+              1097
+            ],
+            "text": "지방 임야 / 0.3",
+            "prediction": "지방 임야 ÷0.3",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0008",
+            "bbox": [
+              819,
+              1056,
+              1824,
+              1214
+            ],
+            "text": "농지 / 0.5 ~ 0.25 (2배)",
+            "prediction": "늘지 : a.5~0~5 (2배)",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0009",
+            "bbox": [
+              483,
+              1294,
+              1785,
+              1444
+            ],
+            "text": "* 지방 대지에 대출이 있을 경우 주의",
+            "prediction": "* 2017 과제에 대해 응대한 점은 겪어요.",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0010",
+            "bbox": [
+              783,
+              1423,
+              1809,
+              1565
+            ],
+            "text": "(공시지가 조작이 됐을 경우 多)",
+            "prediction": "(꽃이 피가 갈망이 틀릴 수 없어요)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0011",
+            "bbox": [
+              332,
+              1685,
+              835,
+              1783
+            ],
+            "text": "Ex) 대지 70평",
+            "prediction": "(x) DR1 No.60",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0012",
+            "bbox": [
+              1137,
+              1669,
+              1546,
+              1775
+            ],
+            "text": "→ 공시지가 350",
+            "prediction": "→ 황사가 350",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0013",
+            "bbox": [
+              520,
+              1790,
+              859,
+              1892
+            ],
+            "text": "건평80평",
+            "prediction": "선택길이막혀잖아",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0014",
+            "bbox": [
+              1209,
+              1782,
+              1531,
+              1887
+            ],
+            "text": "시세 500",
+            "prediction": "시간 50",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0015",
+            "bbox": [
+              520,
+              1919,
+              1004,
+              2021
+            ],
+            "text": "상가주택, 10년",
+            "prediction": "샐기구의 100%",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0016",
+            "bbox": [
+              1200,
+              1907,
+              2175,
+              2021
+            ],
+            "text": "토지대 3055000 만원",
+            "prediction": "희망의 흐름의 흐름이 20550000000",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0093-line-0017",
+            "bbox": [
+              828,
+              2149,
+              1062,
+              2271
+            ],
+            "text": "감가상각",
+            "prediction": "갑자담악",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T11:18:39.079Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T10:53:54.296Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 17
+        }
+      ]
     },
     "hf-0094": {
       "id": "hf-0094",
