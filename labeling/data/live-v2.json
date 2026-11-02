@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T12:05:08.656Z",
+  "updated_at": "2026-11-02T12:07:48.669Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -31777,20 +31777,459 @@
         "source_sha256": "ca1220c4afb6f50cfd44301a8a5d99faa87eff21ddf62bec247b0d9a6047f60e"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0106-line-0001",
+            "bbox": [
+              244,
+              294,
+              484,
+              380
+            ],
+            "text": "2021.03.23",
+            "prediction": "2021.03.23",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0002",
+            "bbox": [
+              244,
+              391,
+              388,
+              488
+            ],
+            "text": "CSS",
+            "prediction": "(C59)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0003",
+            "bbox": [
+              244,
+              504,
+              887,
+              589
+            ],
+            "text": "@ charset. \"utf-8\"",
+            "prediction": "@Charact. \"Utf-8\";",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0004",
+            "bbox": [
+              244,
+              616,
+              342,
+              706
+            ],
+            "text": "*{",
+            "prediction": "*8",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0005",
+            "bbox": [
+              350,
+              729,
+              802,
+              811
+            ],
+            "text": "margin; 0 auto;",
+            "prediction": "margin: 0 auto;",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0006",
+            "bbox": [
+              341,
+              826,
+              684,
+              912
+            ],
+            "text": "padding; 0;",
+            "prediction": "Padding: 0;",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0007",
+            "bbox": [
+              341,
+              931,
+              995,
+              1017
+            ],
+            "text": "font-family: \"맑은 고딕\";",
+            "prediction": "font-family: \"楷体\"",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0008",
+            "bbox": [
+              335,
+              1032,
+              811,
+              1117
+            ],
+            "text": "light-style: none;",
+            "prediction": "light-style; none;",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0009",
+            "bbox": [
+              223,
+              1241,
+              324,
+              1335
+            ],
+            "text": "a{",
+            "prediction": "a{",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0010",
+            "bbox": [
+              326,
+              1346,
+              1007,
+              1432
+            ],
+            "text": "text-decoration: none;",
+            "prediction": "text-decoration: none;",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0011",
+            "bbox": [
+              314,
+              1451,
+              708,
+              1537
+            ],
+            "text": "color: inherit;",
+            "prediction": "color: ineffect;",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0012",
+            "bbox": [
+              211,
+              1556,
+              267,
+              1646
+            ],
+            "text": "}",
+            "prediction": "3",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0013",
+            "bbox": [
+              205,
+              1665,
+              436,
+              1758
+            ],
+            "text": ".wrap{",
+            "prediction": ".wrap{",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0014",
+            "bbox": [
+              269,
+              1778,
+              723,
+              1859
+            ],
+            "text": "width: 1000px;",
+            "prediction": "width: 1000px;",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0015",
+            "bbox": [
+              269,
+              1882,
+              835,
+              1968
+            ],
+            "text": "margin-top: 20px;",
+            "prediction": "margin-top: 20px;",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0016",
+            "bbox": [
+              169,
+              1983,
+              224,
+              2073
+            ],
+            "text": "}",
+            "prediction": "3",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0017",
+            "bbox": [
+              163,
+              2084,
+              593,
+              2194
+            ],
+            "text": "#image slide{",
+            "prediction": "#image_glide f",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0018",
+            "bbox": [
+              284,
+              2205,
+              699,
+              2291
+            ],
+            "text": "height: 400px;",
+            "prediction": "height: 900px;",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0019",
+            "bbox": [
+              275,
+              2306,
+              723,
+              2400
+            ],
+            "text": "width: 1000px;",
+            "prediction": "width: 1000px;",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0020",
+            "bbox": [
+              269,
+              2411,
+              814,
+              2520
+            ],
+            "text": "Position: relative;",
+            "prediction": "Position: relative;",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0021",
+            "bbox": [
+              250,
+              2520,
+              796,
+              2637
+            ],
+            "text": "overflow: hidden;",
+            "prediction": "overflow: hidden;",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0022",
+            "bbox": [
+              120,
+              2636,
+              182,
+              2730
+            ],
+            "text": "}",
+            "prediction": "3",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0023",
+            "bbox": [
+              105,
+              2761,
+              324,
+              2867
+            ],
+            "text": ".imgs{",
+            "prediction": ".img;s",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0024",
+            "bbox": [
+              172,
+              2866,
+              636,
+              2972
+            ],
+            "text": "width: 3000px;",
+            "prediction": "width: 300px;",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0025",
+            "bbox": [
+              190,
+              2971,
+              756,
+              3089
+            ],
+            "text": "Position: relative;",
+            "prediction": "Position: relative;",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0026",
+            "bbox": [
+              78,
+              3096,
+              131,
+              3190
+            ],
+            "text": "}",
+            "prediction": "3",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0027",
+            "bbox": [
+              78,
+              3217,
+              442,
+              3319
+            ],
+            "text": ".slideimg{",
+            "prediction": ".slide img &amp;",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0028",
+            "bbox": [
+              163,
+              3326,
+              629,
+              3436
+            ],
+            "text": "width: 1000px;",
+            "prediction": "width: 1000px;",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0029",
+            "bbox": [
+              160,
+              3435,
+              738,
+              3553
+            ],
+            "text": "Position: relative;",
+            "prediction": "Position: relative;",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0030",
+            "bbox": [
+              120,
+              3552,
+              530,
+              3670
+            ],
+            "text": "float: left;",
+            "prediction": "float: left;",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0106-line-0031",
+            "bbox": [
+              0,
+              3661,
+              64,
+              3774
+            ],
+            "text": "}",
+            "prediction": "3",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T12:30:08.656Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T12:07:48.669Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 31
+        }
+      ]
     },
     "hf-0107": {
       "id": "hf-0107",
