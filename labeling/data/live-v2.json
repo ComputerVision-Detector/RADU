@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:20:28.822Z",
+  "updated_at": "2026-11-02T10:20:44.519Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -22987,20 +22987,277 @@
         "source_sha256": "2ac4992b776043037a1659710d5218d6ff7f89ecd757df0eca1379f35ec2f97c"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0075-line-0003",
+            "bbox": [
+              151,
+              516,
+              539,
+              601
+            ],
+            "text": "· 어파인 변환",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0004",
+            "bbox": [
+              170,
+              599,
+              2122,
+              715
+            ],
+            "text": "- 변환 행렬은 아무리 여러개를 곱해도 직선은 직선으로 평행인 선은",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0005",
+            "bbox": [
+              212,
+              753,
+              608,
+              859
+            ],
+            "text": "평행을 유지",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0006",
+            "bbox": [
+              206,
+              848,
+              1887,
+              978
+            ],
+            "text": "이런 성질은 동차 행렬의 3행이 \\((0\\ 0\\ 1)\\) 이기 때문에 유지됨",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0007",
+            "bbox": [
+              247,
+              972,
+              2743,
+              1102
+            ],
+            "text": "이런 성질을 가진 변환을 그렇지 않은 변환과 구분 하려고 어파인 변환(affine)이라 함.",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0008",
+            "bbox": [
+              151,
+              1108,
+              658,
+              1238
+            ],
+            "text": "- 영상의 좌표를 변환",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0009",
+            "bbox": [
+              151,
+              1233,
+              1621,
+              1354
+            ],
+            "text": "- 기하 연산의 Affine → 이미지의 공간 좌표를 변환",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0010",
+            "bbox": [
+              151,
+              1354,
+              1884,
+              1490
+            ],
+            "text": "CNN의 Affine → 이미지에서 추출된 특징값(feature)을 변환",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0011",
+            "bbox": [
+              713,
+              1493,
+              2407,
+              1603
+            ],
+            "text": "추출한 특징들을 어떻게 조합해서 다음 출력으로 만들 것인가.",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0012",
+            "bbox": [
+              112,
+              1604,
+              2507,
+              1758
+            ],
+            "text": "- 투영(Projection)은 멀리 있는 물체가 작게 보이기 때문에 평행을 유지하지 못하는",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0013",
+            "bbox": [
+              123,
+              1734,
+              948,
+              1869
+            ],
+            "text": "변환으로 어파인 변환이 아님.",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0015",
+            "bbox": [
+              65,
+              1999,
+              429,
+              2116
+            ],
+            "text": "· 에일리어싱",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0016",
+            "bbox": [
+              53,
+              2143,
+              1272,
+              2263
+            ],
+            "text": "- 영상 처리에서 시각적으로 불쾌스러운 현상",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0017",
+            "bbox": [
+              32,
+              2415,
+              550,
+              2528
+            ],
+            "text": "· 안티 에일리어싱",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0019",
+            "bbox": [
+              42,
+              2547,
+              1048,
+              2666
+            ],
+            "text": "- 에일리어싱을 누그러뜨리는 방법.",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0020",
+            "bbox": [
+              0,
+              2782,
+              2285,
+              2989
+            ],
+            "text": "· 에일리어싱을 방지하기 위해 변환 영상이 원래 영상의 해당 화소를 찾는",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0021",
+            "bbox": [
+              51,
+              2943,
+              652,
+              3059
+            ],
+            "text": "후방 변환을 사용",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0075-line-0022",
+            "bbox": [
+              81,
+              3082,
+              1643,
+              3259
+            ],
+            "text": "↳ 변환 행렬 \\(A\\)의 역행렬인 \\(A^{-1}\\)을 사용하면 됨",
+            "prediction": "- 100%天然成分 100%天然成分",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T10:45:28.822Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T10:20:44.519Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 18
+        }
+      ]
     },
     "hf-0076": {
       "id": "hf-0076",
