@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T15:20:49.844Z",
+  "updated_at": "2026-11-02T15:21:02.775Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -52651,20 +52651,39 @@
         "source_sha256": "967d77f54bd82d6cbc36df3c63aa3b97b2b1a8456f5b4700bea6d5408f839906"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0149-line-0001",
+            "bbox": [
+              442,
+              126,
+              713,
+              221
+            ],
+            "text": "C4W2L",
+            "prediction": "C4W2L",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T15:45:49.844Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T15:21:02.775Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 1
+        }
+      ]
     },
     "hf-0150": {
       "id": "hf-0150",
