@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T13:20:05.095Z",
+  "updated_at": "2026-11-02T13:20:21.398Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -38823,20 +38823,123 @@
         "source_sha256": "f9778287a96e282cf8733a32147036704872ecb0233605ecc5f90d37fd808bd3"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0123-line-0001",
+            "bbox": [
+              401,
+              87,
+              726,
+              199
+            ],
+            "text": "5. 통계학",
+            "prediction": "5. 풍계학.",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0123-line-0002",
+            "bbox": [
+              2015,
+              50,
+              2377,
+              189
+            ],
+            "text": "<인개론>",
+            "prediction": "<917212>",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0123-line-0003",
+            "bbox": [
+              1346,
+              229,
+              1676,
+              311
+            ],
+            "text": "EDA",
+            "prediction": "EDA",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0123-line-0004",
+            "bbox": [
+              0,
+              337,
+              364,
+              422
+            ],
+            "text": "AI 모델링 비즈니스",
+            "prediction": "AI 모델링 MOUL",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0123-line-0005",
+            "bbox": [
+              412,
+              316,
+              2489,
+              435
+            ],
+            "text": "데이터 수집 → 데이터 기공 → 탐색적 데이터 분석 → ML모델링 → 결과 해석 및 적용.",
+            "prediction": "데이터 수집 → 데이터 기공 → 탈색점 데이터 분석 → 서니 모델링 → 결과 해석 및 적용.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0123-line-0006",
+            "bbox": [
+              26,
+              438,
+              158,
+              530
+            ],
+            "text": "정의",
+            "prediction": "전의",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0123-line-0007",
+            "bbox": [
+              1180,
+              438,
+              1494,
+              513
+            ],
+            "text": "데이터 시각화.",
+            "prediction": "데이터 시각화.",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T13:45:05.095Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T13:20:21.398Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 7
+        }
+      ]
     },
     "hf-0124": {
       "id": "hf-0124",
