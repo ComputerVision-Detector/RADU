@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T14:12:09.366Z",
+  "updated_at": "2026-11-02T14:14:27.767Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -43855,20 +43855,823 @@
         "source_sha256": "fbf8395ce2fd88e57a48fe350fc8c0473f6d85729009e93d11549efd4a7e52c5"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0133-line-0001",
+            "bbox": [
+              64,
+              27,
+              815,
+              137
+            ],
+            "text": "$f(x)=x^3, (1,1)$ 접선방정식 구하기",
+            "prediction": "\\[ f(x) = x^3, \\quad (1, 1) \\]\n\n\\[ f(x) = 7x + 1. \\]",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0002",
+            "bbox": [
+              1245,
+              27,
+              1574,
+              114
+            ],
+            "text": "\\[ f(x) = 2x^2 - 3x \\]",
+            "prediction": "\\[ f(x) = 2x^2 - 3x \\]",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0003",
+            "bbox": [
+              1634,
+              34,
+              1805,
+              90
+            ],
+            "text": "\\( (2, 2) \\)",
+            "prediction": "\\( (2, 2) \\)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0004",
+            "bbox": [
+              1282,
+              188,
+              1559,
+              261
+            ],
+            "text": "\\( f'(x) = 4x - 3 \\)",
+            "prediction": "\\( f'(x) = 4x - 3 \\)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0005",
+            "bbox": [
+              519,
+              260,
+              1150,
+              353
+            ],
+            "text": "\\[ y - f(x) = f'(x)(x - a). \\]",
+            "prediction": "\\[ y - f(x) = f'(x)(x - a). \\]",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0006",
+            "bbox": [
+              1292,
+              294,
+              1586,
+              364
+            ],
+            "text": "\\( f'(2) = 8 - 3 = 5 \\)",
+            "prediction": "\\( f'(x) = 8 - 3 = 4 \\)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0007",
+            "bbox": [
+              1327,
+              417,
+              1847,
+              501
+            ],
+            "text": "=> \\[ y - f(a) = f'(2)(x - 2) \\]",
+            "prediction": "\\[ y - f(x) = f'(x)(x - 2) \\]",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0008",
+            "bbox": [
+              519,
+              500,
+              1054,
+              576
+            ],
+            "text": "\\[ y - 1 = 3 * x - 1 \\]",
+            "prediction": "\\[ y - 1 = 3x^2 - 1 \\]",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0009",
+            "bbox": [
+              1452,
+              534,
+              1813,
+              603
+            ],
+            "text": "\\[ y-2= 5(x - 2) \\]",
+            "prediction": "\\[ y = 5(x - 2) \\]",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0010",
+            "bbox": [
+              711,
+              613,
+              909,
+              672
+            ],
+            "text": "\\[ y = 3x \\]",
+            "prediction": "\\[ y = 3x \\]",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0011",
+            "bbox": [
+              1509,
+              626,
+              1822,
+              685
+            ],
+            "text": "\\[ y = 5x - 10 + 2 \\]",
+            "prediction": "\\[ y = 4x - 10 + 2 \\]",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0012",
+            "bbox": [
+              71,
+              708,
+              306,
+              802
+            ],
+            "text": "\\[ f(x) = x^3 \\]",
+            "prediction": "\\[ f(x) = x^3 \\]",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0013",
+            "bbox": [
+              1523,
+              732,
+              1751,
+              792
+            ],
+            "text": "\\( y = 5x - 8 \\)",
+            "prediction": "\\( y = 5x - 8 \\)",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0014",
+            "bbox": [
+              1184,
+              863,
+              1766,
+              949
+            ],
+            "text": "\\[ f(x) = x^2 \\] (2, 4) 접방",
+            "prediction": "\\[ f(x) = x^2 \\] (2, 4) 2024.",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0015",
+            "bbox": [
+              71,
+              979,
+              1000,
+              1079
+            ],
+            "text": "\\[ f'(1) = 3. \\quad f'(1) = 3x^2 에 1 대입하는 거\\]",
+            "prediction": "\\[ f'(x) = 3. \\quad f'(1) = 3x^2 + 1 \\quad (1, 0) \\]",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0016",
+            "bbox": [
+              1216,
+              1017,
+              1424,
+              1093
+            ],
+            "text": "\\( f'(x) = 2x \\)",
+            "prediction": "\\( f'(x) = 2d \\)",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0017",
+            "bbox": [
+              71,
+              1133,
+              1054,
+              1227
+            ],
+            "text": "$f(x)=x^2$ 의 그래프에서 점(2,4)의 접선 방정식",
+            "prediction": "\\[ f(x) = x^2 \\in [1, 2] \\text{且} x \\in [1, 2] \\text{且} x > 0 \\]",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0018",
+            "bbox": [
+              1245,
+              1123,
+              1414,
+              1189
+            ],
+            "text": "\\( f'(2) = 4 \\)",
+            "prediction": "\\( f'(x) = 4 \\)",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0019",
+            "bbox": [
+              1216,
+              1226,
+              1766,
+              1309
+            ],
+            "text": "=> \\[ y - f(a) = f'(2)(x - 2) \\]",
+            "prediction": "\\[ y - f(x) = f'(x)(x - 2) \\]",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0020",
+            "bbox": [
+              369,
+              1294,
+              643,
+              1377
+            ],
+            "text": "\\[ f'(2) = 4 \\]",
+            "prediction": "\\[ f'(x) = 4 \\]",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0021",
+            "bbox": [
+              1346,
+              1349,
+              1702,
+              1418
+            ],
+            "text": "\\( y - 4 = 4(x - 2) \\)",
+            "prediction": "\\( y - 4 = 4(x - 2) \\)",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0022",
+            "bbox": [
+              359,
+              1445,
+              931,
+              1538
+            ],
+            "text": "\\[ y - f(a) = f'(2)(x - a) \\]",
+            "prediction": "\\[ y - f(x) = f'(\\infty)x - a \\]",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0023",
+            "bbox": [
+              1408,
+              1418,
+              1694,
+              1480
+            ],
+            "text": "\\[ y = 4x - 8 + 4 \\]",
+            "prediction": "\\[ y = 4x - 8 + 4 \\]",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0024",
+            "bbox": [
+              1408,
+              1506,
+              1635,
+              1569
+            ],
+            "text": "\\[ y = 4x - 4 \\]",
+            "prediction": "\\[ y = 4x - 4 \\]",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0025",
+            "bbox": [
+              539,
+              1671,
+              877,
+              1740
+            ],
+            "text": "\\( y = 4x - 8 + 2 \\)",
+            "prediction": "\\( y = 4x - 8 + 2 \\)",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0026",
+            "bbox": [
+              992,
+              1671,
+              1382,
+              1747
+            ],
+            "text": "\\[ f(x) = 3x^2 - 4x + 1 \\]",
+            "prediction": "\\[ f(x) = 9x^2 - 4x + 1 \\]",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0027",
+            "bbox": [
+              1430,
+              1674,
+              1574,
+              1740
+            ],
+            "text": "\\( (1, 0) \\)",
+            "prediction": "\\( (1, 0) \\)",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0028",
+            "bbox": [
+              1954,
+              1654,
+              2140,
+              1723
+            ],
+            "text": "\\( 3 - 4 + 1 \\)",
+            "prediction": "\\( 3 - 4 + 1 \\)",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0029",
+            "bbox": [
+              71,
+              1798,
+              589,
+              1908
+            ],
+            "text": "$f(x)=x^2, $ (2,4) 접방",
+            "prediction": "\\[ f'(x) = x^2 \\] (2, 4) \\( x \\geq 0 \\).",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0030",
+            "bbox": [
+              1019,
+              1825,
+              1300,
+              1901
+            ],
+            "text": "\\( f'(x) = 6x-4 \\)",
+            "prediction": "\\( f'(x) = (x - 4) \\)",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0031",
+            "bbox": [
+              24,
+              1979,
+              298,
+              2062
+            ],
+            "text": "\\( f'(x) = 2x \\)",
+            "prediction": "\\( f'(x) = 2x \\)",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0032",
+            "bbox": [
+              1009,
+              1952,
+              1246,
+              2032
+            ],
+            "text": "\\( f'(1) = 2 \\)",
+            "prediction": "\\( f'(1) = 2 \\)",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0033",
+            "bbox": [
+              24,
+              2113,
+              239,
+              2189
+            ],
+            "text": "\\( f'(2) = 4 \\)",
+            "prediction": "\\( f'(x) = 4 \\)",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0034",
+            "bbox": [
+              359,
+              2085,
+              808,
+              2162
+            ],
+            "text": "$=> y-4=4(x-2)$",
+            "prediction": "\\(\\Rightarrow\\) \\( y - 4 = 4(x - 2) \\)",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0035",
+            "bbox": [
+              1066,
+              2085,
+              1648,
+              2169
+            ],
+            "text": "=> $y-f(a) = f'(1)(x-1)$",
+            "prediction": "\\(\\Rightarrow\\) \\( y - f(x) = f'(x)(x - 1) \\)",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0036",
+            "bbox": [
+              485,
+              2188,
+              781,
+              2258
+            ],
+            "text": "\\( y = 4x - 8 + 4 \\)",
+            "prediction": "\\( y = 4x - 8 + 4 \\)",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0037",
+            "bbox": [
+              1231,
+              2222,
+              1478,
+              2295
+            ],
+            "text": "\\( y = 2x -1\\)",
+            "prediction": "\\( y = 2x \\)",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0038",
+            "bbox": [
+              24,
+              2356,
+              643,
+              2449
+            ],
+            "text": "\\( f(x) = 2x^2 - 3x \\), (2, 2)",
+            "prediction": "\\( f(x) = 2x^2 - 3x \\), (2, 2)",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0039",
+            "bbox": [
+              1031,
+              2411,
+              1451,
+              2497
+            ],
+            "text": "\\( f(x) = x^2 - 5x + 6 \\)",
+            "prediction": "\\( f(x) = x^2 - 5x + 6 \\)",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0040",
+            "bbox": [
+              1509,
+              2400,
+              1670,
+              2466
+            ],
+            "text": "\\( (3,0) \\)",
+            "prediction": "\\( (3,0) \\)",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0041",
+            "bbox": [
+              1856,
+              2387,
+              2078,
+              2446
+            ],
+            "text": "\\( 9 - 15 + 6 \\)",
+            "prediction": "\\( q = 15 + 6 \\)",
+            "order": 41,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0042",
+            "bbox": [
+              14,
+              2524,
+              350,
+              2610
+            ],
+            "text": "\\( f'(x) = 4x - 3 \\)",
+            "prediction": "\\( f'(x) = 4x - 3 \\)",
+            "order": 42,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0043",
+            "bbox": [
+              704,
+              2524,
+              862,
+              2590
+            ],
+            "text": "\\( 8 - 6 \\)",
+            "prediction": "\\( 8 - 6 \\)",
+            "order": 43,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0044",
+            "bbox": [
+              1009,
+              2568,
+              1362,
+              2645
+            ],
+            "text": "=> \\( f(x) = 2x - 5 \\)",
+            "prediction": "\\( f(x) = 2x - 4 \\)",
+            "order": 44,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0045",
+            "bbox": [
+              1819,
+              2524,
+              2460,
+              2610
+            ],
+            "text": "\\( f(x) = 2x^2 + x - 1 \\) (0, -1)",
+            "prediction": "\\( f(x) = 2x^2 + x - 1 \\) (0, -1)",
+            "order": 45,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0046",
+            "bbox": [
+              14,
+              2681,
+              254,
+              2764
+            ],
+            "text": "\\( f'(2) = 8 \\)",
+            "prediction": "\\( f'(x) = 8 \\)",
+            "order": 46,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0047",
+            "bbox": [
+              1009,
+              2709,
+              1251,
+              2785
+            ],
+            "text": "=> \\( f'(3) = \\)",
+            "prediction": "\\( f'(x) = 1 \\)",
+            "order": 47,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0048",
+            "bbox": [
+              1804,
+              2674,
+              2110,
+              2751
+            ],
+            "text": "\\( f'(x) = 4x + 1 \\)",
+            "prediction": "\\( f'(x) = 4x + 1 \\)",
+            "order": 48,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0049",
+            "bbox": [
+              14,
+              2829,
+              596,
+              2925
+            ],
+            "text": "=> $y-f(2)=f'(2)(x-2)$",
+            "prediction": "\\( y - f(x) = f'(x)(x - 2) \\)",
+            "order": 49,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0050",
+            "bbox": [
+              1009,
+              2829,
+              1571,
+              2919
+            ],
+            "text": "=> \\( y - f(a) = f'(a)(x - 3) \\)",
+            "prediction": "\\( y - f(x) = f'(x)(x - 3) \\)",
+            "order": 50,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0051",
+            "bbox": [
+              1804,
+              2808,
+              2002,
+              2884
+            ],
+            "text": "\\( f'(0) = 1 \\)",
+            "prediction": "\\( f'(0) = 1 \\)",
+            "order": 51,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0052",
+            "bbox": [
+              147,
+              2972,
+              557,
+              3062
+            ],
+            "text": "\\( y - 2 = 8(x - 2) \\)",
+            "prediction": "\\( y - 2 = 8(x - 2) \\)",
+            "order": 52,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0053",
+            "bbox": [
+              992,
+              2972,
+              1291,
+              3069
+            ],
+            "text": "\\[ =  y = x - 3 \\]",
+            "prediction": "\\[ y = x - 3 \\]",
+            "order": 53,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0054",
+            "bbox": [
+              1792,
+              2966,
+              2162,
+              3052
+            ],
+            "text": "\\( y + 1 = 1 \\) (x - 0)",
+            "prediction": "\\( y + 1 = 1 \\) (x - 0)",
+            "order": 54,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0055",
+            "bbox": [
+              199,
+              3106,
+              567,
+              3186
+            ],
+            "text": "\\( y = 8x - 16 + 2 \\)",
+            "prediction": "\\( y = 8x - 16 + 2 \\)",
+            "order": 55,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0056",
+            "bbox": [
+              1836,
+              3082,
+              2041,
+              3186
+            ],
+            "text": "\\( y = x - 1 \\)",
+            "prediction": "\\( y = x - 1 \\)",
+            "order": 56,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0133-line-0057",
+            "bbox": [
+              199,
+              3222,
+              503,
+              3302
+            ],
+            "text": "\\( y = 8x - 14 \\)",
+            "prediction": "\\( y = 8x - 14 \\)",
+            "order": 57,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T14:37:09.366Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T14:14:27.767Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 57
+        }
+      ]
     },
     "hf-0134": {
       "id": "hf-0134",
