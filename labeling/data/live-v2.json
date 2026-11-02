@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T10:11:28.632Z",
+  "updated_at": "2026-11-02T10:12:44.557Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -22608,7 +22608,7 @@
       },
       "bbox_annotation": {
         "status": "draft",
-        "revision": 1,
+        "revision": 2,
         "annotator": "이나현",
         "notes": "",
         "no_text": false,
@@ -22734,11 +22734,11 @@
               1366,
               1349
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "동차 행렬",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 9,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0074-line-0014",
@@ -22748,11 +22748,11 @@
               2064,
               1350
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "설명",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 10,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0074-line-0012",
@@ -22762,7 +22762,7 @@
               493,
               1484
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "이동",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 11,
             "uncertain": false,
@@ -22776,11 +22776,11 @@
               1613,
               1759
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "\\(T(t_x,t_y) = \\begin{bmatrix} 1 & 0 & t_x \\\\ 0 & 1 & t_y \\\\ 0 & 0 & 1 \\end{bmatrix}\\)",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 12,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0074-line-0016",
@@ -22790,11 +22790,11 @@
               2534,
               1650
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "\\(x\\)방향으로 \\(t_x\\)\n\\(y\\)방향으로 \\(t_y\\) 만큼 이동",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 13,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0074-line-0017",
@@ -22804,11 +22804,11 @@
               350,
               2016
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "회전",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 14,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0074-line-0018",
@@ -22818,11 +22818,11 @@
               1790,
               2279
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "\\(R(\\theta) = \\begin{bmatrix} \\cos\\theta & \\sin\\theta & 0 \\\\ -\\sin\\theta & \\cos\\theta & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}\\)",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 15,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0074-line-0019",
@@ -22832,11 +22832,11 @@
               2402,
               2273
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "원점을 중심으로\n반시계 방향으로\n\\(\\theta\\) 만큼 회전",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 16,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0074-line-0020",
@@ -22846,11 +22846,11 @@
               331,
               2528
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "크기",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 17,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0074-line-0021",
@@ -22860,11 +22860,11 @@
               1889,
               2852
             ],
-            "text": "- 1984年- 2001年- 2010年- 2023年",
+            "text": "\\(S(s_x,s_y) = \\begin{bmatrix} S_x & 0 & 0 \\\\ 0 & S_y & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}\\)",
             "prediction": "- 1984年- 2001年- 2010年- 2023年",
             "order": 18,
             "uncertain": false,
-            "reviewed": false
+            "reviewed": true
           },
           {
             "id": "hf-0074-line-0022",
@@ -22955,9 +22955,16 @@
       "claim": {
         "name": "이나현",
         "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T10:36:28.632Z"
+        "until": "2026-11-02T10:37:44.557Z"
       },
       "history": [
+        {
+          "at": "2026-11-02T10:12:44.557Z",
+          "author": "이나현",
+          "status": "draft",
+          "revision": 2,
+          "box_count": 24
+        },
         {
           "at": "2026-11-02T10:11:23.343Z",
           "author": "이나현",
