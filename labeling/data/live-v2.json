@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T13:38:05.104Z",
+  "updated_at": "2026-11-02T13:40:01.986Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -40035,20 +40035,1145 @@
         "source_sha256": "4d9794be3faed1cd9a3a33f5694ca393357ca5938c4e865d3bb32dcf59a74a66"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0127-line-0001",
+            "bbox": [
+              726,
+              0,
+              1233,
+              91
+            ],
+            "text": "Validation 1",
+            "prediction": "Validation 1",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0002",
+            "bbox": [
+              1279,
+              8,
+              1576,
+              91
+            ],
+            "text": "Verification",
+            "prediction": "Verification",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0003",
+            "bbox": [
+              1993,
+              13,
+              2272,
+              91
+            ],
+            "text": "N M W",
+            "prediction": "N M W",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0004",
+            "bbox": [
+              2386,
+              13,
+              2521,
+              70
+            ],
+            "text": "Never",
+            "prediction": "Never",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0005",
+            "bbox": [
+              2561,
+              13,
+              2933,
+              81
+            ],
+            "text": "Must want.",
+            "prediction": "Must want.",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0007",
+            "bbox": [
+              664,
+              227,
+              1211,
+              321
+            ],
+            "text": "요구사항",
+            "prediction": "1. 1982年1月1日",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0008",
+            "bbox": [
+              1279,
+              227,
+              1576,
+              321
+            ],
+            "text": "설계도",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0010",
+            "bbox": [
+              2290,
+              227,
+              2521,
+              321
+            ],
+            "text": "가능성",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0011",
+            "bbox": [
+              2680,
+              240,
+              2871,
+              321
+            ],
+            "text": "WMW",
+            "prediction": "NMW",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0012",
+            "bbox": [
+              2717,
+              339,
+              2886,
+              415
+            ],
+            "text": "Never",
+            "prediction": "Never",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0013",
+            "bbox": [
+              174,
+              414,
+              665,
+              503
+            ],
+            "text": "소프트웨어 테스트 =>",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0014",
+            "bbox": [
+              702,
+              456,
+              1211,
+              553
+            ],
+            "text": "결함 제거 및 사용자의",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0015",
+            "bbox": [
+              1248,
+              484,
+              1576,
+              581
+            ],
+            "text": "요구사항을 만",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0017",
+            "bbox": [
+              2290,
+              414,
+              2521,
+              511
+            ],
+            "text": "사용성",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0018",
+            "bbox": [
+              2714,
+              542,
+              2855,
+              607
+            ],
+            "text": "Must",
+            "prediction": "Must",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0019",
+            "bbox": [
+              2882,
+              497,
+              3074,
+              589
+            ],
+            "text": "가능하지",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0020",
+            "bbox": [
+              122,
+              684,
+              613,
+              773
+            ],
+            "text": "결함 : 소프트웨어",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0021",
+            "bbox": [
+              698,
+              695,
+              1207,
+              792
+            ],
+            "text": "에 있는 문제 → 사람",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0022",
+            "bbox": [
+              1252,
+              725,
+              1580,
+              822
+            ],
+            "text": "실수로 인해 발",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0023",
+            "bbox": [
+              1622,
+              660,
+              2262,
+              757
+            ],
+            "text": "v자형 모델",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0024",
+            "bbox": [
+              2290,
+              612,
+              2521,
+              709
+            ],
+            "text": "이직선",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0026",
+            "bbox": [
+              2882,
+              588,
+              3074,
+              682
+            ],
+            "text": "않으면",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0027",
+            "bbox": [
+              174,
+              783,
+              665,
+              869
+            ],
+            "text": "오류! 결함이라고",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0028",
+            "bbox": [
+              702,
+              783,
+              1211,
+              877
+            ],
+            "text": "악되는 현상",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0030",
+            "bbox": [
+              1622,
+              783,
+              2262,
+              877
+            ],
+            "text": "개발 공정",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0031",
+            "bbox": [
+              2290,
+              783,
+              2521,
+              877
+            ],
+            "text": "헤",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0032",
+            "bbox": [
+              2723,
+              721,
+              2871,
+              792
+            ],
+            "text": "Want",
+            "prediction": "Want",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0033",
+            "bbox": [
+              2882,
+              721,
+              3074,
+              813
+            ],
+            "text": "가능하다면",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0034",
+            "bbox": [
+              171,
+              982,
+              662,
+              1068
+            ],
+            "text": "품질 : 요구사항을 만족하",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0035",
+            "bbox": [
+              719,
+              933,
+              1228,
+              1027
+            ],
+            "text": "신뢰성",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0036",
+            "bbox": [
+              1248,
+              898,
+              1576,
+              992
+            ],
+            "text": "호율성",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0037",
+            "bbox": [
+              1622,
+              898,
+              2262,
+              992
+            ],
+            "text": "요구사항 정의",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0038",
+            "bbox": [
+              2477,
+              905,
+              2708,
+              999
+            ],
+            "text": "시스템",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0039",
+            "bbox": [
+              2699,
+              919,
+              2891,
+              1011
+            ],
+            "text": "테스트",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0040",
+            "bbox": [
+              178,
+              975,
+              669,
+              1064
+            ],
+            "text": "품질 : 요구사항을 만족하",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0041",
+            "bbox": [
+              702,
+              1023,
+              1211,
+              1118
+            ],
+            "text": "사용성",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0042",
+            "bbox": [
+              1248,
+              1023,
+              1576,
+              1118
+            ],
+            "text": "이식성",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0043",
+            "bbox": [
+              1619,
+              998,
+              2259,
+              1093
+            ],
+            "text": "기본설계",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0044",
+            "bbox": [
+              2439,
+              1061,
+              2670,
+              1156
+            ],
+            "text": "단뒤 T",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0045",
+            "bbox": [
+              2657,
+              1085,
+              2849,
+              1180
+            ],
+            "text": "( unit-",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0046",
+            "bbox": [
+              174,
+              1146,
+              665,
+              1235
+            ],
+            "text": "6가지 특성 = 기능성,",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 41,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0047",
+            "bbox": [
+              702,
+              1146,
+              1211,
+              1243
+            ],
+            "text": "뢰성, 유지보수성, 사용성",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 42,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0048",
+            "bbox": [
+              1224,
+              1174,
+              1552,
+              1271
+            ],
+            "text": "이식성, 효율성",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 43,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0049",
+            "bbox": [
+              1564,
+              1174,
+              2204,
+              1271
+            ],
+            "text": "사용성",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 44,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0051",
+            "bbox": [
+              2584,
+              1454,
+              2776,
+              1546
+            ],
+            "text": "테스트",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 45,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0052",
+            "bbox": [
+              177,
+              1303,
+              668,
+              1389
+            ],
+            "text": "w형 모델 : 테스트와",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 46,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0053",
+            "bbox": [
+              709,
+              1320,
+              1218,
+              1414
+            ],
+            "text": "개발을 동시에 하면 작업이",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 47,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0054",
+            "bbox": [
+              1241,
+              1320,
+              1569,
+              1414
+            ],
+            "text": "밀리지 x.",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 48,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0055",
+            "bbox": [
+              1622,
+              1303,
+              2262,
+              1397
+            ],
+            "text": "물성 인스펙션 : 중요도가 높은",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 49,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0056",
+            "bbox": [
+              2290,
+              1319,
+              2521,
+              1408
+            ],
+            "text": "(기록이 필요",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 50,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0058",
+            "bbox": [
+              174,
+              1395,
+              665,
+              1484
+            ],
+            "text": "=> 테스트",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 51,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0059",
+            "bbox": [
+              702,
+              1395,
+              1211,
+              1492
+            ],
+            "text": "& 개발을 병행하는 것",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 52,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0060",
+            "bbox": [
+              1241,
+              1356,
+              1569,
+              1453
+            ],
+            "text": "밀리지 X.",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 53,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0061",
+            "bbox": [
+              1646,
+              1444,
+              2286,
+              1541
+            ],
+            "text": "테크니컬 리뷰 : 미리 정해둔 ",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 54,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0062",
+            "bbox": [
+              2294,
+              1455,
+              2525,
+              1544
+            ],
+            "text": "프로세스에",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 55,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0064",
+            "bbox": [
+              170,
+              1561,
+              661,
+              1650
+            ],
+            "text": "화이트벅스테스트 : 소스코",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 56,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0065",
+            "bbox": [
+              712,
+              1568,
+              1221,
+              1665
+            ],
+            "text": "를 보는 것. 정적",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 57,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0066",
+            "bbox": [
+              1248,
+              1572,
+              1576,
+              1669
+            ],
+            "text": "스트 : 실행시키지 X",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 58,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0067",
+            "bbox": [
+              1664,
+              1551,
+              2304,
+              1648
+            ],
+            "text": "비공식 리뷰 : 정해진 방법 X",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 59,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0069",
+            "bbox": [
+              165,
+              1649,
+              665,
+              1738
+            ],
+            "text": "블랙박스테스트 : 요구사항",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 60,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0070",
+            "bbox": [
+              702,
+              1649,
+              1211,
+              1746
+            ],
+            "text": "보는 것 동적",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 61,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0071",
+            "bbox": [
+              1248,
+              1649,
+              1576,
+              1746
+            ],
+            "text": "스트 : 실행시킴 O",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 62,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0072",
+            "bbox": [
+              1622,
+              1649,
+              2262,
+              1746
+            ],
+            "text": "워크쓰루 : 작성자가 설명",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 63,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0073",
+            "bbox": [
+              2290,
+              1657,
+              2521,
+              1746
+            ],
+            "text": "리뷰탐",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 64,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0077",
+            "bbox": [
+              1622,
+              1772,
+              2262,
+              1869
+            ],
+            "text": "코멘트를 구하는",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 65,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0078",
+            "bbox": [
+              2290,
+              1780,
+              2521,
+              1869
+            ],
+            "text": "것.",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 66,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0079",
+            "bbox": [
+              165,
+              1903,
+              665,
+              1992
+            ],
+            "text": "제어흐름 테스트 방법",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 67,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0081",
+            "bbox": [
+              1612,
+              1892,
+              2252,
+              1981
+            ],
+            "text": "탁상디버그 : 소스코드를 눈",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 68,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0082",
+            "bbox": [
+              2286,
+              1877,
+              2517,
+              1961
+            ],
+            "text": "확인하고",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 69,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0083",
+            "bbox": [
+              165,
+              2006,
+              665,
+              2095
+            ],
+            "text": "flow chart 작성",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 70,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0085",
+            "bbox": [
+              1629,
+              2062,
+              2269,
+              2151
+            ],
+            "text": ": 모든 명령문을 최소 1번 통과하도록",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 71,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0086",
+            "bbox": [
+              165,
+              2097,
+              665,
+              2183
+            ],
+            "text": "망라 기준 결정",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 72,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0087",
+            "bbox": [
+              702,
+              2138,
+              1211,
+              2230
+            ],
+            "text": "헷리지X. 전체",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 73,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0089",
+            "bbox": [
+              1622,
+              2138,
+              2262,
+              2230
+            ],
+            "text": ": 분기 기점 이후의 모든 경로 통과하",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 74,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0090",
+            "bbox": [
+              162,
+              2300,
+              662,
+              2387
+            ],
+            "text": ") 경로를 통과하도록 테스트",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 75,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0091",
+            "bbox": [
+              702,
+              2320,
+              1211,
+              2412
+            ],
+            "text": "커버리지 기준",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 76,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0092",
+            "bbox": [
+              1622,
+              2258,
+              2262,
+              2345
+            ],
+            "text": "모든 조건을 따짐 (복수조건이 오란",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 77,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0093",
+            "bbox": [
+              155,
+              2418,
+              655,
+              2505
+            ],
+            "text": ") 결과 확인",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 78,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0094",
+            "bbox": [
+              702,
+              2373,
+              1211,
+              2465
+            ],
+            "text": "↓ 명령문",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 79,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0127-line-0097",
+            "bbox": [
+              702,
+              2485,
+              1211,
+              2577
+            ],
+            "text": "분기 경로",
+            "prediction": "1982年，他患了心脏病。",
+            "order": 80,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T14:03:05.104Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T13:40:01.986Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 80
+        }
+      ]
     },
     "hf-0128": {
       "id": "hf-0128",
