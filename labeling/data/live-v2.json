@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T14:02:05.122Z",
+  "updated_at": "2026-11-02T14:02:54.850Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -43027,20 +43027,823 @@
         "source_sha256": "d7da93b7fa8d57e1d61c0005b46206aa76cb0e954e78130723fe07ba1157ddd2"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0132-line-0001",
+            "bbox": [
+              0,
+              3,
+              324,
+              95
+            ],
+            "text": "\\[ f(x) = x^2 + 2x \\]",
+            "prediction": "\\[ f(x) = x^2 + 2x \\]",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0002",
+            "bbox": [
+              431,
+              3,
+              748,
+              95
+            ],
+            "text": "(1,3) 집방",
+            "prediction": "(1,3) \\( x^2 + y^2 \\)",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0003",
+            "bbox": [
+              949,
+              0,
+              1782,
+              124
+            ],
+            "text": "\\( e^{ix} \\), \\( u = 2x \\) \\( \\frac{d}{dx} e^{ix} \\), \\( \\frac{du}{dx} = e^{ix} \\)",
+            "prediction": "\\( e^{ix} \\), \\( u = 2x \\) \\( \\frac{d}{dx} e^{ix} \\), \\( \\frac{du}{dx} = e^{ix} \\)",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0004",
+            "bbox": [
+              0,
+              160,
+              288,
+              256
+            ],
+            "text": "\\( f'(x) = 2x + 2 \\)",
+            "prediction": "\\( f'(x) = 2x + 2 \\)",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0005",
+            "bbox": [
+              696,
+              153,
+              1247,
+              270
+            ],
+            "text": "\\( f'(x) = cos(4x) \\) (0,1)",
+            "prediction": "\\( f'(x) = (0.5, 4x) \\) (0,1)",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0006",
+            "bbox": [
+              0,
+              295,
+              218,
+              383
+            ],
+            "text": "\\( f'(1) = 4 \\)",
+            "prediction": "\\( f'(1) = 4 \\)",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0007",
+            "bbox": [
+              709,
+              295,
+              1035,
+              401
+            ],
+            "text": "\\[ f'(x) = -\\sin 4x \\]",
+            "prediction": "\\[ f'(x) = -\\sin 4x \\]",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0008",
+            "bbox": [
+              1246,
+              277,
+              1724,
+              394
+            ],
+            "text": "\\( h(x) = x^2 \\sin x \\).",
+            "prediction": "\\( h(x) = x^2 \\sin x \\).",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0009",
+            "bbox": [
+              0,
+              422,
+              553,
+              514
+            ],
+            "text": "\\[ => y - f(1) = f'(1)(x - 1) \\]",
+            "prediction": "\\[ = y - f(1) = f'(1)(x - 1) \\]",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0010",
+            "bbox": [
+              731,
+              426,
+              980,
+              511
+            ],
+            "text": "\\( f'(0) = -\\sin x \\)",
+            "prediction": "\\( f'(0) = -\\sin x \\)",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0011",
+            "bbox": [
+              60,
+              557,
+              354,
+              631
+            ],
+            "text": "\\[ y - 3 = 4x - 1 \\]",
+            "prediction": "\\[ y - 3 = 4x - 1 \\]",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0012",
+            "bbox": [
+              749,
+              535,
+              1184,
+              627
+            ],
+            "text": "\\[ y - f(a) = f'(0)(x - 0) \\]",
+            "prediction": "\\[ y - f(x) = f'(x)(x - 0) \\]",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0013",
+            "bbox": [
+              1304,
+              441,
+              2320,
+              624
+            ],
+            "text": "\\[ h`(x) = 2x *sinx+x^2+cosx \\]",
+            "prediction": "\\[ h(x) = 2x \\cdot \\cos x + t^2 \\cos x \\]",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0014",
+            "bbox": [
+              116,
+              652,
+              369,
+              729
+            ],
+            "text": "\\[ y = 4x + 2 \\]",
+            "prediction": "\\[ y = 4x + 2 \\]",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0015",
+            "bbox": [
+              782,
+              652,
+              1058,
+              726
+            ],
+            "text": "\\[ y - \\cos x = \\sin x \\]",
+            "prediction": "\\[ y - \\cos x = \\sin x \\]",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0016",
+            "bbox": [
+              1309,
+              721,
+              1656,
+              835
+            ],
+            "text": "\\[ h(x) = x^2 \\sin x \\]",
+            "prediction": "\\[ y = x^2 \\sin x \\]",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0017",
+            "bbox": [
+              60,
+              834,
+              576,
+              937
+            ],
+            "text": "\\[ f(x) = 3x^3 \\quad (1, 3). \\]",
+            "prediction": "\\[ f(x) = 3x^3 \\quad (1, 3). \\]",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0018",
+            "bbox": [
+              1327,
+              871,
+              2027,
+              999
+            ],
+            "text": "\\[ h`(x) = 2x + \\sin x + x^2 + \\cos x \\]",
+            "prediction": "\\[ h(x) = 2x + \\sin x + x^2 + \\cos x \\]",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0019",
+            "bbox": [
+              65,
+              980,
+              354,
+              1079
+            ],
+            "text": "\\[ f'(x) = 9x^2 \\]",
+            "prediction": "\\[ f'(x) = 9x^2 \\]",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0020",
+            "bbox": [
+              684,
+              1067,
+              944,
+              1156
+            ],
+            "text": "\\[ f'(x) = 2x - 4 \\]",
+            "prediction": "\\[ f'(x) = 2x - 4 \\]",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0021",
+            "bbox": [
+              714,
+              1195,
+              992,
+              1269
+            ],
+            "text": "\\[ f'(x) = 4 - 4 \\leq 0 \\]",
+            "prediction": "\\[ f'(x) = 4 - 4 \\leq 0 \\]",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0022",
+            "bbox": [
+              1352,
+              1217,
+              1868,
+              1378
+            ],
+            "text": "\\[ g'(x) = \\frac{2x}{e^x} - \\frac{x^2}{e^x} \\]",
+            "prediction": "\\[ g'(x) = \\frac{2x}{e^x} - \\frac{x^2}{e^x} \\]",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0023",
+            "bbox": [
+              53,
+              1337,
+              301,
+              1437
+            ],
+            "text": "\\[ f(x) = \\sqrt{x} \\]",
+            "prediction": "\\[ f(x) = \\sqrt{x} \\]",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0024",
+            "bbox": [
+              560,
+              1370,
+              975,
+              1484
+            ],
+            "text": "\\[ f(x) = x^77 - x^2 + x + 7 \\]",
+            "prediction": "\\[ f(x) = x^2 + x + 9 \\]",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0025",
+            "bbox": [
+              1524,
+              1414,
+              1803,
+              1571
+            ],
+            "text": "\\[ = \\frac{x^2 - 2x^2}{e^x} \\]",
+            "prediction": "\\[ = \\frac{x^2 - 2x^2}{e^x} \\]",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0026",
+            "bbox": [
+              25,
+              1501,
+              170,
+              1597
+            ],
+            "text": "\\[ f'(x) = \\]",
+            "prediction": "\\[ f'(x) = \\]",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0027",
+            "bbox": [
+              583,
+              1530,
+              1025,
+              1644
+            ],
+            "text": "\\[ f'(x) = 77nx^76 - 2x + 1 \\]",
+            "prediction": "\\[ f'(x) = m x^2 - 2x + 1 \\]",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0028",
+            "bbox": [
+              1219,
+              1607,
+              1631,
+              1725
+            ],
+            "text": "\\[ h(x) = x^3 \\sin x \\]",
+            "prediction": "\\[ h(x) = x^3 \\sin x \\]",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0029",
+            "bbox": [
+              0,
+              1654,
+              561,
+              1768
+            ],
+            "text": "$\\frac{d}{dy}(5x^3-4x^2+x-7)$",
+            "prediction": "\\[ f(x) = x^4 - 4x^2 + x - 1 \\]",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0030",
+            "bbox": [
+              570,
+              1709,
+              1028,
+              1830
+            ],
+            "text": "\\[ f(x) = x^4 - 7x^3 + \\sqrt{9} \\]",
+            "prediction": "\\[ f(x) = x^4 - 4x^3 + \\sqrt{9} \\]",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0031",
+            "bbox": [
+              1236,
+              1724,
+              1954,
+              1849
+            ],
+            "text": "\\[ h'(x) = 3x^2 \\cdot \\sin x + x^3 \\cdot \\cos x \\]",
+            "prediction": "\\[ h'(x) = 3x^2 \\cdot \\sin x + x^3 \\cdot \\cos x \\]",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0032",
+            "bbox": [
+              0,
+              1848,
+              377,
+              1947
+            ],
+            "text": "\\[ = 15x^2 - 8x + 1 \\]",
+            "prediction": "\\[ = 15x^2 - 8x + 1 \\]",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0033",
+            "bbox": [
+              570,
+              1855,
+              982,
+              1962
+            ],
+            "text": "\\[ f'(x) = 4x^3 - 21x^2 \\]",
+            "prediction": "\\[ f'(x) = 4x^3 - 21x^2 \\]",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0034",
+            "bbox": [
+              1231,
+              1924,
+              1656,
+              2034
+            ],
+            "text": "\\[ h(x) = (x^2 + 1)e^x \\]",
+            "prediction": "\\[ h(x) = (x^2 + 1)e^x \\]",
+            "order": 34,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0035",
+            "bbox": [
+              588,
+              1993,
+              992,
+              2115
+            ],
+            "text": "\\[ f(x) = x^5 + e^{2x} \\]",
+            "prediction": "\\[ f(x) = x^T + e^{2x} \\]",
+            "order": 35,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0036",
+            "bbox": [
+              1246,
+              2004,
+              1959,
+              2144
+            ],
+            "text": "\\[ h'(x) = (2x \\cdot e^x + (x^2 + 1)e^x) \\]",
+            "prediction": "\\[ h'(x) = (2x \\cdot e^x + (x^2 + 1)e^x) \\]",
+            "order": 36,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0037",
+            "bbox": [
+              620,
+              2114,
+              1053,
+              2242
+            ],
+            "text": "\\[ f'(x) = 5x^4 + 2x^{24} \\]",
+            "prediction": "\\[ f'(x) = 5x^4 + 2x^{24} \\]",
+            "order": 37,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0038",
+            "bbox": [
+              1262,
+              2197,
+              1689,
+              2311
+            ],
+            "text": "\\[ h(x) = x \\cos(2x) \\]",
+            "prediction": "\\[ h(x) = x \\cos(2x) \\]",
+            "order": 38,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0039",
+            "bbox": [
+              620,
+              2248,
+              1136,
+              2373
+            ],
+            "text": "\\[ f(x) = \\sqrt{3x + 37} \\]",
+            "prediction": "\\[ f(x) = \\sqrt{3x + 37} \\]",
+            "order": 39,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0040",
+            "bbox": [
+              1277,
+              2292,
+              2020,
+              2424
+            ],
+            "text": "\\[ h'(x) = \\cos(2x) + x - \\sin(2x) \\]",
+            "prediction": "\\[ h'(x) = \\cos(2x) + x - \\sin(2x) \\]",
+            "order": 40,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0041",
+            "bbox": [
+              663,
+              2372,
+              1144,
+              2519
+            ],
+            "text": "\\[ f'(x) = 3\\sqrt{3} + 1\\frac{1}{2} \\]",
+            "prediction": "\\[ f'(x) = 3\\sqrt{3} + 1\\frac{1}{2} \\]",
+            "order": 41,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0042",
+            "bbox": [
+              1297,
+              2525,
+              1760,
+              2639
+            ],
+            "text": "\\[ h(x) = (3x - 1)\\sqrt{x} \\]",
+            "prediction": "\\[ h(x) = (2x - 1)\\sqrt{x} \\]",
+            "order": 42,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0044",
+            "bbox": [
+              1322,
+              2657,
+              2045,
+              2800
+            ],
+            "text": "\\[ h'(x) = 2 \\cdot \\sqrt{x} + (3x-1) \\cdot \\frac{1}{2}x \\]",
+            "prediction": "\\[ h'(x) = 2 \\cdot \\sqrt{x} + (3x-1) \\cdot \\frac{1}{2}x \\]",
+            "order": 43,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0045",
+            "bbox": [
+              0,
+              2963,
+              354,
+              3066
+            ],
+            "text": "\\[ f(x) = x^3 - 2x \\]",
+            "prediction": "\\[ f(x) = x^2 - 2x \\]",
+            "order": 44,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0046",
+            "bbox": [
+              426,
+              2952,
+              596,
+              3026
+            ],
+            "text": "\\( (1, -1) \\)",
+            "prediction": "\\( (1, -1) \\)",
+            "order": 45,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0047",
+            "bbox": [
+              800,
+              2934,
+              937,
+              3011
+            ],
+            "text": "\\[ = x +  \\]",
+            "prediction": "\\[ = x + 1 \\]",
+            "order": 46,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0048",
+            "bbox": [
+              1052,
+              2963,
+              1379,
+              3132
+            ],
+            "text": "\\[ g(2x) = \\frac{e^{3x}}{x} \\]",
+            "prediction": "\\[ g(x) = \\frac{e^{3x}}{x} \\]",
+            "order": 47,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0049",
+            "bbox": [
+              32,
+              3116,
+              336,
+              3204
+            ],
+            "text": "\\[ f'(x) = 3x^2 - 2 \\]",
+            "prediction": "\\[ f'(x) = 3x^2 - 2 \\]",
+            "order": 48,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0050",
+            "bbox": [
+              537,
+              3047,
+              831,
+              3201
+            ],
+            "text": "$(x)=\\frac{x^2}{sinx}$",
+            "prediction": "\\[ g(x) = \\frac{x^2}{\\sin x} \\]",
+            "order": 49,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0051",
+            "bbox": [
+              1057,
+              3083,
+              1697,
+              3281
+            ],
+            "text": "\\[ g'(x) = \\frac{3e^{3x}}{x} - \\frac{e^{3x}}{1} \\]",
+            "prediction": "\\[ g'(x) = \\frac{3e^{3x}}{x} - \\frac{e^{3x}}{1} \\]",
+            "order": 50,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0052",
+            "bbox": [
+              32,
+              3225,
+              253,
+              3310
+            ],
+            "text": "\\[ f'(1) = 1 \\]",
+            "prediction": "\\[ f'(x) = 4 \\]",
+            "order": 51,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0053",
+            "bbox": [
+              537,
+              3200,
+              1010,
+              3365
+            ],
+            "text": "$(x)=\\frac{2x}{sinx}-\\frac{x^2}{cosx}$",
+            "prediction": "\\[ g'(x) = \\frac{2x}{\\sin x} \\cdot \\frac{x^2}{\\cos x} \\]",
+            "order": 52,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0054",
+            "bbox": [
+              25,
+              3342,
+              470,
+              3438
+            ],
+            "text": "$y-f(1)=f'(1)(x-1)$",
+            "prediction": "\\[ y - \\frac{1}{6} \\] (1)(x-1)",
+            "order": 53,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0055",
+            "bbox": [
+              570,
+              3342,
+              1119,
+              3507
+            ],
+            "text": "\\[ g(x) = \\frac{1}{x^2 + 1} - \\frac{x}{3} \\]",
+            "prediction": "\\[ g(x) = \\frac{1}{x^2 + 1} - \\frac{x}{3} \\]",
+            "order": 54,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0056",
+            "bbox": [
+              1272,
+              3342,
+              1760,
+              3507
+            ],
+            "text": "$g(x)=\\frac{\\frac{1}{2}x}{e^x}-\\frac{\\sqrt{x}}{e^x}$",
+            "prediction": "\\[ g(x) = \\frac{1}{e^x} - \\frac{\\sqrt{x}}{e^x} \\]",
+            "order": 55,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0057",
+            "bbox": [
+              47,
+              3451,
+              344,
+              3536
+            ],
+            "text": "\\[ y + 1 = x - 1 \\]",
+            "prediction": "\\[ y + 1 = x - 1 \\]",
+            "order": 56,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0132-line-0058",
+            "bbox": [
+              47,
+              3535,
+              301,
+              3627
+            ],
+            "text": "\\[ y = x - 2 \\]",
+            "prediction": "\\[ y = x - 2 \\]",
+            "order": 57,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T14:27:05.122Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T14:02:54.850Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 57
+        }
+      ]
     },
     "hf-0133": {
       "id": "hf-0133",
