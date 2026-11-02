@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T12:11:05.018Z",
+  "updated_at": "2026-11-02T12:13:21.926Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -31752,20 +31752,319 @@
         "source_sha256": "ba51ebfeef3dd00608eacae9b67df23594cc328b72e874a2bd0664029be28194"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "정하경",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0105-line-0001",
+            "bbox": [
+              99,
+              270,
+              391,
+              339
+            ],
+            "text": "2021.03.23",
+            "prediction": "2021.03.23",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0002",
+            "bbox": [
+              120,
+              358,
+              363,
+              456
+            ],
+            "text": "HTML",
+            "prediction": "HTML",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0003",
+            "bbox": [
+              133,
+              483,
+              342,
+              553
+            ],
+            "text": "<html>",
+            "prediction": "&lt;html&gt;",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0004",
+            "bbox": [
+              244,
+              592,
+              442,
+              666
+            ],
+            "text": "<head>",
+            "prediction": "&lt;head&gt;",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0005",
+            "bbox": [
+              326,
+              633,
+              2462,
+              795
+            ],
+            "text": "<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/>",
+            "prediction": "<meta http-equiv=\"content-type\" (content=\"text/html; charset=utf-8\")>",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0006",
+            "bbox": [
+              332,
+              790,
+              1098,
+              892
+            ],
+            "text": "<title> 좌우슬라이딩 </title>",
+            "prediction": "<title>引导条文说明</title>",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0007",
+            "bbox": [
+              341,
+              862,
+              2278,
+              1025
+            ],
+            "text": "<link href=\"style.css\" type=\"text/css\" rel=\"styletext\">",
+            "prediction": "<link href=\"style.css\" type=\"text/css\" rel=\"style\"text\"",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0008",
+            "bbox": [
+              341,
+              975,
+              2341,
+              1142
+            ],
+            "text": "<script src=\"script.js\" defer=\"defer\" type=\"text/javascript\">",
+            "prediction": "<script src=\"script.js\" defer=\"defer\" type=\"text/javascript\">",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0009",
+            "bbox": [
+              341,
+              1165,
+              645,
+              1242
+            ],
+            "text": "</script>",
+            "prediction": "</script>",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0010",
+            "bbox": [
+              323,
+              1209,
+              2453,
+              1367
+            ],
+            "text": "<script src = \"jquery-1.12.3.js\" type = \"text/javascript\"></script>",
+            "prediction": "<script src=\"&lt;query&gt;1.2.3.js\" type=\"text/javascript\"&gt;&lt;script&gt;",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0011",
+            "bbox": [
+              266,
+              1391,
+              472,
+              1468
+            ],
+            "text": "</head>",
+            "prediction": "<head>",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0012",
+            "bbox": [
+              266,
+              1507,
+              487,
+              1593
+            ],
+            "text": "<body>",
+            "prediction": "&lt;body&gt;",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0013",
+            "bbox": [
+              326,
+              1604,
+              1479,
+              1718
+            ],
+            "text": "<div id=\"imageslide\" class=\"wrap\">",
+            "prediction": "<div id=\"imageslide\" class=\"wrap\">",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0014",
+            "bbox": [
+              498,
+              1729,
+              1183,
+              1823
+            ],
+            "text": "<div class=\"imgs\">",
+            "prediction": "<div class=\"images\">",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0015",
+            "bbox": [
+              601,
+              1782,
+              2755,
+              1952
+            ],
+            "text": "<div class=\"slideimg\"><img src=\"image/images.png\" alt=\"no\">",
+            "prediction": "<div class=\"slideimg\">img src=\"image/images.png\" alt=\"no\">",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0016",
+            "bbox": [
+              601,
+              1891,
+              2755,
+              2057
+            ],
+            "text": "<div class=\"slideimg\"><img src=\"image/images(2).jpg\" alt=\"no\"></div>",
+            "prediction": "<div class=\"slideimg\">img src=\"image/images.png\" alt=\"no\">",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0017",
+            "bbox": [
+              601,
+              1995,
+              2755,
+              2170
+            ],
+            "text": "<div class=\"slideimg\"><img src=\"image/images(3).jpg\" alt=\"no\"></div>",
+            "prediction": "<div class=\"slideimg\">img src=\"image/images.png\" alt=\"no\">",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0019",
+            "bbox": [
+              480,
+              2201,
+              708,
+              2299
+            ],
+            "text": "</div>",
+            "prediction": "</div>",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0020",
+            "bbox": [
+              314,
+              2318,
+              563,
+              2416
+            ],
+            "text": "</div>",
+            "prediction": "\\( </div> \\)",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0021",
+            "bbox": [
+              238,
+              2435,
+              472,
+              2533
+            ],
+            "text": "</body>",
+            "prediction": "&lt;body&gt;",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0105-line-0022",
+            "bbox": [
+              154,
+              2552,
+              409,
+              2641
+            ],
+            "text": "</html>",
+            "prediction": "\\( </html> \\)",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "정하경",
-        "client": "4cfc9c1c-7174-4faf-b387-fc009c1b64a9",
-        "until": "2026-11-02T12:36:05.018Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T12:13:21.926Z",
+          "author": "정하경",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 21
+        }
+      ]
     },
     "hf-0106": {
       "id": "hf-0106",
