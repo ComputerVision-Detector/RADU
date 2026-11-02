@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T07:56:28.708Z",
+  "updated_at": "2026-11-02T07:58:11.873Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -20218,20 +20218,487 @@
         "source_sha256": "b42e3c04dc85ca3908de737285649bbbdd08d6f22838277617feb1d75bf601cc"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0066-line-0002",
+            "bbox": [
+              219,
+              95,
+              2334,
+              206
+            ],
+            "text": "※ 순환 신경망은 맥락이 아무리 길더라도 맥락의 정보를 기억하는 매커니즘을 갖추고 있음.",
+            "prediction": "- 企鹅 企鹅",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0066-line-0003",
+            "bbox": [
+              202,
+              212,
+              1105,
+              339
+            ],
+            "text": "· 하이퍼파라미터 (Hyperparameter)",
+            "prediction": "- 引申为“引申”",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "hf-0066-line-0004",
+            "bbox": [
+              272,
+              347,
+              1901,
+              471
+            ],
+            "text": "- 모델의 학습이 시작되기 전에 사람이 설정하거나 탐색하는 값으로,",
+            "prediction": "- 返程的指南",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f173f331-245c-4c41-9ee2-23ed15e40d86",
+            "bbox": [
+              303,
+              471,
+              1873,
+              608
+            ],
+            "text": "학습과정에서 데이터로부터 직접 학습되는 매개변수와 구분됨.",
+            "prediction": "",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-29085a41-3b6f-4f14-a437-4d784bf285bf",
+            "bbox": [
+              277,
+              620,
+              1176,
+              731
+            ],
+            "text": "- ex) word2vec의 윈도우 크기",
+            "prediction": "",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2a7dfceb-088a-4bf1-a960-6aec50171f63",
+            "bbox": [
+              397,
+              746,
+              1764,
+              863
+            ],
+            "text": "CNN의 필터 크기, 스트라이드, 패딩, 배치 사이즈, 에폭도",
+            "prediction": "",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-2949e832-23ef-4792-8b46-766fb4d310e7",
+            "bbox": [
+              1807,
+              737,
+              2469,
+              823
+            ],
+            "text": "재귀 신경망이라는 트리 구조의",
+            "prediction": "",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5ac19af6-1118-4763-9dd2-d747933dc770",
+            "bbox": [
+              1807,
+              800,
+              2592,
+              921
+            ],
+            "text": "데이터를 처리하기 위한 신경망도 있음",
+            "prediction": "",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5ad8764a-6341-4f6f-af94-08ed4245020b",
+            "bbox": [
+              1804,
+              906,
+              2383,
+              1041
+            ],
+            "text": "순환 신경망과는 다름",
+            "prediction": "",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a2ad33ae-3536-499a-9c7a-1636cb0c5539",
+            "bbox": [
+              179,
+              1001,
+              1718,
+              1130
+            ],
+            "text": "· RNN (순환 신경망 : Recurrent Neural Network).",
+            "prediction": "",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-dc661f9d-0129-46f8-b314-17822d364c53",
+            "bbox": [
+              277,
+              1138,
+              1414,
+              1261
+            ],
+            "text": "- 특징: 순환하는 경로(닫힌 경로)가 있음.",
+            "prediction": "",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0c6b152c-41f7-4913-8b10-f5d269bd87eb",
+            "bbox": [
+              486,
+              1244,
+              1878,
+              1385
+            ],
+            "text": "이 순환 경로를 따라 데이터는 끊임없이 순환",
+            "prediction": "",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ba096db7-856b-42c9-8312-41785039cd58",
+            "bbox": [
+              546,
+              1379,
+              2635,
+              1505
+            ],
+            "text": "그렇기에 (순환되기에) 과거의 정보를 기억하는 동시에 최신 데이터로 갱신 가능.",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f8291126-5d05-4c38-a2dd-2bf1886087cd",
+            "bbox": [
+              214,
+              1516,
+              2251,
+              1640
+            ],
+            "text": "- RNN계층에서 출력이 2개로 분기되고 출력중 하나가 자기 자신에 입력됨",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0a8e51ed-ba65-4676-80ce-aca4156d4d6b",
+            "bbox": [
+              1131,
+              1654,
+              1529,
+              1800
+            ],
+            "text": "↳ 복제되어 분기",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d07e20fd-90b3-4f60-9f4c-b06034c4ceaf",
+            "bbox": [
+              1666,
+              1640,
+              2477,
+              1814
+            ],
+            "text": "시계열 데이터라는 시간 방향으로",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-bff66134-d36e-408f-b467-693f0b188452",
+            "bbox": [
+              1641,
+              1769,
+              2079,
+              1918
+            ],
+            "text": "데이터가 나열됨.",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-eca885a3-0909-495c-9467-e26cf9b8384f",
+            "bbox": [
+              1681,
+              1883,
+              2586,
+              2049
+            ],
+            "text": "따라서 시계열 데이터의 인덱스를",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-24406308-8d58-44af-b23c-8f82fa00f694",
+            "bbox": [
+              1675,
+              2009,
+              2632,
+              2176
+            ],
+            "text": "가리킬 때는 '시각'이라는 용어를 사용.",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-954d3372-b988-4e9d-8244-580ddf7ee38a",
+            "bbox": [
+              231,
+              1797,
+              1331,
+              1929
+            ],
+            "text": "- 각 시각의 RNN 계층은 그 계층으로의",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-03bea390-e886-47f7-a117-f7c09ada8fa2",
+            "bbox": [
+              317,
+              1929,
+              1386,
+              2070
+            ],
+            "text": "입력과 1개 전의 RNN 계층으로부터의",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b1fc08ff-a131-476d-a0d8-f9faa8316566",
+            "bbox": [
+              303,
+              2070,
+              715,
+              2236
+            ],
+            "text": "출력을 받음.",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-1060dc52-8721-4a92-b1ee-7e1ccc332588",
+            "bbox": [
+              346,
+              2213,
+              1251,
+              2359
+            ],
+            "text": "그리고 이 두 정보를 바탕으로",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-46997329-75be-412f-b8c3-3f1fbb994717",
+            "bbox": [
+              348,
+              2350,
+              1016,
+              2499
+            ],
+            "text": "현 시각의 출력을 계산",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f677be54-e974-4a25-8155-759386987d4d",
+            "bbox": [
+              325,
+              2482,
+              1704,
+              2674
+            ],
+            "text": "\\(h_t = \\tanh(h_{t-1}W_h + x_tW_x + b)\\)",
+            "prediction": "",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-9c97d8a5-f689-4d07-8615-d8f60a198ed1",
+            "bbox": [
+              354,
+              2637,
+              1815,
+              2786
+            ],
+            "text": "\\(W_x\\) : 입력 \\(x\\)를 출력 \\(h\\)로 변환하기 위한 가중치",
+            "prediction": "",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f3d85246-01ee-41e1-b1ef-0e0cc9efbf52",
+            "bbox": [
+              346,
+              2780,
+              2305,
+              2952
+            ],
+            "text": "\\(W_h\\) : RNN 출력을 다음 시각의 출력으로 변환하기 위한 가중치",
+            "prediction": "",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-70de9cdc-d6a7-478f-8a8a-87896830377e",
+            "bbox": [
+              343,
+              2941,
+              764,
+              3121
+            ],
+            "text": "\\(b\\) : 편향",
+            "prediction": "",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d5510e8f-bb79-463a-be12-86ed04f19827",
+            "bbox": [
+              340,
+              3084,
+              1305,
+              3256
+            ],
+            "text": "\\(h_{t-1}\\)과 \\(x_t\\)는 행 벡터",
+            "prediction": "",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-34b0a9e7-faea-4dbb-b687-5476f6780cad",
+            "bbox": [
+              354,
+              3167,
+              2715,
+              3405
+            ],
+            "text": "행렬 곱을 계산후 그 합을 \\(\\tanh\\) 함수(쌍곡탄젠트 함수)를 이용해 변환",
+            "prediction": "",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-5abed4fd-2265-463f-b525-190da699c0d2",
+            "bbox": [
+              348,
+              3370,
+              1523,
+              3528
+            ],
+            "text": "그 결과가 시각 \\(t\\)의 출력 \\(h_t\\)가 됨.",
+            "prediction": "",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-dfa51ed8-1211-4ad4-a59c-4519a7276df4",
+            "bbox": [
+              194,
+              3496,
+              2718,
+              3723
+            ],
+            "text": "- RNN계층을 '상태를 가지는 계층' 혹은 '메모리(기억력)가 있는 계층'이라고도 함.",
+            "prediction": "",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0503b69a-8eb2-4113-bdef-0e708d977bde",
+            "bbox": [
+              211,
+              3668,
+              1861,
+              3849
+            ],
+            "text": "- 출력 \\(h_t\\)를 은닉 상태 혹은 은닉 상태 벡터라고 함.",
+            "prediction": "",
+            "order": 33,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T08:21:28.708Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T07:58:11.873Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 33
+        }
+      ]
     },
     "hf-0067": {
       "id": "hf-0067",
