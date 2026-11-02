@@ -3,7 +3,7 @@
   "dataset_version": "v2",
   "dataset": "hakuuung/HybridOCR_CustomNotes",
   "revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
-  "updated_at": "2026-11-02T11:17:28.755Z",
+  "updated_at": "2026-11-02T11:17:38.678Z",
   "items": {
     "hf-0000": {
       "id": "hf-0000",
@@ -30441,20 +30441,473 @@
         "source_sha256": "dcda1cdbced5ba3765af5ba066b7e10b574e8b34be2aa462ca3f836e6c209842"
       },
       "bbox_annotation": {
-        "status": "unlabeled",
-        "revision": 0,
-        "annotator": "",
+        "status": "verified",
+        "revision": 1,
+        "annotator": "이나현",
         "notes": "",
         "no_text": false,
-        "proposal_version": "",
-        "boxes": []
+        "proposal_version": "paddleocrvl16-paddleocr-vl-1.6",
+        "boxes": [
+          {
+            "id": "hf-0100-line-0001",
+            "bbox": [
+              302,
+              84,
+              534,
+              238
+            ],
+            "text": "{i=;",
+            "prediction": "\\( \\frac{1}{2} \\)",
+            "order": 1,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-8a88f00b-e44f-41a1-982f-26a3760f488c",
+            "bbox": [
+              1324,
+              155,
+              1980,
+              273
+            ],
+            "text": "통장프로그램 (고치기1)",
+            "prediction": "",
+            "order": 2,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f9a80045-fa99-47b3-964d-c3fd0cbdc18f",
+            "bbox": [
+              225,
+              303,
+              770,
+              426
+            ],
+            "text": "#include <stdio.h>",
+            "prediction": "",
+            "order": 3,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-396efbbb-9165-444d-b662-ee3b48b5e882",
+            "bbox": [
+              176,
+              395,
+              873,
+              522
+            ],
+            "text": "#include <windows.h>",
+            "prediction": "",
+            "order": 4,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-a9e5f235-2b4a-4f6a-8e29-27f0764eb163",
+            "bbox": [
+              194,
+              515,
+              605,
+              654
+            ],
+            "text": "void Jul();",
+            "prediction": "",
+            "order": 5,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-ad7fc706-0fe2-4747-8a04-7499a4d5ae43",
+            "bbox": [
+              192,
+              620,
+              1072,
+              758
+            ],
+            "text": "void Jul2(); ← 필요없음",
+            "prediction": "",
+            "order": 6,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-4b168f7a-97ff-423d-9389-c9d1d35703e5",
+            "bbox": [
+              169,
+              740,
+              684,
+              865
+            ],
+            "text": "void main(){",
+            "prediction": "",
+            "order": 7,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-33a02480-1e71-4a53-a12a-edd2c8af1884",
+            "bbox": [
+              366,
+              822,
+              1426,
+              953
+            ],
+            "text": "int money=0, in_mn=0, out_mn=0;",
+            "prediction": "",
+            "order": 8,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-b0c7f9d3-95fe-404c-af5b-e96d552e984e",
+            "bbox": [
+              387,
+              935,
+              916,
+              1078
+            ],
+            "text": "int ch_mn=0;",
+            "prediction": "",
+            "order": 9,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-e81c27ad-bbfc-4d5f-b4af-03abc1f03dab",
+            "bbox": [
+              369,
+              1053,
+              877,
+              1176
+            ],
+            "text": "int num2=0;",
+            "prediction": "",
+            "order": 10,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-f88f6b8d-b8d9-41c7-8d07-82dcd9f80af6",
+            "bbox": [
+              378,
+              1162,
+              661,
+              1292
+            ],
+            "text": "Jul();",
+            "prediction": "",
+            "order": 11,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-21553a16-e743-4796-9c18-d0fce338a5eb",
+            "bbox": [
+              328,
+              1249,
+              1699,
+              1421
+            ],
+            "text": "printf(\"현재통장에 있는돈 : %d\", money);",
+            "prediction": "",
+            "order": 12,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-215c6ea0-041b-433e-ac06-43ae6e283ed2",
+            "bbox": [
+              321,
+              1360,
+              2259,
+              1541
+            ],
+            "text": "printf(\"입금하려면 1번, 출금하려면 2번을 입력해주세요.\\n\");",
+            "prediction": "",
+            "order": 13,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-56d75c16-cf1d-4387-bcff-be54374ca717",
+            "bbox": [
+              360,
+              1473,
+              791,
+              1603
+            ],
+            "text": "printf(\":\");",
+            "prediction": "",
+            "order": 14,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c97cfb86-f463-45c5-a761-001bce4d8557",
+            "bbox": [
+              346,
+              1569,
+              1077,
+              1750
+            ],
+            "text": "scanf(\"%d\", &ch_mn);",
+            "prediction": "",
+            "order": 15,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-49b95e9b-66e3-42f1-bb4d-0f8ad11be7bf",
+            "bbox": [
+              335,
+              1684,
+              671,
+              1830
+            ],
+            "text": "Jul();",
+            "prediction": "",
+            "order": 16,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-42aab0e6-7e03-485e-9357-3ff66823c4b8",
+            "bbox": [
+              328,
+              1800,
+              950,
+              1954
+            ],
+            "text": "if(ch_mn==1){",
+            "prediction": "",
+            "order": 17,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-bda545ab-ecb3-445d-92f9-55f127e7fda6",
+            "bbox": [
+              428,
+              1907,
+              1442,
+              2086
+            ],
+            "text": "printf(\"입금을 선택하셨습니다.\\n\");",
+            "prediction": "",
+            "order": 18,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-c0c6e1c5-a5c7-4368-a7d6-72b0cc119642",
+            "bbox": [
+              398,
+              2007,
+              1644,
+              2161
+            ],
+            "text": "printf(\"입금할 돈을 입력해주세요.\\n:\");",
+            "prediction": "",
+            "order": 19,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-d31966dc-ea11-4649-ba93-599eedbbb2c4",
+            "bbox": [
+              396,
+              2154,
+              2064,
+              2308
+            ],
+            "text": "scanf(\"%d\", &in_mn); money = money + in_mn;",
+            "prediction": "",
+            "order": 20,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-44db20e4-e2f9-42c8-ad0d-71c424cdba77",
+            "bbox": [
+              421,
+              2238,
+              2602,
+              2435
+            ],
+            "text": "printf(\"%d원을 입금하셨고, 통장에는 %d원이 남았습니다.\\n\", in_mn, money);",
+            "prediction": "",
+            "order": 21,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-86a1c423-32ca-4722-93c1-42d66323c517",
+            "bbox": [
+              421,
+              2367,
+              1054,
+              2510
+            ],
+            "text": "Jul(); exit(0);",
+            "prediction": "",
+            "order": 22,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-0c12649a-a617-47ad-8760-92caebd72350",
+            "bbox": [
+              303,
+              2467,
+              1136,
+              2617
+            ],
+            "text": "}else if(ch_mn==2){",
+            "prediction": "",
+            "order": 23,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-55b8d285-b0fb-400b-9bbc-d1a5030b82fd",
+            "bbox": [
+              396,
+              2585,
+              1558,
+              2735
+            ],
+            "text": "printf(\"출금을 선택하셨습니다.\\n\");",
+            "prediction": "",
+            "order": 24,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-02f670db-eda7-4ec5-bd60-e5bf9ba460bf",
+            "bbox": [
+              375,
+              2699,
+              1755,
+              2867
+            ],
+            "text": "printf(\"출금할 돈을 입력해주세요.\\n:\");",
+            "prediction": "",
+            "order": 25,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-60b6b5a6-44ec-4c3d-8a49-1b82218d4189",
+            "bbox": [
+              357,
+              2812,
+              1208,
+              2969
+            ],
+            "text": "scanf(\"%d\", out_mn);",
+            "prediction": "",
+            "order": 26,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-057000cb-875a-4a55-b627-85cb0e8ac93d",
+            "bbox": [
+              339,
+              2921,
+              1197,
+              3091
+            ],
+            "text": "money = money - out_mn;",
+            "prediction": "",
+            "order": 27,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-8b08bed8-0c56-4826-a5a5-169bb0d3354b",
+            "bbox": [
+              344,
+              3060,
+              2674,
+              3322
+            ],
+            "text": "printf(\"%d원을 출금하였고, 통장에는 %d원이 남았습니다.\\n\", out_mn, money);",
+            "prediction": "",
+            "order": 28,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-40c04e98-bda0-4a55-ac46-0d15b72e6a45",
+            "bbox": [
+              349,
+              3157,
+              993,
+              3349
+            ],
+            "text": "Jul(); exit(0);",
+            "prediction": "",
+            "order": 29,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-6a538003-7f45-440a-8469-7ff555205506",
+            "bbox": [
+              0,
+              3376,
+              497,
+              3523
+            ],
+            "text": "void Jul(){",
+            "prediction": "",
+            "order": 30,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-99b1c195-819a-4be1-82c9-7f445ca09310",
+            "bbox": [
+              172,
+              3514,
+              2040,
+              3756
+            ],
+            "text": "printf(\"=================\\n\");",
+            "prediction": "",
+            "order": 31,
+            "uncertain": false,
+            "reviewed": true
+          },
+          {
+            "id": "line-269de4ee-d4c1-418e-98a3-1455983c6bc5",
+            "bbox": [
+              0,
+              3600,
+              93,
+              3759
+            ],
+            "text": "}",
+            "prediction": "",
+            "order": 32,
+            "uncertain": false,
+            "reviewed": true
+          }
+        ]
       },
-      "claim": {
-        "name": "이나현",
-        "client": "48cedcd4-1cbb-40ba-aa2e-7034647d909a",
-        "until": "2026-11-02T11:42:28.755Z"
-      },
-      "history": []
+      "claim": null,
+      "history": [
+        {
+          "at": "2026-11-02T11:17:38.678Z",
+          "author": "이나현",
+          "status": "verified",
+          "revision": 1,
+          "box_count": 32
+        }
+      ]
     },
     "hf-0101": {
       "id": "hf-0101",
