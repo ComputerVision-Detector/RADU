@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "datasets": [
+    {
+      "id": "hdbpmn",
+      "source": "https://github.com/dwslab/hdBPMN",
+      "license": "CC-BY-4.0",
+      "adapter": "diagram-coco",
+      "records": "data/raw/radu/hdbpmn/normalized.jsonl",
+      "status": "normalized_image_only_hdbpmn_v1",
+      "notes": "Prefer COCO conversion for image geometry; BPMN layout coordinates must not be assumed to match photographed handwriting.",
+      "raw_root": "data/raw/radu/hdbpmn",
+      "staging_catalog": "data/processed/radu_staging/hdbpmn/staged.jsonl"
+    },
+    {
+      "id": "fc_a",
+      "source": "https://github.com/bernhardschaefer/handwritten-diagram-datasets",
+      "license": "CC-BY-NC-SA (check downloaded version)",
+      "adapter": "diagram-coco",
+      "records": "data/raw/radu/fc_a/normalized.jsonl",
+      "status": "normalized_image_only_fc_a_v1",
+      "notes": "Official split leaks writers and graph structure; use configs/splits/fc_a_v1.json. arrow_prev/arrow_next are annotation IDs. Do not mix FC_B or FA into this source.",
+      "raw_root": "data/raw/radu/fc_a",
+      "staging_catalog": "data/processed/radu_staging/fc_a/staged.jsonl"
+    },
+    {
+      "id": "ai2d_rst",
+      "source": "https://github.com/thiippal/AI2D-RST",
+      "license": "Original AI2D: CC BY-SA; RST v1.1 release README: CC BY-SA 4.0 (GitHub README states CC BY 4.0)",
+      "adapter": "normalized-intake",
+      "records": "data/raw/radu/ai2d_rst/normalized.jsonl",
+      "status": "rst_annotations_joined_native_adapter_pending",
+      "notes": "Join original image segmentation and RST connectivity by diagram ID. Keep directed and undirected edges distinct; group nodes need explicit representation.",
+      "raw_root": "data/raw/radu/ai2d_rst",
+      "staging_catalog": "data/processed/radu_staging/ai2d_rst/catalog.jsonl",
+      "rst_catalog": "data/processed/radu_staging/ai2d_rst/rst_catalog.jsonl"
+    },
+    {
+      "id": "didi",
+      "source": "https://github.com/google-research/google-research/tree/master/didi_dataset",
+      "license": "CC-BY-4.0",
+      "adapter": "normalized-intake",
+      "records": "data/raw/radu/didi/normalized.jsonl",
+      "status": "ink_indexed_verified_structure_supervision_pending",
+      "notes": "Render actual ink; prompt DOT coordinates are not handwriting coordinates. Verify trace-to-symbol alignment before supervising localization or connectivity.",
+      "raw_root": "data/raw/radu/didi",
+      "staging_catalog": "data/processed/radu_staging/didi/catalog.jsonl"
+    },
+    {
+      "id": "casia_ohfc",
+      "source": "https://nlpr.ia.ac.cn/databases/CASIA-OHFC/",
+      "license": "Academic agreement; commercial use separately licensed",
+      "adapter": "normalized-intake",
+      "records": "data/raw/radu/casia_ohfc/normalized.jsonl",
+      "status": "encrypted_archives_downloaded_provider_password_required",
+      "notes": "Obtain dataset under its agreement. Render InkML with recorded affine transform; stroke instance labels support nodes, not automatically source/target relations.",
+      "raw_root": "data/raw/radu/casia_ohfc",
+      "staging_catalog": "data/processed/radu_staging/casia_ohfc/catalog.jsonl"
+    },
+    {
+      "id": "flowlearn",
+      "source": "https://huggingface.co/datasets/jopan/FlowLearn",
+      "license": "CC-BY-NC-SA-4.0 (HF metadata)",
+      "adapter": "normalized-intake",
+      "records": "data/raw/radu/flowlearn/normalized.jsonl",
+      "status": "source_images_verified_native_adapter_pending",
+      "notes": "Treat scientific/synthetic subsets separately. Mermaid supports graph targets, not automatic arrow pixel paths. Preserve template/source-document groups.",
+      "raw_root": "data/raw/radu/flowlearn",
+      "staging_catalog": "data/processed/radu_staging/flowlearn/catalog.jsonl"
+    }
+  ],
+  "acquisition_inventory": "data/processed/radu_staging/acquisition_summary.json",
+  "staging_inventory": "data/processed/radu_staging/inventory.json"
+}

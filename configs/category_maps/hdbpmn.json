@@ -1,0 +1,17 @@
+{
+  "task": {"type": "node", "kind": "task"},
+  "subProcess": {"type": "node", "kind": "subProcess"},
+  "event": {"type": "node", "kind": "event"},
+  "messageEvent": {"type": "node", "kind": "messageEvent"},
+  "timerEvent": {"type": "node", "kind": "timerEvent"},
+  "exclusiveGateway": {"type": "node", "kind": "exclusiveGateway"},
+  "parallelGateway": {"type": "node", "kind": "parallelGateway"},
+  "eventBasedGateway": {"type": "node", "kind": "eventBasedGateway"},
+  "pool": {"type": "node", "kind": "pool"},
+  "lane": {"type": "node", "kind": "lane"},
+  "dataObject": {"type": "node", "kind": "dataObject"},
+  "dataStore": {"type": "node", "kind": "dataStore"},
+  "sequenceFlow": {"type": "arrow"},
+  "messageFlow": {"type": "arrow"},
+  "dataAssociation": {"type": "arrow"}
+}

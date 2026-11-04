@@ -58,8 +58,10 @@ def prepare_model(device: str):
             free_mb = int(result.stdout.strip().splitlines()[0])
         except (OSError, subprocess.SubprocessError, ValueError, IndexError) as error:
             raise RuntimeError("Could not verify free GPU memory with nvidia-smi") from error
-        if free_mb < 10_000:
-            raise RuntimeError(f"PaddleOCR-VL needs at least 10000 MiB free VRAM; found {free_mb} MiB")
+        # The default was set on a 24 GB workstation; smaller GPUs opt in explicitly.
+        min_free_mb = int(os.environ.get("RADU_VL_MIN_FREE_MB", "10000"))
+        if free_mb < min_free_mb:
+            raise RuntimeError(f"PaddleOCR-VL needs at least {min_free_mb} MiB free VRAM; found {free_mb} MiB")
 
     from paddlex.utils.cache import CACHE_DIR
     model_root = Path(__file__).resolve().parents[2] / "models"

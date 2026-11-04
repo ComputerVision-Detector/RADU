@@ -1,0 +1,7 @@
+# Separate from Paddle: Python 3.11 recommended; install CUDA-compatible torch first.
+# Compatibility bounds, NOT a tested lockfile. Save pip freeze after GPU smoke test.
+torch>=2.6,<3
+transformers>=5.22,<5.23
+peft>=0.17,<1
+accelerate>=1.10,<2
+Pillow>=10,<13

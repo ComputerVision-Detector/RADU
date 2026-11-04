@@ -1,0 +1,345 @@
+{
+  "created_at": "2026-11-04T12:27:11.269894+00:00",
+  "downloaded_files": 26921,
+  "downloaded_bytes": 6400059348,
+  "missing_assets": [],
+  "training_ready": false,
+  "asset_audit": {
+    "created_at": "2026-11-04T12:27:11.269894+00:00",
+    "sources": {
+      "fc_a": {
+        "expected_files": 423,
+        "present_files": 423,
+        "verified_files": 423,
+        "verified_image_files": 419,
+        "bytes": 31930853,
+        "problems": []
+      },
+      "hdbpmn": {
+        "expected_files": 2623,
+        "present_files": 2623,
+        "verified_files": 2623,
+        "verified_image_files": 1206,
+        "bytes": 878151952,
+        "problems": []
+      },
+      "ai2d_rst": {
+        "expected_files": 3,
+        "present_files": 3,
+        "verified_files": 3,
+        "verified_image_files": 0,
+        "bytes": 1011236386,
+        "problems": []
+      },
+      "didi": {
+        "expected_files": 5,
+        "present_files": 5,
+        "verified_files": 5,
+        "verified_image_files": 0,
+        "bytes": 2345732934,
+        "problems": []
+      },
+      "casia_ohfc": {
+        "expected_files": 3,
+        "present_files": 3,
+        "verified_files": 3,
+        "verified_image_files": 0,
+        "bytes": 260314668,
+        "problems": []
+      },
+      "flowlearn": {
+        "expected_files": 23864,
+        "present_files": 23864,
+        "verified_files": 23864,
+        "verified_image_files": 23848,
+        "bytes": 1872692555,
+        "problems": []
+      }
+    },
+    "training_ready": false,
+    "note": "Source asset audit only. Complete OCR-conditioned supervision and split checks are separate gates."
+  },
+  "staging": {
+    "created_at": "2026-11-04T12:27:11.269894+00:00",
+    "stage": "raw_and_source_annotation_staging",
+    "training_ready": false,
+    "sources": {
+      "fc_a": {
+        "samples": 419,
+        "splits": {
+          "test": 171,
+          "train": 248
+        },
+        "nodes": 3035,
+        "arrows": 3092,
+        "relations": 3092,
+        "issues": [],
+        "training_ready": false,
+        "next": "Run actual OCR; review FC_A validation/group policy; validate normalized records before prepare."
+      },
+      "hdbpmn": {
+        "samples": 502,
+        "splits": {
+          "test": 92,
+          "train": 308,
+          "validation": 102
+        },
+        "nodes": 8355,
+        "arrows": 8737,
+        "relations": 8737,
+        "issues": [],
+        "training_ready": false,
+        "next": "Run actual OCR; review FC_A validation/group policy; validate normalized records before prepare."
+      },
+      "didi": {
+        "samples": 58655,
+        "splits": {
+          "train": 43995,
+          "test": 7330,
+          "validation": 7330
+        },
+        "by_variant": {
+          "text": 22287,
+          "no_text": 36368
+        },
+        "training_ready": false,
+        "next": "Render actual strokes; establish verified symbol/connection correspondence. Prompt DOT is not handwriting localization GT."
+      },
+      "flowlearn": {
+        "samples": 23857,
+        "by_subset": {
+          "synthetic_char": 10000,
+          "synthetic_word": 10000,
+          "scientific": 3857
+        },
+        "splits": {
+          "train": 19337,
+          "test": 4520
+        },
+        "missing_images": [],
+        "training_ready": false,
+        "scientific_duplicate_references": [
+          {
+            "image": "211532229-Figure4-1.png",
+            "references": [
+              {
+                "split": "train",
+                "index": 213
+              },
+              {
+                "split": "train",
+                "index": 791
+              }
+            ]
+          },
+          {
+            "image": "2204.00475v1-Figure8-1.png",
+            "references": [
+              {
+                "split": "train",
+                "index": 703
+              },
+              {
+                "split": "train",
+                "index": 1151
+              }
+            ]
+          },
+          {
+            "image": "214727773-Figure3-1.png",
+            "references": [
+              {
+                "split": "train",
+                "index": 811
+              },
+              {
+                "split": "train",
+                "index": 2901
+              }
+            ]
+          },
+          {
+            "image": "214727773-Figure4-1.png",
+            "references": [
+              {
+                "split": "train",
+                "index": 957
+              },
+              {
+                "split": "test",
+                "index": 263
+              }
+            ]
+          },
+          {
+            "image": "211532229-Figure5-1.png",
+            "references": [
+              {
+                "split": "train",
+                "index": 1010
+              },
+              {
+                "split": "train",
+                "index": 1131
+              }
+            ]
+          },
+          {
+            "image": "2205.05511v2-Figure1-1.png",
+            "references": [
+              {
+                "split": "train",
+                "index": 1284
+              },
+              {
+                "split": "train",
+                "index": 3049
+              }
+            ]
+          },
+          {
+            "image": "2101.07482v1-Figure1-1.png",
+            "references": [
+              {
+                "split": "train",
+                "index": 1834
+              },
+              {
+                "split": "train",
+                "index": 2411
+              }
+            ]
+          },
+          {
+            "image": "2012.09855v1-Figure3-1.png",
+            "references": [
+              {
+                "split": "train",
+                "index": 2243
+              },
+              {
+                "split": "train",
+                "index": 3009
+              }
+            ]
+          },
+          {
+            "image": "2204.03842v1-Figure1-1.png",
+            "references": [
+              {
+                "split": "train",
+                "index": 2955
+              },
+              {
+                "split": "train",
+                "index": 3041
+              }
+            ]
+          }
+        ],
+        "scientific_cross_split_images": [
+          "214727773-Figure4-1.png"
+        ],
+        "next": "Verify synthetic geometry against corresponding JPEG variant and run actual OCR. Scientific subset has no equivalent complete graph GT.",
+        "scientific_unique_images": 3848
+      },
+      "ai2d_rst": {
+        "samples": 4903,
+        "arrows": 34991,
+        "relationships": 73079,
+        "issues": [],
+        "training_ready": false,
+        "rst_annotations": 1000,
+        "rst_matched_images": 1000,
+        "rst_connectivity_present": 778,
+        "rst_connectivity_null": 222,
+        "rst_connectivity_edges": 6585,
+        "rst_edge_kinds": {
+          "directional": 3362,
+          "undirectional": 3197,
+          "bidirectional": 26
+        },
+        "next": "Run actual OCR; normalize native group/connection annotations and review splits. Null connectivity is not a complete empty graph."
+      },
+      "casia_ohfc": {
+        "samples": 2957,
+        "encrypted": true,
+        "training_ready": false,
+        "next": "Research group must complete provider application and obtain password; no agreement submitted by this tool."
+      }
+    },
+    "archives": [
+      {
+        "path": "ai2d_rst/archives/ai2d-all.zip",
+        "bytes": 990965374,
+        "files": 28748,
+        "encrypted_files": 0,
+        "uncompressed_bytes": 1174268186
+      },
+      {
+        "path": "ai2d_rst/archives/upstream-repository-v1.1.zip",
+        "bytes": 18968348,
+        "files": 48,
+        "encrypted_files": 0,
+        "uncompressed_bytes": 21205755
+      },
+      {
+        "path": "casia_ohfc/archives/CASIA-OHFC Flowchart templates.zip",
+        "bytes": 36104607,
+        "files": 601,
+        "encrypted_files": 601,
+        "uncompressed_bytes": 40201234
+      },
+      {
+        "path": "casia_ohfc/archives/CASIA-OHFC-Release Edition.zip",
+        "bytes": 224060550,
+        "files": 2961,
+        "encrypted_files": 2961,
+        "uncompressed_bytes": 850883116
+      },
+      {
+        "path": "ai2d_rst/archives/ai2d-rst-v1-1.zip",
+        "bytes": 1302664,
+        "files": 1002,
+        "encrypted_files": 0,
+        "uncompressed_bytes": 14052409
+      }
+    ]
+  },
+  "remaining": [
+    "CASIA research-group application/password.",
+    "Actual upstream OCR outputs, dataset-specific normalization and split policy.",
+    "GPU environment/model weights and training smoke test."
+  ],
+  "integrity_tests": 28,
+  "rst_user_supplied_verification": {
+    "verified_at": "2026-11-04T12:27:11.269894+00:00",
+    "archive": "ai2d_rst/archives/ai2d-rst-v1-1.zip",
+    "size": 1302664,
+    "sha256": "eb11d67507e08eb9bfd0f5944da7ca32cfcffa13e119b04ac5054effa65a759a",
+    "md5": "cfc8ee1416a2ff9f2261c706585a9ef0",
+    "git_blob_sha1": "c91545085348b53da314b0e44b79af8a697c10d6",
+    "zip_crc_passed": true,
+    "extracted_content_matches_zip": true,
+    "extracted_files": 1002,
+    "rst_join": {
+      "samples": 4903,
+      "arrows": 34991,
+      "relationships": 73079,
+      "issues": [],
+      "training_ready": false,
+      "rst_annotations": 1000,
+      "rst_matched_images": 1000,
+      "rst_connectivity_present": 778,
+      "rst_connectivity_null": 222,
+      "rst_connectivity_edges": 6585,
+      "rst_edge_kinds": {
+        "directional": 3362,
+        "undirectional": 3197,
+        "bidirectional": 26
+      },
+      "next": "Run actual OCR; normalize native group/connection annotations and review splits. Null connectivity is not a complete empty graph."
+    },
+    "upstream_digest_available": false
+  }
+}
