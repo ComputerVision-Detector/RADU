@@ -1,6 +1,6 @@
 # RADU Qwen3-VL-4B 구조 추출 학습 인수인계
 
-마지막 갱신: 2026-11-04 (Asia/Seoul), 이미지 전용 학습(A안) 결정, FC_A·hdBPMN 분할·normalized·partial prepare, PaddleOCR-VL 8GB 시험, 수식·표 데이터 조사까지 반영. 이 문서는 다른 AI/개발자가 작업을 이어받기 위한 현재 상태와 실행 순서를 기록한다. 최종 수량은 추적 가능한 요약인 [`RADU_DATA_ACQUISITION.json`](RADU_DATA_ACQUISITION.json), 로컬 `data/processed/radu_staging/acquisition_summary.json`, `verified_assets.jsonl`, `inventory.json`을 근거로 한다. RST 별도 증거는 `data/processed/radu_staging/ai2d_rst/rst_verification.json`이다. 과거 다운로드 도중 기록보다 이 최종 감사 결과를 우선한다.
+마지막 갱신: 2026-11-06 (Asia/Seoul, 최신 내용은 아래 대량 데이터 확장 기록). 이전 기록: 이미지 전용 학습(A안) 결정, FC_A·hdBPMN 분할·normalized·partial prepare, PaddleOCR-VL 8GB 시험, 수식·표 데이터 조사까지 반영. 이 문서는 다른 AI/개발자가 작업을 이어받기 위한 현재 상태와 실행 순서를 기록한다. 최종 수량은 추적 가능한 요약인 [`RADU_DATA_ACQUISITION.json`](RADU_DATA_ACQUISITION.json), 로컬 `data/processed/radu_staging/acquisition_summary.json`, `verified_assets.jsonl`, `inventory.json`을 근거로 한다. RST 별도 증거는 `data/processed/radu_staging/ai2d_rst/rst_verification.json`이다. 과거 다운로드 도중 기록보다 이 최종 감사 결과를 우선한다.
 
 ## 사용자가 정한 목표와 역할
 
@@ -16,7 +16,113 @@
 - 별도 감시 에이전트 1개가 구현/적재 검토를 맡았고, 이 문서는 사용자가 추가 요청한 문서 담당 에이전트가 작성했다.
 - 이번 세션에도 읽기 전용 독립 감시 에이전트를 추가했다. 상시 실행이 아니라 단계별로 검토를 요청하는 방식이다. 1차 검토 결과는 아래 '독립 리뷰 기록'에 있다.
 
+## 대량 데이터 확장 기록 (2026-11-06, 아래 내용보다 우선)
+
+사용자 결정: 상업적 사용 계획이 없어 비상업 라이선스 데이터를 쓸 수 있다. 이 절의 수치는 RTX 4090 장비에서 측정했다. **전체 학습은 아직 시작하지 않았고, 수식·표 인식 성능도 아직 측정하지 않았다.**
+
+**hdBPMN epoch 실험.** FC_A + hdBPMN으로 12 epoch를 돌렸다(`models/radu/exp_hd_epochs12`, git 제외). 판정은 부분 개선이다. 파싱 90% 이상, 노드 F1 0.5 이상 기준을 hdBPMN에서 충족하지 못했다. 해상도 영향은 아직 미검증 가설이다.
+
+| validation | 모델 | 파싱 | 노드 | 화살표 | 관계 |
+|---|---|---|---|---|---|
+| FC_A 57 | 파일럿 | 56 | 0.949 | 0.694 | 0.757 |
+| FC_A 57 | 12 epoch | 56 | 0.988 | 0.899 | 0.936 |
+| hdBPMN 101 | 파일럿 | 39 | 0.113 | 0.117 | 0.017 |
+| hdBPMN 101 | 12 epoch | 77 | 0.438 | 0.436 | 0.166 |
+
+**추가 기능.**
+- 스키마에 `formulas`(LaTeX), `tables`(행·열·span 격자, 셀 글자 제외) 과제를 추가했다. 도식 프롬프트는 바이트 단위로 그대로다.
+- `normalize_formula_table.py`: CROHME 2023, UniMER, MathWriting, PubTabNet, FinTabNet.c 변환. 소스별 기본 상한 5000/200/200.
+- `normalize_coco.py`, `build_coco_splits.py`: FC_B, FC_Bscan, FA 추가. FC_B와 FC_Bscan은 같은 그림이라 writer 그룹을 공유한다.
+- `train.py`: `sampling_shares`, `samples_per_epoch`, `max_eval_samples`. `evaluate.py`: `--sample-per-dataset`, 수식·표 채점.
+- `infer_image.py`: 이미지 1장을 주석 PNG와 JSON으로 출력. `--data` 없이 실행하면 도식 과제만 요청한다. `visualize_predictions.py`: 예측 HTML 갤러리.
+
+**합본 `data/processed/radu_full`(git 제외, partial).** 설정은 `configs/qwen3_vl_4b_lora_full.json`이다.
+
+| 소스 | train | validation | test | 학습 비중 |
+|---|---|---|---|---|
+| hdBPMN | 308 | 101 | 92 | 20% |
+| FC_A | 194 | 57 | 92 | 8% |
+| FC_B | 280 | 196 | 196 | 8% |
+| FC_Bscan | 280 | 196 | 196 | 7% |
+| FA | 132 | 84 | 84 | 7% |
+| CROHME 2023 | 5,000 | 200 | 200 | 10% |
+| UniMER | 5,000 | 200 | 200 | 7% |
+| MathWriting | 5,000 | 200 | 200 | 8% |
+| PubTabNet | 5,000 | 200 | 200 | 15% |
+| FinTabNet.c | 5,000 | 200 | 200 | 10% |
+| 합계 | 26,194 | 1,634 | 1,660 | 100% |
+
+**전수 검사(29,488장).** 이미지 디코딩, sha256, split 간 바이트·픽셀·그룹 중복, 데이터셋 간 픽셀 중복, 정답 JSON과 빈 정답, 텍스트 필드 모두 문제 0건. 최대 5,316토큰으로 상한 6,900 초과 0건. 원본 감사는 28개 소스, 42,054파일, 문제 0건이며 일부 파일은 크기만 확인했다.
+
+**1 step 검증.** `models/radu/smoke-full-1840`에서 rc=0, eval_loss 0.6293(300건, 45초), peak 예약 21,966 MiB. 16개 샘플만 봤으므로 긴 표의 메모리 peak는 증명되지 않았다. 전체 학습(26,000장 × 3 epoch, 4,875 step)은 1.45장/초 기준 약 15시간으로 추정한다.
+
+**시작 전 알려진 부족한 점.**
+- 수식 15,000장과 PubTabNet 5,000장은 객체가 이미지당 1개이고 bbox가 이미지의 90% 이상이라 페이지 내 위치 학습이 안 된다. 표 전체도 이미지당 1개다.
+- 프롬프트가 도식, `formulas`, `tables` 세 조합뿐이어서 혼합 페이지 요청은 학습되지 않는다.
+- 도식은 비중 50%에 이미지 1,194장(고유 914종)으로, 평균 33회, hdBPMN은 약 51회 반복된다.
+- 표 소스 2개는 논문·재무 문서라 촬영·손글씨 표가 없다.
+
+**미변환 소스.** 사용자가 A, B, C안 중 결정하기 전이다. 권장 A안은 기존 수식·표 상한을 올리고 hdFlowmind, IBEM, TabRecSet을 변환하며 추론은 요소별로 나눠 요청한다.
+- 주석 파일 확인, 내용은 변환 전 확인 필요: hdFlowmind(VOC XML 1,776), IBEM, TabRecSet, cTDaR 2019, READ ABP, SciTSR, CISOL, AI2D-RST, CGHD.
+- 위치 좌표 없음: DIDI(그래프만, 자동 정렬 미검증), SketikZ(TikZ), FlowVQA(Mermaid), FlowLearn(SciFlowchart는 그림 영역만, SimFlowchart 라벨은 미확인). 현재 형식으로는 학습 불가.
+- 미확인: FC-Detection, HASYv2, MathWriting+.
+- PARES: tar 해제에 9.35GiB 필요, 미해제. 라벨 내용 미확인.
+- 사용자 제공 필요: WTW(`data/raw/radu/wtw/archives/`), HME100K(`data/raw/radu/hme100k/archives/`), CASIA 비밀번호. 필수는 아니다.
+- 라이선스 명시 없음: FC_B, FC_Bscan, FA, cTDaR, SketikZ.
+
+**재현 명령.** 합본을 다시 만들면 절대경로가 현재 장비 기준으로 기록된다.
+
+```bash
+python -m src.training.normalize_formula_table --dataset <crohme_2023|unimer|mathwriting|pubtabnet|fintabnet_c>
+python -m src.training.prepare --output-dir data/processed/radu_full --allow-partial
+HF_HOME=$PWD/.cache/huggingface HF_HUB_OFFLINE=1 .cache/venvs/train/bin/python -m src.training.train --config configs/qwen3_vl_4b_lora_full.json
+```
+
+## RTX 4090 이전 후 기록 (2026-11-05, 아래 내용보다 우선)
+
+장비: Linux, RTX 4090 24GB. 이 절의 수치는 모두 이 장비에서 측정했다. 파일럿 adapter는 검증용이며 최종 모델이 아니다.
+
+**환경.** `.cache/venvs/train`을 새로 설치했다(Python 3.11, torch 2.14.1+cu126, torchvision 0.29.1+cu126, transformers 5.22.1, peft 0.21.2). 기존 requirements에 없던 `torchvision`을 추가했고, `requirements-training.lock.txt`를 생성했다. torchvision은 반드시 cu126 빌드를 쓴다(PyPI 0.29.2는 임포트 실패).
+
+**데이터.** 공개 소스를 다시 받았고 수량이 기존 기록과 일치한다: FC_A 419, hdBPMN 502, native 2,118파일, AI2D 4,903, DIDI 58,655, FlowLearn 23,857행, CASIA 2,957. 분할 매니페스트를 재생성하면 커밋본과 바이트까지 같다. 계획 파일은 `data/raw/radu/*.plan.jsonl`이다.
+- 없음: RST ZIP(사용자 제공, 재전달 필요, `rst_annotations` 0), 상류 코드 ZIP(불필요).
+- 기록보다 FC_A 2개(약 1.3MB), DIDI 2개(약 0.4MB) 적다. 4060 계획 파일이 없어 정체 미확인이며, 이미지와 샘플 수는 일치한다.
+- PaddleOCR 환경 `.cache/venvs/ocr`는 없다.
+
+**VRAM (최종 설정 BF16, `max_pixels` 1003520, 고정 샘플 1 step).** 토큰당 약 1.9 MiB. 상한을 8192에서 6900으로 낮췄다. 새 소스를 넣으면 다시 측정한다.
+
+| 토큰 | 결과 | peak 할당 | peak 예약 |
+|---|---|---|---|
+| 5,083 (train 실제 최장) | 통과 | 18,405 MiB | 20,874 MiB |
+| 5,983 | 통과 | 20,143 MiB | 20,776 MiB |
+| 6,973 | 통과 | 22,053 MiB | 22,618 MiB |
+| 8,188 | OOM | - | - |
+
+**검증 완료.** 1 step 후 `lora_B` 144개 전부 갱신. 강제 종료 후 재개한 결과는 중단 없는 실행과 잡음 수준으로 일치(`lora_B` L2: 재개 대 전체 0.0375, 같은 설정 2회 0.0424, 이동량 0.136). 학습은 비트 단위로 재현되지 않는다. 재개할 때는 처음과 같은 `--max-steps`를 써야 한다(다르면 학습률 스케줄이 어긋남).
+
+**파일럿.** `models/radu/pilot_fc_a_hdbpmn_v1`, 96 step, OOM 없음, peak 예약 22,580 MiB, validation loss 0.525→0.411. test 184건(`eval_test/`) 결과 F1:
+
+| 구간 | 모델 | 파싱 | 노드 | 화살표 | 관계 |
+|---|---|---|---|---|---|
+| FC_A 92 | adapter | 90 | 0.931 | 0.709 | 0.755 |
+| FC_A 구조 학습 73 | adapter | 71 | 0.940 | 0.721 | 0.772 |
+| FC_A 구조 미학습 19 | adapter | 19 | 0.888 | 0.641 | 0.660 |
+| hdBPMN 92 | adapter | 39 | 0.123 | 0.107 | 0.036 |
+| FC_A 92 | 원본 | 82 | 0.011 | 0.003 | 0.000 |
+| hdBPMN 92 | 원본 | 80 | 0.000 | 0.001 | 0.000 |
+
+원본 점수는 해석에 주의한다. 프롬프트가 허용 `kind`를 알려 주지 않고, 원본은 0-1000 척도 좌표를 자주 출력한다. 파싱된 샘플만 사후 보정하면(종류 무시, 좌표 재척도) 원본 노드 F1은 FC_A 0.313, hdBPMN 0.322다. adapter의 종류 무시 노드 F1은 FC_A 0.983, hdBPMN 0.257이다. 즉 **hdBPMN에서는 adapter가 원본보다 위치를 잘 찾는다고 말할 수 없다.**
+
+**hdBPMN 실패 분석.**
+- 53/92건이 4096토큰까지 화살표를 반복 생성해 잘렸다(중앙값 정답 21개, 예측 84개). 39건은 `nodes`에 도달하지 못했다. 좌표가 120px 간격 격자로 이어지는 환각이다.
+- 학습 이미지 12건도 파싱 5건, 노드 0.129, 화살표 0.133, 관계 0.036으로 test와 같다. 표본은 작지만 일반화보다 학습 부족 쪽이다.
+- 미검증 가설: 축소(hdBPMN 중앙값 3.77MP, FC_A 1.14MP, `max_pixels` 약 1MP), 학습량 부족(도식당 요소가 FC_A의 2배 이상인데 hdBPMN 표본은 약 750회), 언어 LoRA만 학습. 해상도를 올리면 이미지 토큰과 VRAM이 늘어 상한을 재측정해야 한다.
+
+**`evaluate.py` 수정.** 모델 출력의 리스트형 관계 endpoint로 평가가 중단되던 문제와, 정수 ID를 버려 원본 모델이 예측 0개로 채점되던 문제를 고쳤다. 테스트 52개 통과.
+
 ## 현재 상태
+
+아래 표는 4060 시점 기록이다. 학습 코드 미검증, 실제 학습 미실행 항목은 위 절로 대체됐다.
 
 | 구분 | 확인된 상태 |
 |---|---|

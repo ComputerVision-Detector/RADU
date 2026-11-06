@@ -15,8 +15,11 @@ from .prepare import read_jsonl
 from .schema import require, validate_record
 
 
+COCO_DATASETS = ("fc_a", "hdbpmn", "fc_b", "fc_b_scan", "fa")
+
+
 def convert(coco, sidecars, category_map, dataset, revision):
-    require(dataset in {"fc_a", "hdbpmn"}, "diagram COCO importer supports fc_a/hdbpmn only")
+    require(dataset in COCO_DATASETS, f"diagram COCO importer supports {COCO_DATASETS} only")
     categories = {c["id"]: c["name"] for c in coco.get("categories", [])}
     images = {im["id"]: im for im in coco["images"]}
     by_image = defaultdict(list)
@@ -64,10 +67,12 @@ def convert(coco, sidecars, category_map, dataset, revision):
                 target["arrows"].append({"id": f"a{i}", "bbox": box, "start": geometry.get("start"), "end": geometry.get("end")})
         if "relations" in tasks:
             for i, (_, a) in enumerate(arrows, 1):
-                require("arrow_prev" in a and "arrow_next" in a, "missing source connectivity; omit relations task")
+                # FA's initial-state arrow really has no source; anywhere else this is missing data.
+                has_source = "arrow_prev" in a or dataset == "fa"
+                require(has_source and "arrow_next" in a, "missing source connectivity; omit relations task")
                 endpoints = []
                 for field in ("arrow_prev", "arrow_next"):
-                    endpoint = a[field]
+                    endpoint = a.get(field)
                     require(endpoint is None or endpoint in element_ids, "connection references omitted/unknown annotation")
                     endpoints.append(None if endpoint is None else element_ids[endpoint])
                 target["relations"].append({"id": f"r{i}", "source": endpoints[0], "target": endpoints[1], "directed": True,
@@ -89,7 +94,7 @@ def main():
     parser.add_argument("--coco", required=True)
     parser.add_argument("--sidecar", required=True)
     parser.add_argument("--category-map", required=True)
-    parser.add_argument("--dataset", choices=["fc_a", "hdbpmn"], required=True)
+    parser.add_argument("--dataset", choices=COCO_DATASETS, required=True)
     parser.add_argument("--revision", required=True)
     parser.add_argument("--output", required=True)
     args = parser.parse_args()

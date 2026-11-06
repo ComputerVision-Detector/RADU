@@ -1,0 +1,6 @@
+{
+  "state": {"type": "node", "kind": "state"},
+  "final state": {"type": "node", "kind": "final_state"},
+  "text": {"type": "text"},
+  "arrow": {"type": "arrow"}
+}

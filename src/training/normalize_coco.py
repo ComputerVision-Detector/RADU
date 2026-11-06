@@ -1,10 +1,12 @@
-"""Join FC_A/hdBPMN COCO and a versioned split manifest into image-only normalized.jsonl.
+"""Join diagram COCO and a versioned split manifest into image-only normalized.jsonl.
 
-Supervises nodes, arrows and relations. Fails rather than writing a partial source.
+Supervises nodes, arrows and relations, or the subset a manifest sample names in "tasks".
+Fails rather than writing a partial source.
 
 Arrow keypoints: COCO metadata names them ['head', 'tail'], but the first point is the
 arrow's tail and the second its tip. Checked against arrow_prev/arrow_next on all 11,829
-arrows (one tie, the rest agree) and by visual overlay.
+FC_A and hdBPMN arrows (one tie, the rest agree) and by visual overlay. The same check on
+FC_B: 4,568 of 4,569 agree. FA: 1,417 agree, none disagree, 431 self-loops tie.
 """
 from __future__ import annotations
 
@@ -15,16 +17,19 @@ from pathlib import Path
 from .import_coco import convert
 from .schema import require
 
-SOURCES = {"fc_a": ("source", ("train", "test")), "hdbpmn": ("coco_icdar2021", ("train", "val", "test"))}
+ALL_PARTITIONS = ("train", "val", "test")
+SOURCES = {"fc_a": ("source", ("train", "test")), "hdbpmn": ("coco_icdar2021", ALL_PARTITIONS),
+           "fc_b": ("source", ALL_PARTITIONS), "fc_b_scan": ("source", ALL_PARTITIONS), "fa": ("source", ALL_PARTITIONS)}
 TASKS = ["nodes", "arrows", "relations"]
 
 
 def arrow_geometry(annotations):
     geometry = {}
     for annotation in annotations:
-        if "arrow_prev" not in annotation:
+        # FA's validation arrows carry no connectivity, only visible keypoints.
+        points = annotation.get("keypoints", [])
+        if "arrow_prev" not in annotation and "arrow_next" not in annotation and not (len(points) >= 6 and (points[2] > 0 or points[5] > 0)):
             continue
-        points = annotation["keypoints"]
         require(len(points) >= 6, "arrow requires two keypoints")
         geometry[str(annotation["id"])] = {
             "start": [round(points[0]), round(points[1])] if points[2] > 0 else None,
@@ -44,9 +49,10 @@ def normalized_rows(document, partition, manifest, image_prefix, category_map, d
         name = image["file_name"]
         sample = manifest["samples"][name]
         own = [a for a in annotations if a["image_id"] == image["id"]]
+        tasks = sample.get("tasks", TASKS)
         sidecars.append({"image_id": image["id"], "image": f"{image_prefix}/{partition}/{name}", "sample_id": Path(name).stem,
-                         "split": sample["split"], "groups": sample["groups"], "tasks": TASKS,
-                         "coverage": {task: "complete" for task in TASKS}, "arrow_geometry": arrow_geometry(own)})
+                         "split": sample["split"], "groups": sample["groups"], "tasks": tasks,
+                         "coverage": {task: "complete" for task in tasks}, "arrow_geometry": arrow_geometry(own)})
     return convert(subset, sidecars, category_map, dataset, revision)
 
 

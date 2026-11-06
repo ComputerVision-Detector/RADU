@@ -22,6 +22,7 @@ import re
 
 FC_A_NAME = re.compile(r"writer(\d+)_(\d+)(b?)(_?)\.")
 HDBPMN_NAME = re.compile(r"ex(\d+)_writer(\d+)\.")
+CMP_NAME = re.compile(r"writer(\d+)_f[ca]_(\d+)(b?)\.png$")
 PARTITION_SPLIT = {"train": "train", "val": "validation", "test": "test"}
 # Templates 1 and 6 have the same labelled graph (Weisfeiler-Lehman hash over all images).
 FC_A_FAMILY_ALIASES = {"1": "6"}
@@ -116,6 +117,31 @@ def build_hdbpmn(partitions, seed=42):
             "samples": samples, "excluded": dict(sorted(excluded.items()))}
 
 
+def build_cmp(dataset, partitions, seed=42):
+    """FC_B, FC_Bscan and FA: official writer-disjoint partitions, as with hdBPMN.
+
+    FC_Bscan is FC_B's drawings in another form, so both use one writer group: a writer's
+    drawings cannot appear in training through one source and in test through the other.
+    FA's COCO validation file has no arrow connectivity, so those samples omit relations.
+    """
+    excluded = duplicate_exclusions({name: value[1] for name, value in partitions.items()})
+    family = "fc_b" if dataset == "fc_b_scan" else dataset
+    samples = {}
+    for name, (partition, _) in sorted(partitions.items()):
+        match = CMP_NAME.match(name)
+        if not match:
+            raise ValueError(f"unrecognized {dataset} file name: {name}")
+        if name in excluded:
+            continue
+        samples[name] = {"split": PARTITION_SPLIT[partition], "groups": [f"{family}:writer:{match.group(1)}"],
+                         "template": match.group(2), "variant": match.group(2) + match.group(3), "official_partition": partition}
+        if dataset == "fa" and partition == "val":
+            samples[name]["tasks"] = ["nodes", "arrows"]
+    return {"schema_version": 1, "dataset": dataset, "version": f"{dataset}_v1", "seed": seed,
+            "policy": "Official writer-disjoint partitions kept; templates repeat across writers by design and are recorded.",
+            "samples": samples, "excluded": dict(sorted(excluded.items()))}
+
+
 def verify_disjoint(manifest):
     """Every group, and every FC_A writer/family rule, must hold in the final manifest."""
     where = defaultdict(set)
@@ -156,11 +182,18 @@ def main():
     parser.add_argument("--root", default="data/raw/radu")
     parser.add_argument("--output-dir", default="configs/splits")
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--dataset", action="append", choices=["fc_a", "hdbpmn", "fc_b", "fc_b_scan", "fa"], help="Repeatable; omit to build fc_a and hdbpmn")
     args = parser.parse_args()
     root, out = Path(args.root), Path(args.output_dir)
-    fc_a = collect(root, "fc_a/source", ("train", "test"))
-    hdbpmn = collect(root, "hdbpmn/coco_icdar2021", ("train", "val", "test"))
-    manifests = [build_fc_a({name: value[1] for name, value in fc_a.items()}, seed=args.seed), build_hdbpmn(hdbpmn, seed=args.seed)]
+    manifests = []
+    for dataset in args.dataset or ["fc_a", "hdbpmn"]:
+        if dataset == "fc_a":
+            fc_a = collect(root, "fc_a/source", ("train", "test"))
+            manifests.append(build_fc_a({name: value[1] for name, value in fc_a.items()}, seed=args.seed))
+        elif dataset == "hdbpmn":
+            manifests.append(build_hdbpmn(collect(root, "hdbpmn/coco_icdar2021", ("train", "val", "test")), seed=args.seed))
+        else:
+            manifests.append(build_cmp(dataset, collect(root, f"{dataset}/source", ("train", "val", "test")), seed=args.seed))
     out.mkdir(parents=True, exist_ok=True)
     for manifest in manifests:
         verify_disjoint(manifest)

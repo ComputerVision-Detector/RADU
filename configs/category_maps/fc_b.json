@@ -1,0 +1,9 @@
+{
+  "connection": {"type": "node", "kind": "connection"},
+  "data": {"type": "node", "kind": "data"},
+  "decision": {"type": "node", "kind": "decision"},
+  "process": {"type": "node", "kind": "process"},
+  "terminator": {"type": "node", "kind": "terminator"},
+  "text": {"type": "text"},
+  "arrow": {"type": "arrow"}
+}

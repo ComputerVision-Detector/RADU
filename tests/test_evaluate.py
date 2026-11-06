@@ -45,6 +45,24 @@ class ScoreTests(unittest.TestCase):
             self.assertEqual(score(text)["nodes"][0], 0)
         self.assertFalse(score("not json")["parsed"])
 
+    def test_integer_ids_are_scored_like_strings(self):
+        pred = {"nodes": [{"id": 0, "bbox": [0, 0, 100, 100], "kind": "process"}, {"id": 1, "bbox": [0, 200, 100, 300], "kind": "data"}],
+                "arrows": [{"id": 0, "start": [50, 100], "end": [50, 200]}],
+                "relations": [{"source": 0, "target": 1}]}
+        result = score(pred)
+        self.assertEqual(result["nodes"], (2, 2, 2))
+        self.assertEqual(result["arrows"], (1, 1, 1))
+        self.assertEqual(result["relations"], (1, 1, 1))
+
+    def test_unhashable_relation_endpoints_are_wrong_not_fatal(self):
+        pred = {"nodes": GOLD["nodes"], "relations": [{"source": ["n1"], "target": {"id": "n2"}}, {"source": True, "target": "n2"}]}
+        self.assertEqual(score(pred)["relations"], (0, 2, 1))
+
+    def test_open_ended_relations_are_not_scored(self):
+        gold = {**GOLD, "relations": GOLD["relations"] + [{"id": "r2", "source": None, "target": "n1", "directed": True, "arrow_id": None}]}
+        pred = {"nodes": GOLD["nodes"], "relations": [{"source": "n1", "target": "n2"}, {"source": None, "target": "n1"}]}
+        self.assertEqual(score_record(json.dumps(pred), gold, 1000, 1000)["relations"], (1, 1, 1))
+
     def test_aggregate_micro_f1(self):
         metrics = aggregate([score({"nodes": GOLD["nodes"]}), score("bad")])
         self.assertEqual(metrics["parsed"], 1)

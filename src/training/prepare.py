@@ -7,7 +7,7 @@ import hashlib
 import json
 from pathlib import Path
 
-from .schema import PROMPT, require, validate_record
+from .schema import PROMPT, TASK_INSTRUCTIONS, require, validate_record
 
 
 def read_jsonl(path):
@@ -31,7 +31,9 @@ def sha256(path):
 
 def build_prompt(record):
     # Literal JSON braces in the instruction must not be interpreted as str.format fields.
-    return (PROMPT.replace("{tasks}", ", ".join(sorted(record["tasks"])))
+    # Diagram-only prompts stay byte-identical; other tasks add their format before the key list.
+    extra = "".join(TASK_INSTRUCTIONS[task] for task in sorted(record["tasks"]) if task in TASK_INSTRUCTIONS)
+    return (PROMPT.replace("Requested keys:", extra + "Requested keys:").replace("{tasks}", ", ".join(sorted(record["tasks"])))
             .replace("{width}", str(record["width"]))
             .replace("{height}", str(record["height"])))
 

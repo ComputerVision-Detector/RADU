@@ -24,6 +24,86 @@
       "staging_catalog": "data/processed/radu_staging/fc_a/staged.jsonl"
     },
     {
+      "id": "crohme_2023",
+      "source": "https://zenodo.org/records/8428035",
+      "license": "CC-BY-NC-SA-3.0",
+      "adapter": "formula-table",
+      "records": "data/raw/radu/crohme_2023/normalized.jsonl",
+      "status": "normalized_formula_crohme_v1",
+      "notes": "Rendered PNG with InkML truth. OffHME and CROHME2013 have no LaTeX truth here and are unused. Writers stay in one split.",
+      "raw_root": "data/raw/radu/crohme_2023"
+    },
+    {
+      "id": "unimer",
+      "source": "https://huggingface.co/datasets/wanderkid/UniMER_Dataset",
+      "license": "Apache-2.0 on the card; component sources not individually verified. HME100K part not distributed there.",
+      "adapter": "formula-table",
+      "records": "data/raw/radu/unimer/normalized.jsonl",
+      "status": "normalized_formula_unimer_v1",
+      "notes": "Line N of the label file belongs to image N. Validation is a stable 1% of UniMER-1M; test is UniMER-Test.",
+      "raw_root": "data/raw/radu/unimer"
+    },
+    {
+      "id": "mathwriting",
+      "source": "https://arxiv.org/abs/2404.10690",
+      "license": "CC-BY-NC-SA-4.0",
+      "adapter": "formula-table",
+      "records": "data/raw/radu/mathwriting/normalized.jsonl",
+      "status": "normalized_formula_mathwriting_v1",
+      "notes": "Ink rendered to PNG. Human inks only, official train/valid/test. Writer ids are not published, so writer leakage cannot be ruled out.",
+      "raw_root": "data/raw/radu/mathwriting"
+    },
+    {
+      "id": "pubtabnet",
+      "source": "https://github.com/ibm-aur-nlp/PubTabNet",
+      "license": "Annotations CDLA-Permissive-1.0; images under PMC Open Access Subset terms",
+      "adapter": "formula-table",
+      "records": "data/raw/radu/pubtabnet/normalized.jsonl",
+      "status": "normalized_table_pubtabnet_v1",
+      "notes": "Structure and boxes only, no cell text. Official labels cover train and val; half of val articles form test. Articles stay in one split.",
+      "raw_root": "data/raw/radu/pubtabnet"
+    },
+    {
+      "id": "fintabnet_c",
+      "source": "https://huggingface.co/datasets/bsmock/FinTabNet.c",
+      "license": "CDLA-Permissive-2.0",
+      "adapter": "formula-table",
+      "records": "data/raw/radu/fintabnet_c/normalized.jsonl",
+      "status": "normalized_table_fintabnet_c_v1",
+      "notes": "Grid derived from row, column and spanning-cell boxes; cell boxes are row-column intersections. Documents stay in one split.",
+      "raw_root": "data/raw/radu/fintabnet_c"
+    },
+    {
+      "id": "fc_b",
+      "source": "https://cmp.felk.cvut.cz/~breslmar/flowcharts/",
+      "license": "No license stated; free to download, citation requested (COCO conversion: bernhardschaefer/handwritten-diagram-datasets)",
+      "adapter": "diagram-coco",
+      "records": "data/raw/radu/fc_b/normalized.jsonl",
+      "status": "normalized_image_only_fc_b_v1",
+      "notes": "Official writer-disjoint partitions. Shares writer groups with fc_b_scan, which holds the same drawings in another form.",
+      "raw_root": "data/raw/radu/fc_b"
+    },
+    {
+      "id": "fc_b_scan",
+      "source": "https://cmp.felk.cvut.cz/~breslmar/flowcharts_offline/",
+      "license": "No license stated; free to download, citation requested (COCO conversion: bernhardschaefer/handwritten-diagram-datasets)",
+      "adapter": "diagram-coco",
+      "records": "data/raw/radu/fc_b_scan/normalized.jsonl",
+      "status": "normalized_image_only_fc_b_scan_v1",
+      "notes": "Same drawings and annotations as fc_b, so both use fc_b writer groups.",
+      "raw_root": "data/raw/radu/fc_b_scan"
+    },
+    {
+      "id": "fa",
+      "source": "https://cmp.felk.cvut.cz/~breslmar/finite_automata/",
+      "license": "No license stated; free to download, citation requested (COCO conversion: bernhardschaefer/handwritten-diagram-datasets)",
+      "adapter": "diagram-coco",
+      "records": "data/raw/radu/fa/normalized.jsonl",
+      "status": "normalized_image_only_fa_v1",
+      "notes": "Initial-state arrows have a null relation source. The COCO validation file has no connectivity, so those 84 samples supervise nodes and arrows only.",
+      "raw_root": "data/raw/radu/fa"
+    },
+    {
       "id": "ai2d_rst",
       "source": "https://github.com/thiippal/AI2D-RST",
       "license": "Original AI2D: CC BY-SA; RST v1.1 release README: CC BY-SA 4.0 (GitHub README states CC BY 4.0)",

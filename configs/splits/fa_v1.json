@@ -1,0 +1,3046 @@
+{
+ "schema_version": 1,
+ "dataset": "fa",
+ "version": "fa_v1",
+ "seed": 42,
+ "policy": "Official writer-disjoint partitions kept; templates repeat across writers by design and are recorded.",
+ "samples": {
+  "writer000_fa_001.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:000"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "train"
+  },
+  "writer000_fa_002.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:000"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "train"
+  },
+  "writer000_fa_003.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:000"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "train"
+  },
+  "writer000_fa_004.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:000"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "train"
+  },
+  "writer000_fa_005.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:000"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "train"
+  },
+  "writer000_fa_006.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:000"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "train"
+  },
+  "writer000_fa_007.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:000"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "train"
+  },
+  "writer000_fa_008.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:000"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "train"
+  },
+  "writer000_fa_009.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:000"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "train"
+  },
+  "writer000_fa_010.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:000"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "train"
+  },
+  "writer000_fa_011.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:000"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "train"
+  },
+  "writer000_fa_012.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:000"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "train"
+  },
+  "writer001_fa_001.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:001"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "train"
+  },
+  "writer001_fa_002.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:001"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "train"
+  },
+  "writer001_fa_003.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:001"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "train"
+  },
+  "writer001_fa_004.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:001"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "train"
+  },
+  "writer001_fa_005.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:001"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "train"
+  },
+  "writer001_fa_006.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:001"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "train"
+  },
+  "writer001_fa_007.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:001"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "train"
+  },
+  "writer001_fa_008.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:001"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "train"
+  },
+  "writer001_fa_009.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:001"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "train"
+  },
+  "writer001_fa_010.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:001"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "train"
+  },
+  "writer001_fa_011.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:001"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "train"
+  },
+  "writer001_fa_012.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:001"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "train"
+  },
+  "writer002_fa_001.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:002"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "train"
+  },
+  "writer002_fa_002.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:002"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "train"
+  },
+  "writer002_fa_003.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:002"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "train"
+  },
+  "writer002_fa_004.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:002"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "train"
+  },
+  "writer002_fa_005.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:002"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "train"
+  },
+  "writer002_fa_006.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:002"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "train"
+  },
+  "writer002_fa_007.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:002"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "train"
+  },
+  "writer002_fa_008.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:002"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "train"
+  },
+  "writer002_fa_009.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:002"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "train"
+  },
+  "writer002_fa_010.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:002"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "train"
+  },
+  "writer002_fa_011.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:002"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "train"
+  },
+  "writer002_fa_012.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:002"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "train"
+  },
+  "writer003_fa_001.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:003"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "train"
+  },
+  "writer003_fa_002.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:003"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "train"
+  },
+  "writer003_fa_003.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:003"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "train"
+  },
+  "writer003_fa_004.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:003"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "train"
+  },
+  "writer003_fa_005.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:003"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "train"
+  },
+  "writer003_fa_006.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:003"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "train"
+  },
+  "writer003_fa_007.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:003"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "train"
+  },
+  "writer003_fa_008.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:003"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "train"
+  },
+  "writer003_fa_009.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:003"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "train"
+  },
+  "writer003_fa_010.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:003"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "train"
+  },
+  "writer003_fa_011.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:003"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "train"
+  },
+  "writer003_fa_012.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:003"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "train"
+  },
+  "writer004_fa_001.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:004"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "train"
+  },
+  "writer004_fa_002.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:004"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "train"
+  },
+  "writer004_fa_003.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:004"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "train"
+  },
+  "writer004_fa_004.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:004"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "train"
+  },
+  "writer004_fa_005.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:004"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "train"
+  },
+  "writer004_fa_006.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:004"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "train"
+  },
+  "writer004_fa_007.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:004"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "train"
+  },
+  "writer004_fa_008.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:004"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "train"
+  },
+  "writer004_fa_009.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:004"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "train"
+  },
+  "writer004_fa_010.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:004"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "train"
+  },
+  "writer004_fa_011.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:004"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "train"
+  },
+  "writer004_fa_012.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:004"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "train"
+  },
+  "writer005_fa_001.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:005"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "train"
+  },
+  "writer005_fa_002.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:005"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "train"
+  },
+  "writer005_fa_003.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:005"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "train"
+  },
+  "writer005_fa_004.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:005"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "train"
+  },
+  "writer005_fa_005.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:005"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "train"
+  },
+  "writer005_fa_006.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:005"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "train"
+  },
+  "writer005_fa_007.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:005"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "train"
+  },
+  "writer005_fa_008.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:005"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "train"
+  },
+  "writer005_fa_009.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:005"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "train"
+  },
+  "writer005_fa_010.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:005"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "train"
+  },
+  "writer005_fa_011.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:005"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "train"
+  },
+  "writer005_fa_012.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:005"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "train"
+  },
+  "writer006_fa_001.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:006"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "train"
+  },
+  "writer006_fa_002.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:006"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "train"
+  },
+  "writer006_fa_003.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:006"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "train"
+  },
+  "writer006_fa_004.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:006"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "train"
+  },
+  "writer006_fa_005.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:006"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "train"
+  },
+  "writer006_fa_006.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:006"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "train"
+  },
+  "writer006_fa_007.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:006"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "train"
+  },
+  "writer006_fa_008.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:006"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "train"
+  },
+  "writer006_fa_009.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:006"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "train"
+  },
+  "writer006_fa_010.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:006"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "train"
+  },
+  "writer006_fa_011.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:006"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "train"
+  },
+  "writer006_fa_012.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:006"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "train"
+  },
+  "writer007_fa_001.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:007"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "train"
+  },
+  "writer007_fa_002.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:007"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "train"
+  },
+  "writer007_fa_003.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:007"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "train"
+  },
+  "writer007_fa_004.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:007"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "train"
+  },
+  "writer007_fa_005.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:007"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "train"
+  },
+  "writer007_fa_006.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:007"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "train"
+  },
+  "writer007_fa_007.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:007"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "train"
+  },
+  "writer007_fa_008.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:007"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "train"
+  },
+  "writer007_fa_009.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:007"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "train"
+  },
+  "writer007_fa_010.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:007"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "train"
+  },
+  "writer007_fa_011.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:007"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "train"
+  },
+  "writer007_fa_012.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:007"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "train"
+  },
+  "writer008_fa_001.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:008"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "train"
+  },
+  "writer008_fa_002.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:008"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "train"
+  },
+  "writer008_fa_003.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:008"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "train"
+  },
+  "writer008_fa_004.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:008"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "train"
+  },
+  "writer008_fa_005.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:008"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "train"
+  },
+  "writer008_fa_006.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:008"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "train"
+  },
+  "writer008_fa_007.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:008"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "train"
+  },
+  "writer008_fa_008.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:008"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "train"
+  },
+  "writer008_fa_009.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:008"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "train"
+  },
+  "writer008_fa_010.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:008"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "train"
+  },
+  "writer008_fa_011.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:008"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "train"
+  },
+  "writer008_fa_012.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:008"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "train"
+  },
+  "writer009_fa_001.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:009"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "train"
+  },
+  "writer009_fa_002.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:009"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "train"
+  },
+  "writer009_fa_003.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:009"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "train"
+  },
+  "writer009_fa_004.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:009"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "train"
+  },
+  "writer009_fa_005.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:009"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "train"
+  },
+  "writer009_fa_006.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:009"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "train"
+  },
+  "writer009_fa_007.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:009"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "train"
+  },
+  "writer009_fa_008.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:009"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "train"
+  },
+  "writer009_fa_009.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:009"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "train"
+  },
+  "writer009_fa_010.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:009"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "train"
+  },
+  "writer009_fa_011.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:009"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "train"
+  },
+  "writer009_fa_012.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:009"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "train"
+  },
+  "writer010_fa_001.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:010"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "train"
+  },
+  "writer010_fa_002.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:010"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "train"
+  },
+  "writer010_fa_003.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:010"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "train"
+  },
+  "writer010_fa_004.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:010"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "train"
+  },
+  "writer010_fa_005.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:010"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "train"
+  },
+  "writer010_fa_006.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:010"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "train"
+  },
+  "writer010_fa_007.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:010"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "train"
+  },
+  "writer010_fa_008.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:010"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "train"
+  },
+  "writer010_fa_009.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:010"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "train"
+  },
+  "writer010_fa_010.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:010"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "train"
+  },
+  "writer010_fa_011.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:010"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "train"
+  },
+  "writer010_fa_012.png": {
+   "split": "train",
+   "groups": [
+    "fa:writer:010"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "train"
+  },
+  "writer011_fa_001.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:011"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer011_fa_002.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:011"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer011_fa_003.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:011"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer011_fa_004.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:011"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer011_fa_005.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:011"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer011_fa_006.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:011"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer011_fa_007.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:011"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer011_fa_008.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:011"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer011_fa_009.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:011"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer011_fa_010.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:011"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer011_fa_011.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:011"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer011_fa_012.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:011"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer012_fa_001.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:012"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer012_fa_002.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:012"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer012_fa_003.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:012"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer012_fa_004.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:012"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer012_fa_005.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:012"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer012_fa_006.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:012"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer012_fa_007.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:012"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer012_fa_008.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:012"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer012_fa_009.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:012"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer012_fa_010.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:012"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer012_fa_011.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:012"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer012_fa_012.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:012"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer013_fa_001.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:013"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer013_fa_002.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:013"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer013_fa_003.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:013"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer013_fa_004.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:013"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer013_fa_005.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:013"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer013_fa_006.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:013"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer013_fa_007.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:013"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer013_fa_008.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:013"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer013_fa_009.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:013"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer013_fa_010.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:013"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer013_fa_011.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:013"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer013_fa_012.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:013"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer014_fa_001.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:014"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer014_fa_002.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:014"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer014_fa_003.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:014"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer014_fa_004.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:014"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer014_fa_005.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:014"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer014_fa_006.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:014"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer014_fa_007.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:014"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer014_fa_008.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:014"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer014_fa_009.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:014"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer014_fa_010.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:014"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer014_fa_011.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:014"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer014_fa_012.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:014"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer015_fa_001.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:015"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer015_fa_002.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:015"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer015_fa_003.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:015"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer015_fa_004.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:015"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer015_fa_005.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:015"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer015_fa_006.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:015"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer015_fa_007.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:015"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer015_fa_008.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:015"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer015_fa_009.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:015"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer015_fa_010.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:015"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer015_fa_011.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:015"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer015_fa_012.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:015"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer016_fa_001.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:016"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer016_fa_002.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:016"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer016_fa_003.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:016"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer016_fa_004.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:016"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer016_fa_005.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:016"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer016_fa_006.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:016"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer016_fa_007.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:016"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer016_fa_008.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:016"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer016_fa_009.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:016"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer016_fa_010.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:016"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer016_fa_011.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:016"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer016_fa_012.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:016"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer017_fa_001.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:017"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer017_fa_002.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:017"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer017_fa_003.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:017"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer017_fa_004.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:017"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer017_fa_005.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:017"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer017_fa_006.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:017"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer017_fa_007.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:017"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer017_fa_008.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:017"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer017_fa_009.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:017"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer017_fa_010.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:017"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer017_fa_011.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:017"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer017_fa_012.png": {
+   "split": "validation",
+   "groups": [
+    "fa:writer:017"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "val",
+   "tasks": [
+    "nodes",
+    "arrows"
+   ]
+  },
+  "writer018_fa_001.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:018"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "test"
+  },
+  "writer018_fa_002.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:018"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "test"
+  },
+  "writer018_fa_003.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:018"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "test"
+  },
+  "writer018_fa_004.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:018"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "test"
+  },
+  "writer018_fa_005.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:018"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "test"
+  },
+  "writer018_fa_006.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:018"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "test"
+  },
+  "writer018_fa_007.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:018"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "test"
+  },
+  "writer018_fa_008.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:018"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "test"
+  },
+  "writer018_fa_009.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:018"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "test"
+  },
+  "writer018_fa_010.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:018"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "test"
+  },
+  "writer018_fa_011.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:018"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "test"
+  },
+  "writer018_fa_012.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:018"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "test"
+  },
+  "writer019_fa_001.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:019"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "test"
+  },
+  "writer019_fa_002.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:019"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "test"
+  },
+  "writer019_fa_003.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:019"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "test"
+  },
+  "writer019_fa_004.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:019"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "test"
+  },
+  "writer019_fa_005.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:019"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "test"
+  },
+  "writer019_fa_006.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:019"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "test"
+  },
+  "writer019_fa_007.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:019"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "test"
+  },
+  "writer019_fa_008.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:019"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "test"
+  },
+  "writer019_fa_009.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:019"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "test"
+  },
+  "writer019_fa_010.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:019"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "test"
+  },
+  "writer019_fa_011.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:019"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "test"
+  },
+  "writer019_fa_012.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:019"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "test"
+  },
+  "writer020_fa_001.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:020"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "test"
+  },
+  "writer020_fa_002.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:020"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "test"
+  },
+  "writer020_fa_003.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:020"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "test"
+  },
+  "writer020_fa_004.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:020"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "test"
+  },
+  "writer020_fa_005.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:020"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "test"
+  },
+  "writer020_fa_006.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:020"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "test"
+  },
+  "writer020_fa_007.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:020"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "test"
+  },
+  "writer020_fa_008.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:020"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "test"
+  },
+  "writer020_fa_009.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:020"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "test"
+  },
+  "writer020_fa_010.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:020"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "test"
+  },
+  "writer020_fa_011.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:020"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "test"
+  },
+  "writer020_fa_012.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:020"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "test"
+  },
+  "writer021_fa_001.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:021"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "test"
+  },
+  "writer021_fa_002.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:021"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "test"
+  },
+  "writer021_fa_003.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:021"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "test"
+  },
+  "writer021_fa_004.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:021"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "test"
+  },
+  "writer021_fa_005.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:021"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "test"
+  },
+  "writer021_fa_006.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:021"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "test"
+  },
+  "writer021_fa_007.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:021"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "test"
+  },
+  "writer021_fa_008.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:021"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "test"
+  },
+  "writer021_fa_009.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:021"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "test"
+  },
+  "writer021_fa_010.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:021"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "test"
+  },
+  "writer021_fa_011.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:021"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "test"
+  },
+  "writer021_fa_012.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:021"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "test"
+  },
+  "writer022_fa_001.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:022"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "test"
+  },
+  "writer022_fa_002.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:022"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "test"
+  },
+  "writer022_fa_003.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:022"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "test"
+  },
+  "writer022_fa_004.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:022"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "test"
+  },
+  "writer022_fa_005.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:022"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "test"
+  },
+  "writer022_fa_006.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:022"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "test"
+  },
+  "writer022_fa_007.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:022"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "test"
+  },
+  "writer022_fa_008.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:022"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "test"
+  },
+  "writer022_fa_009.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:022"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "test"
+  },
+  "writer022_fa_010.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:022"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "test"
+  },
+  "writer022_fa_011.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:022"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "test"
+  },
+  "writer022_fa_012.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:022"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "test"
+  },
+  "writer023_fa_001.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:023"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "test"
+  },
+  "writer023_fa_002.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:023"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "test"
+  },
+  "writer023_fa_003.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:023"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "test"
+  },
+  "writer023_fa_004.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:023"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "test"
+  },
+  "writer023_fa_005.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:023"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "test"
+  },
+  "writer023_fa_006.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:023"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "test"
+  },
+  "writer023_fa_007.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:023"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "test"
+  },
+  "writer023_fa_008.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:023"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "test"
+  },
+  "writer023_fa_009.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:023"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "test"
+  },
+  "writer023_fa_010.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:023"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "test"
+  },
+  "writer023_fa_011.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:023"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "test"
+  },
+  "writer023_fa_012.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:023"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "test"
+  },
+  "writer024_fa_001.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:024"
+   ],
+   "template": "001",
+   "variant": "001",
+   "official_partition": "test"
+  },
+  "writer024_fa_002.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:024"
+   ],
+   "template": "002",
+   "variant": "002",
+   "official_partition": "test"
+  },
+  "writer024_fa_003.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:024"
+   ],
+   "template": "003",
+   "variant": "003",
+   "official_partition": "test"
+  },
+  "writer024_fa_004.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:024"
+   ],
+   "template": "004",
+   "variant": "004",
+   "official_partition": "test"
+  },
+  "writer024_fa_005.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:024"
+   ],
+   "template": "005",
+   "variant": "005",
+   "official_partition": "test"
+  },
+  "writer024_fa_006.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:024"
+   ],
+   "template": "006",
+   "variant": "006",
+   "official_partition": "test"
+  },
+  "writer024_fa_007.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:024"
+   ],
+   "template": "007",
+   "variant": "007",
+   "official_partition": "test"
+  },
+  "writer024_fa_008.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:024"
+   ],
+   "template": "008",
+   "variant": "008",
+   "official_partition": "test"
+  },
+  "writer024_fa_009.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:024"
+   ],
+   "template": "009",
+   "variant": "009",
+   "official_partition": "test"
+  },
+  "writer024_fa_010.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:024"
+   ],
+   "template": "010",
+   "variant": "010",
+   "official_partition": "test"
+  },
+  "writer024_fa_011.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:024"
+   ],
+   "template": "011",
+   "variant": "011",
+   "official_partition": "test"
+  },
+  "writer024_fa_012.png": {
+   "split": "test",
+   "groups": [
+    "fa:writer:024"
+   ],
+   "template": "012",
+   "variant": "012",
+   "official_partition": "test"
+  }
+ },
+ "excluded": {}
+}

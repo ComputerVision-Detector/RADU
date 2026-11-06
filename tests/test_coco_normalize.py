@@ -1,7 +1,7 @@
 """Split-manifest leakage rules and COCO-to-normalized joining; no GPU or real data."""
 import unittest
 
-from src.training.build_coco_splits import FC_A_FAMILY_ALIASES, build_fc_a, build_hdbpmn, verify_disjoint
+from src.training.build_coco_splits import FC_A_FAMILY_ALIASES, build_cmp, build_fc_a, build_hdbpmn, verify_disjoint
 from src.training.normalize_coco import arrow_geometry, normalized_rows
 
 
@@ -55,6 +55,55 @@ class SplitTests(unittest.TestCase):
         self.assertEqual(manifest["samples"]["ex00_writer0001.jpg"]["split"], "validation")
         self.assertEqual(manifest["samples"]["ex00_writer0002.jpg"]["split"], "test")
         self.assertIn("ex01_writer0001.jpg", manifest["excluded"])
+
+
+class CmpSplitTests(unittest.TestCase):
+    PARTITIONS = {"writer000_fc_001.png": ("train", "h1"), "writer000_fc_001b.png": ("train", "h2"),
+                  "writer001_fc_001.png": ("val", "h3"), "writer002_fc_002.png": ("test", "h4")}
+
+    def test_scan_shares_writer_groups_with_its_source(self):
+        original, scan = build_cmp("fc_b", self.PARTITIONS), build_cmp("fc_b_scan", self.PARTITIONS)
+        name = "writer001_fc_001.png"
+        self.assertEqual(original["samples"][name]["groups"], scan["samples"][name]["groups"])
+        self.assertEqual(scan["samples"][name]["split"], "validation")
+        self.assertEqual(scan["version"], "fc_b_scan_v1")
+        verify_disjoint(scan)
+
+    def test_fa_validation_omits_relations_only(self):
+        manifest = build_cmp("fa", {"writer000_fa_001.png": ("train", "h1"), "writer001_fa_001.png": ("val", "h2")})
+        self.assertNotIn("tasks", manifest["samples"]["writer000_fa_001.png"])
+        self.assertEqual(manifest["samples"]["writer001_fa_001.png"]["tasks"], ["nodes", "arrows"])
+
+    def test_unknown_name_is_rejected(self):
+        with self.assertRaises(ValueError):
+            build_cmp("fc_b", {"other.png": ("train", "h1")})
+
+
+class FaConnectivityTests(unittest.TestCase):
+    CATEGORY_MAP = {"state": {"type": "node", "kind": "state"}, "arrow": {"type": "arrow"}}
+
+    def document(self, arrow):
+        return {"categories": [], "images": [{"id": 0, "file_name": "writer000_fa_001.png", "width": 100, "height": 80}],
+                "annotations": [{"id": 0, "image_id": 0, "category": "state", "bbox": [50, 50, 10, 10], "keypoints": [0, 0, 0, 0, 0, 0]},
+                                {"id": 1, "image_id": 0, "category": "arrow", "bbox": [1, 1, 49, 49], "keypoints": [2, 2, 2, 50, 50, 2], **arrow}]}
+
+    def rows(self, arrow, sample):
+        manifest = {"samples": {"writer000_fa_001.png": {"split": "train", "groups": ["fa:writer:000"], **sample}}}
+        return list(normalized_rows(self.document(arrow), "train", manifest, "source", self.CATEGORY_MAP, "fa", "rev"))
+
+    def test_initial_arrow_has_open_source(self):
+        relation = self.rows({"arrow_next": 0}, {})[0]["target"]["relations"][0]
+        self.assertIsNone(relation["source"])
+        self.assertEqual(relation["target"], "n1")
+
+    def test_validation_arrows_keep_geometry_without_relations(self):
+        row = self.rows({}, {"tasks": ["nodes", "arrows"]})[0]
+        self.assertEqual(row["target"]["arrows"][0]["start"], [2, 2])
+        self.assertNotIn("relations", row["target"])
+
+    def test_missing_target_still_fails(self):
+        with self.assertRaisesRegex(ValueError, "missing source connectivity"):
+            self.rows({"arrow_prev": 0}, {})
 
 
 class NormalizeTests(unittest.TestCase):

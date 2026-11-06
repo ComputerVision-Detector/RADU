@@ -6,6 +6,7 @@ from collections import Counter
 import json
 import math
 from pathlib import Path
+import random
 
 from .prepare import read_jsonl, sha256
 from .schema import require
@@ -30,7 +31,8 @@ def mask_labels(full_ids, prefix_ids, attention):
 
 def training_schedule(train_rows, config, max_steps=None):
     """Optimizer steps and warmup; refuse a run that would never evaluate or checkpoint."""
-    per_epoch = math.ceil(train_rows / (config["batch_size"] * config["gradient_accumulation_steps"]))
+    rows = config.get("samples_per_epoch") or train_rows
+    per_epoch = math.ceil(rows / (config["batch_size"] * config["gradient_accumulation_steps"]))
     total = max_steps if max_steps is not None else per_epoch * config["epochs"]
     if max_steps is None:
         for key in ("eval_steps", "save_steps"):
@@ -57,10 +59,27 @@ def load_base_model(config):
     return processor, model
 
 
-def source_balanced_weights(rows):
-    """Per-row sampling weights giving each dataset equal expected share of training."""
+def source_balanced_weights(rows, shares=None):
+    """Per-row sampling weights: each dataset gets its share of training, equal when none is given."""
     counts = Counter(row["dataset"] for row in rows)
-    return [1.0 / counts[row["dataset"]] for row in rows]
+    if shares:
+        missing = set(counts) - set(shares)
+        require(not missing, f"sampling_shares lacks {sorted(missing)}; a source would silently never train")
+    return [(shares[row["dataset"]] if shares else 1.0) / counts[row["dataset"]] for row in rows]
+
+
+def evaluation_subset(rows, limit, seed=42):
+    """Seeded and proportional per dataset, so loss checks stay cheap on large validation sets."""
+    if not limit or limit >= len(rows):
+        return rows
+    by_dataset = {}
+    for row in rows:
+        by_dataset.setdefault(row["dataset"], []).append(row)
+    picked = []
+    for name, items in sorted(by_dataset.items()):
+        count = max(1, round(limit * len(items) / len(rows)))
+        picked.extend(random.Random(f"{seed}:{name}").sample(items, min(count, len(items))))
+    return picked
 
 
 class StructureCollator:
@@ -185,9 +204,12 @@ def run(config_path, preflight_only=False, max_steps=None, resume=None, output_d
         class SourceBalancedTrainer(Trainer):
             def _get_train_sampler(self, train_dataset=None):
                 generator = torch.Generator().manual_seed(config["seed"])
-                return torch.utils.data.WeightedRandomSampler(source_balanced_weights(train), len(train), generator=generator)
+                weights = source_balanced_weights(train, config.get("sampling_shares"))
+                return torch.utils.data.WeightedRandomSampler(weights, config.get("samples_per_epoch") or len(train), generator=generator)
         trainer_class = SourceBalancedTrainer
-    trainer = trainer_class(model=model, args=args, train_dataset=train, eval_dataset=validation,
+    # Every sample was already scanned above; this only limits how much each loss check costs.
+    eval_rows = evaluation_subset(validation, config.get("max_eval_samples"), config["seed"])
+    trainer = trainer_class(model=model, args=args, train_dataset=train, eval_dataset=eval_rows,
                             data_collator=collator, processing_class=processor)
     trainer.train(resume_from_checkpoint=resume)
     # lora_B starts at exactly zero; all-zero after training means nothing was learned.

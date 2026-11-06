@@ -14,7 +14,7 @@
   "lora_alpha": 32,
   "lora_dropout": 0.05,
   "max_pixels": 1003520,
-  "max_sequence_tokens": 8192,
+  "max_sequence_tokens": 6900,
   "save_steps": 25,
   "eval_steps": 25,
   "logging_steps": 10,

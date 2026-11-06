@@ -7,8 +7,13 @@ from __future__ import annotations
 
 import math
 
-DATASETS = {"hdbpmn", "fc_a", "ai2d_rst", "didi", "casia_ohfc", "flowlearn"}
-TASKS = {"nodes", "arrows", "relations"}
+DATASETS = {"hdbpmn", "fc_a", "fc_b", "fc_b_scan", "fa", "ai2d_rst", "didi", "casia_ohfc", "flowlearn",
+            "crohme_2023", "unimer", "mathwriting", "pubtabnet", "fintabnet_c"}
+TASKS = {"nodes", "arrows", "relations", "formulas", "tables"}
+TASK_INSTRUCTIONS = {
+    "formulas": "formulas: [{id,bbox,latex}]; here, and only here, write the formula itself as LaTeX.\n",
+    "tables": "tables: [{id,bbox,rows,cols,cells}]; each cell is [row,col,rowspan,colspan] counted from 0, followed by x0,y0,x1,y1 when its box is known. Never write cell text.\n",
+}
 PROMPT = """Extract only the requested diagram structure from the image.
 Do not transcribe, correct, translate, summarize, solve formulas, or infer invisible
 connections. Coordinates are original-image pixels.
@@ -34,6 +39,30 @@ def bbox(box, width, height):
     require(isinstance(box, list) and len(box) == 4 and all(finite(v) for v in box), "invalid bbox")
     x1, y1, x2, y2 = box
     require(0 <= x1 < x2 <= width and 0 <= y1 < y2 <= height, "bbox outside original image")
+
+
+def validate_formula(item, width, height):
+    require(isinstance(item, dict) and set(item) == {"id", "bbox", "latex"}, "invalid formula fields")
+    bbox(item["bbox"], width, height)
+    require(isinstance(item["latex"], str) and bool(item["latex"].strip()), "formula latex required")
+
+
+def validate_table(item, width, height):
+    require(isinstance(item, dict) and set(item) == {"id", "bbox", "rows", "cols", "cells"}, "invalid table fields (cell text is not a target)")
+    bbox(item["bbox"], width, height)
+    rows, cols = item["rows"], item["cols"]
+    require(type(rows) is int and type(cols) is int and rows > 0 and cols > 0, "invalid table size")
+    require(isinstance(item["cells"], list) and bool(item["cells"]), "table cells required")
+    occupied = set()
+    for cell in item["cells"]:
+        require(isinstance(cell, list) and len(cell) in (4, 8) and all(type(v) is int for v in cell), "cell is [row,col,rowspan,colspan] plus optional box")
+        row, col, rowspan, colspan = cell[:4]
+        require(0 <= row and 0 <= col and rowspan > 0 and colspan > 0 and row + rowspan <= rows and col + colspan <= cols, "cell outside table grid")
+        spanned = {(r, c) for r in range(row, row + rowspan) for c in range(col, col + colspan)}
+        require(not spanned & occupied, "overlapping table cells")
+        occupied |= spanned
+        if len(cell) == 8:
+            bbox(cell[4:], width, height)
 
 
 def validate_record(record):
@@ -70,6 +99,11 @@ def validate_record(record):
                 for key in ("start", "end"):
                     point = item[key]
                     require(point is None or isinstance(point, list) and len(point) == 2 and all(finite(v) for v in point) and 0 <= point[0] <= w and 0 <= point[1] <= h, "invalid arrow endpoint")
+    for task, check in (("formulas", validate_formula), ("tables", validate_table)):
+        for item in target.get(task, []):
+            check(item, w, h)
+            require(isinstance(item["id"], str) and item["id"] and item["id"] not in ids, "duplicate/invalid element id")
+            ids.add(item["id"])
     relation_ids = set()
     for item in target.get("relations", []):
         require(isinstance(item, dict) and set(item) == {"id", "source", "target", "directed", "arrow_id"}, "invalid relation fields")

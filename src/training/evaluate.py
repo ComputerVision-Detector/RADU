@@ -11,6 +11,7 @@ from collections import Counter, defaultdict
 import json
 import math
 from pathlib import Path
+import random
 
 from .prepare import read_jsonl
 from .schema import require
@@ -48,13 +49,19 @@ def greedy_match(candidates):
     return mapping
 
 
+def element_id(value):
+    """Model ids as strings, so 0 and "0" are one id; any other value references nothing."""
+    return str(value) if isinstance(value, (str, int)) and not isinstance(value, bool) else None
+
+
 def elements(items, check):
     """Keep usable objects with a unique id; hand-written models can emit anything."""
     kept, seen = [], set()
     for item in items if isinstance(items, list) else []:
-        if isinstance(item, dict) and isinstance(item.get("id"), str) and item["id"] not in seen and check(item):
-            seen.add(item["id"])
-            kept.append(item)
+        key = element_id(item.get("id")) if isinstance(item, dict) else None
+        if key is not None and key not in seen and check(item):
+            seen.add(key)
+            kept.append({**item, "id": key})
     return kept
 
 
@@ -80,27 +87,60 @@ def score_record(text, gold, width, height):
             if distance <= tolerance:
                 candidates.append((-distance, p["id"], g["id"]))
     arrow_map = greedy_match(candidates)
-    mapping = {**node_map, **arrow_map}
-    gold_pairs = Counter((r["source"], r["target"]) for r in gold.get("relations", []))
-    relations = [r for r in pred.get("relations", []) if isinstance(r, dict)] if isinstance(pred.get("relations"), list) else []
-    pred_pairs = Counter((mapping.get(r.get("source")), mapping.get(r.get("target"))) for r in relations)
+    # Numbering nodes and arrows separately reuses ids; a relation then means the node.
+    mapping = {**arrow_map, **node_map}
+    # An open end (FA's initial-state arrow) is not a pair, so neither side scores it.
+    gold_pairs = Counter((r["source"], r["target"]) for r in gold.get("relations", []) if r["source"] is not None and r["target"] is not None)
+    relations = [r for r in pred.get("relations", []) if isinstance(r, dict) and r.get("source") is not None and r.get("target") is not None] if isinstance(pred.get("relations"), list) else []
+    pred_pairs = Counter((mapping.get(element_id(r.get("source"))), mapping.get(element_id(r.get("target")))) for r in relations)
     correct = sum(min(count, gold_pairs[pair]) for pair, count in pred_pairs.items() if None not in pair)
     return {"parsed": parsed,
             "nodes": (len(node_map), len(nodes), len(gold.get("nodes", []))),
             "arrows": (len(arrow_map), len(arrows), len(gold.get("arrows", []))),
-            "relations": (correct, sum(pred_pairs.values()), sum(gold_pairs.values()))}
+            "relations": (correct, sum(pred_pairs.values()), sum(gold_pairs.values())),
+            "formulas": score_formulas(pred, gold),
+            "tables": score_tables(pred, gold)}
+
+
+def listed_objects(pred, key):
+    return [item for item in pred.get(key, []) if isinstance(item, dict)] if isinstance(pred.get(key), list) else []
+
+
+def score_formulas(pred, gold):
+    """Exact LaTeX match, ignoring whitespace only: spaced and compact forms mean the same."""
+    compact = lambda text: "".join(text.split())
+    predicted = Counter(compact(item["latex"]) for item in listed_objects(pred, "formulas") if isinstance(item.get("latex"), str))
+    truth = Counter(compact(item["latex"]) for item in gold.get("formulas", []))
+    return (sum(min(count, truth[latex]) for latex, count in predicted.items()), sum(predicted.values()), sum(truth.values()))
+
+
+def score_tables(pred, gold):
+    """Cell grid positions with spans, matched table by table in order. Boxes are not scored."""
+    grid = lambda table: {tuple(cell[:4]) for cell in table.get("cells", []) if isinstance(cell, list) and len(cell) >= 4 and all(type(v) is int for v in cell[:4])} if isinstance(table.get("cells"), list) else set()
+    predicted, truth = [grid(table) for table in listed_objects(pred, "tables")], [grid(table) for table in gold.get("tables", [])]
+    return (sum(len(a & b) for a, b in zip(predicted, truth)), sum(map(len, predicted)), sum(map(len, truth)))
 
 
 def aggregate(scores):
     """Micro precision/recall/F1 per task."""
     result = {"samples": len(scores), "parsed": sum(s["parsed"] for s in scores)}
-    for task in ("nodes", "arrows", "relations"):
-        tp, predicted, gold = (sum(s[task][i] for s in scores) for i in range(3))
+    for task in ("nodes", "arrows", "relations", "formulas", "tables"):
+        # Prediction files written before these tasks existed lack their scores.
+        tp, predicted, gold = (sum(s.get(task, (0, 0, 0))[i] for s in scores) for i in range(3))
         precision = tp / predicted if predicted else 0.0
         recall = tp / gold if gold else 0.0
         f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0.0
         result[task] = {"precision": round(precision, 4), "recall": round(recall, 4), "f1": round(f1, 4), "true_positive": tp, "predicted": predicted, "gold": gold}
     return result
+
+
+def sample_per_dataset(rows, count, seed=42):
+    """Seeded sample per dataset, keeping file order. A prefix would miss sources sorted later."""
+    by_dataset = defaultdict(list)
+    for index, row in enumerate(rows):
+        by_dataset[row["dataset"]].append(index)
+    chosen = sorted(i for name, indexes in by_dataset.items() for i in random.Random(f"{seed}:{name}").sample(indexes, min(count, len(indexes))))
+    return [rows[i] for i in chosen]
 
 
 def structure_bucket(row_id, manifests):
@@ -120,6 +160,8 @@ def main():
     parser.add_argument("--output", required=True, help="New directory for predictions and metrics")
     parser.add_argument("--max-new-tokens", type=int, default=4096)
     parser.add_argument("--limit", type=int)
+    parser.add_argument("--sample-per-dataset", type=int, help="Seeded sample per dataset, so a quick check covers every source")
+    parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--split-manifest", action="append", default=[])
     args = parser.parse_args()
     import torch
@@ -129,6 +171,8 @@ def main():
     require(not output.exists(), "output exists; use a new directory")
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))
     rows = list(read_jsonl(args.data))[:args.limit]
+    if args.sample_per_dataset:
+        rows = sample_per_dataset(rows, args.sample_per_dataset, args.seed)
     manifests = {}
     for path in args.split_manifest:
         manifest = json.loads(Path(path).read_text(encoding="utf-8"))
