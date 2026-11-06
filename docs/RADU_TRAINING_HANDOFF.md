@@ -1,6 +1,6 @@
 # RADU Qwen3-VL-4B 구조 추출 학습 인수인계
 
-마지막 갱신: 2026-11-06 (Asia/Seoul, 최신 내용은 아래 대량 데이터 확장 기록). 이전 기록: 이미지 전용 학습(A안) 결정, FC_A·hdBPMN 분할·normalized·partial prepare, PaddleOCR-VL 8GB 시험, 수식·표 데이터 조사까지 반영. 이 문서는 다른 AI/개발자가 작업을 이어받기 위한 현재 상태와 실행 순서를 기록한다. 최종 수량은 추적 가능한 요약인 [`RADU_DATA_ACQUISITION.json`](RADU_DATA_ACQUISITION.json), 로컬 `data/processed/radu_staging/acquisition_summary.json`, `verified_assets.jsonl`, `inventory.json`을 근거로 한다. RST 별도 증거는 `data/processed/radu_staging/ai2d_rst/rst_verification.json`이다. 과거 다운로드 도중 기록보다 이 최종 감사 결과를 우선한다.
+마지막 갱신: 2026-11-07 (Asia/Seoul, 최신 내용은 아래 현재 작업 현황). 이전 기록: 이미지 전용 학습(A안) 결정, FC_A·hdBPMN 분할·normalized·partial prepare, PaddleOCR-VL 8GB 시험, 수식·표 데이터 조사까지 반영. 이 문서는 다른 AI/개발자가 작업을 이어받기 위한 현재 상태와 실행 순서를 기록한다. 최종 수량은 추적 가능한 요약인 [`RADU_DATA_ACQUISITION.json`](RADU_DATA_ACQUISITION.json), 로컬 `data/processed/radu_staging/acquisition_summary.json`, `verified_assets.jsonl`, `inventory.json`을 근거로 한다. RST 별도 증거는 `data/processed/radu_staging/ai2d_rst/rst_verification.json`이다. 과거 다운로드 도중 기록보다 이 최종 감사 결과를 우선한다.
 
 ## 사용자가 정한 목표와 역할
 
@@ -15,6 +15,80 @@
 - 사용자의 최신 실행 지시는 “실제 데이터를 다운해서 학습을 위해 적재”하는 것이다. 단순 추천이나 빈 설정 생성에서 멈추지 말고 실제 파일·정답 구조·다운로드 검증 증거를 남긴다.
 - 별도 감시 에이전트 1개가 구현/적재 검토를 맡았고, 이 문서는 사용자가 추가 요청한 문서 담당 에이전트가 작성했다.
 - 이번 세션에도 읽기 전용 독립 감시 에이전트를 추가했다. 상시 실행이 아니라 단계별로 검토를 요청하는 방식이다. 1차 검토 결과는 아래 '독립 리뷰 기록'에 있다.
+
+## 현재 작업 현황 (2026-11-07, 가장 최신)
+
+### 현재 하는 작업
+
+**학습 준비 완료, 본 학습 미시작.** 사용자가 직접 실행한다. 코드는 미커밋.
+
+**데이터.** `data/processed/radu_final`, 16종, train 1,866,927(토큰 초과 IBEM 3장 제외), validation 2,541, test 2,547. 예상 사용은 37.5만 회, 서로 다른 이미지 약 16.6만 장.
+
+| 분류 | 소스별 train |
+|---|---|
+| 도식 | hdBPMN 308, FC_A 194, FC_B 280, FC_Bscan 280, FA 132, hdFlowmind 619 |
+| 수식 | CROHME 10,903, MathWriting 229,864, UniMER 922,064, HME100K 93,160, IBEM 3,718 |
+| 표 | PubTabNet 498,172, FinTabNet.c 77,522, TabRecSet 29,132, cTDaR 351, READ ABP 228 |
+
+**검증.**
+- 전수 토큰 검사 실패 0, 최대 5,495토큰(상한 5,500).
+- 최장 16개 1 step 통과(최대 6,016토큰 포함, 예약 peak 22,526 MiB).
+- 실제 설정 60 step 통과(예약 peak 20,460 MiB, 1.435장/초 평가 포함, RSS 12.7GB).
+- lora_B 144개 전부 갱신. 재개 L2 차이 0.0539, 노름 1.9534.
+- 테스트 89개 통과. 감시 2차 검토에서 실행 차단·라벨 결함 없음.
+- 수정 전 5종 정답 오버레이 육안 확인: 위치 일치. 재변환 후 다시 육안 확인했다는 기록은 없다.
+
+**구현 완료.** hdFlowmind EXIF 회전 이미지 복구. 끝점 없는 화살표 bbox 채점은 단위 테스트만 통과했고 실제 평가 실행 전이다.
+
+**독립 감시 1차 검토에서 나온 결함.** 직접 확인 후 코드를 수정했다.
+
+1. 소스 간 동일 이미지: READ ABP와 cTDaR 100쪽은 READ를 남기고 cTDaR에서 제외. HME100K와 UniMER hwe 3,021장은 UniMER를 남기고 HME100K에서 제외.
+2. IBEM 줄바꿈 수식은 조각마다 전체 LaTeX가 붙어 있어 해당 페이지 제외(전체 7,447쪽 중 1,097쪽).
+3. hdFlowmind 같은 그림 변형이 split을 넘어감: 접두 동일, 번호 차 3 이내, dHash 6 이하를 같은 그룹으로 묶음.
+4. 빈 셀을 생략한 표는 정답 불완전이라 제외(새 표 소스에 적용). cTDaR modern은 대부분 빠짐.
+5. cTDaR 같은 이름 116건은 다른 이미지였음: id에 트랙 포함, 이름 기준 제외 삭제.
+6. IBEM `\begin{equation*}` 제거, `align*`는 `aligned`로 변경.
+
+추가 수정: HME100K 한자·번호 문장부호 포함 618행 제외. IBEM held-out을 적은 논문에서 뽑아 train 손실 축소.
+
+**코드 변경.** `token_scan.py` 전수 검사 저장, 중복 없는 샘플러, 소스별 eval loss, 체크포인트 전체 보존. 설정은 `configs/qwen3_vl_4b_lora_final.json`. `infer_image.py`에 `--tasks`와 수식·표 표시 추가. VRAM 단편화 OOM이 있어 `train.py`에 expandable_segments를 넣었다.
+
+### 해야 할 작업
+
+순서대로 진행한다.
+
+1. 사용자 학습 실행
+2. 체크포인트별 소스 평가
+3. 최종 평가는 `--max-new-tokens 6000`으로 실행
+
+### 결정 사항
+
+사용자 결정이다. 소스별 비중 값만 에이전트 제안이다.
+
+- 최종 학습은 16종 소스, 37.5만 회, 도식 비중 40%. 예상 시간 약 2.5~3일.
+- 해상도는 1MP 유지. 2MP 시험은 60 step에서 VRAM 부족으로 중단되어 해상도 가설은 미검증이다.
+- 시작은 사용자가 직접 명령어로 실행한다(실시간 로그 확인 목적). **에이전트는 학습을 시작하지 않는다.**
+- 소스별 5,000장 상한은 에이전트가 임의로 정한 값이었고 사용자가 거부했다. train은 전체를 후보로 넣고 샘플러가 비율대로 뽑는다. 검증·테스트는 소스별 최대 200장.
+- 비중 제안(사용자가 도식 40%만 확정, 소스별 값은 에이전트 제안):
+  - 도식: hdBPMN 13, FC_A 5, FC_B 5, FC_Bscan 4, FA 4, hdFlowmind 9
+  - 수식: CROHME 5, MathWriting 6, UniMER 5, HME100K 8, IBEM 6
+  - 표: PubTabNet 8, FinTabNet.c 5, TabRecSet 8, cTDaR 5, READ ABP 4
+- 제외: WTW(사용자 결정, 손글씨 아님), PARES(샘플 라벨에 표 격자·수식·화살표 없음).
+- CASIA는 신청 중이며 승인 전에는 제외한다. 비밀번호가 학습 초반 12시간 이내에 오면 재시작, 이후면 결과를 보고 결정한다.
+- 사용 조건상 비상업이며 CASIA는 학술 연구 목적, 재배포 금지.
+- 표 상한 변경(사용자 원칙: 답변 형식 축소 금지): 셀 좌표 유지 150셀, 격자 유지 400셀. PubTabNet과 FinTabNet.c도 같은 규칙을 적용한다.
+- 토큰 상한: 최종 설정의 실제 상한은 5,500이다. 처음 전수 검사는 이전 설정 값인 6,900 기준으로 돌렸고, 최장 샘플 리허설에서 VRAM 여유가 작아 5,500으로 낮췄다. 그 결과 IBEM 3장만 제외됐고 정답 형식은 바꾸지 않았다.
+
+### 미확인·위험
+
+- hdFlowmind는 relations 없음, 끝점 대부분 없음. 분할 간 같은 그림 변형이 일부 남아 그 점수는 낙관적이므로 체크포인트 선택에 단독으로 쓰지 않는다.
+- HME100K는 공식 split이 없어 같은 수식 기준으로 분할했다. 작성자 누수는 판단 불가, 출처와 사용 조건 미확인.
+- cTDaR·READ ABP는 같은 책의 다른 쪽이 split을 넘는지 판단 불가(메타데이터 없음).
+- PubTabNet에 격자 빈칸 표 1.3%가 남음.
+- hdBPMN 등 도식은 장당 50~160회 반복되어 과적합 위험. 체크포인트별 평가로 최종 지점을 고를 계획.
+- 평가 시 정답이 4,096토큰을 넘는 행이 있어 최종 평가는 `--max-new-tokens 6000`으로 실행한다.
+- 장기 실행 메모리 증가는 미검증.
+- 인식 성능은 미보장.
 
 ## 대량 데이터 확장 기록 (2026-11-06, 아래 내용보다 우선)
 

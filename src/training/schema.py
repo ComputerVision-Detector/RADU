@@ -8,7 +8,8 @@ from __future__ import annotations
 import math
 
 DATASETS = {"hdbpmn", "fc_a", "fc_b", "fc_b_scan", "fa", "ai2d_rst", "didi", "casia_ohfc", "flowlearn",
-            "crohme_2023", "unimer", "mathwriting", "pubtabnet", "fintabnet_c"}
+            "crohme_2023", "unimer", "mathwriting", "pubtabnet", "fintabnet_c",
+            "hdflowmind", "hme100k", "ibem", "tabrecset", "ctdar_2019", "read_abp"}
 TASKS = {"nodes", "arrows", "relations", "formulas", "tables"}
 TASK_INSTRUCTIONS = {
     "formulas": "formulas: [{id,bbox,latex}]; here, and only here, write the formula itself as LaTeX.\n",

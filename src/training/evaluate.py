@@ -74,7 +74,8 @@ def score_record(text, gold, width, height):
         pred, parsed = {}, False
     pred = pred if parsed else {}
     nodes = elements(pred.get("nodes"), lambda n: valid_box(n.get("bbox")) and isinstance(n.get("kind"), str))
-    arrows = elements(pred.get("arrows"), lambda a: valid_point(a.get("start")) and valid_point(a.get("end")))
+    has_ends = lambda a: valid_point(a.get("start")) and valid_point(a.get("end"))
+    arrows = elements(pred.get("arrows"), lambda a: has_ends(a) or valid_box(a.get("bbox")))
     node_map = greedy_match([(iou(p["bbox"], g["bbox"]), p["id"], g["id"]) for p in nodes for g in gold.get("nodes", [])
                              if p["kind"] == g["kind"] and iou(p["bbox"], g["bbox"]) >= NODE_IOU])
     tolerance = ARROW_ENDPOINT_TOLERANCE * math.hypot(width, height)
@@ -82,10 +83,13 @@ def score_record(text, gold, width, height):
     for p in arrows:
         for g in gold.get("arrows", []):
             if g["start"] is None or g["end"] is None:
-                continue
-            distance = max(math.dist(p["start"], g["start"]), math.dist(p["end"], g["end"]))
-            if distance <= tolerance:
-                candidates.append((-distance, p["id"], g["id"]))
+                # Box-only sources such as hdFlowmind have no head point to compare.
+                if valid_box(p.get("bbox")) and iou(p["bbox"], g["bbox"]) >= NODE_IOU:
+                    candidates.append((iou(p["bbox"], g["bbox"]), p["id"], g["id"]))
+            elif has_ends(p):
+                distance = max(math.dist(p["start"], g["start"]), math.dist(p["end"], g["end"]))
+                if distance <= tolerance:
+                    candidates.append((-distance, p["id"], g["id"]))
     arrow_map = greedy_match(candidates)
     # Numbering nodes and arrows separately reuses ids; a relation then means the node.
     mapping = {**arrow_map, **node_map}

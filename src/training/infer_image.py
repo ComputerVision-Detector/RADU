@@ -15,14 +15,36 @@ from pathlib import Path
 
 from .evaluate import score_record, valid_box, valid_point
 from .prepare import build_prompt, read_jsonl
+from .schema import TASKS
 from .visualize_predictions import salvage_elements
 
 NODE_COLOR = (21, 101, 192)
 ARROW_COLOR = (216, 27, 96)
+FORMULA_TABLE_COLOR = (0, 137, 123)
 HEADER_HEIGHT = 44
 
 
-def draw_structure(image, nodes, arrows, title):
+def formula_table_boxes(payload):
+    """Formula and table boxes plus cell boxes from a parsed answer, or nothing if unusable."""
+    boxes = []
+    for key in ("formulas", "tables"):
+        for item in payload.get(key, []) if isinstance(payload.get(key), list) else []:
+            if isinstance(item, dict):
+                boxes.append(item.get("bbox"))
+                cells = item.get("cells") if isinstance(item.get("cells"), list) else []
+                boxes.extend(cell[4:8] for cell in cells if isinstance(cell, list) and len(cell) == 8)
+    return [box for box in boxes if valid_box(box)]
+
+
+def parsed_object(text):
+    try:
+        payload = json.loads(text)
+    except ValueError:
+        return {}
+    return payload if isinstance(payload, dict) else {}
+
+
+def draw_structure(image, nodes, arrows, title, boxes=()):
     """Return a copy of the image with elements drawn and a title band on top."""
     from PIL import Image, ImageDraw, ImageFont
 
@@ -39,6 +61,8 @@ def draw_structure(image, nodes, arrows, title):
             x0, y0, x1, y1 = box[0], box[1] + HEADER_HEIGHT, box[2], box[3] + HEADER_HEIGHT
             draw.rectangle((x0, y0, x1, y1), outline=NODE_COLOR, width=line)
             draw.text((x0 + line, y0 + line), str(node.get("kind", "")), fill=NODE_COLOR, font=font, stroke_width=2, stroke_fill="white")
+    for box in boxes:
+        draw.rectangle((box[0], box[1] + HEADER_HEIGHT, box[2], box[3] + HEADER_HEIGHT), outline=FORMULA_TABLE_COLOR, width=line)
     head = line * 6
     for arrow in arrows:
         start, end = (arrow.get("start"), arrow.get("end")) if isinstance(arrow, dict) else (None, None)
@@ -70,6 +94,7 @@ def main():
     parser.add_argument("--image", required=True)
     parser.add_argument("--output", required=True, help="Output path without extension")
     parser.add_argument("--data", help="Prepared JSONL containing this image, to draw ground truth and score")
+    parser.add_argument("--tasks", nargs="+", choices=sorted(TASKS), default=["nodes", "arrows", "relations"], help="What to request when --data is not given")
     parser.add_argument("--max-new-tokens", type=int, default=4096)
     args = parser.parse_args()
     import torch
@@ -87,7 +112,7 @@ def main():
     with Image.open(image_path) as source:
         image = source.convert("RGB")
     width, height = image.size
-    prompt_text = row["prompt"] if row else build_prompt({"tasks": ["nodes", "arrows", "relations"], "width": width, "height": height})
+    prompt_text = row["prompt"] if row else build_prompt({"tasks": args.tasks, "width": width, "height": height})
     processor, model = load_base_model(config)
     if not config.get("load_in_4bit", False):
         model.to("cuda")
@@ -107,15 +132,17 @@ def main():
     title = f"Prediction: {len(nodes)} nodes, {len(arrows)} arrows, {len(relations)} relations"
     if truncated:
         title += " (invalid JSON, partial)"
+    answer = parsed_object(text)
     result = {"image": image_path, "adapter": args.adapter, "generated_tokens": len(new_tokens), "valid_json": not truncated,
-              "nodes": nodes, "arrows": arrows, "relations": relations}
-    panels = [draw_structure(image, nodes, arrows, title)]
+              "nodes": nodes, "arrows": arrows, "relations": relations, "formulas": answer.get("formulas", []), "tables": answer.get("tables", [])}
+    title += f", {len(result['formulas'])} formulas, {len(result['tables'])} tables"
+    panels = [draw_structure(image, nodes, arrows, title, formula_table_boxes(answer))]
     if row:
         gold = json.loads(row["completion"])
         score = score_record(text, gold, width, height)
         result["score"] = score
         gold_title = f"Ground truth: {len(gold.get('nodes', []))} nodes, {len(gold.get('arrows', []))} arrows"
-        panels.insert(0, draw_structure(image, gold.get("nodes", []), gold.get("arrows", []), gold_title))
+        panels.insert(0, draw_structure(image, gold.get("nodes", []), gold.get("arrows", []), gold_title, formula_table_boxes(gold)))
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     side_by_side(panels).save(output.with_suffix(".png"))

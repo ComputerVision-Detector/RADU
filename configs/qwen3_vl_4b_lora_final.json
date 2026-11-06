@@ -1,0 +1,32 @@
+{
+  "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+  "model_revision": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+  "train_file": "data/processed/radu_final/train.jsonl",
+  "validation_file": "data/processed/radu_final/validation.jsonl",
+  "output_dir": "models/radu/qwen3-vl-4b-lora-final",
+  "require_token_scan": true,
+  "balance_sources": true,
+  "sample_without_repeats": true,
+  "sampling_shares": {
+    "hdbpmn": 0.13, "fc_a": 0.05, "fc_b": 0.05, "fc_b_scan": 0.04, "fa": 0.04, "hdflowmind": 0.09,
+    "crohme_2023": 0.05, "mathwriting": 0.06, "unimer": 0.05, "hme100k": 0.08, "ibem": 0.06,
+    "pubtabnet": 0.08, "fintabnet_c": 0.05, "tabrecset": 0.08, "ctdar_2019": 0.05, "read_abp": 0.04
+  },
+  "samples_per_epoch": 375000,
+  "epochs": 1,
+  "eval_samples_per_dataset": 20,
+  "save_total_limit": null,
+  "seed": 42,
+  "learning_rate": 0.0001,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 16,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "max_pixels": 1003520,
+  "max_sequence_tokens": 5500,
+  "save_steps": 2000,
+  "eval_steps": 2000,
+  "logging_steps": 10,
+  "attn_implementation": "sdpa"
+}

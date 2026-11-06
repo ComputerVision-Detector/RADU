@@ -104,6 +104,66 @@
       "raw_root": "data/raw/radu/fa"
     },
     {
+      "id": "hdflowmind",
+      "source": "https://huggingface.co/datasets/caijanfeng/hdflowmind",
+      "license": "See dataset card; not verified here",
+      "adapter": "formula-table",
+      "records": "data/raw/radu/hdflowmind/normalized.jsonl",
+      "status": "normalized_boxes_hdflowmind_v1",
+      "notes": "Official train/validation/test, simple partition unused. Node and arrow boxes only: no relations, and arrows have null endpoints. Text boxes are not targets. No writer ids; file prefixes span splits. Rotated photos are saved upright under upright/.",
+      "raw_root": "data/raw/radu/hdflowmind"
+    },
+    {
+      "id": "hme100k",
+      "source": "User-supplied archive.zip, 2026-11-07; origin not confirmed",
+      "license": "Not verified; origin of this copy is unconfirmed",
+      "adapter": "formula-table",
+      "records": "data/raw/radu/hme100k/normalized.jsonl",
+      "status": "normalized_formula_hme100k_v1",
+      "notes": "One label file, no official split in this copy. Split is a stable hash of the formula, so equal formulas stay together. No writer ids, so writer leakage cannot be ruled out.",
+      "raw_root": "data/raw/radu/hme100k"
+    },
+    {
+      "id": "ibem",
+      "source": "https://zenodo.org/records/21528113",
+      "license": "See Zenodo record; not verified here",
+      "adapter": "formula-table",
+      "records": "data/raw/radu/ibem/normalized.jsonl",
+      "status": "normalized_formula_ibem_v1",
+      "notes": "Whole pages with several located formulas. Official partitions; papers stay in one split, stricter split first. Pages absent from the label file are unused.",
+      "raw_root": "data/raw/radu/ibem"
+    },
+    {
+      "id": "tabrecset",
+      "source": "https://doi.org/10.6084/m9.figshare.20647788",
+      "license": "CC-BY-SA-4.0 (dataset README)",
+      "adapter": "formula-table",
+      "records": "data/raw/radu/tabrecset/normalized.jsonl",
+      "status": "normalized_table_tabrecset_v1",
+      "notes": "Grid and polygon boxes, no cell text. All-line, three-line and no-line versions of one table share a split; no official split. EXIF-rotated images are unused.",
+      "raw_root": "data/raw/radu/tabrecset"
+    },
+    {
+      "id": "ctdar_2019",
+      "source": "https://github.com/cndplab-founder/ICDAR2019_cTDaR",
+      "license": "No license stated",
+      "adapter": "formula-table",
+      "records": "data/raw/radu/ctdar_2019/normalized.jsonl",
+      "status": "normalized_table_ctdar_v1",
+      "notes": "Track B labels only, which carry cells. Official test forms validation and test; an image name also in training stays held out. Pages over 350 cells are unused; over 120 cells keep the grid without boxes. Document ids are not published.",
+      "raw_root": "data/raw/radu/ctdar_2019"
+    },
+    {
+      "id": "read_abp",
+      "source": "https://zenodo.org/records/1243098",
+      "license": "See Zenodo record; not verified here",
+      "adapter": "formula-table",
+      "records": "data/raw/radu/read_abp/normalized.jsonl",
+      "status": "normalized_table_read_abp_v1",
+      "notes": "Handwritten register tables. No official split; register books stay in one split. Cell text is not a target.",
+      "raw_root": "data/raw/radu/read_abp"
+    },
+    {
       "id": "ai2d_rst",
       "source": "https://github.com/thiippal/AI2D-RST",
       "license": "Original AI2D: CC BY-SA; RST v1.1 release README: CC BY-SA 4.0 (GitHub README states CC BY 4.0)",

@@ -5,6 +5,7 @@ import argparse
 from collections import Counter
 import json
 import math
+import os
 from pathlib import Path
 import random
 
@@ -66,6 +67,59 @@ def source_balanced_weights(rows, shares=None):
         missing = set(counts) - set(shares)
         require(not missing, f"sampling_shares lacks {sorted(missing)}; a source would silently never train")
     return [(shares[row["dataset"]] if shares else 1.0) / counts[row["dataset"]] for row in rows]
+
+
+def quota_indices(rows, shares, count, seed=42):
+    """Pick a source by its share, then its next unseen row; a source reshuffles only when used up."""
+    by_source = {}
+    for index, row in enumerate(rows):
+        by_source.setdefault(row["dataset"], []).append(index)
+    missing = set(by_source) - set(shares)
+    require(not missing, f"sampling_shares lacks {sorted(missing)}; a source would silently never train")
+    names = sorted(by_source)
+    weights = [shares[name] for name in names]
+    rng = random.Random(f"{seed}:quota")
+    queues = {name: [] for name in names}
+    for _ in range(count):
+        name = rng.choices(names, weights)[0]
+        if not queues[name]:
+            queues[name] = by_source[name][:]
+            rng.shuffle(queues[name])
+        yield queues[name].pop()
+
+
+class QuotaSampler:
+    def __init__(self, rows, shares, count, seed):
+        self.rows, self.shares, self.count, self.seed = rows, shares, count, seed
+
+    def __iter__(self):
+        return quota_indices(self.rows, self.shares, self.count, self.seed)
+
+    def __len__(self):
+        return self.count
+
+
+def scan_report_path(config):
+    """Bound to the settings that change token counts, so a stale scan cannot be reused."""
+    return Path(config["train_file"]).parent / f"token_scan_{config['max_pixels']}_{config['max_sequence_tokens']}.json"
+
+
+def load_scanned(path, excluded):
+    """token_scan already hashed, decoded and measured these rows; only leave out what it rejected."""
+    rows = [row for row in read_jsonl(path) if row["id"] not in excluded]
+    require(bool(rows), f"empty prepared split: {path}")
+    prompts = {}  # Prompts repeat by image size; sharing them saves gigabytes on a large pool.
+    for row in rows:
+        row["prompt"] = prompts.setdefault(row["prompt"], row["prompt"])
+    return rows
+
+
+def per_dataset_subsets(rows, count, seed=42):
+    """A fixed sample per source, so each checkpoint shows a loss for every source."""
+    by_dataset = {}
+    for row in rows:
+        by_dataset.setdefault(row["dataset"], []).append(row)
+    return {name: random.Random(f"{seed}:{name}").sample(items, min(count, len(items))) for name, items in sorted(by_dataset.items())}
 
 
 def evaluation_subset(rows, limit, seed=42):
@@ -138,15 +192,26 @@ def run(config_path, preflight_only=False, max_steps=None, resume=None, output_d
     require(torch.cuda.is_available(), "CUDA GPU required; prepare/import/tests can run on CPU")
     require(torch.cuda.is_bf16_supported(), "This BF16 profile requires a BF16-capable GPU")
     set_seed(config["seed"])
-    train = load_prepared(config["train_file"])
-    validation = load_prepared(config["validation_file"])
-    _, warmup_steps = training_schedule(len(train), config, max_steps)
     train_path, val_path = Path(config["train_file"]), Path(config["validation_file"])
     require(train_path.parent == val_path.parent, "train/validation must come from one preparation run")
     manifest_path = train_path.parent / "manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     for split, path in (("train", train_path), ("validation", val_path)):
         require(manifest["split_sha256"][split] == sha256(path), f"prepared {split} changed; prepare again")
+    scanned = config.get("require_token_scan", False)
+    if scanned:
+        report_path = scan_report_path(config)
+        require(report_path.is_file(), f"{report_path} missing; run python -m src.training.token_scan --config {config_path}")
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+        require(report["split_sha256"] == manifest["split_sha256"] and report["model_revision"] == config["model_revision"], "token scan is stale; scan again")
+        excluded = {row_id for rows in report["excluded"].values() for row_id in rows}
+        train, validation = load_scanned(train_path, excluded), load_scanned(val_path, excluded)
+        print(json.dumps({"token_scan": {"max_tokens": report["max_tokens"], "excluded": {key: len(rows) for key, rows in report["excluded"].items()}}}))
+    else:
+        train = load_prepared(train_path)
+        validation = load_prepared(val_path)
+    total_steps, warmup_steps = training_schedule(len(train), config, max_steps)
+    print(json.dumps({"plan": {"train_pool": len(train), "validation_pool": len(validation), "optimizer_steps": total_steps, "warmup_steps": warmup_steps, "learning_rate": config["learning_rate"]}}), flush=True)
     require(all(row["split"] == "train" for row in train) and all(row["split"] == "validation" for row in validation), "wrong split passed to training")
     require(not ({row["image_sha256"] for row in train} & {row["image_sha256"] for row in validation}), "image leakage")
     require(not ({g for row in train for g in row["groups"]} & {g for row in validation for g in row["groups"]}), "group leakage")
@@ -178,8 +243,9 @@ def run(config_path, preflight_only=False, max_steps=None, resume=None, output_d
     model.print_trainable_parameters()
     collator = StructureCollator(processor, config["max_sequence_tokens"])
     # Scan every example before starting a costly training run; never truncate.
-    for row in train + validation:
-        collator([row])
+    if not scanned:
+        for row in train + validation:
+            collator([row])
     if preflight_only:
         print(json.dumps({"preflight":"passed", "train":len(train), "validation":len(validation), "lora_modules":len(targets), "partial":manifest["partial"]}))
         return
@@ -197,18 +263,23 @@ def run(config_path, preflight_only=False, max_steps=None, resume=None, output_d
                 gradient_checkpointing=True, gradient_checkpointing_kwargs={"use_reentrant":False},
                 remove_unused_columns=False, label_names=["labels"], report_to="none", seed=config["seed"],
                 eval_strategy="steps", eval_steps=config["eval_steps"], save_steps=config["save_steps"],
-                save_total_limit=2, logging_steps=config["logging_steps"], warmup_steps=warmup_steps,
+                save_total_limit=config.get("save_total_limit", 2), logging_steps=config["logging_steps"], logging_first_step=True, warmup_steps=warmup_steps,
                 dataloader_num_workers=0, max_steps=max_steps if max_steps is not None else -1)
     trainer_class = Trainer
     if config.get("balance_sources", False):
         class SourceBalancedTrainer(Trainer):
             def _get_train_sampler(self, train_dataset=None):
+                if config.get("sample_without_repeats"):
+                    return QuotaSampler(train, config["sampling_shares"], config["samples_per_epoch"], config["seed"])
                 generator = torch.Generator().manual_seed(config["seed"])
                 weights = source_balanced_weights(train, config.get("sampling_shares"))
                 return torch.utils.data.WeightedRandomSampler(weights, config.get("samples_per_epoch") or len(train), generator=generator)
         trainer_class = SourceBalancedTrainer
     # Every sample was already scanned above; this only limits how much each loss check costs.
-    eval_rows = evaluation_subset(validation, config.get("max_eval_samples"), config["seed"])
+    if config.get("eval_samples_per_dataset"):
+        eval_rows = per_dataset_subsets(validation, config["eval_samples_per_dataset"], config["seed"])
+    else:
+        eval_rows = evaluation_subset(validation, config.get("max_eval_samples"), config["seed"])
     trainer = trainer_class(model=model, args=args, train_dataset=train, eval_dataset=eval_rows,
                             data_collator=collator, processing_class=processor)
     trainer.train(resume_from_checkpoint=resume)
@@ -231,6 +302,8 @@ def main():
     args = parser.parse_args()
     if args.max_steps is not None:
         require(args.max_steps > 0, "max-steps must be positive")
+    # Long and short answers alternate; without this, fragmentation caused OOM at 6,016 tokens with 3.4 GiB idle.
+    os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
     run(args.config, args.preflight_only, args.max_steps, args.resume, args.output_dir)
 
 

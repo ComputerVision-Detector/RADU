@@ -1,12 +1,14 @@
-"""Turn formula and table sources into normalized.jsonl, with a seeded cap per split.
+"""Turn formula, table and box-only diagram sources into normalized.jsonl.
 
-Full sources are far larger than one GPU can train on (about 1.45 images per second), so each
-split takes a reproducible sample. Raising the caps needs only a rerun into a moved-aside file.
+Train keeps every usable sample unless --train caps it; the sampler decides how many are seen.
+Validation and test keep a seeded sample, so evaluation stays short.
 
 A group or an exact image may appear in one split only: the stricter split keeps it, in the
-order test, validation, train. Cell text is never a target; PaddleOCR handles it. Tables over
-MAX_CELLS are left out, because their answers exceed the sequence budget and truncating an
-answer would teach a wrong table.
+order test, validation, train. An image that also appears in another source is taken from one
+source only. Cell text is never a target; PaddleOCR handles it. Tables over MAX_CELLS drop cell
+boxes and keep the grid, and tables over MAX_GRID_CELLS are left out, because their answers
+exceed the sequence budget and truncating an answer would teach a wrong table. token_scan makes
+the final check against the real budget.
 """
 from __future__ import annotations
 
@@ -24,10 +26,20 @@ from .prepare import sha256
 from .schema import require, validate_record, validate_table
 
 SPLIT_PRIORITY = ("test", "validation", "train")
-MAX_CELLS = 120
+MAX_CELLS = 150
+MAX_GRID_CELLS = 400
 MAX_LATEX_CHARS = 1500
+MAX_PAGE_ANSWER_CHARS = 9000
+HDFLOWMIND_NODES = {"rectangle", "circle", "parallelogram", "triangle", "diamonds", "hexagon", "long_oval", "trapezoid"}
+HDFLOWMIND_ARROWS = {"arrow", "double_arrow", "line"}
+FOREIGN_IMAGES = {"hme100k": "unimer/source/UniMER-Test/hwe/*", "ctdar_2019": "read_abp/source/READ_ABP_TABLE/*/img/*"}
+GROUPED_HELD_OUT = {"ibem"}  # Fewer papers in held-out splits keep more of them for training.
+CJK = re.compile("[\u3000-\u303f\u4e00-\u9fff\uff00-\uffef]")
 REVISIONS = {"crohme_2023": "zenodo-8428035", "unimer": "hf-2343ddd963290469da36ca83e3a56c66e068add9", "mathwriting": "mathwriting-2024",
-             "pubtabnet": "hf-06963b1af16203f4633c718e2c50109eb57ed658", "fintabnet_c": "hf-e5673a90b98d02c4832f9e836d72762f0e8933a0"}
+             "pubtabnet": "hf-06963b1af16203f4633c718e2c50109eb57ed658", "fintabnet_c": "hf-e5673a90b98d02c4832f9e836d72762f0e8933a0",
+             "hdflowmind": "hf-e40d72d9483afbf061843c820a9cb7360f1d6443", "hme100k": "user-supplied-archive-2026-11-07",
+             "ibem": "zenodo-21528113", "tabrecset": "figshare-39439612", "ctdar_2019": "git-171934db38a9e230e23b87a5afe86f8c83edaa95",
+             "read_abp": "zenodo-1243098"}
 TRUTH = re.compile(r'<annotation type="truth">(.*?)</annotation>', re.S)
 WRITER = re.compile(r'<annotation type="writer">(.*?)</annotation>', re.S)
 NORMALIZED_LABEL = re.compile(r'<annotation type="normalizedLabel">(.*?)</annotation>', re.S)
@@ -196,7 +208,7 @@ def pubtabnet_candidates(base):
             split = "train"
             if row["split"] == "val":
                 split = "test" if int(hashlib.sha256(article.encode()).hexdigest(), 16) % 2 else "validation"
-            if len(row["html"]["cells"]) <= MAX_CELLS:
+            if len(row["html"]["cells"]) <= MAX_GRID_CELLS:
                 yield {"split": split, "id": Path(row["filename"]).stem, "image": f"source/pubtabnet/{row['split']}/{row['filename']}",
                        "groups": [f"pubtabnet:article:{article}"], "html": row["html"]}
 
@@ -210,15 +222,277 @@ def fintabnet_candidates(base):
                    "groups": [f"fintabnet:document:{document}"]}
 
 
+def stable_split(key, test, validation):
+    """Percent of keys sent to test and validation; the same key always lands in the same split."""
+    bucket = int(hashlib.sha256(key.encode()).hexdigest(), 16) % 100
+    return "test" if bucket < test else "validation" if bucket < test + validation else "train"
+
+
+def polygon_box(points):
+    xs, ys = [p[0] for p in points], [p[1] for p in points]
+    return [min(xs), min(ys), max(xs), max(ys)]
+
+
+def coords_box(text):
+    return polygon_box([[float(v) for v in pair.split(",")[:2]] for pair in text.split()])
+
+
+def table_target(raw_tables, width, height, groups):
+    """raw_tables: (box, [(row, col, rowspan, colspan, box)]), all tables of the page or nothing."""
+    total = sum(len(cells) for _, cells in raw_tables)
+    if not raw_tables or not all(cells for _, cells in raw_tables) or total > MAX_GRID_CELLS:
+        return None
+    tables = []
+    for box, cells in sorted(raw_tables, key=lambda table: (table[0][1], table[0][0])):
+        table_box = clip_box(box, width, height)
+        if table_box is None:
+            return None
+        compact = []
+        for *head, cell_box in sorted(cells, key=lambda cell: cell[:2]):
+            clipped = clip_box(cell_box, width, height) if total <= MAX_CELLS else None
+            compact.append(head + clipped if clipped else head)
+        table = {"id": f"t{len(tables) + 1}", "bbox": table_box, "rows": max(c[0] + c[2] for c in compact), "cols": max(c[1] + c[3] for c in compact), "cells": compact}
+        try:
+            validate_table(table, width, height)
+        except ValueError:  # Overlapping or impossible source cells: that answer would be wrong.
+            return None
+        # A source that omits empty cells does not fully annotate the grid.
+        if sum(c[2] * c[3] for c in compact) != table["rows"] * table["cols"]:
+            return None
+        tables.append(table)
+    return ["tables"], {"tables": tables}, groups
+
+
+def hdflowmind_drawings(root):
+    """One drawing was photographed in variants under nearby numbers, so link similar neighbours."""
+    from PIL import Image, ImageOps
+
+    def fingerprint(path):
+        with Image.open(path) as image:
+            pixels = list(ImageOps.exif_transpose(image).convert("L").resize((9, 8)).getdata())
+        return sum(1 << i for i in range(72) if i % 9 != 8 and pixels[i] > pixels[i + 1])
+
+    items = []
+    for split in ("train", "validation", "test"):
+        for path in (root / split / "images").glob("*.jpg"):
+            prefix, number = path.stem.split("_")
+            items.append((prefix, int(number), path.stem, fingerprint(path)))
+    items.sort()
+    parent = {item[2]: item[2] for item in items}
+
+    def find(name):
+        while parent[name] != name:
+            parent[name] = parent[parent[name]]
+            name = parent[name]
+        return name
+
+    for index, item in enumerate(items):
+        for other in items[index + 1:]:
+            if other[0] != item[0] or other[1] - item[1] > 3:
+                break
+            if bin(item[3] ^ other[3]).count("1") <= 6:
+                parent[find(other[2])] = find(item[2])
+    return {name: find(name) for name in parent}
+
+
+def hdflowmind_candidates(base):
+    from PIL import Image, ImageOps
+
+    root = base / "source/hdflowmind"
+    drawings = hdflowmind_drawings(root)
+    # "simple" holds single shapes without arrows, so it is not a diagram sample.
+    for split in ("train", "validation", "test"):
+        for path in sorted((root / split / "annotations").glob("*.xml")):
+            image = f"source/hdflowmind/{split}/images/{path.stem}.jpg"
+            # Labels follow the displayed orientation (checked on overlays), so rotated photos are saved upright.
+            with Image.open(base / image) as handle:
+                if handle.getexif().get(274, 1) != 1:
+                    image = f"upright/{split}/{path.stem}.jpg"
+                    if not (base / image).exists():
+                        (base / image).parent.mkdir(parents=True, exist_ok=True)
+                        ImageOps.exif_transpose(handle).convert("RGB").save(base / image, quality=95, subsampling=0)
+            yield {"split": split, "id": path.stem, "image": image, "xml": str(path),
+                   "groups": [f"hdflowmind:drawing:{drawings[path.stem]}"], "build": hdflowmind_target}
+
+
+def hdflowmind_target(candidate, width, height):
+    """Boxes only: most arrows have no head point and no sample has connectivity."""
+    root = ET.parse(candidate["xml"]).getroot()
+    if (int(root.findtext("size/width")), int(root.findtext("size/height"))) != (width, height):
+        return None
+    boxes = {"nodes": [], "arrows": []}
+    for item in root.iter("object"):
+        name, box = item.findtext("name"), item.find("bndbox")
+        task = "nodes" if name in HDFLOWMIND_NODES else "arrows" if name in HDFLOWMIND_ARROWS else None
+        if task and box is not None:
+            clipped = clip_box([float(box.findtext(key)) for key in ("xmin", "ymin", "xmax", "ymax")], width, height)
+            if clipped is None:
+                return None
+            boxes[task].append((clipped, name))
+    if not boxes["nodes"] and not boxes["arrows"]:
+        return None
+    order = lambda entry: (entry[0][1], entry[0][0], entry[0][3], entry[0][2])
+    nodes = [{"id": f"n{i + 1}", "bbox": box, "kind": name} for i, (box, name) in enumerate(sorted(boxes["nodes"], key=order))]
+    arrows = [{"id": f"a{i + 1}", "bbox": box, "start": None, "end": None} for i, (box, _) in enumerate(sorted(boxes["arrows"], key=order))]
+    return ["arrows", "nodes"], {"arrows": arrows, "nodes": nodes}, candidate["groups"]
+
+
+def hme100k_candidates(base):
+    """One label file and no official split in this archive; equal formulas share a split."""
+    for line in (base / "source/train.txt").read_text(encoding="utf-8").splitlines():
+        image, _, latex = line.partition("\t")
+        compact = "".join(latex.split())
+        # Numbered items and Chinese words in a label are natural language, not formula structure.
+        if compact and not CJK.search(compact):
+            yield {"split": stable_split(compact, 1, 1), "id": Path(image).stem, "image": f"source/{image}", "latex": latex.strip(),
+                   "groups": [f"hme100k:latex:{hashlib.sha256(compact.encode()).hexdigest()}"], "build": single_formula_target}
+
+
+def single_formula_target(candidate, width, height):
+    if len(candidate["latex"]) > MAX_LATEX_CHARS:
+        return None
+    return ["formulas"], {"formulas": [{"id": "f1", "bbox": [0, 0, width, height], "latex": candidate["latex"]}]}, candidate["groups"]
+
+
+def ibem_candidates(base):
+    """Pages with labels only; a page missing from the label file is not a negative sample."""
+    root = base / "source"
+    labels = json.loads((root / "IBEM.json").read_text(encoding="utf-8"))
+    for prefix, split in (("Ts", "test"), ("Va", "validation"), ("Tr", "train")):
+        for listing in sorted((root / "partitions").glob(f"{prefix}*.lst")):
+            for name in listing.read_text(encoding="utf-8").split():
+                if name in labels:
+                    paper, page = name.split("_page")
+                    yield {"split": split, "id": name, "image": f"source/pages/{paper}_page{int(page):02d}.jpg", "page": labels[name],
+                           "groups": [f"ibem:paper:{paper}"], "build": ibem_target}
+
+
+def ibem_latex(text):
+    """Same formula form as the other sources: no page-level math wrapper."""
+    latex = text.strip().strip("$").strip()
+    wrapped = re.fullmatch(r"\\begin\{equation\*\}(.*)\\end\{equation\*\}", latex, re.S)
+    latex = wrapped.group(1).strip() if wrapped else latex
+    return latex.replace("\\begin{align*}", "\\begin{aligned}").replace("\\end{align*}", "\\end{aligned}")
+
+
+def ibem_target(candidate, width, height):
+    """Label boxes are percent of the page; a page with one unusable formula is dropped whole.
+
+    A formula broken across lines repeats its whole LaTeX on each piece, so no box matches its answer.
+    """
+    items = []
+    for kind in ("embedded", "isolated"):
+        for formula in candidate["page"].get(kind, {}).values():
+            if formula.get("split", "single") != "single":
+                return None
+            box = clip_box([formula["x_min"] * width / 100, formula["y_min"] * height / 100, formula["x_max"] * width / 100, formula["y_max"] * height / 100], width, height)
+            latex = ibem_latex(formula["latex_norm"])
+            if box is None or not latex:
+                return None
+            items.append((box, latex))
+    formulas = [{"id": f"f{i + 1}", "bbox": box, "latex": latex} for i, (box, latex) in enumerate(sorted(items, key=lambda item: (item[0][1], item[0][0])))]
+    if not formulas or len(json.dumps(formulas, separators=(",", ":"))) > MAX_PAGE_ANSWER_CHARS:
+        return None
+    return ["formulas"], {"formulas": formulas}, candidate["groups"]
+
+
+def tabrecset_group(stem):
+    """Pages of one document and crops of one photo carry the same core name."""
+    core = re.sub(r"_segR.*$", "", re.sub(r"^\d+_(?=[0-9a-f]{32})", "", stem))
+    return re.sub(r"_(\d+|[a-z]{2,4})$", "", core)
+
+
+def tabrecset_candidates(base):
+    """All-line, three-line and no-line versions of a table share one annotation and one split."""
+    root = base / "source/TabRecSet (CurveTabSet)"
+    annotations = {path.stem: path for path in (root / "TSR_TCR_annotation").glob("*/*.json")}
+    for folder in sorted(path for path in (root / "image").iterdir() if path.is_dir()):
+        for image in sorted(folder.iterdir()):
+            if image.stem in annotations:
+                group = tabrecset_group(image.stem)
+                yield {"split": stable_split(group, 3, 3), "id": f"{folder.name}:{image.stem}", "image": image.relative_to(base).as_posix(), "annotation": str(annotations[image.stem]),
+                       "groups": [f"tabrecset:document:{group}"], "build": tabrecset_target}
+
+
+def tabrecset_target(candidate, width, height):
+    """Shape labels read row-col-rowspan-colspan-text, counted from 1; the text is discarded."""
+    data = json.loads(Path(candidate["annotation"]).read_text(encoding="utf-8"))
+    if (data.get("imageWidth"), data.get("imageHeight")) != (width, height):
+        return None
+    grouped = {}
+    for shape in data["shapes"]:
+        parts = shape["label"].split("-", 4)
+        if len(parts) < 4 or not all(part.isdigit() for part in parts[:4]):
+            return None
+        row, col, rowspan, colspan = (int(part) for part in parts[:4])
+        if row < 1 or col < 1:
+            return None
+        grouped.setdefault(shape.get("group_id"), []).append((row - 1, col - 1, rowspan, colspan, polygon_box(shape["points"])))
+    tables = [(polygon_box([point for cell in cells for point in (cell[4][:2], cell[4][2:])]), cells) for cells in grouped.values()]
+    return table_target(tables, width, height, candidate["groups"])
+
+
+def ctdar_candidates(base):
+    """Only Track B labels carry cells. Equal names across tracks are different images."""
+    root = base / "source"
+    sets = [("B1", root / "test_ground_truth/TRACKB1", root / "test/TRACKB1"), ("B2", root / "test_ground_truth/TRACKB2", root / "test/TRACKB2"),
+            ("train", root / "training/TRACKB1/ground_truth", root / "training/TRACKB1/ground_truth")]
+    for track, labels, images in sets:
+        for path in sorted(labels.glob("*.xml")):
+            found = sorted(p for p in images.glob(f"{path.stem}.*") if p.suffix.lower() != ".xml")
+            if found:
+                name = f"{track}:{path.stem}"
+                split = "train" if track == "train" else "test" if int(hashlib.sha256(name.encode()).hexdigest(), 16) % 2 else "validation"
+                yield {"split": split, "id": name, "image": found[0].relative_to(base).as_posix(), "xml": str(path),
+                       "groups": [f"ctdar:image:{name}"], "build": ctdar_target}
+
+
+def ctdar_target(candidate, width, height):
+    tables = []
+    for table in ET.parse(candidate["xml"]).getroot().iter("table"):
+        cells = []
+        for cell in table.findall("cell"):
+            top, left = int(cell.get("start-row")), int(cell.get("start-col"))
+            cells.append((top, left, int(cell.get("end-row")) - top + 1, int(cell.get("end-col")) - left + 1, coords_box(cell.find("Coords").get("points"))))
+        tables.append((coords_box(table.find("Coords").get("points")), cells))
+    return table_target(tables, width, height, candidate["groups"])
+
+
+def read_abp_candidates(base):
+    """No official split. Pages of one register book stay together."""
+    root = base / "source/READ_ABP_TABLE"
+    images = {path.stem: path for path in root.glob("*/img/*") if path.is_file()}
+    for folder in ("dataset111/xml", "dataset150/GT_pxml"):
+        for path in sorted((root / folder).iterdir()):
+            if path.stem in images:
+                book = re.sub(r"^\d+_", "", re.sub(r"_\d+$", "", path.stem))
+                yield {"split": stable_split(book, 10, 10), "id": path.stem, "image": images[path.stem].relative_to(base).as_posix(), "xml": str(path),
+                       "groups": [f"read_abp:book:{book}"], "build": read_abp_target}
+
+
+def read_abp_target(candidate, width, height):
+    tables = []
+    for region in ET.parse(candidate["xml"]).getroot().findall(".//{*}TableRegion"):
+        cells = [(int(cell.get("row")), int(cell.get("col")), int(cell.get("rowSpan", 1)), int(cell.get("colSpan", 1)), coords_box(cell.find("{*}Coords").get("points")))
+                 for cell in region.findall("{*}TableCell")]
+        tables.append((coords_box(region.find("{*}Coords").get("points")), cells))
+    return table_target(tables, width, height, candidate["groups"])
+
+
 SOURCES = {"crohme_2023": crohme_candidates, "unimer": unimer_candidates, "mathwriting": mathwriting_candidates,
-           "pubtabnet": pubtabnet_candidates, "fintabnet_c": fintabnet_candidates}
+           "pubtabnet": pubtabnet_candidates, "fintabnet_c": fintabnet_candidates, "hdflowmind": hdflowmind_candidates,
+           "hme100k": hme100k_candidates, "ibem": ibem_candidates, "tabrecset": tabrecset_candidates,
+           "ctdar_2019": ctdar_candidates, "read_abp": read_abp_candidates}
 
 
 def build_target(candidate, dataset, base, width, height):
     """Returns (tasks, target, groups), or None to skip the candidate."""
+    if "build" in candidate:
+        return candidate["build"](candidate, width, height)
     groups = candidate.get("groups")
     if "html" in candidate:
         rows, cols, cells = html_table_cells(candidate["html"]["structure"]["tokens"], candidate["html"]["cells"], width, height)
+        cells = cells if len(cells) <= MAX_CELLS else [cell[:4] for cell in cells]
         table = {"id": "t1", "bbox": [0, 0, width, height], "rows": rows, "cols": cols, "cells": cells}
         try:
             validate_table(table, width, height)
@@ -227,9 +501,10 @@ def build_target(candidate, dataset, base, width, height):
         return ["tables"], {"tables": [table]}, groups
     if "voc" in candidate:
         parsed = voc_table(candidate["voc"])
-        if parsed is None or parsed[2] is None or len(parsed[5]) > MAX_CELLS or (parsed[0], parsed[1]) != (width, height):
+        if parsed is None or parsed[2] is None or len(parsed[5]) > MAX_GRID_CELLS or (parsed[0], parsed[1]) != (width, height):
             return None
-        return ["tables"], {"tables": [{"id": "t1", "bbox": parsed[2], "rows": parsed[3], "cols": parsed[4], "cells": parsed[5]}]}, groups
+        cells = parsed[5] if len(parsed[5]) <= MAX_CELLS else [cell[:4] for cell in parsed[5]]
+        return ["tables"], {"tables": [{"id": "t1", "bbox": parsed[2], "rows": parsed[3], "cols": parsed[4], "cells": cells}]}, groups
     if "latex_from" in candidate:
         latex, groups = crohme_latex(candidate)
     elif "ink" in candidate:
@@ -250,8 +525,11 @@ def build(dataset, base, caps, seed=42):
     for candidate in SOURCES[dataset](base):
         pools[candidate["split"]].append(candidate)
     rows, taken, group_split, image_hashes, skipped = [], Counter(), {}, set(), Counter()
+    foreign = {sha256(path) for path in base.parent.glob(FOREIGN_IMAGES[dataset]) if path.is_file()} if dataset in FOREIGN_IMAGES else set()
     for split in SPLIT_PRIORITY:
         random.Random(f"{seed}:{dataset}:{split}").shuffle(pools[split])
+        if dataset in GROUPED_HELD_OUT:
+            pools[split].sort(key=lambda candidate: hashlib.sha256(candidate["groups"][0].encode()).hexdigest())
         for candidate in pools[split]:
             if taken[split] >= caps[split]:
                 break
@@ -275,6 +553,9 @@ def build(dataset, base, caps, seed=42):
                 skipped["group_in_stricter_split"] += 1
                 continue
             digest = sha256(image_path)
+            if digest in foreign:
+                skipped["same_image_in_other_source"] += 1
+                continue
             if digest in image_hashes:
                 skipped["duplicate_image"] += 1
                 continue
@@ -291,7 +572,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--dataset", choices=sorted(SOURCES), required=True)
     parser.add_argument("--root", default="data/raw/radu")
-    parser.add_argument("--train", type=int, default=5000)
+    parser.add_argument("--train", type=int, default=math.inf, help="default keeps every usable train sample")
     parser.add_argument("--validation", type=int, default=200)
     parser.add_argument("--test", type=int, default=200)
     parser.add_argument("--seed", type=int, default=42)
