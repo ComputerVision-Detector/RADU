@@ -1,0 +1,13 @@
+{
+  "adapters": [
+    [
+      "models/radu/qwen3-vl-4b-lora-final/checkpoint-6000",
+      0.5
+    ],
+    [
+      "models/radu/qwen3-vl-4b-lora-final/checkpoint-18000",
+      0.5
+    ]
+  ],
+  "rank": 32
+}

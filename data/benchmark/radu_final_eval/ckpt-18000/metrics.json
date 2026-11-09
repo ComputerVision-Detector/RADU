@@ -1,0 +1,754 @@
+{
+  "adapter": "models/radu/qwen3-vl-4b-lora-final/checkpoint-18000",
+  "data": "data/processed/radu_final/validation.jsonl",
+  "overall": {
+    "samples": 311,
+    "parsed": 303,
+    "nodes": {
+      "precision": 0.9066,
+      "recall": 0.8498,
+      "f1": 0.8773,
+      "true_positive": 815,
+      "predicted": 899,
+      "gold": 959
+    },
+    "arrows": {
+      "precision": 0.8172,
+      "recall": 0.7589,
+      "f1": 0.787,
+      "true_positive": 809,
+      "predicted": 990,
+      "gold": 1066
+    },
+    "relations": {
+      "precision": 0.7188,
+      "recall": 0.6889,
+      "f1": 0.7035,
+      "true_positive": 547,
+      "predicted": 761,
+      "gold": 794
+    },
+    "formulas": {
+      "precision": 0.6409,
+      "recall": 0.6274,
+      "f1": 0.634,
+      "true_positive": 298,
+      "predicted": 465,
+      "gold": 475
+    },
+    "tables": {
+      "precision": 0.8709,
+      "recall": 0.7789,
+      "f1": 0.8223,
+      "true_positive": 6435,
+      "predicted": 7389,
+      "gold": 8262
+    }
+  },
+  "by_group": {
+    "crohme_2023": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.35,
+        "recall": 0.35,
+        "f1": 0.35,
+        "true_positive": 7,
+        "predicted": 20,
+        "gold": 20
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "ctdar_2019": {
+      "samples": 20,
+      "parsed": 19,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.9317,
+        "recall": 0.6604,
+        "f1": 0.773,
+        "true_positive": 2264,
+        "predicted": 2430,
+        "gold": 3428
+      }
+    },
+    "fa": {
+      "samples": 20,
+      "parsed": 18,
+      "nodes": {
+        "precision": 0.9643,
+        "recall": 0.871,
+        "f1": 0.9153,
+        "true_positive": 81,
+        "predicted": 84,
+        "gold": 93
+      },
+      "arrows": {
+        "precision": 0.9763,
+        "recall": 0.8824,
+        "f1": 0.927,
+        "true_positive": 165,
+        "predicted": 169,
+        "gold": 187
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "fc_a": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.9935,
+        "recall": 0.9872,
+        "f1": 0.9904,
+        "true_positive": 154,
+        "predicted": 155,
+        "gold": 156
+      },
+      "arrows": {
+        "precision": 0.9217,
+        "recall": 0.9217,
+        "f1": 0.9217,
+        "true_positive": 153,
+        "predicted": 166,
+        "gold": 166
+      },
+      "relations": {
+        "precision": 0.9458,
+        "recall": 0.9458,
+        "f1": 0.9458,
+        "true_positive": 157,
+        "predicted": 166,
+        "gold": 166
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "fc_b": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.9858,
+        "recall": 0.9858,
+        "f1": 0.9858,
+        "true_positive": 139,
+        "predicted": 141,
+        "gold": 141
+      },
+      "arrows": {
+        "precision": 0.9931,
+        "recall": 0.9931,
+        "f1": 0.9931,
+        "true_positive": 143,
+        "predicted": 144,
+        "gold": 144
+      },
+      "relations": {
+        "precision": 0.9653,
+        "recall": 0.9653,
+        "f1": 0.9653,
+        "true_positive": 139,
+        "predicted": 144,
+        "gold": 144
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "fc_b_scan": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.9846,
+        "recall": 0.9846,
+        "f1": 0.9846,
+        "true_positive": 128,
+        "predicted": 130,
+        "gold": 130
+      },
+      "arrows": {
+        "precision": 0.9846,
+        "recall": 0.9771,
+        "f1": 0.9808,
+        "true_positive": 128,
+        "predicted": 130,
+        "gold": 131
+      },
+      "relations": {
+        "precision": 0.9695,
+        "recall": 0.9695,
+        "f1": 0.9695,
+        "true_positive": 127,
+        "predicted": 131,
+        "gold": 131
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "fintabnet_c": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.7775,
+        "recall": 0.9311,
+        "f1": 0.8474,
+        "true_positive": 933,
+        "predicted": 1200,
+        "gold": 1002
+      }
+    },
+    "hdbpmn": {
+      "samples": 20,
+      "parsed": 17,
+      "nodes": {
+        "precision": 0.7622,
+        "recall": 0.6606,
+        "f1": 0.7078,
+        "true_positive": 218,
+        "predicted": 286,
+        "gold": 330
+      },
+      "arrows": {
+        "precision": 0.521,
+        "recall": 0.4561,
+        "f1": 0.4864,
+        "true_positive": 161,
+        "predicted": 309,
+        "gold": 353
+      },
+      "relations": {
+        "precision": 0.3875,
+        "recall": 0.3513,
+        "f1": 0.3685,
+        "true_positive": 124,
+        "predicted": 320,
+        "gold": 353
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "hdflowmind": {
+      "samples": 20,
+      "parsed": 19,
+      "nodes": {
+        "precision": 0.9223,
+        "recall": 0.8716,
+        "f1": 0.8962,
+        "true_positive": 95,
+        "predicted": 103,
+        "gold": 109
+      },
+      "arrows": {
+        "precision": 0.8194,
+        "recall": 0.6941,
+        "f1": 0.7516,
+        "true_positive": 59,
+        "predicted": 72,
+        "gold": 85
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "hme100k": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.55,
+        "recall": 0.55,
+        "f1": 0.55,
+        "true_positive": 11,
+        "predicted": 20,
+        "gold": 20
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "ibem": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.6762,
+        "recall": 0.6608,
+        "f1": 0.6684,
+        "true_positive": 261,
+        "predicted": 386,
+        "gold": 395
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "mathwriting": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.4,
+        "recall": 0.4,
+        "f1": 0.4,
+        "true_positive": 8,
+        "predicted": 20,
+        "gold": 20
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "pubtabnet": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.8396,
+        "recall": 0.8701,
+        "f1": 0.8546,
+        "true_positive": 1675,
+        "predicted": 1995,
+        "gold": 1925
+      }
+    },
+    "read_abp": {
+      "samples": 11,
+      "parsed": 11,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.9007,
+        "recall": 0.8003,
+        "f1": 0.8475,
+        "true_positive": 1206,
+        "predicted": 1339,
+        "gold": 1507
+      }
+    },
+    "tabrecset": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.84,
+        "recall": 0.8925,
+        "f1": 0.8655,
+        "true_positive": 357,
+        "predicted": 425,
+        "gold": 400
+      }
+    },
+    "unimer": {
+      "samples": 20,
+      "parsed": 19,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.5789,
+        "recall": 0.55,
+        "f1": 0.5641,
+        "true_positive": 11,
+        "predicted": 19,
+        "gold": 20
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    }
+  }
+}

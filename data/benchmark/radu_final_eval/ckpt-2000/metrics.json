@@ -1,0 +1,754 @@
+{
+  "adapter": "models/radu/qwen3-vl-4b-lora-final/checkpoint-2000",
+  "data": "data/processed/radu_final/validation.jsonl",
+  "overall": {
+    "samples": 311,
+    "parsed": 303,
+    "nodes": {
+      "precision": 0.88,
+      "recall": 0.8332,
+      "f1": 0.8559,
+      "true_positive": 799,
+      "predicted": 908,
+      "gold": 959
+    },
+    "arrows": {
+      "precision": 0.8571,
+      "recall": 0.8049,
+      "f1": 0.8302,
+      "true_positive": 858,
+      "predicted": 1001,
+      "gold": 1066
+    },
+    "relations": {
+      "precision": 0.6848,
+      "recall": 0.6348,
+      "f1": 0.6588,
+      "true_positive": 504,
+      "predicted": 736,
+      "gold": 794
+    },
+    "formulas": {
+      "precision": 0.5167,
+      "recall": 0.4232,
+      "f1": 0.4653,
+      "true_positive": 201,
+      "predicted": 389,
+      "gold": 475
+    },
+    "tables": {
+      "precision": 0.8407,
+      "recall": 0.6859,
+      "f1": 0.7554,
+      "true_positive": 5667,
+      "predicted": 6741,
+      "gold": 8262
+    }
+  },
+  "by_group": {
+    "crohme_2023": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.45,
+        "recall": 0.45,
+        "f1": 0.45,
+        "true_positive": 9,
+        "predicted": 20,
+        "gold": 20
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "ctdar_2019": {
+      "samples": 20,
+      "parsed": 19,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.8612,
+        "recall": 0.5446,
+        "f1": 0.6673,
+        "true_positive": 1867,
+        "predicted": 2168,
+        "gold": 3428
+      }
+    },
+    "fa": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.9789,
+        "recall": 1.0,
+        "f1": 0.9894,
+        "true_positive": 93,
+        "predicted": 95,
+        "gold": 93
+      },
+      "arrows": {
+        "precision": 0.973,
+        "recall": 0.9626,
+        "f1": 0.9677,
+        "true_positive": 180,
+        "predicted": 185,
+        "gold": 187
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "fc_a": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.9871,
+        "recall": 0.9808,
+        "f1": 0.9839,
+        "true_positive": 153,
+        "predicted": 155,
+        "gold": 156
+      },
+      "arrows": {
+        "precision": 0.9036,
+        "recall": 0.9036,
+        "f1": 0.9036,
+        "true_positive": 150,
+        "predicted": 166,
+        "gold": 166
+      },
+      "relations": {
+        "precision": 0.8675,
+        "recall": 0.8675,
+        "f1": 0.8675,
+        "true_positive": 144,
+        "predicted": 166,
+        "gold": 166
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "fc_b": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.9858,
+        "recall": 0.9858,
+        "f1": 0.9858,
+        "true_positive": 139,
+        "predicted": 141,
+        "gold": 141
+      },
+      "arrows": {
+        "precision": 0.9655,
+        "recall": 0.9722,
+        "f1": 0.9689,
+        "true_positive": 140,
+        "predicted": 145,
+        "gold": 144
+      },
+      "relations": {
+        "precision": 0.9517,
+        "recall": 0.9583,
+        "f1": 0.955,
+        "true_positive": 138,
+        "predicted": 145,
+        "gold": 144
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "fc_b_scan": {
+      "samples": 20,
+      "parsed": 19,
+      "nodes": {
+        "precision": 0.9597,
+        "recall": 0.9154,
+        "f1": 0.937,
+        "true_positive": 119,
+        "predicted": 124,
+        "gold": 130
+      },
+      "arrows": {
+        "precision": 0.9919,
+        "recall": 0.9313,
+        "f1": 0.9606,
+        "true_positive": 122,
+        "predicted": 123,
+        "gold": 131
+      },
+      "relations": {
+        "precision": 0.935,
+        "recall": 0.8779,
+        "f1": 0.9055,
+        "true_positive": 115,
+        "predicted": 123,
+        "gold": 131
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "fintabnet_c": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.837,
+        "recall": 0.9222,
+        "f1": 0.8775,
+        "true_positive": 924,
+        "predicted": 1104,
+        "gold": 1002
+      }
+    },
+    "hdbpmn": {
+      "samples": 20,
+      "parsed": 19,
+      "nodes": {
+        "precision": 0.6996,
+        "recall": 0.6,
+        "f1": 0.646,
+        "true_positive": 198,
+        "predicted": 283,
+        "gold": 330
+      },
+      "arrows": {
+        "precision": 0.6589,
+        "recall": 0.5637,
+        "f1": 0.6076,
+        "true_positive": 199,
+        "predicted": 302,
+        "gold": 353
+      },
+      "relations": {
+        "precision": 0.3543,
+        "recall": 0.3031,
+        "f1": 0.3267,
+        "true_positive": 107,
+        "predicted": 302,
+        "gold": 353
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "hdflowmind": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.8818,
+        "recall": 0.8899,
+        "f1": 0.8858,
+        "true_positive": 97,
+        "predicted": 110,
+        "gold": 109
+      },
+      "arrows": {
+        "precision": 0.8375,
+        "recall": 0.7882,
+        "f1": 0.8121,
+        "true_positive": 67,
+        "predicted": 80,
+        "gold": 85
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "hme100k": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.65,
+        "recall": 0.65,
+        "f1": 0.65,
+        "true_positive": 13,
+        "predicted": 20,
+        "gold": 20
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "ibem": {
+      "samples": 20,
+      "parsed": 17,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.5241,
+        "recall": 0.4127,
+        "f1": 0.4618,
+        "true_positive": 163,
+        "predicted": 311,
+        "gold": 395
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "mathwriting": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.3,
+        "recall": 0.3,
+        "f1": 0.3,
+        "true_positive": 6,
+        "predicted": 20,
+        "gold": 20
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    },
+    "pubtabnet": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.8408,
+        "recall": 0.801,
+        "f1": 0.8204,
+        "true_positive": 1542,
+        "predicted": 1834,
+        "gold": 1925
+      }
+    },
+    "read_abp": {
+      "samples": 11,
+      "parsed": 11,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.8674,
+        "recall": 0.6729,
+        "f1": 0.7578,
+        "true_positive": 1014,
+        "predicted": 1169,
+        "gold": 1507
+      }
+    },
+    "tabrecset": {
+      "samples": 20,
+      "parsed": 20,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "tables": {
+        "precision": 0.6867,
+        "recall": 0.8,
+        "f1": 0.739,
+        "true_positive": 320,
+        "predicted": 466,
+        "gold": 400
+      }
+    },
+    "unimer": {
+      "samples": 20,
+      "parsed": 18,
+      "nodes": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "arrows": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "relations": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      },
+      "formulas": {
+        "precision": 0.5556,
+        "recall": 0.5,
+        "f1": 0.5263,
+        "true_positive": 10,
+        "predicted": 18,
+        "gold": 20
+      },
+      "tables": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_positive": 0,
+        "predicted": 0,
+        "gold": 0
+      }
+    }
+  }
+}

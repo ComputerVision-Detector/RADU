@@ -47,6 +47,9 @@ data/benchmark/qwen_ablation_pilot/results/**/*.log
 !data/benchmark/qwen_ablation_pilot/archive/**
 !data/benchmark/qwen_ablation_pilot/structure_rules_v1/
 !data/benchmark/qwen_ablation_pilot/structure_rules_v1/**
+# Final LoRA run: metrics, predictions and a few sample images; full renders stay local.
+!data/benchmark/radu_final_eval/
+!data/benchmark/radu_final_eval/**
 
 # Labeling app runtime state, build output and local Vercel settings
 labeling/.runtime/

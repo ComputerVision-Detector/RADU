@@ -1,0 +1,292 @@
+{
+  "crohme_2023": {
+    "formula": {
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "mAP": 1.0,
+      "categories": 1
+    },
+    "all": {
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "mAP": 1.0,
+      "categories": 1
+    }
+  },
+  "ctdar_2019": {
+    "table": {
+      "AP50": 0.7232,
+      "AP75": 0.7232,
+      "mAP": 0.6053,
+      "categories": 1
+    },
+    "all": {
+      "AP50": 0.4895,
+      "AP75": 0.3929,
+      "mAP": 0.3552,
+      "categories": 2
+    },
+    "cell": {
+      "AP50": 0.2558,
+      "AP75": 0.0626,
+      "mAP": 0.1052,
+      "categories": 1
+    }
+  },
+  "fa": {
+    "nodes": {
+      "AP50": 1.0,
+      "AP75": 0.9652,
+      "mAP": 0.9409,
+      "categories": 2
+    },
+    "all": {
+      "AP50": 0.9967,
+      "AP75": 0.9599,
+      "mAP": 0.8954,
+      "categories": 3
+    },
+    "arrow": {
+      "AP50": 0.9901,
+      "AP75": 0.9494,
+      "mAP": 0.8044,
+      "categories": 1
+    }
+  },
+  "fc_a": {
+    "nodes": {
+      "AP50": 0.9754,
+      "AP75": 0.9681,
+      "mAP": 0.9323,
+      "categories": 5
+    },
+    "all": {
+      "AP50": 0.9646,
+      "AP75": 0.9336,
+      "mAP": 0.888,
+      "categories": 6
+    },
+    "arrow": {
+      "AP50": 0.9104,
+      "AP75": 0.7611,
+      "mAP": 0.6666,
+      "categories": 1
+    }
+  },
+  "fc_b": {
+    "nodes": {
+      "AP50": 0.9891,
+      "AP75": 0.9891,
+      "mAP": 0.9496,
+      "categories": 5
+    },
+    "all": {
+      "AP50": 0.9909,
+      "AP75": 0.9686,
+      "mAP": 0.9179,
+      "categories": 6
+    },
+    "arrow": {
+      "AP50": 1.0,
+      "AP75": 0.8661,
+      "mAP": 0.7596,
+      "categories": 1
+    }
+  },
+  "fc_b_scan": {
+    "nodes": {
+      "AP50": 0.9541,
+      "AP75": 0.9541,
+      "mAP": 0.8943,
+      "categories": 5
+    },
+    "all": {
+      "AP50": 0.956,
+      "AP75": 0.9226,
+      "mAP": 0.8568,
+      "categories": 6
+    },
+    "arrow": {
+      "AP50": 0.9652,
+      "AP75": 0.7649,
+      "mAP": 0.6693,
+      "categories": 1
+    }
+  },
+  "fintabnet_c": {
+    "table": {
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "mAP": 1.0,
+      "categories": 1
+    },
+    "all": {
+      "AP50": 0.5007,
+      "AP75": 0.5,
+      "mAP": 0.5002,
+      "categories": 2
+    },
+    "cell": {
+      "AP50": 0.0015,
+      "AP75": 0.0001,
+      "mAP": 0.0003,
+      "categories": 1
+    }
+  },
+  "hdbpmn": {
+    "nodes": {
+      "AP50": 0.6118,
+      "AP75": 0.2372,
+      "mAP": 0.2845,
+      "categories": 12
+    },
+    "all": {
+      "AP50": 0.578,
+      "AP75": 0.2199,
+      "mAP": 0.2662,
+      "categories": 13
+    },
+    "arrow": {
+      "AP50": 0.1725,
+      "AP75": 0.0125,
+      "mAP": 0.047,
+      "categories": 1
+    }
+  },
+  "hdflowmind": {
+    "nodes": {
+      "AP50": 0.8689,
+      "AP75": 0.8199,
+      "mAP": 0.6792,
+      "categories": 8
+    },
+    "all": {
+      "AP50": 0.8486,
+      "AP75": 0.7686,
+      "mAP": 0.6435,
+      "categories": 9
+    },
+    "arrow": {
+      "AP50": 0.6866,
+      "AP75": 0.3582,
+      "mAP": 0.3586,
+      "categories": 1
+    }
+  },
+  "hme100k": {
+    "formula": {
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "mAP": 1.0,
+      "categories": 1
+    },
+    "all": {
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "mAP": 1.0,
+      "categories": 1
+    }
+  },
+  "ibem": {
+    "formula": {
+      "AP50": 0.6769,
+      "AP75": 0.1858,
+      "mAP": 0.2813,
+      "categories": 1
+    },
+    "all": {
+      "AP50": 0.6769,
+      "AP75": 0.1858,
+      "mAP": 0.2813,
+      "categories": 1
+    }
+  },
+  "mathwriting": {
+    "formula": {
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "mAP": 1.0,
+      "categories": 1
+    },
+    "all": {
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "mAP": 1.0,
+      "categories": 1
+    }
+  },
+  "pubtabnet": {
+    "table": {
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "mAP": 1.0,
+      "categories": 1
+    },
+    "all": {
+      "AP50": 0.5777,
+      "AP75": 0.5121,
+      "mAP": 0.5249,
+      "categories": 2
+    },
+    "cell": {
+      "AP50": 0.1555,
+      "AP75": 0.0242,
+      "mAP": 0.0499,
+      "categories": 1
+    }
+  },
+  "read_abp": {
+    "table": {
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "mAP": 0.9819,
+      "categories": 1
+    },
+    "all": {
+      "AP50": 0.6495,
+      "AP75": 0.5212,
+      "mAP": 0.5413,
+      "categories": 2
+    },
+    "cell": {
+      "AP50": 0.2991,
+      "AP75": 0.0424,
+      "mAP": 0.1007,
+      "categories": 1
+    }
+  },
+  "tabrecset": {
+    "table": {
+      "AP50": 0.5565,
+      "AP75": 0.4418,
+      "mAP": 0.4174,
+      "categories": 1
+    },
+    "all": {
+      "AP50": 0.4054,
+      "AP75": 0.2479,
+      "mAP": 0.2545,
+      "categories": 2
+    },
+    "cell": {
+      "AP50": 0.2544,
+      "AP75": 0.0539,
+      "mAP": 0.0917,
+      "categories": 1
+    }
+  },
+  "unimer": {
+    "formula": {
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "mAP": 1.0,
+      "categories": 1
+    },
+    "all": {
+      "AP50": 1.0,
+      "AP75": 1.0,
+      "mAP": 1.0,
+      "categories": 1
+    }
+  }
+}
