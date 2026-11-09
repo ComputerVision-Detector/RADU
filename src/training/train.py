@@ -264,7 +264,10 @@ def run(config_path, preflight_only=False, max_steps=None, resume=None, output_d
                 remove_unused_columns=False, label_names=["labels"], report_to="none", seed=config["seed"],
                 eval_strategy="steps", eval_steps=config["eval_steps"], save_steps=config["save_steps"],
                 save_total_limit=config.get("save_total_limit", 2), logging_steps=config["logging_steps"], logging_first_step=True, warmup_steps=warmup_steps,
-                dataloader_num_workers=0, max_steps=max_steps if max_steps is not None else -1)
+                # Workers decode and resize the next images while the GPU trains on the current one.
+                dataloader_num_workers=config.get("dataloader_num_workers", 0),
+                dataloader_persistent_workers=config.get("dataloader_num_workers", 0) > 0,
+                max_steps=max_steps if max_steps is not None else -1)
     trainer_class = Trainer
     if config.get("balance_sources", False):
         class SourceBalancedTrainer(Trainer):
