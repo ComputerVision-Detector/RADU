@@ -202,6 +202,8 @@
     $("#diagram").style.left = compare ? "50%" : "0";
     $("#diagram").style.width = compare ? "50%" : "100%";
     $("#zoom-label").textContent = (state.fitMode ? "맞춤 " : "") + Math.round(state.zoom * 100) + "%";
+    // Overlay outline widths depend on the zoom, so redraw when it changes.
+    if (state.doc && renderedZoom !== null && renderedZoom !== state.zoom) renderDiagram();
     $("#dimension-label").textContent = size.width + " × " + size.height +
       " px";
   }
@@ -292,6 +294,36 @@
       );
     }
   }
+  const finalCvEngines = new Set(["paddleocrvl16routed", "paddleocrvl16lora"]);
+  let cvDeviceActive = false;
+  let legacyOcrDevice = $("#device").value;
+  // Auto mode runs the Qwen structure model too, until the user picks a structure model by hand.
+  let structureChosen = false;
+  function syncStructureDefault() {
+    if (!structureChosen) {
+      $("#structure-model").value = $("#ocr-engine").value === "paddleocrvl16routed" ? "qwen-all" : "opencv";
+    }
+  }
+  function syncCvModeDevice() {
+    const active = finalCvEngines.has($("#ocr-engine").value) ||
+      $("#structure-model").value !== "opencv";
+    const device = $("#device");
+    if (active) {
+      if (!cvDeviceActive) legacyOcrDevice = device.value;
+      device.value = "gpu:0";
+    } else if (cvDeviceActive) {
+      device.value = legacyOcrDevice;
+    }
+    for (const option of device.options) {
+      option.disabled = active && option.value !== "gpu:0";
+    }
+    cvDeviceActive = active;
+  }
+  function updateOcrCompareAvailability() {
+    const button = $("#compare-ocr");
+    if (button) button.disabled = state.busy || !state.doc?.image?.source_url ||
+      !/^[a-f0-9]{32}$/.test(state.doc?.session_id || "");
+  }
   function render() {
     RaduModel.normalize(state.doc);
     setCanvasSize();
@@ -299,6 +331,7 @@
     renderList();
     renderSummary();
     renderInspector();
+    updateOcrCompareAvailability();
     $("#analyze-relations").disabled = state.busy ||
       !state.doc || !state.doc.elements.some((element) =>
         element.type === "Box" || element.type === "Arrow"
@@ -400,8 +433,10 @@
     const markup = renderBoxShape(shape, 3, 3, 30, 20, "#eef0ff", "#5368e8", 1.8);
     return '<svg viewBox="0 0 36 26" aria-hidden="true" focusable="false">' + markup + "</svg>";
   }
+  let renderedZoom = null;
   function renderDiagram() {
     const svg = $("#diagram"), doc = state.doc;
+    renderedZoom = state.zoom;
     if (!doc) {
       svg.innerHTML = "";
       return;
@@ -417,6 +452,11 @@
     let out =
         '<defs><marker id="radu-arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#5268e8"/></marker><marker id="radu-warn-arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#d2873d"/></marker></defs>',
       map = new Map(doc.elements.map((e) => [e.id, e]));
+    // Over the source image, draw detections like plotted bounding boxes: solid, saturated
+    // outlines with no fill, at least ~2.5 screen pixels wide at the current zoom.
+    const overImage = !hybrid && ["overlay", "ocr", "radu"].includes(state.viewMode) &&
+        Boolean(doc.image.processed_source_url || doc.image.source_url || state.previewUrl),
+      outlineWidth = 2.5 / Math.max(state.zoom || 1, .01);
     (state.viewMode === "ocr" ? [] : doc.relations || []).forEach((rel) => {
       if (rel.type !== "flows_to") return;
       const arrow = map.get(rel.arrow_id);
@@ -443,17 +483,18 @@
         stroke = selected
           ? "#5368e8"
           : safeColor(style.stroke, e.type === "Arrow"
-          ? "#199574"
+          ? (overImage ? "#00a35c" : "#199574")
           : e.type === "Text"
-          ? "#4b8bc5"
-          : "#de8b48"),
-        sw = Math.min(30, Math.max(1, Number(style.stroke_width) || 2)),
-        fill = safeColor(style.fill, "#ffffff");
+          ? (overImage ? "#0b6bff" : "#4b8bc5")
+          : (overImage ? "#ff5a00" : "#de8b48")),
+        sw = Math.max(overImage ? outlineWidth : 0, Math.min(30, Math.max(1, Number(style.stroke_width) || 2))),
+        fill = overImage ? "none" : safeColor(style.fill, "#ffffff");
       out += '<g class="diagram-element" data-id="' + esc(e.id) +
         '" tabindex="' + (state.viewMode === "ocr" ? "-1" : "0") +
         '" role="' + (state.viewMode === "ocr" ? "img" : "button") + '" aria-label="' +
         esc(kindName(e) + " " + (e.text || e.id)) + '" style="cursor:' +
         (state.tool === "select" ? "move" : "pointer") + '" opacity="' + (style.opacity ?? 1) + '"' +
+        (overImage ? ' pointer-events="all"' : "") +
         (e.rotation ? ' transform="rotate(' + Number(e.rotation) + " " +
           (x + ew / 2) + " " + (y + eh / 2) + ')"' : "") + '>';
       if (e.type === "Image") {
@@ -495,9 +536,9 @@
       } else if (e.type === "Text") {
         out += '<rect class="element-shape" x="' + x + '" y="' + y +
           '" width="' + ew + '" height="' + eh + '" rx="3" fill="' +
-          (selected ? "#eef2ff" : hybrid && state.viewMode === "overlay" ? "#fffffff2" : "#54a1d10c") + '" stroke="' + stroke +
+          (overImage ? (selected ? "#5268e817" : "none") : selected ? "#eef2ff" : hybrid && state.viewMode === "overlay" ? "#fffffff2" : "#54a1d10c") + '" stroke="' + stroke +
           '" stroke-width="' + sw + '" ' +
-          (selected ? "" : 'stroke-dasharray="5 4"') + "/>";
+          (selected || overImage ? "" : 'stroke-dasharray="5 4"') + "/>";
       } else {
         out += renderBoxShape(e.shape || "process", x, y, ew, eh,
           selected ? "#5268e817" : fill, stroke, sw);
@@ -875,7 +916,7 @@
       '"></label></div></label><label class="field"><span>인식 신뢰도 <b class="confidence-value">' +
       (Number.isFinite(e.confidence)
         ? Math.round(e.confidence * 100) + "%"
-        : "수동") +
+        : ["paddleocrvl16lora", "paddleocrvl16routed"].includes(e.source) ? "미제공" : "수동") +
       '</b></span><input class="control" id="prop-confidence" type="range" min="0" max="1" step="0.01" value="' +
       (Number.isFinite(e.confidence) ? e.confidence : 1) + '" ' +
       (e.source === "manual" ? "" : "disabled") + "></label>" +
@@ -2112,6 +2153,59 @@
       toast(e.message || "이미지를 열 수 없습니다.", true);
     }
   }
+  async function compareOcr() {
+    if (state.busy) return;
+    const sessionId = state.doc?.session_id;
+    if (!/^[a-f0-9]{32}$/.test(sessionId || "")) return;
+    const device = $("#device").value;
+    if (!/^gpu(?::\d+)?$/.test(device)) {
+      toast("LoRA OCR 비교에는 GPU 장치를 선택해 주세요.", true);
+      return;
+    }
+    const baseline = $("#ocr-compare-baseline").value;
+    state.busy = true;
+    $("#analyze").disabled = true;
+    render();
+    status("같은 원본 이미지의 기존 엔진과 LoRA 출력을 비교하고 있습니다.", "busy");
+    try {
+      const query = new URLSearchParams({ baseline, device });
+      const response = await request("/api/sessions/" + sessionId + "/compare-ocr?" + query, { method: "POST" });
+      const result = await response.json();
+      const labels = { paddleocrv6: "PaddleOCR v6", paddleocrvl16: "PaddleOCR-VL 1.6", paddleocrvl16lora: "PaddleOCR-VL 1.6 + LoRA" };
+      const width = result.width, height = result.height;
+      const panels = result.results.map((item) => {
+        if (item.error) return '<section class="ocr-comparison-panel"><h3>' + esc(labels[item.engine] || item.engine) + '</h3><p role="alert">' + esc(item.error) + '</p></section>';
+        const rectangles = (item.lines || []).map((line) => {
+          const raw = line.bbox || [];
+          let box;
+          if (Array.isArray(raw[0])) {
+            const xs = raw.map((p) => p[0]), ys = raw.map((p) => p[1]);
+            box = [Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys)];
+          } else box = raw;
+          if (box.length !== 4 || !box.every(Number.isFinite)) return "";
+          const left = Math.max(0, Math.min(width, box[0])), top = Math.max(0, Math.min(height, box[1]));
+          const right = Math.max(left, Math.min(width, box[2])), bottom = Math.max(top, Math.min(height, box[3]));
+          return '<rect x="' + left + '" y="' + top + '" width="' + (right-left) + '" height="' + (bottom-top) + '" fill="none" stroke="#df6239" stroke-width="2" vector-effect="non-scaling-stroke"><title>' + esc(line.text) + '</title></rect>';
+        }).join("");
+        const limited = (item.metadata?.generation_limit_regions || []).length;
+        const warning = limited ? '<p class="ocr-truncated-warning" role="status">' + limited + '개 영역이 출력 길이 한도에 도달했습니다. 누락된 내용이 없는지 원본과 대조해 주세요.</p>' : '';
+        return '<section class="ocr-comparison-panel"><h3>' + esc(labels[item.engine] || item.engine) + '</h3><p>' + (item.lines || []).length + '개 영역 · ' + Number(item.seconds).toFixed(2) + '초</p>' + warning + '<svg role="img" aria-label="' + esc(labels[item.engine] || item.engine) + ' 검출 위치" viewBox="0 0 ' + width + ' ' + height + '"><image href="/api/sessions/' + sessionId + '/processed-image" width="' + width + '" height="' + height + '"/>' + rectangles + '</svg><pre>' + esc(item.text) + '</pre></section>';
+      }).join("");
+      $("#modal-root").innerHTML = '<div class="modal-backdrop"><div class="modal ocr-comparison" role="dialog" aria-modal="true" aria-label="OCR 엔진 비교"><div class="modal-head"><h2>기존 엔진 · LoRA 비교</h2><button class="modal-close" aria-label="닫기">×</button></div><p class="hint">같은 전처리 이미지의 텍스트와 검출 위치입니다. 엔진별 검출 방식이 다르며, 정답 라벨 없는 이미지의 정확도 점수는 계산하지 않습니다. 편집 중인 문서는 변경하지 않습니다.</p><div class="ocr-comparison-grid">' + panels + '</div></div></div>';
+      $(".modal-close").onclick = closeModal;
+      $(".modal-close").focus();
+      $(".modal-backdrop").onclick = (event) => { if (event.target === event.currentTarget) closeModal(); };
+      const truncated = result.results.some((item) => (item.metadata?.generation_limit_regions || []).length);
+      status(result.successful_engines !== 2 ? "일부 엔진의 비교에 실패했습니다. 오류 내용을 확인해 주세요." : truncated ? "비교 완료 · 일부 출력의 길이 한도를 확인해 주세요." : "OCR 출력 비교를 완료했습니다.", result.successful_engines === 2 && !truncated ? "ready" : "error");
+    } catch (error) {
+      toast(error.message || "OCR 비교에 실패했습니다.", true);
+      status("OCR 비교에 실패했습니다.", "error");
+    } finally {
+      state.busy = false;
+      $("#analyze").disabled = false;
+      render();
+    }
+  }
   async function analyze() {
     if (state.busy) return;
     if (!state.file) {
@@ -2133,6 +2227,7 @@
       const query = new URLSearchParams({
         ocr_engine: $("#ocr-engine").value,
         device: $("#device").value,
+        structure: $("#structure-model").value,
       });
       const response = await request("/api/analyze?" + query.toString(), {
           method: "POST",
@@ -2153,6 +2248,9 @@
       resetHistory();
       render();
       fitCanvas();
+      document.dispatchEvent(new CustomEvent("radu:analyzed", {
+        detail: { sessionId: doc.session_id, sourceFile: doc.image.source_file, hasOcr: Boolean(doc.ocr) },
+      }));
       const ocrWarning = doc.warnings?.find((warning) => warning.code === "ocr_unavailable"),
         ocrFailed = $("#ocr-engine").value !== "none" && !doc.ocr;
       if (ocrFailed) {
@@ -2181,7 +2279,9 @@
           "분석 완료 · 요소 " + doc.elements.length + "개 · 관계 " +
             doc.relations.length + "개",
         );
-        toast("분석이 끝났습니다. 검토 항목을 확인해 주세요.");
+        const structureWarning = doc.warnings?.find((warning) => warning.code === "structure_unavailable");
+        if (structureWarning) toast(structureWarning.message, true);
+        else toast("분석이 끝났습니다. 검토 항목을 확인해 주세요.");
       }
     } catch (e) {
       $("#analysis-state").textContent = "실패";
@@ -2192,6 +2292,7 @@
       state.busy = false;
       $("#analyze").disabled = false;
       $("#busy-overlay")?.remove();
+      updateOcrCompareAvailability();
     }
   }
   async function analyzeRelations() {
@@ -2240,6 +2341,7 @@
       $("#analyze-relations").disabled =
         !state.doc || !state.doc.elements.length;
       $("#busy-overlay")?.remove();
+      updateOcrCompareAvailability();
     }
   }
   function validateImportedDoc(doc, nestedPage = false) {
@@ -2708,10 +2810,15 @@
     e.currentTarget.classList.remove("dragover");
     chooseFile(e.dataTransfer.files && e.dataTransfer.files[0]);
   };
+  $("#ocr-engine").addEventListener("change", () => { syncStructureDefault(); syncCvModeDevice(); });
+  $("#structure-model").addEventListener("change", () => { structureChosen = true; syncCvModeDevice(); });
+  syncStructureDefault();
+  syncCvModeDevice();
   $("#analyze").onclick = analyze;
   $("#analyze-relations").onclick = analyzeRelations;
   $("#retry-analysis").onclick = analyze;
   $("#save").onclick = saveDocument;
+  if ($("#compare-ocr")) $("#compare-ocr").onclick = compareOcr;
   $("#export-menu").onclick = exportMenu;
   $("#open-sessions").onclick = openSessions;
   $("#delete-selected").onclick = deleteSelected;

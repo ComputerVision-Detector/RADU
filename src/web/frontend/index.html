@@ -7,6 +7,7 @@
   <title>RADU · 순서도 복원 작업실</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="/static/app.css">
+  <link rel="stylesheet" href="/static/labeled-dataset.css">
 </head>
 <body>
   <div class="app">
@@ -24,8 +25,20 @@
           <label class="upload-box" id="upload-box" for="image-file"><span class="upload-icon">⇧</span><span class="upload-meta"><b id="upload-name">순서도 이미지를 선택하세요</b><small id="upload-hint">SVG 및 래스터 이미지 · 파일 크기는 저장 공간과 메모리에 따라 제한</small></span></label>
           <input id="image-file" class="sr-only" type="file" accept="image/*,.svg,.heic,.heif,.avif,.tif,.tiff,.bmp,.dib,.gif,.jfif,.jpe,.jp2,.j2k,.tga,.pcx,.psd,.ico,.cur,.ppm,.pgm,.pbm,.pnm,.qoi">
           <div class="button-row"><button class="button" id="replace-image">이미지 선택</button><button class="button primary" id="analyze">이미지 분석</button></div><button class="button full" id="analyze-relations" disabled>관계 분석 실행</button><button class="button full retry-analysis" id="retry-analysis" hidden>분석 다시 시도</button>
-          <label class="field"><span>텍스트 인식 엔진</span><select id="ocr-engine" class="control"><option value="none">OCR 없이 요소 분석</option><option value="paddleocrv6">PaddleOCR v6</option><option value="paddleocrvl16">PaddleOCR-VL 1.6</option><option value="clova">CLOVA OCR (API 설정 필요)</option></select></label>
+          <label class="field"><span>라벨 데이터셋 (Hugging Face)</span><select id="labeled-page" class="control" aria-describedby="labeled-summary"><option value="">직접 라벨링한 페이지 선택…</option></select></label>
+          <div class="button-row"><button class="button" id="labeled-load" disabled>불러오기</button><button class="button" id="labeled-evaluate" disabled title="분석한 OCR 결과를 라벨 정답과 대조합니다">정답 대조</button></div>
+          <p class="hint" id="labeled-summary" role="status">라벨 데이터셋 목록을 불러오는 중…</p>
+          <label class="field"><span>프로젝트 데이터셋</span><select id="local-source" class="control" aria-describedby="local-summary"><option value="">데이터셋 선택…</option></select></label>
+          <div class="button-row"><select id="local-split" class="control" aria-label="데이터셋 split"><option value="validation">validation</option><option value="test">test</option></select><button class="button" id="local-load" disabled>불러오기</button></div>
+          <select id="local-sample" class="control" aria-label="데이터셋 이미지"><option value="">이미지 선택…</option></select>
+          <p class="hint" id="local-summary" role="status">프로젝트 데이터셋 목록을 불러오는 중…</p>
+          <label class="field"><span>OCR 처리 모드</span><select id="ocr-engine" class="control" aria-describedby="ocr-mode-help"><optgroup label="CV 최종 모드"><option value="paddleocrvl16routed" selected>자동 모드 · 혼합 문서</option><option value="paddleocrvl16lora">한국어 전용 모드 · 기존 LoRA</option></optgroup><optgroup label="기존 OCR 엔진"><option value="none">OCR 없이 요소 분석</option><option value="paddleocrv6">PaddleOCR v6</option><option value="paddleocrvl16">PaddleOCR-VL 1.6</option><option value="clova">CLOVA OCR (API 설정 필요)</option></optgroup></select></label>
+          <p class="hint" id="ocr-mode-help">자동 모드는 혼합 문서의 인식 경로를 선택합니다. 한국어 전용 모드는 한국어 중심 문서에 기존 학습 모델을 사용합니다.</p>
+          <label class="field"><span>구조 인식 모델</span><select id="structure-model" class="control" aria-describedby="structure-model-help"><option value="opencv">OpenCV 후보 검출 (기존)</option><optgroup label="Qwen3-VL LoRA · GPU 0"><option value="qwen-diagram">도식 · 도형·화살표·연결</option><option value="qwen-formula">수식 · LaTeX</option><option value="qwen-table">표 · 셀 구조</option><option value="qwen-all" selected>도식 + 수식 + 표</option></optgroup></select></label>
+          <p class="hint" id="structure-model-help">자동 모드는 Qwen3-VL LoRA(도식 + 수식 + 표)를 함께 실행합니다. 이미지 종류를 알면 해당 항목만 고르면 더 빠르고 오검출이 줄어듭니다. 글자는 위 OCR 모드가 읽고 위치로 합칩니다.</p>
           <label class="field"><span>추론 장치</span><select id="device" class="control"><option value="cpu">CPU</option><option value="gpu:0">GPU 0</option><option value="gpu:1">GPU 1</option></select></label>
+          <label class="field"><span>OCR 비교 기준</span><select id="ocr-compare-baseline" class="control"><option value="paddleocrvl16">PaddleOCR-VL 1.6</option><option value="paddleocrv6">PaddleOCR v6</option></select></label>
+          <button class="button full" id="compare-ocr" disabled title="이미지를 분석한 뒤 GPU 장치를 선택해 같은 원본의 OCR 출력을 비교합니다">기존 엔진 · LoRA 비교</button>
           <p class="hint">자동 검출은 후보 결과입니다. 텍스트·도형·화살표와 연결 방향을 원본에서 확인해 주세요.</p>
         </section>
         <section class="panel-section">
@@ -50,5 +63,7 @@
   <script src="/static/editor-model.js" defer></script>
   <script src="/static/editor-tools.js" defer></script>
   <script src="/static/app.js" defer></script>
+  <script src="/static/labeled-dataset.js" defer></script>
+  <script src="/static/local-dataset.js" defer></script>
 </body>
 </html>

@@ -9,6 +9,7 @@ import json
 import io
 import math
 import mimetypes
+import os
 import re
 import shutil
 import subprocess
@@ -49,6 +50,7 @@ from src.cv.exporter import export_document
 from src.cv.ocr_engine import recognize
 from src.cv.preprocess import preprocess_image
 from src.cv.relation import analyze_relations
+from src.cv.structure_qwen import MODES as STRUCTURE_MODES, analyze_structure, relate
 
 ROOT = Path(__file__).resolve().parents[3]
 FRONTEND = Path(__file__).resolve().parents[1] / "frontend"
@@ -61,7 +63,7 @@ EXPORTS.mkdir(parents=True, exist_ok=True)
 MAX_EMBEDDED_IMAGE_PIXELS = 40_000_000
 ANALYSIS_TIMEOUT_SECONDS = 900
 SESSION_ID_RE = re.compile(r"^[a-f0-9]{32}$")
-SUPPORTED_ENGINES = {"none", "paddleocrv6", "paddleocrvl16", "clova"}
+SUPPORTED_ENGINES = {"none", "paddleocrv6", "paddleocrvl16", "paddleocrvl16lora", "paddleocrvl16routed", "clova"}
 INFERENCE_LOCK = threading.Lock()
 IMAGE_DECODE_LOCK = threading.Lock()
 Image.MAX_IMAGE_PIXELS = None
@@ -359,12 +361,29 @@ async def _remove_export(path: Path) -> None:
 
 
 async def _run_analysis_worker(image_path: Path, result_path: Path, engine: str,
-                               device: str, session_id: str, original_name: str) -> dict:
+                               device: str, session_id: str, original_name: str,
+                               structure: str = "opencv") -> dict:
     command = [
         sys.executable, "-m", "src.web.backend.analysis_worker",
         str(image_path), str(result_path), engine, device, session_id, original_name, str(OUT),
     ]
+    if structure != "opencv":
+        # analysis_worker.py is pinned by the frozen OCR experiment, so the choice travels in the environment.
+        command = ["/usr/bin/env", f"RADU_STRUCTURE_MODEL={structure}", *command]
     log_path = result_path.with_suffix(".log")
+    # These paths start model subprocesses; run_process kills the whole group on timeout.
+    if engine in {"paddleocrvl16lora", "paddleocrvl16routed"} or structure != "opencv":
+        from src.web.backend.ocr_compare import run_process
+        code = await run_process(command, log_path, ANALYSIS_TIMEOUT_SECONDS)
+        output = log_path.read_text(encoding="utf-8", errors="replace")[-4000:]
+        if output:
+            print(f"[RADU worker:{session_id}] {output.rstrip()}", flush=True)
+        if code != 0:
+            raise RuntimeError(f"LoRA 문서 분석에 실패했습니다. {output}")
+        try:
+            return json.loads(result_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as error:
+            raise RuntimeError("LoRA 분석 결과를 읽을 수 없습니다.") from error
     deadline = asyncio.get_running_loop().time() + ANALYSIS_TIMEOUT_SECONDS
     with log_path.open("wb") as log_stream:
         try:
@@ -404,12 +423,17 @@ async def _run_analysis_worker(image_path: Path, result_path: Path, engine: str,
 
 
 def _analyze(image: np.ndarray, engine: str, device: str, session_id: str,
-             source_path: Path, original_name: str) -> dict:
+             source_path: Path, original_name: str, structure: str | None = None) -> dict:
+    structure = structure or os.environ.get("RADU_STRUCTURE_MODEL", "opencv")
+    if structure not in STRUCTURE_MODES:
+        raise ValueError(f"Unsupported structure model: {structure}")
     processed = preprocess_image(image)
     image_height, image_width = processed.shape[:2]
     vl_only = engine == "paddleocrvl16"
+    arrow_hints: dict = {}
+    structure_failure = None
     print(
-        f"[RADU] analysis_start session={session_id} engine={engine} "
+        f"[RADU] analysis_start session={session_id} engine={engine} structure={structure} "
         f"requested_device={device} input={image_width}x{image_height}",
         flush=True,
     )
@@ -431,7 +455,29 @@ def _analyze(image: np.ndarray, engine: str, device: str, session_id: str,
             "radu": {"status": "not_run"},
         }
     else:
-        document = analyze_image(processed, preprocess=False, include_text=engine == "none")
+        document = None
+        if structure != "opencv":
+            try:
+                with INFERENCE_LOCK:
+                    document, arrow_hints = analyze_structure(processed, structure, device)
+                groups = document["structure"]["metadata"]["groups"]
+                print(
+                    f"[RADU] structure_success session={session_id} mode={structure} "
+                    f"elements={len(document['elements'])} model_relations={len(arrow_hints)} "
+                    f"groups={json.dumps(groups, ensure_ascii=True)}",
+                    flush=True,
+                )
+            except Exception as exc:
+                print(
+                    f"[RADU] structure_failure session={session_id} mode={structure} "
+                    f"error={type(exc).__name__}: {exc}",
+                    flush=True,
+                )
+                structure_failure = {"code": "structure_unavailable", "message": f"Qwen 구조 인식에 실패해 OpenCV 후보 검출로 대체했습니다: {exc}"}
+        if document is None:
+            document = analyze_image(processed, preprocess=False, include_text=engine == "none")
+            if structure_failure:
+                document["warnings"].append(structure_failure)
     warnings = list(document.get("warnings", []))
     if engine != "none":
         try:
@@ -444,6 +490,8 @@ def _analyze(image: np.ndarray, engine: str, device: str, session_id: str,
                 "lines": lines,
                 "metadata": details.get("metadata", {}),
             }
+            if engine in {"paddleocrvl16lora", "paddleocrvl16routed"} and details.get("metadata", {}).get("generation_limit_regions"):
+                warnings.append({"code": "ocr_truncated", "message": "일부 LoRA OCR 출력이 생성 길이 한도에 도달했습니다. 원본과 대조해 확인하세요."})
             for index, line in enumerate(lines):
                 raw = line.get("bbox") or []
                 if raw and isinstance(raw[0], (list, tuple)):
@@ -496,7 +544,7 @@ def _analyze(image: np.ndarray, engine: str, device: str, session_id: str,
             warnings.append({"code": "ocr_unavailable", "message": f"OCR 분석에 실패했습니다: {exc}"})
     document["warnings"] = warnings
     if not vl_only:
-        document = analyze_relations(document)
+        document = relate(document, arrow_hints) if "structure" in document else analyze_relations(document)
     document["session_id"] = session_id
     document["created_at"] = datetime.now(timezone.utc).isoformat()
     document["image"]["source_url"] = f"/api/sessions/{session_id}/image"
@@ -508,12 +556,20 @@ def _analyze(image: np.ndarray, engine: str, device: str, session_id: str,
 
 @app.post("/api/analyze")
 async def analyze(request: Request, ocr_engine: str = Query("none"),
-                  device: str = Query("cpu")) -> dict:
+                  device: str = Query("cpu"), structure: str = Query("opencv")) -> dict:
     engine = ocr_engine.strip().lower()
     if engine not in SUPPORTED_ENGINES:
         raise HTTPException(400, f"Unsupported OCR engine: {engine}")
+    # Direct callers that omit the argument get the Query default object, not a string.
+    structure = structure.strip().lower() if isinstance(structure, str) else "opencv"
+    if structure not in STRUCTURE_MODES:
+        raise HTTPException(400, f"Unsupported structure model: {structure}")
+    if structure != "opencv" and device == "cpu":
+        raise HTTPException(400, "Qwen 구조 인식은 GPU 장치를 선택해 주세요.")
     if device != "cpu" and not re.fullmatch(r"gpu(?::\d+)?", device):
         raise HTTPException(400, "Paddle device must be cpu, gpu, or gpu:<index>")
+    if engine in {"paddleocrvl16lora", "paddleocrvl16routed"} and device == "cpu":
+        raise HTTPException(400, "LoRA OCR은 검증된 GPU 장치를 선택해 주세요.")
     # Raw image uploads are preferred; multipart is retained for older clients.
     content_type = request.headers.get("content-type", "application/octet-stream")
     payload = await request.body()
@@ -540,8 +596,9 @@ async def analyze(request: Request, ocr_engine: str = Query("none"),
         _atomic_write(source_path, payload)
         with tempfile.TemporaryDirectory(prefix="radu-analysis-") as temp_dir:
             worker_result = Path(temp_dir) / "result.json"
+            extra = () if structure == "opencv" else (structure,)
             return await _run_analysis_worker(source_path, worker_result, engine, device,
-                                              session_id, original_name or source_path.name)
+                                              session_id, original_name or source_path.name, *extra)
     except HTTPException:
         source_path.unlink(missing_ok=True)
         (OUT / f"{session_id}.processed.jpg").unlink(missing_ok=True)
@@ -559,6 +616,28 @@ async def analyze(request: Request, ocr_engine: str = Query("none"),
         if isinstance(exc, OSError):
             raise HTTPException(507, "이미지 저장 공간이 부족하거나 파일을 기록할 수 없습니다.") from exc
         raise HTTPException(500, f"문서 분석 중 오류가 발생했습니다: {exc}") from exc
+
+
+@app.post("/api/sessions/{session_id}/compare-ocr")
+async def compare_ocr(session_id: str, baseline: str = Query("paddleocrvl16"),
+                      device: str = Query("gpu:0")) -> dict:
+    from src.web.backend.ocr_compare import LOCAL_BASELINES, run_comparison
+
+    if baseline not in LOCAL_BASELINES:
+        raise HTTPException(400, "비교 기준은 PP-OCRv6 또는 PaddleOCR-VL 1.6을 선택해 주세요.")
+    if not re.fullmatch(r"gpu(?::\d+)?", device):
+        raise HTTPException(400, "LoRA OCR 비교에는 GPU 장치가 필요합니다.")
+    document_path = _session_path(session_id)
+    sources = sorted(OUT.glob(f"{session_id}.source.*"))
+    if not document_path.is_file() or not sources:
+        raise HTTPException(404, "비교할 원본 이미지가 있는 문서를 먼저 분석하거나 열어 주세요.")
+    try:
+        with tempfile.TemporaryDirectory(prefix="radu-ocr-compare-") as directory:
+            return await run_comparison(sources[0], Path(directory), baseline, device)
+    except TimeoutError as error:
+        raise HTTPException(504, str(error)) from error
+    except RuntimeError as error:
+        raise HTTPException(500, str(error)) from error
 
 
 @app.get("/api/sessions")
@@ -610,6 +689,79 @@ async def get_processed_session_image(session_id: str) -> StreamingResponse:
         raise HTTPException(404, "전처리 이미지를 찾을 수 없습니다.")
     return StreamingResponse(_stream_file(path), media_type="image/jpeg",
                              headers={"Content-Disposition": "inline", "Content-Length": str(path.stat().st_size)})
+
+
+@app.get("/api/local-datasets")
+async def local_datasets() -> dict:
+    from src.web.backend import local_dataset as local
+
+    try:
+        return await asyncio.to_thread(local.list_sources)
+    except (OSError, KeyError, ValueError) as error:
+        raise HTTPException(503, f"프로젝트 데이터셋을 읽을 수 없습니다: {error}") from error
+
+
+@app.get("/api/local-datasets/image")
+async def local_dataset_image(id: str = Query(...)) -> StreamingResponse:
+    from src.web.backend import local_dataset as local
+
+    try:
+        path = local.image_path(id)
+    except (KeyError, FileNotFoundError) as error:
+        raise HTTPException(404, "프로젝트 데이터셋에 없는 이미지입니다.") from error
+    return StreamingResponse(_stream_file(path), media_type=mimetypes.guess_type(path.name)[0] or "application/octet-stream",
+                             headers={"Content-Disposition": "inline", "Content-Length": str(path.stat().st_size)})
+
+
+@app.get("/api/local-datasets/{source}/{split}")
+async def local_dataset_samples(source: str, split: str) -> dict:
+    from src.web.backend import local_dataset as local
+
+    try:
+        return {"source": source, "split": split, "samples": local.list_samples(source, split)}
+    except KeyError as error:
+        raise HTTPException(404, "프로젝트 데이터셋에 없는 항목입니다.") from error
+
+
+@app.get("/api/labeled-dataset")
+async def labeled_dataset() -> dict:
+    from src.web.backend import labeled_dataset as labeled
+
+    try:
+        return labeled.list_pages()
+    except (OSError, KeyError, ValueError, RuntimeError) as error:
+        raise HTTPException(503, f"라벨 데이터셋을 읽을 수 없습니다: {error}") from error
+
+
+@app.get("/api/labeled-dataset/{page_id}/image")
+async def labeled_dataset_image(page_id: str) -> StreamingResponse:
+    from src.web.backend import labeled_dataset as labeled
+
+    try:
+        path = await asyncio.to_thread(labeled.image_path, page_id)
+    except KeyError as error:
+        raise HTTPException(404, "라벨 데이터셋에 없는 페이지입니다.") from error
+    except Exception as error:
+        raise HTTPException(502, f"원본 이미지를 가져오지 못했습니다: {error}") from error
+    return StreamingResponse(_stream_file(path), media_type="image/png",
+                             headers={"Content-Disposition": "inline", "Content-Length": str(path.stat().st_size)})
+
+
+@app.post("/api/sessions/{session_id}/evaluate-labels")
+async def evaluate_labels(session_id: str, page: str = Query(...)) -> dict:
+    """Score a session's stored OCR lines against the labels of the dataset page it analysed."""
+    from src.web.backend import labeled_dataset as labeled
+
+    document_path = _session_path(session_id)
+    sources = sorted(OUT.glob(f"{session_id}.source.*"))
+    if not document_path.is_file() or not sources:
+        raise HTTPException(404, "대조할 분석 문서를 찾을 수 없습니다.")
+    try:
+        return await asyncio.to_thread(labeled.evaluate_session, page, _load_document(document_path), sources[0])
+    except KeyError as error:
+        raise HTTPException(404, "라벨 데이터셋에 없는 페이지입니다.") from error
+    except ValueError as error:
+        raise HTTPException(409, str(error)) from error
 
 
 @app.delete("/api/sessions/{session_id}")

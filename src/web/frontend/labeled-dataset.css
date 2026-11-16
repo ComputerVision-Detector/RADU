@@ -1,0 +1,29 @@
+#labeled-summary.labeled-error{color:#b3261e}
+.modal.labeled-result{width:min(1280px,100%)}
+.labeled-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:12px 0}
+.labeled-metrics div{padding:10px 12px;border:1px solid #dfe4ee;border-radius:8px;background:#f7f9fc}
+.labeled-metrics b{display:block;font-size:20px}
+.labeled-metrics span{font-size:12px;color:#5b6577}
+.labeled-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-top:12px}
+.labeled-grid svg{width:100%;height:auto;max-height:72vh;border:1px solid #dfe4ee;background:#fff}
+.labeled-table{max-height:76vh;overflow:auto;border:1px solid #dfe4ee}
+.labeled-table table{width:100%;border-collapse:collapse;font-size:13px}
+.labeled-table th{position:sticky;top:0;background:#f1f4f9;text-align:left}
+.labeled-table th:first-child,.labeled-table td:first-child,.labeled-table th:last-child,.labeled-table td:last-child{white-space:nowrap}
+.labeled-table th,.labeled-table td{padding:6px 8px;border-bottom:1px solid #e8ecf3;vertical-align:top;word-break:break-word}
+.labeled-table tr.missed td,.labeled-table tr.wrong td:last-child{color:#b3261e}
+.labeled-table tr.held td{color:#7a8496}
+.labeled-box{fill:none;stroke-width:2}
+.labeled-box.exact{stroke:#1a8f4c}
+.labeled-box.wrong{stroke:#d98a00}
+.labeled-box.missed{stroke:#d3261e;fill:rgba(211,38,30,.12)}
+.labeled-box.extra{stroke:#3d6fd9;stroke-dasharray:6 4}
+.labeled-box.held{stroke:#8a93a3;stroke-dasharray:2 4}
+.labeled-legend{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 6px;font-size:12px}
+.labeled-legend span::before{content:"";display:inline-block;width:12px;height:12px;margin-right:4px;vertical-align:-2px;border:2px solid currentColor}
+.labeled-legend .exact{color:#1a8f4c}.labeled-legend .wrong{color:#d98a00}.labeled-legend .missed{color:#d3261e}
+.labeled-legend .extra{color:#3d6fd9}.labeled-legend .held{color:#8a93a3}
+@media (max-width:900px){.labeled-grid{grid-template-columns:1fr}}
+#local-split{flex:1;min-width:0}
+#local-load{flex:none;white-space:nowrap}
+#local-sample{margin-top:8px}

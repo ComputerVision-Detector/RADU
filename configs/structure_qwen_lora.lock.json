@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "engine": "qwen3vl-lora",
+  "config": "configs/qwen3_vl_4b_lora_final.json",
+  "max_new_tokens": 4096,
+  "groups": {
+    "diagram": {"tasks": ["nodes", "arrows", "relations"], "adapter": "models/radu/qwen3-vl-4b-lora-final/checkpoint-6000"},
+    "formula": {"tasks": ["formulas"], "adapter": "models/radu/qwen3-vl-4b-lora-final/checkpoint-18000"},
+    "table": {"tasks": ["tables"], "adapter": "models/radu/qwen3-vl-4b-lora-final/checkpoint-18000"}
+  },
+  "files": {
+    "configs/qwen3_vl_4b_lora_final.json": "f14efe3b5a42b2c62eb8de049e65e0b5aca879b8b424e3cf7615c1d500162329",
+    "models/radu/qwen3-vl-4b-lora-final/checkpoint-6000/adapter_model.safetensors": "4ad4e81127ad4a46838f3788c5e7e39db2685ef5735cd671503feb0debb4fac7",
+    "models/radu/qwen3-vl-4b-lora-final/checkpoint-6000/adapter_config.json": "9968e29ee78df92b627174ffc8be4487c154862816d34c389d792010a9797660",
+    "models/radu/qwen3-vl-4b-lora-final/checkpoint-18000/adapter_model.safetensors": "d5135b9567274654aed5622dcb0b14a12db6fdb1a85c96a156a9fc763eb98b03",
+    "models/radu/qwen3-vl-4b-lora-final/checkpoint-18000/adapter_config.json": "9968e29ee78df92b627174ffc8be4487c154862816d34c389d792010a9797660"
+  }
+}

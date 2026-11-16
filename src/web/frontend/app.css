@@ -29,3 +29,8 @@ button:focus-visible{outline:2px solid #5268e8;outline-offset:2px}
 .modal-backdrop.palette-dragging{pointer-events:none;opacity:.55}
 .editor-menubar{flex-wrap:nowrap;overflow-x:auto;min-height:47px;scrollbar-width:thin}.editor-menubar .button,.editor-menubar>span{flex:none}
 .style-toggle-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px;color:#556177;font-size:12px}.style-toggle-row label{display:flex;align-items:center;gap:5px;cursor:pointer}
+
+/* Optional OCR comparison; existing editor styles stay unchanged. */
+.modal.ocr-comparison{width:min(1120px,100%)}.ocr-comparison-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.ocr-comparison-panel{min-width:0}.ocr-comparison-panel h3{font-size:14px}.ocr-comparison-panel svg{width:100%;max-height:400px;display:block;background:#f5f6f8}.ocr-comparison-panel pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.6 system-ui}.ocr-comparison-panel [role=alert]{color:var(--red)}@media(max-width:760px){.ocr-comparison-grid{grid-template-columns:1fr}}
+
+.ocr-comparison .ocr-truncated-warning{padding:8px;background:#fff1dc;color:#8d5619}

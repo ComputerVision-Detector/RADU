@@ -195,6 +195,12 @@ def _clova(image: np.ndarray) -> tuple[str, dict[str, Any]]:
 
 def recognize(image: np.ndarray, engine: str, device: str | None = None) -> tuple[str, dict[str, Any]]:
     key = engine.strip().lower().replace("-", "").replace("_", "")
+    if key == "paddleocrvl16routed":
+        from src.cv.ocr_dual_route import recognize_routed
+        return recognize_routed(image, device)
+    if key == "paddleocrvl16lora":
+        from src.cv.ocr_lora import recognize_lora
+        return recognize_lora(image, device)
     if key in {"paddleocrv6", "ppocrv6"}:
         return _paddleocrv6(image, requested_device=device)
     if key in {"paddleocrvl16", "paddleocrvl1.6", "ppocrvl16"}:
