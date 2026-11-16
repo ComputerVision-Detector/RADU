@@ -27,3 +27,12 @@
 #local-split{flex:1;min-width:0}
 #local-load{flex:none;white-space:nowrap}
 #local-sample{margin-top:8px}
+#compare-ocr-reopen{margin-top:8px;height:auto;min-height:34px;padding:6px 11px;white-space:normal}
+.lora-models{margin-top:10px;font-size:11px;line-height:1.55;color:#5b6577}
+.lora-models summary{cursor:pointer;font-weight:650;color:#47536a}
+.lora-models ul{margin:6px 0 0;padding-left:16px}
+.lora-models li{margin-bottom:8px}
+.lora-models b{color:#20283a}
+.lora-models code{font-size:10px;word-break:break-all}
+.lora-models p{margin:6px 0 0}
+.modal .lora-models{margin-top:16px;padding-top:12px;border-top:1px solid #e5e8ee;font-size:12px}

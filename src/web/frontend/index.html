@@ -39,6 +39,13 @@
           <label class="field"><span>추론 장치</span><select id="device" class="control"><option value="cpu">CPU</option><option value="gpu:0">GPU 0</option><option value="gpu:1">GPU 1</option></select></label>
           <label class="field"><span>OCR 비교 기준</span><select id="ocr-compare-baseline" class="control"><option value="paddleocrvl16">PaddleOCR-VL 1.6</option><option value="paddleocrv6">PaddleOCR v6</option></select></label>
           <button class="button full" id="compare-ocr" disabled title="이미지를 분석한 뒤 GPU 장치를 선택해 같은 원본의 OCR 출력을 비교합니다">기존 엔진 · LoRA 비교</button>
+          <button class="button full" id="compare-ocr-reopen" hidden title="마지막 비교 결과를 다시 엽니다. 다른 이미지나 문서를 불러오면 지워집니다">비교 결과 다시 보기</button>
+          <details class="lora-models" id="lora-models"><summary>연결된 LoRA 모델 4개</summary><ul>
+            <li><b>한국어 필기 LoRA</b> — 이 비교의 LoRA 쪽 · 한국어 전용 모드 · 자동 모드의 기본 경로<br>기반 PaddleOCR-VL 1.6 · rank 8 / alpha 16 · 직접 라벨링한 한국어 노트 train 129쪽 · epoch 3 선택 (validation CER 14.2%)<br><code>data/experiments/ocr_v2_vl_lora/train/best-adapter</code></li>
+            <li><b>영문·도식 글자 LoRA</b> — 자동 모드에서 글자 영역별로 선택 (불확실하면 한국어 LoRA) · 이 비교에는 쓰지 않음<br>기반 PaddleOCR-VL 1.6 · rank 8 / alpha 16 · 공개 데이터 전사 9,920개 · epoch 2<br><code>data/experiments/ocr_radu_dual_route_20261113_01/epoch-2-adapter</code></li>
+            <li><b>Qwen3-VL 도식 LoRA</b> — 구조 인식 "도식" (도형·화살표·연결) · 이 비교에는 쓰지 않음<br>기반 Qwen3-VL-4B-Instruct · rank 16 / alpha 32 · 16개 source 학습의 step 6,000<br><code>models/radu/qwen3-vl-4b-lora-final/checkpoint-6000</code></li>
+            <li><b>Qwen3-VL 수식·표 LoRA</b> — 구조 인식 "수식", "표" · 이 비교에는 쓰지 않음<br>같은 학습의 step 18,000 (19,347 step에서 중단한 학습 중 선택)<br><code>models/radu/qwen3-vl-4b-lora-final/checkpoint-18000</code></li>
+          </ul><p>비교 기준(PaddleOCR-VL 1.6, PaddleOCR v6)은 LoRA가 없는 원본 엔진입니다.</p></details>
           <p class="hint">자동 검출은 후보 결과입니다. 텍스트·도형·화살표와 연결 방향을 원본에서 확인해 주세요.</p>
         </section>
         <section class="panel-section">

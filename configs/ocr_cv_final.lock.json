@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "release": "radu-cv-final-2026-11-16-structure-datasets",
+  "release": "radu-cv-final-2026-11-16-compare-history",
   "engine": "paddleocrvl16routed",
   "base_deployment_sha256": "ada51f815b41e3396a8bcd1bd02a1ca979421807fb95ca2009c0f13d3c57550f",
   "parent_sha256": "ab1bfcfba5c0711ebfc82e83432eca13b47fbb48ca0800d9e7b4d590e15421e5",
@@ -10,7 +10,7 @@
     "src/cv/ocr_dual_route_worker.py": "30422e4616c3df954079c64f82b378a10fbe3934406e8bd9a9e0255acabeabbc",
     "src/cv/ocr_engine.py": "ccdba4a232d51248ec1f2037d7d12965aee4159c21185cdf89ad6f99db52e43d",
     "src/web/backend/app.py": "b8d61f262406d9c25dcb1b5a048762e92a081ff7bfc9ee12af481bee2ce506fb",
-    "src/web/frontend/index.html": "a087417453cef486aed6c43bba053ea9892980293af963ea395dab222b3a2255",
-    "src/web/frontend/app.js": "f4a0e001963d2f5a9cbb9cc6bfa2580e655e4dc72576b8d5dc47f2e29e7041e0"
+    "src/web/frontend/index.html": "95e00303feb24ed9a520686180a07d60a861d367da3cea225e1480d68638c038",
+    "src/web/frontend/app.js": "3bd4cc9c044fe0e8f8c7bebf6ac3a85482246f0f70e9d9352fc861084fe97b49"
   }
 }

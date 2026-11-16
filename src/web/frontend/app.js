@@ -319,10 +319,21 @@
     }
     cvDeviceActive = active;
   }
+  // The last engine/LoRA comparison stays available until another image or document is loaded.
+  let lastOcrComparison = null;
   function updateOcrCompareAvailability() {
     const button = $("#compare-ocr");
     if (button) button.disabled = state.busy || !state.doc?.image?.source_url ||
       !/^[a-f0-9]{32}$/.test(state.doc?.session_id || "");
+    const reopen = $("#compare-ocr-reopen");
+    if (reopen) {
+      reopen.hidden = !lastOcrComparison;
+      if (lastOcrComparison) reopen.textContent = "비교 결과 다시 보기 · " + lastOcrComparison.baselineLabel + " · " + lastOcrComparison.time;
+    }
+  }
+  function forgetOcrComparison() {
+    lastOcrComparison = null;
+    updateOcrCompareAvailability();
   }
   function render() {
     RaduModel.normalize(state.doc);
@@ -1030,6 +1041,7 @@
     ) return;
     if (state.previewUrl) URL.revokeObjectURL(state.previewUrl);
     beginDocumentReplacement();
+      forgetOcrComparison();
     state.previewUrl = null;
     state.file = null;
     state.doc = {
@@ -1868,6 +1880,7 @@
       const kind = button.dataset.template;
       const size = dimensions();
       beginDocumentReplacement();
+      forgetOcrComparison();
       if (state.previewUrl) URL.revokeObjectURL(state.previewUrl);
       state.previewUrl = null;
       state.doc = {version:"1.0",name:"새 순서도 프로젝트",image:{width:size.width,height:size.height},elements:[],relations:[],warnings:[]};
@@ -2132,6 +2145,7 @@
         return;
       }
       if (state.previewUrl) URL.revokeObjectURL(state.previewUrl);
+      forgetOcrComparison();
       state.previewUrl = url;
       state.viewMode = "overlay";
       state.file = file;
@@ -2171,7 +2185,25 @@
       const query = new URLSearchParams({ baseline, device });
       const response = await request("/api/sessions/" + sessionId + "/compare-ocr?" + query, { method: "POST" });
       const result = await response.json();
-      const labels = { paddleocrv6: "PaddleOCR v6", paddleocrvl16: "PaddleOCR-VL 1.6", paddleocrvl16lora: "PaddleOCR-VL 1.6 + LoRA" };
+      lastOcrComparison = { result, sessionId, baselineLabel: OCR_COMPARISON_LABELS[baseline] || baseline,
+        time: new Date().toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" }) };
+      showOcrComparison();
+      const truncated = result.results.some((item) => (item.metadata?.generation_limit_regions || []).length);
+      status(result.successful_engines !== 2 ? "일부 엔진의 비교에 실패했습니다. 오류 내용을 확인해 주세요." : truncated ? "비교 완료 · 일부 출력의 길이 한도를 확인해 주세요." : "OCR 출력 비교를 완료했습니다.", result.successful_engines === 2 && !truncated ? "ready" : "error");
+    } catch (error) {
+      toast(error.message || "OCR 비교에 실패했습니다.", true);
+      status("OCR 비교에 실패했습니다.", "error");
+    } finally {
+      state.busy = false;
+      $("#analyze").disabled = false;
+      render();
+    }
+  }
+  const OCR_COMPARISON_LABELS = { paddleocrv6: "PaddleOCR v6", paddleocrvl16: "PaddleOCR-VL 1.6", paddleocrvl16lora: "PaddleOCR-VL 1.6 + 한국어 LoRA" };
+  function showOcrComparison() {
+    if (!lastOcrComparison) return;
+    {
+      const { result, sessionId } = lastOcrComparison, labels = OCR_COMPARISON_LABELS;
       const width = result.width, height = result.height;
       const panels = result.results.map((item) => {
         if (item.error) return '<section class="ocr-comparison-panel"><h3>' + esc(labels[item.engine] || item.engine) + '</h3><p role="alert">' + esc(item.error) + '</p></section>';
@@ -2191,19 +2223,11 @@
         const warning = limited ? '<p class="ocr-truncated-warning" role="status">' + limited + '개 영역이 출력 길이 한도에 도달했습니다. 누락된 내용이 없는지 원본과 대조해 주세요.</p>' : '';
         return '<section class="ocr-comparison-panel"><h3>' + esc(labels[item.engine] || item.engine) + '</h3><p>' + (item.lines || []).length + '개 영역 · ' + Number(item.seconds).toFixed(2) + '초</p>' + warning + '<svg role="img" aria-label="' + esc(labels[item.engine] || item.engine) + ' 검출 위치" viewBox="0 0 ' + width + ' ' + height + '"><image href="/api/sessions/' + sessionId + '/processed-image" width="' + width + '" height="' + height + '"/>' + rectangles + '</svg><pre>' + esc(item.text) + '</pre></section>';
       }).join("");
-      $("#modal-root").innerHTML = '<div class="modal-backdrop"><div class="modal ocr-comparison" role="dialog" aria-modal="true" aria-label="OCR 엔진 비교"><div class="modal-head"><h2>기존 엔진 · LoRA 비교</h2><button class="modal-close" aria-label="닫기">×</button></div><p class="hint">같은 전처리 이미지의 텍스트와 검출 위치입니다. 엔진별 검출 방식이 다르며, 정답 라벨 없는 이미지의 정확도 점수는 계산하지 않습니다. 편집 중인 문서는 변경하지 않습니다.</p><div class="ocr-comparison-grid">' + panels + '</div></div></div>';
+      const models = $("#lora-models");
+      $("#modal-root").innerHTML = '<div class="modal-backdrop"><div class="modal ocr-comparison" role="dialog" aria-modal="true" aria-label="OCR 엔진 비교"><div class="modal-head"><h2>기존 엔진 · LoRA 비교 · ' + esc(lastOcrComparison.time) + '</h2><button class="modal-close" aria-label="닫기">×</button></div><p class="hint">같은 전처리 이미지의 텍스트와 검출 위치입니다. 엔진별 검출 방식이 다르며, 정답 라벨 없는 이미지의 정확도 점수는 계산하지 않습니다. 편집 중인 문서는 변경하지 않습니다. 창을 닫아도 다른 이미지를 불러오기 전까지 왼쪽 "비교 결과 다시 보기"로 다시 열 수 있습니다.</p><div class="ocr-comparison-grid">' + panels + '</div>' + (models ? '<details class="lora-models" open>' + models.innerHTML + '</details>' : '') + '</div></div>';
       $(".modal-close").onclick = closeModal;
       $(".modal-close").focus();
       $(".modal-backdrop").onclick = (event) => { if (event.target === event.currentTarget) closeModal(); };
-      const truncated = result.results.some((item) => (item.metadata?.generation_limit_regions || []).length);
-      status(result.successful_engines !== 2 ? "일부 엔진의 비교에 실패했습니다. 오류 내용을 확인해 주세요." : truncated ? "비교 완료 · 일부 출력의 길이 한도를 확인해 주세요." : "OCR 출력 비교를 완료했습니다.", result.successful_engines === 2 && !truncated ? "ready" : "error");
-    } catch (error) {
-      toast(error.message || "OCR 비교에 실패했습니다.", true);
-      status("OCR 비교에 실패했습니다.", "error");
-    } finally {
-      state.busy = false;
-      $("#analyze").disabled = false;
-      render();
     }
   }
   async function analyze() {
@@ -2471,6 +2495,7 @@
     try {
       const doc = validateImportedDoc(JSON.parse(await file.text()));
       beginDocumentReplacement();
+      forgetOcrComparison();
       state.doc = doc;
       state.file = null;
       if (state.previewUrl) URL.revokeObjectURL(state.previewUrl);
@@ -2614,6 +2639,7 @@
       const response = await request("/api/sessions/" + encodeURIComponent(id));
       const doc = await response.json();
       beginDocumentReplacement();
+      forgetOcrComparison();
       state.doc = doc;
       state.viewMode = doc.image.source_url ? "overlay" : "restored";
       state.file = null;
@@ -2819,6 +2845,7 @@
   $("#retry-analysis").onclick = analyze;
   $("#save").onclick = saveDocument;
   if ($("#compare-ocr")) $("#compare-ocr").onclick = compareOcr;
+  if ($("#compare-ocr-reopen")) $("#compare-ocr-reopen").onclick = showOcrComparison;
   $("#export-menu").onclick = exportMenu;
   $("#open-sessions").onclick = openSessions;
   $("#delete-selected").onclick = deleteSelected;

@@ -85,3 +85,15 @@ GPU가 필요하다(CPU는 400). OCR 모드와 독립이라 자동·한국어 �
 - `qwen-all`은 해당 내용이 없는 이미지에서도 수식·표를 만들어낼 수 있다(FC-A `writer12_10b`: 수식 1개와 페이지 전체 표 1개 오검출). 이미지 종류를 알면 해당 항목만 고른다.
 - "프로젝트 데이터셋"에서 `data/processed/radu_final`의 validation·test 이미지(16개 source, 5,088장)를 골라 입력으로 불러온다. train(약 187만 행)은 목록에 넣지 않았다. 불러오기만 하며, 구조 정답과의 자동 채점은 없다(목록에 정답 개수만 표시).
 - API: `GET /api/local-datasets`, `GET /api/local-datasets/{source}/{split}`, `GET /api/local-datasets/image?id=`. 코드: `src/web/backend/local_dataset.py`, `src/web/frontend/local-dataset.js`.
+
+## 비교 결과 다시 보기와 LoRA 목록 (2026-11-16 추가)
+
+- "기존 엔진 · LoRA 비교"를 한 번 실행하면 결과를 브라우저에 보관하고, 그 아래 "비교 결과 다시 보기" 버튼으로 다시 연다. 같은 이미지를 다시 분석해도 유지되고, 다른 이미지·문서(이미지 선택, 데이터셋 불러오기, JSON·문서 열기, 빈 캔버스, 템플릿)를 불러오면 지워진다. 새로고침하면 사라진다(서버에는 저장하지 않는다).
+- 비교의 LoRA 쪽은 한국어 필기 LoRA(`paddleocrvl16lora`)다. 왼쪽 "연결된 LoRA 모델 4개"와 비교 창 아래에 전체 목록이 있다.
+
+| LoRA | 기반 | 설정 | 학습 자료 | 쓰이는 곳 | 경로 |
+|---|---|---|---|---|---|
+| 한국어 필기 | PaddleOCR-VL 1.6 | r8 / α16 | 직접 라벨링한 노트 train 129쪽, epoch 3 선택 (validation CER 14.2%) | 한국어 전용 모드, 자동 모드 기본 경로, OCR 비교 | `data/experiments/ocr_v2_vl_lora/train/best-adapter` |
+| 영문·도식 글자 | PaddleOCR-VL 1.6 | r8 / α16 | 공개 데이터 전사 9,920개, epoch 2 | 자동 모드의 글자 영역별 선택 | `data/experiments/ocr_radu_dual_route_20261113_01/epoch-2-adapter` |
+| Qwen3-VL 도식 | Qwen3-VL-4B-Instruct | r16 / α32 | 16개 source, step 6,000 | 구조 인식 "도식" | `models/radu/qwen3-vl-4b-lora-final/checkpoint-6000` |
+| Qwen3-VL 수식·표 | Qwen3-VL-4B-Instruct | r16 / α32 | 같은 학습, step 18,000 | 구조 인식 "수식", "표" | `models/radu/qwen3-vl-4b-lora-final/checkpoint-18000` |
