@@ -1,0 +1,32 @@
+[
+  {
+    "page_id": "hf-0005",
+    "region_id": "hf-0005-line-0001",
+    "reference": "output Projection",
+    "before": "output Projection",
+    "after": "output Projection",
+    "before_errors": 0,
+    "after_errors": 0,
+    "change": "same"
+  },
+  {
+    "page_id": "hf-0005",
+    "region_id": "line-215ebf63-31c7-4df3-be52-8138f34469f7",
+    "reference": "input [2, 4096]",
+    "before": "- input [2,4096]",
+    "after": "- input [2,4096]",
+    "before_errors": 3,
+    "after_errors": 3,
+    "change": "same"
+  },
+  {
+    "page_id": "hf-0008",
+    "region_id": "hf-0008-line-0001",
+    "reference": "GPT-oss - Zob hugging face modeling gpt_oss",
+    "before": "GPT-OSS-Zob. hugging face modeling_gpt_Oss",
+    "after": "GPT-OSS-Zob. hugging face modeling_gpt_Oss",
+    "before_errors": 8,
+    "after_errors": 8,
+    "change": "same"
+  }
+]

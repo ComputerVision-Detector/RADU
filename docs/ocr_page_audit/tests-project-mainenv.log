@@ -1,0 +1,75 @@
+/home/user/Desktop/RADU/.venv/lib/python3.10/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_korean_normalization_and_exact_distances (test_ablation.AblationTests) ... ok
+test_micro_is_error_weighted_not_macro_average (test_ablation.AblationTests) ... ok
+test_qwen_id_mapping_preserves_order_and_unedited_lines (test_ablation.AblationTests) ... ok
+test_report_has_no_accuracy_without_verified_ground_truth (test_ablation.AblationTests) ... ok
+test_diff_segments_reconstruct_model_text_exactly (test_ablation_html.HtmlComparisonTests) ... ok
+test_report_is_static_preserves_coordinates_and_escapes_scripts (test_ablation_html.HtmlComparisonTests) ... ok
+test_git_blob_checksum_and_existing_corruption (test_acquire.AcquisitionTests) ... ok
+test_lfs_pointer_is_not_materialized_as_data (test_acquire.AcquisitionTests) ... HTML comparison: /tmp/tmpy__62jms/index.html (1 samples)
+MATERIALIZE 1/1; failures=1
+ok
+test_malicious_zip_cannot_escape (test_acquire.AcquisitionTests) ... ok
+test_materialize_checks_source_hash_and_copies (test_acquire.AcquisitionTests) ... MATERIALIZE 1/1; failures=0
+ok
+test_sha_pinned_lfs_cache_can_supply_real_data (test_acquire.AcquisitionTests) ... MATERIALIZE 1/1; failures=0
+ok
+test_traversal_and_windows_paths_rejected (test_acquire.AcquisitionTests) ... ok
+test_unverified_existing_file_is_not_trusted (test_acquire.AcquisitionTests) ... ok
+test_zip_roundtrip_and_no_overwrite (test_acquire.AcquisitionTests) ... ok
+test_restorer_verifies_existing_files_and_never_replaces_mismatches (test_annotation_sharing.AnnotationSharingTests) ... ok
+test_strict_inventory_validation_rejects_unexpected_files (test_annotation_sharing.AnnotationSharingTests) ... ok
+test_fa_validation_omits_relations_only (test_coco_normalize.CmpSplitTests) ... ok
+test_scan_shares_writer_groups_with_its_source (test_coco_normalize.CmpSplitTests) ... ok
+test_unknown_name_is_rejected (test_coco_normalize.CmpSplitTests) ... ok
+test_initial_arrow_has_open_source (test_coco_normalize.FaConnectivityTests) ... ok
+test_missing_target_still_fails (test_coco_normalize.FaConnectivityTests) ... ok
+test_validation_arrows_keep_geometry_without_relations (test_coco_normalize.FaConnectivityTests) ... ok
+test_excluded_images_are_dropped_and_coordinates_are_integers (test_coco_normalize.NormalizeTests) ... ok
+test_first_keypoint_is_arrow_start (test_coco_normalize.NormalizeTests) ... ok
+test_record_has_no_ocr_input (test_coco_normalize.NormalizeTests) ... ok
+test_relation_uses_source_connectivity_and_text_stays_out_of_target (test_coco_normalize.NormalizeTests) ... ok
+test_cross_split_group_is_rejected (test_coco_normalize.SplitTests) ... ok
+test_exact_duplicates_are_excluded_with_reason (test_coco_normalize.SplitTests) ... ok
+test_fc_a_variants_share_a_family_and_held_families_are_test_only (test_coco_normalize.SplitTests) ... ok
+test_fc_a_writers_never_cross_splits_and_is_deterministic (test_coco_normalize.SplitTests) ... ok
+test_hdbpmn_keeps_official_partition (test_coco_normalize.SplitTests) ... ok
+test_same_structure_templates_cannot_cross_held_boundary (test_coco_normalize.SplitTests) ... ok
+test_aggregate_micro_f1 (test_evaluate.ScoreTests) ... ok
+test_integer_ids_are_scored_like_strings (test_evaluate.ScoreTests) ... ok
+test_iou_disjoint_and_identical (test_evaluate.ScoreTests) ... ok
+test_malformed_output_scores_zero_without_crashing (test_evaluate.ScoreTests) ... ok
+test_one_gold_cannot_match_two_predictions (test_evaluate.ScoreTests) ... ok
+test_open_ended_relations_are_not_scored (test_evaluate.ScoreTests) ... ok
+test_perfect_prediction_with_different_ids (test_evaluate.ScoreTests) ... ok
+test_reversed_arrow_does_not_match (test_evaluate.ScoreTests) ... ok
+test_reversed_relation_is_wrong (test_evaluate.ScoreTests) ... ok
+test_structure_bucket_reads_manifest (test_evaluate.ScoreTests) ... ok
+test_unhashable_relation_endpoints_are_wrong_not_fatal (test_evaluate.ScoreTests) ... ok
+test_wrong_kind_does_not_match (test_evaluate.ScoreTests) ... ok
+test_group_stays_in_strictest_split_and_duplicates_drop (test_formula_table.BuildTests) ... ok
+test_ink_renders_with_strokes (test_formula_table.BuildTests) ... ok
+test_spans_push_later_cells_along (test_formula_table.GridTests) ... ok
+test_voc_spanning_cell_replaces_grid_cells (test_formula_table.GridTests) ... ok
+test_table_with_span_past_grid_is_skipped (test_formula_table.MalformedSourceTests) ... ok
+test_document_pages_share_one_group (test_formula_table.NewSourceTargetTests) ... ok
+test_hdflowmind_keeps_boxes_and_never_reads_text_objects (test_formula_table.NewSourceTargetTests) ... ok
+test_hme100k_skips_chinese_and_numbered_labels (test_formula_table.NewSourceTargetTests) ... ok
+test_ibem_page_with_broken_formula_is_dropped_and_align_stays_math (test_formula_table.NewSourceTargetTests) ... ok
+test_ibem_percent_boxes_become_pixels_and_sort_by_reading_order (test_formula_table.NewSourceTargetTests) ... ok
+test_large_page_keeps_grid_without_boxes_and_oversize_page_is_dropped (test_formula_table.NewSourceTargetTests) ... ok
+test_same_image_in_other_source_is_skipped (test_formula_table.NewSourceTargetTests) ... ok
+test_table_with_omitted_empty_cells_is_dropped (test_formula_table.NewSourceTargetTests) ... ok
+test_table_with_overlapping_source_cells_is_dropped (test_formula_table.NewSourceTargetTests) ... ok
+test_tabrecset_labels_count_from_one_and_drop_text (test_formula_table.NewSourceTargetTests) ... ok
+test_large_source_never_repeats_and_small_source_repeats_evenly (test_formula_table.SamplerTests) ... ok
+test_missing_share_is_refused (test_formula_table.SamplerTests) ... ok
+test_order_is_reproducible_for_resume (test_formula_table.SamplerTests) ... ok
+test_box_only_arrow_scores_by_box_and_arrow_without_box_or_ends_is_ignored (test_formula_table.ScoreTests) ... ok
+test_formula_match_ignores_spacing_only (test_formula_table.ScoreTests) ... ok
+test_table_scores_cell_grid_and_survives_bad_cells (test_formula_table.ScoreTests) ... ok
+test_cell_text_is_not_a_target (test_formula_table.ValidationTests) ... ok
+test_diagram_prompt_is_unchanged (test_formula_table.ValidationTests) ... ok
+test_overlap_and_out_of_grid_are_rejected (test_formula_table.ValidationTests) ... ok
+test_invalid_inputs_and_job_failures (test_hybrid.HybridTests) ... 

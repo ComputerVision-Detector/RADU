@@ -1,0 +1,39 @@
+{
+  "page": {
+    "source": "synthetic empty predictions; evaluator contract verification, not model performance",
+    "evaluated_pages": 113,
+    "missing_predictions": 111,
+    "failures": 1,
+    "metric": {
+      "samples": 113,
+      "substitutions": 0,
+      "deletions": 59649,
+      "insertions": 0,
+      "errors": 59649,
+      "reference_units": 59649,
+      "cer_micro": 1.0,
+      "cer_no_space_micro": 1.0,
+      "exact_match_rate": 0.0,
+      "empty_reference_insertions": 0
+    }
+  },
+  "recognition": {
+    "source": "synthetic empty predictions; evaluator contract verification, not model performance",
+    "evaluated_pages": 113,
+    "missing_predictions": 2890,
+    "failures": 0,
+    "metric": {
+      "samples": 2890,
+      "substitutions": 0,
+      "deletions": 56872,
+      "insertions": 0,
+      "errors": 56872,
+      "reference_units": 56872,
+      "cer_micro": 1.0,
+      "cer_no_space_micro": 1.0,
+      "exact_match_rate": 0.0,
+      "empty_reference_insertions": 0,
+      "region_exact_match_rate": 0.0
+    }
+  }
+}

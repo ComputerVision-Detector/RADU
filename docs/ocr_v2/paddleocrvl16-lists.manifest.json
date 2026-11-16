@@ -1,0 +1,16 @@
+{
+  "model": "PaddleOCR-VL-1.6",
+  "purpose": "direct recognition task lists for future training adapter; no training started",
+  "counts": {
+    "train": 2513,
+    "validation": 297,
+    "test": 235
+  },
+  "rejected": 0,
+  "max_label_tokens": 256,
+  "maximum_observed_label_tokens": 70,
+  "tokenizer_sha256": "c8a215a59183d0d0781adc33bacd3ce6162716f7fd568fb30234a74d69803a7d",
+  "dataset_manifest_sha256": "c8adbdb2abd9e9a2d775bc36bd40866f6592f658a5c6e8fc0d1a0247d1eb094a",
+  "length_scope": "label tokens only; future training preflight must budget image/prompt tokens separately",
+  "semantic_types": "suggestions pending human confirmation"
+}

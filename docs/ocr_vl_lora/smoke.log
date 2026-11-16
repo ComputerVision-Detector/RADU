@@ -1,0 +1,14 @@
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+Loading weights:   0%|          | 0/608 [00:00<?, ?it/s]Loading weights: 100%|██████████| 608/608 [00:00<00:00, 19117.61it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+[transformers] `PaddleOCRVLProcessor` defines `image_processor_class = 'AutoImageProcessor'`, which is deprecated. Register the correct mapping in `AutoImageProcessor` instead.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+{"inference": "before.validation.predictions.json", "done": 4, "total": 4, "seconds": 0.4221151992678642}
+{"inference": "epoch-1.validation.predictions.json", "done": 4, "total": 4, "seconds": 0.19004307314753532}
+{"epoch": 1, "step": 1, "mean_train_loss": 0.8183746710419655, "validation": {"samples": 4, "substitutions": 8, "deletions": 4, "insertions": 15, "errors": 27, "reference_units": 74, "cer_micro": 0.36486486486486486, "cer_no_space_micro": 0.38461538461538464, "exact_match_rate": 0.25, "empty_reference_insertions": 0}, "seconds": 0.5528044486418366}
+{"inference": "selected.reload-reference.json", "done": 4, "total": 4, "seconds": 0.18593862792477012}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+Loading weights:   0%|          | 0/608 [00:00<?, ?it/s]Loading weights: 100%|██████████| 608/608 [00:00<00:00, 17310.07it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+{"inference": "selected.reloaded.json", "done": 4, "total": 4, "seconds": 0.18522063503041863}

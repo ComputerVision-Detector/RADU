@@ -1,0 +1,58 @@
+{
+  "continue": [
+    {
+      "page": "hf-0001",
+      "region": "hf-0001-line-0002",
+      "image_grid": [
+        [
+          1,
+          8,
+          82
+        ]
+      ],
+      "input_tokens": 190,
+      "supervised_tokens": 13
+    },
+    {
+      "page": "hf-0045",
+      "region": "line-63639690-5f11-4ccc-97bb-e2c3a3b9f0d4",
+      "image_grid": [
+        [
+          1,
+          14,
+          70
+        ]
+      ],
+      "input_tokens": 299,
+      "supervised_tokens": 41
+    }
+  ],
+  "highres": [
+    {
+      "page": "hf-0001",
+      "region": "hf-0001-line-0002",
+      "image_grid": [
+        [
+          1,
+          12,
+          116
+        ]
+      ],
+      "input_tokens": 374,
+      "supervised_tokens": 13
+    },
+    {
+      "page": "hf-0045",
+      "region": "line-63639690-5f11-4ccc-97bb-e2c3a3b9f0d4",
+      "image_grid": [
+        [
+          1,
+          20,
+          98
+        ]
+      ],
+      "input_tokens": 544,
+      "supervised_tokens": 41
+    }
+  ]
+}

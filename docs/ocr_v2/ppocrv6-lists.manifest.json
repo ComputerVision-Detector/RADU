@@ -1,0 +1,14 @@
+{
+  "model": "PP-OCRv6_medium_rec",
+  "purpose": "recognition-only training/evaluation lists; no training started",
+  "max_text_length": 256,
+  "character_config_sha256": "991b700facf5b50a7de193468207d5f4255b538dde0d312ae3b7c7a9b6873129",
+  "dataset_manifest_sha256": "c8adbdb2abd9e9a2d775bc36bd40866f6592f658a5c6e8fc0d1a0247d1eb094a",
+  "charset_policy": "exact codepoints; space enabled; no normalization, truncation or replacement",
+  "counts": {
+    "train": 733,
+    "validation": 77,
+    "test": 50
+  },
+  "rejected": 2185
+}

@@ -1,0 +1,37 @@
+test_only_language_attention_is_adapted (tests.test_ocr_vl_lora.LoRAContract) ... ok
+test_padded_completed_generation_is_not_truncated (tests.test_ocr_vl_lora.LoRAContract) ... ok
+test_prefix_mismatch_cannot_train (tests.test_ocr_vl_lora.LoRAContract) ... ok
+test_prompt_and_padding_are_not_supervised_eos_is (tests.test_ocr_vl_lora.LoRAContract) ... ok
+test_cardinality_matching_beats_greedy (tests.test_ocr_v2.BuildTests) ... ok
+test_exact_duplicate_and_invalid_ids_orders (tests.test_ocr_v2.BuildTests) ... ok
+test_export_reports_unsupported_without_substitution (tests.test_ocr_v2.BuildTests) ... ok
+test_full_conversion_and_snapshot_tamper (tests.test_ocr_v2.BuildTests) ... ok
+test_geometry_and_provenance (tests.test_ocr_v2.DataTests) ... ok
+test_multiline_formula_preserved (tests.test_ocr_v2.DataTests) ... ok
+test_prediction_is_never_ground_truth (tests.test_ocr_v2.DataTests) ... ok
+test_transitive_group_split (tests.test_ocr_v2.DataTests) ... ok
+test_uncertain_empty_unreviewed_and_no_text (tests.test_ocr_v2.DataTests) ... ok
+test_empty_failure_and_missing (tests.test_ocr_v2.MetricTests) ... ok
+test_nfc_and_single_edits (tests.test_ocr_v2.MetricTests) ... ok
+test_one_to_one_miss_and_false_positive (tests.test_ocr_v2.MetricTests) ... ok
+test_order_and_exclusion (tests.test_ocr_v2.MetricTests) ... ok
+test_reject_wrong_recognition_mode (tests.test_ocr_v2.MetricTests) ... ok
+test_crop_pixels_against_source (tests.test_ocr_v2.ProvenanceTests) ... ok
+test_page_ground_truth_drift (tests.test_ocr_v2.ProvenanceTests) ... ok
+test_page_inference_integrity (tests.test_ocr_v2.ProvenanceTests) ... ok
+test_prediction_dataset_binding (tests.test_ocr_v2.ProvenanceTests) ... ok
+test_snapshot_binding (tests.test_ocr_v2.ProvenanceTests) ... ok
+test_vl_labels_preserved_and_token_overflow_reported (tests.test_ocr_v2.VLExportTests) ... ok
+test_changed_crop_fails_before_inference (tests.test_ocr_finetune.FineTuneContract) ... ok
+test_comparison_includes_empty_failures_and_nfc (tests.test_ocr_finetune.FineTuneContract) ... ok
+test_evaluation_rejects_changed_preprocessing (tests.test_ocr_finetune.FineTuneContract) ... ok
+test_long_labels_need_repeat_aware_ctc_budget (tests.test_ocr_finetune.FineTuneContract) ... ok
+test_screen_never_substitutes_prediction (tests.test_ocr_finetune.FineTuneContract) ... ok
+test_zero_baseline_relative_is_none (tests.test_ocr_finetune.FineTuneContract) ... ok
+test_excluded_predictions_and_ambiguous_overlaps (tests.test_ocr_finetune_page.PageAdapterContract) ... ok
+test_reading_order_is_fixed_y_then_x (tests.test_ocr_finetune_page.PageAdapterContract) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.037s
+
+OK

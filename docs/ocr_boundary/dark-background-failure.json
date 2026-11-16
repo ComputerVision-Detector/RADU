@@ -1,0 +1,44 @@
+[
+  {
+    "page_id": "hf-0157",
+    "region_id": "hf-0157-line-0026",
+    "original_size": [
+      1209,
+      82
+    ],
+    "trim_bbox": [
+      933,
+      25,
+      1209,
+      69
+    ],
+    "retained_width_fraction": 0.228287841191067,
+    "gray_median_original": 124.0,
+    "gray_median_removed_prefix": 122.0,
+    "removed_prefix_dark_fraction": 1.0,
+    "before_errors": 5,
+    "after_errors": 33,
+    "conclusion": "original/trim image pair visibly loses most of sentence; fixed grayscale mask plus long-run removal fails on dark paper/shadow; do not use candidate"
+  },
+  {
+    "page_id": "hf-0157",
+    "region_id": "hf-0157-line-0027",
+    "original_size": [
+      1609,
+      105
+    ],
+    "trim_bbox": [
+      1005,
+      24,
+      1609,
+      88
+    ],
+    "retained_width_fraction": 0.37538844002486016,
+    "gray_median_original": 127.0,
+    "gray_median_removed_prefix": 122.0,
+    "removed_prefix_dark_fraction": 1.0,
+    "before_errors": 4,
+    "after_errors": 29,
+    "conclusion": "original/trim image pair visibly loses most of sentence; fixed grayscale mask plus long-run removal fails on dark paper/shadow; do not use candidate"
+  }
+]

@@ -1,0 +1,93 @@
+{
+  "config": {
+    "parent_config": "configs/ocr_v2_vl_lora.json",
+    "parent_adapter": "data/experiments/ocr_v2_vl_lora/train/best-adapter",
+    "clean_train": "data/processed/ocr_v2/train-audit-round3/clean-train.json",
+    "clean_manifest": "data/processed/ocr_v2/train-audit-round3/clean-manifest.json",
+    "audit_decisions": "data/processed/ocr_v2/train-audit-round3/decisions.json",
+    "output": "data/experiments/ocr_v2_vl_lora_round3",
+    "epochs": 3,
+    "learning_rate": 2e-05,
+    "seed": 42,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "visual_last_layers": 4,
+    "batch_size": 2,
+    "accumulation": 4,
+    "quarantined_validation_pages": [
+      "hf-0019",
+      "hf-0095"
+    ],
+    "test_status": "exploratory reused test; no new test inference before validation-only selection",
+    "selection": "minimum validation244 micro CER among unchanged parent and both clean-train arms"
+  },
+  "effective": {
+    "model": "models/vision_language/PaddleOCR-VL-1.6",
+    "dataset": "data/processed/ocr_v2/pilot-v2",
+    "output": "data/experiments/ocr_v2_vl_lora",
+    "seed": 42,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "batch_size": 2,
+    "accumulation": 4,
+    "epochs": 3,
+    "min_pixels": 112896,
+    "max_pixels": 200704,
+    "max_sequence": 768,
+    "max_new_tokens": 128,
+    "generation_batch_size": 4,
+    "prompt": "OCR:",
+    "device": "cuda:0",
+    "test_status": "exploratory reused test; no new test inference before validation-only selection"
+  },
+  "input_hashes": {
+    "data/processed/ocr_v2/train-audit-round3/clean-train.json": "0862c4fbd2ab67c63a32dc0b58aeacef8e16391a15f71214ae1ed174d0185327",
+    "data/processed/ocr_v2/train-audit-round3/clean-manifest.json": "48e4b2349198733300cf8636dd23aafd38f8c3d63ab94cf9bf6f559c892d26ea",
+    "data/processed/ocr_v2/train-audit-round3/decisions.json": "9bca70a831e7903eda864e0457faae0155d069da860f22175b564f407b201658",
+    "data/experiments/ocr_v2_vl_lora/train/best-adapter/adapter_model.safetensors": "ab1bfcfba5c0711ebfc82e83432eca13b47fbb48ca0800d9e7b4d590e15421e5",
+    "data/experiments/ocr_v2_vl_lora/train/best-adapter/adapter_config.json": "f68fe0b7694f220dee10845075cbabfaed88cab46906a5ce58bab5304b5f729d",
+    "models/vision_language/PaddleOCR-VL-1.6/processor_config.json": "1568858960a9760c54431dae693a6152e601ff55cdf6d2eab97a4a99958faea0",
+    "models/vision_language/PaddleOCR-VL-1.6/config.json": "ce7f4565f8b1db78532ad5d1b9ebe55c2139d49bd4cb04778b580a08a598f171",
+    "models/vision_language/PaddleOCR-VL-1.6/generation_config.json": "a6701d78ab3b4d972307cdec3b69d4c13f46e0d5140514f50ab7d84259324b94",
+    "models/vision_language/PaddleOCR-VL-1.6/tokenizer.json": "c8a215a59183d0d0781adc33bacd3ce6162716f7fd568fb30234a74d69803a7d",
+    "models/vision_language/PaddleOCR-VL-1.6/special_tokens_map.json": "d3a125c03103deb2acaf7730791bdbbf196f620e5a2213b664511ff9b4b25bab",
+    "models/vision_language/PaddleOCR-VL-1.6/tokenizer_config.json": "1f979337347cc0cb72a6282d8a23ed183539aa81a87a906f022aee2bab83c7c5",
+    "models/vision_language/PaddleOCR-VL-1.6/chat_template.jinja": "2f27812dab7f333e471884e0c803d807f11953d5453140dfb1aaba234f872bc8",
+    "models/vision_language/PaddleOCR-VL-1.6/model.safetensors": "85a479d506a11e724e7285d395c551be69f41dbc16b6342d3cacfb189aed71db",
+    "models/vision_language/PaddleOCR-VL-1.6/added_tokens.json": "f59f889088e0fe21c523e7cf121bb6dca3b0bb148cb7159fbb4572c74dfc5644",
+    "models/vision_language/PaddleOCR-VL-1.6/preprocessor_config.json": "111872ab1e8bb7fd040ac5087bfced7ab8f011f02139b088cba294964c3b1d0e"
+  },
+  "dataset_manifest_sha256": "c8adbdb2abd9e9a2d775bc36bd40866f6592f658a5c6e8fc0d1a0247d1eb094a",
+  "source_hashes": {
+    "/home/user/Desktop/RADU/src/training/ocr_clean_vision.py": "ed473f9a998a7c510775667a674ec149fd499a6991944b23d29e4fa61cf663e8",
+    "src/ocr_data/train_audit.py": "7160f48373793686abddae676eafcc8d95a1ed756db73c46afd6a94d7d5d9c53",
+    "src/training/ocr_vl_lora.py": "bc81f9afb7cd736ad6ab86373dad27a9412e60b20ebac233971675c54a17d072"
+  },
+  "train": {
+    "original": 2513,
+    "clean": 2341,
+    "held": 172,
+    "pages": 108
+  },
+  "validation": {
+    "full": 297,
+    "primary": 244,
+    "baseline": {
+      "samples": 244,
+      "substitutions": 505,
+      "deletions": 101,
+      "insertions": 112,
+      "errors": 718,
+      "reference_units": 5613,
+      "cer_micro": 0.12791733475859612,
+      "cer_no_space_micro": 0.13044425087108014,
+      "exact_match_rate": 0.21311475409836064,
+      "empty_reference_insertions": 0
+    }
+  },
+  "test_accessed": false
+}

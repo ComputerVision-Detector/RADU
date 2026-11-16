@@ -1,0 +1,2742 @@
+[
+  {
+    "prediction_id": "hf-0008/det-0007",
+    "image_id": "hf-0008",
+    "bbox": [
+      1387,
+      886,
+      1439,
+      949
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0008-line-0006"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "isolated_arrow_or_brace",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 0,
+    "text": "↓",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0007.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0009",
+    "image_id": "hf-0008",
+    "bbox": [
+      1409,
+      1071,
+      2062,
+      1147
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0008-line-0008"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 1,
+    "text": "L GPT OSS Rostary Embedding",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0009.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0012",
+    "image_id": "hf-0008",
+    "bbox": [
+      1731,
+      1394,
+      2027,
+      1474
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-fce3cae9-c0fb-428c-9698-b41d0b46ba0b"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 2,
+    "text": "free处",
+    "new_match": {
+      "prediction_id": "hf-0008/det-0012",
+      "annotation_id": "line-fce3cae9-c0fb-428c-9698-b41d0b46ba0b",
+      "iou": 0.6909975669099757
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0012.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0013",
+    "image_id": "hf-0008",
+    "bbox": [
+      1765,
+      1499,
+      1881,
+      1588
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-8211a948-b567-49af-8f31-10aa2b37dfe8"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 3,
+    "text": "cos",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0013.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0014",
+    "image_id": "hf-0008",
+    "bbox": [
+      1757,
+      1617,
+      1851,
+      1688
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-746e7045-f373-48c2-997e-c0c97045c245"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 4,
+    "text": "Sin",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0014.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0015",
+    "image_id": "hf-0008",
+    "bbox": [
+      1379,
+      1747,
+      1439,
+      1814
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-ebef08ff-c18f-45bb-b980-205a8d69119b"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "isolated_arrow_or_brace",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 5,
+    "text": "↓",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0015.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0017",
+    "image_id": "hf-0008",
+    "bbox": [
+      1533,
+      1961,
+      2096,
+      2037
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-15f4e0c4-7288-4ca0-af8f-65e51e10ebb7"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 6,
+    "text": "Gpt-OssModel, forward(1)",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0017.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0018",
+    "image_id": "hf-0008",
+    "bbox": [
+      1632,
+      2066,
+      2226,
+      2163
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-a977de18-6fbb-4080-b3bd-99ed6cf33b1f"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 7,
+    "text": "Create_Gausal_mask()",
+    "new_match": {
+      "prediction_id": "hf-0008/det-0018",
+      "annotation_id": "line-a977de18-6fbb-4080-b3bd-99ed6cf33b1f",
+      "iou": 0.707774798927614
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0018.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0019",
+    "image_id": "hf-0008",
+    "bbox": [
+      1657,
+      2175,
+      2556,
+      2281
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-9039bdd8-e05d-4e85-baee-8e4453798b9e"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 8,
+    "text": "create_slide_window_causal_mask()",
+    "new_match": {
+      "prediction_id": "hf-0008/det-0019",
+      "annotation_id": "line-9039bdd8-e05d-4e85-baee-8e4453798b9e",
+      "iou": 0.7598643649815043
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0019.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0020",
+    "image_id": "hf-0008",
+    "bbox": [
+      1392,
+      2297,
+      1469,
+      2386
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-02d77f7f-63da-4ffd-bda1-4c70748eab3c"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "isolated_arrow_or_brace",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 9,
+    "text": "↓",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0020.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0023",
+    "image_id": "hf-0008",
+    "bbox": [
+      1546,
+      2633,
+      2040,
+      2726
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-7be92727-7df8-4c38-8a00-4c1bf6d91a6f"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 10,
+    "text": "- Input RUSNorm",
+    "new_match": {
+      "prediction_id": "hf-0008/det-0023",
+      "annotation_id": "line-7be92727-7df8-4c38-8a00-4c1bf6d91a6f",
+      "iou": 0.9016111437442309
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0023.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0024",
+    "image_id": "hf-0008",
+    "bbox": [
+      1641,
+      2755,
+      1997,
+      2843
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-e668c01d-d7f1-42ad-88e2-83061214535c"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 11,
+    "text": "self - Attention",
+    "new_match": {
+      "prediction_id": "hf-0008/det-0024",
+      "annotation_id": "line-e668c01d-d7f1-42ad-88e2-83061214535c",
+      "iou": 0.663627175743964
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0024.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0025",
+    "image_id": "hf-0008",
+    "bbox": [
+      1796,
+      2869,
+      2126,
+      2957
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-cd65dd4b-101e-4909-b2a1-5bdb11e89177"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 12,
+    "text": "Q Projection",
+    "new_match": {
+      "prediction_id": "hf-0008/det-0025",
+      "annotation_id": "line-cd65dd4b-101e-4909-b2a1-5bdb11e89177",
+      "iou": 0.655649820434081
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0025.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0026",
+    "image_id": "hf-0008",
+    "bbox": [
+      1826,
+      2995,
+      2113,
+      3074
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-98c5207b-d452-4b7c-8753-103a0382652a"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 13,
+    "text": "KProjection",
+    "new_match": {
+      "prediction_id": "hf-0008/det-0026",
+      "annotation_id": "line-98c5207b-d452-4b7c-8753-103a0382652a",
+      "iou": 0.5009279307145067
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0026.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0027",
+    "image_id": "hf-0008",
+    "bbox": [
+      1838,
+      3104,
+      2105,
+      3196
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-60664bb8-e89a-45bd-8379-e135ef8f4d40"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 14,
+    "text": "UpProjection",
+    "new_match": {
+      "prediction_id": "hf-0008/det-0027",
+      "annotation_id": "line-60664bb8-e89a-45bd-8379-e135ef8f4d40",
+      "iou": 0.5835810456373491
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0027.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0028",
+    "image_id": "hf-0008",
+    "bbox": [
+      1816,
+      3221,
+      2174,
+      3327
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-e40d9398-df52-4237-9158-9e524e5af215"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 15,
+    "text": "Q/K/V Reshape",
+    "new_match": {
+      "prediction_id": "hf-0008/det-0028",
+      "annotation_id": "line-e40d9398-df52-4237-9158-9e524e5af215",
+      "iou": 0.6559637029927581
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0028.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0029",
+    "image_id": "hf-0008",
+    "bbox": [
+      1834,
+      3339,
+      1985,
+      3452
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-4ef06ee1-ee25-4927-b6c9-89145d196095"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 16,
+    "text": "RoPE",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0029.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0030",
+    "image_id": "hf-0008",
+    "bbox": [
+      1825,
+      3464,
+      2325,
+      3579
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-f2efa121-e408-4097-b326-3c2cf2a6255b"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 17,
+    "text": "K U Cache Update",
+    "new_match": {
+      "prediction_id": "hf-0008/det-0030",
+      "annotation_id": "line-f2efa121-e408-4097-b326-3c2cf2a6255b",
+      "iou": 0.768766130360771
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0030.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0008/det-0031",
+    "image_id": "hf-0008",
+    "bbox": [
+      1825,
+      3582,
+      2346,
+      3688
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-499d6aed-0afa-4517-a453-d8b0fa4afb7e"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 18,
+    "text": "Attention Inter face",
+    "new_match": {
+      "prediction_id": "hf-0008/det-0031",
+      "annotation_id": "line-499d6aed-0afa-4517-a453-d8b0fa4afb7e",
+      "iou": 0.7346038388065133
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0008-0031.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0013/det-0004",
+    "image_id": "hf-0013",
+    "bbox": [
+      355,
+      503,
+      1651,
+      648
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-8533e22f-03ce-40af-9256-090900453284",
+      "line-9a14ca7d-daca-40a3-adce-865bf535fed3"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 19,
+    "text": "- 직어진 환정에서 크어진 목표를 향해 행동하는 것.",
+    "new_match": {
+      "prediction_id": "hf-0013/det-0004",
+      "annotation_id": "line-8533e22f-03ce-40af-9256-090900453284",
+      "iou": 0.8288202346720451
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0013-0004.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0013/det-0007",
+    "image_id": "hf-0013",
+    "bbox": [
+      914,
+      974,
+      2067,
+      1101
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "hf-0013-line-0005"
+    ],
+    "held_GT": [
+      "hf-0013-line-0004"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 20,
+    "text": "- 정류터와 관련된. '컴퓨터를 이용하여 만드는",
+    "new_match": {
+      "prediction_id": "hf-0013/det-0007",
+      "annotation_id": "hf-0013-line-0005",
+      "iou": 0.9093485365967771
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0013-0007.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0013/det-0010",
+    "image_id": "hf-0013",
+    "bbox": [
+      811,
+      1364,
+      1414,
+      1471
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "hf-0013-line-0008"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 21,
+    "text": "인공일반지능 (법용인공지능).",
+    "new_match": {
+      "prediction_id": "hf-0013/det-0010",
+      "annotation_id": "hf-0013-line-0008",
+      "iou": 0.8278673596615346
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0013-0010.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0013/det-0020",
+    "image_id": "hf-0013",
+    "bbox": [
+      373,
+      2587,
+      1229,
+      2705
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "hf-0013-line-0017"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 22,
+    "text": "- 이전에 발생한 경험을 활용한다.",
+    "new_match": {
+      "prediction_id": "hf-0013/det-0020",
+      "annotation_id": "hf-0013-line-0017",
+      "iou": 0.8781628669293948
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0013-0020.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0013/det-0021",
+    "image_id": "hf-0013",
+    "bbox": [
+      846,
+      2696,
+      1074,
+      2831
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "hf-0013-line-0017",
+      "hf-0013-line-0020"
+    ],
+    "held_GT": [
+      "hf-0013-line-0021"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 23,
+    "text": "T데이터",
+    "new_match": {
+      "prediction_id": "hf-0013/det-0021",
+      "annotation_id": "hf-0013-line-0020",
+      "iou": 0.76374156219865
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0013-0021.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0029/det-0004",
+    "image_id": "hf-0029",
+    "bbox": [
+      295,
+      806,
+      675,
+      925
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "hf-0029-line-0005",
+      "hf-0029-line-0006"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 24,
+    "text": "· RMS prop:",
+    "new_match": {
+      "prediction_id": "hf-0029/det-0004",
+      "annotation_id": "hf-0029-line-0005",
+      "iou": 0.8967605458542453
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0029-0004.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0029/det-0007",
+    "image_id": "hf-0029",
+    "bbox": [
+      266,
+      1331,
+      533,
+      1445
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "hf-0029-line-0008"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 25,
+    "text": "· Adam",
+    "new_match": {
+      "prediction_id": "hf-0029/det-0007",
+      "annotation_id": "hf-0029-line-0008",
+      "iou": 0.8615491249350199
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0029-0007.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0029/det-0017",
+    "image_id": "hf-0029",
+    "bbox": [
+      249,
+      3066,
+      2320,
+      3196
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "hf-0029-line-0019"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 26,
+    "text": "· 답댁에 A 하이퍼 애패변수 회적화를 제배로 하면 사간이 많이 길하는 이유.",
+    "new_match": {
+      "prediction_id": "hf-0029/det-0017",
+      "annotation_id": "hf-0029-line-0019",
+      "iou": 0.8324386701934547
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0029-0017.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0033/det-0005",
+    "image_id": "hf-0033",
+    "bbox": [
+      261,
+      457,
+      1221,
+      606
+    ],
+    "scope_policy": "mixed_keep",
+    "valid_GT": [
+      "hf-0033-line-0002"
+    ],
+    "held_GT": [
+      "hf-0033-line-0003",
+      "hf-0033-line-0004"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 27,
+    "text": "- A h(x) = 1 + exp(-x)",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0033-0005.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0033/det-0006",
+    "image_id": "hf-0033",
+    "bbox": [
+      1004,
+      579,
+      1320,
+      702
+    ],
+    "scope_policy": "mixed_keep",
+    "valid_GT": [
+      "hf-0033-line-0005"
+    ],
+    "held_GT": [
+      "hf-0033-line-0003",
+      "hf-0033-line-0004"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 28,
+    "text": "→ e^{-x}",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0033-0006.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0033/det-0016",
+    "image_id": "hf-0033",
+    "bbox": [
+      60,
+      2133,
+      589,
+      2361
+    ],
+    "scope_policy": "mixed_keep",
+    "valid_GT": [
+      "hf-0033-line-0014"
+    ],
+    "held_GT": [
+      "hf-0033-line-0015"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 29,
+    "text": "A=1,2,3",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0033-0016.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0033/det-0017",
+    "image_id": "hf-0033",
+    "bbox": [
+      1696,
+      2145,
+      2093,
+      2282
+    ],
+    "scope_policy": "mixed_keep",
+    "valid_GT": [
+      "hf-0033-line-0014"
+    ],
+    "held_GT": [
+      "hf-0033-line-0015"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 30,
+    "text": "22, 28",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0033-0017.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0033/det-0018",
+    "image_id": "hf-0033",
+    "bbox": [
+      958,
+      2155,
+      1117,
+      2255
+    ],
+    "scope_policy": "mixed_keep",
+    "valid_GT": [
+      "hf-0033-line-0014"
+    ],
+    "held_GT": [
+      "hf-0033-line-0015"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 31,
+    "text": "1,2",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0033-0018.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0033/det-0019",
+    "image_id": "hf-0033",
+    "bbox": [
+      631,
+      2205,
+      924,
+      2352
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0033-line-0015"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 32,
+    "text": "xB=",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0033-0019.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0033/det-0020",
+    "image_id": "hf-0033",
+    "bbox": [
+      1400,
+      2222,
+      1607,
+      2335
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0033-line-0015"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 33,
+    "text": "C =",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0033-0020.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0033/det-0021",
+    "image_id": "hf-0033",
+    "bbox": [
+      945,
+      2260,
+      1125,
+      2365
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0033-line-0015"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 34,
+    "text": "3,4",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0033-0021.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0033/det-0022",
+    "image_id": "hf-0033",
+    "bbox": [
+      1721,
+      2301,
+      2166,
+      2450
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0033-line-0015"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 35,
+    "text": "49, 64",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0033-0022.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0033/det-0023",
+    "image_id": "hf-0033",
+    "bbox": [
+      210,
+      2310,
+      537,
+      2436
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0033-line-0015"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 36,
+    "text": "- 4, 5, 6",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0033-0023.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0033/det-0024",
+    "image_id": "hf-0033",
+    "bbox": [
+      936,
+      2356,
+      1143,
+      2457
+    ],
+    "scope_policy": "mixed_keep",
+    "valid_GT": [
+      "hf-0033-line-0017"
+    ],
+    "held_GT": [
+      "hf-0033-line-0015"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 37,
+    "text": "5,6",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0033-0024.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0048/det-0002",
+    "image_id": "hf-0048",
+    "bbox": [
+      210,
+      222,
+      1328,
+      337
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "hf-0048-line-0003"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 38,
+    "text": "· 출력 데이터 크기를 구할 수 있는 공식",
+    "new_match": {
+      "prediction_id": "hf-0048/det-0002",
+      "annotation_id": "hf-0048-line-0003",
+      "iou": 0.8865849181290844
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0048-0002.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0048/det-0004",
+    "image_id": "hf-0048",
+    "bbox": [
+      514,
+      355,
+      1003,
+      502
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0048-line-0004"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 39,
+    "text": "H + 2P - FH",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0048-0004.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0048/det-0006",
+    "image_id": "hf-0048",
+    "bbox": [
+      210,
+      500,
+      447,
+      613
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0048-line-0004"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 40,
+    "text": "OH =",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0048-0006.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0048/det-0007",
+    "image_id": "hf-0048",
+    "bbox": [
+      743,
+      504,
+      842,
+      609
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0048-line-0004"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 41,
+    "text": "5",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0048-0007.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0048/det-0010",
+    "image_id": "hf-0048",
+    "bbox": [
+      535,
+      721,
+      1045,
+      850
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0048-line-0008"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 42,
+    "text": "w + 2P - FW",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0048-0010.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0048/det-0011",
+    "image_id": "hf-0048",
+    "bbox": [
+      1063,
+      805,
+      1183,
+      892
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0048-line-0008"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 43,
+    "text": "+1",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0048-0011.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0048/det-0013",
+    "image_id": "hf-0048",
+    "bbox": [
+      180,
+      869,
+      464,
+      979
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0048-line-0008"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 44,
+    "text": "OW =",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0048-0013.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0048/det-0014",
+    "image_id": "hf-0048",
+    "bbox": [
+      735,
+      882,
+      833,
+      979
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0048-line-0008"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 45,
+    "text": "S",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0048-0014.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0048/det-0016",
+    "image_id": "hf-0048",
+    "bbox": [
+      193,
+      1390,
+      877,
+      1500
+    ],
+    "scope_policy": "mixed_keep",
+    "valid_GT": [
+      "hf-0048-line-0014"
+    ],
+    "held_GT": [
+      "hf-0048-line-0013"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 46,
+    "text": "· 3차원 데이터 합성곱 연산",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0048-0016.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0048/det-0020",
+    "image_id": "hf-0048",
+    "bbox": [
+      209,
+      2048,
+      508,
+      2173
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "hf-0048-line-0017",
+      "hf-0048-line-0018"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 47,
+    "text": "· 풀딩 계층.",
+    "new_match": {
+      "prediction_id": "hf-0048/det-0020",
+      "annotation_id": "hf-0048-line-0017",
+      "iou": 0.8699641897940913
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0048-0020.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0052/det-0001",
+    "image_id": "hf-0052",
+    "bbox": [
+      176,
+      373,
+      1023,
+      492
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "hf-0052-line-0002",
+      "audit-hf-0052-051"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 48,
+    "text": "· softmax - with - Loss 계획",
+    "new_match": {
+      "prediction_id": "hf-0052/det-0001",
+      "annotation_id": "hf-0052-line-0002",
+      "iou": 0.7302392031192643
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0052-0001.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0052/det-0003",
+    "image_id": "hf-0052",
+    "bbox": [
+      189,
+      781,
+      550,
+      903
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "line-d4d02678-320c-4e2a-a15c-fe5a5ac7abd7",
+      "line-8de86c00-4d1c-48d9-9b9e-79904570969b"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 49,
+    "text": "· 자연어 처리",
+    "new_match": {
+      "prediction_id": "hf-0052/det-0003",
+      "annotation_id": "line-d4d02678-320c-4e2a-a15c-fe5a5ac7abd7",
+      "iou": 0.8208345614552192
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0052-0003.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0057/det-0001",
+    "image_id": "hf-0057",
+    "bbox": [
+      149,
+      309,
+      448,
+      447
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "hf-0057-line-0002",
+      "hf-0057-line-0003"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 50,
+    "text": "· 분포 가설",
+    "new_match": {
+      "prediction_id": "hf-0057/det-0001",
+      "annotation_id": "hf-0057-line-0002",
+      "iou": 0.8826776110953863
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0057-0001.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0057/det-0005",
+    "image_id": "hf-0057",
+    "bbox": [
+      142,
+      970,
+      464,
+      1075
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "hf-0057-line-0006"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 51,
+    "text": "· 원도우 크기",
+    "new_match": {
+      "prediction_id": "hf-0057/det-0005",
+      "annotation_id": "hf-0057-line-0006",
+      "iou": 0.8960674157303371
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0057-0005.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0057/det-0008",
+    "image_id": "hf-0057",
+    "bbox": [
+      102,
+      1478,
+      546,
+      1597
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "hf-0057-line-0009"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 52,
+    "text": "◦통계 기반 기법",
+    "new_match": {
+      "prediction_id": "hf-0057/det-0008",
+      "annotation_id": "hf-0057-line-0009",
+      "iou": 0.6895539906103286
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0057-0008.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0057/det-0011",
+    "image_id": "hf-0057",
+    "bbox": [
+      210,
+      1932,
+      301,
+      2008
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0057-line-0012"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "split_character_of_overwritten_heading",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 53,
+    "text": "<H",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0057-0011.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0057/det-0012",
+    "image_id": "hf-0057",
+    "bbox": [
+      46,
+      1994,
+      431,
+      2130
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0057-line-0012"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "overwritten_heading",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 54,
+    "text": "◦ 동시발출 행렬",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0057-0012.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0057/det-0015",
+    "image_id": "hf-0057",
+    "bbox": [
+      46,
+      2557,
+      379,
+      2676
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "hf-0057-line-0015"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 55,
+    "text": "· 고사인 유사도",
+    "new_match": {
+      "prediction_id": "hf-0057/det-0015",
+      "annotation_id": "hf-0057-line-0015",
+      "iou": 0.7648892534864643
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0057-0015.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0077/det-0000",
+    "image_id": "hf-0077",
+    "bbox": [
+      368,
+      78,
+      1200,
+      228
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0077-line-0001",
+      "audit-hf-0077-054"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 56,
+    "text": "f'(x) = \\lim f(x+h) - f(x)",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0077-0000.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0077/det-0003",
+    "image_id": "hf-0077",
+    "bbox": [
+      601,
+      206,
+      722,
+      269
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0077-line-0001"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 57,
+    "text": "a→0",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0077-0003.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0077/det-0005",
+    "image_id": "hf-0077",
+    "bbox": [
+      476,
+      356,
+      1277,
+      476
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0077-line-0004"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 58,
+    "text": "(a+b)^{3} = a^{3} + 3ab^{2} + 3ab^{2} + b^{3}",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0077-0005.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0087/det-0001",
+    "image_id": "hf-0087",
+    "bbox": [
+      223,
+      323,
+      2398,
+      484
+    ],
+    "scope_policy": "mixed_keep",
+    "valid_GT": [
+      "line-be94cffd-5b7d-4fd6-abfa-dd1b7d37cbb7"
+    ],
+    "held_GT": [
+      "line-5d6b8a10-25ed-4adc-a92e-cf620c1c6ff6",
+      "line-6585e2db-71db-4467-b9ce-624ff3f4cea4"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 59,
+    "text": "- 칫 번재 영상에서 루출한 기술자 겹탄 A = \\{a_1, a_2, \\cdots a_n\\}와 두 번째",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0087-0001.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0087/det-0002",
+    "image_id": "hf-0087",
+    "bbox": [
+      274,
+      461,
+      2131,
+      605
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-5d6b8a10-25ed-4adc-a92e-cf620c1c6ff6",
+      "line-6585e2db-71db-4467-b9ce-624ff3f4cea4",
+      "line-d460f9a8-1301-4132-a9fd-236a61159009"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 60,
+    "text": "영상에서 축출한 기술자 갱한 B = \\{ b_1, b_2, b_n\\}가 극어젖을 때",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0087-0002.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0087/det-0003",
+    "image_id": "hf-0087",
+    "bbox": [
+      257,
+      587,
+      2226,
+      731
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-6585e2db-71db-4467-b9ce-624ff3f4cea4",
+      "line-d460f9a8-1301-4132-a9fd-236a61159009",
+      "line-0b210833-560a-4167-bbd6-f0495c9b4e14"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 61,
+    "text": "같은 물체의 같은 곳에 해양하는 a_i와 b_j 쌍을 모두 찾는 줄게",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0087-0003.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0087/det-0004",
+    "image_id": "hf-0087",
+    "bbox": [
+      210,
+      713,
+      1882,
+      853
+    ],
+    "scope_policy": "mixed_keep",
+    "valid_GT": [
+      "line-bec057c1-ef48-43a0-a94f-2b9ac216ae99"
+    ],
+    "held_GT": [
+      "line-d460f9a8-1301-4132-a9fd-236a61159009",
+      "line-0b210833-560a-4167-bbd6-f0495c9b4e14"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 62,
+    "text": "1. 두 개술자 A와 B의 거리가 임계감보다 작으면 매칭되었다고",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0087-0004.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0087/det-0006",
+    "image_id": "hf-0087",
+    "bbox": [
+      292,
+      978,
+      2380,
+      1096
+    ],
+    "scope_policy": "mixed_keep",
+    "valid_GT": [
+      "line-bec057c1-ef48-43a0-a94f-2b9ac216ae99"
+    ],
+    "held_GT": [
+      "line-dd082ce0-6501-48e9-a53d-bbaa77a4d7c9"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 63,
+    "text": "L T (임계합) 를 너무 잘게하거나 너무 크게 하면 거짓 중점이 많이 빼샘",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0087-0006.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0087/det-0008",
+    "image_id": "hf-0087",
+    "bbox": [
+      228,
+      1252,
+      1942,
+      1361
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-056e0ccd-b0fd-43f5-b3ea-298921809924"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 64,
+    "text": "L a _ i = B_o14, 기초 책은 b_j를 찾고 a_i와 b_j가",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0087-0008.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0087/det-0009",
+    "image_id": "hf-0087",
+    "bbox": [
+      292,
+      1382,
+      1856,
+      1483
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-056e0ccd-b0fd-43f5-b3ea-298921809924",
+      "line-b579e980-be9d-4f65-8a8a-8740c9e1e7fa"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 65,
+    "text": "d(a_i, b_i) < T 를 만족하면 매우 쌍으로 찍혔.",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0087-0009.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0087/det-0011",
+    "image_id": "hf-0087",
+    "bbox": [
+      214,
+      1633,
+      2118,
+      1760
+    ],
+    "scope_policy": "mixed_keep",
+    "valid_GT": [
+      "line-e5bd8631-8d37-42bb-ae44-13f4a39e47cc"
+    ],
+    "held_GT": [
+      "line-7997176a-c6fe-401a-9639-e826b04e063c",
+      "line-b6621fd8-58b6-45f4-a6da-237c9c0905d7"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 66,
+    "text": "L a_1는 B에서 가장 가까운 b_j와 두 번째 가까운 b_k를 찾음",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0087-0011.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0087/det-0012",
+    "image_id": "hf-0087",
+    "bbox": [
+      305,
+      1751,
+      1035,
+      1869
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-7997176a-c6fe-401a-9639-e826b04e063c",
+      "line-b6621fd8-58b6-45f4-a6da-237c9c0905d7"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 67,
+    "text": "b_j와 b_k 차량 d(a_j, b_j)",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0087-0012.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0087/det-0013",
+    "image_id": "hf-0087",
+    "bbox": [
+      1061,
+      1806,
+      2264,
+      1932
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-b6621fd8-58b6-45f4-a6da-237c9c0905d7"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 68,
+    "text": "< T 를 반쪽하면 a_i와 b_j는 매칭 쌍",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0087-0013.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0087/det-0014",
+    "image_id": "hf-0087",
+    "bbox": [
+      716,
+      1864,
+      1037,
+      2005
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-b6621fd8-58b6-45f4-a6da-237c9c0905d7"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 69,
+    "text": "d(a_i, b_k)",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0087-0014.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0000",
+    "image_id": "hf-0090",
+    "bbox": [
+      1398,
+      212,
+      2266,
+      371
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0090-line-0003",
+      "hf-0090-line-0006"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 70,
+    "text": "v=0, u=-1 f(η,2)=0",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0000.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0002",
+    "image_id": "hf-0090",
+    "bbox": [
+      1411,
+      347,
+      2296,
+      502
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0090-line-0003",
+      "hf-0090-line-0006",
+      "hf-0090-line-0009"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 71,
+    "text": "v=0, u=-1 +(η,3)=0",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0002.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0003",
+    "image_id": "hf-0090",
+    "bbox": [
+      565,
+      439,
+      972,
+      560
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0090-line-0005"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 72,
+    "text": "f(5,3)=1",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0003.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0004",
+    "image_id": "hf-0090",
+    "bbox": [
+      80,
+      465,
+      504,
+      581
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0090-line-0004"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 73,
+    "text": "V=0, U=-1",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0004.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0005",
+    "image_id": "hf-0090",
+    "bbox": [
+      1425,
+      482,
+      2321,
+      623
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0090-line-0006",
+      "hf-0090-line-0009"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 74,
+    "text": "v=0, u=-1 f(7,4)=0",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0005.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0006",
+    "image_id": "hf-0090",
+    "bbox": [
+      579,
+      566,
+      976,
+      673
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0090-line-0008"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 75,
+    "text": "f(5,4)=0",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0006.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0007",
+    "image_id": "hf-0090",
+    "bbox": [
+      85,
+      587,
+      495,
+      698
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0090-line-0007"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 76,
+    "text": "V=0, U=-1",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0007.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0008",
+    "image_id": "hf-0090",
+    "bbox": [
+      579,
+      680,
+      980,
+      795
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0090-line-0011"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 77,
+    "text": "f(6,2)=0",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0008.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0009",
+    "image_id": "hf-0090",
+    "bbox": [
+      85,
+      709,
+      487,
+      820
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0090-line-0010"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 78,
+    "text": "V=0, U=-1",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0009.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0010",
+    "image_id": "hf-0090",
+    "bbox": [
+      584,
+      819,
+      992,
+      924
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0090-line-0013"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 79,
+    "text": "f(6,3)=1",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0010.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0011",
+    "image_id": "hf-0090",
+    "bbox": [
+      80,
+      834,
+      496,
+      959
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0090-line-0012"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 80,
+    "text": "U=0, U=-1",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0011.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0012",
+    "image_id": "hf-0090",
+    "bbox": [
+      592,
+      940,
+      1028,
+      1064
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0090-line-0015"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 81,
+    "text": "f(6,4)=0",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0012.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0013",
+    "image_id": "hf-0090",
+    "bbox": [
+      80,
+      961,
+      495,
+      1081
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0090-line-0014"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 82,
+    "text": "V=0, U=-1",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0013.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0014",
+    "image_id": "hf-0090",
+    "bbox": [
+      570,
+      1162,
+      2403,
+      1354
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0090-line-0016"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 83,
+    "text": "(f(y+v,x+w)-f(y,x))^2 일대 V=0,U=0 01만",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0014.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0015",
+    "image_id": "hf-0090",
+    "bbox": [
+      81,
+      1242,
+      482,
+      1357
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0090-line-0016"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 84,
+    "text": "U=0, U=0",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0015.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0019",
+    "image_id": "hf-0090",
+    "bbox": [
+      124,
+      1486,
+      1676,
+      1613
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-6e61bfc4-d68f-40d6-a986-e2127fc01863"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 85,
+    "text": "결국 그것을 배면 학상 0. 즉 S(0,0)=0",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0019.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0020",
+    "image_id": "hf-0090",
+    "bbox": [
+      67,
+      1590,
+      1281,
+      1774
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-6e61bfc4-d68f-40d6-a986-e2127fc01863",
+      "line-e84fb234-908a-4940-8185-5e55b199ddeb"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 86,
+    "text": "(같은 과표 - 같은 과표)² 가 됨",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0020.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0021",
+    "image_id": "hf-0090",
+    "bbox": [
+      1404,
+      1877,
+      2243,
+      1991
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-4b865638-dc9f-43e5-875d-804141b9482b"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 87,
+    "text": "U=0, U=1 f(η,2)= 0",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0021.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0022",
+    "image_id": "hf-0090",
+    "bbox": [
+      81,
+      1898,
+      980,
+      2017
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-143732d5-2d9f-459a-9705-86a17dd12167"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 88,
+    "text": "v=0, u=1, f(5,2)=1",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0022.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0023",
+    "image_id": "hf-0090",
+    "bbox": [
+      85,
+      2020,
+      1006,
+      2138
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-143732d5-2d9f-459a-9705-86a17dd12167",
+      "line-9f119808-68f6-4ad6-a8dc-bf264910b044"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 89,
+    "text": "V=0, u=1 f(5,3)=0",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0023.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0024",
+    "image_id": "hf-0090",
+    "bbox": [
+      1426,
+      2024,
+      2294,
+      2143
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-4b865638-dc9f-43e5-875d-804141b9482b",
+      "line-4d79202c-8ef4-42cf-bd52-a6a77bde2449"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 90,
+    "text": "V=0, u=1 f(7,3)= △",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0024.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0025",
+    "image_id": "hf-0090",
+    "bbox": [
+      89,
+      2154,
+      1023,
+      2285
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-9f119808-68f6-4ad6-a8dc-bf264910b044",
+      "line-1dcab03e-9083-4cb5-a686-7e9a22df3cfb"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 91,
+    "text": "V=0, u=1 f(5,4)=0",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0025.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0026",
+    "image_id": "hf-0090",
+    "bbox": [
+      1443,
+      2159,
+      2332,
+      2264
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-5f5708ef-1d24-40e0-8568-3c462193170d"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 92,
+    "text": "V=0, U=1 f(7,4)=0",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0026.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0027",
+    "image_id": "hf-0090",
+    "bbox": [
+      94,
+      2293,
+      1018,
+      2420
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-73162f17-dc25-4378-a713-931bd2a400f3"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 93,
+    "text": "U=0, u=1 f(6,2)=1",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0027.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0028",
+    "image_id": "hf-0090",
+    "bbox": [
+      592,
+      2431,
+      1036,
+      2550
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-963aee97-bba0-46ed-8122-9f2f31c7088b"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 94,
+    "text": "f(6,3) = 0",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0028.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0029",
+    "image_id": "hf-0090",
+    "bbox": [
+      112,
+      2444,
+      567,
+      2537
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-963aee97-bba0-46ed-8122-9f2f31c7088b"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 95,
+    "text": "V=0, u=1",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0029.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0030",
+    "image_id": "hf-0090",
+    "bbox": [
+      610,
+      2570,
+      1052,
+      2675
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-90289bd1-284e-46e6-ba4b-e653f0d42a0b"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 96,
+    "text": "f(6,4)=0",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0030.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0090/det-0031",
+    "image_id": "hf-0090",
+    "bbox": [
+      116,
+      2579,
+      554,
+      2671
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "line-90289bd1-284e-46e6-ba4b-e653f0d42a0b"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "math_or_matrix",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 97,
+    "text": "U=0, U=1",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0090-0031.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0098/det-0001",
+    "image_id": "hf-0098",
+    "bbox": [
+      1190,
+      256,
+      2212,
+      370
+    ],
+    "scope_policy": "keep",
+    "valid_GT": [
+      "hf-0098-line-0002"
+    ],
+    "held_GT": [],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "normal_prose_or_code_label",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 98,
+    "text": "- 4태극 <꽃을 부듯 널를 분다 4)",
+    "new_match": {
+      "prediction_id": "hf-0098/det-0001",
+      "annotation_id": "hf-0098-line-0002",
+      "iou": 0.8415460754062208
+    },
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0098-0001.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0111/det-0008",
+    "image_id": "hf-0111",
+    "bbox": [
+      339,
+      1235,
+      408,
+      1336
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0111-line-0010"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "isolated_arrow_or_brace",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 99,
+    "text": "3",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0111-0008.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0111/det-0016",
+    "image_id": "hf-0111",
+    "bbox": [
+      253,
+      2113,
+      322,
+      2209
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0111-line-0018"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "isolated_arrow_or_brace",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 100,
+    "text": "3",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0111-0016.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0111/det-0022",
+    "image_id": "hf-0111",
+    "bbox": [
+      161,
+      2807,
+      265,
+      2939
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0111-line-0024"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "isolated_arrow_or_brace",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 101,
+    "text": "3",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0111-0022.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  },
+  {
+    "prediction_id": "hf-0111/det-0026",
+    "image_id": "hf-0111",
+    "bbox": [
+      113,
+      3298,
+      214,
+      3434
+    ],
+    "scope_policy": "ignore",
+    "valid_GT": [],
+    "held_GT": [
+      "hf-0111-line-0028"
+    ],
+    "confidence": null,
+    "review_status": "geometry_generated; awaiting_AI_visual_inspection",
+    "visual_category": "isolated_arrow_or_brace",
+    "AI_visual_reviewed": true,
+    "independent_human_review": false,
+    "index": 102,
+    "text": "3",
+    "new_match": null,
+    "image": "/home/user/Desktop/RADU/data/experiments/ocr_page_audit_scope_recovery_v1/raw-detector/crops/hf-0111-0026.png",
+    "note": "all103 visually inspected in9sheets before extra recognition; geometry policy fixed"
+  }
+]

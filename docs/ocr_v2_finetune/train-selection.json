@@ -1,0 +1,8 @@
+{
+  "criterion": "minimum validation micro CER",
+  "epoch": 8,
+  "step": 1176,
+  "cer": 0.3412486239974839,
+  "test_accessed": false,
+  "baseline_cer": 0.420034596634691
+}

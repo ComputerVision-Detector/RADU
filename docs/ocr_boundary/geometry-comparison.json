@@ -1,0 +1,4471 @@
+{
+  "before": {
+    "detection": {
+      "tp": 311,
+      "fp": 40,
+      "fn": 7,
+      "precision": 0.886039886039886,
+      "recall": 0.9779874213836478,
+      "f1": 0.9297458893871451
+    },
+    "page": {
+      "samples": 17,
+      "substitutions": 541,
+      "deletions": 159,
+      "insertions": 796,
+      "errors": 1496,
+      "reference_units": 5982,
+      "cer_micro": 0.2500835840855901,
+      "cer_no_space_micro": 0.25685080469769467,
+      "exact_match_rate": 0.0,
+      "empty_reference_insertions": 0
+    },
+    "cases": [
+      {
+        "page_id": "hf-0005",
+        "reference_regions": 20,
+        "prediction_regions": 20,
+        "ignored": [
+          "det-0003",
+          "det-0005",
+          "det-0006",
+          "det-0008",
+          "det-0009",
+          "det-0014",
+          "det-0016",
+          "det-0022",
+          "det-0024",
+          "det-0026",
+          "det-0028",
+          "det-0029",
+          "det-0030",
+          "det-0032"
+        ],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0005/det-0001",
+            "annotation_id": "line-215ebf63-31c7-4df3-be52-8138f34469f7",
+            "iou": 0.5352003111629716
+          },
+          {
+            "prediction_id": "hf-0005/det-0002",
+            "annotation_id": "audit-hf-0005-001",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0004",
+            "annotation_id": "audit-hf-0005-003",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0007",
+            "annotation_id": "audit-hf-0005-006",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0010",
+            "annotation_id": "audit-hf-0005-009",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0011",
+            "annotation_id": "audit-hf-0005-010",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0012",
+            "annotation_id": "audit-hf-0005-011",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0013",
+            "annotation_id": "audit-hf-0005-012",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0015",
+            "annotation_id": "audit-hf-0005-014",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0017",
+            "annotation_id": "audit-hf-0005-016",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0018",
+            "annotation_id": "audit-hf-0005-017",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0019",
+            "annotation_id": "audit-hf-0005-018",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0020",
+            "annotation_id": "audit-hf-0005-019",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0021",
+            "annotation_id": "audit-hf-0005-020",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0023",
+            "annotation_id": "audit-hf-0005-022",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0025",
+            "annotation_id": "audit-hf-0005-024",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0027",
+            "annotation_id": "audit-hf-0005-026",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0031",
+            "annotation_id": "audit-hf-0005-030",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0033",
+            "annotation_id": "audit-hf-0005-032",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0005/det-0000"
+        ],
+        "missed": [
+          "hf-0005-line-0001"
+        ],
+        "page": {
+          "samples": 1,
+          "substitutions": 19,
+          "deletions": 4,
+          "insertions": 19,
+          "errors": 42,
+          "reference_units": 353,
+          "cer_micro": 0.11898016997167139,
+          "cer_no_space_micro": 0.10067114093959731,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0008",
+        "reference_regions": 22,
+        "prediction_regions": 22,
+        "ignored": [
+          "det-0000",
+          "det-0001",
+          "det-0003",
+          "det-0005",
+          "det-0007",
+          "det-0009",
+          "det-0015",
+          "det-0017",
+          "det-0020",
+          "det-0022"
+        ],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0008/det-0002",
+            "annotation_id": "hf-0008-line-0002",
+            "iou": 0.9105697095743891
+          },
+          {
+            "prediction_id": "hf-0008/det-0004",
+            "annotation_id": "hf-0008-line-0004",
+            "iou": 0.8916293987441839
+          },
+          {
+            "prediction_id": "hf-0008/det-0006",
+            "annotation_id": "hf-0008-line-0005",
+            "iou": 0.8622047244094488
+          },
+          {
+            "prediction_id": "hf-0008/det-0008",
+            "annotation_id": "hf-0008-line-0007",
+            "iou": 0.9411257338415737
+          },
+          {
+            "prediction_id": "hf-0008/det-0010",
+            "annotation_id": "hf-0008-line-0009",
+            "iou": 0.8433447607691161
+          },
+          {
+            "prediction_id": "hf-0008/det-0011",
+            "annotation_id": "hf-0008-line-0010",
+            "iou": 0.7502195458537197
+          },
+          {
+            "prediction_id": "hf-0008/det-0012",
+            "annotation_id": "line-fce3cae9-c0fb-428c-9698-b41d0b46ba0b",
+            "iou": 0.6909975669099757
+          },
+          {
+            "prediction_id": "hf-0008/det-0016",
+            "annotation_id": "line-76abfd52-f9fc-4072-9fc4-f628ec48b285",
+            "iou": 0.702075189988089
+          },
+          {
+            "prediction_id": "hf-0008/det-0018",
+            "annotation_id": "line-a977de18-6fbb-4080-b3bd-99ed6cf33b1f",
+            "iou": 0.707774798927614
+          },
+          {
+            "prediction_id": "hf-0008/det-0019",
+            "annotation_id": "line-9039bdd8-e05d-4e85-baee-8e4453798b9e",
+            "iou": 0.7598643649815043
+          },
+          {
+            "prediction_id": "hf-0008/det-0021",
+            "annotation_id": "line-5422df0d-c119-4612-83ab-87597f69322a",
+            "iou": 0.8331790492116579
+          },
+          {
+            "prediction_id": "hf-0008/det-0023",
+            "annotation_id": "line-7be92727-7df8-4c38-8a00-4c1bf6d91a6f",
+            "iou": 0.9016111437442309
+          },
+          {
+            "prediction_id": "hf-0008/det-0024",
+            "annotation_id": "line-e668c01d-d7f1-42ad-88e2-83061214535c",
+            "iou": 0.663627175743964
+          },
+          {
+            "prediction_id": "hf-0008/det-0025",
+            "annotation_id": "line-cd65dd4b-101e-4909-b2a1-5bdb11e89177",
+            "iou": 0.655649820434081
+          },
+          {
+            "prediction_id": "hf-0008/det-0026",
+            "annotation_id": "line-98c5207b-d452-4b7c-8753-103a0382652a",
+            "iou": 0.5009279307145067
+          },
+          {
+            "prediction_id": "hf-0008/det-0027",
+            "annotation_id": "line-60664bb8-e89a-45bd-8379-e135ef8f4d40",
+            "iou": 0.5835810456373491
+          },
+          {
+            "prediction_id": "hf-0008/det-0028",
+            "annotation_id": "line-e40d9398-df52-4237-9158-9e524e5af215",
+            "iou": 0.6559637029927581
+          },
+          {
+            "prediction_id": "hf-0008/det-0030",
+            "annotation_id": "line-f2efa121-e408-4097-b326-3c2cf2a6255b",
+            "iou": 0.768766130360771
+          },
+          {
+            "prediction_id": "hf-0008/det-0031",
+            "annotation_id": "line-499d6aed-0afa-4517-a453-d8b0fa4afb7e",
+            "iou": 0.7346038388065133
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0008/det-0013",
+          "hf-0008/det-0014",
+          "hf-0008/det-0029"
+        ],
+        "missed": [
+          "line-8211a948-b567-49af-8f31-10aa2b37dfe8",
+          "line-746e7045-f373-48c2-997e-c0c97045c245",
+          "line-4ef06ee1-ee25-4927-b6c9-89145d196095"
+        ],
+        "page": {
+          "samples": 1,
+          "substitutions": 29,
+          "deletions": 33,
+          "insertions": 2,
+          "errors": 64,
+          "reference_units": 351,
+          "cer_micro": 0.18233618233618235,
+          "cer_no_space_micro": 0.15753424657534246,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0013",
+        "reference_regions": 27,
+        "prediction_regions": 27,
+        "ignored": [],
+        "mixed_keep": [
+          "det-0000",
+          "det-0001"
+        ],
+        "matches": [
+          {
+            "prediction_id": "hf-0013/det-0001",
+            "annotation_id": "audit-header-36",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0013/det-0002",
+            "annotation_id": "line-f2b35759-fbcc-4f33-b2c9-04c98f83d328",
+            "iou": 0.7325124807431689
+          },
+          {
+            "prediction_id": "hf-0013/det-0003",
+            "annotation_id": "line-9a14ca7d-daca-40a3-adce-865bf535fed3",
+            "iou": 0.8558613433744947
+          },
+          {
+            "prediction_id": "hf-0013/det-0004",
+            "annotation_id": "line-8533e22f-03ce-40af-9256-090900453284",
+            "iou": 0.8288202346720451
+          },
+          {
+            "prediction_id": "hf-0013/det-0005",
+            "annotation_id": "hf-0013-line-0003",
+            "iou": 0.8802485600808992
+          },
+          {
+            "prediction_id": "hf-0013/det-0006",
+            "annotation_id": "hf-0013-line-0004",
+            "iou": 0.899675394936161
+          },
+          {
+            "prediction_id": "hf-0013/det-0007",
+            "annotation_id": "hf-0013-line-0005",
+            "iou": 0.9093485365967771
+          },
+          {
+            "prediction_id": "hf-0013/det-0008",
+            "annotation_id": "hf-0013-line-0006",
+            "iou": 0.8845639112731001
+          },
+          {
+            "prediction_id": "hf-0013/det-0009",
+            "annotation_id": "hf-0013-line-0007",
+            "iou": 0.8899987396017142
+          },
+          {
+            "prediction_id": "hf-0013/det-0010",
+            "annotation_id": "hf-0013-line-0008",
+            "iou": 0.8278673596615346
+          },
+          {
+            "prediction_id": "hf-0013/det-0011",
+            "annotation_id": "hf-0013-line-0009",
+            "iou": 0.9247382652707481
+          },
+          {
+            "prediction_id": "hf-0013/det-0012",
+            "annotation_id": "hf-0013-line-0011",
+            "iou": 0.6714499921081707
+          },
+          {
+            "prediction_id": "hf-0013/det-0013",
+            "annotation_id": "hf-0013-line-0012",
+            "iou": 0.851608972980721
+          },
+          {
+            "prediction_id": "hf-0013/det-0014",
+            "annotation_id": "hf-0013-line-0013",
+            "iou": 0.9808494208494208
+          },
+          {
+            "prediction_id": "hf-0013/det-0015",
+            "annotation_id": "hf-0013-line-0014",
+            "iou": 0.9498406217542351
+          },
+          {
+            "prediction_id": "hf-0013/det-0016",
+            "annotation_id": "hf-0013-line-0016",
+            "iou": 0.9523158901489275
+          },
+          {
+            "prediction_id": "hf-0013/det-0017",
+            "annotation_id": "hf-0013-line-0015",
+            "iou": 0.8578130480533146
+          },
+          {
+            "prediction_id": "hf-0013/det-0018",
+            "annotation_id": "hf-0013-line-0018",
+            "iou": 0.8725564225186677
+          },
+          {
+            "prediction_id": "hf-0013/det-0019",
+            "annotation_id": "hf-0013-line-0019",
+            "iou": 0.9272750613797198
+          },
+          {
+            "prediction_id": "hf-0013/det-0020",
+            "annotation_id": "hf-0013-line-0017",
+            "iou": 0.8781628669293948
+          },
+          {
+            "prediction_id": "hf-0013/det-0021",
+            "annotation_id": "hf-0013-line-0020",
+            "iou": 0.76374156219865
+          },
+          {
+            "prediction_id": "hf-0013/det-0022",
+            "annotation_id": "hf-0013-line-0021",
+            "iou": 0.9337211718263038
+          },
+          {
+            "prediction_id": "hf-0013/det-0023",
+            "annotation_id": "hf-0013-line-0022",
+            "iou": 0.8800257883014887
+          },
+          {
+            "prediction_id": "hf-0013/det-0024",
+            "annotation_id": "hf-0013-line-0023",
+            "iou": 0.8442067736185384
+          },
+          {
+            "prediction_id": "hf-0013/det-0025",
+            "annotation_id": "hf-0013-line-0024",
+            "iou": 0.8919837120208177
+          },
+          {
+            "prediction_id": "hf-0013/det-0026",
+            "annotation_id": "audit-hf-0013-037",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0013/det-0000"
+        ],
+        "missed": [
+          "hf-0013-line-0010"
+        ],
+        "page": {
+          "samples": 1,
+          "substitutions": 29,
+          "deletions": 24,
+          "insertions": 26,
+          "errors": 79,
+          "reference_units": 603,
+          "cer_micro": 0.1310116086235489,
+          "cer_no_space_micro": 0.1277056277056277,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0029",
+        "reference_regions": 22,
+        "prediction_regions": 21,
+        "ignored": [],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0029/det-0000",
+            "annotation_id": "audit-hf-0029-038",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0029/det-0001",
+            "annotation_id": "hf-0029-line-0002",
+            "iou": 0.8685244545548547
+          },
+          {
+            "prediction_id": "hf-0029/det-0002",
+            "annotation_id": "hf-0029-line-0003",
+            "iou": 0.8914531553539716
+          },
+          {
+            "prediction_id": "hf-0029/det-0003",
+            "annotation_id": "hf-0029-line-0004",
+            "iou": 0.8990857425253274
+          },
+          {
+            "prediction_id": "hf-0029/det-0004",
+            "annotation_id": "hf-0029-line-0005",
+            "iou": 0.8967605458542453
+          },
+          {
+            "prediction_id": "hf-0029/det-0005",
+            "annotation_id": "hf-0029-line-0006",
+            "iou": 0.9526117711966267
+          },
+          {
+            "prediction_id": "hf-0029/det-0006",
+            "annotation_id": "hf-0029-line-0007",
+            "iou": 0.8346052900288176
+          },
+          {
+            "prediction_id": "hf-0029/det-0007",
+            "annotation_id": "hf-0029-line-0008",
+            "iou": 0.8615491249350199
+          },
+          {
+            "prediction_id": "hf-0029/det-0008",
+            "annotation_id": "hf-0029-line-0009",
+            "iou": 0.9408128249793716
+          },
+          {
+            "prediction_id": "hf-0029/det-0009",
+            "annotation_id": "hf-0029-line-0010",
+            "iou": 0.8988674270419271
+          },
+          {
+            "prediction_id": "hf-0029/det-0010",
+            "annotation_id": "hf-0029-line-0011",
+            "iou": 0.8136284216656959
+          },
+          {
+            "prediction_id": "hf-0029/det-0011",
+            "annotation_id": "hf-0029-line-0012",
+            "iou": 0.7118890814558059
+          },
+          {
+            "prediction_id": "hf-0029/det-0012",
+            "annotation_id": "hf-0029-line-0013",
+            "iou": 0.6971315906633594
+          },
+          {
+            "prediction_id": "hf-0029/det-0013",
+            "annotation_id": "hf-0029-line-0014",
+            "iou": 0.6959522611258897
+          },
+          {
+            "prediction_id": "hf-0029/det-0014",
+            "annotation_id": "hf-0029-line-0015",
+            "iou": 0.6531178046144448
+          },
+          {
+            "prediction_id": "hf-0029/det-0015",
+            "annotation_id": "hf-0029-line-0017",
+            "iou": 0.6569590296752295
+          },
+          {
+            "prediction_id": "hf-0029/det-0016",
+            "annotation_id": "hf-0029-line-0018",
+            "iou": 0.7777801980456821
+          },
+          {
+            "prediction_id": "hf-0029/det-0017",
+            "annotation_id": "hf-0029-line-0019",
+            "iou": 0.8324386701934547
+          },
+          {
+            "prediction_id": "hf-0029/det-0018",
+            "annotation_id": "hf-0029-line-0020",
+            "iou": 0.9174917491749175
+          },
+          {
+            "prediction_id": "hf-0029/det-0019",
+            "annotation_id": "hf-0029-line-0021",
+            "iou": 0.9058007004138809
+          },
+          {
+            "prediction_id": "hf-0029/det-0020",
+            "annotation_id": "audit-hf-0029-039",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [],
+        "missed": [
+          "hf-0029-line-0016"
+        ],
+        "page": {
+          "samples": 1,
+          "substitutions": 41,
+          "deletions": 18,
+          "insertions": 8,
+          "errors": 67,
+          "reference_units": 442,
+          "cer_micro": 0.1515837104072398,
+          "cer_no_space_micro": 0.15072463768115943,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0033",
+        "reference_regions": 17,
+        "prediction_regions": 25,
+        "ignored": [
+          "det-0000",
+          "det-0001",
+          "det-0002",
+          "det-0003",
+          "det-0019",
+          "det-0020",
+          "det-0021",
+          "det-0022",
+          "det-0023"
+        ],
+        "mixed_keep": [
+          "det-0005",
+          "det-0006",
+          "det-0014",
+          "det-0016",
+          "det-0017",
+          "det-0018",
+          "det-0024",
+          "det-0030"
+        ],
+        "matches": [
+          {
+            "prediction_id": "hf-0033/det-0004",
+            "annotation_id": "hf-0033-line-0002",
+            "iou": 0.8997687584722112
+          },
+          {
+            "prediction_id": "hf-0033/det-0007",
+            "annotation_id": "hf-0033-line-0005",
+            "iou": 0.8133142206669759
+          },
+          {
+            "prediction_id": "hf-0033/det-0008",
+            "annotation_id": "hf-0033-line-0006",
+            "iou": 0.8549701870456587
+          },
+          {
+            "prediction_id": "hf-0033/det-0009",
+            "annotation_id": "hf-0033-line-0007",
+            "iou": 0.7382341586040936
+          },
+          {
+            "prediction_id": "hf-0033/det-0010",
+            "annotation_id": "hf-0033-line-0009",
+            "iou": 0.7922659984324462
+          },
+          {
+            "prediction_id": "hf-0033/det-0011",
+            "annotation_id": "hf-0033-line-0011",
+            "iou": 0.8968512163473514
+          },
+          {
+            "prediction_id": "hf-0033/det-0012",
+            "annotation_id": "hf-0033-line-0012",
+            "iou": 0.9120585795188111
+          },
+          {
+            "prediction_id": "hf-0033/det-0013",
+            "annotation_id": "hf-0033-line-0013",
+            "iou": 0.8643713923117862
+          },
+          {
+            "prediction_id": "hf-0033/det-0015",
+            "annotation_id": "hf-0033-line-0014",
+            "iou": 0.8857107875454425
+          },
+          {
+            "prediction_id": "hf-0033/det-0025",
+            "annotation_id": "hf-0033-line-0017",
+            "iou": 0.9166752639361738
+          },
+          {
+            "prediction_id": "hf-0033/det-0026",
+            "annotation_id": "hf-0033-line-0016",
+            "iou": 0.8365139175884283
+          },
+          {
+            "prediction_id": "hf-0033/det-0027",
+            "annotation_id": "hf-0033-line-0018",
+            "iou": 0.8330329238676583
+          },
+          {
+            "prediction_id": "hf-0033/det-0028",
+            "annotation_id": "hf-0033-line-0019",
+            "iou": 0.8356981654861126
+          },
+          {
+            "prediction_id": "hf-0033/det-0029",
+            "annotation_id": "hf-0033-line-0020",
+            "iou": 0.8963818208560083
+          },
+          {
+            "prediction_id": "hf-0033/det-0031",
+            "annotation_id": "hf-0033-line-0022",
+            "iou": 0.800184374279788
+          },
+          {
+            "prediction_id": "hf-0033/det-0032",
+            "annotation_id": "hf-0033-line-0023",
+            "iou": 0.8371845536100028
+          },
+          {
+            "prediction_id": "hf-0033/det-0033",
+            "annotation_id": "audit-hf-0033-045",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0033/det-0005",
+          "hf-0033/det-0006",
+          "hf-0033/det-0014",
+          "hf-0033/det-0016",
+          "hf-0033/det-0017",
+          "hf-0033/det-0018",
+          "hf-0033/det-0024",
+          "hf-0033/det-0030"
+        ],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 50,
+          "deletions": 8,
+          "insertions": 104,
+          "errors": 162,
+          "reference_units": 325,
+          "cer_micro": 0.49846153846153846,
+          "cer_no_space_micro": 0.5458333333333333,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0048",
+        "reference_regions": 21,
+        "prediction_regions": 23,
+        "ignored": [
+          "det-0004",
+          "det-0006",
+          "det-0007",
+          "det-0010",
+          "det-0011",
+          "det-0013",
+          "det-0014"
+        ],
+        "mixed_keep": [
+          "det-0000",
+          "det-0001"
+        ],
+        "matches": [
+          {
+            "prediction_id": "hf-0048/det-0001",
+            "annotation_id": "audit-header-47",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0048/det-0002",
+            "annotation_id": "hf-0048-line-0003",
+            "iou": 0.8865849181290844
+          },
+          {
+            "prediction_id": "hf-0048/det-0003",
+            "annotation_id": "hf-0048-line-0005",
+            "iou": 0.8676716917922948
+          },
+          {
+            "prediction_id": "hf-0048/det-0005",
+            "annotation_id": "hf-0048-line-0006",
+            "iou": 0.735364996485591
+          },
+          {
+            "prediction_id": "hf-0048/det-0008",
+            "annotation_id": "hf-0048-line-0007",
+            "iou": 0.7209483377327964
+          },
+          {
+            "prediction_id": "hf-0048/det-0009",
+            "annotation_id": "hf-0048-line-0011",
+            "iou": 0.6709165996840267
+          },
+          {
+            "prediction_id": "hf-0048/det-0012",
+            "annotation_id": "hf-0048-line-0010",
+            "iou": 0.6250497017892644
+          },
+          {
+            "prediction_id": "hf-0048/det-0015",
+            "annotation_id": "hf-0048-line-0012",
+            "iou": 0.9499310582557738
+          },
+          {
+            "prediction_id": "hf-0048/det-0016",
+            "annotation_id": "hf-0048-line-0013",
+            "iou": 0.8731998595012294
+          },
+          {
+            "prediction_id": "hf-0048/det-0017",
+            "annotation_id": "hf-0048-line-0014",
+            "iou": 0.8808957446323138
+          },
+          {
+            "prediction_id": "hf-0048/det-0018",
+            "annotation_id": "hf-0048-line-0015",
+            "iou": 0.9755696712218451
+          },
+          {
+            "prediction_id": "hf-0048/det-0019",
+            "annotation_id": "hf-0048-line-0016",
+            "iou": 0.8929703191251953
+          },
+          {
+            "prediction_id": "hf-0048/det-0020",
+            "annotation_id": "hf-0048-line-0017",
+            "iou": 0.8699641897940913
+          },
+          {
+            "prediction_id": "hf-0048/det-0021",
+            "annotation_id": "hf-0048-line-0018",
+            "iou": 0.8727700963928992
+          },
+          {
+            "prediction_id": "hf-0048/det-0022",
+            "annotation_id": "hf-0048-line-0019",
+            "iou": 0.8896520443206116
+          },
+          {
+            "prediction_id": "hf-0048/det-0024",
+            "annotation_id": "hf-0048-line-0020",
+            "iou": 0.7592902558380119
+          },
+          {
+            "prediction_id": "hf-0048/det-0025",
+            "annotation_id": "hf-0048-line-0021",
+            "iou": 0.9007551240560949
+          },
+          {
+            "prediction_id": "hf-0048/det-0026",
+            "annotation_id": "hf-0048-line-0022",
+            "iou": 0.8777515625233817
+          },
+          {
+            "prediction_id": "hf-0048/det-0027",
+            "annotation_id": "hf-0048-line-0023",
+            "iou": 0.8723478260869565
+          },
+          {
+            "prediction_id": "hf-0048/det-0028",
+            "annotation_id": "hf-0048-line-0024",
+            "iou": 0.9381980640357409
+          },
+          {
+            "prediction_id": "hf-0048/det-0029",
+            "annotation_id": "audit-hf-0048-049",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0048/det-0000",
+          "hf-0048/det-0023"
+        ],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 21,
+          "deletions": 6,
+          "insertions": 15,
+          "errors": 42,
+          "reference_units": 429,
+          "cer_micro": 0.0979020979020979,
+          "cer_no_space_micro": 0.10256410256410256,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0052",
+        "reference_regions": 5,
+        "prediction_regions": 5,
+        "ignored": [],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0052/det-0000",
+            "annotation_id": "audit-hf-0052-050",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0052/det-0001",
+            "annotation_id": "hf-0052-line-0002",
+            "iou": 0.7302392031192643
+          },
+          {
+            "prediction_id": "hf-0052/det-0002",
+            "annotation_id": "audit-hf-0052-051",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0052/det-0003",
+            "annotation_id": "line-d4d02678-320c-4e2a-a15c-fe5a5ac7abd7",
+            "iou": 0.8208345614552192
+          },
+          {
+            "prediction_id": "hf-0052/det-0004",
+            "annotation_id": "line-8de86c00-4d1c-48d9-9b9e-79904570969b",
+            "iou": 0.842821104250586
+          }
+        ],
+        "unmatched_predictions": [],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 9,
+          "deletions": 6,
+          "insertions": 1,
+          "errors": 16,
+          "reference_units": 121,
+          "cer_micro": 0.1322314049586777,
+          "cer_no_space_micro": 0.14444444444444443,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0057",
+        "reference_regions": 23,
+        "prediction_regions": 23,
+        "ignored": [
+          "det-0011",
+          "det-0012"
+        ],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0057/det-0000",
+            "annotation_id": "audit-hf-0057-052",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0057/det-0001",
+            "annotation_id": "hf-0057-line-0002",
+            "iou": 0.8826776110953863
+          },
+          {
+            "prediction_id": "hf-0057/det-0002",
+            "annotation_id": "hf-0057-line-0003",
+            "iou": 0.8772655797401308
+          },
+          {
+            "prediction_id": "hf-0057/det-0003",
+            "annotation_id": "hf-0057-line-0004",
+            "iou": 0.8473867569825734
+          },
+          {
+            "prediction_id": "hf-0057/det-0004",
+            "annotation_id": "hf-0057-line-0005",
+            "iou": 0.8670704615793571
+          },
+          {
+            "prediction_id": "hf-0057/det-0005",
+            "annotation_id": "hf-0057-line-0006",
+            "iou": 0.8960674157303371
+          },
+          {
+            "prediction_id": "hf-0057/det-0006",
+            "annotation_id": "hf-0057-line-0007",
+            "iou": 0.8695332433797809
+          },
+          {
+            "prediction_id": "hf-0057/det-0007",
+            "annotation_id": "hf-0057-line-0008",
+            "iou": 0.8627083312554233
+          },
+          {
+            "prediction_id": "hf-0057/det-0008",
+            "annotation_id": "hf-0057-line-0009",
+            "iou": 0.6895539906103286
+          },
+          {
+            "prediction_id": "hf-0057/det-0009",
+            "annotation_id": "hf-0057-line-0010",
+            "iou": 0.7950475784521512
+          },
+          {
+            "prediction_id": "hf-0057/det-0010",
+            "annotation_id": "hf-0057-line-0011",
+            "iou": 0.784913296736469
+          },
+          {
+            "prediction_id": "hf-0057/det-0013",
+            "annotation_id": "hf-0057-line-0013",
+            "iou": 0.9595806562199343
+          },
+          {
+            "prediction_id": "hf-0057/det-0014",
+            "annotation_id": "hf-0057-line-0014",
+            "iou": 0.8762964282289112
+          },
+          {
+            "prediction_id": "hf-0057/det-0015",
+            "annotation_id": "hf-0057-line-0015",
+            "iou": 0.7648892534864643
+          },
+          {
+            "prediction_id": "hf-0057/det-0016",
+            "annotation_id": "hf-0057-line-0016",
+            "iou": 0.7195041170469435
+          },
+          {
+            "prediction_id": "hf-0057/det-0017",
+            "annotation_id": "hf-0057-line-0017",
+            "iou": 0.8812638991845811
+          },
+          {
+            "prediction_id": "hf-0057/det-0018",
+            "annotation_id": "hf-0057-line-0018",
+            "iou": 0.7725357825051679
+          },
+          {
+            "prediction_id": "hf-0057/det-0019",
+            "annotation_id": "hf-0057-line-0019",
+            "iou": 0.8602405824628047
+          },
+          {
+            "prediction_id": "hf-0057/det-0020",
+            "annotation_id": "hf-0057-line-0020",
+            "iou": 0.7100643174200562
+          },
+          {
+            "prediction_id": "hf-0057/det-0021",
+            "annotation_id": "hf-0057-line-0021",
+            "iou": 0.6472771817810609
+          },
+          {
+            "prediction_id": "hf-0057/det-0022",
+            "annotation_id": "hf-0057-line-0022",
+            "iou": 0.9160819534100477
+          },
+          {
+            "prediction_id": "hf-0057/det-0023",
+            "annotation_id": "hf-0057-line-0023",
+            "iou": 0.8625894750795334
+          },
+          {
+            "prediction_id": "hf-0057/det-0024",
+            "annotation_id": "audit-hf-0057-053",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 66,
+          "deletions": 8,
+          "insertions": 13,
+          "errors": 87,
+          "reference_units": 589,
+          "cer_micro": 0.14770797962648557,
+          "cer_no_space_micro": 0.17865429234338748,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0077",
+        "reference_regions": 23,
+        "prediction_regions": 24,
+        "ignored": [
+          "det-0000",
+          "det-0003",
+          "det-0004",
+          "det-0005",
+          "det-0014",
+          "det-0015",
+          "det-0017",
+          "det-0018"
+        ],
+        "mixed_keep": [
+          "det-0020"
+        ],
+        "matches": [
+          {
+            "prediction_id": "hf-0077/det-0001",
+            "annotation_id": "hf-0077-line-0002",
+            "iou": 0.7336394948335246
+          },
+          {
+            "prediction_id": "hf-0077/det-0002",
+            "annotation_id": "hf-0077-line-0003",
+            "iou": 0.5678991840886914
+          },
+          {
+            "prediction_id": "hf-0077/det-0006",
+            "annotation_id": "hf-0077-line-0005",
+            "iou": 0.9143127962085308
+          },
+          {
+            "prediction_id": "hf-0077/det-0007",
+            "annotation_id": "audit-hf-0077-055",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0008",
+            "annotation_id": "audit-hf-0077-056",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0009",
+            "annotation_id": "audit-hf-0077-057",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0010",
+            "annotation_id": "audit-hf-0077-058",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0011",
+            "annotation_id": "audit-hf-0077-059",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0012",
+            "annotation_id": "audit-hf-0077-060",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0013",
+            "annotation_id": "audit-hf-0077-061",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0016",
+            "annotation_id": "audit-hf-0077-064",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0019",
+            "annotation_id": "audit-hf-0077-067",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0021",
+            "annotation_id": "audit-hf-0077-069",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0022",
+            "annotation_id": "audit-hf-0077-070",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0023",
+            "annotation_id": "audit-hf-0077-071",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0024",
+            "annotation_id": "audit-hf-0077-072",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0025",
+            "annotation_id": "audit-hf-0077-073",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0026",
+            "annotation_id": "audit-hf-0077-074",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0027",
+            "annotation_id": "audit-hf-0077-075",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0028",
+            "annotation_id": "audit-hf-0077-076",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0029",
+            "annotation_id": "audit-hf-0077-077",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0030",
+            "annotation_id": "audit-hf-0077-078",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0031",
+            "annotation_id": "audit-hf-0077-079",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0077/det-0020"
+        ],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 50,
+          "deletions": 14,
+          "insertions": 54,
+          "errors": 118,
+          "reference_units": 600,
+          "cer_micro": 0.19666666666666666,
+          "cer_no_space_micro": 0.21476510067114093,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0081",
+        "reference_regions": 18,
+        "prediction_regions": 20,
+        "ignored": [
+          "det-0015",
+          "det-0017"
+        ],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0081/det-0000",
+            "annotation_id": "hf-0081-line-0001",
+            "iou": 0.8647183752931287
+          },
+          {
+            "prediction_id": "hf-0081/det-0001",
+            "annotation_id": "hf-0081-line-0002",
+            "iou": 0.8357414448669201
+          },
+          {
+            "prediction_id": "hf-0081/det-0002",
+            "annotation_id": "hf-0081-line-0003",
+            "iou": 0.9822158989863062
+          },
+          {
+            "prediction_id": "hf-0081/det-0003",
+            "annotation_id": "hf-0081-line-0004",
+            "iou": 0.990016939582157
+          },
+          {
+            "prediction_id": "hf-0081/det-0004",
+            "annotation_id": "hf-0081-line-0005",
+            "iou": 0.9216349908877897
+          },
+          {
+            "prediction_id": "hf-0081/det-0005",
+            "annotation_id": "hf-0081-line-0006",
+            "iou": 0.9663484113319768
+          },
+          {
+            "prediction_id": "hf-0081/det-0006",
+            "annotation_id": "hf-0081-line-0007",
+            "iou": 0.798714953271028
+          },
+          {
+            "prediction_id": "hf-0081/det-0007",
+            "annotation_id": "hf-0081-line-0008",
+            "iou": 0.8245032333921223
+          },
+          {
+            "prediction_id": "hf-0081/det-0008",
+            "annotation_id": "hf-0081-line-0009",
+            "iou": 0.891042780748663
+          },
+          {
+            "prediction_id": "hf-0081/det-0009",
+            "annotation_id": "hf-0081-line-0010",
+            "iou": 0.9067650522998681
+          },
+          {
+            "prediction_id": "hf-0081/det-0010",
+            "annotation_id": "hf-0081-line-0011",
+            "iou": 0.8934024916379854
+          },
+          {
+            "prediction_id": "hf-0081/det-0011",
+            "annotation_id": "hf-0081-line-0012",
+            "iou": 0.9551037864396328
+          },
+          {
+            "prediction_id": "hf-0081/det-0012",
+            "annotation_id": "hf-0081-line-0013",
+            "iou": 0.9121451896508415
+          },
+          {
+            "prediction_id": "hf-0081/det-0013",
+            "annotation_id": "hf-0081-line-0014",
+            "iou": 0.9534944521252082
+          },
+          {
+            "prediction_id": "hf-0081/det-0018",
+            "annotation_id": "hf-0081-line-0017",
+            "iou": 0.7536529404661273
+          },
+          {
+            "prediction_id": "hf-0081/det-0019",
+            "annotation_id": "hf-0081-line-0018",
+            "iou": 0.885829509108608
+          },
+          {
+            "prediction_id": "hf-0081/det-0020",
+            "annotation_id": "hf-0081-line-0019",
+            "iou": 0.9363841779852506
+          },
+          {
+            "prediction_id": "hf-0081/det-0021",
+            "annotation_id": "hf-0081-line-0020",
+            "iou": 0.9139674182595093
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0081/det-0014",
+          "hf-0081/det-0016"
+        ],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 45,
+          "deletions": 10,
+          "insertions": 45,
+          "errors": 100,
+          "reference_units": 458,
+          "cer_micro": 0.2183406113537118,
+          "cer_no_space_micro": 0.23964497041420119,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0087",
+        "reference_regions": 13,
+        "prediction_regions": 17,
+        "ignored": [
+          "det-0002",
+          "det-0003",
+          "det-0008",
+          "det-0009",
+          "det-0012",
+          "det-0013",
+          "det-0014"
+        ],
+        "mixed_keep": [
+          "det-0001",
+          "det-0004",
+          "det-0006",
+          "det-0011"
+        ],
+        "matches": [
+          {
+            "prediction_id": "hf-0087/det-0000",
+            "annotation_id": "line-be94cffd-5b7d-4fd6-abfa-dd1b7d37cbb7",
+            "iou": 0.7529394739698274
+          },
+          {
+            "prediction_id": "hf-0087/det-0005",
+            "annotation_id": "line-bec057c1-ef48-43a0-a94f-2b9ac216ae99",
+            "iou": 0.843834518681759
+          },
+          {
+            "prediction_id": "hf-0087/det-0007",
+            "annotation_id": "line-2d7c9379-f392-45f0-9d06-74e0c350df1c",
+            "iou": 0.649607223476298
+          },
+          {
+            "prediction_id": "hf-0087/det-0010",
+            "annotation_id": "line-e5bd8631-8d37-42bb-ae44-13f4a39e47cc",
+            "iou": 0.6468281981385146
+          },
+          {
+            "prediction_id": "hf-0087/det-0015",
+            "annotation_id": "line-2cdf2aeb-91e1-49f2-b9cc-cc124b229e04",
+            "iou": 0.5390480339832262
+          },
+          {
+            "prediction_id": "hf-0087/det-0016",
+            "annotation_id": "line-7908e211-9739-4139-a5bb-852d94821753",
+            "iou": 0.8245652491597253
+          },
+          {
+            "prediction_id": "hf-0087/det-0017",
+            "annotation_id": "line-8fee2909-8399-4a78-8fa6-11234fee414d",
+            "iou": 0.7090727931726618
+          },
+          {
+            "prediction_id": "hf-0087/det-0018",
+            "annotation_id": "line-6c189d31-2435-4b2e-bfde-953524a82c8a",
+            "iou": 0.8511732081911263
+          },
+          {
+            "prediction_id": "hf-0087/det-0019",
+            "annotation_id": "line-71567ffe-3646-4440-854e-ec58f7776012",
+            "iou": 0.7875534869754522
+          },
+          {
+            "prediction_id": "hf-0087/det-0020",
+            "annotation_id": "line-020282a0-7103-4f9b-bef8-1f176dbbdb39",
+            "iou": 0.9073606224523009
+          },
+          {
+            "prediction_id": "hf-0087/det-0021",
+            "annotation_id": "line-f8bd6b06-8f5f-4c4b-9cdb-c02c1a359858",
+            "iou": 0.7326427293579684
+          },
+          {
+            "prediction_id": "hf-0087/det-0022",
+            "annotation_id": "line-d442123f-2333-49e1-b098-7d5ca003bcec",
+            "iou": 0.8154205373337743
+          },
+          {
+            "prediction_id": "hf-0087/det-0023",
+            "annotation_id": "audit-hf-0087-082",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0087/det-0001",
+          "hf-0087/det-0004",
+          "hf-0087/det-0006",
+          "hf-0087/det-0011"
+        ],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 25,
+          "deletions": 3,
+          "insertions": 182,
+          "errors": 210,
+          "reference_units": 240,
+          "cer_micro": 0.875,
+          "cer_no_space_micro": 0.8971428571428571,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0088",
+        "reference_regions": 6,
+        "prediction_regions": 6,
+        "ignored": [],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0088/det-0000",
+            "annotation_id": "hf-0088-line-0001",
+            "iou": 0.8659716901238053
+          },
+          {
+            "prediction_id": "hf-0088/det-0001",
+            "annotation_id": "hf-0088-line-0002",
+            "iou": 0.9397448546848765
+          },
+          {
+            "prediction_id": "hf-0088/det-0002",
+            "annotation_id": "hf-0088-line-0003",
+            "iou": 0.8851759687166726
+          },
+          {
+            "prediction_id": "hf-0088/det-0003",
+            "annotation_id": "hf-0088-line-0004",
+            "iou": 0.9215233369321485
+          },
+          {
+            "prediction_id": "hf-0088/det-0004",
+            "annotation_id": "hf-0088-line-0005",
+            "iou": 0.8460905514971502
+          },
+          {
+            "prediction_id": "hf-0088/det-0005",
+            "annotation_id": "hf-0088-line-0006",
+            "iou": 0.7538516463900256
+          }
+        ],
+        "unmatched_predictions": [],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 10,
+          "deletions": 1,
+          "insertions": 13,
+          "errors": 24,
+          "reference_units": 111,
+          "cer_micro": 0.21621621621621623,
+          "cer_no_space_micro": 0.2235294117647059,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0090",
+        "reference_regions": 2,
+        "prediction_regions": 5,
+        "ignored": [
+          "det-0000",
+          "det-0002",
+          "det-0003",
+          "det-0004",
+          "det-0005",
+          "det-0006",
+          "det-0007",
+          "det-0008",
+          "det-0009",
+          "det-0010",
+          "det-0011",
+          "det-0012",
+          "det-0013",
+          "det-0014",
+          "det-0015",
+          "det-0019",
+          "det-0020",
+          "det-0021",
+          "det-0022",
+          "det-0023",
+          "det-0024",
+          "det-0025",
+          "det-0026",
+          "det-0027",
+          "det-0028",
+          "det-0029",
+          "det-0030",
+          "det-0031"
+        ],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0090/det-0032",
+            "annotation_id": "audit-hf-0090-087",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0090/det-0001",
+          "hf-0090/det-0016",
+          "hf-0090/det-0017",
+          "hf-0090/det-0018"
+        ],
+        "missed": [
+          "line-c6d3986e-3399-4ff3-b356-e5ed7e8a74c0"
+        ],
+        "page": {
+          "samples": 1,
+          "substitutions": 5,
+          "deletions": 0,
+          "insertions": 19,
+          "errors": 24,
+          "reference_units": 33,
+          "cer_micro": 0.7272727272727273,
+          "cer_no_space_micro": 0.8076923076923077,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0094",
+        "reference_regions": 11,
+        "prediction_regions": 17,
+        "ignored": [
+          "det-0011",
+          "det-0012",
+          "det-0013",
+          "det-0014",
+          "det-0016",
+          "det-0018",
+          "det-0019",
+          "det-0022",
+          "det-0023",
+          "det-0024",
+          "det-0025",
+          "det-0026",
+          "det-0028",
+          "det-0030",
+          "det-0031"
+        ],
+        "mixed_keep": [
+          "det-0008",
+          "det-0009",
+          "det-0017",
+          "det-0020",
+          "det-0029"
+        ],
+        "matches": [
+          {
+            "prediction_id": "hf-0094/det-0000",
+            "annotation_id": "hf-0094-line-0002",
+            "iou": 0.6965306900495616
+          },
+          {
+            "prediction_id": "hf-0094/det-0001",
+            "annotation_id": "hf-0094-line-0001",
+            "iou": 0.8095838587641866
+          },
+          {
+            "prediction_id": "hf-0094/det-0002",
+            "annotation_id": "hf-0094-line-0003",
+            "iou": 0.9404967847385438
+          },
+          {
+            "prediction_id": "hf-0094/det-0003",
+            "annotation_id": "hf-0094-line-0004",
+            "iou": 0.9286231135001034
+          },
+          {
+            "prediction_id": "hf-0094/det-0004",
+            "annotation_id": "hf-0094-line-0005",
+            "iou": 0.8928704865935929
+          },
+          {
+            "prediction_id": "hf-0094/det-0005",
+            "annotation_id": "hf-0094-line-0006",
+            "iou": 0.9564424735156443
+          },
+          {
+            "prediction_id": "hf-0094/det-0007",
+            "annotation_id": "hf-0094-line-0007",
+            "iou": 0.6112274189022943
+          },
+          {
+            "prediction_id": "hf-0094/det-0010",
+            "annotation_id": "audit-hf-0094-091",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0094/det-0015",
+            "annotation_id": "audit-hf-0094-096",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0094/det-0021",
+            "annotation_id": "audit-hf-0094-102",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0094/det-0027",
+            "annotation_id": "audit-hf-0094-108",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0094/det-0006",
+          "hf-0094/det-0008",
+          "hf-0094/det-0009",
+          "hf-0094/det-0017",
+          "hf-0094/det-0020",
+          "hf-0094/det-0029"
+        ],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 52,
+          "deletions": 0,
+          "insertions": 77,
+          "errors": 129,
+          "reference_units": 158,
+          "cer_micro": 0.8164556962025317,
+          "cer_no_space_micro": 0.859504132231405,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0098",
+        "reference_regions": 25,
+        "prediction_regions": 25,
+        "ignored": [
+          "det-0011"
+        ],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0098/det-0000",
+            "annotation_id": "hf-0098-line-0001",
+            "iou": 0.754760117382106
+          },
+          {
+            "prediction_id": "hf-0098/det-0001",
+            "annotation_id": "hf-0098-line-0002",
+            "iou": 0.8415460754062208
+          },
+          {
+            "prediction_id": "hf-0098/det-0002",
+            "annotation_id": "audit-hf-0098-113",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0098/det-0003",
+            "annotation_id": "hf-0098-line-0003",
+            "iou": 0.7047729679866069
+          },
+          {
+            "prediction_id": "hf-0098/det-0004",
+            "annotation_id": "hf-0098-line-0004",
+            "iou": 0.7454217178230591
+          },
+          {
+            "prediction_id": "hf-0098/det-0005",
+            "annotation_id": "hf-0098-line-0005",
+            "iou": 0.8231511254019293
+          },
+          {
+            "prediction_id": "hf-0098/det-0006",
+            "annotation_id": "hf-0098-line-0006",
+            "iou": 0.698627488884593
+          },
+          {
+            "prediction_id": "hf-0098/det-0007",
+            "annotation_id": "hf-0098-line-0007",
+            "iou": 0.8418837308607332
+          },
+          {
+            "prediction_id": "hf-0098/det-0008",
+            "annotation_id": "hf-0098-line-0008",
+            "iou": 0.8634763332898683
+          },
+          {
+            "prediction_id": "hf-0098/det-0009",
+            "annotation_id": "hf-0098-line-0009",
+            "iou": 0.9270745724698626
+          },
+          {
+            "prediction_id": "hf-0098/det-0010",
+            "annotation_id": "hf-0098-line-0010",
+            "iou": 0.850840543474685
+          },
+          {
+            "prediction_id": "hf-0098/det-0012",
+            "annotation_id": "hf-0098-line-0012",
+            "iou": 0.870480615652679
+          },
+          {
+            "prediction_id": "hf-0098/det-0013",
+            "annotation_id": "hf-0098-line-0013",
+            "iou": 0.878452401545292
+          },
+          {
+            "prediction_id": "hf-0098/det-0014",
+            "annotation_id": "hf-0098-line-0014",
+            "iou": 0.8137715179968701
+          },
+          {
+            "prediction_id": "hf-0098/det-0015",
+            "annotation_id": "hf-0098-line-0015",
+            "iou": 0.7996198751018192
+          },
+          {
+            "prediction_id": "hf-0098/det-0016",
+            "annotation_id": "hf-0098-line-0016",
+            "iou": 0.7782192181345992
+          },
+          {
+            "prediction_id": "hf-0098/det-0017",
+            "annotation_id": "hf-0098-line-0017",
+            "iou": 0.7762586671604633
+          },
+          {
+            "prediction_id": "hf-0098/det-0018",
+            "annotation_id": "hf-0098-line-0018",
+            "iou": 0.8060168471720818
+          },
+          {
+            "prediction_id": "hf-0098/det-0019",
+            "annotation_id": "hf-0098-line-0019",
+            "iou": 0.8083058141891489
+          },
+          {
+            "prediction_id": "hf-0098/det-0020",
+            "annotation_id": "hf-0098-line-0020",
+            "iou": 0.7275444037214548
+          },
+          {
+            "prediction_id": "hf-0098/det-0021",
+            "annotation_id": "hf-0098-line-0021",
+            "iou": 0.7782336233713538
+          },
+          {
+            "prediction_id": "hf-0098/det-0022",
+            "annotation_id": "hf-0098-line-0022",
+            "iou": 0.6856883143116856
+          },
+          {
+            "prediction_id": "hf-0098/det-0023",
+            "annotation_id": "hf-0098-line-0023",
+            "iou": 0.7471399060125398
+          },
+          {
+            "prediction_id": "hf-0098/det-0024",
+            "annotation_id": "hf-0098-line-0024",
+            "iou": 0.7067193675889328
+          },
+          {
+            "prediction_id": "hf-0098/det-0025",
+            "annotation_id": "hf-0098-line-0025",
+            "iou": 0.7828251400124455
+          }
+        ],
+        "unmatched_predictions": [],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 34,
+          "deletions": 4,
+          "insertions": 2,
+          "errors": 40,
+          "reference_units": 338,
+          "cer_micro": 0.11834319526627218,
+          "cer_no_space_micro": 0.1557377049180328,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0111",
+        "reference_regions": 23,
+        "prediction_regions": 23,
+        "ignored": [
+          "det-0008",
+          "det-0016",
+          "det-0022",
+          "det-0026"
+        ],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0111/det-0000",
+            "annotation_id": "hf-0111-line-0001",
+            "iou": 0.8393298544355946
+          },
+          {
+            "prediction_id": "hf-0111/det-0001",
+            "annotation_id": "hf-0111-line-0002",
+            "iou": 0.8834269662921348
+          },
+          {
+            "prediction_id": "hf-0111/det-0002",
+            "annotation_id": "hf-0111-line-0003",
+            "iou": 0.914512093411176
+          },
+          {
+            "prediction_id": "hf-0111/det-0003",
+            "annotation_id": "hf-0111-line-0004",
+            "iou": 0.8609171155303418
+          },
+          {
+            "prediction_id": "hf-0111/det-0004",
+            "annotation_id": "hf-0111-line-0005",
+            "iou": 0.8531178851505186
+          },
+          {
+            "prediction_id": "hf-0111/det-0005",
+            "annotation_id": "hf-0111-line-0007",
+            "iou": 0.8956389433740903
+          },
+          {
+            "prediction_id": "hf-0111/det-0006",
+            "annotation_id": "hf-0111-line-0008",
+            "iou": 0.9137574982790835
+          },
+          {
+            "prediction_id": "hf-0111/det-0007",
+            "annotation_id": "hf-0111-line-0009",
+            "iou": 0.9687345729800889
+          },
+          {
+            "prediction_id": "hf-0111/det-0009",
+            "annotation_id": "hf-0111-line-0011",
+            "iou": 0.8973325657263481
+          },
+          {
+            "prediction_id": "hf-0111/det-0010",
+            "annotation_id": "hf-0111-line-0012",
+            "iou": 0.8175626720765107
+          },
+          {
+            "prediction_id": "hf-0111/det-0011",
+            "annotation_id": "hf-0111-line-0013",
+            "iou": 0.8491511906118263
+          },
+          {
+            "prediction_id": "hf-0111/det-0012",
+            "annotation_id": "hf-0111-line-0014",
+            "iou": 0.8249175906502847
+          },
+          {
+            "prediction_id": "hf-0111/det-0013",
+            "annotation_id": "hf-0111-line-0015",
+            "iou": 0.9358363714767337
+          },
+          {
+            "prediction_id": "hf-0111/det-0014",
+            "annotation_id": "hf-0111-line-0016",
+            "iou": 0.8473357306309252
+          },
+          {
+            "prediction_id": "hf-0111/det-0015",
+            "annotation_id": "hf-0111-line-0017",
+            "iou": 0.8426380599833799
+          },
+          {
+            "prediction_id": "hf-0111/det-0017",
+            "annotation_id": "hf-0111-line-0019",
+            "iou": 0.9018189097980895
+          },
+          {
+            "prediction_id": "hf-0111/det-0018",
+            "annotation_id": "hf-0111-line-0020",
+            "iou": 0.8616325081168831
+          },
+          {
+            "prediction_id": "hf-0111/det-0019",
+            "annotation_id": "hf-0111-line-0021",
+            "iou": 0.8982649668626286
+          },
+          {
+            "prediction_id": "hf-0111/det-0020",
+            "annotation_id": "hf-0111-line-0022",
+            "iou": 0.8727451861081731
+          },
+          {
+            "prediction_id": "hf-0111/det-0021",
+            "annotation_id": "hf-0111-line-0023",
+            "iou": 0.8087123456497524
+          },
+          {
+            "prediction_id": "hf-0111/det-0023",
+            "annotation_id": "hf-0111-line-0025",
+            "iou": 0.8638589267332051
+          },
+          {
+            "prediction_id": "hf-0111/det-0024",
+            "annotation_id": "hf-0111-line-0026",
+            "iou": 0.8800668299443717
+          },
+          {
+            "prediction_id": "hf-0111/det-0025",
+            "annotation_id": "hf-0111-line-0027",
+            "iou": 0.8820184790334044
+          }
+        ],
+        "unmatched_predictions": [],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 22,
+          "deletions": 13,
+          "insertions": 5,
+          "errors": 40,
+          "reference_units": 403,
+          "cer_micro": 0.09925558312655088,
+          "cer_no_space_micro": 0.07758620689655173,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0137",
+        "reference_regions": 40,
+        "prediction_regions": 48,
+        "ignored": [
+          "det-0003",
+          "det-0005",
+          "det-0006",
+          "det-0007",
+          "det-0008",
+          "det-0010",
+          "det-0011",
+          "det-0012",
+          "det-0013",
+          "det-0014",
+          "det-0015",
+          "det-0016",
+          "det-0019",
+          "det-0041",
+          "det-0042",
+          "det-0057",
+          "det-0059",
+          "det-0060",
+          "det-0061",
+          "det-0062",
+          "det-0063",
+          "det-0064",
+          "det-0065",
+          "det-0066",
+          "det-0067",
+          "det-0068",
+          "det-0069",
+          "det-0070",
+          "det-0072",
+          "det-0073",
+          "det-0074",
+          "det-0076",
+          "det-0077",
+          "det-0078",
+          "det-0080",
+          "det-0081",
+          "det-0083",
+          "det-0084",
+          "det-0085",
+          "det-0086",
+          "det-0088",
+          "det-0089"
+        ],
+        "mixed_keep": [
+          "det-0017",
+          "det-0021",
+          "det-0028",
+          "det-0030",
+          "det-0035",
+          "det-0052",
+          "det-0053",
+          "det-0054"
+        ],
+        "matches": [
+          {
+            "prediction_id": "hf-0137/det-0000",
+            "annotation_id": "hf-0137-line-0001",
+            "iou": 0.8822408367681602
+          },
+          {
+            "prediction_id": "hf-0137/det-0001",
+            "annotation_id": "hf-0137-line-0002",
+            "iou": 0.9103342981646999
+          },
+          {
+            "prediction_id": "hf-0137/det-0002",
+            "annotation_id": "hf-0137-line-0003",
+            "iou": 0.796353555816185
+          },
+          {
+            "prediction_id": "hf-0137/det-0004",
+            "annotation_id": "audit-hf-0137-115",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0009",
+            "annotation_id": "audit-hf-0137-120",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0018",
+            "annotation_id": "audit-hf-0137-129",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0020",
+            "annotation_id": "audit-hf-0137-131",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0022",
+            "annotation_id": "audit-hf-0137-133",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0023",
+            "annotation_id": "audit-hf-0137-134",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0024",
+            "annotation_id": "audit-hf-0137-135",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0025",
+            "annotation_id": "audit-hf-0137-136",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0026",
+            "annotation_id": "audit-hf-0137-137",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0027",
+            "annotation_id": "audit-hf-0137-138",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0029",
+            "annotation_id": "audit-hf-0137-140",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0031",
+            "annotation_id": "audit-hf-0137-142",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0032",
+            "annotation_id": "audit-hf-0137-143",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0033",
+            "annotation_id": "audit-hf-0137-144",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0034",
+            "annotation_id": "audit-hf-0137-145",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0036",
+            "annotation_id": "audit-hf-0137-147",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0037",
+            "annotation_id": "audit-hf-0137-148",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0038",
+            "annotation_id": "audit-hf-0137-149",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0039",
+            "annotation_id": "audit-hf-0137-150",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0040",
+            "annotation_id": "audit-hf-0137-151",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0043",
+            "annotation_id": "audit-hf-0137-154",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0044",
+            "annotation_id": "audit-hf-0137-155",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0045",
+            "annotation_id": "audit-hf-0137-156",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0046",
+            "annotation_id": "audit-hf-0137-157",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0047",
+            "annotation_id": "audit-hf-0137-158",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0048",
+            "annotation_id": "audit-hf-0137-159",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0049",
+            "annotation_id": "audit-hf-0137-160",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0050",
+            "annotation_id": "audit-hf-0137-161",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0051",
+            "annotation_id": "audit-hf-0137-162",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0055",
+            "annotation_id": "audit-hf-0137-166",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0056",
+            "annotation_id": "audit-hf-0137-167",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0058",
+            "annotation_id": "audit-hf-0137-169",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0071",
+            "annotation_id": "audit-hf-0137-182",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0075",
+            "annotation_id": "audit-hf-0137-186",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0079",
+            "annotation_id": "audit-hf-0137-190",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0082",
+            "annotation_id": "audit-hf-0137-193",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0087",
+            "annotation_id": "audit-hf-0137-198",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0137/det-0017",
+          "hf-0137/det-0021",
+          "hf-0137/det-0028",
+          "hf-0137/det-0030",
+          "hf-0137/det-0035",
+          "hf-0137/det-0052",
+          "hf-0137/det-0053",
+          "hf-0137/det-0054"
+        ],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 34,
+          "deletions": 7,
+          "insertions": 211,
+          "errors": 252,
+          "reference_units": 428,
+          "cer_micro": 0.5887850467289719,
+          "cer_no_space_micro": 0.5755813953488372,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      }
+    ],
+    "failures": [],
+    "pages": 17,
+    "ignore_policy": ">=.5 of prediction in ignore; ANY intersection with valid GT takes priority; mixed predictions kept",
+    "scope": "provisional audited general text; formulas/isolated symbols/uncertain spans ignored"
+  },
+  "after": {
+    "detection": {
+      "tp": 310,
+      "fp": 36,
+      "fn": 8,
+      "precision": 0.8959537572254336,
+      "recall": 0.9748427672955975,
+      "f1": 0.9337349397590362
+    },
+    "page": {
+      "samples": 17,
+      "substitutions": 541,
+      "deletions": 160,
+      "insertions": 711,
+      "errors": 1412,
+      "reference_units": 5982,
+      "cer_micro": 0.23604145770645268,
+      "cer_no_space_micro": 0.24314919530230536,
+      "exact_match_rate": 0.0,
+      "empty_reference_insertions": 0
+    },
+    "cases": [
+      {
+        "page_id": "hf-0005",
+        "reference_regions": 20,
+        "prediction_regions": 20,
+        "ignored": [
+          "det-0003",
+          "det-0005",
+          "det-0006",
+          "det-0008",
+          "det-0009",
+          "det-0014",
+          "det-0016",
+          "det-0022",
+          "det-0024",
+          "det-0026",
+          "det-0028",
+          "det-0029",
+          "det-0030",
+          "det-0032"
+        ],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0005/det-0001",
+            "annotation_id": "line-215ebf63-31c7-4df3-be52-8138f34469f7",
+            "iou": 0.5352003111629716
+          },
+          {
+            "prediction_id": "hf-0005/det-0002",
+            "annotation_id": "audit-hf-0005-001",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0004",
+            "annotation_id": "audit-hf-0005-003",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0007",
+            "annotation_id": "audit-hf-0005-006",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0010",
+            "annotation_id": "audit-hf-0005-009",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0011",
+            "annotation_id": "audit-hf-0005-010",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0012",
+            "annotation_id": "audit-hf-0005-011",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0013",
+            "annotation_id": "audit-hf-0005-012",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0015",
+            "annotation_id": "audit-hf-0005-014",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0017",
+            "annotation_id": "audit-hf-0005-016",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0018",
+            "annotation_id": "audit-hf-0005-017",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0019",
+            "annotation_id": "audit-hf-0005-018",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0020",
+            "annotation_id": "audit-hf-0005-019",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0021",
+            "annotation_id": "audit-hf-0005-020",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0023",
+            "annotation_id": "audit-hf-0005-022",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0025",
+            "annotation_id": "audit-hf-0005-024",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0027",
+            "annotation_id": "audit-hf-0005-026",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0031",
+            "annotation_id": "audit-hf-0005-030",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0005/det-0033",
+            "annotation_id": "audit-hf-0005-032",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0005/det-0000"
+        ],
+        "missed": [
+          "hf-0005-line-0001"
+        ],
+        "page": {
+          "samples": 1,
+          "substitutions": 19,
+          "deletions": 4,
+          "insertions": 19,
+          "errors": 42,
+          "reference_units": 353,
+          "cer_micro": 0.11898016997167139,
+          "cer_no_space_micro": 0.10067114093959731,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0008",
+        "reference_regions": 22,
+        "prediction_regions": 22,
+        "ignored": [
+          "det-0000",
+          "det-0001",
+          "det-0003",
+          "det-0005",
+          "det-0007",
+          "det-0009",
+          "det-0015",
+          "det-0017",
+          "det-0020",
+          "det-0022"
+        ],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0008/det-0002",
+            "annotation_id": "hf-0008-line-0002",
+            "iou": 0.9105697095743891
+          },
+          {
+            "prediction_id": "hf-0008/det-0004",
+            "annotation_id": "hf-0008-line-0004",
+            "iou": 0.8916293987441839
+          },
+          {
+            "prediction_id": "hf-0008/det-0006",
+            "annotation_id": "hf-0008-line-0005",
+            "iou": 0.8622047244094488
+          },
+          {
+            "prediction_id": "hf-0008/det-0008",
+            "annotation_id": "hf-0008-line-0007",
+            "iou": 0.9411257338415737
+          },
+          {
+            "prediction_id": "hf-0008/det-0010",
+            "annotation_id": "hf-0008-line-0009",
+            "iou": 0.8433447607691161
+          },
+          {
+            "prediction_id": "hf-0008/det-0011",
+            "annotation_id": "hf-0008-line-0010",
+            "iou": 0.7502195458537197
+          },
+          {
+            "prediction_id": "hf-0008/det-0012",
+            "annotation_id": "line-fce3cae9-c0fb-428c-9698-b41d0b46ba0b",
+            "iou": 0.6909975669099757
+          },
+          {
+            "prediction_id": "hf-0008/det-0016",
+            "annotation_id": "line-76abfd52-f9fc-4072-9fc4-f628ec48b285",
+            "iou": 0.702075189988089
+          },
+          {
+            "prediction_id": "hf-0008/det-0018",
+            "annotation_id": "line-a977de18-6fbb-4080-b3bd-99ed6cf33b1f",
+            "iou": 0.707774798927614
+          },
+          {
+            "prediction_id": "hf-0008/det-0019",
+            "annotation_id": "line-9039bdd8-e05d-4e85-baee-8e4453798b9e",
+            "iou": 0.7598643649815043
+          },
+          {
+            "prediction_id": "hf-0008/det-0021",
+            "annotation_id": "line-5422df0d-c119-4612-83ab-87597f69322a",
+            "iou": 0.8331790492116579
+          },
+          {
+            "prediction_id": "hf-0008/det-0023",
+            "annotation_id": "line-7be92727-7df8-4c38-8a00-4c1bf6d91a6f",
+            "iou": 0.9016111437442309
+          },
+          {
+            "prediction_id": "hf-0008/det-0024",
+            "annotation_id": "line-e668c01d-d7f1-42ad-88e2-83061214535c",
+            "iou": 0.663627175743964
+          },
+          {
+            "prediction_id": "hf-0008/det-0025",
+            "annotation_id": "line-cd65dd4b-101e-4909-b2a1-5bdb11e89177",
+            "iou": 0.655649820434081
+          },
+          {
+            "prediction_id": "hf-0008/det-0026",
+            "annotation_id": "line-98c5207b-d452-4b7c-8753-103a0382652a",
+            "iou": 0.5009279307145067
+          },
+          {
+            "prediction_id": "hf-0008/det-0027",
+            "annotation_id": "line-60664bb8-e89a-45bd-8379-e135ef8f4d40",
+            "iou": 0.5835810456373491
+          },
+          {
+            "prediction_id": "hf-0008/det-0028",
+            "annotation_id": "line-e40d9398-df52-4237-9158-9e524e5af215",
+            "iou": 0.6559637029927581
+          },
+          {
+            "prediction_id": "hf-0008/det-0030",
+            "annotation_id": "line-f2efa121-e408-4097-b326-3c2cf2a6255b",
+            "iou": 0.768766130360771
+          },
+          {
+            "prediction_id": "hf-0008/det-0031",
+            "annotation_id": "line-499d6aed-0afa-4517-a453-d8b0fa4afb7e",
+            "iou": 0.7346038388065133
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0008/det-0013",
+          "hf-0008/det-0014",
+          "hf-0008/det-0029"
+        ],
+        "missed": [
+          "line-8211a948-b567-49af-8f31-10aa2b37dfe8",
+          "line-746e7045-f373-48c2-997e-c0c97045c245",
+          "line-4ef06ee1-ee25-4927-b6c9-89145d196095"
+        ],
+        "page": {
+          "samples": 1,
+          "substitutions": 29,
+          "deletions": 33,
+          "insertions": 2,
+          "errors": 64,
+          "reference_units": 351,
+          "cer_micro": 0.18233618233618235,
+          "cer_no_space_micro": 0.15753424657534246,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0013",
+        "reference_regions": 27,
+        "prediction_regions": 27,
+        "ignored": [],
+        "mixed_keep": [
+          "det-0000",
+          "det-0001"
+        ],
+        "matches": [
+          {
+            "prediction_id": "hf-0013/det-0001",
+            "annotation_id": "audit-header-36",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0013/det-0002",
+            "annotation_id": "line-f2b35759-fbcc-4f33-b2c9-04c98f83d328",
+            "iou": 0.7325124807431689
+          },
+          {
+            "prediction_id": "hf-0013/det-0003",
+            "annotation_id": "line-9a14ca7d-daca-40a3-adce-865bf535fed3",
+            "iou": 0.8558613433744947
+          },
+          {
+            "prediction_id": "hf-0013/det-0004",
+            "annotation_id": "line-8533e22f-03ce-40af-9256-090900453284",
+            "iou": 0.8288202346720451
+          },
+          {
+            "prediction_id": "hf-0013/det-0005",
+            "annotation_id": "hf-0013-line-0003",
+            "iou": 0.8802485600808992
+          },
+          {
+            "prediction_id": "hf-0013/det-0006",
+            "annotation_id": "hf-0013-line-0004",
+            "iou": 0.899675394936161
+          },
+          {
+            "prediction_id": "hf-0013/det-0007",
+            "annotation_id": "hf-0013-line-0005",
+            "iou": 0.9093485365967771
+          },
+          {
+            "prediction_id": "hf-0013/det-0008",
+            "annotation_id": "hf-0013-line-0006",
+            "iou": 0.8845639112731001
+          },
+          {
+            "prediction_id": "hf-0013/det-0009",
+            "annotation_id": "hf-0013-line-0007",
+            "iou": 0.8899987396017142
+          },
+          {
+            "prediction_id": "hf-0013/det-0010",
+            "annotation_id": "hf-0013-line-0008",
+            "iou": 0.8278673596615346
+          },
+          {
+            "prediction_id": "hf-0013/det-0011",
+            "annotation_id": "hf-0013-line-0009",
+            "iou": 0.9247382652707481
+          },
+          {
+            "prediction_id": "hf-0013/det-0012",
+            "annotation_id": "hf-0013-line-0011",
+            "iou": 0.6714499921081707
+          },
+          {
+            "prediction_id": "hf-0013/det-0013",
+            "annotation_id": "hf-0013-line-0012",
+            "iou": 0.851608972980721
+          },
+          {
+            "prediction_id": "hf-0013/det-0014",
+            "annotation_id": "hf-0013-line-0013",
+            "iou": 0.9808494208494208
+          },
+          {
+            "prediction_id": "hf-0013/det-0015",
+            "annotation_id": "hf-0013-line-0014",
+            "iou": 0.9498406217542351
+          },
+          {
+            "prediction_id": "hf-0013/det-0016",
+            "annotation_id": "hf-0013-line-0016",
+            "iou": 0.9523158901489275
+          },
+          {
+            "prediction_id": "hf-0013/det-0017",
+            "annotation_id": "hf-0013-line-0015",
+            "iou": 0.8578130480533146
+          },
+          {
+            "prediction_id": "hf-0013/det-0018",
+            "annotation_id": "hf-0013-line-0018",
+            "iou": 0.8725564225186677
+          },
+          {
+            "prediction_id": "hf-0013/det-0019",
+            "annotation_id": "hf-0013-line-0019",
+            "iou": 0.9272750613797198
+          },
+          {
+            "prediction_id": "hf-0013/det-0020",
+            "annotation_id": "hf-0013-line-0017",
+            "iou": 0.8781628669293948
+          },
+          {
+            "prediction_id": "hf-0013/det-0021",
+            "annotation_id": "hf-0013-line-0020",
+            "iou": 0.76374156219865
+          },
+          {
+            "prediction_id": "hf-0013/det-0022",
+            "annotation_id": "hf-0013-line-0021",
+            "iou": 0.9337211718263038
+          },
+          {
+            "prediction_id": "hf-0013/det-0023",
+            "annotation_id": "hf-0013-line-0022",
+            "iou": 0.8800257883014887
+          },
+          {
+            "prediction_id": "hf-0013/det-0024",
+            "annotation_id": "hf-0013-line-0023",
+            "iou": 0.8442067736185384
+          },
+          {
+            "prediction_id": "hf-0013/det-0025",
+            "annotation_id": "hf-0013-line-0024",
+            "iou": 0.8919837120208177
+          },
+          {
+            "prediction_id": "hf-0013/det-0026",
+            "annotation_id": "audit-hf-0013-037",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0013/det-0000"
+        ],
+        "missed": [
+          "hf-0013-line-0010"
+        ],
+        "page": {
+          "samples": 1,
+          "substitutions": 29,
+          "deletions": 24,
+          "insertions": 26,
+          "errors": 79,
+          "reference_units": 603,
+          "cer_micro": 0.1310116086235489,
+          "cer_no_space_micro": 0.1277056277056277,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0029",
+        "reference_regions": 22,
+        "prediction_regions": 21,
+        "ignored": [],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0029/det-0000",
+            "annotation_id": "audit-hf-0029-038",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0029/det-0001",
+            "annotation_id": "hf-0029-line-0002",
+            "iou": 0.8685244545548547
+          },
+          {
+            "prediction_id": "hf-0029/det-0002",
+            "annotation_id": "hf-0029-line-0003",
+            "iou": 0.8914531553539716
+          },
+          {
+            "prediction_id": "hf-0029/det-0003",
+            "annotation_id": "hf-0029-line-0004",
+            "iou": 0.8990857425253274
+          },
+          {
+            "prediction_id": "hf-0029/det-0004",
+            "annotation_id": "hf-0029-line-0005",
+            "iou": 0.8967605458542453
+          },
+          {
+            "prediction_id": "hf-0029/det-0005",
+            "annotation_id": "hf-0029-line-0006",
+            "iou": 0.9526117711966267
+          },
+          {
+            "prediction_id": "hf-0029/det-0006",
+            "annotation_id": "hf-0029-line-0007",
+            "iou": 0.8346052900288176
+          },
+          {
+            "prediction_id": "hf-0029/det-0007",
+            "annotation_id": "hf-0029-line-0008",
+            "iou": 0.8615491249350199
+          },
+          {
+            "prediction_id": "hf-0029/det-0008",
+            "annotation_id": "hf-0029-line-0009",
+            "iou": 0.9408128249793716
+          },
+          {
+            "prediction_id": "hf-0029/det-0009",
+            "annotation_id": "hf-0029-line-0010",
+            "iou": 0.8988674270419271
+          },
+          {
+            "prediction_id": "hf-0029/det-0010",
+            "annotation_id": "hf-0029-line-0011",
+            "iou": 0.8136284216656959
+          },
+          {
+            "prediction_id": "hf-0029/det-0011",
+            "annotation_id": "hf-0029-line-0012",
+            "iou": 0.7118890814558059
+          },
+          {
+            "prediction_id": "hf-0029/det-0012",
+            "annotation_id": "hf-0029-line-0013",
+            "iou": 0.6971315906633594
+          },
+          {
+            "prediction_id": "hf-0029/det-0013",
+            "annotation_id": "hf-0029-line-0014",
+            "iou": 0.6959522611258897
+          },
+          {
+            "prediction_id": "hf-0029/det-0014",
+            "annotation_id": "hf-0029-line-0015",
+            "iou": 0.6531178046144448
+          },
+          {
+            "prediction_id": "hf-0029/det-0015",
+            "annotation_id": "hf-0029-line-0017",
+            "iou": 0.6569590296752295
+          },
+          {
+            "prediction_id": "hf-0029/det-0016",
+            "annotation_id": "hf-0029-line-0018",
+            "iou": 0.7777801980456821
+          },
+          {
+            "prediction_id": "hf-0029/det-0017",
+            "annotation_id": "hf-0029-line-0019",
+            "iou": 0.8324386701934547
+          },
+          {
+            "prediction_id": "hf-0029/det-0018",
+            "annotation_id": "hf-0029-line-0020",
+            "iou": 0.9174917491749175
+          },
+          {
+            "prediction_id": "hf-0029/det-0019",
+            "annotation_id": "hf-0029-line-0021",
+            "iou": 0.9058007004138809
+          },
+          {
+            "prediction_id": "hf-0029/det-0020",
+            "annotation_id": "audit-hf-0029-039",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [],
+        "missed": [
+          "hf-0029-line-0016"
+        ],
+        "page": {
+          "samples": 1,
+          "substitutions": 41,
+          "deletions": 18,
+          "insertions": 8,
+          "errors": 67,
+          "reference_units": 442,
+          "cer_micro": 0.1515837104072398,
+          "cer_no_space_micro": 0.15072463768115943,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0033",
+        "reference_regions": 17,
+        "prediction_regions": 22,
+        "ignored": [
+          "det-0000",
+          "det-0001",
+          "det-0002",
+          "det-0003",
+          "det-0014",
+          "det-0018",
+          "det-0019",
+          "det-0020",
+          "det-0021",
+          "det-0022",
+          "det-0023",
+          "det-0024"
+        ],
+        "mixed_keep": [
+          "det-0005",
+          "det-0006",
+          "det-0016",
+          "det-0017",
+          "det-0030"
+        ],
+        "matches": [
+          {
+            "prediction_id": "hf-0033/det-0004",
+            "annotation_id": "hf-0033-line-0002",
+            "iou": 0.8997687584722112
+          },
+          {
+            "prediction_id": "hf-0033/det-0007",
+            "annotation_id": "hf-0033-line-0005",
+            "iou": 0.8426065821454378
+          },
+          {
+            "prediction_id": "hf-0033/det-0008",
+            "annotation_id": "hf-0033-line-0006",
+            "iou": 0.8549701870456587
+          },
+          {
+            "prediction_id": "hf-0033/det-0009",
+            "annotation_id": "hf-0033-line-0007",
+            "iou": 0.7382341586040936
+          },
+          {
+            "prediction_id": "hf-0033/det-0010",
+            "annotation_id": "hf-0033-line-0009",
+            "iou": 0.7922659984324462
+          },
+          {
+            "prediction_id": "hf-0033/det-0011",
+            "annotation_id": "hf-0033-line-0011",
+            "iou": 0.8968512163473514
+          },
+          {
+            "prediction_id": "hf-0033/det-0012",
+            "annotation_id": "hf-0033-line-0012",
+            "iou": 0.9120585795188111
+          },
+          {
+            "prediction_id": "hf-0033/det-0013",
+            "annotation_id": "hf-0033-line-0013",
+            "iou": 0.8643713923117862
+          },
+          {
+            "prediction_id": "hf-0033/det-0015",
+            "annotation_id": "hf-0033-line-0014",
+            "iou": 0.7588778815012384
+          },
+          {
+            "prediction_id": "hf-0033/det-0025",
+            "annotation_id": "hf-0033-line-0017",
+            "iou": 0.824237422194711
+          },
+          {
+            "prediction_id": "hf-0033/det-0026",
+            "annotation_id": "hf-0033-line-0016",
+            "iou": 0.8365139175884283
+          },
+          {
+            "prediction_id": "hf-0033/det-0027",
+            "annotation_id": "hf-0033-line-0018",
+            "iou": 0.8330329238676583
+          },
+          {
+            "prediction_id": "hf-0033/det-0028",
+            "annotation_id": "hf-0033-line-0019",
+            "iou": 0.8356981654861126
+          },
+          {
+            "prediction_id": "hf-0033/det-0029",
+            "annotation_id": "hf-0033-line-0020",
+            "iou": 0.8963818208560083
+          },
+          {
+            "prediction_id": "hf-0033/det-0031",
+            "annotation_id": "hf-0033-line-0022",
+            "iou": 0.800184374279788
+          },
+          {
+            "prediction_id": "hf-0033/det-0032",
+            "annotation_id": "hf-0033-line-0023",
+            "iou": 0.8371845536100028
+          },
+          {
+            "prediction_id": "hf-0033/det-0033",
+            "annotation_id": "audit-hf-0033-045",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0033/det-0005",
+          "hf-0033/det-0006",
+          "hf-0033/det-0016",
+          "hf-0033/det-0017",
+          "hf-0033/det-0030"
+        ],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 50,
+          "deletions": 8,
+          "insertions": 79,
+          "errors": 137,
+          "reference_units": 325,
+          "cer_micro": 0.42153846153846153,
+          "cer_no_space_micro": 0.4708333333333333,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0048",
+        "reference_regions": 21,
+        "prediction_regions": 23,
+        "ignored": [
+          "det-0004",
+          "det-0006",
+          "det-0007",
+          "det-0010",
+          "det-0011",
+          "det-0013",
+          "det-0014"
+        ],
+        "mixed_keep": [
+          "det-0000",
+          "det-0001"
+        ],
+        "matches": [
+          {
+            "prediction_id": "hf-0048/det-0001",
+            "annotation_id": "audit-header-47",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0048/det-0002",
+            "annotation_id": "hf-0048-line-0003",
+            "iou": 0.8865849181290844
+          },
+          {
+            "prediction_id": "hf-0048/det-0003",
+            "annotation_id": "hf-0048-line-0005",
+            "iou": 0.8676716917922948
+          },
+          {
+            "prediction_id": "hf-0048/det-0005",
+            "annotation_id": "hf-0048-line-0006",
+            "iou": 0.735364996485591
+          },
+          {
+            "prediction_id": "hf-0048/det-0008",
+            "annotation_id": "hf-0048-line-0007",
+            "iou": 0.7209483377327964
+          },
+          {
+            "prediction_id": "hf-0048/det-0009",
+            "annotation_id": "hf-0048-line-0011",
+            "iou": 0.6709165996840267
+          },
+          {
+            "prediction_id": "hf-0048/det-0012",
+            "annotation_id": "hf-0048-line-0010",
+            "iou": 0.6250497017892644
+          },
+          {
+            "prediction_id": "hf-0048/det-0015",
+            "annotation_id": "hf-0048-line-0012",
+            "iou": 0.9499310582557738
+          },
+          {
+            "prediction_id": "hf-0048/det-0016",
+            "annotation_id": "hf-0048-line-0013",
+            "iou": 0.8731998595012294
+          },
+          {
+            "prediction_id": "hf-0048/det-0017",
+            "annotation_id": "hf-0048-line-0014",
+            "iou": 0.8808957446323138
+          },
+          {
+            "prediction_id": "hf-0048/det-0018",
+            "annotation_id": "hf-0048-line-0015",
+            "iou": 0.9755696712218451
+          },
+          {
+            "prediction_id": "hf-0048/det-0019",
+            "annotation_id": "hf-0048-line-0016",
+            "iou": 0.8929703191251953
+          },
+          {
+            "prediction_id": "hf-0048/det-0020",
+            "annotation_id": "hf-0048-line-0017",
+            "iou": 0.8699641897940913
+          },
+          {
+            "prediction_id": "hf-0048/det-0021",
+            "annotation_id": "hf-0048-line-0018",
+            "iou": 0.8727700963928992
+          },
+          {
+            "prediction_id": "hf-0048/det-0022",
+            "annotation_id": "hf-0048-line-0019",
+            "iou": 0.8896520443206116
+          },
+          {
+            "prediction_id": "hf-0048/det-0024",
+            "annotation_id": "hf-0048-line-0020",
+            "iou": 0.7592902558380119
+          },
+          {
+            "prediction_id": "hf-0048/det-0025",
+            "annotation_id": "hf-0048-line-0021",
+            "iou": 0.9007551240560949
+          },
+          {
+            "prediction_id": "hf-0048/det-0026",
+            "annotation_id": "hf-0048-line-0022",
+            "iou": 0.8777515625233817
+          },
+          {
+            "prediction_id": "hf-0048/det-0027",
+            "annotation_id": "hf-0048-line-0023",
+            "iou": 0.8723478260869565
+          },
+          {
+            "prediction_id": "hf-0048/det-0028",
+            "annotation_id": "hf-0048-line-0024",
+            "iou": 0.9381980640357409
+          },
+          {
+            "prediction_id": "hf-0048/det-0029",
+            "annotation_id": "audit-hf-0048-049",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0048/det-0000",
+          "hf-0048/det-0023"
+        ],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 21,
+          "deletions": 6,
+          "insertions": 15,
+          "errors": 42,
+          "reference_units": 429,
+          "cer_micro": 0.0979020979020979,
+          "cer_no_space_micro": 0.10256410256410256,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0052",
+        "reference_regions": 5,
+        "prediction_regions": 5,
+        "ignored": [],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0052/det-0000",
+            "annotation_id": "audit-hf-0052-050",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0052/det-0001",
+            "annotation_id": "hf-0052-line-0002",
+            "iou": 0.7302392031192643
+          },
+          {
+            "prediction_id": "hf-0052/det-0002",
+            "annotation_id": "audit-hf-0052-051",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0052/det-0003",
+            "annotation_id": "line-d4d02678-320c-4e2a-a15c-fe5a5ac7abd7",
+            "iou": 0.8208345614552192
+          },
+          {
+            "prediction_id": "hf-0052/det-0004",
+            "annotation_id": "line-8de86c00-4d1c-48d9-9b9e-79904570969b",
+            "iou": 0.842821104250586
+          }
+        ],
+        "unmatched_predictions": [],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 9,
+          "deletions": 6,
+          "insertions": 1,
+          "errors": 16,
+          "reference_units": 121,
+          "cer_micro": 0.1322314049586777,
+          "cer_no_space_micro": 0.14444444444444443,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0057",
+        "reference_regions": 23,
+        "prediction_regions": 23,
+        "ignored": [
+          "det-0011",
+          "det-0012"
+        ],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0057/det-0000",
+            "annotation_id": "audit-hf-0057-052",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0057/det-0001",
+            "annotation_id": "hf-0057-line-0002",
+            "iou": 0.8826776110953863
+          },
+          {
+            "prediction_id": "hf-0057/det-0002",
+            "annotation_id": "hf-0057-line-0003",
+            "iou": 0.8772655797401308
+          },
+          {
+            "prediction_id": "hf-0057/det-0003",
+            "annotation_id": "hf-0057-line-0004",
+            "iou": 0.8473867569825734
+          },
+          {
+            "prediction_id": "hf-0057/det-0004",
+            "annotation_id": "hf-0057-line-0005",
+            "iou": 0.8670704615793571
+          },
+          {
+            "prediction_id": "hf-0057/det-0005",
+            "annotation_id": "hf-0057-line-0006",
+            "iou": 0.8960674157303371
+          },
+          {
+            "prediction_id": "hf-0057/det-0006",
+            "annotation_id": "hf-0057-line-0007",
+            "iou": 0.8695332433797809
+          },
+          {
+            "prediction_id": "hf-0057/det-0007",
+            "annotation_id": "hf-0057-line-0008",
+            "iou": 0.8627083312554233
+          },
+          {
+            "prediction_id": "hf-0057/det-0008",
+            "annotation_id": "hf-0057-line-0009",
+            "iou": 0.6895539906103286
+          },
+          {
+            "prediction_id": "hf-0057/det-0009",
+            "annotation_id": "hf-0057-line-0010",
+            "iou": 0.7950475784521512
+          },
+          {
+            "prediction_id": "hf-0057/det-0010",
+            "annotation_id": "hf-0057-line-0011",
+            "iou": 0.784913296736469
+          },
+          {
+            "prediction_id": "hf-0057/det-0013",
+            "annotation_id": "hf-0057-line-0013",
+            "iou": 0.9595806562199343
+          },
+          {
+            "prediction_id": "hf-0057/det-0014",
+            "annotation_id": "hf-0057-line-0014",
+            "iou": 0.8762964282289112
+          },
+          {
+            "prediction_id": "hf-0057/det-0015",
+            "annotation_id": "hf-0057-line-0015",
+            "iou": 0.7648892534864643
+          },
+          {
+            "prediction_id": "hf-0057/det-0016",
+            "annotation_id": "hf-0057-line-0016",
+            "iou": 0.7195041170469435
+          },
+          {
+            "prediction_id": "hf-0057/det-0017",
+            "annotation_id": "hf-0057-line-0017",
+            "iou": 0.8812638991845811
+          },
+          {
+            "prediction_id": "hf-0057/det-0018",
+            "annotation_id": "hf-0057-line-0018",
+            "iou": 0.7725357825051679
+          },
+          {
+            "prediction_id": "hf-0057/det-0019",
+            "annotation_id": "hf-0057-line-0019",
+            "iou": 0.8602405824628047
+          },
+          {
+            "prediction_id": "hf-0057/det-0020",
+            "annotation_id": "hf-0057-line-0020",
+            "iou": 0.7100643174200562
+          },
+          {
+            "prediction_id": "hf-0057/det-0021",
+            "annotation_id": "hf-0057-line-0021",
+            "iou": 0.6472771817810609
+          },
+          {
+            "prediction_id": "hf-0057/det-0022",
+            "annotation_id": "hf-0057-line-0022",
+            "iou": 0.9160819534100477
+          },
+          {
+            "prediction_id": "hf-0057/det-0023",
+            "annotation_id": "hf-0057-line-0023",
+            "iou": 0.8625894750795334
+          },
+          {
+            "prediction_id": "hf-0057/det-0024",
+            "annotation_id": "audit-hf-0057-053",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 66,
+          "deletions": 8,
+          "insertions": 13,
+          "errors": 87,
+          "reference_units": 589,
+          "cer_micro": 0.14770797962648557,
+          "cer_no_space_micro": 0.17865429234338748,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0077",
+        "reference_regions": 23,
+        "prediction_regions": 24,
+        "ignored": [
+          "det-0000",
+          "det-0003",
+          "det-0004",
+          "det-0005",
+          "det-0014",
+          "det-0015",
+          "det-0017",
+          "det-0018"
+        ],
+        "mixed_keep": [
+          "det-0020"
+        ],
+        "matches": [
+          {
+            "prediction_id": "hf-0077/det-0001",
+            "annotation_id": "hf-0077-line-0002",
+            "iou": 0.7336394948335246
+          },
+          {
+            "prediction_id": "hf-0077/det-0002",
+            "annotation_id": "hf-0077-line-0003",
+            "iou": 0.5678991840886914
+          },
+          {
+            "prediction_id": "hf-0077/det-0006",
+            "annotation_id": "hf-0077-line-0005",
+            "iou": 0.9143127962085308
+          },
+          {
+            "prediction_id": "hf-0077/det-0007",
+            "annotation_id": "audit-hf-0077-055",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0008",
+            "annotation_id": "audit-hf-0077-056",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0009",
+            "annotation_id": "audit-hf-0077-057",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0010",
+            "annotation_id": "audit-hf-0077-058",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0011",
+            "annotation_id": "audit-hf-0077-059",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0012",
+            "annotation_id": "audit-hf-0077-060",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0013",
+            "annotation_id": "audit-hf-0077-061",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0016",
+            "annotation_id": "audit-hf-0077-064",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0019",
+            "annotation_id": "audit-hf-0077-067",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0021",
+            "annotation_id": "audit-hf-0077-069",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0022",
+            "annotation_id": "audit-hf-0077-070",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0023",
+            "annotation_id": "audit-hf-0077-071",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0024",
+            "annotation_id": "audit-hf-0077-072",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0025",
+            "annotation_id": "audit-hf-0077-073",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0026",
+            "annotation_id": "audit-hf-0077-074",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0027",
+            "annotation_id": "audit-hf-0077-075",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0028",
+            "annotation_id": "audit-hf-0077-076",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0029",
+            "annotation_id": "audit-hf-0077-077",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0030",
+            "annotation_id": "audit-hf-0077-078",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0077/det-0031",
+            "annotation_id": "audit-hf-0077-079",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0077/det-0020"
+        ],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 50,
+          "deletions": 14,
+          "insertions": 54,
+          "errors": 118,
+          "reference_units": 600,
+          "cer_micro": 0.19666666666666666,
+          "cer_no_space_micro": 0.21476510067114093,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0081",
+        "reference_regions": 18,
+        "prediction_regions": 20,
+        "ignored": [
+          "det-0015",
+          "det-0017"
+        ],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0081/det-0000",
+            "annotation_id": "hf-0081-line-0001",
+            "iou": 0.8647183752931287
+          },
+          {
+            "prediction_id": "hf-0081/det-0001",
+            "annotation_id": "hf-0081-line-0002",
+            "iou": 0.8357414448669201
+          },
+          {
+            "prediction_id": "hf-0081/det-0002",
+            "annotation_id": "hf-0081-line-0003",
+            "iou": 0.9822158989863062
+          },
+          {
+            "prediction_id": "hf-0081/det-0003",
+            "annotation_id": "hf-0081-line-0004",
+            "iou": 0.990016939582157
+          },
+          {
+            "prediction_id": "hf-0081/det-0004",
+            "annotation_id": "hf-0081-line-0005",
+            "iou": 0.9216349908877897
+          },
+          {
+            "prediction_id": "hf-0081/det-0005",
+            "annotation_id": "hf-0081-line-0006",
+            "iou": 0.9663484113319768
+          },
+          {
+            "prediction_id": "hf-0081/det-0006",
+            "annotation_id": "hf-0081-line-0007",
+            "iou": 0.798714953271028
+          },
+          {
+            "prediction_id": "hf-0081/det-0007",
+            "annotation_id": "hf-0081-line-0008",
+            "iou": 0.8245032333921223
+          },
+          {
+            "prediction_id": "hf-0081/det-0008",
+            "annotation_id": "hf-0081-line-0009",
+            "iou": 0.891042780748663
+          },
+          {
+            "prediction_id": "hf-0081/det-0009",
+            "annotation_id": "hf-0081-line-0010",
+            "iou": 0.9067650522998681
+          },
+          {
+            "prediction_id": "hf-0081/det-0010",
+            "annotation_id": "hf-0081-line-0011",
+            "iou": 0.8934024916379854
+          },
+          {
+            "prediction_id": "hf-0081/det-0011",
+            "annotation_id": "hf-0081-line-0012",
+            "iou": 0.9551037864396328
+          },
+          {
+            "prediction_id": "hf-0081/det-0012",
+            "annotation_id": "hf-0081-line-0013",
+            "iou": 0.9121451896508415
+          },
+          {
+            "prediction_id": "hf-0081/det-0013",
+            "annotation_id": "hf-0081-line-0014",
+            "iou": 0.9534944521252082
+          },
+          {
+            "prediction_id": "hf-0081/det-0018",
+            "annotation_id": "hf-0081-line-0017",
+            "iou": 0.7536529404661273
+          },
+          {
+            "prediction_id": "hf-0081/det-0019",
+            "annotation_id": "hf-0081-line-0018",
+            "iou": 0.885829509108608
+          },
+          {
+            "prediction_id": "hf-0081/det-0020",
+            "annotation_id": "hf-0081-line-0019",
+            "iou": 0.9363841779852506
+          },
+          {
+            "prediction_id": "hf-0081/det-0021",
+            "annotation_id": "hf-0081-line-0020",
+            "iou": 0.9139674182595093
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0081/det-0014",
+          "hf-0081/det-0016"
+        ],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 45,
+          "deletions": 10,
+          "insertions": 45,
+          "errors": 100,
+          "reference_units": 458,
+          "cer_micro": 0.2183406113537118,
+          "cer_no_space_micro": 0.23964497041420119,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0087",
+        "reference_regions": 13,
+        "prediction_regions": 16,
+        "ignored": [
+          "det-0002",
+          "det-0003",
+          "det-0004",
+          "det-0008",
+          "det-0009",
+          "det-0012",
+          "det-0013",
+          "det-0014"
+        ],
+        "mixed_keep": [
+          "det-0001",
+          "det-0006",
+          "det-0011"
+        ],
+        "matches": [
+          {
+            "prediction_id": "hf-0087/det-0000",
+            "annotation_id": "line-be94cffd-5b7d-4fd6-abfa-dd1b7d37cbb7",
+            "iou": 0.7900646478394011
+          },
+          {
+            "prediction_id": "hf-0087/det-0005",
+            "annotation_id": "line-bec057c1-ef48-43a0-a94f-2b9ac216ae99",
+            "iou": 0.7004693447651429
+          },
+          {
+            "prediction_id": "hf-0087/det-0007",
+            "annotation_id": "line-2d7c9379-f392-45f0-9d06-74e0c350df1c",
+            "iou": 0.649607223476298
+          },
+          {
+            "prediction_id": "hf-0087/det-0010",
+            "annotation_id": "line-e5bd8631-8d37-42bb-ae44-13f4a39e47cc",
+            "iou": 0.7208055478233507
+          },
+          {
+            "prediction_id": "hf-0087/det-0015",
+            "annotation_id": "line-2cdf2aeb-91e1-49f2-b9cc-cc124b229e04",
+            "iou": 0.5390480339832262
+          },
+          {
+            "prediction_id": "hf-0087/det-0016",
+            "annotation_id": "line-7908e211-9739-4139-a5bb-852d94821753",
+            "iou": 0.8245652491597253
+          },
+          {
+            "prediction_id": "hf-0087/det-0017",
+            "annotation_id": "line-8fee2909-8399-4a78-8fa6-11234fee414d",
+            "iou": 0.7090727931726618
+          },
+          {
+            "prediction_id": "hf-0087/det-0018",
+            "annotation_id": "line-6c189d31-2435-4b2e-bfde-953524a82c8a",
+            "iou": 0.8511732081911263
+          },
+          {
+            "prediction_id": "hf-0087/det-0019",
+            "annotation_id": "line-71567ffe-3646-4440-854e-ec58f7776012",
+            "iou": 0.7875534869754522
+          },
+          {
+            "prediction_id": "hf-0087/det-0020",
+            "annotation_id": "line-020282a0-7103-4f9b-bef8-1f176dbbdb39",
+            "iou": 0.9073606224523009
+          },
+          {
+            "prediction_id": "hf-0087/det-0021",
+            "annotation_id": "line-f8bd6b06-8f5f-4c4b-9cdb-c02c1a359858",
+            "iou": 0.7326427293579684
+          },
+          {
+            "prediction_id": "hf-0087/det-0022",
+            "annotation_id": "line-d442123f-2333-49e1-b098-7d5ca003bcec",
+            "iou": 0.8154205373337743
+          },
+          {
+            "prediction_id": "hf-0087/det-0023",
+            "annotation_id": "audit-hf-0087-082",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0087/det-0001",
+          "hf-0087/det-0006",
+          "hf-0087/det-0011"
+        ],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 25,
+          "deletions": 4,
+          "insertions": 147,
+          "errors": 176,
+          "reference_units": 240,
+          "cer_micro": 0.7333333333333333,
+          "cer_no_space_micro": 0.7428571428571429,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0088",
+        "reference_regions": 6,
+        "prediction_regions": 6,
+        "ignored": [],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0088/det-0000",
+            "annotation_id": "hf-0088-line-0001",
+            "iou": 0.8659716901238053
+          },
+          {
+            "prediction_id": "hf-0088/det-0001",
+            "annotation_id": "hf-0088-line-0002",
+            "iou": 0.9397448546848765
+          },
+          {
+            "prediction_id": "hf-0088/det-0002",
+            "annotation_id": "hf-0088-line-0003",
+            "iou": 0.8851759687166726
+          },
+          {
+            "prediction_id": "hf-0088/det-0003",
+            "annotation_id": "hf-0088-line-0004",
+            "iou": 0.9215233369321485
+          },
+          {
+            "prediction_id": "hf-0088/det-0004",
+            "annotation_id": "hf-0088-line-0005",
+            "iou": 0.8460905514971502
+          },
+          {
+            "prediction_id": "hf-0088/det-0005",
+            "annotation_id": "hf-0088-line-0006",
+            "iou": 0.7538516463900256
+          }
+        ],
+        "unmatched_predictions": [],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 10,
+          "deletions": 1,
+          "insertions": 13,
+          "errors": 24,
+          "reference_units": 111,
+          "cer_micro": 0.21621621621621623,
+          "cer_no_space_micro": 0.2235294117647059,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0090",
+        "reference_regions": 2,
+        "prediction_regions": 5,
+        "ignored": [
+          "det-0000",
+          "det-0002",
+          "det-0003",
+          "det-0004",
+          "det-0005",
+          "det-0006",
+          "det-0007",
+          "det-0008",
+          "det-0009",
+          "det-0010",
+          "det-0011",
+          "det-0012",
+          "det-0013",
+          "det-0014",
+          "det-0015",
+          "det-0019",
+          "det-0020",
+          "det-0021",
+          "det-0022",
+          "det-0023",
+          "det-0024",
+          "det-0025",
+          "det-0026",
+          "det-0027",
+          "det-0028",
+          "det-0029",
+          "det-0030",
+          "det-0031"
+        ],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0090/det-0032",
+            "annotation_id": "audit-hf-0090-087",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0090/det-0001",
+          "hf-0090/det-0016",
+          "hf-0090/det-0017",
+          "hf-0090/det-0018"
+        ],
+        "missed": [
+          "line-c6d3986e-3399-4ff3-b356-e5ed7e8a74c0"
+        ],
+        "page": {
+          "samples": 1,
+          "substitutions": 5,
+          "deletions": 0,
+          "insertions": 19,
+          "errors": 24,
+          "reference_units": 33,
+          "cer_micro": 0.7272727272727273,
+          "cer_no_space_micro": 0.8076923076923077,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0094",
+        "reference_regions": 11,
+        "prediction_regions": 17,
+        "ignored": [
+          "det-0011",
+          "det-0012",
+          "det-0013",
+          "det-0014",
+          "det-0016",
+          "det-0018",
+          "det-0019",
+          "det-0022",
+          "det-0023",
+          "det-0024",
+          "det-0025",
+          "det-0026",
+          "det-0028",
+          "det-0030",
+          "det-0031"
+        ],
+        "mixed_keep": [
+          "det-0008",
+          "det-0009",
+          "det-0017",
+          "det-0020",
+          "det-0029"
+        ],
+        "matches": [
+          {
+            "prediction_id": "hf-0094/det-0000",
+            "annotation_id": "hf-0094-line-0002",
+            "iou": 0.6965306900495616
+          },
+          {
+            "prediction_id": "hf-0094/det-0001",
+            "annotation_id": "hf-0094-line-0001",
+            "iou": 0.8095838587641866
+          },
+          {
+            "prediction_id": "hf-0094/det-0002",
+            "annotation_id": "hf-0094-line-0003",
+            "iou": 0.9404967847385438
+          },
+          {
+            "prediction_id": "hf-0094/det-0003",
+            "annotation_id": "hf-0094-line-0004",
+            "iou": 0.9286231135001034
+          },
+          {
+            "prediction_id": "hf-0094/det-0004",
+            "annotation_id": "hf-0094-line-0005",
+            "iou": 0.8928704865935929
+          },
+          {
+            "prediction_id": "hf-0094/det-0005",
+            "annotation_id": "hf-0094-line-0006",
+            "iou": 0.9564424735156443
+          },
+          {
+            "prediction_id": "hf-0094/det-0007",
+            "annotation_id": "hf-0094-line-0007",
+            "iou": 0.7923562245568877
+          },
+          {
+            "prediction_id": "hf-0094/det-0010",
+            "annotation_id": "audit-hf-0094-091",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0094/det-0015",
+            "annotation_id": "audit-hf-0094-096",
+            "iou": 0.9968924798011187
+          },
+          {
+            "prediction_id": "hf-0094/det-0021",
+            "annotation_id": "audit-hf-0094-102",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0094/det-0027",
+            "annotation_id": "audit-hf-0094-108",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0094/det-0006",
+          "hf-0094/det-0008",
+          "hf-0094/det-0009",
+          "hf-0094/det-0017",
+          "hf-0094/det-0020",
+          "hf-0094/det-0029"
+        ],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 52,
+          "deletions": 0,
+          "insertions": 77,
+          "errors": 129,
+          "reference_units": 158,
+          "cer_micro": 0.8164556962025317,
+          "cer_no_space_micro": 0.859504132231405,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0098",
+        "reference_regions": 25,
+        "prediction_regions": 25,
+        "ignored": [
+          "det-0011"
+        ],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0098/det-0000",
+            "annotation_id": "hf-0098-line-0001",
+            "iou": 0.754760117382106
+          },
+          {
+            "prediction_id": "hf-0098/det-0001",
+            "annotation_id": "hf-0098-line-0002",
+            "iou": 0.8415460754062208
+          },
+          {
+            "prediction_id": "hf-0098/det-0002",
+            "annotation_id": "audit-hf-0098-113",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0098/det-0003",
+            "annotation_id": "hf-0098-line-0003",
+            "iou": 0.7047729679866069
+          },
+          {
+            "prediction_id": "hf-0098/det-0004",
+            "annotation_id": "hf-0098-line-0004",
+            "iou": 0.7454217178230591
+          },
+          {
+            "prediction_id": "hf-0098/det-0005",
+            "annotation_id": "hf-0098-line-0005",
+            "iou": 0.8231511254019293
+          },
+          {
+            "prediction_id": "hf-0098/det-0006",
+            "annotation_id": "hf-0098-line-0006",
+            "iou": 0.698627488884593
+          },
+          {
+            "prediction_id": "hf-0098/det-0007",
+            "annotation_id": "hf-0098-line-0007",
+            "iou": 0.8418837308607332
+          },
+          {
+            "prediction_id": "hf-0098/det-0008",
+            "annotation_id": "hf-0098-line-0008",
+            "iou": 0.8634763332898683
+          },
+          {
+            "prediction_id": "hf-0098/det-0009",
+            "annotation_id": "hf-0098-line-0009",
+            "iou": 0.9270745724698626
+          },
+          {
+            "prediction_id": "hf-0098/det-0010",
+            "annotation_id": "hf-0098-line-0010",
+            "iou": 0.850840543474685
+          },
+          {
+            "prediction_id": "hf-0098/det-0012",
+            "annotation_id": "hf-0098-line-0012",
+            "iou": 0.870480615652679
+          },
+          {
+            "prediction_id": "hf-0098/det-0013",
+            "annotation_id": "hf-0098-line-0013",
+            "iou": 0.878452401545292
+          },
+          {
+            "prediction_id": "hf-0098/det-0014",
+            "annotation_id": "hf-0098-line-0014",
+            "iou": 0.8137715179968701
+          },
+          {
+            "prediction_id": "hf-0098/det-0015",
+            "annotation_id": "hf-0098-line-0015",
+            "iou": 0.7996198751018192
+          },
+          {
+            "prediction_id": "hf-0098/det-0016",
+            "annotation_id": "hf-0098-line-0016",
+            "iou": 0.7782192181345992
+          },
+          {
+            "prediction_id": "hf-0098/det-0017",
+            "annotation_id": "hf-0098-line-0017",
+            "iou": 0.7762586671604633
+          },
+          {
+            "prediction_id": "hf-0098/det-0018",
+            "annotation_id": "hf-0098-line-0018",
+            "iou": 0.8060168471720818
+          },
+          {
+            "prediction_id": "hf-0098/det-0019",
+            "annotation_id": "hf-0098-line-0019",
+            "iou": 0.8083058141891489
+          },
+          {
+            "prediction_id": "hf-0098/det-0020",
+            "annotation_id": "hf-0098-line-0020",
+            "iou": 0.7275444037214548
+          },
+          {
+            "prediction_id": "hf-0098/det-0021",
+            "annotation_id": "hf-0098-line-0021",
+            "iou": 0.7782336233713538
+          },
+          {
+            "prediction_id": "hf-0098/det-0022",
+            "annotation_id": "hf-0098-line-0022",
+            "iou": 0.6856883143116856
+          },
+          {
+            "prediction_id": "hf-0098/det-0023",
+            "annotation_id": "hf-0098-line-0023",
+            "iou": 0.7471399060125398
+          },
+          {
+            "prediction_id": "hf-0098/det-0024",
+            "annotation_id": "hf-0098-line-0024",
+            "iou": 0.7067193675889328
+          },
+          {
+            "prediction_id": "hf-0098/det-0025",
+            "annotation_id": "hf-0098-line-0025",
+            "iou": 0.7828251400124455
+          }
+        ],
+        "unmatched_predictions": [],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 34,
+          "deletions": 4,
+          "insertions": 2,
+          "errors": 40,
+          "reference_units": 338,
+          "cer_micro": 0.11834319526627218,
+          "cer_no_space_micro": 0.1557377049180328,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0111",
+        "reference_regions": 23,
+        "prediction_regions": 23,
+        "ignored": [
+          "det-0008",
+          "det-0016",
+          "det-0022",
+          "det-0026"
+        ],
+        "mixed_keep": [],
+        "matches": [
+          {
+            "prediction_id": "hf-0111/det-0000",
+            "annotation_id": "hf-0111-line-0001",
+            "iou": 0.8393298544355946
+          },
+          {
+            "prediction_id": "hf-0111/det-0001",
+            "annotation_id": "hf-0111-line-0002",
+            "iou": 0.8834269662921348
+          },
+          {
+            "prediction_id": "hf-0111/det-0002",
+            "annotation_id": "hf-0111-line-0003",
+            "iou": 0.914512093411176
+          },
+          {
+            "prediction_id": "hf-0111/det-0003",
+            "annotation_id": "hf-0111-line-0004",
+            "iou": 0.8609171155303418
+          },
+          {
+            "prediction_id": "hf-0111/det-0004",
+            "annotation_id": "hf-0111-line-0005",
+            "iou": 0.8531178851505186
+          },
+          {
+            "prediction_id": "hf-0111/det-0005",
+            "annotation_id": "hf-0111-line-0007",
+            "iou": 0.8956389433740903
+          },
+          {
+            "prediction_id": "hf-0111/det-0006",
+            "annotation_id": "hf-0111-line-0008",
+            "iou": 0.9137574982790835
+          },
+          {
+            "prediction_id": "hf-0111/det-0007",
+            "annotation_id": "hf-0111-line-0009",
+            "iou": 0.9687345729800889
+          },
+          {
+            "prediction_id": "hf-0111/det-0009",
+            "annotation_id": "hf-0111-line-0011",
+            "iou": 0.8973325657263481
+          },
+          {
+            "prediction_id": "hf-0111/det-0010",
+            "annotation_id": "hf-0111-line-0012",
+            "iou": 0.8175626720765107
+          },
+          {
+            "prediction_id": "hf-0111/det-0011",
+            "annotation_id": "hf-0111-line-0013",
+            "iou": 0.8491511906118263
+          },
+          {
+            "prediction_id": "hf-0111/det-0012",
+            "annotation_id": "hf-0111-line-0014",
+            "iou": 0.8249175906502847
+          },
+          {
+            "prediction_id": "hf-0111/det-0013",
+            "annotation_id": "hf-0111-line-0015",
+            "iou": 0.9358363714767337
+          },
+          {
+            "prediction_id": "hf-0111/det-0014",
+            "annotation_id": "hf-0111-line-0016",
+            "iou": 0.8473357306309252
+          },
+          {
+            "prediction_id": "hf-0111/det-0015",
+            "annotation_id": "hf-0111-line-0017",
+            "iou": 0.8426380599833799
+          },
+          {
+            "prediction_id": "hf-0111/det-0017",
+            "annotation_id": "hf-0111-line-0019",
+            "iou": 0.9018189097980895
+          },
+          {
+            "prediction_id": "hf-0111/det-0018",
+            "annotation_id": "hf-0111-line-0020",
+            "iou": 0.8616325081168831
+          },
+          {
+            "prediction_id": "hf-0111/det-0019",
+            "annotation_id": "hf-0111-line-0021",
+            "iou": 0.8982649668626286
+          },
+          {
+            "prediction_id": "hf-0111/det-0020",
+            "annotation_id": "hf-0111-line-0022",
+            "iou": 0.8727451861081731
+          },
+          {
+            "prediction_id": "hf-0111/det-0021",
+            "annotation_id": "hf-0111-line-0023",
+            "iou": 0.8087123456497524
+          },
+          {
+            "prediction_id": "hf-0111/det-0023",
+            "annotation_id": "hf-0111-line-0025",
+            "iou": 0.8638589267332051
+          },
+          {
+            "prediction_id": "hf-0111/det-0024",
+            "annotation_id": "hf-0111-line-0026",
+            "iou": 0.8800668299443717
+          },
+          {
+            "prediction_id": "hf-0111/det-0025",
+            "annotation_id": "hf-0111-line-0027",
+            "iou": 0.8820184790334044
+          }
+        ],
+        "unmatched_predictions": [],
+        "missed": [],
+        "page": {
+          "samples": 1,
+          "substitutions": 22,
+          "deletions": 13,
+          "insertions": 5,
+          "errors": 40,
+          "reference_units": 403,
+          "cer_micro": 0.09925558312655088,
+          "cer_no_space_micro": 0.07758620689655173,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      },
+      {
+        "page_id": "hf-0137",
+        "reference_regions": 40,
+        "prediction_regions": 47,
+        "ignored": [
+          "det-0003",
+          "det-0005",
+          "det-0006",
+          "det-0007",
+          "det-0008",
+          "det-0010",
+          "det-0011",
+          "det-0012",
+          "det-0013",
+          "det-0014",
+          "det-0015",
+          "det-0016",
+          "det-0017",
+          "det-0019",
+          "det-0041",
+          "det-0042",
+          "det-0057",
+          "det-0059",
+          "det-0060",
+          "det-0061",
+          "det-0062",
+          "det-0063",
+          "det-0064",
+          "det-0065",
+          "det-0066",
+          "det-0067",
+          "det-0068",
+          "det-0069",
+          "det-0070",
+          "det-0072",
+          "det-0073",
+          "det-0074",
+          "det-0076",
+          "det-0077",
+          "det-0078",
+          "det-0080",
+          "det-0081",
+          "det-0083",
+          "det-0084",
+          "det-0085",
+          "det-0086",
+          "det-0088",
+          "det-0089"
+        ],
+        "mixed_keep": [
+          "det-0021",
+          "det-0028",
+          "det-0030",
+          "det-0035",
+          "det-0052",
+          "det-0053",
+          "det-0054"
+        ],
+        "matches": [
+          {
+            "prediction_id": "hf-0137/det-0000",
+            "annotation_id": "hf-0137-line-0001",
+            "iou": 0.8822408367681602
+          },
+          {
+            "prediction_id": "hf-0137/det-0001",
+            "annotation_id": "hf-0137-line-0002",
+            "iou": 0.9103342981646999
+          },
+          {
+            "prediction_id": "hf-0137/det-0002",
+            "annotation_id": "hf-0137-line-0003",
+            "iou": 0.796353555816185
+          },
+          {
+            "prediction_id": "hf-0137/det-0004",
+            "annotation_id": "audit-hf-0137-115",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0009",
+            "annotation_id": "audit-hf-0137-120",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0018",
+            "annotation_id": "audit-hf-0137-129",
+            "iou": 0.6651638633604994
+          },
+          {
+            "prediction_id": "hf-0137/det-0020",
+            "annotation_id": "audit-hf-0137-131",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0022",
+            "annotation_id": "audit-hf-0137-133",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0023",
+            "annotation_id": "audit-hf-0137-134",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0024",
+            "annotation_id": "audit-hf-0137-135",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0025",
+            "annotation_id": "audit-hf-0137-136",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0026",
+            "annotation_id": "audit-hf-0137-137",
+            "iou": 0.8558558558558559
+          },
+          {
+            "prediction_id": "hf-0137/det-0027",
+            "annotation_id": "audit-hf-0137-138",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0029",
+            "annotation_id": "audit-hf-0137-140",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0031",
+            "annotation_id": "audit-hf-0137-142",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0032",
+            "annotation_id": "audit-hf-0137-143",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0033",
+            "annotation_id": "audit-hf-0137-144",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0034",
+            "annotation_id": "audit-hf-0137-145",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0036",
+            "annotation_id": "audit-hf-0137-147",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0037",
+            "annotation_id": "audit-hf-0137-148",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0038",
+            "annotation_id": "audit-hf-0137-149",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0039",
+            "annotation_id": "audit-hf-0137-150",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0040",
+            "annotation_id": "audit-hf-0137-151",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0043",
+            "annotation_id": "audit-hf-0137-154",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0044",
+            "annotation_id": "audit-hf-0137-155",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0045",
+            "annotation_id": "audit-hf-0137-156",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0046",
+            "annotation_id": "audit-hf-0137-157",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0047",
+            "annotation_id": "audit-hf-0137-158",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0048",
+            "annotation_id": "audit-hf-0137-159",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0050",
+            "annotation_id": "audit-hf-0137-161",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0051",
+            "annotation_id": "audit-hf-0137-162",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0055",
+            "annotation_id": "audit-hf-0137-166",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0056",
+            "annotation_id": "audit-hf-0137-167",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0058",
+            "annotation_id": "audit-hf-0137-169",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0071",
+            "annotation_id": "audit-hf-0137-182",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0075",
+            "annotation_id": "audit-hf-0137-186",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0079",
+            "annotation_id": "audit-hf-0137-190",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0082",
+            "annotation_id": "audit-hf-0137-193",
+            "iou": 1.0
+          },
+          {
+            "prediction_id": "hf-0137/det-0087",
+            "annotation_id": "audit-hf-0137-198",
+            "iou": 1.0
+          }
+        ],
+        "unmatched_predictions": [
+          "hf-0137/det-0021",
+          "hf-0137/det-0028",
+          "hf-0137/det-0030",
+          "hf-0137/det-0035",
+          "hf-0137/det-0049",
+          "hf-0137/det-0052",
+          "hf-0137/det-0053",
+          "hf-0137/det-0054"
+        ],
+        "missed": [
+          "audit-hf-0137-160"
+        ],
+        "page": {
+          "samples": 1,
+          "substitutions": 34,
+          "deletions": 7,
+          "insertions": 186,
+          "errors": 227,
+          "reference_units": 428,
+          "cer_micro": 0.530373831775701,
+          "cer_no_space_micro": 0.5232558139534884,
+          "exact_match_rate": 0.0,
+          "empty_reference_insertions": 0
+        }
+      }
+    ],
+    "failures": [],
+    "pages": 17,
+    "ignore_policy": ">=.5 of prediction in ignore; ANY intersection with valid GT takes priority; mixed predictions kept",
+    "scope": "provisional audited general text; formulas/isolated symbols/uncertain spans ignored"
+  },
+  "GT_regions": 318,
+  "bbox_changes": 11,
+  "same_predictions_sha256": "5654b8c09e466187cccaa6d1142add06af3f963782c4d244ca2365cc547c330f",
+  "interpretation": "evaluation GT geometry sensitivity only; no recognizer/pipeline improvement"
+}

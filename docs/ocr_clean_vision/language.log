@@ -1,0 +1,133 @@
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+Loading weights:   0%|          | 0/608 [00:00<?, ?it/s]Loading weights: 100%|██████████| 608/608 [00:00<00:00, 18224.11it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+[transformers] `PaddleOCRVLProcessor` defines `image_processor_class = 'AutoImageProcessor'`, which is deprecated. Register the correct mapping in `AutoImageProcessor` instead.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+{"inference": "before.validation.predictions.json", "done": 4, "total": 297, "seconds": 0.48158153379336}
+{"inference": "before.validation.predictions.json", "done": 44, "total": 297, "seconds": 3.1181320981122553}
+{"inference": "before.validation.predictions.json", "done": 84, "total": 297, "seconds": 6.761902826838195}
+{"inference": "before.validation.predictions.json", "done": 124, "total": 297, "seconds": 10.517611296847463}
+{"inference": "before.validation.predictions.json", "done": 164, "total": 297, "seconds": 14.623636186122894}
+{"inference": "before.validation.predictions.json", "done": 204, "total": 297, "seconds": 17.94309015898034}
+{"inference": "before.validation.predictions.json", "done": 244, "total": 297, "seconds": 19.884029658976942}
+{"inference": "before.validation.predictions.json", "done": 284, "total": 297, "seconds": 25.490873787086457}
+{"arm": "language", "epoch": 1, "step": 10, "loss": 0.1434822827577591, "seconds": 2.4952107057906687, "gpu_peak_bytes": 3524072960}
+{"arm": "language", "epoch": 1, "step": 20, "loss": 0.15302278101444244, "seconds": 4.960940700955689, "gpu_peak_bytes": 3558783488}
+{"arm": "language", "epoch": 1, "step": 30, "loss": 0.3915743827819824, "seconds": 7.355557612609118, "gpu_peak_bytes": 3558783488}
+{"arm": "language", "epoch": 1, "step": 40, "loss": 0.03345399722456932, "seconds": 9.849494955968112, "gpu_peak_bytes": 3558783488}
+{"arm": "language", "epoch": 1, "step": 50, "loss": 0.32689160108566284, "seconds": 12.210270131006837, "gpu_peak_bytes": 3558783488}
+{"arm": "language", "epoch": 1, "step": 60, "loss": 0.4353940188884735, "seconds": 14.583638276904821, "gpu_peak_bytes": 3577266688}
+{"arm": "language", "epoch": 1, "step": 70, "loss": 0.1061490848660469, "seconds": 16.95078189158812, "gpu_peak_bytes": 3628790272}
+{"arm": "language", "epoch": 1, "step": 80, "loss": 0.4405270218849182, "seconds": 19.213657311629504, "gpu_peak_bytes": 3628790272}
+{"arm": "language", "epoch": 1, "step": 90, "loss": 2.1244399547576904, "seconds": 21.623030008748174, "gpu_peak_bytes": 3628790272}
+{"arm": "language", "epoch": 1, "step": 100, "loss": 0.25307512283325195, "seconds": 24.017541030887514, "gpu_peak_bytes": 3628790272}
+{"arm": "language", "epoch": 1, "step": 110, "loss": 0.7495214939117432, "seconds": 26.387141295708716, "gpu_peak_bytes": 3628790272}
+{"arm": "language", "epoch": 1, "step": 120, "loss": 0.21195894479751587, "seconds": 28.76582479989156, "gpu_peak_bytes": 3628790272}
+{"arm": "language", "epoch": 1, "step": 130, "loss": 1.2937170267105103, "seconds": 31.08325189864263, "gpu_peak_bytes": 3628790272}
+{"arm": "language", "epoch": 1, "step": 140, "loss": 0.2645263969898224, "seconds": 33.52574728988111, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 1, "step": 150, "loss": 0.33007538318634033, "seconds": 36.00203990889713, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 1, "step": 160, "loss": 0.011232370510697365, "seconds": 38.30936223594472, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 1, "step": 170, "loss": 0.5678738951683044, "seconds": 40.66735634487122, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 1, "step": 180, "loss": 0.14227867126464844, "seconds": 43.02840907685459, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 1, "step": 190, "loss": 0.1539575606584549, "seconds": 45.354616190772504, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 1, "step": 200, "loss": 0.18791848421096802, "seconds": 47.80336003191769, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 1, "step": 210, "loss": 0.7142332196235657, "seconds": 50.21248910855502, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 1, "step": 220, "loss": 0.5527174472808838, "seconds": 52.6529386327602, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 1, "step": 230, "loss": 0.49727463722229004, "seconds": 54.96949739381671, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 1, "step": 240, "loss": 0.3923042416572571, "seconds": 57.61448952788487, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 1, "step": 250, "loss": 1.8717976808547974, "seconds": 61.54829994775355, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 1, "step": 260, "loss": 0.03869892656803131, "seconds": 63.94355439161882, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 1, "step": 270, "loss": 0.7647450566291809, "seconds": 66.26521144295111, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 1, "step": 280, "loss": 0.16358889639377594, "seconds": 68.66273245355114, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 1, "step": 290, "loss": 0.1471993625164032, "seconds": 71.05574673367664, "gpu_peak_bytes": 3633872384}
+{"inference": "epoch-1.validation.predictions.json", "done": 4, "total": 297, "seconds": 0.1617401302792132}
+{"inference": "epoch-1.validation.predictions.json", "done": 44, "total": 297, "seconds": 2.7427557352930307}
+{"inference": "epoch-1.validation.predictions.json", "done": 84, "total": 297, "seconds": 6.243953482247889}
+{"inference": "epoch-1.validation.predictions.json", "done": 124, "total": 297, "seconds": 9.998600606340915}
+{"inference": "epoch-1.validation.predictions.json", "done": 164, "total": 297, "seconds": 14.109528195112944}
+{"inference": "epoch-1.validation.predictions.json", "done": 204, "total": 297, "seconds": 17.438116795383394}
+{"inference": "epoch-1.validation.predictions.json", "done": 244, "total": 297, "seconds": 19.35658806702122}
+{"inference": "epoch-1.validation.predictions.json", "done": 284, "total": 297, "seconds": 22.561293496284634}
+{"arm": "language", "epoch": 1, "step": 293, "loss": 0.4252427284936655, "validation": {"samples": 244, "substitutions": 498, "deletions": 113, "insertions": 107, "errors": 718, "reference_units": 5613, "cer_micro": 0.12791733475859612, "cer_no_space_micro": 0.13153310104529617, "exact_match_rate": 0.23770491803278687, "empty_reference_insertions": 0}, "full_validation_diagnostic": {"samples": 297, "substitutions": 679, "deletions": 146, "insertions": 147, "errors": 972, "reference_units": 6865, "cer_micro": 0.1415877640203933, "cer_no_space_micro": 0.1496232508073197, "exact_match_rate": 0.2053872053872054, "empty_reference_insertions": 0}, "seconds": 95.5309867169708}
+{"arm": "language", "epoch": 2, "step": 300, "loss": 0.10289080440998077, "seconds": 1.656117538921535, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 310, "loss": 0.3209071755409241, "seconds": 4.049115854781121, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 320, "loss": 0.22942468523979187, "seconds": 6.416305716149509, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 330, "loss": 0.3912777602672577, "seconds": 8.830758242867887, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 340, "loss": 0.20784488320350647, "seconds": 11.269764409866184, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 350, "loss": 0.8280594348907471, "seconds": 13.740571855101734, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 360, "loss": 0.4720706045627594, "seconds": 16.117569901049137, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 370, "loss": 0.5775225162506104, "seconds": 18.553889541886747, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 380, "loss": 0.24903395771980286, "seconds": 20.985936618875712, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 390, "loss": 0.4475767910480499, "seconds": 23.394857991021127, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 400, "loss": 0.4176293611526489, "seconds": 25.742697679903358, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 410, "loss": 0.5605728030204773, "seconds": 29.90658726124093, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 420, "loss": 0.15399087965488434, "seconds": 32.35346348583698, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 430, "loss": 0.25109314918518066, "seconds": 34.802542010787874, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 440, "loss": 0.0283613670617342, "seconds": 37.25498192291707, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 450, "loss": 0.36300796270370483, "seconds": 39.67725568078458, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 460, "loss": 0.1968696564435959, "seconds": 42.028345067985356, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 470, "loss": 0.09876580536365509, "seconds": 44.409745790064335, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 480, "loss": 0.043097782880067825, "seconds": 46.8398981471546, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 490, "loss": 0.37715497612953186, "seconds": 49.29556958191097, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 500, "loss": 0.49568936228752136, "seconds": 51.70499455789104, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 510, "loss": 0.38029080629348755, "seconds": 54.01852555014193, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 520, "loss": 0.4869970381259918, "seconds": 56.47109140595421, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 530, "loss": 0.20212306082248688, "seconds": 58.85200245119631, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 540, "loss": 0.485494464635849, "seconds": 61.23654485587031, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 550, "loss": 0.2890586853027344, "seconds": 63.63848407100886, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 560, "loss": 0.06811052560806274, "seconds": 66.0131618399173, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 570, "loss": 0.24862195551395416, "seconds": 68.44965645298362, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 2, "step": 580, "loss": 0.600630521774292, "seconds": 70.824560420122, "gpu_peak_bytes": 3633872384}
+{"inference": "epoch-2.validation.predictions.json", "done": 4, "total": 297, "seconds": 0.16472084494307637}
+{"inference": "epoch-2.validation.predictions.json", "done": 44, "total": 297, "seconds": 2.78888499410823}
+{"inference": "epoch-2.validation.predictions.json", "done": 84, "total": 297, "seconds": 6.550067361909896}
+{"inference": "epoch-2.validation.predictions.json", "done": 124, "total": 297, "seconds": 10.39346225000918}
+{"inference": "epoch-2.validation.predictions.json", "done": 164, "total": 297, "seconds": 14.51466341689229}
+{"inference": "epoch-2.validation.predictions.json", "done": 204, "total": 297, "seconds": 17.8637638669461}
+{"inference": "epoch-2.validation.predictions.json", "done": 244, "total": 297, "seconds": 20.30192489270121}
+{"inference": "epoch-2.validation.predictions.json", "done": 284, "total": 297, "seconds": 23.64973550476134}
+{"arm": "language", "epoch": 2, "step": 586, "loss": 0.39273435500570525, "validation": {"samples": 244, "substitutions": 505, "deletions": 101, "insertions": 114, "errors": 720, "reference_units": 5613, "cer_micro": 0.1282736504543025, "cer_no_space_micro": 0.13087979094076654, "exact_match_rate": 0.22540983606557377, "empty_reference_insertions": 0}, "full_validation_diagnostic": {"samples": 297, "substitutions": 684, "deletions": 134, "insertions": 158, "errors": 976, "reference_units": 6865, "cer_micro": 0.14217042971595048, "cer_no_space_micro": 0.14854682454251883, "exact_match_rate": 0.19528619528619529, "empty_reference_insertions": 0}, "seconds": 97.08104617102072}
+{"arm": "language", "epoch": 3, "step": 590, "loss": 0.11414633691310883, "seconds": 0.9500325545668602, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 600, "loss": 0.19660615921020508, "seconds": 3.3073649327270687, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 610, "loss": 0.3382551372051239, "seconds": 5.664468616712838, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 620, "loss": 0.16023914515972137, "seconds": 8.205072755925357, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 630, "loss": 0.060981281101703644, "seconds": 10.58305671159178, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 640, "loss": 0.01909763738512993, "seconds": 13.030424722004682, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 650, "loss": 0.18802344799041748, "seconds": 15.388591446913779, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 660, "loss": 0.4273180365562439, "seconds": 17.69521652488038, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 670, "loss": 0.7351275682449341, "seconds": 20.07287727156654, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 680, "loss": 0.09316650032997131, "seconds": 22.57929887669161, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 690, "loss": 0.1667812019586563, "seconds": 24.957115318626165, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 700, "loss": 0.07931528985500336, "seconds": 27.392482831608504, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 710, "loss": 0.3814140856266022, "seconds": 29.720476008951664, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 720, "loss": 0.22685417532920837, "seconds": 32.09692232962698, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 730, "loss": 0.20708097517490387, "seconds": 34.51471090782434, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 740, "loss": 0.29776978492736816, "seconds": 36.91174656199291, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 750, "loss": 0.19885331392288208, "seconds": 39.387967893853784, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 760, "loss": 0.2836240828037262, "seconds": 41.73454820876941, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 770, "loss": 0.7040523290634155, "seconds": 44.172006809618324, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 780, "loss": 0.2120402306318283, "seconds": 46.64169443398714, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 790, "loss": 0.17263595759868622, "seconds": 48.989333557896316, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 800, "loss": 0.26638737320899963, "seconds": 51.430650763679296, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 810, "loss": 0.25946906208992004, "seconds": 53.900569995865226, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 820, "loss": 0.6958740949630737, "seconds": 56.298477639909834, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 830, "loss": 0.1284632384777069, "seconds": 59.04676220798865, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 840, "loss": 1.0641348361968994, "seconds": 62.58883038861677, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 850, "loss": 0.40695920586586, "seconds": 64.9916912438348, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 860, "loss": 0.3313654065132141, "seconds": 67.31265882402658, "gpu_peak_bytes": 3633872384}
+{"arm": "language", "epoch": 3, "step": 870, "loss": 0.43614715337753296, "seconds": 69.665340306703, "gpu_peak_bytes": 3633872384}
+{"inference": "epoch-3.validation.predictions.json", "done": 4, "total": 297, "seconds": 0.16053920285776258}
+{"inference": "epoch-3.validation.predictions.json", "done": 44, "total": 297, "seconds": 2.7805399606004357}
+{"inference": "epoch-3.validation.predictions.json", "done": 84, "total": 297, "seconds": 6.434363987762481}
+{"inference": "epoch-3.validation.predictions.json", "done": 124, "total": 297, "seconds": 10.367523910012096}
+{"inference": "epoch-3.validation.predictions.json", "done": 164, "total": 297, "seconds": 14.579944078810513}
+{"inference": "epoch-3.validation.predictions.json", "done": 204, "total": 297, "seconds": 17.95127348555252}
+{"inference": "epoch-3.validation.predictions.json", "done": 244, "total": 297, "seconds": 19.90384008269757}
+{"inference": "epoch-3.validation.predictions.json", "done": 284, "total": 297, "seconds": 23.165730418637395}
+{"arm": "language", "epoch": 3, "step": 879, "loss": 0.3672144142624522, "validation": {"samples": 244, "substitutions": 504, "deletions": 103, "insertions": 124, "errors": 731, "reference_units": 5613, "cer_micro": 0.1302333867806877, "cer_no_space_micro": 0.1332752613240418, "exact_match_rate": 0.2336065573770492, "empty_reference_insertions": 0}, "full_validation_diagnostic": {"samples": 297, "substitutions": 707, "deletions": 131, "insertions": 163, "errors": 1001, "reference_units": 6865, "cer_micro": 0.14581209031318282, "cer_no_space_micro": 0.15392895586652314, "exact_match_rate": 0.19865319865319866, "empty_reference_insertions": 0}, "seconds": 96.16738311666995}
+{"inference": "reload.reference.json", "done": 4, "total": 4, "seconds": 0.16057564690709114}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+Loading weights:   0%|          | 0/608 [00:00<?, ?it/s]Loading weights: 100%|██████████| 608/608 [00:00<00:00, 14419.85it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+{"inference": "reload.fresh.json", "done": 4, "total": 4, "seconds": 0.16428870195522904}

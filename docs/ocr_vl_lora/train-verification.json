@@ -1,0 +1,9 @@
+{
+  "full_train": true,
+  "train_samples": 2513,
+  "validation_samples": 297,
+  "adapter_max_weight_update": 0.023657025769352913,
+  "adapter_reload_texts_equal": true,
+  "comparison_samples": 4,
+  "finite_loss": true
+}

@@ -1,0 +1,29 @@
+{
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "Pillow": "12.3.0",
+    "pyarrow": "25.0.1",
+    "huggingface_hub": "1.33.0",
+    "rapidfuzz": "3.14.5",
+    "PyYAML": "6.0.2",
+    "tokenizers": "0.23.2",
+    "paddlepaddle-gpu": "3.2.1",
+    "paddlex": "3.7.2"
+  },
+  "source_sha256": {
+    "src/ocr_data/export_recognition.py": "82fe2c591c343bfbe4a1f0766df6e68fe5ce7850bf2f30644eea8b0b2e88b28c",
+    "src/ocr_data/snapshot.py": "a23a613301c125dc986c8e7611a1f0bf61d8be5a6e263299cb11e09512083a23",
+    "src/ocr_data/__init__.py": "529fd61a411034789ebb58d3ba717389f878c19b83eabd93ec256e6ac09a5913",
+    "src/ocr_data/validate.py": "85eead03689af4f5134d0ab1024ff57e852d5efca3a26552d74d5d60cbd826c0",
+    "src/ocr_data/build.py": "1e9166513d4c2fbff700d19817c3cc304d661166468c0f2597d6ff5c1b441804",
+    "src/ocr_data/restore.py": "057d815edfa584cf47e73560ecce84187c89c39933dc44277e16256ed96583c2",
+    "src/ocr_data/audit.py": "04ed2eaf88cb08a561e7ce2d2314e2acc0641d2392a3ce4d30479d22d2b4fdf5",
+    "src/ocr_data/infer_smoke.py": "f4a7adaf84b7d989484190053e2a242ba3f4360bbfef45e5b9fc923cfaadb70f",
+    "src/ocr_data/split.py": "7f8882841be74e7790c8a69de2d8c68735cc662b17cb87aa4b2231b4ed2005a0",
+    "src/evaluation/ocr_v2.py": "a30ff58046237a4b504fc4b879f4d22f4b1834772860889198d4cde58c29890f",
+    "tests/test_ocr_v2.py": "eb19f76d08abab27a8c172802517c46d3774a077ef647ffa469505b5bf742b9d"
+  },
+  "gpu_available": false,
+  "dependencies_installed": false
+}

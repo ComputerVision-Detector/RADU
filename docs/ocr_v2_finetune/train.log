@@ -1,0 +1,75 @@
+/home/user/Desktop/HybridOCR/.venv/lib/python3.10/site-packages/paddle/utils/cpp_extension/extension_utils.py:718: UserWarning: No ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md
+  warnings.warn(warning_message)
+W1109 22:53:17.937462 121144 gpu_resources.cc:114] Please NOTE: device: 0, GPU Compute Capability: 8.9, Driver API Version: 13.0, Runtime API Version: 12.8
+/home/user/Desktop/HybridOCR/.venv/lib/python3.10/site-packages/paddle/nn/layer/norm.py:818: UserWarning: When training, we now always track global mean and variance.
+  warnings.warn(
+Skipping import of the encryption module.
+{"epoch": 1, "step": 20, "loss": 3.142789602279663}
+{"epoch": 1, "step": 40, "loss": 4.796171188354492}
+{"epoch": 1, "step": 60, "loss": 2.490908622741699}
+{"epoch": 1, "step": 80, "loss": 2.914368152618408}
+{"epoch": 1, "step": 100, "loss": 2.22796893119812}
+{"epoch": 1, "step": 120, "loss": 2.0018463134765625}
+{"epoch": 1, "step": 140, "loss": 4.53922176361084}
+{"epoch": 1, "step": 147, "loss": 3.5537664679442944, "validation": {"samples": 273, "substitutions": 1932, "deletions": 695, "insertions": 342, "errors": 2969, "reference_units": 6359, "cer_micro": 0.46689731089793995, "cer_no_space_micro": 0.5094924447888415, "exact_match_rate": 0.003663003663003663, "empty_reference_insertions": 0}, "seconds": 8.233176433015615}
+{"epoch": 2, "step": 160, "loss": 2.5291991233825684}
+{"epoch": 2, "step": 180, "loss": 2.6288959980010986}
+{"epoch": 2, "step": 200, "loss": 2.11830997467041}
+{"epoch": 2, "step": 220, "loss": 2.2728967666625977}
+{"epoch": 2, "step": 240, "loss": 2.627065658569336}
+{"epoch": 2, "step": 260, "loss": 3.308701515197754}
+{"epoch": 2, "step": 280, "loss": 2.5273489952087402}
+{"epoch": 2, "step": 294, "loss": 2.5527219618258834, "validation": {"samples": 273, "substitutions": 1670, "deletions": 811, "insertions": 183, "errors": 2664, "reference_units": 6359, "cer_micro": 0.41893379462179586, "cer_no_space_micro": 0.4575745834947695, "exact_match_rate": 0.003663003663003663, "empty_reference_insertions": 0}, "seconds": 8.367977597750723}
+{"epoch": 3, "step": 300, "loss": 3.029428243637085}
+{"epoch": 3, "step": 320, "loss": 1.6578741073608398}
+{"epoch": 3, "step": 340, "loss": 3.341792106628418}
+{"epoch": 3, "step": 360, "loss": 4.095177173614502}
+{"epoch": 3, "step": 380, "loss": 1.6045727729797363}
+{"epoch": 3, "step": 400, "loss": 2.2511253356933594}
+{"epoch": 3, "step": 420, "loss": 1.944130778312683}
+{"epoch": 3, "step": 440, "loss": 2.59158992767334}
+{"epoch": 3, "step": 441, "loss": 2.2529778748142477, "validation": {"samples": 273, "substitutions": 1666, "deletions": 670, "insertions": 221, "errors": 2557, "reference_units": 6359, "cer_micro": 0.40210724956754207, "cer_no_space_micro": 0.4426578845408756, "exact_match_rate": 0.003663003663003663, "empty_reference_insertions": 0}, "seconds": 7.924585960805416}
+{"epoch": 4, "step": 460, "loss": 2.0267467498779297}
+{"epoch": 4, "step": 480, "loss": 1.81983482837677}
+{"epoch": 4, "step": 500, "loss": 2.3028066158294678}
+{"epoch": 4, "step": 520, "loss": 1.386905550956726}
+{"epoch": 4, "step": 540, "loss": 1.6256725788116455}
+{"epoch": 4, "step": 560, "loss": 1.8414688110351562}
+{"epoch": 4, "step": 580, "loss": 1.4033539295196533}
+{"epoch": 4, "step": 588, "loss": 2.0946111322260226, "validation": {"samples": 273, "substitutions": 1669, "deletions": 724, "insertions": 176, "errors": 2569, "reference_units": 6359, "cer_micro": 0.4039943387325051, "cer_no_space_micro": 0.44711352189074, "exact_match_rate": 0.01098901098901099, "empty_reference_insertions": 0}, "seconds": 7.873116961214691}
+{"epoch": 5, "step": 600, "loss": 1.1170411109924316}
+{"epoch": 5, "step": 620, "loss": 1.9083948135375977}
+{"epoch": 5, "step": 640, "loss": 1.49442720413208}
+{"epoch": 5, "step": 660, "loss": 2.788398504257202}
+{"epoch": 5, "step": 680, "loss": 2.303431987762451}
+{"epoch": 5, "step": 700, "loss": 3.123746871948242}
+{"epoch": 5, "step": 720, "loss": 2.1344685554504395}
+{"epoch": 5, "step": 735, "loss": 1.980043395035932, "validation": {"samples": 273, "substitutions": 1575, "deletions": 757, "insertions": 157, "errors": 2489, "reference_units": 6359, "cer_micro": 0.39141374429941816, "cer_no_space_micro": 0.4345215032932972, "exact_match_rate": 0.003663003663003663, "empty_reference_insertions": 0}, "seconds": 7.906780447810888}
+{"epoch": 6, "step": 740, "loss": 2.7604639530181885}
+{"epoch": 6, "step": 760, "loss": 2.2848501205444336}
+{"epoch": 6, "step": 780, "loss": 2.875037431716919}
+{"epoch": 6, "step": 800, "loss": 1.4292409420013428}
+{"epoch": 6, "step": 820, "loss": 1.5780508518218994}
+{"epoch": 6, "step": 840, "loss": 1.883890151977539}
+{"epoch": 6, "step": 860, "loss": 1.4468225240707397}
+{"epoch": 6, "step": 880, "loss": 1.7039964199066162}
+{"epoch": 6, "step": 882, "loss": 1.920260196640378, "validation": {"samples": 273, "substitutions": 1431, "deletions": 658, "insertions": 145, "errors": 2234, "reference_units": 6359, "cer_micro": 0.35131309954395346, "cer_no_space_micro": 0.38996512979465325, "exact_match_rate": 0.040293040293040296, "empty_reference_insertions": 0}, "seconds": 7.889412345830351}
+{"epoch": 7, "step": 900, "loss": 2.6276485919952393}
+{"epoch": 7, "step": 920, "loss": 2.293700695037842}
+{"epoch": 7, "step": 940, "loss": 1.5021275281906128}
+{"epoch": 7, "step": 960, "loss": 1.803568720817566}
+{"epoch": 7, "step": 980, "loss": 1.6203041076660156}
+{"epoch": 7, "step": 1000, "loss": 2.029026508331299}
+{"epoch": 7, "step": 1020, "loss": 2.0235509872436523}
+{"epoch": 7, "step": 1029, "loss": 1.8269255023424318, "validation": {"samples": 273, "substitutions": 1457, "deletions": 650, "insertions": 129, "errors": 2236, "reference_units": 6359, "cer_micro": 0.35162761440478063, "cer_no_space_micro": 0.3913211933359163, "exact_match_rate": 0.014652014652014652, "empty_reference_insertions": 0}, "seconds": 7.88289261283353}
+{"epoch": 8, "step": 1040, "loss": 2.186793088912964}
+{"epoch": 8, "step": 1060, "loss": 1.7525749206542969}
+{"epoch": 8, "step": 1080, "loss": 1.690476417541504}
+{"epoch": 8, "step": 1100, "loss": 1.9789371490478516}
+{"epoch": 8, "step": 1120, "loss": 1.4861798286437988}
+{"epoch": 8, "step": 1140, "loss": 1.5871117115020752}
+{"epoch": 8, "step": 1160, "loss": 2.4445440769195557}
+{"epoch": 8, "step": 1176, "loss": 1.7392769334267597, "validation": {"samples": 273, "substitutions": 1447, "deletions": 570, "insertions": 153, "errors": 2170, "reference_units": 6359, "cer_micro": 0.3412486239974839, "cer_no_space_micro": 0.3791166214645486, "exact_match_rate": 0.02197802197802198, "empty_reference_insertions": 0}, "seconds": 7.626558858901262}
+W1109 22:54:30.116745 121144 eager_utils.cc:3441] Paddle static graph(PIR) not support input out tensor for now!!!!!
+I1109 22:54:31.798955 121144 pir_interpreter.cc:1601] New Executor is Running ...
+I1109 22:54:31.924739 121144 pir_interpreter.cc:1625] pir interpreter is running by multi-thread mode ...

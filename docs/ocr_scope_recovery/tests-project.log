@@ -1,0 +1,280 @@
+test_korean_normalization_and_exact_distances (test_ablation.AblationTests.test_korean_normalization_and_exact_distances) ... ok
+test_micro_is_error_weighted_not_macro_average (test_ablation.AblationTests.test_micro_is_error_weighted_not_macro_average) ... ok
+test_qwen_id_mapping_preserves_order_and_unedited_lines (test_ablation.AblationTests.test_qwen_id_mapping_preserves_order_and_unedited_lines) ... ok
+test_report_has_no_accuracy_without_verified_ground_truth (test_ablation.AblationTests.test_report_has_no_accuracy_without_verified_ground_truth) ... ok
+test_diff_segments_reconstruct_model_text_exactly (test_ablation_html.HtmlComparisonTests.test_diff_segments_reconstruct_model_text_exactly) ... ok
+test_report_is_static_preserves_coordinates_and_escapes_scripts (test_ablation_html.HtmlComparisonTests.test_report_is_static_preserves_coordinates_and_escapes_scripts) ... ok
+test_git_blob_checksum_and_existing_corruption (test_acquire.AcquisitionTests.test_git_blob_checksum_and_existing_corruption) ... ok
+test_lfs_pointer_is_not_materialized_as_data (test_acquire.AcquisitionTests.test_lfs_pointer_is_not_materialized_as_data) ... HTML comparison: /tmp/tmpmpru4yuq/index.html (1 samples)
+MATERIALIZE 1/1; failures=1
+ok
+test_malicious_zip_cannot_escape (test_acquire.AcquisitionTests.test_malicious_zip_cannot_escape) ... ok
+test_materialize_checks_source_hash_and_copies (test_acquire.AcquisitionTests.test_materialize_checks_source_hash_and_copies) ... MATERIALIZE 1/1; failures=0
+ok
+test_sha_pinned_lfs_cache_can_supply_real_data (test_acquire.AcquisitionTests.test_sha_pinned_lfs_cache_can_supply_real_data) ... MATERIALIZE 1/1; failures=0
+ok
+test_traversal_and_windows_paths_rejected (test_acquire.AcquisitionTests.test_traversal_and_windows_paths_rejected) ... ok
+test_unverified_existing_file_is_not_trusted (test_acquire.AcquisitionTests.test_unverified_existing_file_is_not_trusted) ... ok
+test_zip_roundtrip_and_no_overwrite (test_acquire.AcquisitionTests.test_zip_roundtrip_and_no_overwrite) ... ok
+test_restorer_verifies_existing_files_and_never_replaces_mismatches (test_annotation_sharing.AnnotationSharingTests.test_restorer_verifies_existing_files_and_never_replaces_mismatches) ... ok
+test_strict_inventory_validation_rejects_unexpected_files (test_annotation_sharing.AnnotationSharingTests.test_strict_inventory_validation_rejects_unexpected_files) ... ok
+test_fa_validation_omits_relations_only (test_coco_normalize.CmpSplitTests.test_fa_validation_omits_relations_only) ... ok
+test_scan_shares_writer_groups_with_its_source (test_coco_normalize.CmpSplitTests.test_scan_shares_writer_groups_with_its_source) ... ok
+test_unknown_name_is_rejected (test_coco_normalize.CmpSplitTests.test_unknown_name_is_rejected) ... ok
+test_initial_arrow_has_open_source (test_coco_normalize.FaConnectivityTests.test_initial_arrow_has_open_source) ... ok
+test_missing_target_still_fails (test_coco_normalize.FaConnectivityTests.test_missing_target_still_fails) ... ok
+test_validation_arrows_keep_geometry_without_relations (test_coco_normalize.FaConnectivityTests.test_validation_arrows_keep_geometry_without_relations) ... ok
+test_excluded_images_are_dropped_and_coordinates_are_integers (test_coco_normalize.NormalizeTests.test_excluded_images_are_dropped_and_coordinates_are_integers) ... ok
+test_first_keypoint_is_arrow_start (test_coco_normalize.NormalizeTests.test_first_keypoint_is_arrow_start) ... ok
+test_record_has_no_ocr_input (test_coco_normalize.NormalizeTests.test_record_has_no_ocr_input) ... ok
+test_relation_uses_source_connectivity_and_text_stays_out_of_target (test_coco_normalize.NormalizeTests.test_relation_uses_source_connectivity_and_text_stays_out_of_target) ... ok
+test_cross_split_group_is_rejected (test_coco_normalize.SplitTests.test_cross_split_group_is_rejected) ... ok
+test_exact_duplicates_are_excluded_with_reason (test_coco_normalize.SplitTests.test_exact_duplicates_are_excluded_with_reason) ... ok
+test_fc_a_variants_share_a_family_and_held_families_are_test_only (test_coco_normalize.SplitTests.test_fc_a_variants_share_a_family_and_held_families_are_test_only) ... ok
+test_fc_a_writers_never_cross_splits_and_is_deterministic (test_coco_normalize.SplitTests.test_fc_a_writers_never_cross_splits_and_is_deterministic) ... ok
+test_hdbpmn_keeps_official_partition (test_coco_normalize.SplitTests.test_hdbpmn_keeps_official_partition) ... ok
+test_same_structure_templates_cannot_cross_held_boundary (test_coco_normalize.SplitTests.test_same_structure_templates_cannot_cross_held_boundary) ... ok
+test_aggregate_micro_f1 (test_evaluate.ScoreTests.test_aggregate_micro_f1) ... ok
+test_integer_ids_are_scored_like_strings (test_evaluate.ScoreTests.test_integer_ids_are_scored_like_strings) ... ok
+test_iou_disjoint_and_identical (test_evaluate.ScoreTests.test_iou_disjoint_and_identical) ... ok
+test_malformed_output_scores_zero_without_crashing (test_evaluate.ScoreTests.test_malformed_output_scores_zero_without_crashing) ... ok
+test_one_gold_cannot_match_two_predictions (test_evaluate.ScoreTests.test_one_gold_cannot_match_two_predictions) ... ok
+test_open_ended_relations_are_not_scored (test_evaluate.ScoreTests.test_open_ended_relations_are_not_scored) ... ok
+test_perfect_prediction_with_different_ids (test_evaluate.ScoreTests.test_perfect_prediction_with_different_ids) ... ok
+test_reversed_arrow_does_not_match (test_evaluate.ScoreTests.test_reversed_arrow_does_not_match) ... ok
+test_reversed_relation_is_wrong (test_evaluate.ScoreTests.test_reversed_relation_is_wrong) ... ok
+test_structure_bucket_reads_manifest (test_evaluate.ScoreTests.test_structure_bucket_reads_manifest) ... ok
+test_unhashable_relation_endpoints_are_wrong_not_fatal (test_evaluate.ScoreTests.test_unhashable_relation_endpoints_are_wrong_not_fatal) ... ok
+test_wrong_kind_does_not_match (test_evaluate.ScoreTests.test_wrong_kind_does_not_match) ... ok
+test_group_stays_in_strictest_split_and_duplicates_drop (test_formula_table.BuildTests.test_group_stays_in_strictest_split_and_duplicates_drop) ... ok
+test_ink_renders_with_strokes (test_formula_table.BuildTests.test_ink_renders_with_strokes) ... ok
+test_spans_push_later_cells_along (test_formula_table.GridTests.test_spans_push_later_cells_along) ... ok
+test_voc_spanning_cell_replaces_grid_cells (test_formula_table.GridTests.test_voc_spanning_cell_replaces_grid_cells) ... ok
+test_table_with_span_past_grid_is_skipped (test_formula_table.MalformedSourceTests.test_table_with_span_past_grid_is_skipped) ... ok
+test_document_pages_share_one_group (test_formula_table.NewSourceTargetTests.test_document_pages_share_one_group) ... ok
+test_hdflowmind_keeps_boxes_and_never_reads_text_objects (test_formula_table.NewSourceTargetTests.test_hdflowmind_keeps_boxes_and_never_reads_text_objects) ... ok
+test_hme100k_skips_chinese_and_numbered_labels (test_formula_table.NewSourceTargetTests.test_hme100k_skips_chinese_and_numbered_labels) ... ok
+test_ibem_page_with_broken_formula_is_dropped_and_align_stays_math (test_formula_table.NewSourceTargetTests.test_ibem_page_with_broken_formula_is_dropped_and_align_stays_math) ... ok
+test_ibem_percent_boxes_become_pixels_and_sort_by_reading_order (test_formula_table.NewSourceTargetTests.test_ibem_percent_boxes_become_pixels_and_sort_by_reading_order) ... ok
+test_large_page_keeps_grid_without_boxes_and_oversize_page_is_dropped (test_formula_table.NewSourceTargetTests.test_large_page_keeps_grid_without_boxes_and_oversize_page_is_dropped) ... ok
+test_same_image_in_other_source_is_skipped (test_formula_table.NewSourceTargetTests.test_same_image_in_other_source_is_skipped) ... ok
+test_table_with_omitted_empty_cells_is_dropped (test_formula_table.NewSourceTargetTests.test_table_with_omitted_empty_cells_is_dropped) ... ok
+test_table_with_overlapping_source_cells_is_dropped (test_formula_table.NewSourceTargetTests.test_table_with_overlapping_source_cells_is_dropped) ... ok
+test_tabrecset_labels_count_from_one_and_drop_text (test_formula_table.NewSourceTargetTests.test_tabrecset_labels_count_from_one_and_drop_text) ... ok
+test_large_source_never_repeats_and_small_source_repeats_evenly (test_formula_table.SamplerTests.test_large_source_never_repeats_and_small_source_repeats_evenly) ... ok
+test_missing_share_is_refused (test_formula_table.SamplerTests.test_missing_share_is_refused) ... ok
+test_order_is_reproducible_for_resume (test_formula_table.SamplerTests.test_order_is_reproducible_for_resume) ... ok
+test_box_only_arrow_scores_by_box_and_arrow_without_box_or_ends_is_ignored (test_formula_table.ScoreTests.test_box_only_arrow_scores_by_box_and_arrow_without_box_or_ends_is_ignored) ... ok
+test_formula_match_ignores_spacing_only (test_formula_table.ScoreTests.test_formula_match_ignores_spacing_only) ... ok
+test_table_scores_cell_grid_and_survives_bad_cells (test_formula_table.ScoreTests.test_table_scores_cell_grid_and_survives_bad_cells) ... ok
+test_cell_text_is_not_a_target (test_formula_table.ValidationTests.test_cell_text_is_not_a_target) ... ok
+test_diagram_prompt_is_unchanged (test_formula_table.ValidationTests.test_diagram_prompt_is_unchanged) ... ok
+test_overlap_and_out_of_grid_are_rejected (test_formula_table.ValidationTests.test_overlap_and_out_of_grid_are_rejected) ... ok
+test_hybrid (unittest.loader._FailedTest.test_hybrid) ... ERROR
+test_hybrid_vector (unittest.loader._FailedTest.test_hybrid_vector) ... ERROR
+test_image_upload (unittest.loader._FailedTest.test_image_upload) ... ERROR
+test_both_adapters_active_but_only_vision_updates (test_ocr_clean_vision.VisualAdaptationContract.test_both_adapters_active_but_only_vision_updates) ... ok
+test_only_last_visual_qv_are_targeted (test_ocr_clean_vision.VisualAdaptationContract.test_only_last_visual_qv_are_targeted) ... ok
+test_parent_processing_config_drift_is_rejected (test_ocr_clean_vision.VisualAdaptationContract.test_parent_processing_config_drift_is_rejected) ... ok
+test_changed_crop_fails_before_inference (test_ocr_finetune.FineTuneContract.test_changed_crop_fails_before_inference) ... ok
+test_comparison_includes_empty_failures_and_nfc (test_ocr_finetune.FineTuneContract.test_comparison_includes_empty_failures_and_nfc) ... ok
+test_evaluation_rejects_changed_preprocessing (test_ocr_finetune.FineTuneContract.test_evaluation_rejects_changed_preprocessing) ... ok
+test_long_labels_need_repeat_aware_ctc_budget (test_ocr_finetune.FineTuneContract.test_long_labels_need_repeat_aware_ctc_budget) ... ok
+test_screen_never_substitutes_prediction (test_ocr_finetune.FineTuneContract.test_screen_never_substitutes_prediction) ... ok
+test_zero_baseline_relative_is_none (test_ocr_finetune.FineTuneContract.test_zero_baseline_relative_is_none) ... ok
+test_excluded_predictions_and_ambiguous_overlaps (test_ocr_finetune_page.PageAdapterContract.test_excluded_predictions_and_ambiguous_overlaps) ... ok
+test_reading_order_is_fixed_y_then_x (test_ocr_finetune_page.PageAdapterContract.test_reading_order_is_fixed_y_then_x) ... ok
+test_ocr_first_analysis (unittest.loader._FailedTest.test_ocr_first_analysis) ... ERROR
+test_checkpoint_drift_cannot_be_bound_to_old_metric (test_ocr_lora_round2.RoundTwoContract.test_checkpoint_drift_cannot_be_bound_to_old_metric) ... ok
+test_halfstep_is_exact_delta_average (test_ocr_lora_round2.RoundTwoContract.test_halfstep_is_exact_delta_average) ... ok
+test_quarantine_never_alters_transcription (test_ocr_lora_round2.RoundTwoContract.test_quarantine_never_alters_transcription) ... ok
+test_training_arms_differ_only_in_resolution (test_ocr_lora_round2.RoundTwoContract.test_training_arms_differ_only_in_resolution) ... ok
+test_classification_and_scope_artifacts_are_complete (test_ocr_page_audit.PageAuditTests.test_classification_and_scope_artifacts_are_complete) ... ok
+test_clear_matching_excludes_split_merge (test_ocr_page_audit.PageAuditTests.test_clear_matching_excludes_split_merge) ... ok
+test_file_drift_is_rejected (test_ocr_page_audit.PageAuditTests.test_file_drift_is_rejected) ... ok
+test_ignore_never_drops_mixed_valid_prediction (test_ocr_page_audit.PageAuditTests.test_ignore_never_drops_mixed_valid_prediction) ... ok
+test_new_scope_mixed_prediction_kept_and_empty_output_counted (test_ocr_page_audit.PageAuditTests.test_new_scope_mixed_prediction_kept_and_empty_output_counted) ... ok
+test_no_overwrite (test_ocr_page_audit.PageAuditTests.test_no_overwrite) ... ok
+test_one_to_one_is_distinct_from_split_diagnostic (test_ocr_page_audit.PageAuditTests.test_one_to_one_is_distinct_from_split_diagnostic) ... ok
+test_order_only_preserves_strings_and_set (test_ocr_page_audit.PageAuditTests.test_order_only_preserves_strings_and_set) ... ok
+test_order_revision_changes_order_only (test_ocr_page_audit.PageAuditTests.test_order_revision_changes_order_only) ... ok
+test_page_empty_missing_failure_preserves_denominator (test_ocr_page_audit.PageAuditTests.test_page_empty_missing_failure_preserves_denominator) ... ok
+test_paired_crop_denominators_and_nfc (test_ocr_page_audit.PageAuditTests.test_paired_crop_denominators_and_nfc) ... ok
+test_review_exactly_covers_frozen_fp_ids (test_ocr_page_audit.PageAuditTests.test_review_exactly_covers_frozen_fp_ids) ... ok
+test_scope_keeps_legacy_immutable_and_tracks_changes (test_ocr_page_audit.PageAuditTests.test_scope_keeps_legacy_immutable_and_tracks_changes) ... ok
+test_duplicate_and_missing_recovery_ids_rejected (test_ocr_scope_recovery.ScopeRecoveryTests.test_duplicate_and_missing_recovery_ids_rejected) ... ok
+test_gt_revision_never_modifies_input_and_requires_evidence (test_ocr_scope_recovery.ScopeRecoveryTests.test_gt_revision_never_modifies_input_and_requires_evidence) ... ok
+test_merge_preserves_every_cached_string (test_ocr_scope_recovery.ScopeRecoveryTests.test_merge_preserves_every_cached_string) ... ok
+test_recovery_exact_and_changed_geometry_rejected (test_ocr_scope_recovery.ScopeRecoveryTests.test_recovery_exact_and_changed_geometry_rejected) ... ok
+test_review_freeze_drift_rejected_before_inference (test_ocr_scope_recovery.ScopeRecoveryTests.test_review_freeze_drift_rejected_before_inference) ... ok
+test_scope_comparison_rejects_changed_shared_texts (test_ocr_scope_recovery.ScopeRecoveryTests.test_scope_comparison_rejects_changed_shared_texts) ... ok
+test_cannot_use_validation_or_test_for_train_cleaning (test_ocr_train_audit.AuditContract.test_cannot_use_validation_or_test_for_train_cleaning) ... ok
+test_holds_preserve_gt_and_never_copy_prediction (test_ocr_train_audit.AuditContract.test_holds_preserve_gt_and_never_copy_prediction) ... ok
+test_cardinality_matching_beats_greedy (test_ocr_v2.BuildTests.test_cardinality_matching_beats_greedy) ... ok
+test_exact_duplicate_and_invalid_ids_orders (test_ocr_v2.BuildTests.test_exact_duplicate_and_invalid_ids_orders) ... ok
+test_export_reports_unsupported_without_substitution (test_ocr_v2.BuildTests.test_export_reports_unsupported_without_substitution) ... ok
+test_full_conversion_and_snapshot_tamper (test_ocr_v2.BuildTests.test_full_conversion_and_snapshot_tamper) ... ok
+test_geometry_and_provenance (test_ocr_v2.DataTests.test_geometry_and_provenance) ... ok
+test_multiline_formula_preserved (test_ocr_v2.DataTests.test_multiline_formula_preserved) ... ok
+test_prediction_is_never_ground_truth (test_ocr_v2.DataTests.test_prediction_is_never_ground_truth) ... ok
+test_transitive_group_split (test_ocr_v2.DataTests.test_transitive_group_split) ... ok
+test_uncertain_empty_unreviewed_and_no_text (test_ocr_v2.DataTests.test_uncertain_empty_unreviewed_and_no_text) ... ok
+test_empty_failure_and_missing (test_ocr_v2.MetricTests.test_empty_failure_and_missing) ... ok
+test_nfc_and_single_edits (test_ocr_v2.MetricTests.test_nfc_and_single_edits) ... ok
+test_one_to_one_miss_and_false_positive (test_ocr_v2.MetricTests.test_one_to_one_miss_and_false_positive) ... ok
+test_order_and_exclusion (test_ocr_v2.MetricTests.test_order_and_exclusion) ... ok
+test_reject_wrong_recognition_mode (test_ocr_v2.MetricTests.test_reject_wrong_recognition_mode) ... ok
+test_crop_pixels_against_source (test_ocr_v2.ProvenanceTests.test_crop_pixels_against_source) ... ok
+test_page_ground_truth_drift (test_ocr_v2.ProvenanceTests.test_page_ground_truth_drift) ... ok
+test_page_inference_integrity (test_ocr_v2.ProvenanceTests.test_page_inference_integrity) ... ok
+test_prediction_dataset_binding (test_ocr_v2.ProvenanceTests.test_prediction_dataset_binding) ... ok
+test_snapshot_binding (test_ocr_v2.ProvenanceTests.test_snapshot_binding) ... ok
+test_vl_labels_preserved_and_token_overflow_reported (test_ocr_v2.VLExportTests.test_vl_labels_preserved_and_token_overflow_reported) ... ok
+test_only_language_attention_is_adapted (test_ocr_vl_lora.LoRAContract.test_only_language_attention_is_adapted) ... ok
+test_padded_completed_generation_is_not_truncated (test_ocr_vl_lora.LoRAContract.test_padded_completed_generation_is_not_truncated) ... ok
+test_prefix_mismatch_cannot_train (test_ocr_vl_lora.LoRAContract.test_prefix_mismatch_cannot_train) ... ok
+test_prompt_and_padding_are_not_supervised_eos_is (test_ocr_vl_lora.LoRAContract.test_prompt_and_padding_are_not_supervised_eos_is) ... ok
+test_relation_analysis (unittest.loader._FailedTest.test_relation_analysis) ... ERROR
+test_dangling_connectivity_fails_join (test_source_staging.RstStagingTests.test_dangling_connectivity_fails_join) ... ok
+test_joined_subset_catalog_keeps_null_as_unsupervised (test_source_staging.RstStagingTests.test_joined_subset_catalog_keeps_null_as_unsupervised) ... ok
+test_missing_source_image_fails_join (test_source_staging.RstStagingTests.test_missing_source_image_fails_join) ... ok
+test_null_connectivity_and_bidirectionality_are_preserved (test_source_staging.RstStagingTests.test_null_connectivity_and_bidirectionality_are_preserved) ... ok
+test_scientific_split_overlap_is_reported_not_silently_deduplicated (test_source_staging.SourceStagingTests.test_scientific_split_overlap_is_reported_not_silently_deduplicated) ... ok
+test_structure_rules (unittest.loader._FailedTest.test_structure_rules) ... ERROR
+test_text_box_candidates (unittest.loader._FailedTest.test_text_box_candidates) ... ERROR
+test_category_variants_source_ids_and_no_inferred_endpoints (test_training.CocoTests.test_category_variants_source_ids_and_no_inferred_endpoints) ... ok
+test_ids_namespaced_across_source_splits (test_training.CocoTests.test_ids_namespaced_across_source_splits) ... ok
+test_missing_connectivity_not_silently_empty (test_training.CocoTests.test_missing_connectivity_not_silently_empty) ... ok
+test_all_six_sources_use_same_contract (test_training.ContractTests.test_all_six_sources_use_same_contract) ... ok
+test_bad_geometry_and_duplicate_ids (test_training.ContractTests.test_bad_geometry_and_duplicate_ids) ... ok
+test_dangling_relation_and_arrow_reference_rejected (test_training.ContractTests.test_dangling_relation_and_arrow_reference_rejected) ... ok
+test_each_source_gets_equal_sampling_share (test_training.ContractTests.test_each_source_gets_equal_sampling_share) ... ok
+test_incomplete_coverage_rejected (test_training.ContractTests.test_incomplete_coverage_rejected) ... ok
+test_mask_mismatch_and_empty_response_fail (test_training.ContractTests.test_mask_mismatch_and_empty_response_fail) ... ok
+test_mask_prompt_padding_and_keep_eos (test_training.ContractTests.test_mask_prompt_padding_and_keep_eos) ... ok
+test_no_transcription_in_output (test_training.ContractTests.test_no_transcription_in_output) ... ok
+test_only_language_attention_adapted (test_training.ContractTests.test_only_language_attention_adapted) ... ok
+test_prompt_literal_braces_preserved_and_image_only (test_training.ContractTests.test_prompt_literal_braces_preserved_and_image_only) ... ok
+test_schedule_warmup_and_refuses_unreachable_eval (test_training.ContractTests.test_schedule_warmup_and_refuses_unreachable_eval) ... ok
+test_text_links_task_rejected (test_training.ContractTests.test_text_links_task_rejected) ... ok
+test_unknown_annotations_are_not_negative_labels (test_training.ContractTests.test_unknown_annotations_are_not_negative_labels) ... ok
+test_prepare_group_and_content_leakage (test_training.PrepareTests.test_prepare_group_and_content_leakage) ... ok
+test_source_absence_fails_closed (test_training.PrepareTests.test_source_absence_fails_closed) ... ok
+test_non_list_values_are_ignored (test_visualize_predictions.SalvageTests.test_non_list_values_are_ignored) ... ok
+test_non_object_output_is_empty (test_visualize_predictions.SalvageTests.test_non_object_output_is_empty) ... ok
+test_truncated_output_keeps_complete_elements (test_visualize_predictions.SalvageTests.test_truncated_output_keeps_complete_elements) ... ok
+test_valid_json_is_not_marked_truncated (test_visualize_predictions.SalvageTests.test_valid_json_is_not_marked_truncated) ... ok
+test_bad_geometry_and_types_are_skipped (test_visualize_predictions.SvgTests.test_bad_geometry_and_types_are_skipped) ... ok
+test_model_text_is_escaped (test_visualize_predictions.SvgTests.test_model_text_is_escaped) ... ok
+
+======================================================================
+ERROR: test_hybrid (unittest.loader._FailedTest.test_hybrid)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_hybrid
+Traceback (most recent call last):
+  File "/home/data/uv-python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/data/uv-python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "/home/user/Desktop/RADU/tests/test_hybrid.py", line 9, in <module>
+    from fastapi.testclient import TestClient
+ModuleNotFoundError: No module named 'fastapi'
+
+
+======================================================================
+ERROR: test_hybrid_vector (unittest.loader._FailedTest.test_hybrid_vector)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_hybrid_vector
+Traceback (most recent call last):
+  File "/home/data/uv-python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/data/uv-python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "/home/user/Desktop/RADU/tests/test_hybrid_vector.py", line 9, in <module>
+    from fastapi.testclient import TestClient
+ModuleNotFoundError: No module named 'fastapi'
+
+
+======================================================================
+ERROR: test_image_upload (unittest.loader._FailedTest.test_image_upload)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_image_upload
+Traceback (most recent call last):
+  File "/home/data/uv-python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/data/uv-python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "/home/user/Desktop/RADU/tests/test_image_upload.py", line 10, in <module>
+    from fastapi import HTTPException
+ModuleNotFoundError: No module named 'fastapi'
+
+
+======================================================================
+ERROR: test_ocr_first_analysis (unittest.loader._FailedTest.test_ocr_first_analysis)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_ocr_first_analysis
+Traceback (most recent call last):
+  File "/home/data/uv-python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/data/uv-python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "/home/user/Desktop/RADU/tests/test_ocr_first_analysis.py", line 10, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+======================================================================
+ERROR: test_relation_analysis (unittest.loader._FailedTest.test_relation_analysis)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_relation_analysis
+Traceback (most recent call last):
+  File "/home/data/uv-python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/data/uv-python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "/home/user/Desktop/RADU/tests/test_relation_analysis.py", line 4, in <module>
+    from src.web.backend.app import reanalyze_relations
+  File "/home/user/Desktop/RADU/src/web/backend/app.py", line 24, in <module>
+    from defusedxml.common import DefusedXmlException
+ModuleNotFoundError: No module named 'defusedxml'
+
+
+======================================================================
+ERROR: test_structure_rules (unittest.loader._FailedTest.test_structure_rules)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_structure_rules
+Traceback (most recent call last):
+  File "/home/data/uv-python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/data/uv-python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "/home/user/Desktop/RADU/tests/test_structure_rules.py", line 5, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+======================================================================
+ERROR: test_text_box_candidates (unittest.loader._FailedTest.test_text_box_candidates)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_text_box_candidates
+Traceback (most recent call last):
+  File "/home/data/uv-python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/data/uv-python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/unittest/loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "/home/user/Desktop/RADU/tests/test_text_box_candidates.py", line 9, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+
+----------------------------------------------------------------------
+Ran 164 tests in 1.877s
+
+FAILED (errors=7)

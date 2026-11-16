@@ -1,0 +1,32 @@
+{
+  "config": {
+    "upstream": ".cache/PaddleOCR-ocr-v2",
+    "official_config": ".cache/PaddleOCR-ocr-v2/configs/rec/PP-OCRv5/multi_language/korean_PP-OCRv5_mobile_rec.yml",
+    "dictionary": ".cache/PaddleOCR-ocr-v2/ppocr/utils/dict/ppocrv5_korean_dict.txt",
+    "pretrained": ".cache/korean_PP-OCRv5_mobile_rec_pretrained.pdparams",
+    "dataset": "data/processed/ocr_v2/pilot-v2",
+    "prepared": "data/experiments/ocr_v2_korean/prepared",
+    "trained": "data/experiments/ocr_v2_korean/train",
+    "device": "gpu:0",
+    "seed": 42,
+    "width": 832,
+    "max_length": 96,
+    "batch_size": 16,
+    "epochs": 8,
+    "patience": 3,
+    "learning_rate": 5e-05,
+    "contrast_augmentation": true
+  },
+  "config_sha256": "cc0419fc4b62206eef2196cc519fdcc08710a10748d4869c1f721fba54e5cfad",
+  "selection": {
+    "criterion": "minimum validation micro CER",
+    "epoch": 8,
+    "step": 1176,
+    "cer": 0.3412486239974839,
+    "test_accessed": false,
+    "baseline_cer": 0.420034596634691
+  },
+  "weights_sha256": "8aa946c398506f90786a63a3e0f660e1782ef0abfbccd8b6208411f90ed54299",
+  "test_used_for_selection": false,
+  "policy": "same exact screened test crops, NFC normalization, no score threshold, fixed y/x page reading order, fixed local detector; no retuning after test"
+}

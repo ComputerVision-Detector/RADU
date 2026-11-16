@@ -1,0 +1,9 @@
+{
+  "src/training/ocr_clean_vision.py": "627255730bfe96522c432af488c873a87caae2045467d2061ca6d4def4a11c5c",
+  "src/ocr_data/train_audit.py": "7160f48373793686abddae676eafcc8d95a1ed756db73c46afd6a94d7d5d9c53",
+  "src/cv/ocr_clean_vision_infer.py": "d0c44905ff91397d7337fd5d7c740e3a16cb4c7d8a6ae16f61632f7fd4748a7c",
+  "src/evaluation/summarize_ocr_clean_vision.py": "59bada56fe434d0ee3a893fda41da0d6e7c43d891fdfb9a744af2f48a6171410",
+  "configs/ocr_clean_vision.json": "1de52910e7fd3de55d1d48c5c8d0cf6c31528e27b6562d142be03a9414e0c1c9",
+  "tests/test_ocr_clean_vision.py": "7499da0b10640181abb557ff325fdad3f73d44af3bef57c682984d222503ab72",
+  "tests/test_ocr_train_audit.py": "5b96f02c426c4981e87c8bf07da8767e835de4b5849e39b804d5bf1ffe5dd078"
+}

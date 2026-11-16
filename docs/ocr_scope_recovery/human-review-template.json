@@ -1,0 +1,303 @@
+{
+  "status": "all_unreviewed",
+  "independent_human_reviews": 0,
+  "items": [
+    {
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-089",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-090",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-092",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-093",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-094",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-095",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-112",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-114",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-116",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-128",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-132",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-139",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-141",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-153",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0008",
+      "annotation_id": "hf-0008-line-0001",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0008",
+      "annotation_id": "hf-0008-line-0003",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0008",
+      "annotation_id": "hf-0008-line-0004",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0008",
+      "annotation_id": "hf-0008-line-0008",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0008",
+      "annotation_id": "line-15f4e0c4-7288-4ca0-af8f-65e51e10ebb7",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0008",
+      "annotation_id": "line-d061f11c-f0f2-48dc-b984-df42e43fc77c",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0004",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0006",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0016",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0018",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0021",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0033",
+      "annotation_id": "hf-0033-line-0021",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0048",
+      "annotation_id": "hf-0048-line-0007",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0048",
+      "annotation_id": "hf-0048-line-0013",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0007",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0012",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0014",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0018",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0081",
+      "annotation_id": "hf-0081-line-0001",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0081",
+      "annotation_id": "hf-0081-line-0009",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0081",
+      "annotation_id": "hf-0081-line-0015",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0081",
+      "annotation_id": "hf-0081-line-0016",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    },
+    {
+      "image_id": "hf-0098",
+      "annotation_id": "hf-0098-line-0011",
+      "status": "unreviewed",
+      "text": null,
+      "evidence": null,
+      "reviewer": null
+    }
+  ],
+  "GT_sha256": "389c49985c29830ea2a1ec47a0f23e0a4308608eb0c5b305fd1a6ea97cee1a43"
+}

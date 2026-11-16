@@ -1,0 +1,95 @@
+{
+  "chosen": {
+    "name": "parent",
+    "arm": "parent",
+    "checkpoint": "data/experiments/ocr_v2_vl_lora/train/best-adapter",
+    "metrics": {
+      "samples": 244,
+      "substitutions": 505,
+      "deletions": 101,
+      "insertions": 112,
+      "errors": 718,
+      "reference_units": 5613,
+      "cer_micro": 0.12791733475859612,
+      "cer_no_space_micro": 0.13044425087108014,
+      "exact_match_rate": 0.21311475409836064,
+      "empty_reference_insertions": 0
+    }
+  },
+  "candidates": [
+    {
+      "name": "parent",
+      "arm": "parent",
+      "checkpoint": "data/experiments/ocr_v2_vl_lora/train/best-adapter",
+      "metrics": {
+        "samples": 244,
+        "substitutions": 505,
+        "deletions": 101,
+        "insertions": 112,
+        "errors": 718,
+        "reference_units": 5613,
+        "cer_micro": 0.12791733475859612,
+        "cer_no_space_micro": 0.13044425087108014,
+        "exact_match_rate": 0.21311475409836064,
+        "empty_reference_insertions": 0
+      }
+    },
+    {
+      "name": "language",
+      "arm": "language",
+      "checkpoint": "data/experiments/ocr_v2_vl_lora_round3/language/best",
+      "metrics": {
+        "samples": 244,
+        "substitutions": 498,
+        "deletions": 113,
+        "insertions": 107,
+        "errors": 718,
+        "reference_units": 5613,
+        "cer_micro": 0.12791733475859612,
+        "cer_no_space_micro": 0.13153310104529617,
+        "exact_match_rate": 0.23770491803278687,
+        "empty_reference_insertions": 0
+      },
+      "selection": {
+        "criterion": "minimum fixed primary validation CER",
+        "epoch": 1,
+        "step": 293,
+        "cer": 0.12791733475859612,
+        "test_used": false,
+        "checkpoint": "data/experiments/ocr_v2_vl_lora_round3/language/best/language",
+        "adapter_sha256": "b556fedd764d70233bcb3ffa208545a8674dfc549035a714451a2d92c734664a",
+        "adapter_config_sha256": "1628d43e3e433e352694c21212e23e8fb76e90586777c155916de84e9a100f91"
+      }
+    },
+    {
+      "name": "vision",
+      "arm": "vision",
+      "checkpoint": "data/experiments/ocr_v2_vl_lora_round3/vision/best",
+      "metrics": {
+        "samples": 244,
+        "substitutions": 509,
+        "deletions": 99,
+        "insertions": 114,
+        "errors": 722,
+        "reference_units": 5613,
+        "cer_micro": 0.1286299661500089,
+        "cer_no_space_micro": 0.13131533101045295,
+        "exact_match_rate": 0.22540983606557377,
+        "empty_reference_insertions": 0
+      },
+      "selection": {
+        "criterion": "minimum fixed primary validation CER",
+        "epoch": 2,
+        "step": 586,
+        "cer": 0.1286299661500089,
+        "test_used": false,
+        "checkpoint": "data/experiments/ocr_v2_vl_lora_round3/vision/best/vision",
+        "adapter_sha256": "1b79ebdec819ac45cccdc9e48a7aaf15520655f7bce43675a27248bc24639acc",
+        "adapter_config_sha256": "5ea0da75c97e8c37923b199aaadb6f72fb7b37c7f7282125276798b6c2c7b752"
+      }
+    }
+  ],
+  "criterion": "minimum validation244 micro CER among unchanged parent and both clean-train arms",
+  "test_used": false,
+  "start_receipt_sha256": "1580bd44da5213431a6fb0035b369b196836c7a4602b9cf3f00d268243505e14"
+}

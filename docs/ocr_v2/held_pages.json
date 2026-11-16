@@ -1,0 +1,234 @@
+[
+  {
+    "id": "hf-0000",
+    "boxes": 38,
+    "page_reasons": [
+      "visible_unboxed_handwriting: header and left sticky notes outside GT regions; page coverage requires review"
+    ],
+    "region_reasons": [],
+    "notes": ""
+  },
+  {
+    "id": "hf-0011",
+    "boxes": 26,
+    "page_reasons": [
+      "unresolved_merge_note: source boxes 5+6, 8+9, 10+11; do not merge automatically",
+      "annotation_note_requires_review"
+    ],
+    "region_reasons": [],
+    "notes": "5번과 6번은 합쳐져야 함\n8번과 9번은 합쳐져야 함\n10번 11번 합쳐져야 함\n"
+  },
+  {
+    "id": "hf-0022",
+    "boxes": 20,
+    "page_reasons": [],
+    "region_reasons": [
+      {
+        "id": "hf-0022-line-0002",
+        "reasons": [
+          "multiline_text_requires_region_review"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "hf-0023",
+    "boxes": 14,
+    "page_reasons": [],
+    "region_reasons": [
+      {
+        "id": "hf-0023-line-0044",
+        "reasons": [
+          "duplicate_region"
+        ]
+      },
+      {
+        "id": "hf-0023-line-0045",
+        "reasons": [
+          "duplicate_region"
+        ]
+      },
+      {
+        "id": "hf-0023-line-0048",
+        "reasons": [
+          "duplicate_region"
+        ]
+      },
+      {
+        "id": "hf-0023-line-0049",
+        "reasons": [
+          "duplicate_region",
+          "duplicate_region"
+        ]
+      },
+      {
+        "id": "hf-0023-line-0050",
+        "reasons": [
+          "duplicate_region",
+          "duplicate_region"
+        ]
+      },
+      {
+        "id": "hf-0023-line-0051",
+        "reasons": [
+          "duplicate_region"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "hf-0027",
+    "boxes": 14,
+    "page_reasons": [],
+    "region_reasons": [
+      {
+        "id": "hf-0027-line-0009",
+        "reasons": [
+          "multiline_text_requires_region_review"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "hf-0030",
+    "boxes": 16,
+    "page_reasons": [],
+    "region_reasons": [
+      {
+        "id": "hf-0030-line-0016",
+        "reasons": [
+          "multiline_text_requires_region_review"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "hf-0031",
+    "boxes": 9,
+    "page_reasons": [
+      "annotation_note_requires_review"
+    ],
+    "region_reasons": [],
+    "notes": "알파벳 D가 아닌 그림처럼 보임."
+  },
+  {
+    "id": "hf-0046",
+    "boxes": 21,
+    "page_reasons": [],
+    "region_reasons": [
+      {
+        "id": "hf-0046-line-0004",
+        "reasons": [
+          "multiline_text_requires_region_review"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "hf-0060",
+    "boxes": 23,
+    "page_reasons": [],
+    "region_reasons": [
+      {
+        "id": "line-ec33fd52-a374-4e4b-aabe-1b2fbc95e257",
+        "reasons": [
+          "multiline_text_requires_region_review"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "hf-0070",
+    "boxes": 20,
+    "page_reasons": [
+      "annotation_note_requires_review"
+    ],
+    "region_reasons": [],
+    "notes": "그림 제외"
+  },
+  {
+    "id": "hf-0091",
+    "boxes": 23,
+    "page_reasons": [],
+    "region_reasons": [
+      {
+        "id": "hf-0091-line-0003",
+        "reasons": [
+          "multiline_text_requires_region_review"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "hf-0092",
+    "boxes": 17,
+    "page_reasons": [],
+    "region_reasons": [
+      {
+        "id": "hf-0092-line-0010",
+        "reasons": [
+          "multiline_text_requires_region_review"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "hf-0096",
+    "boxes": 23,
+    "page_reasons": [],
+    "region_reasons": [
+      {
+        "id": "hf-0096-line-0004",
+        "reasons": [
+          "multiline_text_requires_region_review"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "hf-0101",
+    "boxes": 42,
+    "page_reasons": [],
+    "region_reasons": [
+      {
+        "id": "hf-0101-line-0021",
+        "reasons": [
+          "multiline_text_requires_region_review"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "hf-0104",
+    "boxes": 0,
+    "page_reasons": [
+      "no_text_conflicts_with_visible_handwriting: human reannotation required"
+    ],
+    "region_reasons": [],
+    "notes": ""
+  },
+  {
+    "id": "hf-0119",
+    "boxes": 33,
+    "page_reasons": [],
+    "region_reasons": [
+      {
+        "id": "hf-0119-line-0006",
+        "reasons": [
+          "multiline_text_requires_region_review"
+        ]
+      }
+    ],
+    "notes": ""
+  }
+]

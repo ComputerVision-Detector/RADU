@@ -1,0 +1,353 @@
+{
+  "status": "all_unreviewed",
+  "human_reviews": 0,
+  "source_GT_sha256": "389c49985c29830ea2a1ec47a0f23e0a4308608eb0c5b305fd1a6ea97cee1a43",
+  "AI_proposal_GT_sha256": "7ec6cc9078c193b4cce836dea54c3cb33d27d8c4293b39819fd032b9c857c007",
+  "items": [
+    {
+      "page_id": "hf-0013",
+      "annotation_id": "audit-header-36",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0013.png",
+      "original_bbox": [
+        1949,
+        104,
+        2552,
+        211
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0033",
+      "annotation_id": "hf-0033-line-0002",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0033.png",
+      "original_bbox": [
+        217,
+        345,
+        672,
+        476
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0033",
+      "annotation_id": "hf-0033-line-0005",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0033.png",
+      "original_bbox": [
+        1143,
+        689,
+        1543,
+        799
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0033",
+      "annotation_id": "hf-0033-line-0014",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0033.png",
+      "original_bbox": [
+        151,
+        2007,
+        1948,
+        2166
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0033",
+      "annotation_id": "hf-0033-line-0017",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0033.png",
+      "original_bbox": [
+        895,
+        2447,
+        1343,
+        2573
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0033",
+      "annotation_id": "hf-0033-line-0020",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0033.png",
+      "original_bbox": [
+        130,
+        3136,
+        369,
+        3295
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0048",
+      "annotation_id": "audit-header-47",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0048.png",
+      "original_bbox": [
+        1957,
+        20,
+        2596,
+        136
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0077",
+      "annotation_id": "audit-hf-0077-069",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0077.png",
+      "original_bbox": [
+        192,
+        2363,
+        860,
+        2492
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0087",
+      "annotation_id": "line-be94cffd-5b7d-4fd6-abfa-dd1b7d37cbb7",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0087.png",
+      "original_bbox": [
+        163,
+        239,
+        374,
+        370
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0087",
+      "annotation_id": "line-bec057c1-ef48-43a0-a94f-2b9ac216ae99",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0087.png",
+      "original_bbox": [
+        270,
+        838,
+        1007,
+        987
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0087",
+      "annotation_id": "line-e5bd8631-8d37-42bb-ae44-13f4a39e47cc",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0087.png",
+      "original_bbox": [
+        151,
+        1489,
+        781,
+        1635
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0094",
+      "annotation_id": "hf-0094-line-0007",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0094.png",
+      "original_bbox": [
+        535,
+        677,
+        1872,
+        815
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-091",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0094.png",
+      "original_bbox": [
+        1696,
+        893,
+        2312,
+        1030
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-096",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0094.png",
+      "original_bbox": [
+        158,
+        1910,
+        1767,
+        2084
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-102",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0094.png",
+      "original_bbox": [
+        597,
+        2331,
+        902,
+        2457
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-108",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0094.png",
+      "original_bbox": [
+        606,
+        3167,
+        911,
+        3293
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-129",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0137.png",
+      "original_bbox": [
+        189,
+        484,
+        505,
+        557
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-137",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0137.png",
+      "original_bbox": [
+        197,
+        618,
+        493,
+        672
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-142",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0137.png",
+      "original_bbox": [
+        874,
+        787,
+        1085,
+        851
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-147",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0137.png",
+      "original_bbox": [
+        259,
+        1074,
+        907,
+        1183
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-160",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0137.png",
+      "original_bbox": [
+        1678,
+        1564,
+        2225,
+        1738
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-161",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0137.png",
+      "original_bbox": [
+        1293,
+        1581,
+        1378,
+        1677
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    },
+    {
+      "page_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-167",
+      "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/originals/images/hf-0137.png",
+      "original_bbox": [
+        1099,
+        2108,
+        1415,
+        2210
+      ],
+      "reviewed_bbox": null,
+      "status": "unreviewed",
+      "reviewer": null,
+      "evidence": null
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "GTv2": "57111cebbd1f812a5792a9fd20db9e189127a9abb4994432b3b2171be612b708",
+  "GTv3": "389c49985c29830ea2a1ec47a0f23e0a4308608eb0c5b305fd1a6ea97cee1a43",
+  "decisions": "103ee891e6eced4cfe721d44555ba0658494236343c6acc70a371e29ce767711",
+  "included_before": 306,
+  "included_after": 318,
+  "before_extra_recognition": true,
+  "no_independent_human_review": true
+}

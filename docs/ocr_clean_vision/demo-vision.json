@@ -1,0 +1,13 @@
+{
+  "image": "/home/user/Desktop/RADU/data/processed/ocr_v2/pilot-v2/crops/hf-0147-0007.png",
+  "image_sha256": "c093df3db9596a8b2ce4d7aef9a65fe29b800bf1e6fedb6950c3bfdded47da46",
+  "arm": "vision",
+  "before": "conv2",
+  "after": "conv2",
+  "active_adapters": [
+    "language",
+    "vision"
+  ],
+  "parent_language_adapter": "data/experiments/ocr_v2_vl_lora/train/best-adapter",
+  "checkpoint": "data/experiments/ocr_v2_vl_lora_round3/vision/best"
+}

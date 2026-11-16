@@ -1,0 +1,23 @@
+{
+  "before_sha256": "c08204ff352ab3031adebdc2e920e3fc0d349e500737e4d17a71b1355e7b2439",
+  "after_sha256": "57111cebbd1f812a5792a9fd20db9e189127a9abb4994432b3b2171be612b708",
+  "groups": {
+    "hf-0033": [
+      [
+        "hf-0033-line-0016",
+        "hf-0033-line-0017"
+      ]
+    ],
+    "hf-0094": [
+      [
+        "hf-0094-line-0001",
+        "hf-0094-line-0002"
+      ]
+    ]
+  },
+  "reason": "caption 열 개수 precedes 행 개수 left-to-right; printed Date precedes Page left-to-right despite slight y skew. Existing original page visual evidence. v1 purely-y rule is not oracle reading order.",
+  "fields_changed": [
+    "order"
+  ],
+  "model_or_transcription_changed": false
+}

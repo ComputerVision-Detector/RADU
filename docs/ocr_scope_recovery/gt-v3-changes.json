@@ -1,0 +1,872 @@
+[
+  {
+    "image_id": "hf-0094",
+    "annotation_id": "audit-hf-0094-112",
+    "before": {
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-112",
+      "id": "audit-hf-0094-112",
+      "bbox": [
+        2675,
+        3766,
+        3024,
+        3861
+      ],
+      "text": "www.kumhongland",
+      "order": 30,
+      "include": true,
+      "region_type": "text",
+      "ignore_reason": null,
+      "source_gt_ids": [],
+      "source_prediction_geometry": "hf-0094/det-0031",
+      "geometry_provenance": "detector_assisted_box_visually_compared_to_original; not_independent_geometry",
+      "review_status": "AI_visual_provisional_no_human_review",
+      "uncertainty": null,
+      "change_evidence": "original page + contact sheet FP index112; independently image-read text; no prediction transcription copied",
+      "source_order": 0
+    },
+    "after": {
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-112",
+      "id": "audit-hf-0094-112",
+      "bbox": [
+        2675,
+        3766,
+        3024,
+        3861
+      ],
+      "text": "www.kumhongland",
+      "order": 30,
+      "include": false,
+      "region_type": "text",
+      "ignore_reason": "website clipped at source image right edge; do not infer missing suffix",
+      "source_gt_ids": [],
+      "source_prediction_geometry": "hf-0094/det-0031",
+      "geometry_provenance": "detector_assisted_box_visually_compared_to_original; not_independent_geometry",
+      "review_status": "AI_rechecked_original_image; no_independent_human_review",
+      "uncertainty": "full literal URL not visible",
+      "change_evidence": "AI enlarged original crop review/item-06.png; reviewed before recovered103 recognition; no OCR copying",
+      "source_order": 0
+    },
+    "evidence": "AI enlarged original crop review/item-06.png; reviewed before recovered103 recognition; no OCR copying"
+  },
+  {
+    "image_id": "hf-0008",
+    "annotation_id": "hf-0008-line-0004",
+    "before": {
+      "id": "hf-0008-line-0004",
+      "bbox": [
+        1288,
+        552,
+        1567,
+        625
+      ],
+      "text": "Taken IDs",
+      "order": 3,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0008",
+      "annotation_id": "hf-0008-line-0004",
+      "source_gt_ids": [
+        "hf-0008-line-0004"
+      ],
+      "include": false,
+      "region_type": "text",
+      "ignore_reason": "Taken vs visible Token; independent transcription review required",
+      "review_status": "AI_visual_provisional_no_human_review",
+      "uncertainty": "Taken vs visible Token; independent transcription review required",
+      "geometry_provenance": "original_V2",
+      "change_evidence": "Taken vs visible Token; independent transcription review required",
+      "source_order": 4
+    },
+    "after": {
+      "id": "hf-0008-line-0004",
+      "bbox": [
+        1288,
+        552,
+        1567,
+        625
+      ],
+      "text": "Token IDs",
+      "order": 3,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0008",
+      "annotation_id": "hf-0008-line-0004",
+      "source_gt_ids": [
+        "hf-0008-line-0004"
+      ],
+      "include": true,
+      "region_type": "text",
+      "ignore_reason": null,
+      "review_status": "AI_rechecked_original_image; no_independent_human_review",
+      "uncertainty": null,
+      "geometry_provenance": "original_V2",
+      "change_evidence": "AI enlarged original crop review/item-16.png; reviewed before recovered103 recognition; no OCR copying",
+      "source_order": 4
+    },
+    "evidence": "AI enlarged original crop review/item-16.png; reviewed before recovered103 recognition; no OCR copying"
+  },
+  {
+    "image_id": "hf-0013",
+    "annotation_id": "hf-0013-line-0004",
+    "before": {
+      "id": "hf-0013-line-0004",
+      "bbox": [
+        359,
+        858,
+        1963,
+        988
+      ],
+      "text": "- 지능적으로 행동하는 계산 에어컨트를 만들고 분석하는 학문 분야",
+      "order": 7,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0004",
+      "source_gt_ids": [
+        "hf-0013-line-0004"
+      ],
+      "include": false,
+      "region_type": "text",
+      "ignore_reason": "visible 에이전트 versus GT 에어컨트; do not auto-correct",
+      "review_status": "AI_visual_provisional_no_human_review",
+      "uncertainty": "visible 에이전트 versus GT 에어컨트; do not auto-correct",
+      "geometry_provenance": "original_V2",
+      "change_evidence": "visible 에이전트 versus GT 에어컨트; do not auto-correct",
+      "source_order": 4
+    },
+    "after": {
+      "id": "hf-0013-line-0004",
+      "bbox": [
+        359,
+        858,
+        1963,
+        988
+      ],
+      "text": "- 지능적으로 행동하는 계산 에이전트를 만들고 분석하는 학문 분야",
+      "order": 7,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0004",
+      "source_gt_ids": [
+        "hf-0013-line-0004"
+      ],
+      "include": true,
+      "region_type": "text",
+      "ignore_reason": null,
+      "review_status": "AI_rechecked_original_image; no_independent_human_review",
+      "uncertainty": null,
+      "geometry_provenance": "original_V2",
+      "change_evidence": "AI enlarged original crop review/item-20.png; reviewed before recovered103 recognition; no OCR copying",
+      "source_order": 4
+    },
+    "evidence": "AI enlarged original crop review/item-20.png; reviewed before recovered103 recognition; no OCR copying"
+  },
+  {
+    "image_id": "hf-0013",
+    "annotation_id": "hf-0013-line-0006",
+    "before": {
+      "id": "hf-0013-line-0006",
+      "bbox": [
+        350,
+        1112,
+        1446,
+        1230
+      ],
+      "text": "- 악한 인공지능: 한 가지 일에 특화된 인공지능",
+      "order": 9,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0006",
+      "source_gt_ids": [
+        "hf-0013-line-0006"
+      ],
+      "include": false,
+      "region_type": "text",
+      "ignore_reason": "visible 약한 versus GT 악한; review",
+      "review_status": "AI_visual_provisional_no_human_review",
+      "uncertainty": "visible 약한 versus GT 악한; review",
+      "geometry_provenance": "original_V2",
+      "change_evidence": "visible 약한 versus GT 악한; review",
+      "source_order": 6
+    },
+    "after": {
+      "id": "hf-0013-line-0006",
+      "bbox": [
+        350,
+        1112,
+        1446,
+        1230
+      ],
+      "text": "- 약한 인공지능: 한 가지 일에 특화된 인공지능",
+      "order": 9,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0006",
+      "source_gt_ids": [
+        "hf-0013-line-0006"
+      ],
+      "include": true,
+      "region_type": "text",
+      "ignore_reason": null,
+      "review_status": "AI_rechecked_original_image; no_independent_human_review",
+      "uncertainty": null,
+      "geometry_provenance": "original_V2",
+      "change_evidence": "AI enlarged original crop review/item-21.png; reviewed before recovered103 recognition; no OCR copying",
+      "source_order": 6
+    },
+    "evidence": "AI enlarged original crop review/item-21.png; reviewed before recovered103 recognition; no OCR copying"
+  },
+  {
+    "image_id": "hf-0013",
+    "annotation_id": "hf-0013-line-0016",
+    "before": {
+      "id": "hf-0013-line-0016",
+      "bbox": [
+        1439,
+        2378,
+        2465,
+        2549
+      ],
+      "text": "기계 학습의 목적은 새로운 데이터가 들어왔을 때",
+      "order": 18,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0016",
+      "source_gt_ids": [
+        "hf-0013-line-0016"
+      ],
+      "include": false,
+      "region_type": "text",
+      "ignore_reason": "crossed-out sticky-note line",
+      "review_status": "AI_visual_provisional_no_human_review",
+      "uncertainty": "crossed-out sticky-note line",
+      "geometry_provenance": "original_V2",
+      "change_evidence": "crossed-out sticky-note line",
+      "source_order": 16
+    },
+    "after": {
+      "id": "hf-0013-line-0016",
+      "bbox": [
+        1439,
+        2378,
+        2465,
+        2549
+      ],
+      "text": "기계 학습의 목적은 새로운 데이터가 들어왔을 때",
+      "order": 18,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0016",
+      "source_gt_ids": [
+        "hf-0013-line-0016"
+      ],
+      "include": true,
+      "region_type": "text",
+      "ignore_reason": null,
+      "review_status": "AI_rechecked_original_image; no_independent_human_review",
+      "uncertainty": null,
+      "geometry_provenance": "original_V2",
+      "change_evidence": "AI enlarged original crop review/item-22.png; reviewed before recovered103 recognition; no OCR copying",
+      "source_order": 16
+    },
+    "evidence": "AI enlarged original crop review/item-22.png; reviewed before recovered103 recognition; no OCR copying"
+  },
+  {
+    "image_id": "hf-0013",
+    "annotation_id": "hf-0013-line-0018",
+    "before": {
+      "id": "hf-0013-line-0018",
+      "bbox": [
+        1451,
+        2507,
+        1851,
+        2637
+      ],
+      "text": "정확히 분류하는 것",
+      "order": 20,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0018",
+      "source_gt_ids": [
+        "hf-0013-line-0018"
+      ],
+      "include": false,
+      "region_type": "text",
+      "ignore_reason": "crossed-out sticky-note line",
+      "review_status": "AI_visual_provisional_no_human_review",
+      "uncertainty": "crossed-out sticky-note line",
+      "geometry_provenance": "original_V2",
+      "change_evidence": "crossed-out sticky-note line",
+      "source_order": 18
+    },
+    "after": {
+      "id": "hf-0013-line-0018",
+      "bbox": [
+        1451,
+        2507,
+        1851,
+        2637
+      ],
+      "text": "정확히 분류하는 것",
+      "order": 20,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0018",
+      "source_gt_ids": [
+        "hf-0013-line-0018"
+      ],
+      "include": true,
+      "region_type": "text",
+      "ignore_reason": null,
+      "review_status": "AI_rechecked_original_image; no_independent_human_review",
+      "uncertainty": null,
+      "geometry_provenance": "original_V2",
+      "change_evidence": "AI enlarged original crop review/item-23.png; reviewed before recovered103 recognition; no OCR copying",
+      "source_order": 18
+    },
+    "evidence": "AI enlarged original crop review/item-23.png; reviewed before recovered103 recognition; no OCR copying"
+  },
+  {
+    "image_id": "hf-0013",
+    "annotation_id": "hf-0013-line-0021",
+    "before": {
+      "id": "hf-0013-line-0021",
+      "bbox": [
+        387,
+        2814,
+        2634,
+        2972
+      ],
+      "text": "ex) 숫자 인식기를 만들 때 전표나 우편물 등에서 다양한 많은 삶들을 수집해 데이터로 활용",
+      "order": 24,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0021",
+      "source_gt_ids": [
+        "hf-0013-line-0021"
+      ],
+      "include": false,
+      "region_type": "text",
+      "ignore_reason": "visible 샘플 versus GT 삶; review",
+      "review_status": "AI_visual_provisional_no_human_review",
+      "uncertainty": "visible 샘플 versus GT 삶; review",
+      "geometry_provenance": "original_V2",
+      "change_evidence": "visible 샘플 versus GT 삶; review",
+      "source_order": 21
+    },
+    "after": {
+      "id": "hf-0013-line-0021",
+      "bbox": [
+        387,
+        2814,
+        2634,
+        2972
+      ],
+      "text": "ex) 숫자 인식기를 만들 때 전표나 우편물 등에서 다양한 많은 샘플들을 수집해 데이터로 활용",
+      "order": 24,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0021",
+      "source_gt_ids": [
+        "hf-0013-line-0021"
+      ],
+      "include": true,
+      "region_type": "text",
+      "ignore_reason": null,
+      "review_status": "AI_rechecked_original_image; no_independent_human_review",
+      "uncertainty": null,
+      "geometry_provenance": "original_V2",
+      "change_evidence": "AI enlarged original crop review/item-24.png; reviewed before recovered103 recognition; no OCR copying",
+      "source_order": 21
+    },
+    "evidence": "AI enlarged original crop review/item-24.png; reviewed before recovered103 recognition; no OCR copying"
+  },
+  {
+    "image_id": "hf-0048",
+    "annotation_id": "hf-0048-line-0007",
+    "before": {
+      "id": "hf-0048-line-0007",
+      "bbox": [
+        1499,
+        592,
+        2129,
+        706
+      ],
+      "text": "홈럭 크기 (OH, OW)",
+      "order": 7,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0048",
+      "annotation_id": "hf-0048-line-0007",
+      "source_gt_ids": [
+        "hf-0048-line-0007"
+      ],
+      "include": false,
+      "region_type": "text",
+      "ignore_reason": "visible 출력 versus GT 홈럭; review",
+      "review_status": "AI_visual_provisional_no_human_review",
+      "uncertainty": "visible 출력 versus GT 홈럭; review",
+      "geometry_provenance": "original_V2",
+      "change_evidence": "visible 출력 versus GT 홈럭; review",
+      "source_order": 5
+    },
+    "after": {
+      "id": "hf-0048-line-0007",
+      "bbox": [
+        1499,
+        592,
+        2129,
+        706
+      ],
+      "text": "출력 크기 (OH, OW)",
+      "order": 7,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0048",
+      "annotation_id": "hf-0048-line-0007",
+      "source_gt_ids": [
+        "hf-0048-line-0007"
+      ],
+      "include": true,
+      "region_type": "text",
+      "ignore_reason": null,
+      "review_status": "AI_rechecked_original_image; no_independent_human_review",
+      "uncertainty": null,
+      "geometry_provenance": "original_V2",
+      "change_evidence": "AI enlarged original crop review/item-26.png; reviewed before recovered103 recognition; no OCR copying",
+      "source_order": 5
+    },
+    "evidence": "AI enlarged original crop review/item-26.png; reviewed before recovered103 recognition; no OCR copying"
+  },
+  {
+    "image_id": "hf-0048",
+    "annotation_id": "hf-0048-line-0013",
+    "before": {
+      "id": "hf-0048-line-0013",
+      "bbox": [
+        199,
+        1387,
+        877,
+        1512
+      ],
+      "text": "◦3차원 데이터 합성곱 연산",
+      "order": 12,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0048",
+      "annotation_id": "hf-0048-line-0013",
+      "source_gt_ids": [
+        "hf-0048-line-0013"
+      ],
+      "include": false,
+      "region_type": "text",
+      "ignore_reason": "crossed-out heading",
+      "review_status": "AI_visual_provisional_no_human_review",
+      "uncertainty": "crossed-out heading",
+      "geometry_provenance": "original_V2",
+      "change_evidence": "crossed-out heading",
+      "source_order": 10
+    },
+    "after": {
+      "id": "hf-0048-line-0013",
+      "bbox": [
+        199,
+        1387,
+        877,
+        1512
+      ],
+      "text": "◦3차원 데이터 합성곱 연산",
+      "order": 12,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0048",
+      "annotation_id": "hf-0048-line-0013",
+      "source_gt_ids": [
+        "hf-0048-line-0013"
+      ],
+      "include": true,
+      "region_type": "text",
+      "ignore_reason": null,
+      "review_status": "AI_rechecked_original_image; no_independent_human_review",
+      "uncertainty": null,
+      "geometry_provenance": "original_V2",
+      "change_evidence": "AI enlarged original crop review/item-27.png; reviewed before recovered103 recognition; no OCR copying",
+      "source_order": 10
+    },
+    "evidence": "AI enlarged original crop review/item-27.png; reviewed before recovered103 recognition; no OCR copying"
+  },
+  {
+    "image_id": "hf-0057",
+    "annotation_id": "hf-0057-line-0007",
+    "before": {
+      "id": "hf-0057-line-0007",
+      "bbox": [
+        154,
+        1084,
+        1467,
+        1198
+      ],
+      "text": "-  맥락의 크기 ( 주변 단어를 몇 개나 포험할지).",
+      "order": 6,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0007",
+      "source_gt_ids": [
+        "hf-0057-line-0007"
+      ],
+      "include": false,
+      "region_type": "text",
+      "ignore_reason": "visible 포함 versus GT 포험; review",
+      "review_status": "AI_visual_provisional_no_human_review",
+      "uncertainty": "visible 포함 versus GT 포험; review",
+      "geometry_provenance": "original_V2",
+      "change_evidence": "visible 포함 versus GT 포험; review",
+      "source_order": 6
+    },
+    "after": {
+      "id": "hf-0057-line-0007",
+      "bbox": [
+        154,
+        1084,
+        1467,
+        1198
+      ],
+      "text": "- 맥락의 크기 (주변 단어를 몇 개나 포함할지).",
+      "order": 6,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0007",
+      "source_gt_ids": [
+        "hf-0057-line-0007"
+      ],
+      "include": true,
+      "region_type": "text",
+      "ignore_reason": null,
+      "review_status": "AI_rechecked_original_image; no_independent_human_review",
+      "uncertainty": null,
+      "geometry_provenance": "original_V2",
+      "change_evidence": "AI enlarged original crop review/item-28.png; reviewed before recovered103 recognition; no OCR copying",
+      "source_order": 6
+    },
+    "evidence": "AI enlarged original crop review/item-28.png; reviewed before recovered103 recognition; no OCR copying"
+  },
+  {
+    "image_id": "hf-0057",
+    "annotation_id": "hf-0057-line-0014",
+    "before": {
+      "id": "hf-0057-line-0014",
+      "bbox": [
+        90,
+        2278,
+        1739,
+        2404
+      ],
+      "text": "- 동시발생행렬을 이용하 단어를 벡터로 나타낼 수 있음",
+      "order": 13,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0014",
+      "source_gt_ids": [
+        "hf-0057-line-0014"
+      ],
+      "include": false,
+      "region_type": "text",
+      "ignore_reason": "GT 이용하 versus visible 이용해; review",
+      "review_status": "AI_visual_provisional_no_human_review",
+      "uncertainty": "GT 이용하 versus visible 이용해; review",
+      "geometry_provenance": "original_V2",
+      "change_evidence": "GT 이용하 versus visible 이용해; review",
+      "source_order": 13
+    },
+    "after": {
+      "id": "hf-0057-line-0014",
+      "bbox": [
+        90,
+        2278,
+        1739,
+        2404
+      ],
+      "text": "└ 동시발생 행렬을 이용해 단어를 벡터로 나타낼 수 있음",
+      "order": 13,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0014",
+      "source_gt_ids": [
+        "hf-0057-line-0014"
+      ],
+      "include": true,
+      "region_type": "text",
+      "ignore_reason": null,
+      "review_status": "AI_rechecked_original_image; no_independent_human_review",
+      "uncertainty": null,
+      "geometry_provenance": "original_V2",
+      "change_evidence": "AI enlarged original crop review/item-30.png; reviewed before recovered103 recognition; no OCR copying",
+      "source_order": 13
+    },
+    "evidence": "AI enlarged original crop review/item-30.png; reviewed before recovered103 recognition; no OCR copying"
+  },
+  {
+    "image_id": "hf-0057",
+    "annotation_id": "hf-0057-line-0018",
+    "before": {
+      "id": "hf-0057-line-0018",
+      "bbox": [
+        1088,
+        3008,
+        1655,
+        3130
+      ],
+      "text": "- L2 노릅 계산",
+      "order": 17,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0018",
+      "source_gt_ids": [
+        "hf-0057-line-0018"
+      ],
+      "include": false,
+      "region_type": "text",
+      "ignore_reason": "visible 노름 versus GT 노릅; review",
+      "review_status": "AI_visual_provisional_no_human_review",
+      "uncertainty": "visible 노름 versus GT 노릅; review",
+      "geometry_provenance": "original_V2",
+      "change_evidence": "visible 노름 versus GT 노릅; review",
+      "source_order": 17
+    },
+    "after": {
+      "id": "hf-0057-line-0018",
+      "bbox": [
+        1088,
+        3008,
+        1655,
+        3130
+      ],
+      "text": "└ L2 노름 계산",
+      "order": 17,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0018",
+      "source_gt_ids": [
+        "hf-0057-line-0018"
+      ],
+      "include": true,
+      "region_type": "text",
+      "ignore_reason": null,
+      "review_status": "AI_rechecked_original_image; no_independent_human_review",
+      "uncertainty": null,
+      "geometry_provenance": "original_V2",
+      "change_evidence": "AI enlarged original crop review/item-31.png; reviewed before recovered103 recognition; no OCR copying",
+      "source_order": 17
+    },
+    "evidence": "AI enlarged original crop review/item-31.png; reviewed before recovered103 recognition; no OCR copying"
+  },
+  {
+    "image_id": "hf-0081",
+    "annotation_id": "hf-0081-line-0001",
+    "before": {
+      "id": "hf-0081-line-0001",
+      "bbox": [
+        223,
+        217,
+        1001,
+        327
+      ],
+      "text": "- 최소 평균 제곱 오차(LMSE)",
+      "order": 0,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0081",
+      "annotation_id": "hf-0081-line-0001",
+      "source_gt_ids": [
+        "hf-0081-line-0001"
+      ],
+      "include": false,
+      "region_type": "text",
+      "ignore_reason": "crossed-out heading",
+      "review_status": "AI_visual_provisional_no_human_review",
+      "uncertainty": "crossed-out heading",
+      "geometry_provenance": "original_V2",
+      "change_evidence": "crossed-out heading",
+      "source_order": 1
+    },
+    "after": {
+      "id": "hf-0081-line-0001",
+      "bbox": [
+        223,
+        217,
+        1001,
+        327
+      ],
+      "text": "- 최소 평균 제곱 오차(LMSE)",
+      "order": 0,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0081",
+      "annotation_id": "hf-0081-line-0001",
+      "source_gt_ids": [
+        "hf-0081-line-0001"
+      ],
+      "include": true,
+      "region_type": "text",
+      "ignore_reason": null,
+      "review_status": "AI_rechecked_original_image; no_independent_human_review",
+      "uncertainty": null,
+      "geometry_provenance": "original_V2",
+      "change_evidence": "AI enlarged original crop review/item-32.png; reviewed before recovered103 recognition; no OCR copying",
+      "source_order": 1
+    },
+    "evidence": "AI enlarged original crop review/item-32.png; reviewed before recovered103 recognition; no OCR copying"
+  },
+  {
+    "image_id": "hf-0081",
+    "annotation_id": "hf-0081-line-0009",
+    "before": {
+      "id": "hf-0081-line-0009",
+      "bbox": [
+        254,
+        1616,
+        738,
+        1718
+      ],
+      "text": "최적 근하나는 기법",
+      "order": 8,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0081",
+      "annotation_id": "hf-0081-line-0009",
+      "source_gt_ids": [
+        "hf-0081-line-0009"
+      ],
+      "include": false,
+      "region_type": "text",
+      "ignore_reason": "GT phrase differs from visible handwriting",
+      "review_status": "AI_visual_provisional_no_human_review",
+      "uncertainty": "GT phrase differs from visible handwriting",
+      "geometry_provenance": "original_V2",
+      "change_evidence": "GT phrase differs from visible handwriting",
+      "source_order": 9
+    },
+    "after": {
+      "id": "hf-0081-line-0009",
+      "bbox": [
+        254,
+        1616,
+        738,
+        1718
+      ],
+      "text": "- 최적 근사하는 기법.",
+      "order": 8,
+      "flags": [],
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "classification": "rule_suggestion_only",
+      "hold_reasons": [],
+      "image_id": "hf-0081",
+      "annotation_id": "hf-0081-line-0009",
+      "source_gt_ids": [
+        "hf-0081-line-0009"
+      ],
+      "include": true,
+      "region_type": "text",
+      "ignore_reason": null,
+      "review_status": "AI_rechecked_original_image; no_independent_human_review",
+      "uncertainty": null,
+      "geometry_provenance": "original_V2",
+      "change_evidence": "AI enlarged original crop review/item-33.png; reviewed before recovered103 recognition; no OCR copying",
+      "source_order": 9
+    },
+    "evidence": "AI enlarged original crop review/item-33.png; reviewed before recovered103 recognition; no OCR copying"
+  }
+]

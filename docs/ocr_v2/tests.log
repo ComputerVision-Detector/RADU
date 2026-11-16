@@ -1,0 +1,42 @@
+test_cardinality_matching_beats_greedy (tests.test_ocr_v2.BuildTests) ... ok
+test_exact_duplicate_and_invalid_ids_orders (tests.test_ocr_v2.BuildTests) ... ok
+test_export_reports_unsupported_without_substitution (tests.test_ocr_v2.BuildTests) ... ok
+test_full_conversion_and_snapshot_tamper (tests.test_ocr_v2.BuildTests) ... ok
+test_geometry_and_provenance (tests.test_ocr_v2.DataTests) ... ok
+test_multiline_formula_preserved (tests.test_ocr_v2.DataTests) ... ok
+test_prediction_is_never_ground_truth (tests.test_ocr_v2.DataTests) ... ok
+test_transitive_group_split (tests.test_ocr_v2.DataTests) ... ok
+test_uncertain_empty_unreviewed_and_no_text (tests.test_ocr_v2.DataTests) ... ok
+test_empty_failure_and_missing (tests.test_ocr_v2.MetricTests) ... ok
+test_nfc_and_single_edits (tests.test_ocr_v2.MetricTests) ... ok
+test_one_to_one_miss_and_false_positive (tests.test_ocr_v2.MetricTests) ... ok
+test_order_and_exclusion (tests.test_ocr_v2.MetricTests) ... ok
+test_reject_wrong_recognition_mode (tests.test_ocr_v2.MetricTests) ... ok
+test_crop_pixels_against_source (tests.test_ocr_v2.ProvenanceTests) ... ok
+test_page_ground_truth_drift (tests.test_ocr_v2.ProvenanceTests) ... ok
+test_page_inference_integrity (tests.test_ocr_v2.ProvenanceTests) ... ok
+test_prediction_dataset_binding (tests.test_ocr_v2.ProvenanceTests) ... ok
+test_snapshot_binding (tests.test_ocr_v2.ProvenanceTests) ... ok
+test_vl_labels_preserved_and_token_overflow_reported (tests.test_ocr_v2.VLExportTests) ... ok
+test_aggregate_micro_f1 (tests.test_evaluate.ScoreTests) ... ok
+test_integer_ids_are_scored_like_strings (tests.test_evaluate.ScoreTests) ... ok
+test_iou_disjoint_and_identical (tests.test_evaluate.ScoreTests) ... ok
+test_malformed_output_scores_zero_without_crashing (tests.test_evaluate.ScoreTests) ... ok
+test_one_gold_cannot_match_two_predictions (tests.test_evaluate.ScoreTests) ... ok
+test_open_ended_relations_are_not_scored (tests.test_evaluate.ScoreTests) ... ok
+test_perfect_prediction_with_different_ids (tests.test_evaluate.ScoreTests) ... ok
+test_reversed_arrow_does_not_match (tests.test_evaluate.ScoreTests) ... ok
+test_reversed_relation_is_wrong (tests.test_evaluate.ScoreTests) ... ok
+test_structure_bucket_reads_manifest (tests.test_evaluate.ScoreTests) ... ok
+test_unhashable_relation_endpoints_are_wrong_not_fatal (tests.test_evaluate.ScoreTests) ... ok
+test_wrong_kind_does_not_match (tests.test_evaluate.ScoreTests) ... ok
+test_restorer_verifies_existing_files_and_never_replaces_mismatches (tests.test_annotation_sharing.AnnotationSharingTests) ... ok
+test_strict_inventory_validation_rejects_unexpected_files (tests.test_annotation_sharing.AnnotationSharingTests) ... ok
+test_coordinates_clip_round_outward_and_reject_degenerate_boxes (tests.test_text_box_candidates.ProposalTests) ... ok
+test_generation_fingerprints_resume_and_never_changes_ground_truth (tests.test_text_box_candidates.ProposalTests) ... [1/1] hf-0000: 1 line proposals
+ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.038s
+
+OK

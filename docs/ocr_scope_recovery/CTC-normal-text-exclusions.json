@@ -1,0 +1,386 @@
+[
+  {
+    "page_id": "hf-0008",
+    "annotation_id": "line-fce3cae9-c0fb-428c-9698-b41d0b46ba0b",
+    "text": "├ freq 계산",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "├"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0008",
+    "annotation_id": "line-8211a948-b567-49af-8f31-10aa2b37dfe8",
+    "text": "├ cos",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "├"
+    ],
+    "matched_after": false
+  },
+  {
+    "page_id": "hf-0008",
+    "annotation_id": "line-746e7045-f373-48c2-997e-c0c97045c245",
+    "text": "└ sin",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "└"
+    ],
+    "matched_after": false
+  },
+  {
+    "page_id": "hf-0008",
+    "annotation_id": "line-a977de18-6fbb-4080-b3bd-99ed6cf33b1f",
+    "text": "├ create_causal_mask()",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "├"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0008",
+    "annotation_id": "line-9039bdd8-e05d-4e85-baee-8e4453798b9e",
+    "text": "└ create_sliding_window_causal_mask()",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "└"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0008",
+    "annotation_id": "line-7be92727-7df8-4c38-8a00-4c1bf6d91a6f",
+    "text": "├ Input RMSNorm",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "├"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0008",
+    "annotation_id": "line-e668c01d-d7f1-42ad-88e2-83061214535c",
+    "text": "├ self - Attention",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "├"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0008",
+    "annotation_id": "line-cd65dd4b-101e-4909-b2a1-5bdb11e89177",
+    "text": "├ Q projection",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "├"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0008",
+    "annotation_id": "line-98c5207b-d452-4b7c-8753-103a0382652a",
+    "text": "├ K projection",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "├"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0008",
+    "annotation_id": "line-60664bb8-e89a-45bd-8379-e135ef8f4d40",
+    "text": "├ V projection",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "├"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0008",
+    "annotation_id": "line-e40d9398-df52-4237-9158-9e524e5af215",
+    "text": "├ Q/K/V Reshape",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "├"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0008",
+    "annotation_id": "line-4ef06ee1-ee25-4927-b6c9-89145d196095",
+    "text": "├ RoPE",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "├"
+    ],
+    "matched_after": false
+  },
+  {
+    "page_id": "hf-0008",
+    "annotation_id": "line-f2efa121-e408-4097-b326-3c2cf2a6255b",
+    "text": "├ KV cache update",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "├"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0008",
+    "annotation_id": "line-499d6aed-0afa-4517-a453-d8b0fa4afb7e",
+    "text": "└ Attention Inter face",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "└"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0013",
+    "annotation_id": "line-8533e22f-03ce-40af-9256-090900453284",
+    "text": "─ 주어진 환경에서 주어진 목표를 향해 행동하는 것.",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "─"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0013",
+    "annotation_id": "hf-0013-line-0005",
+    "text": "└'컴퓨터와 관련된 ','컴퓨터를이용하여 만드는'",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "└"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0013",
+    "annotation_id": "hf-0013-line-0008",
+    "text": "└인공일반지능(범용인공지능).",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "└"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0013",
+    "annotation_id": "hf-0013-line-0017",
+    "text": "─ 이전에 발생한 경험을 활용한다.",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "─"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0013",
+    "annotation_id": "hf-0013-line-0020",
+    "text": "└ 데이터",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "└"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0029",
+    "annotation_id": "hf-0029-line-0005",
+    "text": "◦ RMS prop :",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "◦"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0029",
+    "annotation_id": "hf-0029-line-0008",
+    "text": "◦Adam",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "◦"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0029",
+    "annotation_id": "hf-0029-line-0016",
+    "text": "◦ RMS prop의",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "◦"
+    ],
+    "matched_after": false
+  },
+  {
+    "page_id": "hf-0029",
+    "annotation_id": "hf-0029-line-0019",
+    "text": "◦딥러닝에서 하이퍼 매개변수 최적화를 제대로 하면 시간이 많이 걸리는 이유.",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "◦"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0048",
+    "annotation_id": "hf-0048-line-0003",
+    "text": "◦출력 데이터 크기를 구할 수 있는 공식.",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "◦"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0048",
+    "annotation_id": "hf-0048-line-0017",
+    "text": "◦풀링 계층.",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "◦"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0052",
+    "annotation_id": "hf-0052-line-0002",
+    "text": "◦softmax - with - Loss 계층",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "◦"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0052",
+    "annotation_id": "line-d4d02678-320c-4e2a-a15c-fe5a5ac7abd7",
+    "text": "◦자연어 처리",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "◦"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0057",
+    "annotation_id": "hf-0057-line-0002",
+    "text": "◦분포 가설",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "◦"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0057",
+    "annotation_id": "hf-0057-line-0006",
+    "text": "◦윈도우 크기",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "◦"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0057",
+    "annotation_id": "hf-0057-line-0009",
+    "text": "◦통계 기반 기법",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "◦"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0057",
+    "annotation_id": "hf-0057-line-0015",
+    "text": "◦코사인 유사도",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "◦"
+    ],
+    "matched_after": true
+  },
+  {
+    "page_id": "hf-0098",
+    "annotation_id": "hf-0098-line-0002",
+    "text": "- 나태주 <꽃을 보듯 너를 본다 中>",
+    "reasons": [
+      "unsupported_characters"
+    ],
+    "unsupported": [
+      "中"
+    ],
+    "matched_after": true
+  }
+]

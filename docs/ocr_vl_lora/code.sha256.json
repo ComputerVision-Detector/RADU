@@ -1,0 +1,8 @@
+{
+  "src/training/ocr_vl_lora.py": "570a7b89523d0f5e40be3f6d13e81f1dc6b8f651f99819981a5bb9329faf4fc1",
+  "src/cv/ocr_vl_lora_infer.py": "805d71518b1b6ee42d31fc03797a690879afb90bab46db7dc6fb60b2b1e54a11",
+  "src/evaluation/ocr_vl_lora_pages.py": "ed92bfa3bbf2800e2012a71e6afc93ace0db59df9e562ab2ba5b22a3df4b9f9f",
+  "src/evaluation/summarize_ocr_vl_lora.py": "89a0dc0b55c71e44957c7de40c1538817459e160e819438a038e17179a917c91",
+  "configs/ocr_v2_vl_lora.json": "a3d36a3dffdce9c5345e74abb6168158b9e3684c0b0acb78059c991e9bad3a9b",
+  "tests/test_ocr_vl_lora.py": "456142366f350eb4f7093028c901c4feae87e432c9b3f92af92d487c3b3f8b54"
+}

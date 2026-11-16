@@ -1,0 +1,19 @@
+{
+  "os": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "packages": {
+    "paddlepaddle-gpu": "3.2.1",
+    "paddlex": "3.7.2",
+    "numpy": "2.2.6",
+    "opencv-python": "5.0.0.93",
+    "Pillow": "12.3.0",
+    "rapidfuzz": "3.14.5",
+    "PyYAML": "6.0.2"
+  },
+  "isolation": "dedicated venv and process, read-only dependency .pth reuse of existing HybridOCR site-packages; existing packages not modified",
+  "gpu": "RTX4090 24564MiB, driver580.178.04, CUDA runtime12.8 (actual Paddle log)",
+  "disk_free_at_start": "33GiB",
+  "branch": "feat/radu-lora-training",
+  "head": "b3f65d9163cba05d584d108012edcb19b99b2d37",
+  "remote_label_commit": "50aca983da9885d9e7a965c1ef4b05055d47b252"
+}

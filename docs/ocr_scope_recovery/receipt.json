@@ -1,0 +1,51 @@
+{
+  "seconds": 8.334072744939476,
+  "extra_runtime": {
+    "seconds": 5.998709782026708,
+    "failures": []
+  },
+  "crop_inputs": 111,
+  "extra_crop_inputs": 103,
+  "repeated_crop_inputs": 8,
+  "failures": [],
+  "config": {
+    "model": "models/vision_language/PaddleOCR-VL-1.6",
+    "dataset": "data/processed/ocr_v2/pilot-v2",
+    "output": "data/experiments/ocr_v2_vl_lora",
+    "seed": 42,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "batch_size": 2,
+    "accumulation": 4,
+    "epochs": 3,
+    "min_pixels": 112896,
+    "max_pixels": 200704,
+    "max_sequence": 768,
+    "max_new_tokens": 128,
+    "generation_batch_size": 4,
+    "prompt": "OCR:",
+    "device": "cuda:0",
+    "test_status": "exploratory: previous test results informed choosing this LoRA experiment"
+  },
+  "dtype": "torch.bfloat16",
+  "active_adapters": [
+    "default"
+  ],
+  "all_frozen": true,
+  "optimizer_steps": 0,
+  "versions": {
+    "python": "3.11.15",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.22.1",
+    "peft": "0.21.2"
+  },
+  "strict_load": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  }
+}

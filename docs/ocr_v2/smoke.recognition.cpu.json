@@ -1,0 +1,22 @@
+{
+  "mode": "recognition_only",
+  "scope": "development smoke only; train split; not benchmark",
+  "crops": [
+    {
+      "page_id": "hf-0001",
+      "region_id": "hf-0001-line-0002",
+      "text": "Final RMSNorm [N,2880]",
+      "seconds": 2.8468123017810285
+    },
+    {
+      "page_id": "hf-0001",
+      "region_id": "hf-0001-line-0004",
+      "text": "Logits",
+      "seconds": 0.052402555011212826
+    }
+  ],
+  "device": "cpu",
+  "dataset_manifest_sha256": "c8adbdb2abd9e9a2d775bc36bd40866f6592f658a5c6e8fc0d1a0247d1eb094a",
+  "model": "PP-OCRv6_medium_rec recognition only",
+  "weights_sha256": "1b01c79a914587933f615569e75de54f2e638ebb5d3f3b3c1b38c24ede8c7319"
+}

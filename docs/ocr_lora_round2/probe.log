@@ -1,0 +1,23 @@
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+Loading weights:   0%|          | 0/608 [00:00<?, ?it/s]Loading weights: 100%|██████████| 608/608 [00:00<00:00, 17628.85it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+[transformers] `PaddleOCRVLProcessor` defines `image_processor_class = 'AutoImageProcessor'`, which is deprecated. Register the correct mapping in `AutoImageProcessor` instead.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+{"inference": "continue.predictions.json", "done": 4, "total": 297, "seconds": 0.4552791970781982}
+{"inference": "continue.predictions.json", "done": 44, "total": 297, "seconds": 3.198335354216397}
+{"inference": "continue.predictions.json", "done": 84, "total": 297, "seconds": 6.910021701361984}
+{"inference": "continue.predictions.json", "done": 124, "total": 297, "seconds": 10.685429811012}
+{"inference": "continue.predictions.json", "done": 164, "total": 297, "seconds": 14.84365072939545}
+{"inference": "continue.predictions.json", "done": 204, "total": 297, "seconds": 18.18640396744013}
+{"inference": "continue.predictions.json", "done": 244, "total": 297, "seconds": 20.119376823306084}
+{"inference": "continue.predictions.json", "done": 284, "total": 297, "seconds": 23.341953099239618}
+{"probe": "continue", "primary": {"samples": 244, "substitutions": 505, "deletions": 101, "insertions": 112, "errors": 718, "reference_units": 5613, "cer_micro": 0.12791733475859612, "cer_no_space_micro": 0.13044425087108014, "exact_match_rate": 0.21311475409836064, "empty_reference_insertions": 0}}
+{"inference": "highres.predictions.json", "done": 4, "total": 297, "seconds": 0.21231771307066083}
+{"inference": "highres.predictions.json", "done": 44, "total": 297, "seconds": 3.411222039256245}
+{"inference": "highres.predictions.json", "done": 84, "total": 297, "seconds": 7.455546647310257}
+{"inference": "highres.predictions.json", "done": 124, "total": 297, "seconds": 11.792117304168642}
+{"inference": "highres.predictions.json", "done": 164, "total": 297, "seconds": 16.344897002913058}
+{"inference": "highres.predictions.json", "done": 204, "total": 297, "seconds": 19.928189643193036}
+{"inference": "highres.predictions.json", "done": 244, "total": 297, "seconds": 22.26518740132451}
+{"inference": "highres.predictions.json", "done": 284, "total": 297, "seconds": 27.42199761234224}
+{"probe": "highres", "primary": {"samples": 244, "substitutions": 527, "deletions": 110, "insertions": 137, "errors": 774, "reference_units": 5613, "cer_micro": 0.1378941742383752, "cer_no_space_micro": 0.13784843205574912, "exact_match_rate": 0.20901639344262296, "empty_reference_insertions": 0}}

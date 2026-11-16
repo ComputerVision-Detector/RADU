@@ -1,0 +1,53 @@
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+Loading weights:   0%|          | 0/608 [00:00<?, ?it/s]Loading weights: 100%|██████████| 608/608 [00:00<00:00, 18992.04it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+[transformers] `PaddleOCRVLProcessor` defines `image_processor_class = 'AutoImageProcessor'`, which is deprecated. Register the correct mapping in `AutoImageProcessor` instead.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+{"inference": "before.validation.recognition.json", "done": 4, "total": 441, "seconds": 0.402595610357821}
+{"inference": "before.validation.recognition.json", "done": 44, "total": 441, "seconds": 2.4587510651908815}
+{"inference": "before.validation.recognition.json", "done": 84, "total": 441, "seconds": 4.914906163234264}
+{"inference": "before.validation.recognition.json", "done": 124, "total": 441, "seconds": 7.7076237122528255}
+{"inference": "before.validation.recognition.json", "done": 164, "total": 441, "seconds": 10.184384615160525}
+{"inference": "before.validation.recognition.json", "done": 204, "total": 441, "seconds": 12.67998344823718}
+{"inference": "before.validation.recognition.json", "done": 244, "total": 441, "seconds": 13.85519085638225}
+{"inference": "before.validation.recognition.json", "done": 284, "total": 441, "seconds": 15.47548855934292}
+{"inference": "before.validation.recognition.json", "done": 324, "total": 441, "seconds": 17.151056489441544}
+{"inference": "before.validation.recognition.json", "done": 364, "total": 441, "seconds": 18.83738949801773}
+{"inference": "before.validation.recognition.json", "done": 404, "total": 441, "seconds": 20.55901196040213}
+{"inference": "before.validation.recognition.json", "done": 441, "total": 441, "seconds": 22.89409590512514}
+{"model": "before", "split": "validation", "end_to_end": {"samples": 17, "substitutions": 952, "deletions": 402, "insertions": 2553, "errors": 3907, "reference_units": 6616, "cer_micro": 0.5905380894800484, "cer_no_space_micro": 0.6297946532351801, "exact_match_rate": 0.0, "empty_reference_insertions": 512}, "detection": {"tp": 270, "fp": 171, "fn": 3, "precision": 0.6122448979591837, "recall": 0.989010989010989, "f1": 0.7563025210084033}}
+{"inference": "before.test.recognition.json", "done": 4, "total": 397, "seconds": 0.12786414613947272}
+{"inference": "before.test.recognition.json", "done": 44, "total": 397, "seconds": 1.4708169670775533}
+{"inference": "before.test.recognition.json", "done": 84, "total": 397, "seconds": 3.509900168981403}
+{"inference": "before.test.recognition.json", "done": 124, "total": 397, "seconds": 5.777267386205494}
+{"inference": "before.test.recognition.json", "done": 164, "total": 397, "seconds": 8.362469860818237}
+{"inference": "before.test.recognition.json", "done": 204, "total": 397, "seconds": 11.316140776965767}
+{"inference": "before.test.recognition.json", "done": 244, "total": 397, "seconds": 13.54384479811415}
+{"inference": "before.test.recognition.json", "done": 284, "total": 397, "seconds": 15.192607860080898}
+{"inference": "before.test.recognition.json", "done": 324, "total": 397, "seconds": 16.318260301835835}
+{"inference": "before.test.recognition.json", "done": 364, "total": 397, "seconds": 17.628716934937984}
+{"model": "before", "split": "test", "end_to_end": {"samples": 17, "substitutions": 532, "deletions": 153, "insertions": 3223, "errors": 3908, "reference_units": 4017, "cer_micro": 0.9728653223798854, "cer_no_space_micro": 1.043435662965382, "exact_match_rate": 0.0, "empty_reference_insertions": 0}, "detection": {"tp": 196, "fp": 201, "fn": 3, "precision": 0.49370277078085645, "recall": 0.9849246231155779, "f1": 0.6577181208053692}}
+{"inference": "after.validation.recognition.json", "done": 4, "total": 441, "seconds": 0.16075826529413462}
+{"inference": "after.validation.recognition.json", "done": 44, "total": 441, "seconds": 2.9173837709240615}
+{"inference": "after.validation.recognition.json", "done": 84, "total": 441, "seconds": 6.502356579061598}
+{"inference": "after.validation.recognition.json", "done": 124, "total": 441, "seconds": 10.53994625620544}
+{"inference": "after.validation.recognition.json", "done": 164, "total": 441, "seconds": 14.099646287038922}
+{"inference": "after.validation.recognition.json", "done": 204, "total": 441, "seconds": 17.341900069266558}
+{"inference": "after.validation.recognition.json", "done": 244, "total": 441, "seconds": 18.855669491924345}
+{"inference": "after.validation.recognition.json", "done": 284, "total": 441, "seconds": 21.215961697045714}
+{"inference": "after.validation.recognition.json", "done": 324, "total": 441, "seconds": 23.560149096883833}
+{"inference": "after.validation.recognition.json", "done": 364, "total": 441, "seconds": 25.388146265875548}
+{"inference": "after.validation.recognition.json", "done": 404, "total": 441, "seconds": 27.505667509045452}
+{"inference": "after.validation.recognition.json", "done": 441, "total": 441, "seconds": 30.62163720326498}
+{"model": "after", "split": "validation", "end_to_end": {"samples": 17, "substitutions": 742, "deletions": 254, "insertions": 2038, "errors": 3034, "reference_units": 6616, "cer_micro": 0.4585852478839178, "cer_no_space_micro": 0.47171638899651297, "exact_match_rate": 0.0, "empty_reference_insertions": 363}, "detection": {"tp": 270, "fp": 171, "fn": 3, "precision": 0.6122448979591837, "recall": 0.989010989010989, "f1": 0.7563025210084033}}
+{"inference": "after.test.recognition.json", "done": 4, "total": 397, "seconds": 0.1429139208048582}
+{"inference": "after.test.recognition.json", "done": 44, "total": 397, "seconds": 1.9620357020758092}
+{"inference": "after.test.recognition.json", "done": 84, "total": 397, "seconds": 4.900944505818188}
+{"inference": "after.test.recognition.json", "done": 124, "total": 397, "seconds": 8.005290751811117}
+{"inference": "after.test.recognition.json", "done": 164, "total": 397, "seconds": 14.215246297884732}
+{"inference": "after.test.recognition.json", "done": 204, "total": 397, "seconds": 18.286292633973062}
+{"inference": "after.test.recognition.json", "done": 244, "total": 397, "seconds": 21.415125109720975}
+{"inference": "after.test.recognition.json", "done": 284, "total": 397, "seconds": 23.2633636710234}
+{"inference": "after.test.recognition.json", "done": 324, "total": 397, "seconds": 24.718065497931093}
+{"inference": "after.test.recognition.json", "done": 364, "total": 397, "seconds": 26.38635507086292}
+{"model": "after", "split": "test", "end_to_end": {"samples": 17, "substitutions": 400, "deletions": 90, "insertions": 2915, "errors": 3405, "reference_units": 4017, "cer_micro": 0.847647498132935, "cer_no_space_micro": 0.8785107772697583, "exact_match_rate": 0.0, "empty_reference_insertions": 0}, "detection": {"tp": 196, "fp": 201, "fn": 3, "precision": 0.49370277078085645, "recall": 0.9849246231155779, "f1": 0.6577181208053692}}

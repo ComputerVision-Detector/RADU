@@ -1,0 +1,43 @@
+{
+  "effective_config": {
+    "upstream": ".cache/PaddleOCR-ocr-v2",
+    "official_config": ".cache/PaddleOCR-ocr-v2/configs/rec/PP-OCRv5/multi_language/korean_PP-OCRv5_mobile_rec.yml",
+    "dictionary": ".cache/PaddleOCR-ocr-v2/ppocr/utils/dict/ppocrv5_korean_dict.txt",
+    "pretrained": ".cache/korean_PP-OCRv5_mobile_rec_pretrained.pdparams",
+    "dataset": "data/processed/ocr_v2/pilot-v2",
+    "prepared": "data/experiments/ocr_v2_korean/prepared",
+    "trained": "data/experiments/ocr_v2_korean/train",
+    "device": "gpu:0",
+    "seed": 42,
+    "width": 832,
+    "max_length": 96,
+    "batch_size": 16,
+    "epochs": 8,
+    "patience": 3,
+    "learning_rate": 5e-05,
+    "contrast_augmentation": true
+  },
+  "source_sha256": "b77456e6d90b6f6d1a05822061dde15cf84ec799555c7b1713008b8dd07a481a",
+  "prepared": {
+    "train": {
+      "json_sha256": "7478eaecbfb4fb13df4b7a2cae92566498dd763b65f779678f94ab3b46ebf477",
+      "samples": 2348,
+      "crop_manifest_sha256": "17eb071d4f247de88b03e391c4e060f7a496acfddf0305335c55d12704ee94db"
+    },
+    "validation": {
+      "json_sha256": "658a5bd6a9383c67b6223b4c03083374ec0bf22b2cce6d1dbcf1f2e99c8fddf8",
+      "samples": 273,
+      "crop_manifest_sha256": "6c9d392e7fbdcd42e9ef89c26e3d63b6fd5f2d61fd2b78a4ed395bd6a72bddf4"
+    }
+  },
+  "dataset_manifest_sha256": "c8adbdb2abd9e9a2d775bc36bd40866f6592f658a5c6e8fc0d1a0247d1eb094a",
+  "files_sha256": {
+    "pretrained": "8975dede5e0c2f47e0a7712b3d79ffdc766972f872fd0441ebcccd9d77cd52a3",
+    "dictionary": "a88071c68c01707489baa79ebe0405b7beb5cca229f4fc94cc3ef992328802d7",
+    "official_config": "c7aaf8d53df433865a76d7f8af417a0416c2902fbc073f51d98b45629fcd64ea"
+  },
+  "upstream_commit": "dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf",
+  "recorded_after_execution": true,
+  "effective_training_source_sha256": "dfe77f5803e939389bc6e001533b3b4e9e4c9747aef44d99c1e86aef8db9ca33",
+  "capture_note": "Reconstructed from unchanged executed config, final-lock, export graph and logs after code review. Not a contemporaneous receipt. Preparation width768 was changed to832 before smoke-long/full train."
+}

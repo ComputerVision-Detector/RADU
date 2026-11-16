@@ -1,0 +1,395 @@
+{
+  "held_pages": {
+    "hf-0130": "math-heavy derivative worksheet; text candidates need semantic review; exclude whole page conservatively",
+    "hf-0135": "visually confirmed calculus worksheet; natural-text candidate classification requires review",
+    "hf-0160": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  "held_regions": {
+    "hf-0002-line-0021": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0002-line-0024": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0002-line-0012": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0002-line-0014": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0016-line-0004": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "line-b21450ad-1b4f-4618-a878-3a442ab1267c": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0020-line-0003": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0035-line-0002": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0043-line-0004": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0049-line-0003": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0050-line-0009": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0059-line-0006": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0062-line-0014": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0064-line-0015": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0067-line-0003": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0073-line-0020": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0079-line-0006": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0082-line-0009": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "line-42aab0e6-7e03-485e-9357-3ff66823c4b8": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "line-86a1c423-32ca-4722-93c1-42d66323c517": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "line-c97cfb86-f463-45c5-a761-001bce4d8557": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0105-line-0007": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0120-line-0002": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0123-line-0005": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0127-line-0026": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0127-line-0030": "visible_neighboring_text_inside_crop_requires_reboxing",
+    "hf-0001-line-0013": "transcription_mismatch_or_uncertain_glyph_requires_review",
+    "hf-0009-line-0006": "transcription_mismatch_or_uncertain_glyph_requires_review",
+    "hf-0056-line-0014": "transcription_mismatch_or_uncertain_glyph_requires_review",
+    "hf-0065-line-0001": "transcription_mismatch_or_uncertain_glyph_requires_review",
+    "hf-0108-line-0008": "transcription_mismatch_or_uncertain_glyph_requires_review",
+    "hf-0139-line-0040": "transcription_mismatch_or_uncertain_glyph_requires_review",
+    "hf-0061-line-0007": "crop_edge_transcription_uncertain",
+    "hf-0162-line-0026": "crop_edge_transcription_uncertain",
+    "hf-0024-line-0006": "formula_or_diagram_not_confirmed_natural_text",
+    "line-63639690-5f11-4ccc-97bb-e2c3a3b9f0d4": "formula_or_diagram_not_confirmed_natural_text",
+    "hf-0089-line-0003": "formula_or_diagram_not_confirmed_natural_text",
+    "hf-0093-line-0005": "formula_or_diagram_not_confirmed_natural_text",
+    "line-d7fd8f16-6401-4eb0-ba43-f523d0f11d22": "formula_or_diagram_not_confirmed_natural_text",
+    "hf-0145-line-0023": "formula_or_diagram_not_confirmed_natural_text",
+    "hf-0146-line-0008": "formula_or_diagram_not_confirmed_natural_text",
+    "line-456e7d02-f296-4af8-bd73-ddfb994059a8": "formula_or_diagram_not_confirmed_natural_text",
+    "hf-0113-line-0004": "overwritten_or_struck_through_text_requires_policy_review",
+    "hf-0159-line-0014": "overwritten_or_struck_through_text_requires_policy_review"
+  },
+  "review": {
+    "reviewer": "AI visual inspection of original-pixel contact sheets; not independent human reannotation",
+    "panels_seen": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "crops_seen": 260,
+    "train_page_coverage": 111,
+    "full_original_pages_seen": [
+      "hf-0135",
+      "hf-0160"
+    ],
+    "prediction_used": false,
+    "transcriptions_edited": false,
+    "automatic_flags_not_auto_excluded": true,
+    "scope_limitation": "2513 structurally/hash audited;260 visually sampled; remaining transcription quality is not certified"
+  },
+  "evidence": [
+    {
+      "index": 6,
+      "page_id": "hf-0002",
+      "region_id": "hf-0002-line-0021",
+      "image": "crops/hf-0002-0021.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 8,
+      "page_id": "hf-0002",
+      "region_id": "hf-0002-line-0024",
+      "image": "crops/hf-0002-0024.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 12,
+      "page_id": "hf-0002",
+      "region_id": "hf-0002-line-0012",
+      "image": "crops/hf-0002-0012.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 13,
+      "page_id": "hf-0002",
+      "region_id": "hf-0002-line-0014",
+      "image": "crops/hf-0002-0014.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 45,
+      "page_id": "hf-0016",
+      "region_id": "hf-0016-line-0004",
+      "image": "crops/hf-0016-0002.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 48,
+      "page_id": "hf-0020",
+      "region_id": "line-b21450ad-1b4f-4618-a878-3a442ab1267c",
+      "image": "crops/hf-0020-0002.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 49,
+      "page_id": "hf-0020",
+      "region_id": "hf-0020-line-0003",
+      "image": "crops/hf-0020-0001.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 65,
+      "page_id": "hf-0035",
+      "region_id": "hf-0035-line-0002",
+      "image": "crops/hf-0035-0002.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 80,
+      "page_id": "hf-0043",
+      "region_id": "hf-0043-line-0004",
+      "image": "crops/hf-0043-0002.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 88,
+      "page_id": "hf-0049",
+      "region_id": "hf-0049-line-0003",
+      "image": "crops/hf-0049-0002.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 91,
+      "page_id": "hf-0050",
+      "region_id": "hf-0050-line-0009",
+      "image": "crops/hf-0050-0009.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 103,
+      "page_id": "hf-0059",
+      "region_id": "hf-0059-line-0006",
+      "image": "crops/hf-0059-0006.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 107,
+      "page_id": "hf-0062",
+      "region_id": "hf-0062-line-0014",
+      "image": "crops/hf-0062-0014.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 110,
+      "page_id": "hf-0064",
+      "region_id": "hf-0064-line-0015",
+      "image": "crops/hf-0064-0013.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 114,
+      "page_id": "hf-0067",
+      "region_id": "hf-0067-line-0003",
+      "image": "crops/hf-0067-0003.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 125,
+      "page_id": "hf-0073",
+      "region_id": "hf-0073-line-0020",
+      "image": "crops/hf-0073-0019.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 133,
+      "page_id": "hf-0079",
+      "region_id": "hf-0079-line-0006",
+      "image": "crops/hf-0079-0005.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 134,
+      "page_id": "hf-0082",
+      "region_id": "hf-0082-line-0009",
+      "image": "crops/hf-0082-0009.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 152,
+      "page_id": "hf-0100",
+      "region_id": "line-42aab0e6-7e03-485e-9357-3ff66823c4b8",
+      "image": "crops/hf-0100-0017.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 153,
+      "page_id": "hf-0100",
+      "region_id": "line-86a1c423-32ca-4722-93c1-42d66323c517",
+      "image": "crops/hf-0100-0022.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 154,
+      "page_id": "hf-0100",
+      "region_id": "line-c97cfb86-f463-45c5-a761-001bce4d8557",
+      "image": "crops/hf-0100-0015.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 160,
+      "page_id": "hf-0105",
+      "region_id": "hf-0105-line-0007",
+      "image": "crops/hf-0105-0007.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 188,
+      "page_id": "hf-0120",
+      "region_id": "hf-0120-line-0002",
+      "image": "crops/hf-0120-0002.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 193,
+      "page_id": "hf-0123",
+      "region_id": "hf-0123-line-0005",
+      "image": "crops/hf-0123-0005.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 199,
+      "page_id": "hf-0127",
+      "region_id": "hf-0127-line-0026",
+      "image": "crops/hf-0127-0022.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 200,
+      "page_id": "hf-0127",
+      "region_id": "hf-0127-line-0030",
+      "image": "crops/hf-0127-0025.png",
+      "reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+    },
+    {
+      "index": 0,
+      "page_id": "hf-0001",
+      "region_id": "hf-0001-line-0013",
+      "image": "crops/hf-0001-0013.png",
+      "reason": "transcription_mismatch_or_uncertain_glyph_requires_review"
+    },
+    {
+      "index": 28,
+      "page_id": "hf-0009",
+      "region_id": "hf-0009-line-0006",
+      "image": "crops/hf-0009-0006.png",
+      "reason": "transcription_mismatch_or_uncertain_glyph_requires_review"
+    },
+    {
+      "index": 99,
+      "page_id": "hf-0056",
+      "region_id": "hf-0056-line-0014",
+      "image": "crops/hf-0056-0014.png",
+      "reason": "transcription_mismatch_or_uncertain_glyph_requires_review"
+    },
+    {
+      "index": 112,
+      "page_id": "hf-0065",
+      "region_id": "hf-0065-line-0001",
+      "image": "crops/hf-0065-0001.png",
+      "reason": "transcription_mismatch_or_uncertain_glyph_requires_review"
+    },
+    {
+      "index": 163,
+      "page_id": "hf-0108",
+      "region_id": "hf-0108-line-0008",
+      "image": "crops/hf-0108-0008.png",
+      "reason": "transcription_mismatch_or_uncertain_glyph_requires_review"
+    },
+    {
+      "index": 218,
+      "page_id": "hf-0139",
+      "region_id": "hf-0139-line-0040",
+      "image": "crops/hf-0139-0039.png",
+      "reason": "transcription_mismatch_or_uncertain_glyph_requires_review"
+    },
+    {
+      "index": 104,
+      "page_id": "hf-0061",
+      "region_id": "hf-0061-line-0007",
+      "image": "crops/hf-0061-0006.png",
+      "reason": "crop_edge_transcription_uncertain"
+    },
+    {
+      "index": 259,
+      "page_id": "hf-0162",
+      "region_id": "hf-0162-line-0026",
+      "image": "crops/hf-0162-0026.png",
+      "reason": "crop_edge_transcription_uncertain"
+    },
+    {
+      "index": 52,
+      "page_id": "hf-0024",
+      "region_id": "hf-0024-line-0006",
+      "image": "crops/hf-0024-0004.png",
+      "reason": "formula_or_diagram_not_confirmed_natural_text"
+    },
+    {
+      "index": 84,
+      "page_id": "hf-0045",
+      "region_id": "line-63639690-5f11-4ccc-97bb-e2c3a3b9f0d4",
+      "image": "crops/hf-0045-0016.png",
+      "reason": "formula_or_diagram_not_confirmed_natural_text"
+    },
+    {
+      "index": 145,
+      "page_id": "hf-0089",
+      "region_id": "hf-0089-line-0003",
+      "image": "crops/hf-0089-0003.png",
+      "reason": "formula_or_diagram_not_confirmed_natural_text"
+    },
+    {
+      "index": 147,
+      "page_id": "hf-0093",
+      "region_id": "hf-0093-line-0005",
+      "image": "crops/hf-0093-0005.png",
+      "reason": "formula_or_diagram_not_confirmed_natural_text"
+    },
+    {
+      "index": 227,
+      "page_id": "hf-0143",
+      "region_id": "line-d7fd8f16-6401-4eb0-ba43-f523d0f11d22",
+      "image": "crops/hf-0143-0005.png",
+      "reason": "formula_or_diagram_not_confirmed_natural_text"
+    },
+    {
+      "index": 232,
+      "page_id": "hf-0145",
+      "region_id": "hf-0145-line-0023",
+      "image": "crops/hf-0145-0023.png",
+      "reason": "formula_or_diagram_not_confirmed_natural_text"
+    },
+    {
+      "index": 234,
+      "page_id": "hf-0146",
+      "region_id": "hf-0146-line-0008",
+      "image": "crops/hf-0146-0008.png",
+      "reason": "formula_or_diagram_not_confirmed_natural_text"
+    },
+    {
+      "index": 244,
+      "page_id": "hf-0153",
+      "region_id": "line-456e7d02-f296-4af8-bd73-ddfb994059a8",
+      "image": "crops/hf-0153-0024.png",
+      "reason": "formula_or_diagram_not_confirmed_natural_text"
+    },
+    {
+      "index": 171,
+      "page_id": "hf-0113",
+      "region_id": "hf-0113-line-0004",
+      "image": "crops/hf-0113-0004.png",
+      "reason": "overwritten_or_struck_through_text_requires_policy_review"
+    },
+    {
+      "index": 252,
+      "page_id": "hf-0159",
+      "region_id": "hf-0159-line-0014",
+      "image": "crops/hf-0159-0014.png",
+      "reason": "overwritten_or_struck_through_text_requires_policy_review"
+    }
+  ]
+}

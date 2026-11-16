@@ -1,0 +1,42 @@
+[
+  {
+    "page_id": "hf-0013",
+    "region_id": "hf-0013-line-0010",
+    "reference": "- 상태가 변하는",
+    "before": "-상태가 범위는",
+    "after": "- 상태가 변하는",
+    "before_errors": 3,
+    "after_errors": 0,
+    "image": "crops/hf-0013-0010.png"
+  },
+  {
+    "page_id": "hf-0048",
+    "region_id": "hf-0048-line-0005",
+    "reference": "입력 데이터 크기 (H, W)",
+    "before": "업격 데이터 크기 (H, W)",
+    "after": "입력 데이터 크기 (H, W)",
+    "before_errors": 2,
+    "after_errors": 0,
+    "image": "crops/hf-0048-0003.png"
+  },
+  {
+    "page_id": "hf-0057",
+    "region_id": "hf-0057-line-0009",
+    "reference": "◦통계 기반 기법",
+    "before": "ㅇ통계 기반 기법",
+    "after": "◦통계 기반 기법",
+    "before_errors": 1,
+    "after_errors": 0,
+    "image": "crops/hf-0057-0008.png"
+  },
+  {
+    "page_id": "hf-0008",
+    "region_id": "hf-0008-line-0010",
+    "reference": "- Position_ids",
+    "before": "- Position_ids",
+    "after": "- Position 记录",
+    "before_errors": 0,
+    "after_errors": 4,
+    "image": "crops/hf-0008-0010.png"
+  }
+]

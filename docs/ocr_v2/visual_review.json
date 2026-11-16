@@ -1,0 +1,21 @@
+{
+  "review_date": "2026-11-09",
+  "method": "visual inspection of thumbnails decoded from SHA256-verified original 3024x4032 PNGs; no OCR labels substituted",
+  "pages": [
+    {
+      "id": "hf-0104",
+      "finding": "Two columns contain many handwritten Korean lines and interface sketches. no_text=true contradicts visible text.",
+      "action": "Hold entire page from default training and evaluation; human must draw boxes and transcribe. Not a valid no_text negative."
+    },
+    {
+      "id": "hf-0011",
+      "finding": "Page contains quotient-rule fractions with numerator/denominator on different baselines. Existing notes explicitly request 5+6, 8+9 and 10+11 merges. Standalone denominator boxes and unboxed handwriting are visible; existing transcriptions also need human verification.",
+      "action": "Hold entire page; do not auto-merge or split fractions using text-line heuristics. Preserve label bytes."
+    },
+    {
+      "id": "hf-0000",
+      "finding": "Representative original overlay shows unboxed handwritten title at upper right and multiple lines on left sticky notes. Therefore the current bbox transcription set is incomplete for full-page OCR.",
+      "action": "Hold entire page in pilot-v2. Do not invent boxes/text. Earlier CPU recognition smoke on pilot-v1 is development evidence only; rerun smoke on eligible train crops in pilot-v2."
+    }
+  ]
+}

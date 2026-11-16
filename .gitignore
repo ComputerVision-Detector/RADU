@@ -65,3 +65,11 @@ artifacts/
 # Incomplete OCR proposal generation stays local; publish the final sidecar only.
 labeling/data/*.checkpoint.json
 labeling/data/*.checkpoint.tmp
+
+# Local V2 OCR runs: checkpoints, detector crops and exhaustive runtime evidence.
+# Compact reviewable results are retained in docs/ocr_v2_finetune/.
+data/experiments/ocr_v2_korean*/
+data/experiments/ocr_v2_vl_lora*/
+
+# Fixed-model page audit crops, galleries and exhaustive cache.
+data/experiments/ocr_page_audit*/

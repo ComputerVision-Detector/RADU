@@ -1,0 +1,110 @@
+[
+  {
+    "page_id": "hf-0005",
+    "region_id": "hf-0005-line-0001",
+    "reference": "output Projection",
+    "before": "output Projection",
+    "after": "output Projection",
+    "before_errors": 0,
+    "after_errors": 0
+  },
+  {
+    "page_id": "hf-0005",
+    "region_id": "line-215ebf63-31c7-4df3-be52-8138f34469f7",
+    "reference": "input [2, 4096]",
+    "before": "- input [2,4096]",
+    "after": "- input [2,4096]",
+    "before_errors": 3,
+    "after_errors": 3
+  },
+  {
+    "page_id": "hf-0008",
+    "region_id": "hf-0008-line-0001",
+    "reference": "GPT-oss - Zob hugging face modeling gpt_oss",
+    "before": "GPT-OSS-Zob. hugging face modeling_gpt_Oss",
+    "after": "GPT-OSS-Zob. hugging face modeling_gpt_Oss",
+    "before_errors": 8,
+    "after_errors": 8
+  },
+  {
+    "page_id": "hf-0008",
+    "region_id": "hf-0008-line-0002",
+    "reference": "Gptoss For Causal LM",
+    "before": "GP+OSS For Causal LM",
+    "after": "GP+OSS For Causal LM",
+    "before_errors": 5,
+    "after_errors": 5
+  },
+  {
+    "page_id": "hf-0008",
+    "region_id": "hf-0008-line-0003",
+    "reference": "GPtoss Model",
+    "before": "GPT-OSS Model",
+    "after": "GPT-OSS Model",
+    "before_errors": 5,
+    "after_errors": 5
+  },
+  {
+    "page_id": "hf-0008",
+    "region_id": "hf-0008-line-0004",
+    "reference": "Taken IDs",
+    "before": "Token IDs",
+    "after": "Token IDs",
+    "before_errors": 1,
+    "after_errors": 1
+  },
+  {
+    "page_id": "hf-0008",
+    "region_id": "hf-0008-line-0005",
+    "reference": "Embedding",
+    "before": "Embedding",
+    "after": "Embedding",
+    "before_errors": 0,
+    "after_errors": 0
+  },
+  {
+    "page_id": "hf-0008",
+    "region_id": "hf-0008-line-0007",
+    "reference": "position / RoPE 계산",
+    "before": "Position / RoPE 계산",
+    "after": "Position / RoPE 계산",
+    "before_errors": 1,
+    "after_errors": 1
+  },
+  {
+    "page_id": "hf-0008",
+    "region_id": "hf-0008-line-0008",
+    "reference": "└ GPtoss Rostary Embedding",
+    "before": "L GPT-033 Rostary Embedding",
+    "after": "L GPT-033 Rostary Embedding",
+    "before_errors": 6,
+    "after_errors": 6
+  },
+  {
+    "page_id": "hf-0008",
+    "region_id": "hf-0008-line-0009",
+    "reference": "_inv_freq",
+    "before": "- inv_freq",
+    "after": "- inv_freq",
+    "before_errors": 2,
+    "after_errors": 2
+  },
+  {
+    "page_id": "hf-0008",
+    "region_id": "hf-0008-line-0010",
+    "reference": "- Position_ids",
+    "before": "- Position 记录",
+    "after": "- Position 记录",
+    "before_errors": 4,
+    "after_errors": 4
+  },
+  {
+    "page_id": "hf-0008",
+    "region_id": "line-fce3cae9-c0fb-428c-9698-b41d0b46ba0b",
+    "reference": "├ freq 계산",
+    "before": "- f_ref -> 치",
+    "after": "- f_ref -> 치",
+    "before_errors": 7,
+    "after_errors": 7
+  }
+]

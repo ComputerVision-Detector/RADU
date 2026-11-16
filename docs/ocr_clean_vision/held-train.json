@@ -1,0 +1,4818 @@
+[
+  {
+    "page_id": "hf-0001",
+    "region_id": "hf-0001-line-0013",
+    "image": "crops/hf-0001-0013.png",
+    "crop_sha256": "41243d40e318cd062d514a45d7fa66a78eefb17749c7e898211d766d796e3809",
+    "source_sha256": "9d4afc1a01e1164e573691c62b83453cc0fb85be0b77906bcbbacfa172109e41",
+    "bbox": [
+      163,
+      1564,
+      2021,
+      1662
+    ],
+    "crop_bbox": [
+      163,
+      1564,
+      2021,
+      1662
+    ],
+    "text": "· ThrsFarther 자체는 Embedding → block들 → Final Norm → Unembedding. 구조이고.",
+    "order": 13,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "transcription_mismatch_or_uncertain_glyph_requires_review"
+  },
+  {
+    "page_id": "hf-0002",
+    "region_id": "hf-0002-line-0012",
+    "image": "crops/hf-0002-0012.png",
+    "crop_sha256": "9e38a2790ad94ddf25e84cf576adf9e37b4c4347300beb7b26c2e2510b316a89",
+    "source_sha256": "318fad17d8b86b229ccf96b99d9e591d62ed8fb3c60b8a3e96b4793b2d1648ae",
+    "bbox": [
+      1614,
+      1157,
+      2226,
+      1275
+    ],
+    "crop_bbox": [
+      1614,
+      1157,
+      2226,
+      1275
+    ],
+    "text": "각각 2880 차원 벡터를 가진다면",
+    "order": 12,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0002",
+    "region_id": "hf-0002-line-0014",
+    "image": "crops/hf-0002-0014.png",
+    "crop_sha256": "0579e152ceb4614bbd5568bd865a1c00af7ca6a914ec58000c94455ea5b90b32",
+    "source_sha256": "318fad17d8b86b229ccf96b99d9e591d62ed8fb3c60b8a3e96b4793b2d1648ae",
+    "bbox": [
+      1620,
+      1237,
+      2256,
+      1359
+    ],
+    "crop_bbox": [
+      1620,
+      1237,
+      2256,
+      1359
+    ],
+    "text": "C++로 표현 하면 (이해 쉽게)",
+    "order": 14,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0002",
+    "region_id": "hf-0002-line-0021",
+    "image": "crops/hf-0002-0021.png",
+    "crop_sha256": "7e8d08340c6cdd294ab5a46fbf8f6e2595da5d9d7f5d9de882b61034df860215",
+    "source_sha256": "318fad17d8b86b229ccf96b99d9e591d62ed8fb3c60b8a3e96b4793b2d1648ae",
+    "bbox": [
+      1657,
+      1612,
+      2190,
+      1722
+    ],
+    "crop_bbox": [
+      1657,
+      1612,
+      2190,
+      1722
+    ],
+    "text": "이걸로 예시를 들면 접근은",
+    "order": 21,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0002",
+    "region_id": "hf-0002-line-0024",
+    "image": "crops/hf-0002-0024.png",
+    "crop_sha256": "5a0a34596c510c7632792cf33ba07abf77b02d8a8bf11ce997895e8ff6a00c2e",
+    "source_sha256": "318fad17d8b86b229ccf96b99d9e591d62ed8fb3c60b8a3e96b4793b2d1648ae",
+    "bbox": [
+      1666,
+      1790,
+      2350,
+      1908
+    ],
+    "crop_bbox": [
+      1666,
+      1790,
+      2350,
+      1908
+    ],
+    "text": "embeddiings[1][2763]",
+    "order": 24,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0009",
+    "region_id": "hf-0009-line-0006",
+    "image": "crops/hf-0009-0006.png",
+    "crop_sha256": "fe4f1e403d6ca9ce9e531ff5b2f16063cf732ec93e90d476c4e4c78aa8e3dbb6",
+    "source_sha256": "8d22dabdbb9d6173deacb4a48864fec1aec30d38d25ba65a69ccd3c7efdcb1b7",
+    "bbox": [
+      1560,
+      709,
+      1924,
+      791
+    ],
+    "crop_bbox": [
+      1560,
+      709,
+      1924,
+      791
+    ],
+    "text": "GPtoosExperts",
+    "order": 6,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "transcription_mismatch_or_uncertain_glyph_requires_review"
+  },
+  {
+    "page_id": "hf-0016",
+    "region_id": "hf-0016-line-0004",
+    "image": "crops/hf-0016-0002.png",
+    "crop_sha256": "a877115a7f508b6a745bc80fafbbc47487bdd3cc3304b765c1de7a76985a1f63",
+    "source_sha256": "736f8e4675f81654214234bc38925946099f4bedc66f87ed519d0241ded33c11",
+    "bbox": [
+      142,
+      504,
+      1860,
+      718
+    ],
+    "crop_bbox": [
+      142,
+      504,
+      1860,
+      718
+    ],
+    "text": "- 의료 진단처럼 한쪽 클래스가 중요한 분류 문제에서 특히 유용한 성능 지표.",
+    "order": 2,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0020",
+    "region_id": "hf-0020-line-0003",
+    "image": "crops/hf-0020-0001.png",
+    "crop_sha256": "f81621318f0cf480ff05a716021e0b563d4dbba4ad5ada63cae47c9909439d1c",
+    "source_sha256": "7d15f8df2a0e7299a1815cc627ca0089a754af7465a320c1d506f7be46c99ddb",
+    "bbox": [
+      131,
+      396,
+      2199,
+      583
+    ],
+    "crop_bbox": [
+      131,
+      396,
+      2199,
+      583
+    ],
+    "text": "- i번째 에지는 특징 x_i와 가중치 w_i를 곱해 출력 노드로 전달",
+    "order": 1,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0020",
+    "region_id": "line-b21450ad-1b4f-4618-a878-3a442ab1267c",
+    "image": "crops/hf-0020-0002.png",
+    "crop_sha256": "80d9c096f73cf5b709d92785395c7204647f1c67aed1f5c7e1740de84dbcce76",
+    "source_sha256": "7d15f8df2a0e7299a1815cc627ca0089a754af7465a320c1d506f7be46c99ddb",
+    "bbox": [
+      200,
+      535,
+      1990,
+      697
+    ],
+    "crop_bbox": [
+      200,
+      535,
+      1990,
+      697
+    ],
+    "text": "출력노드는 x_i×w_i + 편향에 대해 결과를 활성 함수에",
+    "order": 2,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0024",
+    "region_id": "hf-0024-line-0006",
+    "image": "crops/hf-0024-0004.png",
+    "crop_sha256": "5b9715fc5a9918fa67b702a3329117a3ac3155f661bed773babacfe3573fc5ff",
+    "source_sha256": "f3d58707873a0008fad702439229f0a39e2e778109f9e55809755b9f50edc8d7",
+    "bbox": [
+      269,
+      951,
+      787,
+      1121
+    ],
+    "crop_bbox": [
+      269,
+      951,
+      787,
+      1121
+    ],
+    "text": "z_j^l = T_l(s_j^l)",
+    "order": 4,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "formula_or_diagram_not_confirmed_natural_text"
+  },
+  {
+    "page_id": "hf-0035",
+    "region_id": "hf-0035-line-0002",
+    "image": "crops/hf-0035-0002.png",
+    "crop_sha256": "870d631519b417f8a0e8b314c448ba7c45cc2d4e7bb6250c021b095d57164948",
+    "source_sha256": "faac0c09be0ff9d9fc30a32ed821dd00b7ea87e47214f2efdeb36a641681f847",
+    "bbox": [
+      211,
+      391,
+      1370,
+      565
+    ],
+    "crop_bbox": [
+      211,
+      391,
+      1370,
+      565
+    ],
+    "text": "- 출력은 0에서 1.0 사이의 실수",
+    "order": 2,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0043",
+    "region_id": "hf-0043-line-0004",
+    "image": "crops/hf-0043-0002.png",
+    "crop_sha256": "83144cd71ce7906f53247fafea8e07ba47ae9750832f7626b8bd34367f06622b",
+    "source_sha256": "767a888cd2b44a8bd3433a27f6de9bebd6ef9e5ee6c508db1e1b2eae1d13457a",
+    "bbox": [
+      254,
+      524,
+      1712,
+      678
+    ],
+    "crop_bbox": [
+      254,
+      524,
+      1712,
+      678
+    ],
+    "text": "- 처음에는 크게 학습 -> 점차 조금씩 작게 학습.",
+    "order": 2,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0045",
+    "region_id": "line-63639690-5f11-4ccc-97bb-e2c3a3b9f0d4",
+    "image": "crops/hf-0045-0016.png",
+    "crop_sha256": "4c9771635e948a4f01b77a08e9bd6bb3897cedf0451a4818487bbe2b4474313f",
+    "source_sha256": "56d9d5038b5cec60927a9de79dd824980dab3e2d99c866991f9b9ba11ffcbb89",
+    "bbox": [
+      125,
+      2513,
+      2966,
+      3099
+    ],
+    "crop_bbox": [
+      125,
+      2513,
+      2966,
+      3099
+    ],
+    "text": "MNIST 2 -> Affine -> ReLU -ReLU 계층 -> Affine -> ReLU -> ... -> Affine -> softmax -softmax계층 ->",
+    "order": 16,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "formula_or_diagram_not_confirmed_natural_text"
+  },
+  {
+    "page_id": "hf-0049",
+    "region_id": "hf-0049-line-0003",
+    "image": "crops/hf-0049-0002.png",
+    "crop_sha256": "b5fa33a58353f70122f7f9f5812a36ea4fc3726c91cd86357fa1b5d0e02021b2",
+    "source_sha256": "b10f2c2afa7775401f9d85495f6e02dff72c6dea9abb90aaeaa253fc02f1858c",
+    "bbox": [
+      311,
+      362,
+      1963,
+      536
+    ],
+    "crop_bbox": [
+      311,
+      362,
+      1963,
+      536
+    ],
+    "text": "- 데이터 수, 채널 수, 높이, 너비로 변수가 4개이기 때문",
+    "order": 2,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0050",
+    "region_id": "hf-0050-line-0009",
+    "image": "crops/hf-0050-0009.png",
+    "crop_sha256": "770a739b23efca233c253d9bb9e1898ac78165e836693df3378277e6d07c97b1",
+    "source_sha256": "c1eae73ed22110f076da09249e0fc0f50d829e0ec443ef206f6791763be565d0",
+    "bbox": [
+      164,
+      1869,
+      2060,
+      2047
+    ],
+    "crop_bbox": [
+      164,
+      1869,
+      2060,
+      2047
+    ],
+    "text": "① 매개변수가 줄어듦(매개변수를 줄여 수용영역을 소화할 수 있다.)",
+    "order": 9,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0056",
+    "region_id": "hf-0056-line-0014",
+    "image": "crops/hf-0056-0014.png",
+    "crop_sha256": "f9e1556827bc355669fe5234f1e3fd39512e341ef292593824f04cac19ba0ded",
+    "source_sha256": "4691c150a1e5238daea713d469220c99675f47bf221518ce776ca65284911db9",
+    "bbox": [
+      151,
+      2387,
+      1764,
+      2549
+    ],
+    "crop_bbox": [
+      151,
+      2387,
+      1764,
+      2549
+    ],
+    "text": "- id_to_word: 단어ID에서 단어로의 딕ㅅ",
+    "order": 14,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "transcription_mismatch_or_uncertain_glyph_requires_review"
+  },
+  {
+    "page_id": "hf-0059",
+    "region_id": "hf-0059-line-0006",
+    "image": "crops/hf-0059-0006.png",
+    "crop_sha256": "9a27b1a62b6bfcaafe48fb9f90d5926dd875876b308110a4d5f38df5124175ed",
+    "source_sha256": "1b93d197bd9da45002638f36c8b21e21b39572b8c159734510b9e34251b56a7f",
+    "bbox": [
+      223,
+      810,
+      1295,
+      960
+    ],
+    "crop_bbox": [
+      223,
+      810,
+      1295,
+      960
+    ],
+    "text": "추론기반기법: 미니배치를 이용해 신경망으로",
+    "order": 6,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0061",
+    "region_id": "hf-0061-line-0007",
+    "image": "crops/hf-0061-0006.png",
+    "crop_sha256": "17b015af350b386645c1cee8239a8a7a82456eb585db5106b25b59581f1e9d2d",
+    "source_sha256": "3df33b8b2d5f5c9b245ad6842e3f3a19adc131d1dcfe987464016566872da011",
+    "bbox": [
+      535,
+      1032,
+      1742,
+      1162
+    ],
+    "crop_bbox": [
+      535,
+      1032,
+      1742,
+      1162
+    ],
+    "text": "분산 표현이 열방향(수직 방향)으로 저장됨.",
+    "order": 6,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "crop_edge_transcription_uncertain"
+  },
+  {
+    "page_id": "hf-0062",
+    "region_id": "hf-0062-line-0014",
+    "image": "crops/hf-0062-0014.png",
+    "crop_sha256": "7f34be7104f46100943132ee2d43ac97b9fea78f4d8b610e675fc9c845d9b13a",
+    "source_sha256": "06b488602735d92fc275e10a7b6dec3d08aab99c4a69092cd68f1be812f8545c",
+    "bbox": [
+      374,
+      1927,
+      2314,
+      2097
+    ],
+    "crop_bbox": [
+      374,
+      1927,
+      2314,
+      2097
+    ],
+    "text": "가중치 특정 행 뉴런만을(아무것도 손대지 않고) 다음층으로 흘려보냄.",
+    "order": 14,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0064",
+    "region_id": "hf-0064-line-0015",
+    "image": "crops/hf-0064-0013.png",
+    "crop_sha256": "c161e3f844ea955ce711e5e3d6afc22cfcfd5ebd9f62671eb1c834e9cd8b071e",
+    "source_sha256": "3514e1793442aa1ab5030366375fc1a3ff819bf5ed9fefee320e718aec2c6a12",
+    "bbox": [
+      347,
+      1818,
+      1978,
+      1984
+    ],
+    "crop_bbox": [
+      347,
+      1818,
+      1978,
+      1984
+    ],
+    "text": "L 말뭉치에서 각 단어의 출현 회수를 구해 확률 분포로 나타냄",
+    "order": 13,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0065",
+    "region_id": "hf-0065-line-0001",
+    "image": "crops/hf-0065-0001.png",
+    "crop_sha256": "bd424145b8a101e136ebe26fc346643f8e008a36bc9b997282a3021622782795",
+    "source_sha256": "d753470b6a22d328ce63d04adffab491cdf52d16ee24f84a27db9e4e7b9b34dc",
+    "bbox": [
+      169,
+      225,
+      1274,
+      359
+    ],
+    "crop_bbox": [
+      169,
+      225,
+      1274,
+      359
+    ],
+    "text": "· 피드포워드 (fees forward: 앞먹임)",
+    "order": 1,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "transcription_mismatch_or_uncertain_glyph_requires_review"
+  },
+  {
+    "page_id": "hf-0067",
+    "region_id": "hf-0067-line-0003",
+    "image": "crops/hf-0067-0003.png",
+    "crop_sha256": "411f8138d774af73e149455691dc80d30faf1f43c85da8baf96b0fc537cf8ada",
+    "source_sha256": "1ee3f727458d72c37ad912ad676156df77b74417dfb3c4bcdb50019151dcc4a3",
+    "bbox": [
+      214,
+      471,
+      1927,
+      638
+    ],
+    "crop_bbox": [
+      214,
+      471,
+      1927,
+      638
+    ],
+    "text": "- 시계열 데이터가 길어짐에 따라 계산량과 메모리 사용량도 증가함.",
+    "order": 3,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0073",
+    "region_id": "hf-0073-line-0020",
+    "image": "crops/hf-0073-0019.png",
+    "crop_sha256": "299f648db73b9d7add2904f0bef9b0e7babb94ca9686bace2bb3447e163ce2a5",
+    "source_sha256": "e66e120a43325ae34628c4948bf19757eb8bcb8aab48dbba3f68fe0a62f2afc3",
+    "bbox": [
+      169,
+      2620,
+      2045,
+      2819
+    ],
+    "crop_bbox": [
+      169,
+      2620,
+      2045,
+      2819
+    ],
+    "text": "샤프닝 필터: 에지를 선명하게 해서 물체의 식별을 돕는 작용을 함.",
+    "order": 20,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0079",
+    "region_id": "hf-0079-line-0006",
+    "image": "crops/hf-0079-0005.png",
+    "crop_sha256": "0bbab916a3639791e988a027434ae319a74bb89686129f8cc64fe8b1be88e718",
+    "source_sha256": "59cf2343ed01f8a5b6a78acd6124540ac7a68ceb081a2a01ceb34cb3ac713e48",
+    "bbox": [
+      154,
+      729,
+      2804,
+      936
+    ],
+    "crop_bbox": [
+      154,
+      729,
+      2804,
+      936
+    ],
+    "text": "- 가우시안 필터 → sobel 미분 → 그래디언트 계산 → NMS → 이중 임계값 → 히스테리시스 → 최종 Canny에지",
+    "order": 5,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0082",
+    "region_id": "hf-0082-line-0009",
+    "image": "crops/hf-0082-0009.png",
+    "crop_sha256": "26b7681924e1c709f56e5635d0d8a7c1fa0712c7724493e94f66408fab419719",
+    "source_sha256": "eae7716dcd4e9a9d1cb093f6e50d2719e41d58658dc809300a5c12dde78fab04",
+    "bbox": [
+      229,
+      1435,
+      2408,
+      1625
+    ],
+    "crop_bbox": [
+      229,
+      1435,
+      2408,
+      1625
+    ],
+    "text": "- 정답을 미리 알려주지 않고, 데이터들끼리의 유사성을 보고 알아서 그룹을 만드는 것.",
+    "order": 9,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0089",
+    "region_id": "hf-0089-line-0003",
+    "image": "crops/hf-0089-0003.png",
+    "crop_sha256": "3602ac5ce5ef1b35cd748ad74f377899f5bd9c3de6a909c8de53a55b8d68fce6",
+    "source_sha256": "39eac9a61c87debf5d74529a71d7aefdadb4960bdf295a32623c1ac006c38a87",
+    "bbox": [
+      895,
+      137,
+      1358,
+      230
+    ],
+    "crop_bbox": [
+      895,
+      137,
+      1358,
+      230
+    ],
+    "text": "(-1, -1), (0, -1), (1, -1)",
+    "order": 3,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "formula_or_diagram_not_confirmed_natural_text"
+  },
+  {
+    "page_id": "hf-0093",
+    "region_id": "hf-0093-line-0005",
+    "image": "crops/hf-0093-0005.png",
+    "crop_sha256": "abd7b363df955bc3c682e9089ff69c4ebcf13fd732dc55b6a625e772756facbd",
+    "source_sha256": "f049a60e5cac7cf98beed5bfe805bf9a3fa33df03ac493f98cf8254d907f0f3c",
+    "bbox": [
+      613,
+      624,
+      1358,
+      750
+    ],
+    "crop_bbox": [
+      613,
+      624,
+      1358,
+      750
+    ],
+    "text": "시가 * 0.7 = 공시지가",
+    "order": 5,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "formula_or_diagram_not_confirmed_natural_text"
+  },
+  {
+    "page_id": "hf-0100",
+    "region_id": "line-c97cfb86-f463-45c5-a761-001bce4d8557",
+    "image": "crops/hf-0100-0015.png",
+    "crop_sha256": "3f8400fa6588200e3c90a786011a1f1e44c711474885e8bf33f386d5d4256d89",
+    "source_sha256": "dcda1cdbced5ba3765af5ba066b7e10b574e8b34be2aa462ca3f836e6c209842",
+    "bbox": [
+      346,
+      1569,
+      1077,
+      1750
+    ],
+    "crop_bbox": [
+      346,
+      1569,
+      1077,
+      1750
+    ],
+    "text": "scanf(\"%d\", &ch_mn);",
+    "order": 15,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0100",
+    "region_id": "line-42aab0e6-7e03-485e-9357-3ff66823c4b8",
+    "image": "crops/hf-0100-0017.png",
+    "crop_sha256": "11d7bf3db57f0697c3b40195591d948f4ee8cb7499444694ee6b2eb0a00bf1d6",
+    "source_sha256": "dcda1cdbced5ba3765af5ba066b7e10b574e8b34be2aa462ca3f836e6c209842",
+    "bbox": [
+      328,
+      1800,
+      950,
+      1954
+    ],
+    "crop_bbox": [
+      328,
+      1800,
+      950,
+      1954
+    ],
+    "text": "if(ch_mn==1){",
+    "order": 17,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0100",
+    "region_id": "line-86a1c423-32ca-4722-93c1-42d66323c517",
+    "image": "crops/hf-0100-0022.png",
+    "crop_sha256": "5b71f76c9550d7043af719a3e65c146b089372177de0b08a75ce130ed1504d2d",
+    "source_sha256": "dcda1cdbced5ba3765af5ba066b7e10b574e8b34be2aa462ca3f836e6c209842",
+    "bbox": [
+      421,
+      2367,
+      1054,
+      2510
+    ],
+    "crop_bbox": [
+      421,
+      2367,
+      1054,
+      2510
+    ],
+    "text": "Jul(); exit(0);",
+    "order": 22,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0105",
+    "region_id": "hf-0105-line-0007",
+    "image": "crops/hf-0105-0007.png",
+    "crop_sha256": "2977873c93e04e6d220e2a90a4bba3672c2b24b58d0b8bcb3d2e8dfa117ffe92",
+    "source_sha256": "ba51ebfeef3dd00608eacae9b67df23594cc328b72e874a2bd0664029be28194",
+    "bbox": [
+      341,
+      862,
+      2278,
+      1025
+    ],
+    "crop_bbox": [
+      341,
+      862,
+      2278,
+      1025
+    ],
+    "text": "<link href=\"style.css\" type=\"text/css\" rel=\"styletext\">",
+    "order": 7,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0108",
+    "region_id": "hf-0108-line-0008",
+    "image": "crops/hf-0108-0008.png",
+    "crop_sha256": "be5288b087ec7e0c3fb8ecfe43502c052debdc14d1a4e95c594852316bb3e3dc",
+    "source_sha256": "0b4e2ee564fc35fbb08e6da2cabc800ebf582f34e414b98c9b22e3a00923b7ff",
+    "bbox": [
+      365,
+      790,
+      2021,
+      888
+    ],
+    "crop_bbox": [
+      365,
+      790,
+      2021,
+      888
+    ],
+    "text": "<link href = \"style.css\" type = \"text/css\" rel = \"stylesheet\">",
+    "order": 8,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "transcription_mismatch_or_uncertain_glyph_requires_review"
+  },
+  {
+    "page_id": "hf-0113",
+    "region_id": "hf-0113-line-0004",
+    "image": "crops/hf-0113-0004.png",
+    "crop_sha256": "7734cc58a3802f77a53df600dc4b637ca8a3c0731ee173b93c2da7451ae41f54",
+    "source_sha256": "560dca2789b856edb6c2e259db3ac51ba0466fbd19954709bcfe41b4121985e6",
+    "bbox": [
+      160,
+      306,
+      551,
+      416
+    ],
+    "crop_bbox": [
+      160,
+      306,
+      551,
+      416
+    ],
+    "text": "HTH HTML",
+    "order": 4,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "overwritten_or_struck_through_text_requires_policy_review"
+  },
+  {
+    "page_id": "hf-0120",
+    "region_id": "hf-0120-line-0002",
+    "image": "crops/hf-0120-0002.png",
+    "crop_sha256": "27c5842f90b79afca7718d4989ff2f4381d51d7296030607e98126127ddf828e",
+    "source_sha256": "7d0de070002a84b7a1154cbcaf39b88065d881e50e4bce14f713069a0366889a",
+    "bbox": [
+      638,
+      423,
+      1785,
+      557
+    ],
+    "crop_bbox": [
+      638,
+      423,
+      1785,
+      557
+    ],
+    "text": "→ Set- Execution Policy Remote Signed",
+    "order": 2,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0123",
+    "region_id": "hf-0123-line-0005",
+    "image": "crops/hf-0123-0005.png",
+    "crop_sha256": "cd8ee78179fd724ee6941a963d5909cb3e1a43d86f32f90b56c0e980ddf284e8",
+    "source_sha256": "f9778287a96e282cf8733a32147036704872ecb0233605ecc5f90d37fd808bd3",
+    "bbox": [
+      412,
+      316,
+      2489,
+      435
+    ],
+    "crop_bbox": [
+      412,
+      316,
+      2489,
+      435
+    ],
+    "text": "데이터 수집 → 데이터 기공 → 탐색적 데이터 분석 → ML모델링 → 결과 해석 및 적용.",
+    "order": 5,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0127",
+    "region_id": "hf-0127-line-0026",
+    "image": "crops/hf-0127-0022.png",
+    "crop_sha256": "a7d969fffded418a9a0a880b4aa0ec1e02e8c3e0ad033367eedfd83fe6ee13d8",
+    "source_sha256": "4d9794be3faed1cd9a3a33f5694ca393357ca5938c4e865d3bb32dcf59a74a66",
+    "bbox": [
+      2882,
+      588,
+      3074,
+      682
+    ],
+    "crop_bbox": [
+      2882,
+      588,
+      3074,
+      682
+    ],
+    "text": "않으면",
+    "order": 22,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0127",
+    "region_id": "hf-0127-line-0030",
+    "image": "crops/hf-0127-0025.png",
+    "crop_sha256": "3f263e33aaf7a8acf2f1437e17b00d78e660637557e910e3a1390f33a5bb4e92",
+    "source_sha256": "4d9794be3faed1cd9a3a33f5694ca393357ca5938c4e865d3bb32dcf59a74a66",
+    "bbox": [
+      1622,
+      783,
+      2262,
+      877
+    ],
+    "crop_bbox": [
+      1622,
+      783,
+      2262,
+      877
+    ],
+    "text": "개발 공정",
+    "order": 25,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visible_neighboring_text_inside_crop_requires_reboxing"
+  },
+  {
+    "page_id": "hf-0130",
+    "region_id": "hf-0130-line-0007",
+    "image": "crops/hf-0130-0003.png",
+    "crop_sha256": "bd0063613418892698fc890eded2e39108f2f173173682cb05a6473dad1c7e1f",
+    "source_sha256": "880c67cf3491939136ce4dd1d6118e91eb8cdc1fd47a751903a60c9b84411b06",
+    "bbox": [
+      0,
+      733,
+      404,
+      832
+    ],
+    "crop_bbox": [
+      0,
+      733,
+      404,
+      832
+    ],
+    "text": "1) f(x) = 3x^2-5x",
+    "order": 3,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "math-heavy derivative worksheet; text candidates need semantic review; exclude whole page conservatively"
+  },
+  {
+    "page_id": "hf-0130",
+    "region_id": "hf-0130-line-0011",
+    "image": "crops/hf-0130-0007.png",
+    "crop_sha256": "c7a439471ebd6773cfdae655b2346f80f205216cb2fd1c015f4d73beae4431d1",
+    "source_sha256": "880c67cf3491939136ce4dd1d6118e91eb8cdc1fd47a751903a60c9b84411b06",
+    "bbox": [
+      0,
+      1325,
+      404,
+      1418
+    ],
+    "crop_bbox": [
+      0,
+      1325,
+      404,
+      1418
+    ],
+    "text": "2) y = (2x+1)^4",
+    "order": 7,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "math-heavy derivative worksheet; text candidates need semantic review; exclude whole page conservatively"
+  },
+  {
+    "page_id": "hf-0130",
+    "region_id": "hf-0130-line-0027",
+    "image": "crops/hf-0130-0013.png",
+    "crop_sha256": "7a5fd8137701b11e61bf835b745c4c673f5a28ab46a7c90ef15ea4abc1117bc4",
+    "source_sha256": "880c67cf3491939136ce4dd1d6118e91eb8cdc1fd47a751903a60c9b84411b06",
+    "bbox": [
+      0,
+      1340,
+      404,
+      1441
+    ],
+    "crop_bbox": [
+      0,
+      1340,
+      404,
+      1441
+    ],
+    "text": "2) y = (2x+1)^4",
+    "order": 13,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "math-heavy derivative worksheet; text candidates need semantic review; exclude whole page conservatively"
+  },
+  {
+    "page_id": "hf-0135",
+    "region_id": "hf-0135-line-0021",
+    "image": "crops/hf-0135-0018.png",
+    "crop_sha256": "7d9d0155a8e3809ed6227c50c7602f62bd31a3790f6b5bd622c5648dd0673272",
+    "source_sha256": "05d65a715a8049199fdbb851dbc23db813b2a38a267793ce8d40c6a63227232f",
+    "bbox": [
+      593,
+      2086,
+      1007,
+      2178
+    ],
+    "crop_bbox": [
+      593,
+      2086,
+      1007,
+      2178
+    ],
+    "text": "y-8 = 4x-4",
+    "order": 18,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed calculus worksheet; natural-text candidate classification requires review"
+  },
+  {
+    "page_id": "hf-0135",
+    "region_id": "hf-0135-line-0033",
+    "image": "crops/hf-0135-0023.png",
+    "crop_sha256": "a9d495914461ad739b75fe3ab82e9457c1c87e38497b5653124b6552133241db",
+    "source_sha256": "05d65a715a8049199fdbb851dbc23db813b2a38a267793ce8d40c6a63227232f",
+    "bbox": [
+      1383,
+      312,
+      1540,
+      381
+    ],
+    "crop_bbox": [
+      1383,
+      312,
+      1540,
+      381
+    ],
+    "text": "+ 3e",
+    "order": 23,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed calculus worksheet; natural-text candidate classification requires review"
+  },
+  {
+    "page_id": "hf-0135",
+    "region_id": "hf-0135-line-0037",
+    "image": "crops/hf-0135-0025.png",
+    "crop_sha256": "a12c2f138723e4c1b9a4f1a1b84819049354fd3446ab26506b6bc4d6f2b7438f",
+    "source_sha256": "05d65a715a8049199fdbb851dbc23db813b2a38a267793ce8d40c6a63227232f",
+    "bbox": [
+      1649,
+      1419,
+      1843,
+      1486
+    ],
+    "crop_bbox": [
+      1649,
+      1419,
+      1843,
+      1486
+    ],
+    "text": "4",
+    "order": 25,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed calculus worksheet; natural-text candidate classification requires review"
+  },
+  {
+    "page_id": "hf-0135",
+    "region_id": "hf-0135-line-0038",
+    "image": "crops/hf-0135-0026.png",
+    "crop_sha256": "a1464f5edef08a2061e9d13dae3867f980f193501fc189d2ab80737ed66c1727",
+    "source_sha256": "05d65a715a8049199fdbb851dbc23db813b2a38a267793ce8d40c6a63227232f",
+    "bbox": [
+      1649,
+      1497,
+      1857,
+      1583
+    ],
+    "crop_bbox": [
+      1649,
+      1497,
+      1857,
+      1583
+    ],
+    "text": "x-4",
+    "order": 26,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed calculus worksheet; natural-text candidate classification requires review"
+  },
+  {
+    "page_id": "hf-0135",
+    "region_id": "hf-0135-line-0045",
+    "image": "crops/hf-0135-0028.png",
+    "crop_sha256": "9986d208de89086176dfb824cdc236e8bbf581aa1354abb8d11c71aea34510e6",
+    "source_sha256": "05d65a715a8049199fdbb851dbc23db813b2a38a267793ce8d40c6a63227232f",
+    "bbox": [
+      1934,
+      377,
+      2180,
+      484
+    ],
+    "crop_bbox": [
+      1934,
+      377,
+      2180,
+      484
+    ],
+    "text": "=x^4+x",
+    "order": 28,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed calculus worksheet; natural-text candidate classification requires review"
+  },
+  {
+    "page_id": "hf-0135",
+    "region_id": "hf-0135-line-0049",
+    "image": "crops/hf-0135-0030.png",
+    "crop_sha256": "17ac85dc31a67729857d1673f331cb1c4938fec349a667518e0f3d4343c68f17",
+    "source_sha256": "05d65a715a8049199fdbb851dbc23db813b2a38a267793ce8d40c6a63227232f",
+    "bbox": [
+      1934,
+      843,
+      2312,
+      965
+    ],
+    "crop_bbox": [
+      1934,
+      843,
+      2312,
+      965
+    ],
+    "text": "3dx = ",
+    "order": 30,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed calculus worksheet; natural-text candidate classification requires review"
+  },
+  {
+    "page_id": "hf-0135",
+    "region_id": "hf-0135-line-0053",
+    "image": "crops/hf-0135-0032.png",
+    "crop_sha256": "0b42d7e24a0d1eeea838138b94cab4c30739111816316fb84c26ef7b22c3795e",
+    "source_sha256": "05d65a715a8049199fdbb851dbc23db813b2a38a267793ce8d40c6a63227232f",
+    "bbox": [
+      1934,
+      1422,
+      2312,
+      1543
+    ],
+    "crop_bbox": [
+      1934,
+      1422,
+      2312,
+      1543
+    ],
+    "text": "sinxd",
+    "order": 32,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed calculus worksheet; natural-text candidate classification requires review"
+  },
+  {
+    "page_id": "hf-0135",
+    "region_id": "hf-0135-line-0055",
+    "image": "crops/hf-0135-0034.png",
+    "crop_sha256": "4104b00997a64db28f0cdffcc625e4dca3371a5f354931ad8ceab752ff8ca74c",
+    "source_sha256": "05d65a715a8049199fdbb851dbc23db813b2a38a267793ce8d40c6a63227232f",
+    "bbox": [
+      1934,
+      1731,
+      2195,
+      1843
+    ],
+    "crop_bbox": [
+      1934,
+      1731,
+      2195,
+      1843
+    ],
+    "text": "-4",
+    "order": 34,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed calculus worksheet; natural-text candidate classification requires review"
+  },
+  {
+    "page_id": "hf-0135",
+    "region_id": "hf-0135-line-0059",
+    "image": "crops/hf-0135-0037.png",
+    "crop_sha256": "317bece8e0ba48ba4627d8e2409f79c869d513952880b61714fcc4db9882ec66",
+    "source_sha256": "05d65a715a8049199fdbb851dbc23db813b2a38a267793ce8d40c6a63227232f",
+    "bbox": [
+      2201,
+      0,
+      2429,
+      109
+    ],
+    "crop_bbox": [
+      2201,
+      0,
+      2429,
+      109
+    ],
+    "text": "dx",
+    "order": 37,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed calculus worksheet; natural-text candidate classification requires review"
+  },
+  {
+    "page_id": "hf-0135",
+    "region_id": "hf-0135-line-0065",
+    "image": "crops/hf-0135-0038.png",
+    "crop_sha256": "1f20c2d53d20f360be941ea73a57af30df106f44e4ab8aa738b97068a9d3b7dd",
+    "source_sha256": "05d65a715a8049199fdbb851dbc23db813b2a38a267793ce8d40c6a63227232f",
+    "bbox": [
+      2201,
+      858,
+      2429,
+      977
+    ],
+    "crop_bbox": [
+      2201,
+      858,
+      2429,
+      977
+    ],
+    "text": "=3x+c",
+    "order": 38,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed calculus worksheet; natural-text candidate classification requires review"
+  },
+  {
+    "page_id": "hf-0135",
+    "region_id": "hf-0135-line-0070",
+    "image": "crops/hf-0135-0039.png",
+    "crop_sha256": "8ca8b10ab2fcbbd0e0d53f36e755767a64df5028216b5d1f09cef8868a2d6104",
+    "source_sha256": "05d65a715a8049199fdbb851dbc23db813b2a38a267793ce8d40c6a63227232f",
+    "bbox": [
+      2201,
+      1600,
+      2429,
+      1727
+    ],
+    "crop_bbox": [
+      2201,
+      1600,
+      2429,
+      1727
+    ],
+    "text": "[1,3]",
+    "order": 39,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed calculus worksheet; natural-text candidate classification requires review"
+  },
+  {
+    "page_id": "hf-0139",
+    "region_id": "hf-0139-line-0040",
+    "image": "crops/hf-0139-0039.png",
+    "crop_sha256": "7fb96014b192571422c6c56e931417fafcfbaf24dd31721df92140ba5649f1a6",
+    "source_sha256": "97dfd4cd7c4d368edb323542595e5739ca70a86c206184a72448d7e734ae5f23",
+    "bbox": [
+      405,
+      1981,
+      912,
+      2049
+    ],
+    "crop_bbox": [
+      405,
+      1981,
+      912,
+      2049
+    ],
+    "text": "SUM t = array [i][j]",
+    "order": 39,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "transcription_mismatch_or_uncertain_glyph_requires_review"
+  },
+  {
+    "page_id": "hf-0143",
+    "region_id": "line-d7fd8f16-6401-4eb0-ba43-f523d0f11d22",
+    "image": "crops/hf-0143-0005.png",
+    "crop_sha256": "16ab23efe0ed8b0bbcbb696caaca220e9e577e2e4ba82449612ec7cbdaf956e2",
+    "source_sha256": "46d040e1a071a493d58365bfca163f6f162616b8bdd697a595328889224dc94b",
+    "bbox": [
+      8,
+      647,
+      823,
+      771
+    ],
+    "crop_bbox": [
+      8,
+      647,
+      823,
+      771
+    ],
+    "text": "조인(join)----------",
+    "order": 5,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "formula_or_diagram_not_confirmed_natural_text"
+  },
+  {
+    "page_id": "hf-0145",
+    "region_id": "hf-0145-line-0023",
+    "image": "crops/hf-0145-0023.png",
+    "crop_sha256": "0cf6f34c3fc8b4bfe18377d42708cda837f1f0315c1b2dbaa6b6b4de9722bbe6",
+    "source_sha256": "5e7a311128506d67cd5ecd21aca6020fbe350a2f856031ded46cd8a09e70c9b3",
+    "bbox": [
+      337,
+      2089,
+      701,
+      2170
+    ],
+    "crop_bbox": [
+      337,
+      2089,
+      701,
+      2170
+    ],
+    "text": "- - - - ConvNet",
+    "order": 23,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "formula_or_diagram_not_confirmed_natural_text"
+  },
+  {
+    "page_id": "hf-0146",
+    "region_id": "hf-0146-line-0008",
+    "image": "crops/hf-0146-0008.png",
+    "crop_sha256": "251e34c79d11965cfa1eb973c718e362b962ea7feaf9e85882090943d1a1f00e",
+    "source_sha256": "4eb461ab8bb26b7a57e6c7173f47953b10ce3831405ed0858c9e0d7541a86889",
+    "bbox": [
+      1240,
+      339,
+      1391,
+      409
+    ],
+    "crop_bbox": [
+      1240,
+      339,
+      1391,
+      409
+    ],
+    "text": "f^{(2)} = 5",
+    "order": 8,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "formula_or_diagram_not_confirmed_natural_text"
+  },
+  {
+    "page_id": "hf-0153",
+    "region_id": "line-456e7d02-f296-4af8-bd73-ddfb994059a8",
+    "image": "crops/hf-0153-0024.png",
+    "crop_sha256": "b5b52045687c77c2586da355b344fcf35a2231e4fe1cad7425588a028ee12ee8",
+    "source_sha256": "60ac514a933828c004936dce94b330b680b9e56fd5cc604074c6849de7d82c9d",
+    "bbox": [
+      2105,
+      1940,
+      2342,
+      2068
+    ],
+    "crop_bbox": [
+      2105,
+      1940,
+      2342,
+      2068
+    ],
+    "text": "ㅗ",
+    "order": 24,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "formula_or_diagram_not_confirmed_natural_text"
+  },
+  {
+    "page_id": "hf-0159",
+    "region_id": "hf-0159-line-0014",
+    "image": "crops/hf-0159-0014.png",
+    "crop_sha256": "2be8672fdace6c0c885a2c43690cbaca3cd9df671f7c6976c830eaf8f36de5b4",
+    "source_sha256": "75da405756b177e195740dd8b6317117fe0e213a07b4d3ec66e901257cf62845",
+    "bbox": [
+      171,
+      1740,
+      512,
+      1834
+    ],
+    "crop_bbox": [
+      171,
+      1740,
+      512,
+      1834
+    ],
+    "text": "1) BBox",
+    "order": 14,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "overwritten_or_struck_through_text_requires_policy_review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0001",
+    "image": "crops/hf-0160-0001.png",
+    "crop_sha256": "4c8d8f624224db8e8141062a6861801b774b1bdc32cdedf3f8739624cbdb9f0f",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      224,
+      157,
+      341,
+      208
+    ],
+    "crop_bbox": [
+      224,
+      157,
+      341,
+      208
+    ],
+    "text": "x=0",
+    "order": 1,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0002",
+    "image": "crops/hf-0160-0002.png",
+    "crop_sha256": "891182e354028c5cffc5383270193fc118c5a3b33c78ad00146924e79a7ea1e9",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      142,
+      312,
+      491,
+      377
+    ],
+    "crop_bbox": [
+      142,
+      312,
+      491,
+      377
+    ],
+    "text": "a>0 and b>0",
+    "order": 2,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0003",
+    "image": "crops/hf-0160-0003.png",
+    "crop_sha256": "83dc9fb375b22831caeebf58fd3a5e58b6b853d6443ae4e19fbc207ee3176174",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      612,
+      268,
+      821,
+      333
+    ],
+    "crop_bbox": [
+      612,
+      268,
+      821,
+      333
+    ],
+    "text": "⇒ 4개",
+    "order": 3,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0004",
+    "image": "crops/hf-0160-0004.png",
+    "crop_sha256": "2bb290933ded317984e350c3669c529c3bf766359b2c19fb5c3bd312ee7c6537",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      701,
+      332,
+      839,
+      403
+    ],
+    "crop_bbox": [
+      701,
+      332,
+      839,
+      403
+    ],
+    "text": "(T,T)",
+    "order": 4,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0005",
+    "image": "crops/hf-0160-0005.png",
+    "crop_sha256": "9ded22524707cdcb2652d838764a6768826a36d86a0d464078d65d65af88e885",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1295,
+      279,
+      1354,
+      330
+    ],
+    "crop_bbox": [
+      1295,
+      279,
+      1354,
+      330
+    ],
+    "text": "a",
+    "order": 5,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0006",
+    "image": "crops/hf-0160-0006.png",
+    "crop_sha256": "cd7ca3f7280ad950f5377d80233f27f34483bcd3484e01fe28b4ed86f3b85d9c",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1432,
+      262,
+      1480,
+      333
+    ],
+    "crop_bbox": [
+      1432,
+      262,
+      1480,
+      333
+    ],
+    "text": "b",
+    "order": 6,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0007",
+    "image": "crops/hf-0160-0007.png",
+    "crop_sha256": "044ce7d97c1590231d79080f951af22bb75f3c0d11e586b1eda5adde911ad105",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1553,
+      271,
+      1607,
+      333
+    ],
+    "crop_bbox": [
+      1553,
+      271,
+      1607,
+      333
+    ],
+    "text": "c",
+    "order": 7,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0008",
+    "image": "crops/hf-0160-0008.png",
+    "crop_sha256": "07409afd0b9dc74cbf679fed078f1d68f41775837d0f72b01130dda7bd8b2b14",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1746,
+      262,
+      1837,
+      333
+    ],
+    "crop_bbox": [
+      1746,
+      262,
+      1837,
+      333
+    ],
+    "text": "if",
+    "order": 8,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0009",
+    "image": "crops/hf-0160-0009.png",
+    "crop_sha256": "9b2314bbda959729475822d9b79ec43e660fbd46a9ac5e01bede40a2b10f1e7b",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2094,
+      247,
+      2174,
+      318
+    ],
+    "crop_bbox": [
+      2094,
+      247,
+      2174,
+      318
+    ],
+    "text": "if",
+    "order": 9,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0010",
+    "image": "crops/hf-0160-0010.png",
+    "crop_sha256": "36fa895205f2822871c472619a3c70e1174e1b177eecdf184bb0bb765147fe10",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2202,
+      250,
+      2253,
+      315
+    ],
+    "crop_bbox": [
+      2202,
+      250,
+      2253,
+      315
+    ],
+    "text": "2",
+    "order": 10,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0011",
+    "image": "crops/hf-0160-0011.png",
+    "crop_sha256": "8a6e6ab60e9f5fc2b442ad764ff40382b742fc4d88a72175813691c7604f9598",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      701,
+      408,
+      847,
+      482
+    ],
+    "crop_bbox": [
+      701,
+      408,
+      847,
+      482
+    ],
+    "text": "(T,F)",
+    "order": 11,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0012",
+    "image": "crops/hf-0160-0012.png",
+    "crop_sha256": "923bff4d0fdc4979f27d897d21a3179dd779ee5680a1f78bb30b82704c1cf43d",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1105,
+      356,
+      1237,
+      420
+    ],
+    "crop_bbox": [
+      1105,
+      356,
+      1237,
+      420
+    ],
+    "text": "TC#1",
+    "order": 12,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0013",
+    "image": "crops/hf-0160-0013.png",
+    "crop_sha256": "fb31010750261e7e3407750ceeb4d1a259b5e2838abbce4b49c57709178e1985",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1316,
+      361,
+      1349,
+      432
+    ],
+    "crop_bbox": [
+      1316,
+      361,
+      1349,
+      432
+    ],
+    "text": "1",
+    "order": 13,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0014",
+    "image": "crops/hf-0160-0014.png",
+    "crop_sha256": "d94c2572379a170e65b442b91bee8453ed40270138c645e11b51dc0f69a7ea45",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1445,
+      352,
+      1480,
+      426
+    ],
+    "crop_bbox": [
+      1445,
+      352,
+      1480,
+      426
+    ],
+    "text": "1",
+    "order": 14,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0015",
+    "image": "crops/hf-0160-0015.png",
+    "crop_sha256": "174e73ec4f085b0fca71cafaa8dc7a6181b3ee0b1ef7ade40f694512f2b08af4",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1551,
+      358,
+      1607,
+      432
+    ],
+    "crop_bbox": [
+      1551,
+      358,
+      1607,
+      432
+    ],
+    "text": "1",
+    "order": 15,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0016",
+    "image": "crops/hf-0160-0016.png",
+    "crop_sha256": "0b3f07359959ea4a226a90267d73e6533ec959d875432ac8cad2b6d5ec4f14f5",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1762,
+      364,
+      1889,
+      435
+    ],
+    "crop_bbox": [
+      1762,
+      364,
+      1889,
+      435
+    ],
+    "text": "T,T",
+    "order": 16,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0017",
+    "image": "crops/hf-0160-0017.png",
+    "crop_sha256": "724de9e10b183d286730eb9a48a32984f7b6f96891d9bcb78f037fa315d045cb",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2144,
+      370,
+      2277,
+      435
+    ],
+    "crop_bbox": [
+      2144,
+      370,
+      2277,
+      435
+    ],
+    "text": " T, T ",
+    "order": 17,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0018",
+    "image": "crops/hf-0160-0018.png",
+    "crop_sha256": "bfec6bc7aae44ecf43e4dc30098fe58a784e44d406ccb72954bef75b839f68a2",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      218,
+      527,
+      354,
+      581
+    ],
+    "crop_bbox": [
+      218,
+      527,
+      354,
+      581
+    ],
+    "text": "x + 1",
+    "order": 18,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0019",
+    "image": "crops/hf-0160-0019.png",
+    "crop_sha256": "4034dc27f1f6e8e49a58ad8cfcbcb41b168588e9fba36f6e7e7c9f6345546f2a",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      538,
+      481,
+      581,
+      534
+    ],
+    "crop_bbox": [
+      538,
+      481,
+      581,
+      534
+    ],
+    "text": "F",
+    "order": 19,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0020",
+    "image": "crops/hf-0160-0020.png",
+    "crop_sha256": "467b3a37285303e04cca6cd424bea5b3db158e616774c302e5cd3c76185a5560",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      701,
+      489,
+      842,
+      560
+    ],
+    "crop_bbox": [
+      701,
+      489,
+      842,
+      560
+    ],
+    "text": "(F,T)",
+    "order": 20,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0021",
+    "image": "crops/hf-0160-0021.png",
+    "crop_sha256": "b06b09e3273413d4dff8fa7adaa85b6a08e279129592a5ade4c9c9bc65f88d27",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1089,
+      454,
+      1254,
+      520
+    ],
+    "crop_bbox": [
+      1089,
+      454,
+      1254,
+      520
+    ],
+    "text": "TC#2",
+    "order": 21,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0022",
+    "image": "crops/hf-0160-0022.png",
+    "crop_sha256": "2dfb941dbddca2cd84682f8b91046afca4a783a4eb60ec7311bd765b96b5f28f",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1303,
+      460,
+      1335,
+      525
+    ],
+    "crop_bbox": [
+      1303,
+      460,
+      1335,
+      525
+    ],
+    "text": "1",
+    "order": 22,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0023",
+    "image": "crops/hf-0160-0023.png",
+    "crop_sha256": "4285a3bb3f472a72efb436e1af434cec6588500fe710c73ff6bfe9238a47ff72",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1427,
+      466,
+      1486,
+      543
+    ],
+    "crop_bbox": [
+      1427,
+      466,
+      1486,
+      543
+    ],
+    "text": "0",
+    "order": 23,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0024",
+    "image": "crops/hf-0160-0024.png",
+    "crop_sha256": "34bd271139a7d3bd6d2ce97a608eb73a6e0aac9065ebc3deef6b9a3ea6b37189",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1564,
+      460,
+      1618,
+      537
+    ],
+    "crop_bbox": [
+      1564,
+      460,
+      1618,
+      537
+    ],
+    "text": "0",
+    "order": 24,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0025",
+    "image": "crops/hf-0160-0025.png",
+    "crop_sha256": "13272ccdcf73fecb2b24481ebac9ce8c5180094892cf24469e450266f7578e40",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1754,
+      478,
+      1876,
+      540
+    ],
+    "crop_bbox": [
+      1754,
+      478,
+      1876,
+      540
+    ],
+    "text": "T,F",
+    "order": 25,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0026",
+    "image": "crops/hf-0160-0026.png",
+    "crop_sha256": "46a286510c90b0466844b18616e8f82daf0016fa62e9510404f26ab1bc5c41a8",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2126,
+      498,
+      2280,
+      557
+    ],
+    "crop_bbox": [
+      2126,
+      498,
+      2280,
+      557
+    ],
+    "text": "F,T",
+    "order": 26,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0027",
+    "image": "crops/hf-0160-0027.png",
+    "crop_sha256": "fa5ab5b0c288fc17b4780d7ef0becdef7374bab921fa813bf11790950db1478e",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      701,
+      565,
+      847,
+      639
+    ],
+    "crop_bbox": [
+      701,
+      565,
+      847,
+      639
+    ],
+    "text": "(F,F)",
+    "order": 27,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0028",
+    "image": "crops/hf-0160-0028.png",
+    "crop_sha256": "9c07e42c7bf4c1987e5b0b36887b7b7ffab66ff30d3d0b524e2224d2e0b22338",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1089,
+      582,
+      1243,
+      651
+    ],
+    "crop_bbox": [
+      1089,
+      582,
+      1243,
+      651
+    ],
+    "text": "TC#3",
+    "order": 28,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0029",
+    "image": "crops/hf-0160-0029.png",
+    "crop_sha256": "74054ab55b3134a760ecf1494327bdae708f193ee19d138c64a1b9d36111dd6c",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1295,
+      597,
+      1349,
+      660
+    ],
+    "crop_bbox": [
+      1295,
+      597,
+      1349,
+      660
+    ],
+    "text": "0",
+    "order": 29,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0030",
+    "image": "crops/hf-0160-0030.png",
+    "crop_sha256": "e01621c650f4842df3ddf3f118958fde40f806fb2ca8de35f32cb934202daef0",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1435,
+      586,
+      1473,
+      657
+    ],
+    "crop_bbox": [
+      1435,
+      586,
+      1473,
+      657
+    ],
+    "text": "1",
+    "order": 30,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0031",
+    "image": "crops/hf-0160-0031.png",
+    "crop_sha256": "81ceeec6850cdf78bbdb94c69afb900fa4b6c45500f4686c9c270ed71389f0f9",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1572,
+      580,
+      1610,
+      657
+    ],
+    "crop_bbox": [
+      1572,
+      580,
+      1610,
+      657
+    ],
+    "text": "1",
+    "order": 31,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0032",
+    "image": "crops/hf-0160-0032.png",
+    "crop_sha256": "a6fc9537cab594a5cee91eb8a7ee382b73d8d71a6eb0d0c5664a1583f8a38fff",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1748,
+      580,
+      1895,
+      651
+    ],
+    "crop_bbox": [
+      1748,
+      580,
+      1895,
+      651
+    ],
+    "text": "F,T",
+    "order": 32,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0033",
+    "image": "crops/hf-0160-0033.png",
+    "crop_sha256": "e97fda09290b4b38a662a257afca3ebee78bd8782fd9210b17d53d72610c9cdd",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2120,
+      594,
+      2285,
+      660
+    ],
+    "crop_bbox": [
+      2120,
+      594,
+      2285,
+      660
+    ],
+    "text": "T,F",
+    "order": 33,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0034",
+    "image": "crops/hf-0160-0034.png",
+    "crop_sha256": "e2e29ab7f63862c9a0ce94f7adf6199822acda75671ffe7813e698f56501c28b",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      131,
+      714,
+      436,
+      764
+    ],
+    "crop_bbox": [
+      131,
+      714,
+      436,
+      764
+    ],
+    "text": "C>0 or a>0",
+    "order": 34,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0036",
+    "image": "crops/hf-0160-0036.png",
+    "crop_sha256": "3b2344b082496546204b33133fdc05ed241a5f1ad0b6627cc83d3843551e7dff",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      662,
+      699,
+      755,
+      747
+    ],
+    "crop_bbox": [
+      662,
+      699,
+      755,
+      747
+    ],
+    "text": "4개",
+    "order": 36,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0037",
+    "image": "crops/hf-0160-0037.png",
+    "crop_sha256": "04b868560bae1938ed79b445a610d7ae22ad11657464930aff4fa583205bf792",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1081,
+      737,
+      1217,
+      799
+    ],
+    "crop_bbox": [
+      1081,
+      737,
+      1217,
+      799
+    ],
+    "text": "TC#4",
+    "order": 37,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0038",
+    "image": "crops/hf-0160-0038.png",
+    "crop_sha256": "c50538e9c5c317dc5922d88d4a8e3da7e4a884cac76d10fcaed7cd0fbcaf90f0",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1289,
+      737,
+      1349,
+      799
+    ],
+    "crop_bbox": [
+      1289,
+      737,
+      1349,
+      799
+    ],
+    "text": "0,",
+    "order": 38,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0039",
+    "image": "crops/hf-0160-0039.png",
+    "crop_sha256": "8dff4898733e71eccd69076d993af686471b819f707a690db559d1bf9fc0806b",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1427,
+      717,
+      1480,
+      770
+    ],
+    "crop_bbox": [
+      1427,
+      717,
+      1480,
+      770
+    ],
+    "text": "0",
+    "order": 39,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0040",
+    "image": "crops/hf-0160-0040.png",
+    "crop_sha256": "c3db0c15b3f74c68a35ee7a15d6618bb480560394195e476955b62428eb26312",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1545,
+      705,
+      1599,
+      773
+    ],
+    "crop_bbox": [
+      1545,
+      705,
+      1599,
+      773
+    ],
+    "text": "0",
+    "order": 40,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0041",
+    "image": "crops/hf-0160-0041.png",
+    "crop_sha256": "f3126ddddb5ab79ae1a6ffb3e24db7e7a3c900e6aadbd0d7431a5d23ab663800",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1756,
+      737,
+      1876,
+      802
+    ],
+    "crop_bbox": [
+      1756,
+      737,
+      1876,
+      802
+    ],
+    "text": "F,F",
+    "order": 41,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0042",
+    "image": "crops/hf-0160-0042.png",
+    "crop_sha256": "a00b013fc6eb59b9e84490c1fd075737626d9e0be255426dd62c4cc107555fbb",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2131,
+      726,
+      2277,
+      794
+    ],
+    "crop_bbox": [
+      2131,
+      726,
+      2277,
+      794
+    ],
+    "text": "F,F",
+    "order": 42,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0043",
+    "image": "crops/hf-0160-0043.png",
+    "crop_sha256": "b8ea6a12400cf8a8ba1a5f9f339af474a8dc9d30f1d158f0e2f59a0b44990369",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      656,
+      775,
+      826,
+      855
+    ],
+    "crop_bbox": [
+      656,
+      775,
+      826,
+      855
+    ],
+    "text": "(T,T)",
+    "order": 43,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0044",
+    "image": "crops/hf-0160-0044.png",
+    "crop_sha256": "6f32e5b3fdf969c31d4c867a2635a829ea6db296bb1c281fa5bbe2434173ce87",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      234,
+      930,
+      338,
+      977
+    ],
+    "crop_bbox": [
+      234,
+      930,
+      338,
+      977
+    ],
+    "text": "x+2",
+    "order": 44,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0045",
+    "image": "crops/hf-0160-0045.png",
+    "crop_sha256": "600846f3e820ddf7902990bb4a67915905610ef381954a4bbefbd1357de985ef",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      495,
+      886,
+      539,
+      945
+    ],
+    "crop_bbox": [
+      495,
+      886,
+      539,
+      945
+    ],
+    "text": "F",
+    "order": 45,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0046",
+    "image": "crops/hf-0160-0046.png",
+    "crop_sha256": "99bb6e3f1f6637fa7cac30fc341d7c00c9385615a163f44b65790dea6717a237",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      672,
+      868,
+      816,
+      942
+    ],
+    "crop_bbox": [
+      672,
+      868,
+      816,
+      942
+    ],
+    "text": "(T,F)",
+    "order": 46,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0047",
+    "image": "crops/hf-0160-0047.png",
+    "crop_sha256": "ef703c701a9a764825611f95bfb372d5d2be3e5db3772be383ef2b25a7654933",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      662,
+      956,
+      834,
+      1033
+    ],
+    "crop_bbox": [
+      662,
+      956,
+      834,
+      1033
+    ],
+    "text": "(F,T)",
+    "order": 47,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0048",
+    "image": "crops/hf-0160-0048.png",
+    "crop_sha256": "97a192f3b6f1886d7a53a7f42db08ec9a73171651970896e260fef8c5a79cae3",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      218,
+      1070,
+      365,
+      1120
+    ],
+    "crop_bbox": [
+      218,
+      1070,
+      365,
+      1120
+    ],
+    "text": "return",
+    "order": 48,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0049",
+    "image": "crops/hf-0160-0049.png",
+    "crop_sha256": "d159200a73cda7cc991e285139c94ea441a7dda3444cce4cbb69a575e49ebc89",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      680,
+      1043,
+      834,
+      1123
+    ],
+    "crop_bbox": [
+      680,
+      1043,
+      834,
+      1123
+    ],
+    "text": "(F,F)",
+    "order": 49,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0050",
+    "image": "crops/hf-0160-0050.png",
+    "crop_sha256": "9fe9f5e23cc75e4c8d04c755ce6cb54f65efd918737f7b3e4479f02b721a48c5",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      116,
+      1367,
+      328,
+      1424
+    ],
+    "crop_bbox": [
+      116,
+      1367,
+      328,
+      1424
+    ],
+    "text": "result = 0",
+    "order": 50,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0052",
+    "image": "crops/hf-0160-0052.png",
+    "crop_sha256": "e887c33c62b083c9c685a07d1dd7bc5af11838f57d3b038692ea034e23a1c866",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      688,
+      1472,
+      763,
+      1520
+    ],
+    "crop_bbox": [
+      688,
+      1472,
+      763,
+      1520
+    ],
+    "text": "8개",
+    "order": 52,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0053",
+    "image": "crops/hf-0160-0053.png",
+    "crop_sha256": "8976ebccf90368b7b9ab06ce561ddf1614c890d98fd5f0f2cad8b884b45ad514",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      36,
+      1525,
+      425,
+      1604
+    ],
+    "crop_bbox": [
+      36,
+      1525,
+      425,
+      1604
+    ],
+    "text": "( x > 0 ) and ( y > 0 )",
+    "order": 53,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0054",
+    "image": "crops/hf-0160-0054.png",
+    "crop_sha256": "8e85aed82b3ce4c3c226d6a1ace84fc832ee7f8a7589f1bbab3e516293808ff5",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      213,
+      1627,
+      267,
+      1663
+    ],
+    "crop_bbox": [
+      213,
+      1627,
+      267,
+      1663
+    ],
+    "text": "or",
+    "order": 54,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0055",
+    "image": "crops/hf-0160-0055.png",
+    "crop_sha256": "1d85180b92e483c5b714b296cb1714bfd5d182506ca8d963fcaf2d66902864dd",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      168,
+      1700,
+      317,
+      1747
+    ],
+    "crop_bbox": [
+      168,
+      1700,
+      317,
+      1747
+    ],
+    "text": "z > 0",
+    "order": 55,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0056",
+    "image": "crops/hf-0160-0056.png",
+    "crop_sha256": "ecfe1328e91e37986bc1fe05a59f7c396c6b03502c8b87969558a7b435a12552",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      622,
+      1700,
+      855,
+      1779
+    ],
+    "crop_bbox": [
+      622,
+      1700,
+      855,
+      1779
+    ],
+    "text": "FFT FFF",
+    "order": 56,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0057",
+    "image": "crops/hf-0160-0057.png",
+    "crop_sha256": "d96602f953b4658cba7fe7d273d1b2696f2a41ddd45d99e3950ae19718543862",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1136,
+      1705,
+      1274,
+      1771
+    ],
+    "crop_bbox": [
+      1136,
+      1705,
+      1274,
+      1771
+    ],
+    "text": "TC#1",
+    "order": 57,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0058",
+    "image": "crops/hf-0160-0058.png",
+    "crop_sha256": "d805310d1382a7fb0c83e6af29f84525924156c314fcf73d71bb105869bbc5ec",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1130,
+      1796,
+      1293,
+      1874
+    ],
+    "crop_bbox": [
+      1130,
+      1796,
+      1293,
+      1874
+    ],
+    "text": "TC#2",
+    "order": 58,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0060",
+    "image": "crops/hf-0160-0059.png",
+    "crop_sha256": "69e0b3e0739efb0282aa608d03c1a03231c043e9a72c09b3b51eeff5f5aeac08",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1321,
+      1606,
+      1383,
+      1668
+    ],
+    "crop_bbox": [
+      1321,
+      1606,
+      1383,
+      1668
+    ],
+    "text": "x",
+    "order": 59,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0061",
+    "image": "crops/hf-0160-0060.png",
+    "crop_sha256": "9d73da67ac7903ea6e64fe060d62bc4e5d1dd4d5f814ad9149a700cc510cd955",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1328,
+      1697,
+      1393,
+      1756
+    ],
+    "crop_bbox": [
+      1328,
+      1697,
+      1393,
+      1756
+    ],
+    "text": "1",
+    "order": 60,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0062",
+    "image": "crops/hf-0160-0061.png",
+    "crop_sha256": "363ae5c6b7ee6e48ac419d2cd44ef8ebaabaae0d4ca18c6f7ffb556317fb06ab",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1440,
+      1606,
+      1488,
+      1668
+    ],
+    "crop_bbox": [
+      1440,
+      1606,
+      1488,
+      1668
+    ],
+    "text": "y",
+    "order": 61,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0063",
+    "image": "crops/hf-0160-0062.png",
+    "crop_sha256": "a471ffab975fac5e32a61f4cb660bb828253d9206bc094a2e15b1caf9125153b",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1450,
+      1696,
+      1502,
+      1756
+    ],
+    "crop_bbox": [
+      1450,
+      1696,
+      1502,
+      1756
+    ],
+    "text": "1",
+    "order": 62,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0064",
+    "image": "crops/hf-0160-0063.png",
+    "crop_sha256": "55bb0dbe93938546ac8d7a16fdf905a196bd956097958077be1e146069712a1c",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1545,
+      1600,
+      1599,
+      1668
+    ],
+    "crop_bbox": [
+      1545,
+      1600,
+      1599,
+      1668
+    ],
+    "text": "2",
+    "order": 63,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0065",
+    "image": "crops/hf-0160-0064.png",
+    "crop_sha256": "2165ce4bc4e491392669f2d98a1e8a51c34d1b6f252b41614f67c260005eb388",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1559,
+      1708,
+      1591,
+      1762
+    ],
+    "crop_bbox": [
+      1559,
+      1708,
+      1591,
+      1762
+    ],
+    "text": "1",
+    "order": 64,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0066",
+    "image": "crops/hf-0160-0065.png",
+    "crop_sha256": "852dc0b5231aa5394919b0f83cdd22a516a219bb4dcc83325b7b79ba576121ca",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1677,
+      1691,
+      1802,
+      1759
+    ],
+    "crop_bbox": [
+      1677,
+      1691,
+      1802,
+      1759
+    ],
+    "text": "TTT",
+    "order": 65,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0067",
+    "image": "crops/hf-0160-0066.png",
+    "crop_sha256": "0f07efda006c6e0b5cc4de5d89f624de2dfa04ecd5e9b122102ca678f00a833c",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1685,
+      1577,
+      1812,
+      1657
+    ],
+    "crop_bbox": [
+      1685,
+      1577,
+      1812,
+      1657
+    ],
+    "text": "if 1",
+    "order": 66,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0069",
+    "image": "crops/hf-0160-0067.png",
+    "crop_sha256": "54c769e85048a8a668a93978f22df82753e18f7cd984325376545764864e7f67",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2073,
+      1683,
+      2191,
+      1759
+    ],
+    "crop_bbox": [
+      2073,
+      1683,
+      2191,
+      1759
+    ],
+    "text": "FT",
+    "order": 67,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0070",
+    "image": "crops/hf-0160-0068.png",
+    "crop_sha256": "abeec4860111438f8ae31e6434d5173df0244afa4a2921544dc8a5d4fdf25194",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2066,
+      1584,
+      2194,
+      1651
+    ],
+    "crop_bbox": [
+      2066,
+      1584,
+      2194,
+      1651
+    ],
+    "text": "if 2",
+    "order": 68,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0072",
+    "image": "crops/hf-0160-0069.png",
+    "crop_sha256": "78a2032e2f5a6608a9e26187b60055f4101b8666ac949e7bec7dd6072d61ac23",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1366,
+      1831,
+      1407,
+      1896
+    ],
+    "crop_bbox": [
+      1366,
+      1831,
+      1407,
+      1896
+    ],
+    "text": "6",
+    "order": 69,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0073",
+    "image": "crops/hf-0160-0070.png",
+    "crop_sha256": "6197315d56235ac8ad9f5b6ffa786ba59ad9b28629a3d808e66495d72e401c5b",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1458,
+      1822,
+      1495,
+      1869
+    ],
+    "crop_bbox": [
+      1458,
+      1822,
+      1495,
+      1869
+    ],
+    "text": "1",
+    "order": 70,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0074",
+    "image": "crops/hf-0160-0071.png",
+    "crop_sha256": "5c511a74a950f657660f923d41ce4431e8ffaee59f565581c2a3f113cf196ccd",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1566,
+      1816,
+      1610,
+      1864
+    ],
+    "crop_bbox": [
+      1566,
+      1816,
+      1610,
+      1864
+    ],
+    "text": "0",
+    "order": 71,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0075",
+    "image": "crops/hf-0160-0072.png",
+    "crop_sha256": "076552927c0b1e8c3b3103faf1e757709e792ef6ca70f06154ee428977cf1dff",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1696,
+      1807,
+      1831,
+      1870
+    ],
+    "crop_bbox": [
+      1696,
+      1807,
+      1831,
+      1870
+    ],
+    "text": "TTF",
+    "order": 72,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0076",
+    "image": "crops/hf-0160-0073.png",
+    "crop_sha256": "491913a7c5f340c8bcb11567d573cef485676ea3df9236e6750f6249a5d0789c",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2078,
+      1785,
+      2211,
+      1864
+    ],
+    "crop_bbox": [
+      2078,
+      1785,
+      2211,
+      1864
+    ],
+    "text": "TT",
+    "order": 73,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0077",
+    "image": "crops/hf-0160-0074.png",
+    "crop_sha256": "2f9a63a1b34ee761c7995889627303cd42195c205f3400d5533c035b700de6e2",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      171,
+      1956,
+      365,
+      2013
+    ],
+    "crop_bbox": [
+      171,
+      1956,
+      365,
+      2013
+    ],
+    "text": "result + 1",
+    "order": 74,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0078",
+    "image": "crops/hf-0160-0075.png",
+    "crop_sha256": "270f4293dcd6206f6e8dc69d520571f7e589fbc038df09ab745f91c3618e316c",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1158,
+      1939,
+      1288,
+      1992
+    ],
+    "crop_bbox": [
+      1158,
+      1939,
+      1288,
+      1992
+    ],
+    "text": "TC#3",
+    "order": 75,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0079",
+    "image": "crops/hf-0160-0076.png",
+    "crop_sha256": "3b6030ef8a92b1a973b3ceb8a88b810b80765e6548e406d51336f7cd3e270da1",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1353,
+      1947,
+      1393,
+      1992
+    ],
+    "crop_bbox": [
+      1353,
+      1947,
+      1393,
+      1992
+    ],
+    "text": "0",
+    "order": 76,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0080",
+    "image": "crops/hf-0160-0077.png",
+    "crop_sha256": "f689c03922ee25316f7c9d4bb4973e3041ad0779d3a81b3a65517eae12b39e31",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1474,
+      1936,
+      1517,
+      1983
+    ],
+    "crop_bbox": [
+      1474,
+      1936,
+      1517,
+      1983
+    ],
+    "text": "0",
+    "order": 77,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0081",
+    "image": "crops/hf-0160-0078.png",
+    "crop_sha256": "a3aa8f0b4bdbfd515295f31011985af4e0b77e54d74de0bc91d1568af72d2412",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1593,
+      1919,
+      1626,
+      1992
+    ],
+    "crop_bbox": [
+      1593,
+      1919,
+      1626,
+      1992
+    ],
+    "text": "1",
+    "order": 78,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0082",
+    "image": "crops/hf-0160-0079.png",
+    "crop_sha256": "ca3c67bc681b09e831a4bd9d46ebda895e0d17c053abf5dee921916ff5f00813",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1685,
+      1919,
+      1854,
+      1992
+    ],
+    "crop_bbox": [
+      1685,
+      1919,
+      1854,
+      1992
+    ],
+    "text": "FFT",
+    "order": 79,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0083",
+    "image": "crops/hf-0160-0080.png",
+    "crop_sha256": "5cb335f3a10d5ae75337fbe257acfc29823466c97686f40fea2f77f31623a951",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2086,
+      1904,
+      2195,
+      1986
+    ],
+    "crop_bbox": [
+      2086,
+      1904,
+      2195,
+      1986
+    ],
+    "text": "FT",
+    "order": 80,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0084",
+    "image": "crops/hf-0160-0081.png",
+    "crop_sha256": "6a6d6dbe766c4523b6efd92610889bcdbfb9a8faeca4474d930b6798d24d9c83",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1150,
+      2073,
+      1290,
+      2135
+    ],
+    "crop_bbox": [
+      1150,
+      2073,
+      1290,
+      2135
+    ],
+    "text": "TC#4",
+    "order": 81,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0085",
+    "image": "crops/hf-0160-0082.png",
+    "crop_sha256": "bfbfb713b64fc21e7af35b21854c4f9f7e65c37952e838525823f256fe74bdc4",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1353,
+      2058,
+      1388,
+      2115
+    ],
+    "crop_bbox": [
+      1353,
+      2058,
+      1388,
+      2115
+    ],
+    "text": "6",
+    "order": 82,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0086",
+    "image": "crops/hf-0160-0083.png",
+    "crop_sha256": "eb83148737fdc02ba070551ed017a94f5e62acb18eb00079cadfa3c0f0385b48",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1487,
+      2058,
+      1528,
+      2103
+    ],
+    "crop_bbox": [
+      1487,
+      2058,
+      1528,
+      2103
+    ],
+    "text": "0",
+    "order": 83,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0087",
+    "image": "crops/hf-0160-0084.png",
+    "crop_sha256": "2fa53385b337f076b7cd3304238cb2ecd67cfccad7d87b2d0cb5987ceb29579b",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1603,
+      2026,
+      1655,
+      2106
+    ],
+    "crop_bbox": [
+      1603,
+      2026,
+      1655,
+      2106
+    ],
+    "text": "3",
+    "order": 84,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0088",
+    "image": "crops/hf-0160-0085.png",
+    "crop_sha256": "f8c0a3e2a9a012737c4e734b080ad124f32d980a04ac0bc2f9362069855b3bf3",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1712,
+      2037,
+      1894,
+      2103
+    ],
+    "crop_bbox": [
+      1712,
+      2037,
+      1894,
+      2103
+    ],
+    "text": "TFT",
+    "order": 85,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0089",
+    "image": "crops/hf-0160-0086.png",
+    "crop_sha256": "e916103cd9940c808fefd0f85fbd7d9e5b017e5d5f5cfa0f4172e68ec27290f0",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2086,
+      2035,
+      2180,
+      2115
+    ],
+    "crop_bbox": [
+      2086,
+      2035,
+      2180,
+      2115
+    ],
+    "text": "TF",
+    "order": 86,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0090",
+    "image": "crops/hf-0160-0087.png",
+    "crop_sha256": "48bd4e69f5cc67b7d119b3385295980f1a980c1f83b0d0e9ec54078f51b9d110",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2358,
+      2029,
+      2573,
+      2085
+    ],
+    "crop_bbox": [
+      2358,
+      2029,
+      2573,
+      2085
+    ],
+    "text": "coverage",
+    "order": 87,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0091",
+    "image": "crops/hf-0160-0088.png",
+    "crop_sha256": "8bd5143b081e96ddd340e855ce572830a0f661d184ab109a5c41ecf00de5adb9",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      113,
+      2204,
+      491,
+      2278
+    ],
+    "crop_bbox": [
+      113,
+      2204,
+      491,
+      2278
+    ],
+    "text": "x > 5 and z < 3",
+    "order": 88,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0092",
+    "image": "crops/hf-0160-0089.png",
+    "crop_sha256": "80fb58edff5997a682ef8f196b64d747aa18aea09ab1a43cfb6b607036b82e1c",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      709,
+      2184,
+      787,
+      2220
+    ],
+    "crop_bbox": [
+      709,
+      2184,
+      787,
+      2220
+    ],
+    "text": "4개",
+    "order": 89,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0093",
+    "image": "crops/hf-0160-0090.png",
+    "crop_sha256": "0d477fea17ffa86ab8d7fe08312d31fa0b9a5d9cb5c7b392742b5eb497d11934",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1147,
+      2184,
+      1290,
+      2252
+    ],
+    "crop_bbox": [
+      1147,
+      2184,
+      1290,
+      2252
+    ],
+    "text": "TC#5",
+    "order": 90,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0094",
+    "image": "crops/hf-0160-0091.png",
+    "crop_sha256": "38a15e4909e9bdef7cdbd247eaa78de3d60a5971757e36dfb4969d223c967bf9",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1371,
+      2175,
+      1401,
+      2231
+    ],
+    "crop_bbox": [
+      1371,
+      2175,
+      1401,
+      2231
+    ],
+    "text": "1",
+    "order": 91,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0095",
+    "image": "crops/hf-0160-0092.png",
+    "crop_sha256": "c6153b0a315ded0f3ebadd447f217929be14ddffb1908c45199046f784553c1b",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1487,
+      2187,
+      1531,
+      2231
+    ],
+    "crop_bbox": [
+      1487,
+      2187,
+      1531,
+      2231
+    ],
+    "text": "0",
+    "order": 92,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0096",
+    "image": "crops/hf-0160-0093.png",
+    "crop_sha256": "e5a03d03e3d36c48c1f8f0f90bd731426388bdbec40508880d34e453b77a8d14",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1603,
+      2175,
+      1649,
+      2225
+    ],
+    "crop_bbox": [
+      1603,
+      2175,
+      1649,
+      2225
+    ],
+    "text": "0",
+    "order": 93,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0097",
+    "image": "crops/hf-0160-0094.png",
+    "crop_sha256": "94dfd727dd856b84c33657ece876bd3ecd156c348fdc368e1c5947430f60da84",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1730,
+      2178,
+      1871,
+      2231
+    ],
+    "crop_bbox": [
+      1730,
+      2178,
+      1871,
+      2231
+    ],
+    "text": "TFF",
+    "order": 94,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0098",
+    "image": "crops/hf-0160-0095.png",
+    "crop_sha256": "eae9241a5f05eae33eaf6c08d00e27de4ae226103de52463183149b0772affd1",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2113,
+      2149,
+      2203,
+      2205
+    ],
+    "crop_bbox": [
+      2113,
+      2149,
+      2203,
+      2205
+    ],
+    "text": "FT",
+    "order": 95,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0099",
+    "image": "crops/hf-0160-0096.png",
+    "crop_sha256": "030d41722efb92cf84a654fa109075c6cf81c2b8cf8812d49a35d66c6df9278d",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1155,
+      2286,
+      1288,
+      2345
+    ],
+    "crop_bbox": [
+      1155,
+      2286,
+      1288,
+      2345
+    ],
+    "text": "TC#6",
+    "order": 96,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0100",
+    "image": "crops/hf-0160-0097.png",
+    "crop_sha256": "14dc498db750087422a4cd0474e81e22e9ff8be6c3acb0532efb34d4e7195794",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1366,
+      2294,
+      1407,
+      2345
+    ],
+    "crop_bbox": [
+      1366,
+      2294,
+      1407,
+      2345
+    ],
+    "text": "0",
+    "order": 97,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0101",
+    "image": "crops/hf-0160-0098.png",
+    "crop_sha256": "33f7430240bf0b2c4cfda3e4268456254b81171d7ead483eb582b88018cf0470",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1501,
+      2289,
+      1531,
+      2345
+    ],
+    "crop_bbox": [
+      1501,
+      2289,
+      1531,
+      2345
+    ],
+    "text": "1",
+    "order": 98,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0102",
+    "image": "crops/hf-0160-0099.png",
+    "crop_sha256": "6e3d4931d7e49f285d5bf3d08fda4d370a48f2eac21fad15efd9010e89c07735",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1603,
+      2264,
+      1669,
+      2351
+    ],
+    "crop_bbox": [
+      1603,
+      2264,
+      1669,
+      2351
+    ],
+    "text": "4",
+    "order": 99,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0103",
+    "image": "crops/hf-0160-0100.png",
+    "crop_sha256": "8459bbb9d111eb2546a0e4bd752f5cae72d06fa27108fca28a9016430ed951c1",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1735,
+      2259,
+      1914,
+      2345
+    ],
+    "crop_bbox": [
+      1735,
+      2259,
+      1914,
+      2345
+    ],
+    "text": "FTT",
+    "order": 100,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0104",
+    "image": "crops/hf-0160-0101.png",
+    "crop_sha256": "1b71fe4f985da82ba956a610df0b7e519915b7cdcbc932d00982aa4d88b77788",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2126,
+      2271,
+      2240,
+      2348
+    ],
+    "crop_bbox": [
+      2126,
+      2271,
+      2240,
+      2348
+    ],
+    "text": "FF",
+    "order": 101,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0105",
+    "image": "crops/hf-0160-0102.png",
+    "crop_sha256": "e6af2e6860cdb6f693d16c50134fdec3e0a13455cc59b9b81931c781228c2a7a",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      337,
+      2356,
+      386,
+      2415
+    ],
+    "crop_bbox": [
+      337,
+      2356,
+      386,
+      2415
+    ],
+    "text": "T",
+    "order": 102,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0106",
+    "image": "crops/hf-0160-0103.png",
+    "crop_sha256": "214c4333b243488a11acc117971c362dc02657e46107921e5ba4b0b23c77a442",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      561,
+      2379,
+      618,
+      2462
+    ],
+    "crop_bbox": [
+      561,
+      2379,
+      618,
+      2462
+    ],
+    "text": "F",
+    "order": 103,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0107",
+    "image": "crops/hf-0160-0104.png",
+    "crop_sha256": "290a9cfee2cb0bced2d50d04598f85d58f6bee28f75a912b8e9947e1812ca1f1",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1163,
+      2394,
+      1288,
+      2465
+    ],
+    "crop_bbox": [
+      1163,
+      2394,
+      1288,
+      2465
+    ],
+    "text": "TC#7",
+    "order": 104,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0108",
+    "image": "crops/hf-0160-0105.png",
+    "crop_sha256": "124c7b75b5b29689122596063e8102bfce08c8b083d11b3d3209193690f157ba",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1371,
+      2394,
+      1412,
+      2441
+    ],
+    "crop_bbox": [
+      1371,
+      2394,
+      1412,
+      2441
+    ],
+    "text": "0",
+    "order": 105,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0109",
+    "image": "crops/hf-0160-0106.png",
+    "crop_sha256": "2d3b5972d05e9bfb4d2601813cd0bc4ebb59f43d20954817dc0bcbfec6b95d3b",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1503,
+      2388,
+      1533,
+      2447
+    ],
+    "crop_bbox": [
+      1503,
+      2388,
+      1533,
+      2447
+    ],
+    "text": "1",
+    "order": 106,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0110",
+    "image": "crops/hf-0160-0107.png",
+    "crop_sha256": "80ec09aebf7a1d36def21a3e6eae61f3672f220b653409d84485e075ff9ae04d",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1619,
+      2394,
+      1660,
+      2441
+    ],
+    "crop_bbox": [
+      1619,
+      2394,
+      1660,
+      2441
+    ],
+    "text": "0",
+    "order": 107,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0111",
+    "image": "crops/hf-0160-0108.png",
+    "crop_sha256": "da44ebb694c1d2940e12f31e51b88fb84f65dcf85df5a59dee36a55680bb0e9d",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1748,
+      2399,
+      1881,
+      2459
+    ],
+    "crop_bbox": [
+      1748,
+      2399,
+      1881,
+      2459
+    ],
+    "text": "FTF",
+    "order": 108,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0112",
+    "image": "crops/hf-0160-0109.png",
+    "crop_sha256": "d5e96537715f9b5c78f1c37b9211d212cd57eb2f4dbdf2bc88468f9d5a945d12",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2136,
+      2390,
+      2232,
+      2462
+    ],
+    "crop_bbox": [
+      2136,
+      2390,
+      2232,
+      2462
+    ],
+    "text": "FT",
+    "order": 109,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0113",
+    "image": "crops/hf-0160-0110.png",
+    "crop_sha256": "cad702a4023ee3df58bf355235f9383796fd800ec9a8c20f2a64da0493063cfd",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      179,
+      2478,
+      417,
+      2537
+    ],
+    "crop_bbox": [
+      179,
+      2478,
+      417,
+      2537
+    ],
+    "text": "result + 2",
+    "order": 110,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0114",
+    "image": "crops/hf-0160-0111.png",
+    "crop_sha256": "f8a5aeba0fb858883b6eef99c6e69c3d89ad88e8c7193679c81cbcbaa497a712",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1163,
+      2507,
+      1301,
+      2572
+    ],
+    "crop_bbox": [
+      1163,
+      2507,
+      1301,
+      2572
+    ],
+    "text": "TC#8",
+    "order": 111,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0115",
+    "image": "crops/hf-0160-0112.png",
+    "crop_sha256": "a507a4041e927211dd46d0bfee7788cbfeceeefb3bb1311f2aea6c1d6b69b329",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1392,
+      2504,
+      1436,
+      2552
+    ],
+    "crop_bbox": [
+      1392,
+      2504,
+      1436,
+      2552
+    ],
+    "text": "0",
+    "order": 112,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0116",
+    "image": "crops/hf-0160-0113.png",
+    "crop_sha256": "7dbcadb2f3d84618791670d6b80bedd6f22822708fd60d2f55e149316a5c821e",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1519,
+      2501,
+      1565,
+      2552
+    ],
+    "crop_bbox": [
+      1519,
+      2501,
+      1565,
+      2552
+    ],
+    "text": "0",
+    "order": 113,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0117",
+    "image": "crops/hf-0160-0114.png",
+    "crop_sha256": "b687884f7f60df9e53a51b4114cdf977f798e88526b6415854c95731f1c1cb34",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1617,
+      2496,
+      1665,
+      2552
+    ],
+    "crop_bbox": [
+      1617,
+      2496,
+      1665,
+      2552
+    ],
+    "text": "0",
+    "order": 114,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0118",
+    "image": "crops/hf-0160-0115.png",
+    "crop_sha256": "7336dc030eff79698a906eeae6931e77d62013df9065fa4d2fe5373894265677",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      1754,
+      2504,
+      1921,
+      2564
+    ],
+    "crop_bbox": [
+      1754,
+      2504,
+      1921,
+      2564
+    ],
+    "text": "FFF",
+    "order": 115,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0160",
+    "region_id": "hf-0160-line-0119",
+    "image": "crops/hf-0160-0116.png",
+    "crop_sha256": "182abcb26639709c93ee8ef8cf63592f8ebb11eec949241ea7238e9d41013122",
+    "source_sha256": "45b71c475feccc01d15f37f7fcce0942e0ac80ea8a0fd02684a12f5e1031cab3",
+    "bbox": [
+      2136,
+      2499,
+      2233,
+      2569
+    ],
+    "crop_bbox": [
+      2136,
+      2499,
+      2233,
+      2569
+    ],
+    "text": "FT",
+    "order": 116,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "visually confirmed flowcharts and truth tables;114 candidates mostly symbolic/structural; separate-task review"
+  },
+  {
+    "page_id": "hf-0162",
+    "region_id": "hf-0162-line-0026",
+    "image": "crops/hf-0162-0026.png",
+    "crop_sha256": "c585f098affd67aca1e8b2dd41aa6f610a8bdf101b5faeab79e3db392b87f7e6",
+    "source_sha256": "174e96516afe2ef43465988479f43ff990b0e5b2260c90e172309cf4b1c8fa6f",
+    "bbox": [
+      842,
+      1292,
+      1289,
+      1358
+    ],
+    "crop_bbox": [
+      842,
+      1292,
+      1289,
+      1358
+    ],
+    "text": "myTextField_BookAuthor",
+    "order": 26,
+    "type_suggestion": "text",
+    "type_confirmed": null,
+    "split": "train",
+    "flags": [],
+    "hold_reasons": [],
+    "writer_independence_verified": false,
+    "round3_hold_reason": "crop_edge_transcription_uncertain"
+  }
+]

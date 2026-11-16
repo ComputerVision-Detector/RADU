@@ -1,0 +1,146 @@
+[
+  {
+    "epoch": 1,
+    "step": 147,
+    "loss": 3.5537664679442944,
+    "validation": {
+      "samples": 273,
+      "substitutions": 1932,
+      "deletions": 695,
+      "insertions": 342,
+      "errors": 2969,
+      "reference_units": 6359,
+      "cer_micro": 0.46689731089793995,
+      "cer_no_space_micro": 0.5094924447888415,
+      "exact_match_rate": 0.003663003663003663,
+      "empty_reference_insertions": 0
+    },
+    "seconds": 8.233176433015615
+  },
+  {
+    "epoch": 2,
+    "step": 294,
+    "loss": 2.5527219618258834,
+    "validation": {
+      "samples": 273,
+      "substitutions": 1670,
+      "deletions": 811,
+      "insertions": 183,
+      "errors": 2664,
+      "reference_units": 6359,
+      "cer_micro": 0.41893379462179586,
+      "cer_no_space_micro": 0.4575745834947695,
+      "exact_match_rate": 0.003663003663003663,
+      "empty_reference_insertions": 0
+    },
+    "seconds": 8.367977597750723
+  },
+  {
+    "epoch": 3,
+    "step": 441,
+    "loss": 2.2529778748142477,
+    "validation": {
+      "samples": 273,
+      "substitutions": 1666,
+      "deletions": 670,
+      "insertions": 221,
+      "errors": 2557,
+      "reference_units": 6359,
+      "cer_micro": 0.40210724956754207,
+      "cer_no_space_micro": 0.4426578845408756,
+      "exact_match_rate": 0.003663003663003663,
+      "empty_reference_insertions": 0
+    },
+    "seconds": 7.924585960805416
+  },
+  {
+    "epoch": 4,
+    "step": 588,
+    "loss": 2.0946111322260226,
+    "validation": {
+      "samples": 273,
+      "substitutions": 1669,
+      "deletions": 724,
+      "insertions": 176,
+      "errors": 2569,
+      "reference_units": 6359,
+      "cer_micro": 0.4039943387325051,
+      "cer_no_space_micro": 0.44711352189074,
+      "exact_match_rate": 0.01098901098901099,
+      "empty_reference_insertions": 0
+    },
+    "seconds": 7.873116961214691
+  },
+  {
+    "epoch": 5,
+    "step": 735,
+    "loss": 1.980043395035932,
+    "validation": {
+      "samples": 273,
+      "substitutions": 1575,
+      "deletions": 757,
+      "insertions": 157,
+      "errors": 2489,
+      "reference_units": 6359,
+      "cer_micro": 0.39141374429941816,
+      "cer_no_space_micro": 0.4345215032932972,
+      "exact_match_rate": 0.003663003663003663,
+      "empty_reference_insertions": 0
+    },
+    "seconds": 7.906780447810888
+  },
+  {
+    "epoch": 6,
+    "step": 882,
+    "loss": 1.920260196640378,
+    "validation": {
+      "samples": 273,
+      "substitutions": 1431,
+      "deletions": 658,
+      "insertions": 145,
+      "errors": 2234,
+      "reference_units": 6359,
+      "cer_micro": 0.35131309954395346,
+      "cer_no_space_micro": 0.38996512979465325,
+      "exact_match_rate": 0.040293040293040296,
+      "empty_reference_insertions": 0
+    },
+    "seconds": 7.889412345830351
+  },
+  {
+    "epoch": 7,
+    "step": 1029,
+    "loss": 1.8269255023424318,
+    "validation": {
+      "samples": 273,
+      "substitutions": 1457,
+      "deletions": 650,
+      "insertions": 129,
+      "errors": 2236,
+      "reference_units": 6359,
+      "cer_micro": 0.35162761440478063,
+      "cer_no_space_micro": 0.3913211933359163,
+      "exact_match_rate": 0.014652014652014652,
+      "empty_reference_insertions": 0
+    },
+    "seconds": 7.88289261283353
+  },
+  {
+    "epoch": 8,
+    "step": 1176,
+    "loss": 1.7392769334267597,
+    "validation": {
+      "samples": 273,
+      "substitutions": 1447,
+      "deletions": 570,
+      "insertions": 153,
+      "errors": 2170,
+      "reference_units": 6359,
+      "cer_micro": 0.3412486239974839,
+      "cer_no_space_micro": 0.3791166214645486,
+      "exact_match_rate": 0.02197802197802198,
+      "empty_reference_insertions": 0
+    },
+    "seconds": 7.626558858901262
+  }
+]

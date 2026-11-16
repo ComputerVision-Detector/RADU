@@ -1,0 +1,17 @@
+# Fixed OCR text/math boundary experiment
+
+Goal: execute next approved priority: original-image GT geometry review and paired image-only crop boundary experiment. No training, new models, thresholds sweep, text correction, operational or remote mutation.
+Architecture: first freeze one image-only ink bounding method on validation: grayscale<160, remove long thin ruling-line mask only for bbox estimation, 3px margin, original unchanged pixels, fallback when no ink. Review validation examples before lock. Actual selected LoRA paired baseline/trim inference on fixed244validation crops with identical row grouping and batch4. Select only by validation CER (ties keep baseline), no retuning. Apply declared same candidate to138 diagnosticM pairs for diagnostic measurement regardless selection, clearly mark if unselected.
+GT audit: freeze priorGTv3 and raw500 bank. Generate boundary candidates ONLY for validGT linked to current mixed predictions. AI visually review every candidate original/old/new crop; accept only clearly preserved text, otherwise hold/reject. SaveGTv4 with bbox-only accepted edits, no text/order/include changes. Score SAME500strings underGTv3/v4, same ignore rule. This is evaluation-geometry sensitivity, not a model/deployable gain. Human independent review remains unfulfilled and must stay explicit.
+Files: src/evaluation/ocr_boundary.py, configs/ocr_boundary.json, tests/test_ocr_boundary.py; new data/experiments/ocr_page_audit_boundary_v1, docs/OCR_BOUNDARY_RESULTS.md.
+
+- [x] Tests first: bbox shrink stays inside source, punctuation retained, ruling mask doesn't edit image, blank/faint fallback, paired ID/char denominators, geometry-only changes and invalid evidence rejection, input/adapter/policy drift and no overwrite.
+- [x] Lock inputs/proposal method and validation244; create/view validation crops and mixed GT review material without recognition-based filtering.
+- [x] Actual paired244crop validation inference; lock baseline/trim selection by CER only. No hyperparameter search.
+- [x] Review all mixedGT geometry candidates on original pixels; preserve uncertainty and create provisionalGTv4, re-score frozen500bank with prior policy. All changes documented; no human certification.
+- [x] Actual paired138diagnosticM baseline/trim inference, compare denominators/errors, page bootstrap and representative visual cases. No re-selection from diagnostic result.
+- [x] Review code, tests, manifests/sources/repro commands, human geometry review queue, final honest report including failure and global test limits.
+
+Existing selectedadapter SHA ab1bfcfba5c0711ebfc82e83432eca13b47fbb48ca0800d9e7b4d590e15421e5, BF16 SDPA OCR: batch4 greedy128 unchanged. Existing artefacts and running jobs preserved. C0/C1 batch row membership identical within each paired experiment; do not mix old cached strings into crop metrics.
+
+Actual outcome: candidate failed validation729→769/5613; baseline locked before diagnostic. Declared diagnostic383→388/2501 confirmed no additional improvement. Dark-background clipping of2validation rows documented, no tuning/retry or post hoc deletion. GT23reviewed byAI,11bbox-only revisions on4pages,2proposals held unchanged; same500bank GTgeometryCER25.0084→23.6041 is evaluation sensitivity only.68regression pass; global172/7dependency import errors disclosed. Fresh-path cached replay reproduces metrics. Independent code review found no blockers; provenance caveats retained; human0.

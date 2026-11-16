@@ -1,0 +1,11 @@
+/home/user/Desktop/HybridOCR/.venv/lib/python3.10/site-packages/paddle/utils/cpp_extension/extension_utils.py:718: UserWarning: No ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md
+  warnings.warn(warning_message)
+W1109 22:48:15.771776 112156 gpu_resources.cc:114] Please NOTE: device: 0, GPU Compute Capability: 8.9, Driver API Version: 13.0, Runtime API Version: 12.8
+/home/user/Desktop/HybridOCR/.venv/lib/python3.10/site-packages/paddle/nn/layer/norm.py:818: UserWarning: When training, we now always track global mean and variance.
+  warnings.warn(
+Skipping import of the encryption module.
+{"epoch": 1, "step": 2, "loss": 6.760515213012695, "validation": {"samples": 8, "substitutions": 23, "deletions": 19, "insertions": 2, "errors": 44, "reference_units": 117, "cer_micro": 0.37606837606837606, "cer_no_space_micro": 0.2980769230769231, "exact_match_rate": 0.0, "empty_reference_insertions": 0}, "seconds": 0.24200126342475414}
+{"epoch": 2, "step": 4, "loss": 6.3204710483551025, "validation": {"samples": 8, "substitutions": 24, "deletions": 27, "insertions": 3, "errors": 54, "reference_units": 117, "cer_micro": 0.46153846153846156, "cer_no_space_micro": 0.38461538461538464, "exact_match_rate": 0.0, "empty_reference_insertions": 0}, "seconds": 0.12042579799890518}
+W1109 22:48:17.675351 112156 eager_utils.cc:3441] Paddle static graph(PIR) not support input out tensor for now!!!!!
+I1109 22:48:19.385555 112156 pir_interpreter.cc:1601] New Executor is Running ...
+I1109 22:48:19.510242 112156 pir_interpreter.cc:1625] pir interpreter is running by multi-thread mode ...

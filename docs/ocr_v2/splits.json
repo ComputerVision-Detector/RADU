@@ -1,0 +1,663 @@
+{
+  "seed": 42,
+  "status": "provisional_page_group_pilot",
+  "writer_independence_verified": false,
+  "algorithm": "transitive group union; seeded largest-first weighted allocation 80/10/10",
+  "assignments": {
+    "hf-0017": "train",
+    "hf-0021": "train",
+    "hf-0133": "validation",
+    "hf-0157": "validation",
+    "hf-0052": "test",
+    "hf-0088": "test",
+    "hf-0105": "train",
+    "hf-0112": "train",
+    "hf-0062": "train",
+    "hf-0091": "train",
+    "hf-0121": "train",
+    "hf-0043": "train",
+    "hf-0145": "train",
+    "hf-0086": "train",
+    "hf-0135": "train",
+    "hf-0129": "train",
+    "hf-0138": "train",
+    "hf-0067": "train",
+    "hf-0031": "train",
+    "hf-0125": "train",
+    "hf-0153": "train",
+    "hf-0018": "validation",
+    "hf-0098": "test",
+    "hf-0122": "train",
+    "hf-0000": "train",
+    "hf-0053": "train",
+    "hf-0124": "train",
+    "hf-0039": "train",
+    "hf-0073": "train",
+    "hf-0096": "train",
+    "hf-0002": "train",
+    "hf-0019": "validation",
+    "hf-0077": "test",
+    "hf-0143": "train",
+    "hf-0068": "train",
+    "hf-0159": "train",
+    "hf-0158": "train",
+    "hf-0144": "train",
+    "hf-0113": "train",
+    "hf-0003": "train",
+    "hf-0102": "train",
+    "hf-0055": "validation",
+    "hf-0033": "test",
+    "hf-0076": "train",
+    "hf-0014": "train",
+    "hf-0149": "train",
+    "hf-0054": "train",
+    "hf-0044": "train",
+    "hf-0064": "train",
+    "hf-0099": "train",
+    "hf-0050": "train",
+    "hf-0066": "validation",
+    "hf-0094": "test",
+    "hf-0116": "train",
+    "hf-0065": "train",
+    "hf-0016": "train",
+    "hf-0084": "train",
+    "hf-0070": "train",
+    "hf-0146": "train",
+    "hf-0026": "train",
+    "hf-0079": "train",
+    "hf-0106": "validation",
+    "hf-0013": "test",
+    "hf-0104": "train",
+    "hf-0131": "train",
+    "hf-0141": "train",
+    "hf-0037": "train",
+    "hf-0061": "train",
+    "hf-0093": "train",
+    "hf-0028": "train",
+    "hf-0103": "train",
+    "hf-0075": "validation",
+    "hf-0137": "test",
+    "hf-0004": "train",
+    "hf-0097": "train",
+    "hf-0150": "train",
+    "hf-0042": "train",
+    "hf-0162": "train",
+    "hf-0134": "train",
+    "hf-0101": "train",
+    "hf-0119": "train",
+    "hf-0147": "validation",
+    "hf-0090": "test",
+    "hf-0032": "train",
+    "hf-0140": "train",
+    "hf-0022": "train",
+    "hf-0123": "train",
+    "hf-0009": "train",
+    "hf-0083": "train",
+    "hf-0035": "train",
+    "hf-0130": "train",
+    "hf-0126": "validation",
+    "hf-0048": "test",
+    "hf-0020": "train",
+    "hf-0107": "train",
+    "hf-0082": "train",
+    "hf-0118": "train",
+    "hf-0156": "train",
+    "hf-0115": "train",
+    "hf-0127": "train",
+    "hf-0100": "train",
+    "hf-0114": "validation",
+    "hf-0111": "test",
+    "hf-0030": "train",
+    "hf-0085": "train",
+    "hf-0120": "train",
+    "hf-0151": "train",
+    "hf-0092": "train",
+    "hf-0025": "train",
+    "hf-0074": "train",
+    "hf-0047": "train",
+    "hf-0080": "validation",
+    "hf-0081": "test",
+    "hf-0108": "train",
+    "hf-0038": "train",
+    "hf-0160": "train",
+    "hf-0010": "train",
+    "hf-0128": "train",
+    "hf-0015": "train",
+    "hf-0069": "train",
+    "hf-0059": "train",
+    "hf-0095": "validation",
+    "hf-0005": "test",
+    "hf-0034": "train",
+    "hf-0078": "train",
+    "hf-0045": "train",
+    "hf-0136": "train",
+    "hf-0046": "train",
+    "hf-0012": "train",
+    "hf-0049": "train",
+    "hf-0011": "train",
+    "hf-0155": "validation",
+    "hf-0087": "test",
+    "hf-0148": "train",
+    "hf-0040": "train",
+    "hf-0139": "train",
+    "hf-0089": "train",
+    "hf-0152": "train",
+    "hf-0041": "train",
+    "hf-0001": "train",
+    "hf-0072": "train",
+    "hf-0117": "validation",
+    "hf-0057": "test",
+    "hf-0109": "train",
+    "hf-0154": "train",
+    "hf-0051": "train",
+    "hf-0161": "train",
+    "hf-0132": "train",
+    "hf-0060": "train",
+    "hf-0056": "train",
+    "hf-0024": "train",
+    "hf-0007": "validation",
+    "hf-0008": "test",
+    "hf-0110": "train",
+    "hf-0023": "train",
+    "hf-0142": "train",
+    "hf-0027": "train",
+    "hf-0036": "train",
+    "hf-0058": "train",
+    "hf-0063": "train",
+    "hf-0071": "train",
+    "hf-0006": "validation",
+    "hf-0029": "test"
+  },
+  "components": [
+    [
+      "hf-0062"
+    ],
+    [
+      "hf-0091"
+    ],
+    [
+      "hf-0121"
+    ],
+    [
+      "hf-0043"
+    ],
+    [
+      "hf-0145"
+    ],
+    [
+      "hf-0086"
+    ],
+    [
+      "hf-0135"
+    ],
+    [
+      "hf-0129"
+    ],
+    [
+      "hf-0138"
+    ],
+    [
+      "hf-0067"
+    ],
+    [
+      "hf-0031"
+    ],
+    [
+      "hf-0125"
+    ],
+    [
+      "hf-0153"
+    ],
+    [
+      "hf-0018"
+    ],
+    [
+      "hf-0098"
+    ],
+    [
+      "hf-0122"
+    ],
+    [
+      "hf-0000"
+    ],
+    [
+      "hf-0017",
+      "hf-0021"
+    ],
+    [
+      "hf-0053"
+    ],
+    [
+      "hf-0124"
+    ],
+    [
+      "hf-0039"
+    ],
+    [
+      "hf-0073"
+    ],
+    [
+      "hf-0133",
+      "hf-0157"
+    ],
+    [
+      "hf-0096"
+    ],
+    [
+      "hf-0002"
+    ],
+    [
+      "hf-0019"
+    ],
+    [
+      "hf-0077"
+    ],
+    [
+      "hf-0143"
+    ],
+    [
+      "hf-0068"
+    ],
+    [
+      "hf-0159"
+    ],
+    [
+      "hf-0158"
+    ],
+    [
+      "hf-0144"
+    ],
+    [
+      "hf-0113"
+    ],
+    [
+      "hf-0003"
+    ],
+    [
+      "hf-0102"
+    ],
+    [
+      "hf-0055"
+    ],
+    [
+      "hf-0033"
+    ],
+    [
+      "hf-0076"
+    ],
+    [
+      "hf-0014"
+    ],
+    [
+      "hf-0149"
+    ],
+    [
+      "hf-0054"
+    ],
+    [
+      "hf-0044"
+    ],
+    [
+      "hf-0064"
+    ],
+    [
+      "hf-0099"
+    ],
+    [
+      "hf-0050"
+    ],
+    [
+      "hf-0066"
+    ],
+    [
+      "hf-0094"
+    ],
+    [
+      "hf-0116"
+    ],
+    [
+      "hf-0065"
+    ],
+    [
+      "hf-0016"
+    ],
+    [
+      "hf-0084"
+    ],
+    [
+      "hf-0070"
+    ],
+    [
+      "hf-0146"
+    ],
+    [
+      "hf-0026"
+    ],
+    [
+      "hf-0079"
+    ],
+    [
+      "hf-0106"
+    ],
+    [
+      "hf-0013"
+    ],
+    [
+      "hf-0104"
+    ],
+    [
+      "hf-0131"
+    ],
+    [
+      "hf-0141"
+    ],
+    [
+      "hf-0037"
+    ],
+    [
+      "hf-0061"
+    ],
+    [
+      "hf-0093"
+    ],
+    [
+      "hf-0028"
+    ],
+    [
+      "hf-0103"
+    ],
+    [
+      "hf-0075"
+    ],
+    [
+      "hf-0052",
+      "hf-0088"
+    ],
+    [
+      "hf-0137"
+    ],
+    [
+      "hf-0004"
+    ],
+    [
+      "hf-0097"
+    ],
+    [
+      "hf-0150"
+    ],
+    [
+      "hf-0042"
+    ],
+    [
+      "hf-0162"
+    ],
+    [
+      "hf-0134"
+    ],
+    [
+      "hf-0101"
+    ],
+    [
+      "hf-0119"
+    ],
+    [
+      "hf-0147"
+    ],
+    [
+      "hf-0090"
+    ],
+    [
+      "hf-0032"
+    ],
+    [
+      "hf-0140"
+    ],
+    [
+      "hf-0022"
+    ],
+    [
+      "hf-0123"
+    ],
+    [
+      "hf-0009"
+    ],
+    [
+      "hf-0083"
+    ],
+    [
+      "hf-0035"
+    ],
+    [
+      "hf-0130"
+    ],
+    [
+      "hf-0126"
+    ],
+    [
+      "hf-0048"
+    ],
+    [
+      "hf-0020"
+    ],
+    [
+      "hf-0107"
+    ],
+    [
+      "hf-0082"
+    ],
+    [
+      "hf-0118"
+    ],
+    [
+      "hf-0156"
+    ],
+    [
+      "hf-0115"
+    ],
+    [
+      "hf-0127"
+    ],
+    [
+      "hf-0100"
+    ],
+    [
+      "hf-0114"
+    ],
+    [
+      "hf-0111"
+    ],
+    [
+      "hf-0030"
+    ],
+    [
+      "hf-0085"
+    ],
+    [
+      "hf-0120"
+    ],
+    [
+      "hf-0151"
+    ],
+    [
+      "hf-0092"
+    ],
+    [
+      "hf-0025"
+    ],
+    [
+      "hf-0074"
+    ],
+    [
+      "hf-0047"
+    ],
+    [
+      "hf-0080"
+    ],
+    [
+      "hf-0081"
+    ],
+    [
+      "hf-0108"
+    ],
+    [
+      "hf-0038"
+    ],
+    [
+      "hf-0160"
+    ],
+    [
+      "hf-0010"
+    ],
+    [
+      "hf-0128"
+    ],
+    [
+      "hf-0015"
+    ],
+    [
+      "hf-0069"
+    ],
+    [
+      "hf-0059"
+    ],
+    [
+      "hf-0095"
+    ],
+    [
+      "hf-0005"
+    ],
+    [
+      "hf-0105",
+      "hf-0112"
+    ],
+    [
+      "hf-0034"
+    ],
+    [
+      "hf-0078"
+    ],
+    [
+      "hf-0045"
+    ],
+    [
+      "hf-0136"
+    ],
+    [
+      "hf-0046"
+    ],
+    [
+      "hf-0012"
+    ],
+    [
+      "hf-0049"
+    ],
+    [
+      "hf-0011"
+    ],
+    [
+      "hf-0155"
+    ],
+    [
+      "hf-0087"
+    ],
+    [
+      "hf-0148"
+    ],
+    [
+      "hf-0040"
+    ],
+    [
+      "hf-0139"
+    ],
+    [
+      "hf-0089"
+    ],
+    [
+      "hf-0152"
+    ],
+    [
+      "hf-0041"
+    ],
+    [
+      "hf-0001"
+    ],
+    [
+      "hf-0072"
+    ],
+    [
+      "hf-0117"
+    ],
+    [
+      "hf-0057"
+    ],
+    [
+      "hf-0109"
+    ],
+    [
+      "hf-0154"
+    ],
+    [
+      "hf-0051"
+    ],
+    [
+      "hf-0161"
+    ],
+    [
+      "hf-0132"
+    ],
+    [
+      "hf-0060"
+    ],
+    [
+      "hf-0056"
+    ],
+    [
+      "hf-0024"
+    ],
+    [
+      "hf-0007"
+    ],
+    [
+      "hf-0008"
+    ],
+    [
+      "hf-0110"
+    ],
+    [
+      "hf-0023"
+    ],
+    [
+      "hf-0142"
+    ],
+    [
+      "hf-0027"
+    ],
+    [
+      "hf-0036"
+    ],
+    [
+      "hf-0058"
+    ],
+    [
+      "hf-0063"
+    ],
+    [
+      "hf-0071"
+    ],
+    [
+      "hf-0006"
+    ],
+    [
+      "hf-0029"
+    ]
+  ],
+  "counts": {
+    "train": 129,
+    "validation": 17,
+    "test": 17
+  },
+  "input_sha256": "fff53caa130da6ee8c941ae7a1bca3e1311e6ff3a755c835f790b5d937968662",
+  "labels_sha256": "dc178e259b69180507176b80fd17696e6d99a2ebc91beef007af6a117e4f5299",
+  "metadata_sha256": null,
+  "similarity_policy": "64-bit horizontal dHash distance <=4; co-locate all candidate pairs transitively; requires human confirmation"
+}

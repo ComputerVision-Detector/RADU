@@ -1,0 +1,35 @@
+{
+  "chosen": "baseline",
+  "criterion": "strictly lower fixed validation244 CER; tie or worse keeps baseline",
+  "policy_sha256": "262f4f68faabed154d3069024ebdd6f617bd832bbd6d88850f11e4fae2c50939",
+  "validation_metrics": {
+    "before": {
+      "samples": 244,
+      "substitutions": 505,
+      "deletions": 101,
+      "insertions": 123,
+      "errors": 729,
+      "reference_units": 5613,
+      "cer_micro": 0.12987707108498128,
+      "cer_no_space_micro": 0.13175087108013936,
+      "exact_match_rate": 0.20901639344262296,
+      "empty_reference_insertions": 0
+    },
+    "after": {
+      "samples": 244,
+      "substitutions": 507,
+      "deletions": 159,
+      "insertions": 103,
+      "errors": 769,
+      "reference_units": 5613,
+      "cer_micro": 0.13700338499910922,
+      "cer_no_space_micro": 0.1406794425087108,
+      "exact_match_rate": 0.2336065573770492,
+      "empty_reference_insertions": 0
+    },
+    "regions": 244,
+    "pages": 14
+  },
+  "diagnostic_used": false,
+  "method_lock_sha256": "205b00689109268a9636625145cc418eaeaecce8235166e4f5d454e2e6da6db7"
+}

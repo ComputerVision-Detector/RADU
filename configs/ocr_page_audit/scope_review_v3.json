@@ -1,0 +1,722 @@
+{
+  "decisions": [
+    {
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-112",
+      "evidence": "AI enlarged original crop review/item-06.png; reviewed before recovered103 recognition; no OCR copying",
+      "include": false,
+      "ignore_reason": "website clipped at source image right edge; do not infer missing suffix",
+      "uncertainty": "full literal URL not visible"
+    },
+    {
+      "image_id": "hf-0008",
+      "annotation_id": "hf-0008-line-0004",
+      "evidence": "AI enlarged original crop review/item-16.png; reviewed before recovered103 recognition; no OCR copying",
+      "text": "Token IDs",
+      "include": true,
+      "ignore_reason": null,
+      "uncertainty": null
+    },
+    {
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0004",
+      "evidence": "AI enlarged original crop review/item-20.png; reviewed before recovered103 recognition; no OCR copying",
+      "text": "- 지능적으로 행동하는 계산 에이전트를 만들고 분석하는 학문 분야",
+      "include": true,
+      "ignore_reason": null,
+      "uncertainty": null
+    },
+    {
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0006",
+      "evidence": "AI enlarged original crop review/item-21.png; reviewed before recovered103 recognition; no OCR copying",
+      "text": "- 약한 인공지능: 한 가지 일에 특화된 인공지능",
+      "include": true,
+      "ignore_reason": null,
+      "uncertainty": null
+    },
+    {
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0016",
+      "evidence": "AI enlarged original crop review/item-22.png; reviewed before recovered103 recognition; no OCR copying",
+      "include": true,
+      "ignore_reason": null,
+      "uncertainty": null
+    },
+    {
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0018",
+      "evidence": "AI enlarged original crop review/item-23.png; reviewed before recovered103 recognition; no OCR copying",
+      "include": true,
+      "ignore_reason": null,
+      "uncertainty": null
+    },
+    {
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0021",
+      "evidence": "AI enlarged original crop review/item-24.png; reviewed before recovered103 recognition; no OCR copying",
+      "text": "ex) 숫자 인식기를 만들 때 전표나 우편물 등에서 다양한 많은 샘플들을 수집해 데이터로 활용",
+      "include": true,
+      "ignore_reason": null,
+      "uncertainty": null
+    },
+    {
+      "image_id": "hf-0048",
+      "annotation_id": "hf-0048-line-0007",
+      "evidence": "AI enlarged original crop review/item-26.png; reviewed before recovered103 recognition; no OCR copying",
+      "text": "출력 크기 (OH, OW)",
+      "include": true,
+      "ignore_reason": null,
+      "uncertainty": null
+    },
+    {
+      "image_id": "hf-0048",
+      "annotation_id": "hf-0048-line-0013",
+      "evidence": "AI enlarged original crop review/item-27.png; reviewed before recovered103 recognition; no OCR copying",
+      "include": true,
+      "ignore_reason": null,
+      "uncertainty": null
+    },
+    {
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0007",
+      "evidence": "AI enlarged original crop review/item-28.png; reviewed before recovered103 recognition; no OCR copying",
+      "text": "- 맥락의 크기 (주변 단어를 몇 개나 포함할지).",
+      "include": true,
+      "ignore_reason": null,
+      "uncertainty": null
+    },
+    {
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0014",
+      "evidence": "AI enlarged original crop review/item-30.png; reviewed before recovered103 recognition; no OCR copying",
+      "text": "└ 동시발생 행렬을 이용해 단어를 벡터로 나타낼 수 있음",
+      "include": true,
+      "ignore_reason": null,
+      "uncertainty": null
+    },
+    {
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0018",
+      "evidence": "AI enlarged original crop review/item-31.png; reviewed before recovered103 recognition; no OCR copying",
+      "text": "└ L2 노름 계산",
+      "include": true,
+      "ignore_reason": null,
+      "uncertainty": null
+    },
+    {
+      "image_id": "hf-0081",
+      "annotation_id": "hf-0081-line-0001",
+      "evidence": "AI enlarged original crop review/item-32.png; reviewed before recovered103 recognition; no OCR copying",
+      "include": true,
+      "ignore_reason": null,
+      "uncertainty": null
+    },
+    {
+      "image_id": "hf-0081",
+      "annotation_id": "hf-0081-line-0009",
+      "evidence": "AI enlarged original crop review/item-33.png; reviewed before recovered103 recognition; no OCR copying",
+      "text": "- 최적 근사하는 기법.",
+      "include": true,
+      "ignore_reason": null,
+      "uncertainty": null
+    }
+  ],
+  "all_items": [
+    {
+      "index": 0,
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-089",
+      "bbox": [
+        1575,
+        750,
+        2905,
+        913
+      ],
+      "kind": "held_FP_or_truncated_website",
+      "fp_index": 89,
+      "review_image": "review/item-00.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-00.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 1,
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-090",
+      "bbox": [
+        519,
+        806,
+        1538,
+        937
+      ],
+      "kind": "held_FP_or_truncated_website",
+      "fp_index": 90,
+      "review_image": "review/item-01.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-01.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 2,
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-092",
+      "bbox": [
+        412,
+        1142,
+        2192,
+        1299
+      ],
+      "kind": "held_FP_or_truncated_website",
+      "fp_index": 92,
+      "review_image": "review/item-02.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-02.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 3,
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-093",
+      "bbox": [
+        1193,
+        1229,
+        2957,
+        1417
+      ],
+      "kind": "held_FP_or_truncated_website",
+      "fp_index": 93,
+      "review_image": "review/item-03.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-03.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 4,
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-094",
+      "bbox": [
+        399,
+        1406,
+        1981,
+        1546
+      ],
+      "kind": "held_FP_or_truncated_website",
+      "fp_index": 94,
+      "review_image": "review/item-04.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-04.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 5,
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-095",
+      "bbox": [
+        1189,
+        1519,
+        2213,
+        1656
+      ],
+      "kind": "held_FP_or_truncated_website",
+      "fp_index": 95,
+      "review_image": "review/item-05.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-05.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 6,
+      "image_id": "hf-0094",
+      "annotation_id": "audit-hf-0094-112",
+      "bbox": [
+        2675,
+        3766,
+        3024,
+        3861
+      ],
+      "kind": "held_FP_or_truncated_website",
+      "fp_index": 112,
+      "review_image": "review/item-06.png",
+      "status": "included_truncated_website_now_held",
+      "evidence": "AI enlarged original crop review/item-06.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 7,
+      "image_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-114",
+      "bbox": [
+        1008,
+        121,
+        1901,
+        220
+      ],
+      "kind": "held_FP_or_truncated_website",
+      "fp_index": 114,
+      "review_image": "review/item-07.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-07.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 8,
+      "image_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-116",
+      "bbox": [
+        1775,
+        179,
+        1953,
+        253
+      ],
+      "kind": "held_FP_or_truncated_website",
+      "fp_index": 116,
+      "review_image": "review/item-08.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-08.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 9,
+      "image_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-128",
+      "bbox": [
+        88,
+        420,
+        1075,
+        485
+      ],
+      "kind": "held_FP_or_truncated_website",
+      "fp_index": 128,
+      "review_image": "review/item-09.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-09.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 10,
+      "image_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-132",
+      "bbox": [
+        190,
+        535,
+        1287,
+        618
+      ],
+      "kind": "held_FP_or_truncated_website",
+      "fp_index": 132,
+      "review_image": "review/item-10.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-10.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 11,
+      "image_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-139",
+      "bbox": [
+        186,
+        654,
+        1195,
+        733
+      ],
+      "kind": "held_FP_or_truncated_website",
+      "fp_index": 139,
+      "review_image": "review/item-11.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-11.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 12,
+      "image_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-141",
+      "bbox": [
+        84,
+        726,
+        1239,
+        794
+      ],
+      "kind": "held_FP_or_truncated_website",
+      "fp_index": 141,
+      "review_image": "review/item-12.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-12.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 13,
+      "image_id": "hf-0137",
+      "annotation_id": "audit-hf-0137-153",
+      "bbox": [
+        1085,
+        1236,
+        1539,
+        1315
+      ],
+      "kind": "held_FP_or_truncated_website",
+      "fp_index": 153,
+      "review_image": "review/item-13.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-13.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 14,
+      "image_id": "hf-0008",
+      "annotation_id": "hf-0008-line-0001",
+      "bbox": [
+        1022,
+        145,
+        2323,
+        238
+      ],
+      "kind": "held_source_GT",
+      "original_text": "GPT-oss - Zob hugging face modeling gpt_oss",
+      "review_image": "review/item-14.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-14.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 15,
+      "image_id": "hf-0008",
+      "annotation_id": "hf-0008-line-0003",
+      "bbox": [
+        1348,
+        350,
+        1730,
+        436
+      ],
+      "kind": "held_source_GT",
+      "original_text": "GPtoss Model",
+      "review_image": "review/item-15.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-15.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 16,
+      "image_id": "hf-0008",
+      "annotation_id": "hf-0008-line-0004",
+      "bbox": [
+        1288,
+        552,
+        1567,
+        625
+      ],
+      "kind": "held_source_GT",
+      "original_text": "Taken IDs",
+      "review_image": "review/item-16.png",
+      "status": "image_literal_transcription_corrected_and_restored",
+      "evidence": "AI enlarged original crop review/item-16.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 17,
+      "image_id": "hf-0008",
+      "annotation_id": "hf-0008-line-0008",
+      "bbox": [
+        1400,
+        1072,
+        2060,
+        1154
+      ],
+      "kind": "held_source_GT",
+      "original_text": "└ GPtoss Rostary Embedding",
+      "review_image": "review/item-17.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-17.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 18,
+      "image_id": "hf-0008",
+      "annotation_id": "line-15f4e0c4-7288-4ca0-af8f-65e51e10ebb7",
+      "bbox": [
+        1419,
+        1956,
+        2126,
+        2036
+      ],
+      "kind": "held_source_GT",
+      "original_text": "└ GptOssMoedl, forword ()",
+      "review_image": "review/item-18.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-18.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 19,
+      "image_id": "hf-0008",
+      "annotation_id": "line-d061f11c-f0f2-48dc-b984-df42e43fc77c",
+      "bbox": [
+        1405,
+        2525,
+        1963,
+        2616
+      ],
+      "kind": "held_source_GT",
+      "original_text": "GptOssDecoder layer",
+      "review_image": "review/item-19.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-19.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 20,
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0004",
+      "bbox": [
+        359,
+        858,
+        1963,
+        988
+      ],
+      "kind": "held_source_GT",
+      "original_text": "- 지능적으로 행동하는 계산 에어컨트를 만들고 분석하는 학문 분야",
+      "review_image": "review/item-20.png",
+      "status": "image_literal_transcription_corrected_and_restored",
+      "evidence": "AI enlarged original crop review/item-20.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 21,
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0006",
+      "bbox": [
+        350,
+        1112,
+        1446,
+        1230
+      ],
+      "kind": "held_source_GT",
+      "original_text": "- 악한 인공지능: 한 가지 일에 특화된 인공지능",
+      "review_image": "review/item-21.png",
+      "status": "image_literal_transcription_corrected_and_restored",
+      "evidence": "AI enlarged original crop review/item-21.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 22,
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0016",
+      "bbox": [
+        1439,
+        2378,
+        2465,
+        2549
+      ],
+      "kind": "held_source_GT",
+      "original_text": "기계 학습의 목적은 새로운 데이터가 들어왔을 때",
+      "review_image": "review/item-22.png",
+      "status": "prior_cancellation_or_uncertainty_reversed_from_enlarged_image",
+      "evidence": "AI enlarged original crop review/item-22.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 23,
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0018",
+      "bbox": [
+        1451,
+        2507,
+        1851,
+        2637
+      ],
+      "kind": "held_source_GT",
+      "original_text": "정확히 분류하는 것",
+      "review_image": "review/item-23.png",
+      "status": "prior_cancellation_or_uncertainty_reversed_from_enlarged_image",
+      "evidence": "AI enlarged original crop review/item-23.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 24,
+      "image_id": "hf-0013",
+      "annotation_id": "hf-0013-line-0021",
+      "bbox": [
+        387,
+        2814,
+        2634,
+        2972
+      ],
+      "kind": "held_source_GT",
+      "original_text": "ex) 숫자 인식기를 만들 때 전표나 우편물 등에서 다양한 많은 삶들을 수집해 데이터로 활용",
+      "review_image": "review/item-24.png",
+      "status": "image_literal_transcription_corrected_and_restored",
+      "evidence": "AI enlarged original crop review/item-24.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 25,
+      "image_id": "hf-0033",
+      "annotation_id": "hf-0033-line-0021",
+      "bbox": [
+        169,
+        3290,
+        1525,
+        3464
+      ],
+      "kind": "held_source_GT",
+      "original_text": "- 데이터가 어느 클래스에 속하냐",
+      "review_image": "review/item-25.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-25.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 26,
+      "image_id": "hf-0048",
+      "annotation_id": "hf-0048-line-0007",
+      "bbox": [
+        1499,
+        592,
+        2129,
+        706
+      ],
+      "kind": "held_source_GT",
+      "original_text": "홈럭 크기 (OH, OW)",
+      "review_image": "review/item-26.png",
+      "status": "image_literal_transcription_corrected_and_restored",
+      "evidence": "AI enlarged original crop review/item-26.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 27,
+      "image_id": "hf-0048",
+      "annotation_id": "hf-0048-line-0013",
+      "bbox": [
+        199,
+        1387,
+        877,
+        1512
+      ],
+      "kind": "held_source_GT",
+      "original_text": "◦3차원 데이터 합성곱 연산",
+      "review_image": "review/item-27.png",
+      "status": "prior_cancellation_or_uncertainty_reversed_from_enlarged_image",
+      "evidence": "AI enlarged original crop review/item-27.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 28,
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0007",
+      "bbox": [
+        154,
+        1084,
+        1467,
+        1198
+      ],
+      "kind": "held_source_GT",
+      "original_text": "-  맥락의 크기 ( 주변 단어를 몇 개나 포험할지).",
+      "review_image": "review/item-28.png",
+      "status": "image_literal_transcription_corrected_and_restored",
+      "evidence": "AI enlarged original crop review/item-28.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 29,
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0012",
+      "bbox": [
+        0,
+        1940,
+        477,
+        2133
+      ],
+      "kind": "held_source_GT",
+      "original_text": "◦동시발생 행렬",
+      "review_image": "review/item-29.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-29.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 30,
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0014",
+      "bbox": [
+        90,
+        2278,
+        1739,
+        2404
+      ],
+      "kind": "held_source_GT",
+      "original_text": "- 동시발생행렬을 이용하 단어를 벡터로 나타낼 수 있음",
+      "review_image": "review/item-30.png",
+      "status": "image_literal_transcription_corrected_and_restored",
+      "evidence": "AI enlarged original crop review/item-30.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 31,
+      "image_id": "hf-0057",
+      "annotation_id": "hf-0057-line-0018",
+      "bbox": [
+        1088,
+        3008,
+        1655,
+        3130
+      ],
+      "kind": "held_source_GT",
+      "original_text": "- L2 노릅 계산",
+      "review_image": "review/item-31.png",
+      "status": "image_literal_transcription_corrected_and_restored",
+      "evidence": "AI enlarged original crop review/item-31.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 32,
+      "image_id": "hf-0081",
+      "annotation_id": "hf-0081-line-0001",
+      "bbox": [
+        223,
+        217,
+        1001,
+        327
+      ],
+      "kind": "held_source_GT",
+      "original_text": "- 최소 평균 제곱 오차(LMSE)",
+      "review_image": "review/item-32.png",
+      "status": "prior_cancellation_or_uncertainty_reversed_from_enlarged_image",
+      "evidence": "AI enlarged original crop review/item-32.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 33,
+      "image_id": "hf-0081",
+      "annotation_id": "hf-0081-line-0009",
+      "bbox": [
+        254,
+        1616,
+        738,
+        1718
+      ],
+      "kind": "held_source_GT",
+      "original_text": "최적 근하나는 기법",
+      "review_image": "review/item-33.png",
+      "status": "image_literal_transcription_corrected_and_restored",
+      "evidence": "AI enlarged original crop review/item-33.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 34,
+      "image_id": "hf-0081",
+      "annotation_id": "hf-0081-line-0015",
+      "bbox": [
+        595,
+        2524,
+        744,
+        2617
+      ],
+      "kind": "held_source_GT",
+      "original_text": "(e)",
+      "review_image": "review/item-34.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-34.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 35,
+      "image_id": "hf-0081",
+      "annotation_id": "hf-0081-line-0016",
+      "bbox": [
+        308,
+        2701,
+        2096,
+        2839
+      ],
+      "kind": "held_source_GT",
+      "original_text": "이걸 반복 후 반복을 마치면 후보군에서 최적을 찾아 출력",
+      "review_image": "review/item-35.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-35.png; reviewed before recovered103 recognition; no OCR copying"
+    },
+    {
+      "index": 36,
+      "image_id": "hf-0098",
+      "annotation_id": "hf-0098-line-0011",
+      "bbox": [
+        142,
+        1564,
+        617,
+        1666
+      ],
+      "kind": "held_source_GT",
+      "original_text": "네가 보고 있는 것은",
+      "review_image": "review/item-36.png",
+      "status": "hold_unchanged; still not reliable literal/case/cancellation/geometry",
+      "evidence": "AI enlarged original crop review/item-36.png; reviewed before recovered103 recognition; no OCR copying"
+    }
+  ],
+  "AI_reviewed": 37,
+  "human_reviewed": 0,
+  "criterion": "literal original image only, no reference to recognition correctness"
+}

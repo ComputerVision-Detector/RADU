@@ -1,0 +1,18 @@
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+Loading weights:   0%|          | 0/608 [00:00<?, ?it/s]Loading weights: 100%|██████████| 608/608 [00:00<00:00, 16415.01it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+[transformers] `PaddleOCRVLProcessor` defines `image_processor_class = 'AutoImageProcessor'`, which is deprecated. Register the correct mapping in `AutoImageProcessor` instead.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+{"inference": "before.test.predictions.json", "done": 4, "total": 235, "seconds": 0.44293198781087995}
+{"inference": "before.test.predictions.json", "done": 44, "total": 235, "seconds": 2.4478827519342303}
+{"inference": "before.test.predictions.json", "done": 84, "total": 235, "seconds": 6.449651977978647}
+{"inference": "before.test.predictions.json", "done": 124, "total": 235, "seconds": 8.762699018698186}
+{"inference": "before.test.predictions.json", "done": 164, "total": 235, "seconds": 11.403441838920116}
+{"inference": "before.test.predictions.json", "done": 204, "total": 235, "seconds": 13.427198842633516}
+{"inference": "after.test.predictions.json", "done": 4, "total": 235, "seconds": 0.22191732097417116}
+{"inference": "after.test.predictions.json", "done": 44, "total": 235, "seconds": 2.338543936610222}
+{"inference": "after.test.predictions.json", "done": 84, "total": 235, "seconds": 5.69653664669022}
+{"inference": "after.test.predictions.json", "done": 124, "total": 235, "seconds": 8.84073527669534}
+{"inference": "after.test.predictions.json", "done": 164, "total": 235, "seconds": 12.69508362794295}
+{"inference": "after.test.predictions.json", "done": 204, "total": 235, "seconds": 15.469858018681407}
+{"before": {"samples": 235, "substitutions": 585, "deletions": 190, "insertions": 176, "errors": 951, "reference_units": 4401, "cer_micro": 0.21608725289706884, "cer_no_space_micro": 0.22153150607516248, "exact_match_rate": 0.14468085106382977, "empty_reference_insertions": 0}, "after": {"samples": 235, "substitutions": 447, "deletions": 102, "insertions": 121, "errors": 670, "reference_units": 4401, "cer_micro": 0.1522381276982504, "cer_no_space_micro": 0.15512856739191863, "exact_match_rate": 0.19574468085106383, "empty_reference_insertions": 0}, "cer_delta_after_minus_before": -0.06384912519881844, "relative_cer_reduction": 0.2954784437434279, "pages": 17, "paired_page_bootstrap": {"draws": 2000, "seed": 20261109, "improvement_CI95": [0.04295641187618446, 0.09002572163475278]}, "before_runtime": {"seconds": 14.402232807595283, "failures": []}, "after_runtime": {"seconds": 16.765222838614136, "failures": []}, "test_status": "exploratory: previous test results informed choosing this LoRA experiment"}

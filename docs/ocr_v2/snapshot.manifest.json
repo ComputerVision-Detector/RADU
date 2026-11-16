@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "repository": "https://github.com/ComputerVision-Detector/RADU",
+  "branch": "refs/heads/RADU/labeling-data",
+  "checked_at": "2026-11-09T12:59:05.318022+00:00",
+  "latest_remote_commit": "50aca983da9885d9e7a965c1ef4b05055d47b252",
+  "labels_commit": "50aca983da9885d9e7a965c1ef4b05055d47b252",
+  "reference_commit": "50aca983da9885d9e7a965c1ef4b05055d47b252",
+  "code_commit": "b3f65d9163cba05d584d108012edcb19b99b2d37",
+  "image_revision": "93f3a5c0cf545268eb258119fcb92a0ca410b69f",
+  "files_sha256": {
+    "live-v2.json": "dc178e259b69180507176b80fd17696e6d99a2ebc91beef007af6a117e4f5299",
+    "dataset.catalog.json": "d72c8a699861c0a9597f064f6309068a9f5466afae902051390710479a08a80d",
+    "assets.manifest.json": "6b4394993ee89bfac67a1e56e5690bf5322be8515de1190f901581d37b961ac9"
+  },
+  "source_format": "items / bbox_annotation",
+  "catalog_source": "local HEAD; cross-checked with label provenance during build"
+}

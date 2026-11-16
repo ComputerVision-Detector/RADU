@@ -1,0 +1,7 @@
+{
+  "criterion": "minimum full validation micro CER",
+  "epoch": 3,
+  "step": 945,
+  "cer": 0.1417334304442826,
+  "test_used_for_selection": false
+}

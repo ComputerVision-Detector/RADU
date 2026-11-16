@@ -1,0 +1,1440 @@
+{
+  "pages": {
+    "hf-0019": "visible transcription typo and neighboring line fragments inside region crop; human review required",
+    "hf-0095": "visible printed footer and neighboring handwriting absent from GT transcription; human review required"
+  },
+  "regions": [
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0003",
+      "image": "crops/hf-0019-0001.png",
+      "crop_sha256": "d3afa9ecb5b12fd78c014b48ca775517d6b876b65e5b1c97a7e7784c3db994b7",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        362,
+        415,
+        1978,
+        585
+      ],
+      "crop_bbox": [
+        362,
+        415,
+        1978,
+        585
+      ],
+      "text": "- C를 크게 하면 잘못 분류한 샘플의 수는 적은데 여백이 작아짐",
+      "order": 1,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0004",
+      "image": "crops/hf-0019-0002.png",
+      "crop_sha256": "e083a2875fbd6fb6602e1398be01ac7f59a4153a526b101051d545641517bd4d",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        435,
+        532,
+        1978,
+        694
+      ],
+      "crop_bbox": [
+        435,
+        532,
+        1978,
+        694
+      ],
+      "text": "C를 작게 하면 여백은 큰데 잘못 분류한 샘플이 많아짐.",
+      "order": 2,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0005",
+      "image": "crops/hf-0019-0003.png",
+      "crop_sha256": "deb0b5fab34a4a73c7bd2e067c4d74e37be2feb131624504205158f672a012cc",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        435,
+        641,
+        2232,
+        815
+      ],
+      "crop_bbox": [
+        435,
+        641,
+        2232,
+        815
+      ],
+      "text": "C를 크게 : 장학률(훈련 집합에 대한)은 높지만 인반화는 떨엊;ㅁ",
+      "order": 3,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0006",
+      "image": "crops/hf-0019-0004.png",
+      "crop_sha256": "b0698c9554904610f53d43137a73a6eb1e1233a75b831b443e0e24c8ec3d9310",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        529,
+        766,
+        2060,
+        924
+      ],
+      "crop_bbox": [
+        529,
+        766,
+        2060,
+        924
+      ],
+      "text": "C를 작게 : 훈련 접합에 정확률은 낮아짐. 일반화 능력은 커짐.",
+      "order": 4,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0007",
+      "image": "crops/hf-0019-0005.png",
+      "crop_sha256": "da52e00e81abf1abf4efe6b1a3963e854370102ee954ca3cc31e1dfe78cc7e1f",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        326,
+        1044,
+        986,
+        1170
+      ],
+      "crop_bbox": [
+        326,
+        1044,
+        986,
+        1170
+      ],
+      "text": "· 폰 노이만 컴퓨터 구조",
+      "order": 5,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0008",
+      "image": "crops/hf-0019-0006.png",
+      "crop_sha256": "6213637dcfe45876fa3ff3e9e539a677d3de7036867b7b89291ca32f4e50909b",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        374,
+        1157,
+        1373,
+        1279
+      ],
+      "crop_bbox": [
+        374,
+        1157,
+        1373,
+        1279
+      ],
+      "text": "- 현재 우리가 사용하고 있는 컴퓨터의 구조",
+      "order": 6,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0009",
+      "image": "crops/hf-0019-0007.png",
+      "crop_sha256": "bd0aa742c5926e1a69a00d371cba3ac2f54cebf9eac7b79f83d3df09663d7291",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        393,
+        1257,
+        1618,
+        1392
+      ],
+      "crop_bbox": [
+        393,
+        1257,
+        1618,
+        1392
+      ],
+      "text": "- 메모리는 프로그램(명령어 집합)과 데이터를 저장",
+      "order": 7,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0010",
+      "image": "crops/hf-0019-0008.png",
+      "crop_sha256": "d84c5717cdc9350dfeaa7c6082fd81783c4c648f8b7a9d1e33b15f61dfe9825f",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        405,
+        1358,
+        2284,
+        1508
+      ],
+      "crop_bbox": [
+        405,
+        1358,
+        2284,
+        1508
+      ],
+      "text": "CPU는 에모리에서 명령어를 하나씩 꺼내 수행 후 결과를 메모리에 저장",
+      "order": 8,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0011",
+      "image": "crops/hf-0019-0009.png",
+      "crop_sha256": "c36b05e7f02d88faec7235e9bf5a71e435e5ee8416aa4729d7cdb2ccd25f9f84",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        728,
+        1641,
+        1286,
+        1754
+      ],
+      "crop_bbox": [
+        728,
+        1641,
+        1286,
+        1754
+      ],
+      "text": "CPY (중앙처리장치)",
+      "order": 9,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0012",
+      "image": "crops/hf-0019-0010.png",
+      "crop_sha256": "0ed2791ab94931f6eeedc57bafb259edb70519d17a3fb4e321b00a5a0371e791",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        795,
+        1766,
+        950,
+        1875
+      ],
+      "crop_bbox": [
+        795,
+        1766,
+        950,
+        1875
+      ],
+      "text": "↕ 버스",
+      "order": 10,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0013",
+      "image": "crops/hf-0019-0011.png",
+      "crop_sha256": "59990d10ddb2c618a18fcd510fa8f539bf789c7f20d247a1f281190aed4ff400",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        743,
+        1907,
+        938,
+        2008
+      ],
+      "crop_bbox": [
+        743,
+        1907,
+        938,
+        2008
+      ],
+      "text": "메모리",
+      "order": 11,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0014",
+      "image": "crops/hf-0019-0012.png",
+      "crop_sha256": "7157159af73dcd463ae0e4f6f5fdce063d610ce189bca7c26b61cfc9d7033536",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        314,
+        2161,
+        614,
+        2271
+      ],
+      "crop_bbox": [
+        314,
+        2161,
+        614,
+        2271
+      ],
+      "text": "· 퍼셉트론",
+      "order": 12,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0015",
+      "image": "crops/hf-0019-0013.png",
+      "crop_sha256": "1a2ad37ed28962497f149314abbde983c6f50322b4ab9cee170742448ecf1012",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        353,
+        2294,
+        1113,
+        2400
+      ],
+      "crop_bbox": [
+        353,
+        2294,
+        1113,
+        2400
+      ],
+      "text": "- 업력층과 출력층으로 구성",
+      "order": 13,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0016",
+      "image": "crops/hf-0019-0014.png",
+      "crop_sha256": "ff3a623d2bdd8da3986af5f70a9c1b0ebf7f72e2666b01cbbe3ab777b2359f21",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        1602,
+        2318,
+        2368,
+        2420
+      ],
+      "crop_bbox": [
+        1602,
+        2318,
+        2368,
+        2420
+      ],
+      "text": "특정 벡터: X=(x_1, x_2, x_3…x_d)",
+      "order": 14,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0017",
+      "image": "crops/hf-0019-0015.png",
+      "crop_sha256": "141119a2f87fdcb5ba9dc1b65eac5717320298984c03c719a5ee691281c483e0",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        353,
+        2415,
+        1382,
+        2533
+      ],
+      "crop_bbox": [
+        353,
+        2415,
+        1382,
+        2533
+      ],
+      "text": "- 입력층에는 d+1 개의 노드가 있으며.",
+      "order": 15,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0018",
+      "image": "crops/hf-0019-0016.png",
+      "crop_sha256": "1b5d03edef84702fdfa357f3ec385b960ca6458d3566a2a068a8bc45c9983ce0",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        441,
+        2515,
+        2399,
+        2670
+      ],
+      "crop_bbox": [
+        441,
+        2515,
+        2399,
+        2670
+      ],
+      "text": "d는 특징 백터의 차원 (iris의 d는 ↑/화소를 특징으로 하는 경우 화소개수)",
+      "order": 16,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0019",
+      "image": "crops/hf-0019-0017.png",
+      "crop_sha256": "3869cf4f91165e64c7558d47623986ad881b1e797e9d4e35e51bc33ef850f029",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        2292,
+        2701,
+        2526,
+        2807
+      ],
+      "crop_bbox": [
+        2292,
+        2701,
+        2526,
+        2807
+      ],
+      "text": "(8x8)",
+      "order": 17,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0020",
+      "image": "crops/hf-0019-0018.png",
+      "crop_sha256": "d8512c7709615f003e9ec1cc31edd9bab6e8d97d437872ae4c467bc9cbfea8fb",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        393,
+        2810,
+        1948,
+        2932
+      ],
+      "crop_bbox": [
+        393,
+        2810,
+        1948,
+        2932
+      ],
+      "text": "- 에지(edge): 입력층의 i번째 노드와 출력층의 노드를 잇는",
+      "order": 18,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0021",
+      "image": "crops/hf-0019-0019.png",
+      "crop_sha256": "dab6998ef6180d24875eb0ebb4dbaed54438f9a27e3e7e443f839c887a959526",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        816,
+        2951,
+        1395,
+        3049
+      ],
+      "crop_bbox": [
+        816,
+        2951,
+        1395,
+        3049
+      ],
+      "text": "가중치 w_i를 갖는 것",
+      "order": 19,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0022",
+      "image": "crops/hf-0019-0020.png",
+      "crop_sha256": "e52dec9b3ac1d8fa29d755b8d120d84b927f84bbae91cdc095ec0ef674117438",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        858,
+        3072,
+        1310,
+        3186
+      ],
+      "crop_bbox": [
+        858,
+        3072,
+        1310,
+        3186
+      ],
+      "text": "↙ 에지(edge)",
+      "order": 20,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0023",
+      "image": "crops/hf-0019-0021.png",
+      "crop_sha256": "0951a7b5fc0e7a20b550e5b363152023562934157b71a92d1c2ded407f8fff9e",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        858,
+        3213,
+        1373,
+        3323
+      ],
+      "crop_bbox": [
+        858,
+        3213,
+        1373,
+        3323
+      ],
+      "text": "w_i 출력층노드",
+      "order": 21,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0024",
+      "image": "crops/hf-0019-0022.png",
+      "crop_sha256": "e42c11d022450c66d9e4e22ea585530ac5b29c3410355f4fbce0d4f72e622359",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        411,
+        3322,
+        636,
+        3448
+      ],
+      "crop_bbox": [
+        411,
+        3322,
+        636,
+        3448
+      ],
+      "text": "편향임.",
+      "order": 22,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0025",
+      "image": "crops/hf-0019-0023.png",
+      "crop_sha256": "b51323ca4f7a98ead7815dfeb4646e054615feaea115e696399cfc4ea82969c0",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        840,
+        3310,
+        1062,
+        3420
+      ],
+      "crop_bbox": [
+        840,
+        3310,
+        1062,
+        3420
+      ],
+      "text": "입력층 노드",
+      "order": 23,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0026",
+      "image": "crops/hf-0019-0024.png",
+      "crop_sha256": "86c64e5af2bda5c08936a148cb909f7fea3412f368eeae627e87142039842006",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        356,
+        3463,
+        2453,
+        3609
+      ],
+      "crop_bbox": [
+        356,
+        3463,
+        2453,
+        3609
+      ],
+      "text": "바이어스 노드(bias node) : 0번째 노드의 입력 x_0 이며 항상 1을 가짐",
+      "order": 24,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0019",
+      "region_id": "hf-0019-line-0027",
+      "image": "crops/hf-0019-0025.png",
+      "crop_sha256": "afc68901fb4a87113eb833330a874970f3a6d6252919f83c30b6b26a9b2930a8",
+      "source_sha256": "f2e6287f0a9c5eb6ec44c17e3f27eeb0163e484f678dd32df0d0a29235825877",
+      "bbox": [
+        356,
+        3600,
+        2444,
+        3746
+      ],
+      "crop_bbox": [
+        356,
+        3600,
+        2444,
+        3746
+      ],
+      "text": "뉴런의 입력값이 0일 때도 출력이 기준점을 조절할 수 있기 위해서 필요.",
+      "order": 25,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0003",
+      "image": "crops/hf-0095-0001.png",
+      "crop_sha256": "31d8a678dafb1c8870df6c19f78ab1298e999e978ddc291b4d9193e7a41d4891",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        208,
+        302,
+        675,
+        396
+      ],
+      "crop_bbox": [
+        208,
+        302,
+        675,
+        396
+      ],
+      "text": "* 소액투자의 원칙",
+      "order": 1,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0004",
+      "image": "crops/hf-0095-0002.png",
+      "crop_sha256": "5bd9b732121339b1580774a6240c38fef0403e550046c32636fc4f4cd0930113",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        311,
+        391,
+        1779,
+        500
+      ],
+      "crop_bbox": [
+        311,
+        391,
+        1779,
+        500
+      ],
+      "text": "① 저평가를 찾아라 （싼것과 저평가 구분 필수）",
+      "order": 2,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0005",
+      "image": "crops/hf-0095-0003.png",
+      "crop_sha256": "61d6b103bb8c65ca27860ea4b79c57d8470d7ff1449862bdcf11bf0c307b96ce",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        456,
+        516,
+        1385,
+        609
+      ],
+      "crop_bbox": [
+        456,
+        516,
+        1385,
+        609
+      ],
+      "text": "- 상승 호재 - 교통망 발달 전망 有",
+      "order": 3,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0006",
+      "image": "crops/hf-0095-0004.png",
+      "crop_sha256": "6b0e572a685271167d7a728a10b0f3a34b6911fe7fdeec49ae2caf66a1d98774",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        910,
+        628,
+        1404,
+        714
+      ],
+      "crop_bbox": [
+        910,
+        628,
+        1404,
+        714
+      ],
+      "text": "일자리 창출 계획",
+      "order": 4,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0007",
+      "image": "crops/hf-0095-0005.png",
+      "crop_sha256": "54ab10608e233977dbb9b738627f27ab5f6794ffc3e43dcffadb60a0bcd60b05",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        931,
+        713,
+        1854,
+        835
+      ],
+      "crop_bbox": [
+        931,
+        713,
+        1854,
+        835
+      ],
+      "text": "공공기관 기전 가능성 여부 check.",
+      "order": 5,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0008",
+      "image": "crops/hf-0095-0006.png",
+      "crop_sha256": "f85c26c187fee1847be54547de77e87a9d033bf0769aa6d645c80067c6f893c1",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        937,
+        822,
+        1730,
+        948
+      ],
+      "crop_bbox": [
+        937,
+        822,
+        1730,
+        948
+      ],
+      "text": "대기업 이전 가능성 check.",
+      "order": 6,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0009",
+      "image": "crops/hf-0095-0007.png",
+      "crop_sha256": "5c5af93cd3ab24c4e07ab8bb08d69f490313dd6b7e17a0ccf7424c9515c01a6e",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        411,
+        963,
+        1029,
+        1069
+      ],
+      "crop_bbox": [
+        411,
+        963,
+        1029,
+        1069
+      ],
+      "text": "· 저평가 구분 방법",
+      "order": 7,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0010",
+      "image": "crops/hf-0095-0008.png",
+      "crop_sha256": "e7e3ef08970b3fd5dd3ede78ae329a78f5646dff30fe0830f05ee972bd47994a",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        606,
+        1033,
+        2798,
+        1171
+      ],
+      "crop_bbox": [
+        606,
+        1033,
+        2798,
+        1171
+      ],
+      "text": "저평가 지역 check - 교통망 정보수집 - 네이버부동산 / 아실에서 정보확인기능",
+      "order": 8,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0011",
+      "image": "crops/hf-0095-0009.png",
+      "crop_sha256": "12fbef8de3649f233107ea2d95a6813fd82b0bb3beb041668b0e7d9e5410a96f",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        381,
+        1181,
+        1110,
+        1303
+      ],
+      "crop_bbox": [
+        381,
+        1181,
+        1110,
+        1303
+      ],
+      "text": "② 레버리지를 활용하라",
+      "order": 9,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0012",
+      "image": "crops/hf-0095-0010.png",
+      "crop_sha256": "1e0e43fd2060040ae88d5da47830bd7c011da781a1c78d49ca78bf0b86dbaaad",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        583,
+        1257,
+        2332,
+        1408
+      ],
+      "crop_bbox": [
+        583,
+        1257,
+        2332,
+        1408
+      ],
+      "text": "- 투자와 거주를 구분하라 (주택담보대출, 반전세 이동 등...)",
+      "order": 10,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0013",
+      "image": "crops/hf-0095-0011.png",
+      "crop_sha256": "10a8120a0fa679f8d7dc88056cc2538a6c8a4fe0112b8d52690b41f6d0cda652",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        601,
+        1403,
+        1449,
+        1517
+      ],
+      "crop_bbox": [
+        601,
+        1403,
+        1449,
+        1517
+      ],
+      "text": "- 전세를 안고 투자하는 범법",
+      "order": 11,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0014",
+      "image": "crops/hf-0095-0012.png",
+      "crop_sha256": "554bf2ed60ad6c7661fb41b073cf5a279084ccdd0466cf0fcda86fecb14d7067",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        632,
+        1495,
+        2205,
+        1642
+      ],
+      "crop_bbox": [
+        632,
+        1495,
+        2205,
+        1642
+      ],
+      "text": "- 담보대출 활용 → 주담보. 마이너스 대출. 보험약관대출.",
+      "order": 12,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0015",
+      "image": "crops/hf-0095-0013.png",
+      "crop_sha256": "1d50aee761218fad5b89c75d8502945d9ddb91c88f4c709283ccfeaba506e169",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        423,
+        1653,
+        877,
+        1762
+      ],
+      "crop_bbox": [
+        423,
+        1653,
+        877,
+        1762
+      ],
+      "text": "③ 타이밍 중요.",
+      "order": 13,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0016",
+      "image": "crops/hf-0095-0014.png",
+      "crop_sha256": "bac2a6e38109c029d8cfcac927ebf9ce725eae93c667682d77aca12f9d0bdc6f",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        565,
+        1701,
+        2767,
+        1883
+      ],
+      "crop_bbox": [
+        565,
+        1701,
+        2767,
+        1883
+      ],
+      "text": "타이밍 맞추는 방법 - 수요공급 파악. 몇년후의 수·공도 확인가능 → 부동산지인",
+      "order": 14,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0017",
+      "image": "crops/hf-0095-0015.png",
+      "crop_sha256": "1ffae717e102a7c8555db1863b9953be92e6f69729b4a0cdf4089543f9496dca",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        587,
+        1838,
+        2505,
+        1996
+      ],
+      "crop_bbox": [
+        587,
+        1838,
+        2505,
+        1996
+      ],
+      "text": "옥석가리기 -재건축. 재개발. 완화지역 살피기. ex) 1기신도시.",
+      "order": 15,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0018",
+      "image": "crops/hf-0095-0016.png",
+      "crop_sha256": "cdba40d75fead637bd20c8749c06052baf1b37e620655bf2aaaebc0d8e4aa22e",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        205,
+        2140,
+        657,
+        2262
+      ],
+      "crop_bbox": [
+        205,
+        2140,
+        657,
+        2262
+      ],
+      "text": "* 사이트활용",
+      "order": 16,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0019",
+      "image": "crops/hf-0095-0017.png",
+      "crop_sha256": "28e5de31d03bd0d0cf0fe39eb195504086223e70cccc8698d35a4ee269c7805f",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        290,
+        2199,
+        2662,
+        2366
+      ],
+      "crop_bbox": [
+        290,
+        2199,
+        2662,
+        2366
+      ],
+      "text": "· 아실 → APT 실거래가 및 갭투자. 공급예상 불량등: 다양한 정보 수집가능",
+      "order": 17,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0020",
+      "image": "crops/hf-0095-0018.png",
+      "crop_sha256": "eabca60b988e5411c0f392a160c057b9142fa3c6941765f1224e4cc46ffbed56",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        323,
+        2306,
+        2844,
+        2518
+      ],
+      "crop_bbox": [
+        323,
+        2306,
+        2844,
+        2518
+      ],
+      "text": "· 부동산지인 → APT 수요공급 확인가능, 몇년후의 수요·공급도 확인가능. 미분양 확인.",
+      "order": 18,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0021",
+      "image": "crops/hf-0095-0019.png",
+      "crop_sha256": "00226735c255f484664375446ca245cd91b1ca28570b156f04c2ba9695674c00",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        332,
+        2467,
+        1881,
+        2633
+      ],
+      "crop_bbox": [
+        332,
+        2467,
+        1881,
+        2633
+      ],
+      "text": "· 혁신도시 → 산업단지등 개발의 호재 확인가능.",
+      "order": 19,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0022",
+      "image": "crops/hf-0095-0020.png",
+      "crop_sha256": "f77bb4673a64a4978d637b10231fed708071ac7da34c1e5dfb63b8785e709c54",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        341,
+        2580,
+        2042,
+        2770
+      ],
+      "crop_bbox": [
+        341,
+        2580,
+        2042,
+        2770
+      ],
+      "text": "· 한국부동산원 → 매매가격지수 / 그래프로 chek 가능.",
+      "order": 20,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0023",
+      "image": "crops/hf-0095-0021.png",
+      "crop_sha256": "d5becae842c2f4f36168a75c50e433f2e9cea4befd802b380652151565243459",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        329,
+        2697,
+        2232,
+        2895
+      ],
+      "crop_bbox": [
+        329,
+        2697,
+        2232,
+        2895
+      ],
+      "text": "· 국토교통부 → 인허가 건수 확인 : 주택물량공급의 선지표가 될 수 있다.",
+      "order": 21,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0024",
+      "image": "crops/hf-0095-0022.png",
+      "crop_sha256": "638d3f1f4e2c166ef2344d51268caf5999332673fc37267a91bcf257d6aca321",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        190,
+        2983,
+        1863,
+        3190
+      ],
+      "crop_bbox": [
+        190,
+        2983,
+        1863,
+        3190
+      ],
+      "text": "* 혁신도시 투자 방법 → 장기적 안정적 투자 가능.",
+      "order": 22,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0025",
+      "image": "crops/hf-0095-0023.png",
+      "crop_sha256": "58b32f0435478361d3c312528597fd71f914915ca2a2fc061a9908e7e4e40a40",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        302,
+        3144,
+        1500,
+        3315
+      ],
+      "crop_bbox": [
+        302,
+        3144,
+        1500,
+        3315
+      ],
+      "text": "· 지방의 혁신도시 일수록 일자리가 중요.",
+      "order": 23,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0026",
+      "image": "crops/hf-0095-0024.png",
+      "crop_sha256": "8fdcc768bbfd4a474aa9058a7613eab6d7977b3e81276ea20ccfec6d68b2e8ba",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        314,
+        3286,
+        1385,
+        3460
+      ],
+      "crop_bbox": [
+        314,
+        3286,
+        1385,
+        3460
+      ],
+      "text": "· 지방 공공기관 이전이 될수록 좋음.",
+      "order": 24,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0027",
+      "image": "crops/hf-0095-0025.png",
+      "crop_sha256": "8f864336e8b95e7652fd50e9b6870b339f37cb7447fdf849970a5bd0fe318dee",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        299,
+        3427,
+        1461,
+        3601
+      ],
+      "crop_bbox": [
+        299,
+        3427,
+        1461,
+        3601
+      ],
+      "text": "· 혁신도시주변 비규제지역이 저렴",
+      "order": 25,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0028",
+      "image": "crops/hf-0095-0026.png",
+      "crop_sha256": "7273729f66e8d45cd61bc27ba6142b1f78aad5d3dfdfd58e496d8020f1da174b",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        374,
+        3507,
+        2891,
+        3746
+      ],
+      "crop_bbox": [
+        374,
+        3507,
+        2891,
+        3746
+      ],
+      "text": "→ 혁신도시에 새 아파트가 많아서 비싸면 혁신도시에서 밀려나는 사람들이",
+      "order": 26,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "hf-0095-line-0030",
+      "image": "crops/hf-0095-0027.png",
+      "crop_sha256": "e83b135c4ad73051b8aeece1ab9d9c0006b099e0df4bc2dc11c85510d20c1b8e",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        456,
+        3721,
+        1316,
+        3891
+      ],
+      "crop_bbox": [
+        456,
+        3721,
+        1316,
+        3891
+      ],
+      "text": "몰릴주변 지역에 투자하라.",
+      "order": 27,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    },
+    {
+      "page_id": "hf-0095",
+      "region_id": "line-461ebb2e-041e-4cc2-a5e3-d955fca9e90e",
+      "image": "crops/hf-0095-0028.png",
+      "crop_sha256": "635c156495985725c263bc76e46458da92bf906c78347bd0d5ded9005de8c34f",
+      "source_sha256": "6b40a59e5a5f54eebd39f6c967c8dc53e241c4a5eee825d7baee2a6fa119ef7e",
+      "bbox": [
+        2456,
+        2411,
+        2811,
+        2560
+      ],
+      "crop_bbox": [
+        2456,
+        2411,
+        2811,
+        2560
+      ],
+      "text": "입주물량확인",
+      "order": 28,
+      "type_suggestion": "text",
+      "type_confirmed": null,
+      "split": "validation",
+      "flags": [],
+      "hold_reasons": [],
+      "writer_independence_verified": false
+    }
+  ],
+  "policy": "whole validation page quarantine; unchanged original GT retained only in full diagnostic"
+}

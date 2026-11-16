@@ -1,0 +1,77 @@
+{
+  "round_config": {
+    "parent_config": "configs/ocr_v2_vl_lora.json",
+    "parent_adapter": "data/experiments/ocr_v2_vl_lora/train/best-adapter",
+    "output": "data/experiments/ocr_v2_vl_lora_round2",
+    "seed": 42,
+    "epochs": 3,
+    "learning_rate": 2e-05,
+    "quarantined_validation_pages": {
+      "hf-0019": "visible transcription typo and neighboring line fragments inside region crop; human review required",
+      "hf-0095": "visible printed footer and neighboring handwriting absent from GT transcription; human review required"
+    },
+    "arms": {
+      "continue": {
+        "min_pixels": 112896,
+        "max_pixels": 200704
+      },
+      "highres": {
+        "min_pixels": 225792,
+        "max_pixels": 401408
+      }
+    },
+    "selection": "minimum CER on validation excluding both predeclared quarantine pages; include parent as candidate",
+    "test_policy": "no test during probes/training/selection; final unchanged test is exploratory due previous rounds",
+    "initial_adapter_sha256": "ab1bfcfba5c0711ebfc82e83432eca13b47fbb48ca0800d9e7b4d590e15421e5"
+  },
+  "base_config": {
+    "model": "models/vision_language/PaddleOCR-VL-1.6",
+    "dataset": "data/processed/ocr_v2/pilot-v2",
+    "output": "data/experiments/ocr_v2_vl_lora",
+    "seed": 42,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "batch_size": 2,
+    "accumulation": 4,
+    "epochs": 3,
+    "min_pixels": 112896,
+    "max_pixels": 200704,
+    "max_sequence": 768,
+    "max_new_tokens": 128,
+    "generation_batch_size": 4,
+    "prompt": "OCR:",
+    "device": "cuda:0",
+    "test_status": "exploratory: previous test results informed choosing this LoRA experiment"
+  },
+  "source_hashes": {
+    "/home/user/Desktop/RADU/src/training/ocr_lora_round2.py": "fe9fdb32f7429ecda13115fec691819830e9f4da1f4133ea3179077a24f6f10d",
+    "src/training/ocr_vl_lora.py": "ed5067dbc65823f3a715b826d0662c8216d803e097ed4c6592f6cd619196e591",
+    "configs/ocr_v2_vl_lora_round2.json": "4c0a24c736d9838ca437c4dbedc2bbf4e63420bdd0e160eb7c3cd3adac6ef50a"
+  },
+  "dataset_manifest_sha256": "c8adbdb2abd9e9a2d775bc36bd40866f6592f658a5c6e8fc0d1a0247d1eb094a",
+  "parent_adapter_sha256": "ab1bfcfba5c0711ebfc82e83432eca13b47fbb48ca0800d9e7b4d590e15421e5",
+  "validation_primary": {
+    "crops": 244,
+    "pages": 14,
+    "baseline": {
+      "samples": 244,
+      "substitutions": 505,
+      "deletions": 101,
+      "insertions": 112,
+      "errors": 718,
+      "reference_units": 5613,
+      "cer_micro": 0.12791733475859612,
+      "cer_no_space_micro": 0.13044425087108014,
+      "exact_match_rate": 0.21311475409836064,
+      "empty_reference_insertions": 0
+    }
+  },
+  "validation_quarantined": {
+    "crops": 53,
+    "pages": 2
+  },
+  "test_accessed": false
+}

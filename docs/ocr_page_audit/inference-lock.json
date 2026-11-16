@@ -1,0 +1,9 @@
+{
+  "gt_sha256": "c08204ff352ab3031adebdc2e920e3fc0d349e500737e4d17a71b1355e7b2439",
+  "M_sha256": "d8a391923a4df7509edf8b2aa222476b9e8ec063d271d85a7a83f813f406caab",
+  "P1_rows_sha256": "6c39d4fbb06f517c7fb9019765c7a708cb4bec070108edf576dabb2bb4eae089",
+  "batch": 4,
+  "dtype": "bfloat16",
+  "C0_C1_grouping": "same M row IDs, same batch4 membership/order; image geometry is sole experimental change",
+  "P1_grouping": "all included GT ordered page then audited spatial order, batch4; distinct batch context from M so separate diagnostic"
+}

@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RADU independent review export v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "bundle_id",
+    "input_lock_sha256",
+    "revision",
+    "test_mode",
+    "pages",
+    "history"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "bundle_id": {
+      "type": "string"
+    },
+    "input_lock_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "test_mode": {
+      "type": "boolean"
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "action",
+          "image_id",
+          "annotation_ids",
+          "reason",
+          "reviewer",
+          "human_attested",
+          "test_mode",
+          "at",
+          "before",
+          "after"
+        ]
+      }
+    },
+    "pages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "image_id",
+          "image",
+          "width",
+          "height",
+          "regions",
+          "review_status",
+          "completeness",
+          "human_verified",
+          "reviewer",
+          "reviewed_at"
+        ],
+        "properties": {
+          "image_id": {
+            "type": "string"
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "regions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "image_id",
+                "annotation_id",
+                "bbox",
+                "text",
+                "type",
+                "include",
+                "ignore_reason",
+                "order",
+                "uncertainty",
+                "review_status",
+                "reviewer",
+                "reviewed_at",
+                "human_verified",
+                "source_version",
+                "active",
+                "lineage"
+              ],
+              "properties": {
+                "image_id": {
+                  "type": "string"
+                },
+                "annotation_id": {
+                  "type": "string"
+                },
+                "bbox": {
+                  "type": "array",
+                  "minItems": 4,
+                  "maxItems": 4,
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "text": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "include": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "ignore_reason": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "order": {
+                  "type": "number"
+                },
+                "uncertainty": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "review_status": {
+                  "enum": [
+                    "unreviewed",
+                    "draft",
+                    "hold",
+                    "verified"
+                  ]
+                },
+                "reviewer": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "reviewed_at": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "human_verified": {
+                  "type": "boolean"
+                },
+                "source_version": {
+                  "type": "string"
+                },
+                "active": {
+                  "type": "boolean"
+                },
+                "lineage": {
+                  "type": "array"
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "human_verified": {
+                        "const": true
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "review_status": {
+                        "const": "verified"
+                      },
+                      "reviewer": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "reviewed_at": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "review_status": {
+            "enum": [
+              "unreviewed",
+              "in_progress",
+              "complete"
+            ]
+          },
+          "completeness": {
+            "type": "object",
+            "required": [
+              "full_canvas_scan",
+              "missing_text_checked",
+              "inline_math_checked",
+              "tables_cancellations_illegible_checked"
+            ],
+            "properties": {
+              "full_canvas_scan": {
+                "type": "boolean"
+              },
+              "missing_text_checked": {
+                "type": "boolean"
+              },
+              "inline_math_checked": {
+                "type": "boolean"
+              },
+              "tables_cancellations_illegible_checked": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": false
+          },
+          "human_verified": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  },
+  "$comment": "Runtime additionally verifies source fingerprint, IDs, image bounds, history/attestation and complete-page eligibility. Human identity is self-attested, not authenticated."
+}

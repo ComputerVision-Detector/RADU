@@ -1,0 +1,32 @@
+{
+  "changes": [
+    {
+      "index": 36,
+      "before": "duplicate",
+      "after": "split_merge_iou",
+      "reason": "partial repetition in larger box does not prove whole-region duplicate"
+    },
+    {
+      "index": 47,
+      "before": "duplicate",
+      "after": "split_merge_iou",
+      "reason": "partial repetition in larger box does not prove whole-region duplicate"
+    },
+    {
+      "index": 176,
+      "before": "duplicate",
+      "after": "split_merge_iou",
+      "reason": "partial repetition in larger box does not prove whole-region duplicate"
+    }
+  ],
+  "counts": {
+    "split_merge_iou": 11,
+    "gt_missing": 94,
+    "excluded_region": 82,
+    "uncertain": 13,
+    "actual_nontext": 1
+  },
+  "confirmed_whole_region_duplicate": 0,
+  "partial_duplicate_candidates": 3,
+  "model_changed": false
+}

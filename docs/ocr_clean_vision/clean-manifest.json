@@ -1,0 +1,13 @@
+{
+  "source_dataset_manifest_sha256": "c8adbdb2abd9e9a2d775bc36bd40866f6592f658a5c6e8fc0d1a0247d1eb094a",
+  "source_train_sha256": "c8340dc60138025cbc2f05e519226be3e317dcd8b27295bc9b16fbb9c293459b",
+  "decisions_sha256": "9bca70a831e7903eda864e0457faae0155d069da860f22175b564f407b201658",
+  "kept": 2341,
+  "held": 172,
+  "kept_pages": 108,
+  "held_pages": 40,
+  "labels_changed": false,
+  "selection_uses_model_predictions": false,
+  "clean_train_sha256": "0862c4fbd2ab67c63a32dc0b58aeacef8e16391a15f71214ae1ed174d0185327",
+  "status": "conservatively screened training candidates; not fully human-verified"
+}

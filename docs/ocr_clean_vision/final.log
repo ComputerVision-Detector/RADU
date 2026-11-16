@@ -1,0 +1,22 @@
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+Loading weights:   0%|          | 0/608 [00:00<?, ?it/s]Loading weights: 100%|██████████| 608/608 [00:00<00:00, 14177.04it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+[transformers] `PaddleOCRVLProcessor` defines `image_processor_class = 'AutoImageProcessor'`, which is deprecated. Register the correct mapping in `AutoImageProcessor` instead.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+{"inference": "previous.test.predictions.json", "done": 4, "total": 235, "seconds": 0.5098825749009848}
+{"inference": "previous.test.predictions.json", "done": 44, "total": 235, "seconds": 2.6026195506565273}
+{"inference": "previous.test.predictions.json", "done": 84, "total": 235, "seconds": 5.942688128910959}
+{"inference": "previous.test.predictions.json", "done": 124, "total": 235, "seconds": 9.083168360870332}
+{"inference": "previous.test.predictions.json", "done": 164, "total": 235, "seconds": 15.543701678980142}
+{"inference": "previous.test.predictions.json", "done": 204, "total": 235, "seconds": 18.322274734731764}
+{"inference": "selected.detector-crops.json", "done": 4, "total": 397, "seconds": 0.1421779622323811}
+{"inference": "selected.detector-crops.json", "done": 44, "total": 397, "seconds": 1.9656744650565088}
+{"inference": "selected.detector-crops.json", "done": 84, "total": 397, "seconds": 4.862801079172641}
+{"inference": "selected.detector-crops.json", "done": 124, "total": 397, "seconds": 7.914976687170565}
+{"inference": "selected.detector-crops.json", "done": 164, "total": 397, "seconds": 11.699070586357266}
+{"inference": "selected.detector-crops.json", "done": 204, "total": 397, "seconds": 15.7263214411214}
+{"inference": "selected.detector-crops.json", "done": 244, "total": 397, "seconds": 18.821949697099626}
+{"inference": "selected.detector-crops.json", "done": 284, "total": 397, "seconds": 20.667122937273234}
+{"inference": "selected.detector-crops.json", "done": 324, "total": 397, "seconds": 22.125977803952992}
+{"inference": "selected.detector-crops.json", "done": 364, "total": 397, "seconds": 23.75396971218288}
+{"before": {"samples": 235, "substitutions": 447, "deletions": 102, "insertions": 121, "errors": 670, "reference_units": 4401, "cer_micro": 0.1522381276982504, "cer_no_space_micro": 0.15512856739191863, "exact_match_rate": 0.19574468085106383, "empty_reference_insertions": 0}, "after": {"samples": 235, "substitutions": 447, "deletions": 102, "insertions": 121, "errors": 670, "reference_units": 4401, "cer_micro": 0.1522381276982504, "cer_no_space_micro": 0.15512856739191863, "exact_match_rate": 0.19574468085106383, "empty_reference_insertions": 0}, "relative_cer_reduction": 0.0, "paired_page_bootstrap": {"draws": 2000, "seed": 20261109, "improvement_CI95": [0.0, 0.0]}}

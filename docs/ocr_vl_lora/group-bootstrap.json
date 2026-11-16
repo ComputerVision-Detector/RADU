@@ -1,0 +1,10 @@
+{
+  "groups": 16,
+  "draws": 2000,
+  "seed": 42,
+  "improvement_ci95": [
+    0.04392764857881137,
+    0.08861154446177848
+  ],
+  "test_status": "exploratory"
+}

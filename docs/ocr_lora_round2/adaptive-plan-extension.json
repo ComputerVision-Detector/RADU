@@ -1,0 +1,15 @@
+{
+  "declared_at_utc": "2026-11-09T16:57:20.974726+00:00",
+  "test_predictions_exist": false,
+  "reason": "continued training did not beat parent on validation; try one conservative exact delta interpolation before test",
+  "candidate": "0.5 parent + 0.5 selected original-resolution continuation delta",
+  "weights_fixed": [
+    0.5,
+    0.5
+  ],
+  "extra_candidates": 1,
+  "coefficient_sweep": false,
+  "method": "PEFT add_weighted_adapter combination_type=cat, rank16",
+  "control_selection_sha256": "25a0bbcf17d5b30bc73b1e0aaf1e7e38510aa12938dfa14ac76a2d6ebe6f0929",
+  "unit_test": "test_halfstep_is_exact_delta_average passed on CPU in LoRA venv"
+}

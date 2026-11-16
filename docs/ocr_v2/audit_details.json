@@ -1,0 +1,54 @@
+{
+  "pages": 163,
+  "boxes": 3908,
+  "uncertain_boxes": 0,
+  "unreviewed_boxes": 0,
+  "empty_transcriptions": 0,
+  "duplicate_id_pages": 0,
+  "duplicate_order_pages": 0,
+  "reading_order_gap_pages": 0,
+  "region_holds": {
+    "multiline_text_requires_region_review": 10,
+    "duplicate_region": 8
+  },
+  "page_holds": {
+    "visible_unboxed_handwriting: header and left sticky notes outside GT regions; page coverage requires review": 1,
+    "unresolved_merge_note: source boxes 5+6, 8+9, 10+11; do not merge automatically": 1,
+    "annotation_note_requires_review": 3,
+    "no_text_conflicts_with_visible_handwriting: human reannotation required": 1
+  },
+  "overlap_iou_ge_08_pairs": 26,
+  "tabs": 0,
+  "max_transcription_codepoints": 241,
+  "long_over_256": 0,
+  "labels_sha256": "dc178e259b69180507176b80fd17696e6d99a2ebc91beef007af6a117e4f5299",
+  "eligible_split_counts": {
+    "train": 113,
+    "test": 17,
+    "validation": 17
+  },
+  "crop_split_counts": {
+    "train": 2890,
+    "test": 286,
+    "validation": 393
+  },
+  "held_page_ids": [
+    "hf-0000",
+    "hf-0011",
+    "hf-0022",
+    "hf-0023",
+    "hf-0027",
+    "hf-0030",
+    "hf-0031",
+    "hf-0046",
+    "hf-0060",
+    "hf-0070",
+    "hf-0091",
+    "hf-0092",
+    "hf-0096",
+    "hf-0101",
+    "hf-0104",
+    "hf-0119"
+  ],
+  "coverage_limit": "Visual source audit inspected hf-0000, hf-0011, hf-0104 and representative crops; remaining pages not exhaustively visually re-reviewed. Semantic types and writer independence are unconfirmed."
+}

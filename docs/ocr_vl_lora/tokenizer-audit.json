@@ -1,0 +1,20 @@
+{
+  "train": {
+    "samples": 2513,
+    "maximum_label_tokens": 68,
+    "unknown_token_rows": 0,
+    "pages": 111
+  },
+  "validation": {
+    "samples": 297,
+    "maximum_label_tokens": 70,
+    "unknown_token_rows": 0,
+    "pages": 16
+  },
+  "test": {
+    "samples": 235,
+    "maximum_label_tokens": 51,
+    "unknown_token_rows": 0,
+    "pages": 17
+  }
+}

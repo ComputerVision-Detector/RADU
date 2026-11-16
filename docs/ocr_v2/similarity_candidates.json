@@ -1,0 +1,37 @@
+{
+  "exact_decoded_images": [],
+  "similar": [
+    {
+      "pages": [
+        "hf-0017",
+        "hf-0021"
+      ],
+      "dhash_distance": 4,
+      "status": "candidate_not_confirmed"
+    },
+    {
+      "pages": [
+        "hf-0052",
+        "hf-0088"
+      ],
+      "dhash_distance": 4,
+      "status": "candidate_not_confirmed"
+    },
+    {
+      "pages": [
+        "hf-0105",
+        "hf-0112"
+      ],
+      "dhash_distance": 4,
+      "status": "candidate_not_confirmed"
+    },
+    {
+      "pages": [
+        "hf-0133",
+        "hf-0157"
+      ],
+      "dhash_distance": 4,
+      "status": "candidate_not_confirmed"
+    }
+  ]
+}

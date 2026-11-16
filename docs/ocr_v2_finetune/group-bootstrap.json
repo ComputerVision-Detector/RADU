@@ -1,0 +1,11 @@
+{
+  "scope": "test GT crop CER improvement before-minus-after",
+  "groups": 16,
+  "draws": 2000,
+  "seed": 42,
+  "ci95": [
+    -0.011912640635340834,
+    0.12799339388934763
+  ],
+  "grouping": "frozen transitive page/similarity components, not writer IDs"
+}

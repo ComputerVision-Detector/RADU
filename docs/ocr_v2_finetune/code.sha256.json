@@ -1,0 +1,22 @@
+{
+  "src/ocr_data/export_recognition.py": "82fe2c591c343bfbe4a1f0766df6e68fe5ce7850bf2f30644eea8b0b2e88b28c",
+  "src/ocr_data/snapshot.py": "a23a613301c125dc986c8e7611a1f0bf61d8be5a6e263299cb11e09512083a23",
+  "src/ocr_data/__init__.py": "529fd61a411034789ebb58d3ba717389f878c19b83eabd93ec256e6ac09a5913",
+  "src/ocr_data/validate.py": "85eead03689af4f5134d0ab1024ff57e852d5efca3a26552d74d5d60cbd826c0",
+  "src/ocr_data/build.py": "1e9166513d4c2fbff700d19817c3cc304d661166468c0f2597d6ff5c1b441804",
+  "src/ocr_data/restore.py": "057d815edfa584cf47e73560ecce84187c89c39933dc44277e16256ed96583c2",
+  "src/ocr_data/audit.py": "04ed2eaf88cb08a561e7ce2d2314e2acc0641d2392a3ce4d30479d22d2b4fdf5",
+  "src/ocr_data/infer_smoke.py": "f4a7adaf84b7d989484190053e2a242ba3f4360bbfef45e5b9fc923cfaadb70f",
+  "src/ocr_data/split.py": "7f8882841be74e7790c8a69de2d8c68735cc662b17cb87aa4b2231b4ed2005a0",
+  "src/training/ocr_finetune.py": "b77456e6d90b6f6d1a05822061dde15cf84ec799555c7b1713008b8dd07a481a",
+  "src/training/run_ocr_v2_experiment.py": "c42f29a0976e0b8781db0a05f83babcdbde59f1884b273c07f453c238b74dc22",
+  "src/evaluation/ocr_v2.py": "a30ff58046237a4b504fc4b879f4d22f4b1834772860889198d4cde58c29890f",
+  "src/evaluation/ocr_metrics.py": "692b074fe46e6f75d474ba668afa1253abca85c4a679f4693d5551fc8109c5a3",
+  "src/evaluation/ocr_finetune_page.py": "619fefe13fb0350a23a1f217ba0512165247783bff90a82f381786398d19d014",
+  "src/evaluation/ocr_v2_vl_baseline.py": "06e54193c53457da251ed703eb59a2999d83bb327d3342c9c836839ab3220dc8",
+  "src/evaluation/summarize_ocr_finetune.py": "f109393af0912a142c96c7b3543741f9594423b3006b03605945d59154287c0e",
+  "configs/ocr_v2_korean_ctc.json": "cc0419fc4b62206eef2196cc519fdcc08710a10748d4869c1f721fba54e5cfad",
+  "tests/test_ocr_finetune.py": "d233e29c1a3d2256b6fe20f80f1ee07b5205ef4644d0d30260138baae9be191f",
+  "tests/test_ocr_finetune_page.py": "147cc90f73ff07d5f5511f110c44168ad7c09bce851a65acb9a2c018335ef967",
+  "tests/test_ocr_v2.py": "eb19f76d08abab27a8c172802517c46d3774a077ef647ffa469505b5bf742b9d"
+}

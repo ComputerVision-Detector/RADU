@@ -1,0 +1,36 @@
+{
+  "config": {
+    "model": "models/vision_language/PaddleOCR-VL-1.6",
+    "dataset": "data/processed/ocr_v2/pilot-v2",
+    "output": "data/experiments/ocr_v2_vl_lora",
+    "seed": 42,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "batch_size": 2,
+    "accumulation": 4,
+    "epochs": 3,
+    "min_pixels": 112896,
+    "max_pixels": 200704,
+    "max_sequence": 768,
+    "max_new_tokens": 128,
+    "generation_batch_size": 4,
+    "prompt": "OCR:",
+    "device": "cuda:0",
+    "test_status": "exploratory: previous test results informed choosing this LoRA experiment"
+  },
+  "source_sha256": "570a7b89523d0f5e40be3f6d13e81f1dc6b8f651f99819981a5bb9329faf4fc1",
+  "selection": {
+    "criterion": "minimum full validation micro CER",
+    "epoch": 3,
+    "step": 945,
+    "cer": 0.1417334304442826,
+    "test_used_for_selection": false
+  },
+  "test_status": "exploratory: previous test results informed choosing this LoRA experiment",
+  "dataset_manifest_sha256": "c8adbdb2abd9e9a2d775bc36bd40866f6592f658a5c6e8fc0d1a0247d1eb094a",
+  "adapter_sha256": "ab1bfcfba5c0711ebfc82e83432eca13b47fbb48ca0800d9e7b4d590e15421e5",
+  "adapter_hash_bound_at": "final pre-test lock (this run predates selection-hash guard)"
+}

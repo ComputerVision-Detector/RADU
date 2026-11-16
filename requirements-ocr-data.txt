@@ -1,0 +1,6 @@
+# Isolated CPU dataset build/evaluation; no torch/paddle/web environment changes.
+-r requirements-annotation.txt
+rapidfuzz>=3.9,<4
+PyYAML>=6,<7
+# Local PaddleOCR-VL tokenizer screening only; no model/transformers download.
+tokenizers>=0.21,<1

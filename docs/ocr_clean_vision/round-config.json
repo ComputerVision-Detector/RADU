@@ -1,0 +1,23 @@
+{
+  "parent_config": "configs/ocr_v2_vl_lora.json",
+  "parent_adapter": "data/experiments/ocr_v2_vl_lora/train/best-adapter",
+  "clean_train": "data/processed/ocr_v2/train-audit-round3/clean-train.json",
+  "clean_manifest": "data/processed/ocr_v2/train-audit-round3/clean-manifest.json",
+  "audit_decisions": "data/processed/ocr_v2/train-audit-round3/decisions.json",
+  "output": "data/experiments/ocr_v2_vl_lora_round3",
+  "epochs": 3,
+  "learning_rate": 2e-05,
+  "seed": 42,
+  "rank": 8,
+  "alpha": 16,
+  "dropout": 0.05,
+  "visual_last_layers": 4,
+  "batch_size": 2,
+  "accumulation": 4,
+  "quarantined_validation_pages": [
+    "hf-0019",
+    "hf-0095"
+  ],
+  "test_status": "exploratory reused test; no new test inference before validation-only selection",
+  "selection": "minimum validation244 micro CER among unchanged parent and both clean-train arms"
+}

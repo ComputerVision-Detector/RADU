@@ -1,0 +1,18 @@
+{
+  "parent_config": "configs/ocr_v2_vl_lora.json",
+  "parent_adapter": "data/experiments/ocr_v2_vl_lora/train/best-adapter",
+  "output": "data/experiments/ocr_v2_vl_lora_round2",
+  "seed": 42,
+  "epochs": 3,
+  "learning_rate": 0.00002,
+  "quarantined_validation_pages": {
+    "hf-0019": "visible transcription typo and neighboring line fragments inside region crop; human review required",
+    "hf-0095": "visible printed footer and neighboring handwriting absent from GT transcription; human review required"
+  },
+  "arms": {
+    "continue": {"min_pixels": 112896, "max_pixels": 200704},
+    "highres": {"min_pixels": 225792, "max_pixels": 401408}
+  },
+  "selection": "minimum CER on validation excluding both predeclared quarantine pages; include parent as candidate",
+  "test_policy": "no test during probes/training/selection; final unchanged test is exploratory due previous rounds"
+}

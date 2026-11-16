@@ -1,0 +1,104 @@
+prediction_id,image_id,bbox,text,visual_category,scope_policy,valid_GT,held_GT,new_match,AI_visual_reviewed,independent_human_review
+hf-0008/det-0007,hf-0008,"[1387, 886, 1439, 949]",↓,isolated_arrow_or_brace,ignore,[],"[""hf-0008-line-0006""]",,True,False
+hf-0008/det-0009,hf-0008,"[1409, 1071, 2062, 1147]",L GPT OSS Rostary Embedding,normal_prose_or_code_label,ignore,[],"[""hf-0008-line-0008""]",,True,False
+hf-0008/det-0012,hf-0008,"[1731, 1394, 2027, 1474]",free处,normal_prose_or_code_label,keep,"[""line-fce3cae9-c0fb-428c-9698-b41d0b46ba0b""]",[],"{""prediction_id"": ""hf-0008/det-0012"", ""annotation_id"": ""line-fce3cae9-c0fb-428c-9698-b41d0b46ba0b"", ""iou"": 0.6909975669099757}",True,False
+hf-0008/det-0013,hf-0008,"[1765, 1499, 1881, 1588]",cos,normal_prose_or_code_label,keep,"[""line-8211a948-b567-49af-8f31-10aa2b37dfe8""]",[],,True,False
+hf-0008/det-0014,hf-0008,"[1757, 1617, 1851, 1688]",Sin,normal_prose_or_code_label,keep,"[""line-746e7045-f373-48c2-997e-c0c97045c245""]",[],,True,False
+hf-0008/det-0015,hf-0008,"[1379, 1747, 1439, 1814]",↓,isolated_arrow_or_brace,ignore,[],"[""line-ebef08ff-c18f-45bb-b980-205a8d69119b""]",,True,False
+hf-0008/det-0017,hf-0008,"[1533, 1961, 2096, 2037]","Gpt-OssModel, forward(1)",normal_prose_or_code_label,ignore,[],"[""line-15f4e0c4-7288-4ca0-af8f-65e51e10ebb7""]",,True,False
+hf-0008/det-0018,hf-0008,"[1632, 2066, 2226, 2163]",Create_Gausal_mask(),normal_prose_or_code_label,keep,"[""line-a977de18-6fbb-4080-b3bd-99ed6cf33b1f""]",[],"{""prediction_id"": ""hf-0008/det-0018"", ""annotation_id"": ""line-a977de18-6fbb-4080-b3bd-99ed6cf33b1f"", ""iou"": 0.707774798927614}",True,False
+hf-0008/det-0019,hf-0008,"[1657, 2175, 2556, 2281]",create_slide_window_causal_mask(),normal_prose_or_code_label,keep,"[""line-9039bdd8-e05d-4e85-baee-8e4453798b9e""]",[],"{""prediction_id"": ""hf-0008/det-0019"", ""annotation_id"": ""line-9039bdd8-e05d-4e85-baee-8e4453798b9e"", ""iou"": 0.7598643649815043}",True,False
+hf-0008/det-0020,hf-0008,"[1392, 2297, 1469, 2386]",↓,isolated_arrow_or_brace,ignore,[],"[""line-02d77f7f-63da-4ffd-bda1-4c70748eab3c""]",,True,False
+hf-0008/det-0023,hf-0008,"[1546, 2633, 2040, 2726]",- Input RUSNorm,normal_prose_or_code_label,keep,"[""line-7be92727-7df8-4c38-8a00-4c1bf6d91a6f""]",[],"{""prediction_id"": ""hf-0008/det-0023"", ""annotation_id"": ""line-7be92727-7df8-4c38-8a00-4c1bf6d91a6f"", ""iou"": 0.9016111437442309}",True,False
+hf-0008/det-0024,hf-0008,"[1641, 2755, 1997, 2843]",self - Attention,normal_prose_or_code_label,keep,"[""line-e668c01d-d7f1-42ad-88e2-83061214535c""]",[],"{""prediction_id"": ""hf-0008/det-0024"", ""annotation_id"": ""line-e668c01d-d7f1-42ad-88e2-83061214535c"", ""iou"": 0.663627175743964}",True,False
+hf-0008/det-0025,hf-0008,"[1796, 2869, 2126, 2957]",Q Projection,normal_prose_or_code_label,keep,"[""line-cd65dd4b-101e-4909-b2a1-5bdb11e89177""]",[],"{""prediction_id"": ""hf-0008/det-0025"", ""annotation_id"": ""line-cd65dd4b-101e-4909-b2a1-5bdb11e89177"", ""iou"": 0.655649820434081}",True,False
+hf-0008/det-0026,hf-0008,"[1826, 2995, 2113, 3074]",KProjection,normal_prose_or_code_label,keep,"[""line-98c5207b-d452-4b7c-8753-103a0382652a""]",[],"{""prediction_id"": ""hf-0008/det-0026"", ""annotation_id"": ""line-98c5207b-d452-4b7c-8753-103a0382652a"", ""iou"": 0.5009279307145067}",True,False
+hf-0008/det-0027,hf-0008,"[1838, 3104, 2105, 3196]",UpProjection,normal_prose_or_code_label,keep,"[""line-60664bb8-e89a-45bd-8379-e135ef8f4d40""]",[],"{""prediction_id"": ""hf-0008/det-0027"", ""annotation_id"": ""line-60664bb8-e89a-45bd-8379-e135ef8f4d40"", ""iou"": 0.5835810456373491}",True,False
+hf-0008/det-0028,hf-0008,"[1816, 3221, 2174, 3327]",Q/K/V Reshape,normal_prose_or_code_label,keep,"[""line-e40d9398-df52-4237-9158-9e524e5af215""]",[],"{""prediction_id"": ""hf-0008/det-0028"", ""annotation_id"": ""line-e40d9398-df52-4237-9158-9e524e5af215"", ""iou"": 0.6559637029927581}",True,False
+hf-0008/det-0029,hf-0008,"[1834, 3339, 1985, 3452]",RoPE,normal_prose_or_code_label,keep,"[""line-4ef06ee1-ee25-4927-b6c9-89145d196095""]",[],,True,False
+hf-0008/det-0030,hf-0008,"[1825, 3464, 2325, 3579]",K U Cache Update,normal_prose_or_code_label,keep,"[""line-f2efa121-e408-4097-b326-3c2cf2a6255b""]",[],"{""prediction_id"": ""hf-0008/det-0030"", ""annotation_id"": ""line-f2efa121-e408-4097-b326-3c2cf2a6255b"", ""iou"": 0.768766130360771}",True,False
+hf-0008/det-0031,hf-0008,"[1825, 3582, 2346, 3688]",Attention Inter face,normal_prose_or_code_label,keep,"[""line-499d6aed-0afa-4517-a453-d8b0fa4afb7e""]",[],"{""prediction_id"": ""hf-0008/det-0031"", ""annotation_id"": ""line-499d6aed-0afa-4517-a453-d8b0fa4afb7e"", ""iou"": 0.7346038388065133}",True,False
+hf-0013/det-0004,hf-0013,"[355, 503, 1651, 648]",- 직어진 환정에서 크어진 목표를 향해 행동하는 것.,normal_prose_or_code_label,keep,"[""line-8533e22f-03ce-40af-9256-090900453284"", ""line-9a14ca7d-daca-40a3-adce-865bf535fed3""]",[],"{""prediction_id"": ""hf-0013/det-0004"", ""annotation_id"": ""line-8533e22f-03ce-40af-9256-090900453284"", ""iou"": 0.8288202346720451}",True,False
+hf-0013/det-0007,hf-0013,"[914, 974, 2067, 1101]",- 정류터와 관련된. '컴퓨터를 이용하여 만드는,normal_prose_or_code_label,keep,"[""hf-0013-line-0005""]","[""hf-0013-line-0004""]","{""prediction_id"": ""hf-0013/det-0007"", ""annotation_id"": ""hf-0013-line-0005"", ""iou"": 0.9093485365967771}",True,False
+hf-0013/det-0010,hf-0013,"[811, 1364, 1414, 1471]",인공일반지능 (법용인공지능).,normal_prose_or_code_label,keep,"[""hf-0013-line-0008""]",[],"{""prediction_id"": ""hf-0013/det-0010"", ""annotation_id"": ""hf-0013-line-0008"", ""iou"": 0.8278673596615346}",True,False
+hf-0013/det-0020,hf-0013,"[373, 2587, 1229, 2705]",- 이전에 발생한 경험을 활용한다.,normal_prose_or_code_label,keep,"[""hf-0013-line-0017""]",[],"{""prediction_id"": ""hf-0013/det-0020"", ""annotation_id"": ""hf-0013-line-0017"", ""iou"": 0.8781628669293948}",True,False
+hf-0013/det-0021,hf-0013,"[846, 2696, 1074, 2831]",T데이터,normal_prose_or_code_label,keep,"[""hf-0013-line-0017"", ""hf-0013-line-0020""]","[""hf-0013-line-0021""]","{""prediction_id"": ""hf-0013/det-0021"", ""annotation_id"": ""hf-0013-line-0020"", ""iou"": 0.76374156219865}",True,False
+hf-0029/det-0004,hf-0029,"[295, 806, 675, 925]",· RMS prop:,normal_prose_or_code_label,keep,"[""hf-0029-line-0005"", ""hf-0029-line-0006""]",[],"{""prediction_id"": ""hf-0029/det-0004"", ""annotation_id"": ""hf-0029-line-0005"", ""iou"": 0.8967605458542453}",True,False
+hf-0029/det-0007,hf-0029,"[266, 1331, 533, 1445]",· Adam,normal_prose_or_code_label,keep,"[""hf-0029-line-0008""]",[],"{""prediction_id"": ""hf-0029/det-0007"", ""annotation_id"": ""hf-0029-line-0008"", ""iou"": 0.8615491249350199}",True,False
+hf-0029/det-0017,hf-0029,"[249, 3066, 2320, 3196]",· 답댁에 A 하이퍼 애패변수 회적화를 제배로 하면 사간이 많이 길하는 이유.,normal_prose_or_code_label,keep,"[""hf-0029-line-0019""]",[],"{""prediction_id"": ""hf-0029/det-0017"", ""annotation_id"": ""hf-0029-line-0019"", ""iou"": 0.8324386701934547}",True,False
+hf-0033/det-0005,hf-0033,"[261, 457, 1221, 606]",- A h(x) = 1 + exp(-x),math_or_matrix,mixed_keep,"[""hf-0033-line-0002""]","[""hf-0033-line-0003"", ""hf-0033-line-0004""]",,True,False
+hf-0033/det-0006,hf-0033,"[1004, 579, 1320, 702]",→ e^{-x},math_or_matrix,mixed_keep,"[""hf-0033-line-0005""]","[""hf-0033-line-0003"", ""hf-0033-line-0004""]",,True,False
+hf-0033/det-0016,hf-0033,"[60, 2133, 589, 2361]","A=1,2,3",math_or_matrix,mixed_keep,"[""hf-0033-line-0014""]","[""hf-0033-line-0015""]",,True,False
+hf-0033/det-0017,hf-0033,"[1696, 2145, 2093, 2282]","22, 28",math_or_matrix,mixed_keep,"[""hf-0033-line-0014""]","[""hf-0033-line-0015""]",,True,False
+hf-0033/det-0018,hf-0033,"[958, 2155, 1117, 2255]","1,2",math_or_matrix,mixed_keep,"[""hf-0033-line-0014""]","[""hf-0033-line-0015""]",,True,False
+hf-0033/det-0019,hf-0033,"[631, 2205, 924, 2352]",xB=,math_or_matrix,ignore,[],"[""hf-0033-line-0015""]",,True,False
+hf-0033/det-0020,hf-0033,"[1400, 2222, 1607, 2335]",C =,math_or_matrix,ignore,[],"[""hf-0033-line-0015""]",,True,False
+hf-0033/det-0021,hf-0033,"[945, 2260, 1125, 2365]","3,4",math_or_matrix,ignore,[],"[""hf-0033-line-0015""]",,True,False
+hf-0033/det-0022,hf-0033,"[1721, 2301, 2166, 2450]","49, 64",math_or_matrix,ignore,[],"[""hf-0033-line-0015""]",,True,False
+hf-0033/det-0023,hf-0033,"[210, 2310, 537, 2436]","- 4, 5, 6",math_or_matrix,ignore,[],"[""hf-0033-line-0015""]",,True,False
+hf-0033/det-0024,hf-0033,"[936, 2356, 1143, 2457]","5,6",math_or_matrix,mixed_keep,"[""hf-0033-line-0017""]","[""hf-0033-line-0015""]",,True,False
+hf-0048/det-0002,hf-0048,"[210, 222, 1328, 337]",· 출력 데이터 크기를 구할 수 있는 공식,normal_prose_or_code_label,keep,"[""hf-0048-line-0003""]",[],"{""prediction_id"": ""hf-0048/det-0002"", ""annotation_id"": ""hf-0048-line-0003"", ""iou"": 0.8865849181290844}",True,False
+hf-0048/det-0004,hf-0048,"[514, 355, 1003, 502]",H + 2P - FH,math_or_matrix,ignore,[],"[""hf-0048-line-0004""]",,True,False
+hf-0048/det-0006,hf-0048,"[210, 500, 447, 613]",OH =,math_or_matrix,ignore,[],"[""hf-0048-line-0004""]",,True,False
+hf-0048/det-0007,hf-0048,"[743, 504, 842, 609]",5,math_or_matrix,ignore,[],"[""hf-0048-line-0004""]",,True,False
+hf-0048/det-0010,hf-0048,"[535, 721, 1045, 850]",w + 2P - FW,math_or_matrix,ignore,[],"[""hf-0048-line-0008""]",,True,False
+hf-0048/det-0011,hf-0048,"[1063, 805, 1183, 892]",+1,math_or_matrix,ignore,[],"[""hf-0048-line-0008""]",,True,False
+hf-0048/det-0013,hf-0048,"[180, 869, 464, 979]",OW =,math_or_matrix,ignore,[],"[""hf-0048-line-0008""]",,True,False
+hf-0048/det-0014,hf-0048,"[735, 882, 833, 979]",S,math_or_matrix,ignore,[],"[""hf-0048-line-0008""]",,True,False
+hf-0048/det-0016,hf-0048,"[193, 1390, 877, 1500]",· 3차원 데이터 합성곱 연산,normal_prose_or_code_label,mixed_keep,"[""hf-0048-line-0014""]","[""hf-0048-line-0013""]",,True,False
+hf-0048/det-0020,hf-0048,"[209, 2048, 508, 2173]",· 풀딩 계층.,normal_prose_or_code_label,keep,"[""hf-0048-line-0017"", ""hf-0048-line-0018""]",[],"{""prediction_id"": ""hf-0048/det-0020"", ""annotation_id"": ""hf-0048-line-0017"", ""iou"": 0.8699641897940913}",True,False
+hf-0052/det-0001,hf-0052,"[176, 373, 1023, 492]",· softmax - with - Loss 계획,normal_prose_or_code_label,keep,"[""hf-0052-line-0002"", ""audit-hf-0052-051""]",[],"{""prediction_id"": ""hf-0052/det-0001"", ""annotation_id"": ""hf-0052-line-0002"", ""iou"": 0.7302392031192643}",True,False
+hf-0052/det-0003,hf-0052,"[189, 781, 550, 903]",· 자연어 처리,normal_prose_or_code_label,keep,"[""line-d4d02678-320c-4e2a-a15c-fe5a5ac7abd7"", ""line-8de86c00-4d1c-48d9-9b9e-79904570969b""]",[],"{""prediction_id"": ""hf-0052/det-0003"", ""annotation_id"": ""line-d4d02678-320c-4e2a-a15c-fe5a5ac7abd7"", ""iou"": 0.8208345614552192}",True,False
+hf-0057/det-0001,hf-0057,"[149, 309, 448, 447]",· 분포 가설,normal_prose_or_code_label,keep,"[""hf-0057-line-0002"", ""hf-0057-line-0003""]",[],"{""prediction_id"": ""hf-0057/det-0001"", ""annotation_id"": ""hf-0057-line-0002"", ""iou"": 0.8826776110953863}",True,False
+hf-0057/det-0005,hf-0057,"[142, 970, 464, 1075]",· 원도우 크기,normal_prose_or_code_label,keep,"[""hf-0057-line-0006""]",[],"{""prediction_id"": ""hf-0057/det-0005"", ""annotation_id"": ""hf-0057-line-0006"", ""iou"": 0.8960674157303371}",True,False
+hf-0057/det-0008,hf-0057,"[102, 1478, 546, 1597]",◦통계 기반 기법,normal_prose_or_code_label,keep,"[""hf-0057-line-0009""]",[],"{""prediction_id"": ""hf-0057/det-0008"", ""annotation_id"": ""hf-0057-line-0009"", ""iou"": 0.6895539906103286}",True,False
+hf-0057/det-0011,hf-0057,"[210, 1932, 301, 2008]",<H,split_character_of_overwritten_heading,ignore,[],"[""hf-0057-line-0012""]",,True,False
+hf-0057/det-0012,hf-0057,"[46, 1994, 431, 2130]",◦ 동시발출 행렬,overwritten_heading,ignore,[],"[""hf-0057-line-0012""]",,True,False
+hf-0057/det-0015,hf-0057,"[46, 2557, 379, 2676]",· 고사인 유사도,normal_prose_or_code_label,keep,"[""hf-0057-line-0015""]",[],"{""prediction_id"": ""hf-0057/det-0015"", ""annotation_id"": ""hf-0057-line-0015"", ""iou"": 0.7648892534864643}",True,False
+hf-0077/det-0000,hf-0077,"[368, 78, 1200, 228]",f'(x) = \lim f(x+h) - f(x),math_or_matrix,ignore,[],"[""hf-0077-line-0001"", ""audit-hf-0077-054""]",,True,False
+hf-0077/det-0003,hf-0077,"[601, 206, 722, 269]",a→0,math_or_matrix,ignore,[],"[""hf-0077-line-0001""]",,True,False
+hf-0077/det-0005,hf-0077,"[476, 356, 1277, 476]",(a+b)^{3} = a^{3} + 3ab^{2} + 3ab^{2} + b^{3},math_or_matrix,ignore,[],"[""hf-0077-line-0004""]",,True,False
+hf-0087/det-0001,hf-0087,"[223, 323, 2398, 484]","- 칫 번재 영상에서 루출한 기술자 겹탄 A = \{a_1, a_2, \cdots a_n\}와 두 번째",math_or_matrix,mixed_keep,"[""line-be94cffd-5b7d-4fd6-abfa-dd1b7d37cbb7""]","[""line-5d6b8a10-25ed-4adc-a92e-cf620c1c6ff6"", ""line-6585e2db-71db-4467-b9ce-624ff3f4cea4""]",,True,False
+hf-0087/det-0002,hf-0087,"[274, 461, 2131, 605]","영상에서 축출한 기술자 갱한 B = \{ b_1, b_2, b_n\}가 극어젖을 때",math_or_matrix,ignore,[],"[""line-5d6b8a10-25ed-4adc-a92e-cf620c1c6ff6"", ""line-6585e2db-71db-4467-b9ce-624ff3f4cea4"", ""line-d460f9a8-1301-4132-a9fd-236a61159009""]",,True,False
+hf-0087/det-0003,hf-0087,"[257, 587, 2226, 731]",같은 물체의 같은 곳에 해양하는 a_i와 b_j 쌍을 모두 찾는 줄게,math_or_matrix,ignore,[],"[""line-6585e2db-71db-4467-b9ce-624ff3f4cea4"", ""line-d460f9a8-1301-4132-a9fd-236a61159009"", ""line-0b210833-560a-4167-bbd6-f0495c9b4e14""]",,True,False
+hf-0087/det-0004,hf-0087,"[210, 713, 1882, 853]",1. 두 개술자 A와 B의 거리가 임계감보다 작으면 매칭되었다고,math_or_matrix,mixed_keep,"[""line-bec057c1-ef48-43a0-a94f-2b9ac216ae99""]","[""line-d460f9a8-1301-4132-a9fd-236a61159009"", ""line-0b210833-560a-4167-bbd6-f0495c9b4e14""]",,True,False
+hf-0087/det-0006,hf-0087,"[292, 978, 2380, 1096]",L T (임계합) 를 너무 잘게하거나 너무 크게 하면 거짓 중점이 많이 빼샘,math_or_matrix,mixed_keep,"[""line-bec057c1-ef48-43a0-a94f-2b9ac216ae99""]","[""line-dd082ce0-6501-48e9-a53d-bbaa77a4d7c9""]",,True,False
+hf-0087/det-0008,hf-0087,"[228, 1252, 1942, 1361]","L a _ i = B_o14, 기초 책은 b_j를 찾고 a_i와 b_j가",math_or_matrix,ignore,[],"[""line-056e0ccd-b0fd-43f5-b3ea-298921809924""]",,True,False
+hf-0087/det-0009,hf-0087,"[292, 1382, 1856, 1483]","d(a_i, b_i) < T 를 만족하면 매우 쌍으로 찍혔.",math_or_matrix,ignore,[],"[""line-056e0ccd-b0fd-43f5-b3ea-298921809924"", ""line-b579e980-be9d-4f65-8a8a-8740c9e1e7fa""]",,True,False
+hf-0087/det-0011,hf-0087,"[214, 1633, 2118, 1760]",L a_1는 B에서 가장 가까운 b_j와 두 번째 가까운 b_k를 찾음,math_or_matrix,mixed_keep,"[""line-e5bd8631-8d37-42bb-ae44-13f4a39e47cc""]","[""line-7997176a-c6fe-401a-9639-e826b04e063c"", ""line-b6621fd8-58b6-45f4-a6da-237c9c0905d7""]",,True,False
+hf-0087/det-0012,hf-0087,"[305, 1751, 1035, 1869]","b_j와 b_k 차량 d(a_j, b_j)",math_or_matrix,ignore,[],"[""line-7997176a-c6fe-401a-9639-e826b04e063c"", ""line-b6621fd8-58b6-45f4-a6da-237c9c0905d7""]",,True,False
+hf-0087/det-0013,hf-0087,"[1061, 1806, 2264, 1932]",< T 를 반쪽하면 a_i와 b_j는 매칭 쌍,math_or_matrix,ignore,[],"[""line-b6621fd8-58b6-45f4-a6da-237c9c0905d7""]",,True,False
+hf-0087/det-0014,hf-0087,"[716, 1864, 1037, 2005]","d(a_i, b_k)",math_or_matrix,ignore,[],"[""line-b6621fd8-58b6-45f4-a6da-237c9c0905d7""]",,True,False
+hf-0090/det-0000,hf-0090,"[1398, 212, 2266, 371]","v=0, u=-1 f(η,2)=0",math_or_matrix,ignore,[],"[""hf-0090-line-0003"", ""hf-0090-line-0006""]",,True,False
+hf-0090/det-0002,hf-0090,"[1411, 347, 2296, 502]","v=0, u=-1 +(η,3)=0",math_or_matrix,ignore,[],"[""hf-0090-line-0003"", ""hf-0090-line-0006"", ""hf-0090-line-0009""]",,True,False
+hf-0090/det-0003,hf-0090,"[565, 439, 972, 560]","f(5,3)=1",math_or_matrix,ignore,[],"[""hf-0090-line-0005""]",,True,False
+hf-0090/det-0004,hf-0090,"[80, 465, 504, 581]","V=0, U=-1",math_or_matrix,ignore,[],"[""hf-0090-line-0004""]",,True,False
+hf-0090/det-0005,hf-0090,"[1425, 482, 2321, 623]","v=0, u=-1 f(7,4)=0",math_or_matrix,ignore,[],"[""hf-0090-line-0006"", ""hf-0090-line-0009""]",,True,False
+hf-0090/det-0006,hf-0090,"[579, 566, 976, 673]","f(5,4)=0",math_or_matrix,ignore,[],"[""hf-0090-line-0008""]",,True,False
+hf-0090/det-0007,hf-0090,"[85, 587, 495, 698]","V=0, U=-1",math_or_matrix,ignore,[],"[""hf-0090-line-0007""]",,True,False
+hf-0090/det-0008,hf-0090,"[579, 680, 980, 795]","f(6,2)=0",math_or_matrix,ignore,[],"[""hf-0090-line-0011""]",,True,False
+hf-0090/det-0009,hf-0090,"[85, 709, 487, 820]","V=0, U=-1",math_or_matrix,ignore,[],"[""hf-0090-line-0010""]",,True,False
+hf-0090/det-0010,hf-0090,"[584, 819, 992, 924]","f(6,3)=1",math_or_matrix,ignore,[],"[""hf-0090-line-0013""]",,True,False
+hf-0090/det-0011,hf-0090,"[80, 834, 496, 959]","U=0, U=-1",math_or_matrix,ignore,[],"[""hf-0090-line-0012""]",,True,False
+hf-0090/det-0012,hf-0090,"[592, 940, 1028, 1064]","f(6,4)=0",math_or_matrix,ignore,[],"[""hf-0090-line-0015""]",,True,False
+hf-0090/det-0013,hf-0090,"[80, 961, 495, 1081]","V=0, U=-1",math_or_matrix,ignore,[],"[""hf-0090-line-0014""]",,True,False
+hf-0090/det-0014,hf-0090,"[570, 1162, 2403, 1354]","(f(y+v,x+w)-f(y,x))^2 일대 V=0,U=0 01만",math_or_matrix,ignore,[],"[""hf-0090-line-0016""]",,True,False
+hf-0090/det-0015,hf-0090,"[81, 1242, 482, 1357]","U=0, U=0",math_or_matrix,ignore,[],"[""hf-0090-line-0016""]",,True,False
+hf-0090/det-0019,hf-0090,"[124, 1486, 1676, 1613]","결국 그것을 배면 학상 0. 즉 S(0,0)=0",math_or_matrix,ignore,[],"[""line-6e61bfc4-d68f-40d6-a986-e2127fc01863""]",,True,False
+hf-0090/det-0020,hf-0090,"[67, 1590, 1281, 1774]",(같은 과표 - 같은 과표)² 가 됨,math_or_matrix,ignore,[],"[""line-6e61bfc4-d68f-40d6-a986-e2127fc01863"", ""line-e84fb234-908a-4940-8185-5e55b199ddeb""]",,True,False
+hf-0090/det-0021,hf-0090,"[1404, 1877, 2243, 1991]","U=0, U=1 f(η,2)= 0",math_or_matrix,ignore,[],"[""line-4b865638-dc9f-43e5-875d-804141b9482b""]",,True,False
+hf-0090/det-0022,hf-0090,"[81, 1898, 980, 2017]","v=0, u=1, f(5,2)=1",math_or_matrix,ignore,[],"[""line-143732d5-2d9f-459a-9705-86a17dd12167""]",,True,False
+hf-0090/det-0023,hf-0090,"[85, 2020, 1006, 2138]","V=0, u=1 f(5,3)=0",math_or_matrix,ignore,[],"[""line-143732d5-2d9f-459a-9705-86a17dd12167"", ""line-9f119808-68f6-4ad6-a8dc-bf264910b044""]",,True,False
+hf-0090/det-0024,hf-0090,"[1426, 2024, 2294, 2143]","V=0, u=1 f(7,3)= △",math_or_matrix,ignore,[],"[""line-4b865638-dc9f-43e5-875d-804141b9482b"", ""line-4d79202c-8ef4-42cf-bd52-a6a77bde2449""]",,True,False
+hf-0090/det-0025,hf-0090,"[89, 2154, 1023, 2285]","V=0, u=1 f(5,4)=0",math_or_matrix,ignore,[],"[""line-9f119808-68f6-4ad6-a8dc-bf264910b044"", ""line-1dcab03e-9083-4cb5-a686-7e9a22df3cfb""]",,True,False
+hf-0090/det-0026,hf-0090,"[1443, 2159, 2332, 2264]","V=0, U=1 f(7,4)=0",math_or_matrix,ignore,[],"[""line-5f5708ef-1d24-40e0-8568-3c462193170d""]",,True,False
+hf-0090/det-0027,hf-0090,"[94, 2293, 1018, 2420]","U=0, u=1 f(6,2)=1",math_or_matrix,ignore,[],"[""line-73162f17-dc25-4378-a713-931bd2a400f3""]",,True,False
+hf-0090/det-0028,hf-0090,"[592, 2431, 1036, 2550]","f(6,3) = 0",math_or_matrix,ignore,[],"[""line-963aee97-bba0-46ed-8122-9f2f31c7088b""]",,True,False
+hf-0090/det-0029,hf-0090,"[112, 2444, 567, 2537]","V=0, u=1",math_or_matrix,ignore,[],"[""line-963aee97-bba0-46ed-8122-9f2f31c7088b""]",,True,False
+hf-0090/det-0030,hf-0090,"[610, 2570, 1052, 2675]","f(6,4)=0",math_or_matrix,ignore,[],"[""line-90289bd1-284e-46e6-ba4b-e653f0d42a0b""]",,True,False
+hf-0090/det-0031,hf-0090,"[116, 2579, 554, 2671]","U=0, U=1",math_or_matrix,ignore,[],"[""line-90289bd1-284e-46e6-ba4b-e653f0d42a0b""]",,True,False
+hf-0098/det-0001,hf-0098,"[1190, 256, 2212, 370]",- 4태극 <꽃을 부듯 널를 분다 4),normal_prose_or_code_label,keep,"[""hf-0098-line-0002""]",[],"{""prediction_id"": ""hf-0098/det-0001"", ""annotation_id"": ""hf-0098-line-0002"", ""iou"": 0.8415460754062208}",True,False
+hf-0111/det-0008,hf-0111,"[339, 1235, 408, 1336]",3,isolated_arrow_or_brace,ignore,[],"[""hf-0111-line-0010""]",,True,False
+hf-0111/det-0016,hf-0111,"[253, 2113, 322, 2209]",3,isolated_arrow_or_brace,ignore,[],"[""hf-0111-line-0018""]",,True,False
+hf-0111/det-0022,hf-0111,"[161, 2807, 265, 2939]",3,isolated_arrow_or_brace,ignore,[],"[""hf-0111-line-0024""]",,True,False
+hf-0111/det-0026,hf-0111,"[113, 3298, 214, 3434]",3,isolated_arrow_or_brace,ignore,[],"[""hf-0111-line-0028""]",,True,False

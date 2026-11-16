@@ -1,0 +1,72 @@
+{
+  "repeat_equal": true,
+  "input_tensors_equal": true,
+  "tensors": {
+    "input_ids": {
+      "shape": [
+        4,
+        187
+      ],
+      "dtype": "torch.int64",
+      "sha256": "c8706cf3b560c0f1d25f9f43604e3f76dcf48484154f5ac033671575631049f6"
+    },
+    "attention_mask": {
+      "shape": [
+        4,
+        187
+      ],
+      "dtype": "torch.int64",
+      "sha256": "fa69d6b7ec36fd2d174b48c3b9ec18a5480daf42e0c305eb5f991517bc7fb081"
+    },
+    "mm_token_type_ids": {
+      "shape": [
+        4,
+        187
+      ],
+      "dtype": "torch.int64",
+      "sha256": "2576865505d8b67da85d3b3e1d2f46d105a1612d5f6fd1f3bcbbfedf13914bf7"
+    },
+    "pixel_values": {
+      "shape": [
+        2616,
+        3,
+        14,
+        14
+      ],
+      "dtype": "torch.float32",
+      "sha256": "8f413d13dfcf75e2664daf084ac1af0c3c90dea00b37accc4e4681b1a1e73d3d"
+    },
+    "image_grid_thw": {
+      "shape": [
+        4,
+        3
+      ],
+      "dtype": "torch.int64",
+      "sha256": "47a45bb52ebc3fce1e9970efc19bd495970a82091f514c7f47b2745649d8a0eb"
+    }
+  },
+  "cached_original_texts": [
+    "output Projection",
+    "_input [2,4096]",
+    "Linear 40% → 2880",
+    "→ [2,2880]"
+  ],
+  "new_texts": [
+    "output Projection",
+    "_input [2,4096]",
+    "Linear 40% → 2880",
+    "→ [2,2880]"
+  ],
+  "cached_equal": true,
+  "active_adapters": [
+    "default"
+  ],
+  "eval_mode": true,
+  "padding": "left",
+  "strict_load": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  }
+}

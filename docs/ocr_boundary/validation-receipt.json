@@ -1,0 +1,15 @@
+{
+  "input_hashes_verified": true,
+  "source_images_sha256_verified": true,
+  "both_executed_sources_exact": true,
+  "all_crop_hashes_verified": true,
+  "validation_only_selection": "baseline",
+  "selection_precedes_diagnostic": true,
+  "GT_text_scope_order_unchanged": true,
+  "GT_bbox_changes": 11,
+  "paired_validation_regions": 244,
+  "paired_diagnostic_regions": 138,
+  "total_GPU_crop_inputs": 772,
+  "no_training": true,
+  "independent_human_review_count": 0
+}

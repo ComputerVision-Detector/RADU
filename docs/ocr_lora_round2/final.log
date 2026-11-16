@@ -1,0 +1,28 @@
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+Loading weights:   0%|          | 0/608 [00:00<?, ?it/s]Loading weights: 100%|██████████| 608/608 [00:00<00:00, 19745.70it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+[transformers] `PaddleOCRVLProcessor` defines `image_processor_class = 'AutoImageProcessor'`, which is deprecated. Register the correct mapping in `AutoImageProcessor` instead.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+{"inference": "round1.test.predictions.json", "done": 4, "total": 235, "seconds": 0.5100499279797077}
+{"inference": "round1.test.predictions.json", "done": 44, "total": 235, "seconds": 2.6713612470775843}
+{"inference": "round1.test.predictions.json", "done": 84, "total": 235, "seconds": 6.10660641733557}
+{"inference": "round1.test.predictions.json", "done": 124, "total": 235, "seconds": 9.35685366531834}
+{"inference": "round1.test.predictions.json", "done": 164, "total": 235, "seconds": 13.264670526143163}
+{"inference": "round1.test.predictions.json", "done": 204, "total": 235, "seconds": 16.0617795153521}
+{"inference": "selected.test.predictions.json", "done": 4, "total": 235, "seconds": 0.20166712161153555}
+{"inference": "selected.test.predictions.json", "done": 44, "total": 235, "seconds": 2.2682485939003527}
+{"inference": "selected.test.predictions.json", "done": 84, "total": 235, "seconds": 5.755012672860175}
+{"inference": "selected.test.predictions.json", "done": 124, "total": 235, "seconds": 8.959112376905978}
+{"inference": "selected.test.predictions.json", "done": 164, "total": 235, "seconds": 12.85769905988127}
+{"inference": "selected.test.predictions.json", "done": 204, "total": 235, "seconds": 15.698401642031968}
+{"before": {"samples": 235, "substitutions": 447, "deletions": 102, "insertions": 121, "errors": 670, "reference_units": 4401, "cer_micro": 0.1522381276982504, "cer_no_space_micro": 0.15512856739191863, "exact_match_rate": 0.19574468085106383, "empty_reference_insertions": 0}, "after": {"samples": 235, "substitutions": 447, "deletions": 102, "insertions": 121, "errors": 670, "reference_units": 4401, "cer_micro": 0.1522381276982504, "cer_no_space_micro": 0.15512856739191863, "exact_match_rate": 0.19574468085106383, "empty_reference_insertions": 0}, "relative_cer_reduction": 0.0, "paired_page_bootstrap": {"draws": 2000, "seed": 20261109, "improvement_CI95": [0.0, 0.0]}}
+{"inference": "selected.test.detector-crops.json", "done": 4, "total": 397, "seconds": 0.14956184988841414}
+{"inference": "selected.test.detector-crops.json", "done": 44, "total": 397, "seconds": 2.8491080589592457}
+{"inference": "selected.test.detector-crops.json", "done": 84, "total": 397, "seconds": 6.584573651663959}
+{"inference": "selected.test.detector-crops.json", "done": 124, "total": 397, "seconds": 9.702315759845078}
+{"inference": "selected.test.detector-crops.json", "done": 164, "total": 397, "seconds": 13.52462404500693}
+{"inference": "selected.test.detector-crops.json", "done": 204, "total": 397, "seconds": 17.658033054787666}
+{"inference": "selected.test.detector-crops.json", "done": 244, "total": 397, "seconds": 20.80841566575691}
+{"inference": "selected.test.detector-crops.json", "done": 284, "total": 397, "seconds": 22.681948541663587}
+{"inference": "selected.test.detector-crops.json", "done": 324, "total": 397, "seconds": 24.17382882675156}
+{"inference": "selected.test.detector-crops.json", "done": 364, "total": 397, "seconds": 25.895935136824846}

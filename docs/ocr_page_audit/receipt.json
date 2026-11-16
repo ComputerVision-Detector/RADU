@@ -1,0 +1,42 @@
+{
+  "seconds": 41.415816413704306,
+  "versions": {
+    "python": "3.11.15",
+    "torch": "2.14.1+cu126",
+    "transformers": "5.22.1",
+    "peft": "0.21.2"
+  },
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "config": {
+    "model": "models/vision_language/PaddleOCR-VL-1.6",
+    "dataset": "data/processed/ocr_v2/pilot-v2",
+    "output": "data/experiments/ocr_v2_vl_lora",
+    "seed": 42,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "batch_size": 2,
+    "accumulation": 4,
+    "epochs": 3,
+    "min_pixels": 112896,
+    "max_pixels": 200704,
+    "max_sequence": 768,
+    "max_new_tokens": 128,
+    "generation_batch_size": 4,
+    "prompt": "OCR:",
+    "device": "cuda:0",
+    "test_status": "exploratory: previous test results informed choosing this LoRA experiment"
+  },
+  "active_adapters": [
+    "default"
+  ],
+  "model_dtype": "torch.bfloat16",
+  "source_hashes": {
+    "src/evaluation/ocr_page_audit_infer.py": "32ac4e82a90b06477daf121e60a7794402311e851508579b6d48570c9cf02fbb",
+    "src/training/ocr_vl_lora.py": "bc81f9afb7cd736ad6ab86373dad27a9412e60b20ebac233971675c54a17d072"
+  },
+  "inference_lock_sha256": "7c609713af7b5139de53f26f5d70c51423810be6374338a25bd9fdf13994bf5b",
+  "optimizer_steps": 0
+}

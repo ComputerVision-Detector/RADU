@@ -1,0 +1,110 @@
+{
+  "policy": {
+    "dark_threshold": 160,
+    "margin_pixels": 3,
+    "horizontal_rule_min_length": 120,
+    "horizontal_rule_width_fraction": 0.5,
+    "vertical_rule_min_length": 160,
+    "vertical_rule_height_fraction": 0.9,
+    "method": "image_only_dark_ink_bbox; ruling_mask_for_bounds_only; original_pixels_preserved; fallback_on_empty",
+    "selection": "strictly lower fixed validation244 CER; tie or worse keeps baseline",
+    "diagnostic": "predeclared paired138 candidate measurement regardless selection; no tuning or reselection"
+  },
+  "policy_sha256": "262f4f68faabed154d3069024ebdd6f617bd832bbd6d88850f11e4fae2c50939",
+  "validation_rows_sha256": {
+    "before": "d2e4d274e6d540b5ac6769e363fc73f0fc650564917873739e04d21f7f276d14",
+    "after": "222f099020e2b4f6b0301e6d4b3e3deb2a819321bb13802f14f4b7db6517fc9e"
+  },
+  "AI_visual_samples": [
+    [
+      "hf-0006",
+      "hf-0006-line-0004"
+    ],
+    [
+      "hf-0006",
+      "hf-0006-line-0006"
+    ],
+    [
+      "hf-0006",
+      "hf-0006-line-0008"
+    ],
+    [
+      "hf-0006",
+      "hf-0006-line-0010"
+    ],
+    [
+      "hf-0006",
+      "hf-0006-line-0012"
+    ],
+    [
+      "hf-0006",
+      "hf-0006-line-0013"
+    ],
+    [
+      "hf-0006",
+      "hf-0006-line-0014"
+    ],
+    [
+      "hf-0006",
+      "hf-0006-line-0015"
+    ],
+    [
+      "hf-0007",
+      "hf-0007-line-0001"
+    ],
+    [
+      "hf-0018",
+      "hf-0018-line-0001"
+    ],
+    [
+      "hf-0055",
+      "hf-0055-line-0004"
+    ],
+    [
+      "hf-0066",
+      "hf-0066-line-0002"
+    ],
+    [
+      "hf-0075",
+      "hf-0075-line-0003"
+    ],
+    [
+      "hf-0080",
+      "hf-0080-line-0010"
+    ],
+    [
+      "hf-0106",
+      "hf-0106-line-0001"
+    ],
+    [
+      "hf-0114",
+      "hf-0114-line-0004"
+    ],
+    [
+      "hf-0117",
+      "hf-0117-line-0001"
+    ],
+    [
+      "hf-0126",
+      "hf-0126-line-0001"
+    ],
+    [
+      "hf-0147",
+      "hf-0147-line-0001"
+    ],
+    [
+      "hf-0155",
+      "hf-0155-line-0001"
+    ],
+    [
+      "hf-0157",
+      "hf-0157-line-0001"
+    ]
+  ],
+  "AI_review_count": 21,
+  "represented_pages": 14,
+  "human_reviews": 0,
+  "review": "no obvious wholesale glyph loss in limited samples; neighboring line ink may remain; not all244 certified",
+  "locked_before_validation_inference": true,
+  "no_hyperparameter_sweep": true
+}

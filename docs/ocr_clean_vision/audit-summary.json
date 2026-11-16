@@ -1,0 +1,19 @@
+{
+  "train_crops": 2513,
+  "pages": 111,
+  "flags": {
+    "long_transcription": 35,
+    "multiple_ink_bands_candidate": 251,
+    "tall_for_long_transcription": 132,
+    "border_ink_candidate": 143,
+    "isolated_hangul_jamo_candidate": 3
+  },
+  "coverage": {
+    "selected_crops": 260,
+    "represented_pages": 111,
+    "panels": 17,
+    "policy": "top2 risk per page + highest global risk up to260; model predictions not used"
+  },
+  "source_train_sha256": "c8340dc60138025cbc2f05e519226be3e317dcd8b27295bc9b16fbb9c293459b",
+  "note": "heuristic flags are review suggestions only; no automatic semantic label correction"
+}

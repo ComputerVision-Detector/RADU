@@ -1,0 +1,13 @@
+{
+  "all_pages": 163,
+  "all_bbox": 3908,
+  "FP201_coverage": true,
+  "original_GT_text_and_boxes_unchanged": true,
+  "M_equal_denominator": 2501,
+  "order_equal_denominator": 2623,
+  "page_equal_denominator": 5695,
+  "input_lock_verified": true,
+  "adapter_weight_sha256": "ab1bfcfba5c0711ebfc82e83432eca13b47fbb48ca0800d9e7b4d590e15421e5",
+  "model_steps": 0,
+  "repeat_equal": true
+}

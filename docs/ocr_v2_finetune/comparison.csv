@@ -1,0 +1,13 @@
+scope,metric,before,after,after_minus_before
+test GT crops,cer_micro,0.40208604954367666,0.344980443285528,-0.057105606258148645
+test GT crops,cer_no_space_micro,0.3556499020248204,0.38634879163945135,0.030698889614630964
+test GT crops,exact_match_rate,0.04522613065326633,0.04020100502512563,-0.0050251256281407045
+test GT crops,substitutions,458,907,449
+test GT crops,deletions,1052,302,-750
+test GT crops,insertions,32,114,82
+test fixed-detector pages,cer_micro,0.8976848394324123,0.9372666168782674,0.039581777445855115
+test fixed-detector pages,cer_no_space_micro,0.9327237099934683,1.0097975179621164,0.07707380796864804
+test fixed-detector pages,exact_match_rate,0.0,0.0,0.0
+test fixed-detector pages,substitutions,632,901,269
+test fixed-detector pages,deletions,1004,331,-673
+test fixed-detector pages,insertions,1970,2533,563

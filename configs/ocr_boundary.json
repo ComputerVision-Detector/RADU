@@ -1,0 +1,11 @@
+{
+  "dark_threshold": 160,
+  "margin_pixels": 3,
+  "horizontal_rule_min_length": 120,
+  "horizontal_rule_width_fraction": 0.5,
+  "vertical_rule_min_length": 160,
+  "vertical_rule_height_fraction": 0.9,
+  "method": "image_only_dark_ink_bbox; ruling_mask_for_bounds_only; original_pixels_preserved; fallback_on_empty",
+  "selection": "strictly lower fixed validation244 CER; tie or worse keeps baseline",
+  "diagnostic": "predeclared paired138 candidate measurement regardless selection; no tuning or reselection"
+}

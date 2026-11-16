@@ -1,0 +1,52 @@
+{
+  "pages": 163,
+  "statuses": {
+    "verified": 163
+  },
+  "boxes": 3908,
+  "reviewed_true": 3908,
+  "no_text_pages": 1,
+  "flags": {
+    "symbol_only": 130,
+    "latex_notation": 434,
+    "multiline": 21
+  },
+  "type_suggestions": {
+    "text": 3344,
+    "symbol": 130,
+    "formula": 434
+  },
+  "eligible_pages": 147,
+  "held_pages": 16,
+  "held_boxes": 339,
+  "generated_crops": 3569,
+  "natural_text_recognition_candidates": {
+    "train": 2513,
+    "validation": 297,
+    "test": 235
+  },
+  "hold_reasons": {
+    "visible_unboxed_handwriting: header and left sticky notes outside GT regions; page coverage requires review": 1,
+    "unresolved_merge_note: source boxes 5+6, 8+9, 10+11; do not merge automatically": 1,
+    "annotation_note_requires_review": 3,
+    "multiline_text_requires_region_review": 10,
+    "duplicate_region": 8,
+    "no_text_conflicts_with_visible_handwriting: human reannotation required": 1
+  },
+  "original_integrity_failures": 0,
+  "exact_duplicate_pairs": 0,
+  "similar_candidate_pairs": 4,
+  "metadata_coverage": {
+    "writer_id": 0,
+    "note_id": 0,
+    "design_id": 0,
+    "source_family_id": 0
+  },
+  "split_counts": {
+    "train": 129,
+    "validation": 17,
+    "test": 17
+  },
+  "writer_independence_verified": false,
+  "status": "provisional_pilot_ready_requires_semantic_and_group_review"
+}
